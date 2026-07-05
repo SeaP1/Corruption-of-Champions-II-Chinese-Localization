@@ -6,7 +6,7 @@
 
 
 
-## 目录 - [写在最前](#写在最前) - [关于本仓库](#关于本仓库) - [关于汉化发布下载](#关于汉化发布下载) - [使用指北](#使用指北) - [反馈问题](#反馈问题) - [版本号规则](#版本号规则) - [文件结构](#文件结构) - [致谢名单](#致谢名单) - [免责声明](#免责声明) - [更新日志](#更新日志)
+## 目录 - [写在最前](#写在最前) - [关于本仓库](#关于本仓库) - [关于汉化发布下载](#关于汉化发布下载) - [反馈问题](#反馈问题) - [版本号规则](#版本号规则) - [文件结构](#文件结构) - [致谢名单](#致谢名单) - [免责声明](#免责声明) - [更新日志](#更新日志)
 
 ### 写在最前
 
@@ -14,11 +14,11 @@
 
 > 本项目为非官方中文本地化项目。
 >
-> 汉化为AI润色。
+> 汉化为AI润色。汉化版本为0.9.0
 >
 > 与原作者及官方团队无直接关系。
 >
-> 汉化exe哈希值为9A023ABEBFBBF4707A687090AA89EC73027E74E1200DA97932F487325E9F4A5C
+> exe哈希值为9A023ABEBFBBF4707A687090AA89EC73027E74E1200DA97932F487325E9F4A5C
 
 <br>
 
@@ -38,13 +38,41 @@
 
 可以在仓库右侧/底部的 [releases(发行版)]()页面下载。
 
-### 使用指北
-下载同版本游戏本体，解压汉化包到游戏本地根目录下，双击COC2 CN.exe即可打开翻译。
+### 汉化修正方法
 
-<br>
-> 手动翻译: 可以于translator文件夹下的translated\_json文件夹手动更新汉化，并通过根目录下执行 node .\translator\apply\_translations\_to\_app.mjs执行汉化更新
-> 提示: 手动更新汉化需要安装Node.JS
-> 进阶自动翻译: 可以通过修改ollama\_translate\_v2.mjs实现自定义prompt。通过ollama手动下载模型，运行 node .\translator\translate\_each\_file.mjs自行完成翻译或润色工作
+需求环境 NodeJS Ollama
+
+于根目录输入
+
+```powershell
+node ./translator/extract_text.mjs -all
+```
+
+提取文字
+
+#### 手动修正
+
+通过修改./translator/translator_json里面对应文件，后通过输入
+
+```powershell
+// 可通过node ./translator/validate_translations.mjs 检测是否存在错误
+node ./translator/apply_translations_to_apply.mjs
+```
+
+完成手动更新汉化
+
+#### 通过大模型自动批量翻译文本
+
+输入
+
+```powershell
+node ./translator/translate_each_file.mjs 100 --with-core // 数字可调，可用--core-only实现部分翻译具体内容阅读代码
+node ./translator/apply_translations_to_apply.mjs
+```
+
+简单解释
+
+translate_each_file会调用ollama_translate_v2文件。通过修改ollama_translate_v2文件内容可以修正对应的prompt，实现期望的翻译格式/内容。
 
 ### 反馈问题
 
@@ -72,7 +100,7 @@
 ### 更新日志
 
 <details><summary>点击展开</summary>
-    COC2 CN 0.1a 所有js文件完成初步翻译，由于模型限制存在部分内容未翻译 
+0.1.0a COC2 0.9.0版本基本汉化完成
 
 
 
