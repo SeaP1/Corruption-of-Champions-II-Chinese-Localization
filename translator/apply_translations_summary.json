@@ -1,0 +1,241 @@
+{
+  "generatedAt": "2026-07-06T18:52:43.393Z",
+  "totalApplied": 0,
+  "totalSkipped": 0,
+  "files": [
+    {
+      "jsonName": "103.b7dfd04c3388c4cb1d0b.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "505.0be08e4a11933fd00e3d.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "505.91b44f666e3ae9545a41.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "673.9abf298e57c2943b15bf.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "673.f0e95dc094eacad8ac6e.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_CentaurVillage.567593a04b712b2c6eb3.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Coastlands.1d523afc8660e6a342d3.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Companions.ca6ebbe14ff672fba0aa.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_DragonLair.a22c870484febce6f9f2.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_DreamPalace.253f5f0c3a75d9035341.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Dungeons.cea3acef85843e8626a8.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_FireTemple.fbcacfa3bf630910bfb4.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Followers.de64b10269e483e3defb.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Foothills.f87477c08a5bc151d249.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Forest.dc28793bf13e3dfdc5b8.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Frostwood.55979fdd99d747e2e4d8.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_GlacialRift.0e9296a0405efd7f125f.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Hawkethorne.508e8f0cb59b0130820a.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Hawkethorne.7e9d8a6ee096d3604f67.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_HornetHive.d8d727fa342a416527f5.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Khorminos.3fe294ab2bc18a074155.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Khorminos.e22733b0be0e1237c92c.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_KitsuneDen.0fe5a1bb1a09ac34b897.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_LightPalace.a8f6dd33b12cf63285f3.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_MarefolkVillage.12e8e77cd459df517d86.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Misc.62fb7441e836578b9c70.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Misc.a6340585f6fb707f148a.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_OrcVillage.8a4f8e651b6612c0f330.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Other.49fb0df2dfa30e7c26f3.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Other.4ded4b17b3002b196cff.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Starhome.f5487356c1f7239c519d.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_TychrisPalace.a2670f44b699d418124c.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Undermountain.a3d9b8ec4342643f9871.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Valley.712dcef3443eee5bcd35.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Valley.af34fb9486da62b75d27.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Wayfort.73a1caa674eac6059f08.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_Wayfort.abca5f6ffe09fa2b51b5.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_WindyPeaks.2e719cb9dd55ee628d42.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    },
+    {
+      "jsonName": "Content_WinterCity.606037d07c9b7dbd7ee2.js.json",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "missing source app file"
+    }
+  ]
+}

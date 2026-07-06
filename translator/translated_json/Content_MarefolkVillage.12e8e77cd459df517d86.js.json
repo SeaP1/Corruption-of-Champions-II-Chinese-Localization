@@ -10,7 +10,7 @@
     "carried_from_old_json": 871
   },
   "total": 1686,
-  "shouldTranslate": 854,
+  "shouldTranslate": 855,
   "inherited": 870,
   "newlyAdded": 1,
   "byCategory": {
@@ -4042,7 +4042,7 @@
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:182196:182444:d84b8de1ccbf",
       "file": "Content_MarefolkVillage.12e8e77cd459df517d86.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "-]+$/i.test(e)&&e.length<=16&&e.length>=3},o=0;addButton(o++,\"Confirm\",(function(){var e=readMainTextInput();if(\"piyari\"===e&&(e=\"Piyari\"),!t(e))return AtaniNamePiyari(1);piyariClear(),flags.PIYARI_NAME=1,piyari.name=e,output(textify(oe||(oe=de([",
       "translation": "硬性要求：仅输出简体中文译文，无需添加解释或保留英文原文中的任何元素。\n\n```javascript\n-]+$/i.test(e)&&e.length<=16&&e.length>=3, o=0; addButton(o++, \"确认\", function () { var e = readMainTextInput(); if (\"piyari\" === e && e === \"Piyari\" && !t(e)) return AtaniNamePiyari(1); piyariClear(), flags.PIYARI_NAME = 1, piyari.name = e, output(textify(oe || (oe = de([",
       "start": 182196,
@@ -4083,14 +4083,15 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "s chin. \"She looks like a Piyari.\"\n            \n            Atani giggles and kisses you on the cheek, reaching down to also stroke the baby— Piyari. \"Thank you... thank you so much.\"\n            |\"[piyari.name]? It's beautiful...\" Atani smiles happily and kisses your cheek, snuggling in as deeply as she can before stroking the baby— [piyari.name].\n        ]\n        \n        Your mare-daughter, [piyari.name].\n        \n        \"Will she be chieftain one day?\" you eventually ask, soaking in the moment still.\n        \n        \"If she wants to be,\" Atani smiles. \"Being in charge of everyone's happiness isn't something we can just force on someone, inherited or not. I... well, I didn't have a choice thanks to mom's situation, but after you saved her I realized I wanted to remain in this position.\"\n        \n        \"Hopefully [piyari.name] doesn't have to go through the same...\"\n        \n        \"Yes... although if I do end up being filled with evil chemicals and turned into a sexual mess, you'll make sure to keep me company, right?\"\n        \n        You grin and gently bounce [piyari.name] in your arms. \"Maybe.\"\n        \n        Atani whickers and gently bops your shoulder, before snuggling back in. \"I hope you'll come back lots to play with our babe... and me, of course.\"\n        \n        \"Of course!\"\n        ",
-      "translation": "",
+      "translation": "s chin. “她看起来像一个皮亚里。”\n阿塔尼咯咯笑，亲吻你的脸颊，低头也抚摸了婴儿——皮亚里。“谢谢……非常感谢。”\n|[piyari.name]？真美……”阿塔尼开心地微笑着，亲吻你的脸颊，尽可能地依偎在你怀里，随后轻抚婴儿—— [piyari.name].\n        ]\n        \n        你的母马女儿， [piyari.name]她终有一天会成为酋长吗？”你最终问道，仍沉浸在这一刻。\n\n“如果她想的话。”阿塔尼微笑着。“统领众人的喜乐并非能随意强加于人，无论是否继承。我……嘛，因为母亲的情况，我别无选择，但你在救了她之后，我意识到自己仍想留在这个位置。”\n\n希望如此。 [piyari.name] 不用经历同样的事……”\n\n“是啊……不过如果我真的被邪恶的化学药剂灌满，变成一团混乱的性爱场面，你一定会陪我，对吧？”\n\n你咧嘴一笑，轻轻弹跳 [piyari.name] 在你的臂弯中。\"也许。\"\n\n阿塔尼抽动鼻子，轻轻拍了下你的肩膀，又重新依偎进你怀里。\"希望你常常回来和我们的孩子一起玩耍……当然还有我。\"\n\n\"当然！",
       "start": 182550,
       "end": 183908,
       "line": 1,
       "raw": "'s chin. \"She looks like a Piyari.\"\\n            \\n            Atani giggles and kisses you on the cheek, reaching down to also stroke the baby— Piyari. \"Thank you... thank you so much.\"\\n            |\"[piyari.name]? It\\'s beautiful...\" Atani smiles happily and kisses your cheek, snuggling in as deeply as she can before stroking the baby— [piyari.name].\\n        ]\\n        \\n        Your mare-daughter, [piyari.name].\\n        \\n        \"Will she be chieftain one day?\" you eventually ask, soaking in the moment still.\\n        \\n        \"If she wants to be,\" Atani smiles. \"Being in charge of everyone\\'s happiness isn\\'t something we can just force on someone, inherited or not. I... well, I didn\\'t have a choice thanks to mom\\'s situation, but after you saved her I realized I wanted to remain in this position.\"\\n        \\n        \"Hopefully [piyari.name] doesn\\'t have to go through the same...\"\\n        \\n        \"Yes... although if I do end up being filled with evil chemicals and turned into a sexual mess, you\\'ll make sure to keep me company, right?\"\\n        \\n        You grin and gently bounce [piyari.name] in your arms. \"Maybe.\"\\n        \\n        Atani whickers and gently bops your shoulder, before snuggling back in. \"I hope you\\'ll come back lots to play with our babe... and me, of course.\"\\n        \\n        \"Of course!\"\\n        '",
       "updateStatus": "new_in_version",
-      "translationStatus": "failed",
-      "translationError": "structure mismatch: |: original=1, translated=0"
+      "translationStatus": "ollama_translated",
+      "translationModel": "hf.co/richardyoung/Qwen3-14B-abliterated-GGUF:latest",
+      "translatedAt": "2026-07-06T17:43:18.611Z"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:183931:183939:a46760a65595",
