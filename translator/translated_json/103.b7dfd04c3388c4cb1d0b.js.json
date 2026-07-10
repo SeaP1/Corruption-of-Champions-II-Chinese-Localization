@@ -15707,13 +15707,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Exp: ",
-      "translation": "",
+      "translation": "经验： ",
       "start": 84083,
       "end": 84090,
       "line": 1,
       "raw": "\"Exp: \"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:84104:84107:42099b4af021",
@@ -15889,13 +15891,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Strength: ",
-      "translation": "",
+      "translation": "力量： ",
       "start": 84495,
       "end": 84507,
       "line": 1,
       "raw": "\"Strength: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:84539:84544:26021f1f4700",
@@ -15987,13 +15991,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Agility: ",
-      "translation": "",
+      "translation": "敏捷： ",
       "start": 84689,
       "end": 84700,
       "line": 1,
       "raw": "\"Agility: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:84731:84736:26021f1f4700",
@@ -16085,13 +16091,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Willpower: ",
-      "translation": "",
+      "translation": "意志： ",
       "start": 84883,
       "end": 84896,
       "line": 1,
       "raw": "\"Willpower: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:84929:84934:26021f1f4700",
@@ -16183,13 +16191,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Toughness: ",
-      "translation": "",
+      "translation": "坚韧： ",
       "start": 85081,
       "end": 85094,
       "line": 1,
       "raw": "\"Toughness: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:85127:85132:26021f1f4700",
@@ -16281,13 +16291,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Cunning: ",
-      "translation": "",
+      "translation": "狡黠： ",
       "start": 85277,
       "end": 85288,
       "line": 1,
       "raw": "\"Cunning: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:85319:85324:26021f1f4700",
@@ -16379,13 +16391,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Presence: ",
-      "translation": "",
+      "translation": "风度： ",
       "start": 85470,
       "end": 85482,
       "line": 1,
       "raw": "\"Presence: \"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:85507:85524:ce1b4eb0bc65",
@@ -16715,13 +16729,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Initiative",
-      "translation": "",
+      "translation": "先攻",
       "start": 86327,
       "end": 86339,
       "line": 1,
       "raw": "\"Initiative\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86362:86374:f5427e8f6f25",
@@ -16729,13 +16745,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Leadership",
-      "translation": "",
+      "translation": "领导力",
       "start": 86362,
       "end": 86374,
       "line": 1,
       "raw": "\"Leadership\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86392:86402:12a3a4f498b2",
@@ -16743,13 +16761,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Accuracy",
-      "translation": "",
+      "translation": "命中",
       "start": 86392,
       "end": 86402,
       "line": 1,
       "raw": "\"Accuracy\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86418:86420:da39a3ee5e6b",
@@ -16785,13 +16805,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Attack Power",
-      "translation": "",
+      "translation": "攻击力",
       "start": 86426,
       "end": 86440,
       "line": 1,
       "raw": "\"Attack Power\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86459:86478:69fa31f897a5",
@@ -16799,13 +16821,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Armor Penetration",
-      "translation": "",
+      "translation": "护甲穿透",
       "start": 86459,
       "end": 86478,
       "line": 1,
       "raw": "\"Armor Penetration\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86502:86514:ecc97ebc1361",
@@ -16813,13 +16837,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Spellpower",
-      "translation": "",
+      "translation": "法术强度",
       "start": 86502,
       "end": 86514,
       "line": 1,
       "raw": "\"Spellpower\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86532:86551:26bc0fe9fc0b",
@@ -16827,13 +16853,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Spell Penetration",
-      "translation": "",
+      "translation": "法术穿透",
       "start": 86532,
       "end": 86551,
       "line": 1,
       "raw": "\"Spell Penetration\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86575:86585:4c103be39eae",
@@ -16841,13 +16869,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Sexiness",
-      "translation": "",
+      "translation": "性感",
       "start": 86575,
       "end": 86585,
       "line": 1,
       "raw": "\"Sexiness\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86601:86613:4ceef146ef32",
@@ -16855,13 +16885,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Temptation",
-      "translation": "",
+      "translation": "诱惑",
       "start": 86601,
       "end": 86613,
       "line": 1,
       "raw": "\"Temptation\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86631:86648:02b687084d24",
@@ -16869,13 +16901,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Critical Chance",
-      "translation": "",
+      "translation": "暴击率",
       "start": 86631,
       "end": 86648,
       "line": 1,
       "raw": "\"Critical Chance\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86666:86690:707275f21565",
@@ -16883,13 +16917,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Critical Effectiveness",
-      "translation": "",
+      "translation": "暴击效果",
       "start": 86666,
       "end": 86690,
       "line": 1,
       "raw": "\"Critical Effectiveness\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86798:86803:978ea7af39ad",
@@ -16967,13 +17003,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Max Health",
-      "translation": "",
+      "translation": "最大生命",
       "start": 86954,
       "end": 86966,
       "line": 1,
       "raw": "\"Max Health\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:86979:86988:bce8cf990550",
@@ -16981,13 +17019,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Evasion",
-      "translation": "",
+      "translation": "闪避",
       "start": 86979,
       "end": 86988,
       "line": 1,
       "raw": "\"Evasion\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87003:87010:b1fc5d10fc8c",
@@ -16995,13 +17035,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Armor",
-      "translation": "",
+      "translation": "护甲",
       "start": 87003,
       "end": 87010,
       "line": 1,
       "raw": "\"Armor\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87023:87040:aed71dc6fe68",
@@ -17009,13 +17051,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Physical Resist",
-      "translation": "",
+      "translation": "物理抗性",
       "start": 87023,
       "end": 87040,
       "line": 1,
       "raw": "\"Physical Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87059:87068:5abdfa5930d6",
@@ -17023,13 +17067,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Warding",
-      "translation": "",
+      "translation": "守护",
       "start": 87059,
       "end": 87068,
       "line": 1,
       "raw": "\"Warding\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87083:87097:02f8e0621fd5",
@@ -17037,13 +17083,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Magic Resist",
-      "translation": "",
+      "translation": "魔法抗性",
       "start": 87083,
       "end": 87097,
       "line": 1,
       "raw": "\"Magic Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87113:87120:fe7f55b8bf68",
@@ -17051,13 +17099,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Focus",
-      "translation": "",
+      "translation": "专注",
       "start": 87113,
       "end": 87120,
       "line": 1,
       "raw": "\"Focus\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87133:87148:f69090455f27",
@@ -17065,13 +17115,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Mental Resist",
-      "translation": "",
+      "translation": "精神抗性",
       "start": 87133,
       "end": 87148,
       "line": 1,
       "raw": "\"Mental Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87165:87167:da39a3ee5e6b",
@@ -17135,13 +17187,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Acid Resist",
-      "translation": "",
+      "translation": "酸蚀抗性",
       "start": 87181,
       "end": 87194,
       "line": 1,
       "raw": "\"Acid Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87209:87224:346696bb639b",
@@ -17149,13 +17203,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Blight Resist",
-      "translation": "",
+      "translation": "枯萎抗性",
       "start": 87209,
       "end": 87224,
       "line": 1,
       "raw": "\"Blight Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87241:87258:ec442cd81d2b",
@@ -17163,13 +17219,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Crushing Resist",
-      "translation": "",
+      "translation": "粉碎抗性",
       "start": 87241,
       "end": 87258,
       "line": 1,
       "raw": "\"Crushing Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87277:87290:7ca72925c673",
@@ -17177,13 +17235,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Fire Resist",
-      "translation": "",
+      "translation": "火焰抗性",
       "start": 87277,
       "end": 87290,
       "line": 1,
       "raw": "\"Fire Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87305:87319:63fc851f9d90",
@@ -17191,13 +17251,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Frost Resist",
-      "translation": "",
+      "translation": "冰霜抗性",
       "start": 87305,
       "end": 87319,
       "line": 1,
       "raw": "\"Frost Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87335:87348:7e0c5c5202bf",
@@ -17205,13 +17267,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Holy Resist",
-      "translation": "",
+      "translation": "神圣抗性",
       "start": 87335,
       "end": 87348,
       "line": 1,
       "raw": "\"Holy Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87363:87383:25a6c5b7533d",
@@ -17219,13 +17283,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Penetrating Resist",
-      "translation": "",
+      "translation": "穿刺抗性",
       "start": 87363,
       "end": 87383,
       "line": 1,
       "raw": "\"Penetrating Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87405:87419:7f277c29e1a1",
@@ -17233,13 +17299,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Storm Resist",
-      "translation": "",
+      "translation": "风暴抗性",
       "start": 87405,
       "end": 87419,
       "line": 1,
       "raw": "\"Storm Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87435:87449:41c2976eaeb3",
@@ -17247,13 +17315,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Tease Resist",
-      "translation": "",
+      "translation": "挑逗抗性",
       "start": 87435,
       "end": 87449,
       "line": 1,
       "raw": "\"Tease Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87465:87478:efcfbb7cee93",
@@ -17261,13 +17331,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Drug Resist",
-      "translation": "",
+      "translation": "药物抗性",
       "start": 87465,
       "end": 87478,
       "line": 1,
       "raw": "\"Drug Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87493:87511:d41fc3a98d07",
@@ -17275,13 +17347,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Pheromone Resist",
-      "translation": "",
+      "translation": "信息素抗性",
       "start": 87493,
       "end": 87511,
       "line": 1,
       "raw": "\"Pheromone Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87531:87547:dfe4d272869b",
@@ -17289,13 +17363,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Fatigue Resist",
-      "translation": "",
+      "translation": "疲劳抗性",
       "start": 87531,
       "end": 87547,
       "line": 1,
       "raw": "\"Fatigue Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87565:87578:99350750ad6f",
@@ -17303,13 +17379,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Mind Resist",
-      "translation": "",
+      "translation": "心灵抗性",
       "start": 87565,
       "end": 87578,
       "line": 1,
       "raw": "\"Mind Resist\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87676:87681:978ea7af39ad",
@@ -17387,13 +17465,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Corruption",
-      "translation": "",
+      "translation": "腐化",
       "start": 87829,
       "end": 87841,
       "line": 1,
       "raw": "\"Corruption\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87859:87867:65be656d2ee1",
@@ -17401,13 +17481,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Libido",
-      "translation": "",
+      "translation": "性欲",
       "start": 87859,
       "end": 87867,
       "line": 1,
       "raw": "\"Libido\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:87956:87966:1f066b9f8990",
@@ -17611,13 +17693,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Class",
-      "translation": "",
+      "translation": "职业",
       "start": 88884,
       "end": 88891,
       "line": 1,
       "raw": "\"Class\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:88897:88904:86b4ba2ff945",
@@ -17639,13 +17723,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Sexual",
-      "translation": "",
+      "translation": "性相关",
       "start": 88910,
       "end": 88918,
       "line": 1,
       "raw": "\"Sexual\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:88924:88931:6e6a6f2086bb",
@@ -17653,13 +17739,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Other",
-      "translation": "",
+      "translation": "其他",
       "start": 88924,
       "end": 88931,
       "line": 1,
       "raw": "\"Other\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:88941:88953:ede8aa1dfff0",
@@ -17919,13 +18007,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Femininity",
-      "translation": "",
+      "translation": "女性化",
       "start": 89577,
       "end": 89589,
       "line": 1,
       "raw": "\"Femininity\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89611:89629:f13166f290ff",
@@ -17947,13 +18037,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Height (in)",
-      "translation": "",
+      "translation": "身高（英寸）",
       "start": 89630,
       "end": 89643,
       "line": 1,
       "raw": "\"Height (in)\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89676:89682:376990dbb495",
@@ -17961,13 +18053,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Tone",
-      "translation": "",
+      "translation": "肌肉线条",
       "start": 89676,
       "end": 89682,
       "line": 1,
       "raw": "\"Tone\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89698:89709:463551584181",
@@ -17989,13 +18083,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Thickness",
-      "translation": "",
+      "translation": "厚实程度",
       "start": 89710,
       "end": 89721,
       "line": 1,
       "raw": "\"Thickness\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89736:89750:18a858652c14",
@@ -18003,13 +18099,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Belly Rating",
-      "translation": "",
+      "translation": "腹部评级",
       "start": 89736,
       "end": 89750,
       "line": 1,
       "raw": "\"Belly Rating\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89769:89782:35d166d1c437",
@@ -18017,13 +18115,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Butt Rating",
-      "translation": "",
+      "translation": "臀部评级",
       "start": 89769,
       "end": 89782,
       "line": 1,
       "raw": "\"Butt Rating\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89800:89812:4af3d50d97a6",
@@ -18031,13 +18131,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Hip Rating",
-      "translation": "",
+      "translation": "髋部评级",
       "start": 89800,
       "end": 89812,
       "line": 1,
       "raw": "\"Hip Rating\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89829:89841:8b47cdc8b97d",
@@ -18045,13 +18147,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Lip Rating",
-      "translation": "",
+      "translation": "嘴唇评级",
       "start": 89829,
       "end": 89841,
       "line": 1,
       "raw": "\"Lip Rating\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:89941:89946:978ea7af39ad",
@@ -18129,13 +18233,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Anal Capacity",
-      "translation": "",
+      "translation": "肛门容量",
       "start": 90099,
       "end": 90114,
       "line": 1,
       "raw": "\"Anal Capacity\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90134:90150:801960c2d372",
@@ -18143,13 +18249,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Anal Looseness",
-      "translation": "",
+      "translation": "肛门松弛度",
       "start": 90134,
       "end": 90150,
       "line": 1,
       "raw": "\"Anal Looseness\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90171:90181:00ef4a5381b7",
@@ -18157,13 +18265,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Feracity",
-      "translation": "",
+      "translation": "野性度",
       "start": 90171,
       "end": 90181,
       "line": 1,
       "raw": "\"Feracity\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90197:90199:da39a3ee5e6b",
@@ -18381,13 +18491,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Current Cum (ml)",
-      "translation": "",
+      "translation": "当前精液量（ml）",
       "start": 90420,
       "end": 90438,
       "line": 1,
       "raw": "\"Current Cum (ml)\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90450:90469:d62aad6b6c27",
@@ -18395,13 +18507,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Cum Capacity (ml)",
-      "translation": "",
+      "translation": "精液容量（ml）",
       "start": 90450,
       "end": 90469,
       "line": 1,
       "raw": "\"Cum Capacity (ml)\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90483:90501:8fbaa0994281",
@@ -18409,13 +18523,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Cum Rate (ml/hr)",
-      "translation": "",
+      "translation": "产精速率（ml/小时）",
       "start": 90483,
       "end": 90501,
       "line": 1,
       "raw": "\"Cum Rate (ml/hr)\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90519:90529:d57e8ca822a1",
@@ -18423,13 +18539,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Virility",
-      "translation": "",
+      "translation": "生育力",
       "start": 90519,
       "end": 90529,
       "line": 1,
       "raw": "\"Virility\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90573:90575:da39a3ee5e6b",
@@ -18493,13 +18611,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Vaginal Wetness",
-      "translation": "",
+      "translation": "阴道湿润度",
       "start": 90589,
       "end": 90606,
       "line": 1,
       "raw": "\"Vaginal Wetness\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90628:90647:9777374ab45b",
@@ -18507,13 +18627,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Vaginal Looseness",
-      "translation": "",
+      "translation": "阴道松弛度",
       "start": 90628,
       "end": 90647,
       "line": 1,
       "raw": "\"Vaginal Looseness\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90671:90689:17becda28f07",
@@ -18535,13 +18657,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Fertility",
-      "translation": "",
+      "translation": "生育力",
       "start": 90711,
       "end": 90722,
       "line": 1,
       "raw": "\"Fertility\"",
       "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "curatedReason": "disabled_for_103_curated_safety",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:90819:90827:37eca5751d1f",
@@ -22579,13 +22703,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": false,
       "original": "Powers",
-      "translation": "",
+      "translation": "能力",
       "start": 110852,
       "end": 110860,
       "line": 1,
       "raw": "\"Powers\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:110926:110933:1af5ad4acb2d",
@@ -23103,13 +23229,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Powers",
-      "translation": "",
+      "translation": "能力",
       "start": 113013,
       "end": 113021,
       "line": 1,
       "raw": "\"Powers\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:113022:113029:2c5d5b88672d",
@@ -23425,13 +23553,15 @@
       "category": "unknown",
       "shouldTranslate": false,
       "original": "Powers",
-      "translation": "",
+      "translation": "能力",
       "start": 114892,
       "end": 114900,
       "line": 1,
       "raw": "\"Powers\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:114924:114930:6325f8c63097",
@@ -52588,13 +52718,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Powers:",
-      "translation": "",
+      "translation": "能力：",
       "start": 254287,
       "end": 254296,
       "line": 1,
       "raw": "\"Powers:\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:254314:254319:26021f1f4700",
@@ -52759,13 +52891,15 @@
       "category": "possible_text",
       "shouldTranslate": false,
       "original": "Powers:",
-      "translation": "",
+      "translation": "能力：",
       "start": 255181,
       "end": 255190,
       "line": 1,
       "raw": "\"Powers:\"",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "updateStatus": "new_in_version",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "103.b7dfd04c3388c4cb1d0b.js:255501:255509:37eca5751d1f",
