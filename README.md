@@ -110,6 +110,7 @@ translate_each_file会调用ollama_translate_v2文件。通过修改ollama_trans
 ### 更新日志
 
 <details><summary>点击展开</summary>
+0.1.5a COC2 0.9.0版本673.9abf298e57c2943b15bf.js约剩余20%内容，其余内容翻译完毕<br>
 0.1.1a COC2 0.9.0版本除673.9abf298e57c2943b15bf.js以外均翻译完成<br>
 0.1.0a COC2 0.9.0版本基本汉化完成
 
