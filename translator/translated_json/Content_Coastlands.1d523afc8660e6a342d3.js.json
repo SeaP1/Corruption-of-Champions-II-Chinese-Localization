@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_Coastlands.1d523afc8660e6a342d3.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_Coastlands.1d523afc8660e6a342d3.js",
   "sourceSha1": "6d20839dabb8d4f805d32150009f66dc2121b722",
   "migratedFrom": [
     "Content_Coastlands.1d523afc8660e6a342d3.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:09.370Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:19.440Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 558
   },

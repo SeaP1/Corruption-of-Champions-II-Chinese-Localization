@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_Followers.de64b10269e483e3defb.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_Followers.de64b10269e483e3defb.js",
   "sourceSha1": "df49127be280c9693ee4cd8dd37381e1163f9cdc",
   "migratedFrom": [
     "Content_Followers.de64b10269e483e3defb.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:10.727Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:20.342Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 100
   },

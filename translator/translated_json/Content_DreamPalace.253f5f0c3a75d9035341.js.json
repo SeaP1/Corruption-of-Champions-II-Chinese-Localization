@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_DreamPalace.253f5f0c3a75d9035341.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_DreamPalace.253f5f0c3a75d9035341.js",
   "sourceSha1": "bf3c8d18cc3de5c1206b87c1ed44101e4c3ab43e",
   "migratedFrom": [
     "Content_DreamPalace.253f5f0c3a75d9035341.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:10.256Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:20.004Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 187
   },

@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_HornetHive.d8d727fa342a416527f5.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_HornetHive.d8d727fa342a416527f5.js",
   "sourceSha1": "60ea0ffd41b5acb1ae6d053c99b67f9ff1c9a681",
   "migratedFrom": [
     "Content_HornetHive.d8d727fa342a416527f5.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:12.542Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:21.547Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 572
   },
@@ -51,15 +51,17 @@
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:478:612:b14754e7ad8a",
       "file": "Content_HornetHive.d8d727fa342a416527f5.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
-      "translation": "尝试扩展非可迭代对象失败。\n要使一个对象具备可迭代性，非数组对象必须拥有 [Symbol.iterator]() 方法。",
+      "translation": "",
       "start": 478,
       "end": 612,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:720:731:d5d4cd07616a",
@@ -91,15 +93,17 @@
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:1044:1183:7ca7645a1df9",
       "file": "Content_HornetHive.d8d727fa342a416527f5.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
-      "translation": "尝试分解非可迭代对象时出现错误。\n要使一个对象具备可迭代性，该对象必须拥有 [Symbol.iterator]() 方法。",
+      "translation": "",
       "start": 1044,
       "end": 1183,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:1214:1222:ecb252044b5e",
@@ -7095,15 +7099,17 @@
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:353362:353501:7ca7645a1df9",
       "file": "Content_HornetHive.d8d727fa342a416527f5.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
-      "translation": "尝试分解非可迭代对象时出现错误。\n要使一个对象具备可迭代性，该对象必须拥有 [Symbol.iterator]() 方法。",
+      "translation": "",
       "start": 353362,
       "end": 353501,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:353531:353539:ecb252044b5e",
@@ -10733,15 +10739,17 @@
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:528320:528454:b14754e7ad8a",
       "file": "Content_HornetHive.d8d727fa342a416527f5.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.",
-      "translation": "尝试扩展非可迭代对象失败。\n要使一个对象具备可迭代性，非数组对象必须拥有 [Symbol.iterator]() 方法。",
+      "translation": "",
       "start": 528320,
       "end": 528454,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:528782:528788:bc981983e7f5",
@@ -12810,7 +12818,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n            With an escort of hornets and the hive's prince, it doesn't take you long to reach the Hatchery. Egg-filled bees, outsiders, and even the occasional plantgirl dot the room under the watchful eye of drones and hornet girls alike. Nyze escorts you personally into a backroom, passing into a chamber with a huge bed and tons of pillows.\n            \n            \"Okay,\" he whispers soothingly, guiding you down before letting the girls handle you. \"Just... s-stay calm and... I'll uh... be right here.\"\n            \n            One of the outsiders isn't far behind your group; a [rand\n                |orc\n                |taeleer\n                |lupine\n                |wyld elf\n                |pale elf\n                |human\n            ] woman with an egg-stuffed belly, she approaches and bows her head to you whilst Nyze arranges the soft cushions beneath you. \"Hello, [pc.mf\n                |sir\n                |madam\n            ]. I'll be acting as midwife since my wife says Prince Nyze needs hel-\"\n            \n            The loud buzz of the child's father interrupts her, the drone prince huffing and putting his hands over your ears.\n            \n            \"Ignore her. Just relax and have a healthy child, o-okay!?\"\n            \n            ",
-      "translation": "在黄蜂的护卫以及蜂群的“王子”的引领下，你很快就能到达孵化室。房间里到处都是装满卵的蜜蜂、外来者，偶尔还能看到一些植物少女，而所有这些都在无人机和黄蜂少女的严密监视之下。 尼泽亲自将你引领到一个僻静的房间，那里有一张巨大的床和许多枕头。\n\n“好了，”他轻声说道，一边安抚你，一边引导你躺下，然后让那些女孩来照顾你。“放松吧。…保持冷静，我…会马上过来。”\n\n有个外人在你们的队伍不远处；一个…… [rand\n                |兽人\n                |塔利尔\n                |羽扇豆\n                |野精灵\n                |苍白精灵\n                |人类\n            ] 那个肚子鼓得像装了鸡蛋的女人走了过来，向你鞠躬致意，而尼泽则在你身下铺好了柔软的垫子。“你好，”她说道。 [pc.mf\n                |先生\n                |夫人\n            ]既然我妻子说尼泽王子需要帮助，那我就来当这个‘助产士’吧……”\n\n然而，孩子父亲的响亮噪音打断了她的话，那个无人机形态的王子气喘吁吁地用手捂住了她的耳朵。\n\n“别理她，放松下来，好好生下一个健康的宝宝，好吗？！",
+      "translation": "在黄蜂的护卫以及蜂群的“王子”的引领下，你很快就能到达孵化室。房间里到处都是装满卵的蜜蜂、外来者，偶尔还能看到一些植物少女，而所有这些都在无人机和黄蜂少女的严密监视之下。 尼泽亲自将你引领到一个僻静的房间，那里有一张巨大的床和许多枕头。\n\n“好了，”他轻声说道，一边安抚你，一边引导你躺下，然后让那些女孩来照顾你。“放松吧。…保持冷静，我…会马上过来。”\n\n有个外人在你们的队伍不远处；一个…… [rand\n                |兽人\n                |塔利尔\n                |狼人\n                |野精灵\n                |苍白精灵\n                |人类\n            ] 那个肚子鼓得像装了鸡蛋的女人走了过来，向你鞠躬致意，而尼泽则在你身下铺好了柔软的垫子。“你好，”她说道。 [pc.mf\n                |先生\n                |夫人\n            ]既然我妻子说尼泽王子需要帮助，那我就来当这个‘助产士’吧……”\n\n然而，孩子父亲的响亮噪音打断了她的话，那个无人机形态的王子气喘吁吁地用手捂住了她的耳朵。\n\n“别理她，放松下来，好好生下一个健康的宝宝，好吗？！",
       "start": 614290,
       "end": 615592,
       "line": 1,

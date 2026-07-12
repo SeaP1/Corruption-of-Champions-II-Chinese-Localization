@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_DragonLair.a22c870484febce6f9f2.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_DragonLair.a22c870484febce6f9f2.js",
   "sourceSha1": "24137d68840f35fdaf0ac7a5263258cb309cc483",
   "migratedFrom": [
     "Content_DragonLair.a22c870484febce6f9f2.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:10.223Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:19.977Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 507
   },

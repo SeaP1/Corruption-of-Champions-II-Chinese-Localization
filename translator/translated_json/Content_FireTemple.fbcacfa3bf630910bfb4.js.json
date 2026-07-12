@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_FireTemple.fbcacfa3bf630910bfb4.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_FireTemple.fbcacfa3bf630910bfb4.js",
   "sourceSha1": "9ea2a17542635166e43e9e73bb85bc72b904ce51",
   "migratedFrom": [
     "Content_FireTemple.fbcacfa3bf630910bfb4.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:10.720Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:20.334Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 126
   },

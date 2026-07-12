@@ -1,11 +1,11 @@
 {
-  "sourceFile": "/root/autodl-tmp/resources/app/Content_Starhome.f5487356c1f7239c519d.js",
+  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_Starhome.f5487356c1f7239c519d.js",
   "sourceSha1": "42ae9f6521fa6146741187c9f1ed61ec30e9d192",
   "migratedFrom": [
     "Content_Starhome.f5487356c1f7239c519d.js.json"
   ],
-  "updateGeneratedAt": "2026-07-04T18:25:15.220Z",
-  "updateMode": "in-place",
+  "updateGeneratedAt": "2026-07-12T14:45:23.310Z",
+  "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 219
   },
