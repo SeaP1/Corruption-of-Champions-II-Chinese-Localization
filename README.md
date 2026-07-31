@@ -90,9 +90,7 @@ translate_each_file会调用ollama_translate_v2文件。通过修改ollama_trans
 
 ### 版本号规则
 
-汉化版本号的基本结构是COC2-x.y.z，如COC2-0.1.0a
-
-游戏版本号的基本结构是 `{游戏版本号}-COC2-{汉化版本号}`，如 `0.8.38-COC2-0.1.0a`
+待填
 
 ### 文件结构
 
