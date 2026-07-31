@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_DreamPalace.253f5f0c3a75d9035341.js",
+  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_DreamPalace.253f5f0c3a75d9035341.js",
   "sourceSha1": "bf3c8d18cc3de5c1206b87c1ed44101e4c3ab43e",
   "migratedFrom": [
     "Content_DreamPalace.253f5f0c3a75d9035341.js.json"
   ],
-  "updateGeneratedAt": "2026-07-12T14:45:20.004Z",
+  "updateGeneratedAt": "2026-07-30T09:34:21.913Z",
   "updateMode": "preview",
   "keptByReason": {
     "carried_from_old_json": 187
@@ -3032,7 +3032,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Oh yeah, you definitely want a big[pc.hasRealCock|ger|] dick flopping between your legs while Kas fucks you. What's sexy for her is sexy for you.",
-      "translation": "哦，对了，你肯定需要一个大的……[pc.hasRealCock|硬性要求：只输出简体中文译文；不要解释；不要保留英文句子。|] 当卡丝与你发生性关系时，你的阴茎会在你的双腿间晃动。对她来说性感的东西，对你来说也同样性感。",
+      "translation": "哦，对了，你肯定需要一个大的……[pc.hasRealCock||] 当卡丝与你发生性关系时，你的阴茎会在你的双腿间晃动。对她来说性感的东西，对你来说也同样性感。",
       "start": 168948,
       "end": 169095,
       "line": 1,

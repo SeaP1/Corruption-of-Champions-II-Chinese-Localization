@@ -1,23 +1,23 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\103.f0dcab9d4d99e710a5cb.js",
+  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\103.f0dcab9d4d99e710a5cb.js",
   "sourceSha1": "92a7abd6316f779b0f4053111b99d06709bf89cb",
   "migratedFrom": [
-    "103.b7dfd04c3388c4cb1d0b.js.json"
+    "103.f0dcab9d4d99e710a5cb.js.json"
   ],
-  "updateGeneratedAt": "2026-07-12T14:45:18.418Z",
+  "updateGeneratedAt": "2026-07-30T09:34:20.619Z",
   "updateMode": "preview",
   "keptByReason": {
-    "generic_possible_text": 493,
-    "carried_from_old_json": 259,
+    "generic_possible_text": 494,
+    "carried_from_old_json": 258,
     "generic_unknown_visible": 14,
     "generic_property_text": 1,
     "generic_button_or_tooltip": 60,
     "generic_dialogue": 4
   },
   "total": 7735,
-  "shouldTranslate": 831,
-  "inherited": 301,
-  "newlyAdded": 530,
+  "shouldTranslate": 245,
+  "inherited": 300,
+  "newlyAdded": 531,
   "byCategory": {
     "unknown": 3388,
     "possible_text": 4156,
@@ -135,8 +135,11 @@
       "end": 988,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:1018:1026:ecb252044b5e",
@@ -219,8 +222,11 @@
       "end": 1477,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:1582:1589:f32b67c7e263",
@@ -275,8 +281,11 @@
       "end": 1901,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:1961:2020:fc7b434fa775",
@@ -289,8 +298,11 @@
       "end": 2020,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:3752:3754:da39a3ee5e6b",
@@ -373,8 +385,11 @@
       "end": 3953,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:3979:3990:7c257c6a8cd5",
@@ -695,8 +710,11 @@
       "end": 6269,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:6353:6358:26021f1f4700",
@@ -2333,8 +2351,11 @@
       "end": 11233,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:11338:11345:f32b67c7e263",
@@ -2389,8 +2410,11 @@
       "end": 11657,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:11717:11776:fc7b434fa775",
@@ -2403,8 +2427,11 @@
       "end": 11776,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:11957:11967:c218e39efa2e",
@@ -2431,8 +2458,11 @@
       "end": 12060,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:12086:12097:7c257c6a8cd5",
@@ -2599,8 +2629,11 @@
       "end": 13456,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:13561:13568:f32b67c7e263",
@@ -2655,8 +2688,11 @@
       "end": 13880,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:13940:13999:fc7b434fa775",
@@ -2669,8 +2705,11 @@
       "end": 13999,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:14180:14190:c218e39efa2e",
@@ -2697,8 +2736,11 @@
       "end": 14283,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:14309:14320:7c257c6a8cd5",
@@ -3145,8 +3187,11 @@
       "end": 16184,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:16289:16296:f32b67c7e263",
@@ -3201,8 +3246,11 @@
       "end": 16608,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:16668:16727:fc7b434fa775",
@@ -3215,8 +3263,11 @@
       "end": 16727,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:16908:16918:c218e39efa2e",
@@ -3243,8 +3294,11 @@
       "end": 17011,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:17037:17048:7c257c6a8cd5",
@@ -3803,8 +3857,11 @@
       "end": 19073,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:19178:19185:f32b67c7e263",
@@ -3859,8 +3916,11 @@
       "end": 19497,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:19557:19616:fc7b434fa775",
@@ -3873,8 +3933,11 @@
       "end": 19616,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:19797:19807:c218e39efa2e",
@@ -3901,8 +3964,11 @@
       "end": 19900,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:19926:19937:7c257c6a8cd5",
@@ -4699,8 +4765,11 @@
       "end": 23090,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:23159:23218:fc7b434fa775",
@@ -4713,8 +4782,11 @@
       "end": 23218,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:23399:23409:c218e39efa2e",
@@ -4741,8 +4813,11 @@
       "end": 23502,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:23528:23539:7c257c6a8cd5",
@@ -4797,8 +4872,11 @@
       "end": 24198,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:24346:24366:a62241e77470",
@@ -5861,8 +5939,11 @@
       "end": 29017,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:29123:29130:f32b67c7e263",
@@ -5917,8 +5998,11 @@
       "end": 29447,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:29507:29566:fc7b434fa775",
@@ -5931,8 +6015,11 @@
       "end": 29566,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:29751:29761:c218e39efa2e",
@@ -5959,8 +6046,11 @@
       "end": 29854,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:29880:29891:7c257c6a8cd5",
@@ -6155,8 +6245,11 @@
       "end": 31366,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:31472:31479:f32b67c7e263",
@@ -6211,8 +6304,11 @@
       "end": 31796,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:31856:31915:fc7b434fa775",
@@ -6225,8 +6321,11 @@
       "end": 31915,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:32071:32078:f8e45b2be26b",
@@ -6365,8 +6464,11 @@
       "end": 32275,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:32301:32312:7c257c6a8cd5",
@@ -7023,8 +7125,11 @@
       "end": 35859,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:36075:36082:f32b67c7e263",
@@ -7079,8 +7184,11 @@
       "end": 36399,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:36459:36518:fc7b434fa775",
@@ -7093,8 +7201,11 @@
       "end": 36518,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:36703:36713:c218e39efa2e",
@@ -7121,8 +7232,11 @@
       "end": 36806,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:36832:36843:7c257c6a8cd5",
@@ -7177,8 +7291,11 @@
       "end": 37502,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:38333:38355:c9dcd864a8f5",
@@ -8073,8 +8190,11 @@
       "end": 41914,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:42284:42290:edee9402d198",
@@ -8157,8 +8277,11 @@
       "end": 42774,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:42843:42902:fc7b434fa775",
@@ -8171,8 +8294,11 @@
       "end": 42902,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:43083:43093:c218e39efa2e",
@@ -8199,8 +8325,11 @@
       "end": 43186,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:43212:43223:7c257c6a8cd5",
@@ -8255,8 +8384,11 @@
       "end": 43888,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:43962:43964:da39a3ee5e6b",
@@ -11265,8 +11397,11 @@
       "end": 60960,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:61020:61079:fc7b434fa775",
@@ -11279,8 +11414,11 @@
       "end": 61079,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:61314:61325:d5d4cd07616a",
@@ -11391,8 +11529,11 @@
       "end": 61872,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:62021:62031:c218e39efa2e",
@@ -11419,8 +11560,11 @@
       "end": 62124,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:62150:62161:7c257c6a8cd5",
@@ -11475,8 +11619,11 @@
       "end": 62814,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:62860:62868:37eca5751d1f",
@@ -12231,8 +12378,11 @@
       "end": 65971,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:66031:66090:fc7b434fa775",
@@ -12245,8 +12395,11 @@
       "end": 66090,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:66325:66336:d5d4cd07616a",
@@ -12357,8 +12510,11 @@
       "end": 66883,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:67196:67205:a9a96ec01949",
@@ -12567,8 +12723,11 @@
       "end": 67594,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:67620:67631:7c257c6a8cd5",
@@ -12623,8 +12782,11 @@
       "end": 68284,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:68330:68347:2c892b67bf1f",
@@ -13533,8 +13695,11 @@
       "end": 73127,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:73343:73350:f32b67c7e263",
@@ -13589,8 +13754,11 @@
       "end": 73667,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:73727:73786:fc7b434fa775",
@@ -13603,8 +13771,11 @@
       "end": 73786,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:73967:73976:4fc0e2bc8073",
@@ -13673,8 +13844,11 @@
       "end": 74269,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:74295:74306:7c257c6a8cd5",
@@ -13729,8 +13903,11 @@
       "end": 74965,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:75068:75077:4fc0e2bc8073",
@@ -15269,8 +15446,11 @@
       "end": 81604,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:82031:82038:f32b67c7e263",
@@ -15325,8 +15505,11 @@
       "end": 82355,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:82415:82474:fc7b434fa775",
@@ -15339,8 +15522,11 @@
       "end": 82474,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:82659:82669:c218e39efa2e",
@@ -15367,8 +15553,11 @@
       "end": 82762,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:82788:82799:7c257c6a8cd5",
@@ -15423,8 +15612,11 @@
       "end": 83452,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:83497:83508:55494bbf8932",
@@ -19021,8 +19213,11 @@
       "end": 93077,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:93137:93196:fc7b434fa775",
@@ -19035,8 +19230,11 @@
       "end": 93196,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:93384:93394:c218e39efa2e",
@@ -19063,8 +19261,11 @@
       "end": 93487,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:93513:93524:7c257c6a8cd5",
@@ -19119,8 +19320,11 @@
       "end": 94177,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:94222:94242:a62241e77470",
@@ -20281,8 +20485,11 @@
       "end": 99861,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:100077:100084:f32b67c7e263",
@@ -20337,8 +20544,11 @@
       "end": 100401,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:100461:100520:fc7b434fa775",
@@ -20351,8 +20561,11 @@
       "end": 100520,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:100701:100711:e04c712a3059",
@@ -20421,8 +20634,11 @@
       "end": 100996,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:101022:101033:7c257c6a8cd5",
@@ -20477,8 +20693,11 @@
       "end": 101692,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:101790:101800:e04c712a3059",
@@ -21863,8 +22082,11 @@
       "end": 108147,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:108207:108266:fc7b434fa775",
@@ -21877,8 +22099,11 @@
       "end": 108266,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:108443:108453:e5e55f46c63e",
@@ -21989,8 +22214,11 @@
       "end": 108697,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:108723:108734:7c257c6a8cd5",
@@ -22045,8 +22273,11 @@
       "end": 109387,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:109433:109443:770abe05e9a3",
@@ -22941,8 +23172,11 @@
       "end": 112702,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:112771:112830:fc7b434fa775",
@@ -22955,8 +23189,11 @@
       "end": 112830,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:112982:112990:eca701b5e1d8",
@@ -23053,8 +23290,11 @@
       "end": 113170,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:113196:113207:7c257c6a8cd5",
@@ -23109,8 +23349,11 @@
       "end": 113866,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:113952:113963:ef87ebdaff0f",
@@ -23571,8 +23814,11 @@
       "end": 116857,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:116917:116976:fc7b434fa775",
@@ -23585,8 +23831,11 @@
       "end": 116976,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:117161:117171:c218e39efa2e",
@@ -23613,8 +23862,11 @@
       "end": 117264,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:117290:117301:7c257c6a8cd5",
@@ -23669,8 +23921,11 @@
       "end": 117960,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:118035:118048:9fd1d981f3a9",
@@ -24089,8 +24344,11 @@
       "end": 121141,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:121273:121296:296002914837",
@@ -25797,8 +26055,11 @@
       "end": 129064,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:129124:129183:fc7b434fa775",
@@ -25811,8 +26072,11 @@
       "end": 129183,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:129368:129378:c218e39efa2e",
@@ -25839,8 +26103,11 @@
       "end": 129471,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:129497:129508:7c257c6a8cd5",
@@ -25895,8 +26162,11 @@
       "end": 130161,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:130207:130220:9fd1d981f3a9",
@@ -27617,8 +27887,11 @@
       "end": 138026,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:138086:138145:fc7b434fa775",
@@ -27631,8 +27904,11 @@
       "end": 138145,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:138330:138340:c218e39efa2e",
@@ -27659,8 +27935,11 @@
       "end": 138433,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:138459:138470:7c257c6a8cd5",
@@ -27715,8 +27994,11 @@
       "end": 139123,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:139169:139188:d337b6386caf",
@@ -29451,8 +29733,11 @@
       "end": 146585,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:146645:146704:fc7b434fa775",
@@ -29465,8 +29750,11 @@
       "end": 146704,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:146889:146899:c218e39efa2e",
@@ -29493,8 +29781,11 @@
       "end": 146992,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:147018:147029:7c257c6a8cd5",
@@ -29549,8 +29840,11 @@
       "end": 147688,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:147786:147799:740bcf4a77d4",
@@ -32755,8 +33049,11 @@
       "end": 160070,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:160130:160189:fc7b434fa775",
@@ -32769,8 +33066,11 @@
       "end": 160189,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:160374:160384:c218e39efa2e",
@@ -32797,8 +33097,11 @@
       "end": 160477,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:160503:160514:7c257c6a8cd5",
@@ -32853,8 +33156,11 @@
       "end": 161173,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:161248:161261:9fd1d981f3a9",
@@ -33707,8 +34013,11 @@
       "end": 165370,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:165428:165439:eb4028c8f455",
@@ -34533,8 +34842,11 @@
       "end": 169015,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:169442:169449:f32b67c7e263",
@@ -34589,8 +34901,11 @@
       "end": 169766,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:169835:169894:fc7b434fa775",
@@ -34603,8 +34918,11 @@
       "end": 169894,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:170075:170085:c218e39efa2e",
@@ -34631,8 +34949,11 @@
       "end": 170178,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:170204:170215:7c257c6a8cd5",
@@ -34687,8 +35008,11 @@
       "end": 170874,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:170991:171004:9fd1d981f3a9",
@@ -36227,8 +36551,11 @@
       "end": 177892,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:177952:178011:fc7b434fa775",
@@ -36241,8 +36568,11 @@
       "end": 178011,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:178246:178257:d5d4cd07616a",
@@ -36353,8 +36683,11 @@
       "end": 178804,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:179117:179126:a9a96ec01949",
@@ -36563,8 +36896,11 @@
       "end": 179515,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:179541:179552:7c257c6a8cd5",
@@ -36619,8 +36955,11 @@
       "end": 180205,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:180251:180268:2c892b67bf1f",
@@ -37375,8 +37714,11 @@
       "end": 184827,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:184887:184946:fc7b434fa775",
@@ -37389,8 +37731,11 @@
       "end": 184946,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:185131:185141:c218e39efa2e",
@@ -37417,8 +37762,11 @@
       "end": 185234,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:185260:185271:7c257c6a8cd5",
@@ -37473,8 +37821,11 @@
       "end": 185924,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:185970:185983:9fd1d981f3a9",
@@ -39153,8 +39504,11 @@
       "end": 193000,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:193060:193119:fc7b434fa775",
@@ -39167,8 +39521,11 @@
       "end": 193119,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:193304:193314:c218e39efa2e",
@@ -39195,8 +39552,11 @@
       "end": 193407,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:193433:193444:7c257c6a8cd5",
@@ -39251,8 +39611,11 @@
       "end": 194097,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:194143:194154:55494bbf8932",
@@ -39545,8 +39908,11 @@
       "end": 195680,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:195732:195737:26021f1f4700",
@@ -40147,8 +40513,11 @@
       "end": 198417,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:198509:198520:d5d4cd07616a",
@@ -40189,8 +40558,11 @@
       "end": 198783,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:198814:198822:ecb252044b5e",
@@ -40707,8 +41079,11 @@
       "end": 200639,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:200745:200752:f32b67c7e263",
@@ -40763,8 +41138,11 @@
       "end": 201069,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:201129:201188:fc7b434fa775",
@@ -40777,8 +41155,11 @@
       "end": 201188,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:201382:201392:c218e39efa2e",
@@ -40805,8 +41186,11 @@
       "end": 201485,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:201511:201522:7c257c6a8cd5",
@@ -40959,8 +41343,11 @@
       "end": 203597,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:203703:203710:f32b67c7e263",
@@ -41015,8 +41402,11 @@
       "end": 204027,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:204087:204146:fc7b434fa775",
@@ -41029,8 +41419,11 @@
       "end": 204146,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:204331:204341:c218e39efa2e",
@@ -41057,8 +41450,11 @@
       "end": 204434,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:204460:204471:7c257c6a8cd5",
@@ -42065,8 +42461,11 @@
       "end": 208295,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:208401:208408:f32b67c7e263",
@@ -42121,8 +42520,11 @@
       "end": 208725,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:208785:208844:fc7b434fa775",
@@ -42135,8 +42537,11 @@
       "end": 208844,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:209029:209039:c218e39efa2e",
@@ -42163,8 +42568,11 @@
       "end": 209132,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:209158:209169:7c257c6a8cd5",
@@ -42331,8 +42739,11 @@
       "end": 210509,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:210615:210622:f32b67c7e263",
@@ -42387,8 +42798,11 @@
       "end": 210939,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:210999:211058:fc7b434fa775",
@@ -42401,8 +42815,11 @@
       "end": 211058,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:211246:211250:0ee6c175ff20",
@@ -42443,8 +42860,11 @@
       "end": 211408,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:211434:211445:7c257c6a8cd5",
@@ -42793,8 +43213,11 @@
       "end": 213802,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:213862:213921:fc7b434fa775",
@@ -42807,8 +43230,11 @@
       "end": 213921,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:214106:214116:c218e39efa2e",
@@ -42835,8 +43261,11 @@
       "end": 214209,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:214235:214246:7c257c6a8cd5",
@@ -42891,8 +43320,11 @@
       "end": 214907,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:215191:215202:d5d4cd07616a",
@@ -43003,8 +43435,11 @@
       "end": 215749,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:215973:215995:c9dcd864a8f5",
@@ -44053,8 +44488,11 @@
       "end": 219498,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:219558:219617:fc7b434fa775",
@@ -44067,8 +44505,11 @@
       "end": 219617,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:219802:219812:c218e39efa2e",
@@ -44095,8 +44536,11 @@
       "end": 219905,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:219931:219942:7c257c6a8cd5",
@@ -44151,8 +44595,11 @@
       "end": 220595,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:220641:220652:d80a05355eb7",
@@ -45551,8 +45998,11 @@
       "end": 223822,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:223928:223935:f32b67c7e263",
@@ -45607,8 +46057,11 @@
       "end": 224252,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:224312:224371:fc7b434fa775",
@@ -45621,8 +46074,11 @@
       "end": 224371,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:224556:224566:c218e39efa2e",
@@ -45649,8 +46105,11 @@
       "end": 224659,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:224685:224696:7c257c6a8cd5",
@@ -46377,8 +46836,11 @@
       "end": 227040,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:227148:227159:d5d4cd07616a",
@@ -46419,8 +46881,11 @@
       "end": 227611,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:227642:227650:ecb252044b5e",
@@ -47917,8 +48382,11 @@
       "end": 232230,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:232336:232343:f32b67c7e263",
@@ -47973,8 +48441,11 @@
       "end": 232660,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:232720:232779:fc7b434fa775",
@@ -47987,8 +48458,11 @@
       "end": 232779,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:232964:232974:c218e39efa2e",
@@ -48015,8 +48489,11 @@
       "end": 233067,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:233093:233104:7c257c6a8cd5",
@@ -48267,8 +48744,11 @@
       "end": 235162,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:235253:235256:b858cb282617",
@@ -49345,8 +49825,11 @@
       "end": 239932,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:240038:240045:f32b67c7e263",
@@ -49401,8 +49884,11 @@
       "end": 240362,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:240422:240481:fc7b434fa775",
@@ -49415,8 +49901,11 @@
       "end": 240481,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:240666:240676:c218e39efa2e",
@@ -49443,8 +49932,11 @@
       "end": 240769,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:240795:240806:7c257c6a8cd5",
@@ -49709,8 +50201,11 @@
       "end": 242410,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:242470:242529:fc7b434fa775",
@@ -49723,8 +50218,11 @@
       "end": 242529,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:242714:242724:c218e39efa2e",
@@ -49751,8 +50249,11 @@
       "end": 242817,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:242843:242854:7c257c6a8cd5",
@@ -49807,8 +50308,11 @@
       "end": 243513,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:243689:243708:d337b6386caf",
@@ -50255,8 +50759,11 @@
       "end": 245465,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:245681:245688:f32b67c7e263",
@@ -50311,8 +50818,11 @@
       "end": 246005,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:246065:246124:fc7b434fa775",
@@ -50325,8 +50835,11 @@
       "end": 246124,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:246309:246319:c218e39efa2e",
@@ -50353,8 +50866,11 @@
       "end": 246412,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:246438:246449:7c257c6a8cd5",
@@ -50409,8 +50925,11 @@
       "end": 247102,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:247239:247242:3a52ce780950",
@@ -51137,8 +51656,11 @@
       "end": 250671,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:250731:250790:fc7b434fa775",
@@ -51151,8 +51673,11 @@
       "end": 250790,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:251026:251031:26021f1f4700",
@@ -51445,8 +51970,11 @@
       "end": 251804,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:251830:251841:7c257c6a8cd5",
@@ -51501,8 +52029,11 @@
       "end": 252499,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:252568:252581:ccd47ef93c34",
@@ -52117,8 +52648,11 @@
       "end": 255105,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:255175:255178:e9d71f5ee7c9",
@@ -52929,8 +53463,11 @@
       "end": 258464,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:258680:258687:f32b67c7e263",
@@ -52985,8 +53522,11 @@
       "end": 259004,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:259064:259123:fc7b434fa775",
@@ -52999,8 +53539,11 @@
       "end": 259123,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:259308:259318:c218e39efa2e",
@@ -53027,8 +53570,11 @@
       "end": 259411,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:259437:259448:7c257c6a8cd5",
@@ -53083,8 +53629,11 @@
       "end": 260107,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:260168:260176:7c501e0d2e74",
@@ -53433,8 +53982,11 @@
       "end": 263528,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:263597:263656:fc7b434fa775",
@@ -53447,8 +53999,11 @@
       "end": 263656,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:263836:263839:b6589fc6ab0d",
@@ -53783,8 +54338,11 @@
       "end": 265506,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:265532:265543:7c257c6a8cd5",
@@ -53839,8 +54397,11 @@
       "end": 266204,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:266324:266331:000e793db70c",
@@ -54133,8 +54694,11 @@
       "end": 268325,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:268417:268425:ecb252044b5e",
@@ -102685,8 +103249,11 @@
       "end": 393923,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:394147:394158:d5d4cd07616a",
@@ -102797,8 +103364,11 @@
       "end": 394705,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:395737:395744:f32b67c7e263",
@@ -102825,8 +103395,11 @@
       "end": 395933,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:396034:396036:da39a3ee5e6b",
@@ -104687,8 +105260,11 @@
       "end": 410712,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:410743:410751:ecb252044b5e",
@@ -104785,8 +105361,11 @@
       "end": 411643,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:412259:412268:71bcd582d7e8",
@@ -105191,8 +105770,11 @@
       "end": 414753,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:415113:415127:6eb0d9634da2",
@@ -107235,8 +107817,11 @@
       "end": 429896,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:429956:430015:fc7b434fa775",
@@ -107249,8 +107834,11 @@
       "end": 430015,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:430196:430206:c218e39efa2e",
@@ -107277,8 +107865,11 @@
       "end": 430299,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:430325:430336:7c257c6a8cd5",
@@ -107333,8 +107924,11 @@
       "end": 430991,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_class_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:431078:431097:c0f5002b0f23",
@@ -108202,9 +108796,11 @@
       "line": 1,
       "raw": "\"Failed to execute 'dispatchEvent' on 'EventTarget': parameter 1 is not of type 'Event'.\"",
       "curatedReason": "103_general_safe_visible",
-      "updateStatus": "inherited_translation",
+      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "translatedAt": "2026-07-30T10:30:12.186Z",
+      "disabledReason": "dangerous_js_key_or_runtime_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:435847:435858:d5d4cd07616a",
@@ -108245,8 +108841,11 @@
       "end": 436241,
       "line": 1,
       "raw": "\"Invalid attempt to iterate non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:436580:436591:d5d4cd07616a",
@@ -108287,8 +108886,11 @@
       "end": 437042,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "new_in_version"
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "103.f0dcab9d4d99e710a5cb.js:437066:437076:c218e39efa2e",
@@ -108319,6 +108921,39 @@
       "curatedReason": "disabled_for_103_curated_safety"
     }
   ],
-  "coreFlagsSyncedFromCuratedAt": "2026-07-12T15:09:15.776Z",
-  "coreFlagsSyncedFromCuratedBackupDir": "D:\\Codex\\COC2 0.91\\translator\\translated_json_backup_before_core_flag_sync_20260712_230915"
+  "curated": {
+    "generatedAt": "2026-07-30T09:54:32.467Z",
+    "source": "D:\\Codex\\COC2 0.92\\translator\\extracted_json\\103.f0dcab9d4d99e710a5cb.js.json",
+    "sourceJs": "D:\\Codex\\COC2 0.92\\resources\\app\\103.f0dcab9d4d99e710a5cb.js",
+    "sourceJsBytes": 437274,
+    "policy": "Curated visible UI/configuration text from 103 core chunk. Keeps options UI, confirm popups, concise buttons/headings/descriptions; disables runtime errors, paths, CSS/classes, React internals, and code fragments.",
+    "kept": 245,
+    "disabled": 7490,
+    "keptByReason": {
+      "103_general_safe_visible": 98,
+      "103_confirm_or_popup": 8,
+      "103_options_area": 139
+    },
+    "keptByCategory": {
+      "possible_text": 117,
+      "button_or_tooltip": 59,
+      "unknown": 69
+    },
+    "windows": {
+      "optionArea": [
+        148000,
+        159200
+      ],
+      "confirmWindows": [
+        [
+          127000,
+          128000
+        ],
+        [
+          165700,
+          168100
+        ]
+      ]
+    }
+  }
 }

@@ -1,18 +1,19 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.91\\resources\\app\\Content_HornetHive.d8d727fa342a416527f5.js",
+  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_HornetHive.d8d727fa342a416527f5.js",
   "sourceSha1": "60ea0ffd41b5acb1ae6d053c99b67f9ff1c9a681",
   "migratedFrom": [
     "Content_HornetHive.d8d727fa342a416527f5.js.json"
   ],
-  "updateGeneratedAt": "2026-07-12T14:45:21.547Z",
+  "updateGeneratedAt": "2026-07-30T09:34:23.254Z",
   "updateMode": "preview",
   "keptByReason": {
-    "carried_from_old_json": 572
+    "generic_possible_text": 4,
+    "carried_from_old_json": 568
   },
   "total": 1108,
   "shouldTranslate": 572,
-  "inherited": 572,
-  "newlyAdded": 0,
+  "inherited": 568,
+  "newlyAdded": 4,
   "byCategory": {
     "unknown": 346,
     "possible_text": 92,
@@ -58,10 +59,11 @@
       "end": 612,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:720:731:d5d4cd07616a",
@@ -100,10 +102,11 @@
       "end": 1183,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:1214:1222:ecb252044b5e",
@@ -7106,10 +7109,11 @@
       "end": 353501,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:353531:353539:ecb252044b5e",
@@ -10746,10 +10750,11 @@
       "end": 528454,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "disabledReason": "runtime_iterable_error"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:528782:528788:bc981983e7f5",
