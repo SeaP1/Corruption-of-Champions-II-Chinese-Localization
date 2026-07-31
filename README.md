@@ -34,7 +34,7 @@
 
 **游戏作者** 
 
-[作者博客(待填)](这里填链接) · [英文游戏维基(待填)](这里填链接) · [中文游戏维基(目前暂无)](这里填链接) · [官方 Discord(待填)](这里填链接)
+[作者博客](https://www.fenoxo.com/) · [英文游戏维基](https://wiki.smutosaur.us/CoC2/Main_Page) · [中文游戏维基](https://coc2wiki.kefengcreative.cc)
 
 ### 关于本仓库
 
