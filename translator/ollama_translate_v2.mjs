@@ -8,8 +8,11 @@ const translationMemory = new Map();
 const translationMemoryConflicts = new Set();
 
 function rowsOf(doc) { return Array.isArray(doc?.rows) ? doc.rows : []; }
+function isDisabledCodeRow(row) {
+  return Boolean(row && (row.translationStatus === "disabled_code_key" || row.disabledReason));
+}
 function usableTranslation(row) {
-  return row && row.shouldTranslate !== false && typeof row.original === "string" && row.original.trim() && typeof row.translation === "string" && row.translation.trim() && row.translationStatus !== "failed" && !row.translationError;
+  return row && !isDisabledCodeRow(row) && row.shouldTranslate !== false && typeof row.original === "string" && row.original.trim() && typeof row.translation === "string" && row.translation.trim() && row.translationStatus !== "failed" && !row.translationError;
 }
 function rememberTranslation(row, sourceFile = "") {
   if (!usableTranslation(row)) return;
@@ -39,7 +42,7 @@ function buildTranslationMemory() {
   }
 }
 function reuseTranslationFromMemory(row) {
-  if (!row || row.shouldTranslate === false || !row.original || translationMemoryConflicts.has(row.original)) return false;
+  if (!row || isDisabledCodeRow(row) || row.shouldTranslate === false || !row.original || translationMemoryConflicts.has(row.original)) return false;
   const hit = translationMemory.get(row.original);
   if (!hit || !hit.translation) return false;
   row.translation = hit.translation;
@@ -101,6 +104,13 @@ function mergeSourceQueueIntoTarget(sourceDoc, targetDoc) {
   for (const targetRow of targetDoc.rows) {
     const sourceRow = sourceById.get(targetRow.id);
     if (!sourceRow) continue;
+    if (isDisabledCodeRow(targetRow)) {
+      targetRow.shouldTranslate = false;
+      targetRow.translation = "";
+      targetRow.translationStatus = "disabled_code_key";
+      targetRow.translationModel = targetRow.translationModel || "safety_filter";
+      continue;
+    }
     targetRow.shouldTranslate = sourceRow.shouldTranslate;
     targetRow.curatedReason = sourceRow.curatedReason;
     targetRow.contextKey = sourceRow.contextKey;

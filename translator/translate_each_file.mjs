@@ -16,6 +16,24 @@ const includeAll = args.includes("--all");
 const withCore = args.includes("--with-core");
 const coreOnly = args.includes("--core-only");
 
+function forwardedTranslatorArgs() {
+  const forwarded = [];
+  const valueOptions = new Set(["--model", "--host"]);
+  const flagOptions = new Set([]);
+  for (let i = 0; i < args.length; i += 1) {
+    const arg = args[i];
+    if (valueOptions.has(arg)) {
+      if (i + 1 >= args.length) throw new Error(`Missing value for ${arg}`);
+      forwarded.push(arg, args[i + 1]);
+      i += 1;
+    } else if (flagOptions.has(arg)) {
+      forwarded.push(arg);
+    }
+  }
+  return forwarded;
+}
+const passthroughArgs = forwardedTranslatorArgs();
+
 function listJsonFiles(dir, predicate) {
   if (!fs.existsSync(dir)) return [];
   return fs.readdirSync(dir)
@@ -73,7 +91,7 @@ if (!files.length) {
 for (const input of files) {
   const name = path.basename(input);
   console.log(`\n=== ${name}: translating up to ${perFileLimit} entries ===`);
-  const result = spawnSync(process.execPath, [translatorScript, "--input", input, "--limit", String(perFileLimit)], {
+  const result = spawnSync(process.execPath, [translatorScript, "--input", input, "--limit", String(perFileLimit), ...passthroughArgs], {
     stdio: "inherit",
     cwd: process.cwd(),
     shell: false
