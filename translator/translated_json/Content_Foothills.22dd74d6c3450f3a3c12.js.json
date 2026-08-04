@@ -1,19 +1,18 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_Foothills.22dd74d6c3450f3a3c12.js",
+  "sourceFile": "D:\\Codex\\COC2 0.93\\resources\\app\\Content_Foothills.22dd74d6c3450f3a3c12.js",
   "sourceSha1": "d550bb2abd2b3d29fa82005fb2cb6ad4a5fec73c",
   "migratedFrom": [
     "Content_Foothills.22dd74d6c3450f3a3c12.js.json"
   ],
-  "updateGeneratedAt": "2026-07-30T09:34:22.261Z",
-  "updateMode": "preview",
+  "updateGeneratedAt": "2026-08-02T15:09:54.785Z",
+  "updateMode": "in-place",
   "keptByReason": {
-    "generic_possible_text": 5,
     "carried_from_old_json": 1245
   },
   "total": 2387,
-  "shouldTranslate": 1250,
+  "shouldTranslate": 1245,
   "inherited": 1245,
-  "newlyAdded": 5,
+  "newlyAdded": 0,
   "byCategory": {
     "unknown": 689,
     "possible_text": 224,
@@ -125,11 +124,10 @@
       "end": 993,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1254:1261:505e9f71a97c",
@@ -3369,11 +3367,10 @@
       "end": 140174,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:140457:140470:b03126baeb3e",
@@ -3861,9 +3858,7 @@
       "line": 1,
       "raw": "\"Ride Cock\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:150274:150276:da39a3ee5e6b",
@@ -16507,11 +16502,10 @@
       "end": 733977,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:734240:734246:dbcdf4a33b67",
@@ -16904,9 +16898,7 @@
       "line": 1,
       "raw": "\"Ride Cock\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:740668:740670:da39a3ee5e6b",
@@ -29416,11 +29408,10 @@
       "end": 1416665,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1416710:1419532:f3b5d391890e",
@@ -32223,11 +32214,10 @@
       "end": 1521543,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1521585:1523904:76c2176ff30f",

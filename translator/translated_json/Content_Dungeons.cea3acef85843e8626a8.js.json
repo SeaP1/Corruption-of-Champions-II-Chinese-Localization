@@ -1,19 +1,18 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_Dungeons.cea3acef85843e8626a8.js",
+  "sourceFile": "D:\\Codex\\COC2 0.93\\resources\\app\\Content_Dungeons.cea3acef85843e8626a8.js",
   "sourceSha1": "890ce38cf69ea9bf9f923a2d4f8fcc7df944e5c4",
   "migratedFrom": [
     "Content_Dungeons.cea3acef85843e8626a8.js.json"
   ],
-  "updateGeneratedAt": "2026-07-30T09:34:22.105Z",
-  "updateMode": "preview",
+  "updateGeneratedAt": "2026-08-02T15:09:54.631Z",
+  "updateMode": "in-place",
   "keptByReason": {
-    "carried_from_old_json": 4092,
-    "generic_possible_text": 9
+    "carried_from_old_json": 4092
   },
   "total": 7503,
-  "shouldTranslate": 4101,
+  "shouldTranslate": 4092,
   "inherited": 4092,
-  "newlyAdded": 9,
+  "newlyAdded": 0,
   "byCategory": {
     "possible_text": 705,
     "speaker": 119,
@@ -7176,11 +7175,10 @@
       "end": 165776,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:166038:166054:b5288d8975c8",
@@ -12833,11 +12831,10 @@
       "end": 346762,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:346825:349973:bbc3c71ef814",
@@ -16119,11 +16116,10 @@
       "end": 591277,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:591339:594608:ab3172aba3f0",
@@ -18746,11 +18742,10 @@
       "end": 649091,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:649287:649295:8b9ee5578acc",
@@ -59432,9 +59427,7 @@
       "line": 1,
       "raw": "\"\\n    Your next waking moments are full of confused and panicked struggling. You're naked and bound—your arms[pc.hasTail\\n        |,\\n        | and\\n    ] legs[pc.hasTail\\n        |, and tail[pc.hasTails\\n            |s\\n        ]\\n    ] are chained to the wall[pc.hasWings\\n        |, while your wings are tied shut with heavy rope\\n    ]. Other trophies join you along walls, from mystic artifacts to the heads of hunted creatures all the way to a few other captive[pc.ra cowgirl\\n        | cowgirls like yourself\\n        |s\\n    ], though they seem to have been here longer and are more... broken in.\\n    \\n    Before you can properly assess your surroundings and work on an escape plan, the door swings open. A [silly\\n        |gaggle\\n        |band\\n    ] of imps marches in, rowdy and full of their typical unearned bravado. They immediately turn towards you. \\n    \\n    \\\"Alright boys,\\\" their leader says, \\\"you know the drill. Hold '[pc.mf\\n        |im\\n        |er\\n    ] steady and keep '[pc.mf\\n        |is\\n        |er\\n    ] mouth open for me.\\\" \\n    \\n    The rest of the imps waste no time, immediately crowding you and taking positions. Most grab your limbs, and with your chains as taut as they are, you're left without the leverage necessary to try to shake them off. One, however, perches himself on your [pc.cupRange E\\n        |breasts\\n        |shoulder\\n    ] and wrenches your mouth open just in time for their leader to creep up and pour a vile liquid down your gullet. \\n    \\n    You cough in shock as the taste slowly transitions from disgusting—enough to leave you on the verge of retching—to one that is so warm and pleasant in its aftertaste as to nearly overshadow its initial foulness entirely. As soon as the whole thing is downed, a numbing warmth begins to erode your resistance slowly but surely, starting at your stomach and radiating outwards. It fills your loins with a desperate urge that sits uncomfortably[pc.hasCock\\n        | in such a way as to leave your cock semi hard but the muscles behind it tensed and aching\\n        | and leaves your legs twitching and shaking ever-so-slightly in anticipation\\n    ].\\n    \\n    The imps all release you as the concoction's effects finally reach your head and the numbness turns to an electric sensitivity... that is immediately taken advantage of by the imp who once held your mouth as he [pc.cupRange e\\n        |slaps one of your massive breasts. A moan escapes your lips immediately as pleasure slams into your body like a wave.\\n        |[pc.hasHair\\n            |grabs a fistful of your hair and tilts your head to lock eyes with his hungry visage. The act is enough to prompt an involuntary moan that only serves to encourage your tormentor.\\n            |slaps your cheek lightly twice. The condescension within each slap is clear, but in your body's current state, that just makes it all the better as you reflexively bite your lip.\\n        ]\\n    ] \\n    \\n    The door opens once again and in steps your captor.[pc.cupRange e\\n        |\\n        |[pc.hasHair\\n            | The salamander instantly glares daggers at the imp gripping your hair, and you're immediately released from that hold.\\n        ]\\n    ] The imps shift out of the way of their superior as he slowly marches towards you. Each step takes only a heartbeat, but each of those seem to stretch to eternity as his thundering footfalls echo in your mind. A few seconds later and a clawed hand reaches down to your chin and lifts your gaze up. His harsh touch sends a shiver down your spine even as you [pc.cupRange e\\n        |bite your lip instinctively\\n        |[pc.hasHair\\n            |bite your lip instinctively\\n            |break your lip bite to let out a pleasured gasp\\n        ]\\n    ]. \\n    \\n    The demon's shining yellow eyes appraise you like little more than a piece of meat; he regards your [pc.mascFemNeut\\n        |handsome\\n        |beautiful\\n        |cute\\n    ] face, [pc.thicknessRange 10\\n        |plush form\\n        |[pc.toneRange 70\\n            |toned body\\n            |lithe form\\n        ]\\n    ], your [pc.crotch], and your [pc.ass] with a look that grows from judge to full-fledged hungry predator. His free hand reaches down to [pc.cupRange d\\n        |squeeze one of your [pc.cupRange f\\n            |gigantic \\n        ]breasts. He keeps his grip firm and intense for a few seconds, all the while teasing your nipple with the flat of his thumbnail.\\n        |grab a[pc.buttRange 8\\n            | handful\\n            |t\\n        ] your ass, going so far as to strain the chains with his pull. It's impossible not to notice his growing erection against you, but your attention is demanded instead by his intense grip and a gentle pressure at your [pc.asshole] as he traces a nail around its entrance.\\n    ] \\n    \\n    Then, suddenly, a jolt shoots through your body as the mage channels storm magic directly into you. You shudder and quiver and shake as the lightning overwhelms your senses and brings you to an orgasm. [pc.hasCock\\n        |[pc.cumVol 1000\\n            |It's not a particularly plentiful load by your standards—forced out as it was—but your load nevertheless\\n            |Your load\\n        ] splatters across his lower robes, staining the deep blue garments in an act of pure white surrender\\n        |[pc.isSquirter\\n            |Squirt coats his lower robes, darkening their blue in your liquid defeat.\\n            |Your legs [pc.cupRange d\\n                |straighten and your back arches, pressing your lower body against the deep blue fabric of his lower robes\\n                |try to straighten out and enable an arched back, but his iron grip on you imply results in reduced movement\\n            ]\\n        ]\\n    ]. Your breath is entirely gone[pc.cumVol 1000\\n        |; you put what little willpower you have left into gasping for air \\n        |—it's all you can do to desperately gasp for air\\n    ]. The imps from before cackle and idly stroke their cocks as they watch you writhe in the comedown. \\n    \\n    The salamander releases you right as your climax concludes, and you find yourself unable to stop from falling slack. A derisive snort precedes him barking orders at the spectating imps: \\\"Unlatch these chains. [pc.heShe] isn't going anywhere on [pc.hisHer] own. Not anymore.\\\"\\n    \\n    The vile creatures follow his orders immediately. They scramble about your body, passing keys to one another as, limb by limb, you're allowed to fall onto the cold stone floor. You're able to muster up just enough willpower and physical strength to look up [pc.hasLongHair\\n        |through your disheveled hair \\n    ]when you see taloned feet just in front of you, whereupon you're given full view of the battlemage's massive cock and hefty balls. \\n    \\n    You have only a second to brace yourself before he grabs you by the [pc.hasLongHair\\n        |hair\\n        |arm\\n    ] and drags your limp form a few yards to the foot of a bed. Then, with a grunt, your captor [pc.hasLongHair\\n        |moves his grip to your shoulder and \\n    ]tosses you onto the mattress as if you were no more than a doll. And much like one, all you find yourself able to do is stay sprawled across the bed, waiting for your owner to come play with you.\\n    \\n    And you do not wait long. His form appears between your legs, and his massive tattooed cock smacks down [pc.hasCock\\n        |[pc.cockRange 0 6\\n            |and completely crushes your dick with its size. Your whole body shakes from the impact and the pleasure it brings as [pc.cumVol 1000\\n                |pre gushes\\n                |rivulets of pre smear\\n            ] onto his length. \\n            \\n            \\\"Really? Did our little Champion enjoy being humiliated? Did you come here just to be shown your place?\\\" The battlemage chuckles. \\\"Surely a 'great hero' like you could have afforded alchemy if you didn't like being humiliated and inadequate.\\\" He pats your cheeks a few times condescendingly, then adds, \\\"Don't worry; I'll make sure you get plenty of that.\\\"\\n            |atop your shaft, still perpetually locked at half mast in spite of your earlier orgasm. The impact sends tremors of pleasure rippling through your body, and a jet of pre splurts out across your [var0\\n                |face\\n                |chest and stomach\\n            ]. \\n            \\n            \\\"Not bad. Shame you won't ever get to use it again.\\\" The battlemage chuckles. \\\"Still, it'll be fun watching it flop around as you get put in your place, <b>Champion</b>.\\\"\\n        ]\\n        |[pc.heightRange 60\\n            |across your [pc.bellyRange 8\\n                |plush tummy. It bounces against the soft flesh, and the repeated impacts send waves of pleasure through your body with each hit.\\n                |[pc.toneRange 75 90\\n                    |toned stomach\\n                    |rock-hard abs\\n                    |flat stomach\\n                ]. You can't help but gulp in both trepidation and excitement at seeing it laid out like this.\\n            ]\\n            |[pc.cupRange E\\n                |across your stomach and into your [pc.breasts]. His precum smears on the sides of your [pc.breastsNoun] as his tip comes to rest, suspended less than an inch above your body by them.\\n                |across your [pc.bellyRange 8\\n                    |plush tummy. It bounces against the soft flesh, and the repeated impacts send waves of pleasure through your body with each hit.\\n                    |[pc.toneRange 75 90\\n                        |toned stomach\\n                        |rock-hard abs\\n                        |flat stomach\\n                    ]. You can't help but gulp in both trepidation and excitement at seeing it laid out like this.\\n                ]\\n            ]\\n        ]\\n        \\n        \\\"I always love seeing a comparison of my size against my latest trophies. [pc.ra cowgirl\\n            |Cowgirls like you were just made to take dicks like mine; especially alchemized ones like you who chose the life of a cock-taker. \\n        ]Lucky for you, one of the effects of that little drink you had earlier was making sure you can handle me.\\\" The battlemage chuckles. \\\"And the better you handle me, the less likely you are to go into the breeding pits. Not that I think you'll mind by the time I'm done with you.\\n    ]\\n    \\n    He reaches a massive hand down and wraps it around your throat—not tight enough to choke you, but maintains the pressure and feel that he could at any point. Then, he leans in and whispers, \\\"Now then, is my new bitch ready to get fucked?\\\" through a devilish smile.\\n    You only manage half a whimper before he has pulled back and lined his pointed tip up with your [pc.vagAss\\n        |cunt\\n        |asshole\\n    ]. Your legs instinctively try to tense and exhaustion and the potion's lingering effects result in that just pulling him in slightly. The cock's taper results in the rest entering easily.\\n    \\n    A pleasured gasp forces past your quivering lips as your head rolls back. Your throat presses against his hand, half choking you. It only gets more intense as he slowly pushes inch after inch deeper inside. Bodies weren't meant to be this sensitive; it gets hard to breath as you try to adjust to the overwhelming pleasure. [pc.hasCock\\n        |Cum [pc.cumVol 1000\\n            |pours out of your cock in a steady flow\\n            |dribbles out of your cock\\n        ] as the sizeable girth presses more and more against your prostate[pc.vagAss\\n            | through your vaginal walls\\n        ].\\n    ]\\n    \\n    Finally you feel him come to a stop as the massive bulb at the base of his salamander shaft hits up against your entrance. As you start to use this moment's respite to catch your breath, you hear a soft chuckle. \\\"Don't worry,\\\" your owner says, \\\"You'll take that too. I'm just saving it for later. I've got so much to show you first.\\\"\\n    \\n    Before you can process his words, you're overwhelmed once again, this time by a sudden emptiness as he withdraws over half his cock. \\n    \\n    And then the fucking truly begins.\\n    \"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:2944249:2944255:bc981983e7f5",
@@ -68136,11 +68129,10 @@
       "end": 3320893,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:3321217:3321224:59c51c12d4c7",
@@ -88428,11 +88420,10 @@
       "end": 4659409,
       "line": 1,
       "raw": "\"Derived constructors may only return object or undefined\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_class_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:4659478:4659537:fc7b434fa775",
@@ -88445,11 +88436,10 @@
       "end": 4659537,
       "line": 1,
       "raw": "\"this hasn't been initialised - super() hasn't been called\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_class_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:4659790:4659800:c218e39efa2e",
@@ -88475,11 +88465,10 @@
       "end": 4659893,
       "line": 1,
       "raw": "\"Super expression must either be null or a function\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_class_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:4659919:4659930:7c257c6a8cd5",
@@ -88531,11 +88520,10 @@
       "end": 4660588,
       "line": 1,
       "raw": "\"Cannot call a class as a function\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_class_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:4660669:4660676:35c6292c6870",
@@ -99308,9 +99296,7 @@
       "line": 1,
       "raw": "\"\\n    The bubbly bimbo seems content to just sit there and receive smooches with the occasional gentle slap. That makes it all the easier to grip her hips in each hand and yank her down to be within range of your [pc.cock]. She startles at first, but then her eyes light up when she feels your length glide through her cheeks. Between the sweat of exertion and natural bimbo superpowers, she feels plenty ready for you. Without giving her a chance to react, you find her entrance with your tip and penetrate her sinfully tight donut.\\n    \\n    \\\"H-hey! Hey, ohhh, oh gods!\\\" she begins, her complaint trailing off as you begin thrusting deep as you can into her plush booty. \\\"I-if you go that fast, I'm gonna, like, cum super hard!\\\"\\n    \\n    You listen to her warning... and then ignore it as you begin pounding her even harder. The echo of hips clapping against cheeks fills the air as you thrust in time with her own penetrations. Her cock surges as your dick rubs against her cum-button, and her eyes roll back as you just keep on fucking. That's the final blow that tips her, and subsequently you, over the edge.\\n    \\n    \\\"Omigosh I'm cuminnnngggg,\\\" she moans, hands gripping your sides as her legs wobble back and forth with the force of your pounding.\\n    \\n    You squeeze her cheeks with both hands as you feel the sudden swell of an expanding flare in your [pc.vagAss\\n        |cunt\\n        |ass\\n    ]. It's followed by a gushing surge as her dam bursts and she fills your insides with hot seed. The flood hits all the right spots to set off your own orgasm, and you [pc.cumVol 0 100 1000\\n        |fire off several ropes of seed into her bubbly butt\\n        |fill her bubbly butt with seed\\n        |flood her bubbly butt with seed\\n    ]. Both of you cum in tandem, with one setting off the other in a carnal loop of orgasmic spasms. Hot pink lights dance in your eyes the whole while as you strain with the bliss. \\n    \\n    When it's finally over, you slump to the ground, finally managing to push her softening rod free with a gush of spent semen. You spend a good while just lying there, recovering both from the ordeal and your fight. When there's no further bothering from Talulah after that time, you roll over and push yourself up to your feet.\\n    \\n    To your surprise, you find her fast asleep! That's one way to deal with her, you guess... At least you won't have to worry about her getting up to further mischief while you find her friends. With a final gentle pat on the butt, you clean yourself up and get back to it.\\n    \"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Dungeons.cea3acef85843e8626a8.js:5066061:5066077:1478f0b897cb",

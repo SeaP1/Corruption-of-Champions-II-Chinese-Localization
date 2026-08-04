@@ -1,11 +1,11 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_LightPalace.a8f6dd33b12cf63285f3.js",
+  "sourceFile": "D:\\Codex\\COC2 0.93\\resources\\app\\Content_LightPalace.a8f6dd33b12cf63285f3.js",
   "sourceSha1": "513e87fea4e19e7f35dafd14999387cf34949590",
   "migratedFrom": [
     "Content_LightPalace.a8f6dd33b12cf63285f3.js.json"
   ],
-  "updateGeneratedAt": "2026-07-30T09:34:24.213Z",
-  "updateMode": "preview",
+  "updateGeneratedAt": "2026-08-02T15:09:56.707Z",
+  "updateMode": "in-place",
   "keptByReason": {
     "carried_from_old_json": 1178
   },

@@ -1,20 +1,18 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.92\\resources\\app\\Content_Other.b9d1538eee1e80acbc81.js",
+  "sourceFile": "D:\\Codex\\COC2 0.93\\resources\\app\\Content_Other.b9d1538eee1e80acbc81.js",
   "sourceSha1": "7449af65445739232028d774dbe2f2554fc7e260",
   "migratedFrom": [
-    "Content_Other.14372667a6fda3ba1751.js.json"
+    "Content_Other.b9d1538eee1e80acbc81.js.json"
   ],
-  "updateGeneratedAt": "2026-07-30T09:34:24.813Z",
-  "updateMode": "preview",
+  "updateGeneratedAt": "2026-08-02T15:09:57.307Z",
+  "updateMode": "in-place",
   "keptByReason": {
-    "generic_possible_text": 3,
-    "carried_from_old_json": 349,
-    "generic_unknown": 1
+    "carried_from_old_json": 350
   },
   "total": 833,
-  "shouldTranslate": 353,
+  "shouldTranslate": 350,
   "inherited": 349,
-  "newlyAdded": 4,
+  "newlyAdded": 1,
   "byCategory": {
     "unknown": 363,
     "possible_text": 125,
@@ -125,11 +123,10 @@
       "end": 1062,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:1292:1303:31ff3e52bfef",
@@ -1364,11 +1361,10 @@
       "end": 31238,
       "line": 1,
       "raw": "\"Invalid attempt to spread non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:32831:32846:6033135bca88",
@@ -5303,11 +5299,10 @@
       "end": 313198,
       "line": 1,
       "raw": "\"Invalid attempt to destructure non-iterable instance.\\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "disabledReason": "runtime_iterable_error"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:313612:313619:d787f56b0809",
@@ -7102,7 +7097,11 @@
       "end": 335836,
       "line": 1,
       "raw": "\"pale\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335837:335843:187770cf5af2",
@@ -7115,7 +7114,11 @@
       "end": 335843,
       "line": 1,
       "raw": "\"fair\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335844:335852:77e27f528ef2",
@@ -7128,7 +7131,11 @@
       "end": 335852,
       "line": 1,
       "raw": "\"tanned\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335853:335860:0947fcc917eb",
@@ -7141,7 +7148,11 @@
       "end": 335860,
       "line": 1,
       "raw": "\"olive\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335861:335869:1573f3c1ba13",
@@ -7154,7 +7165,11 @@
       "end": 335869,
       "line": 1,
       "raw": "\"bronze\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335870:335877:4c5cc898d9f2",
@@ -7167,7 +7182,11 @@
       "end": 335877,
       "line": 1,
       "raw": "\"dusky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335878:335884:3d09ba44760d",
@@ -7180,7 +7199,11 @@
       "end": 335884,
       "line": 1,
       "raw": "\"dark\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335885:335892:466bc8cef3e7",
@@ -7193,7 +7216,11 @@
       "end": 335892,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335894:335904:456ee93c5d77",
@@ -7219,7 +7246,11 @@
       "end": 335912,
       "line": 1,
       "raw": "\"pale\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335913:335919:187770cf5af2",
@@ -7232,7 +7263,11 @@
       "end": 335919,
       "line": 1,
       "raw": "\"fair\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335920:335928:77e27f528ef2",
@@ -7245,7 +7280,11 @@
       "end": 335928,
       "line": 1,
       "raw": "\"tanned\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335929:335936:0947fcc917eb",
@@ -7258,7 +7297,11 @@
       "end": 335936,
       "line": 1,
       "raw": "\"olive\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335937:335945:1573f3c1ba13",
@@ -7271,7 +7314,11 @@
       "end": 335945,
       "line": 1,
       "raw": "\"bronze\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335946:335953:4c5cc898d9f2",
@@ -7284,7 +7331,11 @@
       "end": 335953,
       "line": 1,
       "raw": "\"dusky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335954:335960:3d09ba44760d",
@@ -7297,7 +7348,11 @@
       "end": 335960,
       "line": 1,
       "raw": "\"dark\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335961:335968:466bc8cef3e7",
@@ -7310,7 +7365,11 @@
       "end": 335968,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335979:335985:c1df0ba9aea4",
@@ -7323,7 +7382,11 @@
       "end": 335985,
       "line": 1,
       "raw": "\"pale\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335986:335992:187770cf5af2",
@@ -7336,7 +7399,11 @@
       "end": 335992,
       "line": 1,
       "raw": "\"fair\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:335993:336001:77e27f528ef2",
@@ -7349,7 +7416,11 @@
       "end": 336001,
       "line": 1,
       "raw": "\"tanned\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336002:336009:0947fcc917eb",
@@ -7362,7 +7433,11 @@
       "end": 336009,
       "line": 1,
       "raw": "\"olive\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336010:336018:1573f3c1ba13",
@@ -7375,7 +7450,11 @@
       "end": 336018,
       "line": 1,
       "raw": "\"bronze\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336019:336026:4c5cc898d9f2",
@@ -7388,7 +7467,11 @@
       "end": 336026,
       "line": 1,
       "raw": "\"dusky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336027:336033:3d09ba44760d",
@@ -7401,7 +7484,11 @@
       "end": 336033,
       "line": 1,
       "raw": "\"dark\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336034:336041:466bc8cef3e7",
@@ -7414,7 +7501,11 @@
       "end": 336041,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336051:336057:c1df0ba9aea4",
@@ -7427,21 +7518,29 @@
       "end": 336057,
       "line": 1,
       "raw": "\"pale\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336064:336076:1ee79b9ee073",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "dark green",
-      "translation": "深绿色",
+      "translation": "",
       "start": 336064,
       "end": 336076,
       "line": 1,
       "raw": "\"dark green\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336077:336084:bc74f4f071a5",
@@ -7454,21 +7553,29 @@
       "end": 336084,
       "line": 1,
       "raw": "\"green\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336085:336098:7dca3ed409ec",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "light green",
-      "translation": "浅绿色",
+      "translation": "",
       "start": 336085,
       "end": 336098,
       "line": 1,
       "raw": "\"light green\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336099:336107:1573f3c1ba13",
@@ -7481,7 +7588,11 @@
       "end": 336107,
       "line": 1,
       "raw": "\"bronze\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336108:336114:61e2f51ca8ba",
@@ -7494,7 +7605,11 @@
       "end": 336114,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336115:336122:4c5cc898d9f2",
@@ -7507,7 +7622,11 @@
       "end": 336122,
       "line": 1,
       "raw": "\"dusky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336123:336129:3d09ba44760d",
@@ -7520,7 +7639,11 @@
       "end": 336129,
       "line": 1,
       "raw": "\"dark\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336130:336137:466bc8cef3e7",
@@ -7533,7 +7656,11 @@
       "end": 336137,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336253:336255:da39a3ee5e6b",
@@ -7625,7 +7752,11 @@
       "end": 336412,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336414:336421:0947fcc917eb",
@@ -7638,7 +7769,11 @@
       "end": 336421,
       "line": 1,
       "raw": "\"olive\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336422:336430:1573f3c1ba13",
@@ -7651,7 +7786,11 @@
       "end": 336430,
       "line": 1,
       "raw": "\"bronze\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336431:336438:4c5cc898d9f2",
@@ -7664,7 +7803,11 @@
       "end": 336438,
       "line": 1,
       "raw": "\"dusky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336439:336445:3d09ba44760d",
@@ -7677,7 +7820,11 @@
       "end": 336445,
       "line": 1,
       "raw": "\"dark\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336446:336453:466bc8cef3e7",
@@ -7690,7 +7837,11 @@
       "end": 336453,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336477:336484:9166eeff1e50",
@@ -7703,7 +7854,11 @@
       "end": 336484,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336485:336491:b0f7f128338b",
@@ -7729,7 +7884,11 @@
       "end": 336541,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336542:336549:9166eeff1e50",
@@ -7742,7 +7901,11 @@
       "end": 336549,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336550:336555:78988010b890",
@@ -7755,7 +7918,11 @@
       "end": 336555,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336556:336564:5e1bc90d0d9f",
@@ -7768,7 +7935,11 @@
       "end": 336564,
       "line": 1,
       "raw": "\"blonde\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336565:336571:61e2f51ca8ba",
@@ -7781,7 +7952,11 @@
       "end": 336571,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336573:336583:456ee93c5d77",
@@ -7807,7 +7982,11 @@
       "end": 336592,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336593:336600:9166eeff1e50",
@@ -7820,7 +7999,11 @@
       "end": 336600,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336601:336606:78988010b890",
@@ -7833,7 +8016,11 @@
       "end": 336606,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336607:336615:5e1bc90d0d9f",
@@ -7846,7 +8033,11 @@
       "end": 336615,
       "line": 1,
       "raw": "\"blonde\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336616:336622:61e2f51ca8ba",
@@ -7859,7 +8050,11 @@
       "end": 336622,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336623:336629:4c9a82ce72ca",
@@ -7872,7 +8067,11 @@
       "end": 336629,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336630:336638:f8248e127277",
@@ -7885,7 +8084,11 @@
       "end": 336638,
       "line": 1,
       "raw": "\"silver\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336649:336656:466bc8cef3e7",
@@ -7898,7 +8101,11 @@
       "end": 336656,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336657:336664:9166eeff1e50",
@@ -7911,7 +8118,11 @@
       "end": 336664,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336665:336670:78988010b890",
@@ -7924,7 +8135,11 @@
       "end": 336670,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336671:336679:5e1bc90d0d9f",
@@ -7937,7 +8152,11 @@
       "end": 336679,
       "line": 1,
       "raw": "\"blonde\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336680:336686:61e2f51ca8ba",
@@ -7950,7 +8169,11 @@
       "end": 336686,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336687:336693:4c9a82ce72ca",
@@ -7963,7 +8186,11 @@
       "end": 336693,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336694:336701:bc74f4f071a5",
@@ -7976,7 +8203,11 @@
       "end": 336701,
       "line": 1,
       "raw": "\"green\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336702:336710:ef0ebbb77298",
@@ -7989,7 +8220,11 @@
       "end": 336710,
       "line": 1,
       "raw": "\"orange\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336720:336727:466bc8cef3e7",
@@ -8002,7 +8237,11 @@
       "end": 336727,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336728:336735:9166eeff1e50",
@@ -8015,7 +8254,11 @@
       "end": 336735,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336736:336741:78988010b890",
@@ -8028,7 +8271,11 @@
       "end": 336741,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336742:336748:09feb137fd5e",
@@ -8041,7 +8288,11 @@
       "end": 336748,
       "line": 1,
       "raw": "\"gold\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336749:336755:61e2f51ca8ba",
@@ -8054,7 +8305,11 @@
       "end": 336755,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336756:336763:528cef87d0bf",
@@ -8067,7 +8322,11 @@
       "end": 336763,
       "line": 1,
       "raw": "\"white\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336770:336777:466bc8cef3e7",
@@ -8080,7 +8339,11 @@
       "end": 336777,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336778:336785:9166eeff1e50",
@@ -8093,7 +8356,11 @@
       "end": 336785,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336786:336791:78988010b890",
@@ -8106,7 +8373,11 @@
       "end": 336791,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336792:336800:5e1bc90d0d9f",
@@ -8119,7 +8390,11 @@
       "end": 336800,
       "line": 1,
       "raw": "\"blonde\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336801:336807:61e2f51ca8ba",
@@ -8132,7 +8407,11 @@
       "end": 336807,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336812:336821:3ba0278e0a48",
@@ -8158,7 +8437,11 @@
       "end": 336905,
       "line": 1,
       "raw": "\"purple\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336935:337176:8904ff10b7f5",
@@ -8212,7 +8495,11 @@
       "end": 337486,
       "line": 1,
       "raw": "\"Unkempt\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337508:337514:4881b8ac54ac",
@@ -8225,35 +8512,47 @@
       "end": 337514,
       "line": 1,
       "raw": "\"Afro\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337536:337551:d8ea9e7694dd",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Afro Ponytail",
-      "translation": "非裔发型马尾辫",
+      "translation": "",
       "start": 337536,
       "end": 337551,
       "line": 1,
       "raw": "\"Afro Ponytail\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337573:337585:1d07badddff1",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Afro Puffs",
-      "translation": "非洲卷发",
+      "translation": "",
       "start": 337573,
       "end": 337585,
       "line": 1,
       "raw": "\"Afro Puffs\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337607:337613:d1d7576baadc",
@@ -8266,7 +8565,11 @@
       "end": 337613,
       "line": 1,
       "raw": "\"Bald\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337634:337639:da6645f6e22b",
@@ -8279,21 +8582,29 @@
       "end": 337639,
       "line": 1,
       "raw": "\"Bob\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337660:337672:1d71b6fae220",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Box Braids",
-      "translation": "盒式编发",
+      "translation": "",
       "start": 337660,
       "end": 337672,
       "line": 1,
       "raw": "\"Box Braids\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337694:337703:9a168440b2c2",
@@ -8306,21 +8617,29 @@
       "end": 337703,
       "line": 1,
       "raw": "\"Braided\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337725:337742:6db50ff5b4ba",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Braid Pompadour",
-      "translation": "编发蓬蓬头",
+      "translation": "",
       "start": 337725,
       "end": 337742,
       "line": 1,
       "raw": "\"Braid Pompadour\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337764:337769:93cf0d9e1c75",
@@ -8333,7 +8652,11 @@
       "end": 337769,
       "line": 1,
       "raw": "\"Bun\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337791:337798:793f120f9775",
@@ -8346,7 +8669,11 @@
       "end": 337798,
       "line": 1,
       "raw": "\"Curls\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337820:337832:7a2a4d6311f6",
@@ -8359,21 +8686,29 @@
       "end": 337832,
       "line": 1,
       "raw": "\"Dreadlocks\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337854:337870:55166159d0ba",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Dread Ponytail",
-      "translation": "可怕的马尾辫",
+      "translation": "",
       "start": 337854,
       "end": 337870,
       "line": 1,
       "raw": "\"Dread Ponytail\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337892:337898:5298d08bb7ae",
@@ -8386,7 +8721,11 @@
       "end": 337898,
       "line": 1,
       "raw": "\"Fade\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337920:337929:8cba997cad79",
@@ -8399,7 +8738,11 @@
       "end": 337929,
       "line": 1,
       "raw": "\"Flattop\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337951:337959:02d2f12e6e5d",
@@ -8412,21 +8755,29 @@
       "end": 337959,
       "line": 1,
       "raw": "\"Mohawk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:337981:337999:56e4111f11af",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Obfuscating Afro",
-      "translation": "复杂难懂的非洲风格发型",
+      "translation": "",
       "start": 337981,
       "end": 337999,
       "line": 1,
       "raw": "\"Obfuscating Afro\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338021:338031:8a25280ed24c",
@@ -8439,7 +8790,11 @@
       "end": 338031,
       "line": 1,
       "raw": "\"Ponytail\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338053:338061:d789f671fbc9",
@@ -8452,7 +8807,11 @@
       "end": 338061,
       "line": 1,
       "raw": "\"Rugged\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338083:338091:f7bab3541827",
@@ -8465,7 +8824,11 @@
       "end": 338091,
       "line": 1,
       "raw": "\"Shaggy\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338113:338120:0fe7d82f25a3",
@@ -8478,7 +8841,11 @@
       "end": 338120,
       "line": 1,
       "raw": "\"Short\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338141:338151:ee745abbd076",
@@ -8491,21 +8858,29 @@
       "end": 338151,
       "line": 1,
       "raw": "\"Side-Cut\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338173:338190:25a9bf6d478b",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Side-Cut Dreads",
-      "translation": "侧切发型",
+      "translation": "",
       "start": 338173,
       "end": 338190,
       "line": 1,
       "raw": "\"Side-Cut Dreads\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338212:338219:c374c78eceaf",
@@ -8518,21 +8893,29 @@
       "end": 338219,
       "line": 1,
       "raw": "\"Spiky\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338241:338259:b07734caa8e7",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Spiky with Bangs",
-      "translation": "带刘海的刺猬头",
+      "translation": "",
       "start": 338241,
       "end": 338259,
       "line": 1,
       "raw": "\"Spiky with Bangs\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338281:338291:2501c6529210",
@@ -8545,21 +8928,29 @@
       "end": 338291,
       "line": 1,
       "raw": "\"Straight\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338313:338334:9972819c2571",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Top Knot Dreadlocks",
-      "translation": "顶部打结的脏辫",
+      "translation": "",
       "start": 338313,
       "end": 338334,
       "line": 1,
       "raw": "\"Top Knot Dreadlocks\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338356:338367:5370bd879772",
@@ -8572,7 +8963,11 @@
       "end": 338367,
       "line": 1,
       "raw": "\"Twintails\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:338470:338483:6ae449a5bb5b",
@@ -8719,7 +9114,11 @@
       "end": 339157,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339158:339165:bc74f4f071a5",
@@ -8732,7 +9131,11 @@
       "end": 339165,
       "line": 1,
       "raw": "\"green\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339166:339173:f29ae37cab50",
@@ -8745,7 +9148,11 @@
       "end": 339173,
       "line": 1,
       "raw": "\"hazel\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339174:339181:ef4bfd1e6d27",
@@ -8758,7 +9165,11 @@
       "end": 339181,
       "line": 1,
       "raw": "\"amber\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339182:339189:9166eeff1e50",
@@ -8771,7 +9182,11 @@
       "end": 339189,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339190:339196:61e2f51ca8ba",
@@ -8784,7 +9199,11 @@
       "end": 339196,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339198:339208:456ee93c5d77",
@@ -8810,7 +9229,11 @@
       "end": 339216,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339217:339224:bc74f4f071a5",
@@ -8823,7 +9246,11 @@
       "end": 339224,
       "line": 1,
       "raw": "\"green\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339225:339232:f29ae37cab50",
@@ -8836,7 +9263,11 @@
       "end": 339232,
       "line": 1,
       "raw": "\"hazel\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339233:339240:ef4bfd1e6d27",
@@ -8849,7 +9280,11 @@
       "end": 339240,
       "line": 1,
       "raw": "\"amber\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339241:339248:9166eeff1e50",
@@ -8862,7 +9297,11 @@
       "end": 339248,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339249:339255:61e2f51ca8ba",
@@ -8875,7 +9314,11 @@
       "end": 339255,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339266:339272:4c9a82ce72ca",
@@ -8888,7 +9331,11 @@
       "end": 339272,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339273:339280:bc74f4f071a5",
@@ -8901,7 +9348,11 @@
       "end": 339280,
       "line": 1,
       "raw": "\"green\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339281:339288:f29ae37cab50",
@@ -8914,7 +9365,11 @@
       "end": 339288,
       "line": 1,
       "raw": "\"hazel\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339289:339296:ef4bfd1e6d27",
@@ -8927,7 +9382,11 @@
       "end": 339296,
       "line": 1,
       "raw": "\"amber\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339297:339304:9166eeff1e50",
@@ -8940,7 +9399,11 @@
       "end": 339304,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339305:339311:61e2f51ca8ba",
@@ -8953,7 +9416,11 @@
       "end": 339311,
       "line": 1,
       "raw": "\"gray\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339312:339320:ec30adc79e73",
@@ -8966,7 +9433,11 @@
       "end": 339320,
       "line": 1,
       "raw": "\"golden\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339330:339337:9166eeff1e50",
@@ -8979,7 +9450,11 @@
       "end": 339337,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339338:339344:4c9a82ce72ca",
@@ -8992,7 +9467,11 @@
       "end": 339344,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339345:339353:ec30adc79e73",
@@ -9005,7 +9484,11 @@
       "end": 339353,
       "line": 1,
       "raw": "\"golden\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339360:339366:4c9a82ce72ca",
@@ -9018,7 +9501,11 @@
       "end": 339366,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339367:339375:ec30adc79e73",
@@ -9031,7 +9518,11 @@
       "end": 339375,
       "line": 1,
       "raw": "\"golden\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339376:339381:78988010b890",
@@ -9044,7 +9535,11 @@
       "end": 339381,
       "line": 1,
       "raw": "\"red\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339382:339389:9166eeff1e50",
@@ -9057,7 +9552,11 @@
       "end": 339389,
       "line": 1,
       "raw": "\"brown\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter",
+      "translationError": "",
+      "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:339502:339504:da39a3ee5e6b",
@@ -10629,7 +11128,7 @@
       "end": 346684,
       "line": 1,
       "raw": "'-]+$/i.test(t)&&t.length<=16&&t.length>=1){if(pc.name=t,O.includes(t.toLowerCase()))return output(textify(S||(S=R(['",
-      "curatedReason": "generic_unknown",
+      "curatedReason": "carried_from_old_json",
       "updateStatus": "new_in_version"
     },
     {
