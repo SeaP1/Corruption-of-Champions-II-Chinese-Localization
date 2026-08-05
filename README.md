@@ -96,9 +96,10 @@ translate_each_file会调用ollama_translate_v2文件。通过修改ollama_trans
 
 待填
 
-### 致谢名单
+### 致谢名单(名单不分先后)
 
-待填
+刻风雫
+SeaP1
 
 ### 免责声明
 
