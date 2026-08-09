@@ -5938,13 +5938,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "FuckLeader",
-      "translation": "去他的领导",
+      "translation": "肏首领",
       "start": 243617,
       "end": 243629,
       "line": 1,
       "raw": "\"FuckLeader\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:243666:243679:cd8eeabc573e",
@@ -5952,13 +5954,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Leader",
-      "translation": "去他的领导",
+      "translation": "肏首领",
       "start": 243666,
       "end": 243679,
       "line": 1,
       "raw": "\"Fuck Leader\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:243680:243838:67df57fd7e45",
@@ -6204,13 +6208,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Facefuck",
-      "translation": "脸贴脸亲吻",
+      "translation": "颜面交",
       "start": 244526,
       "end": 244536,
       "line": 1,
       "raw": "\"Facefuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:244576:244595:ba5d5548777c",
@@ -6218,13 +6224,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Facefuck Marauder",
-      "translation": "去他的掠夺者！",
+      "translation": "颜面交掠夺者",
       "start": 244576,
       "end": 244595,
       "line": 1,
       "raw": "\"Facefuck Marauder\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:244596:244668:d85c29fdc0bd",
@@ -8292,7 +8300,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Pitch Anal",
-      "translation": "音高分析",
+      "translation": "提议肛交",
       "start": 336693,
       "end": 336705,
       "line": 1,
@@ -8360,7 +8368,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Cait Ride",
-      "translation": "凯特·赖德",
+      "translation": "凯特骑乘",
       "start": 336852,
       "end": 336863,
       "line": 1,
@@ -12557,13 +12565,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 658677,
       "end": 658683,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:658724:659077:5e688ac6f5fb",
@@ -12881,13 +12891,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Pussy",
-      "translation": "去他妈的。",
+      "translation": "肏阴户",
       "start": 663080,
       "end": 663092,
       "line": 1,
       "raw": "\"Fuck Pussy\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:663114:663116:da39a3ee5e6b",
@@ -15635,13 +15647,15 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    You suddenly [pc.mascFem\n        |grunt\n        |gasp\n    ] as a rough contraction seizes you around the waist and doesn't stop, twisting a grimace out of your face. The pregnancy! [atFH\n        |Aided by [party.solo\n            |the occupants of the inn\n            |your friends\n        ], you head into the nursery accompanied by Gwyn and Cait, the two of them stroking your hair and comforting you as it begins.\n        |You rush back to town[party.solo\n            | as best you can\n            | guided and guarded by [party.compNames]\n        ], making your way to the nursery accompanied by Gwyn and Cait, the two of them stroking your hair and comforting you as it begins.\n    ]\n    \n    The birth comes surprisingly easy, as if your child has been fighting their way out of you the whole time... which would explain all the hoofie-kicks. It barely takes an hour of pushing and hard breathing before Cait's pulling a bundle of mewling, wriggling half-mare from 'twixt your aching nethers, unable to keep the bright and whole-hearted smile from spreading on your face when the child tries to grab a flicking kitty-ear.\n    \n    [var0\n        |\"Oh, this little girl's got a bit of everything,\" Cait comments, drying the baby off. \"Like Mare like momma, I guess. I bet she's gonna grow up big like Hashat.\"\n        |\"Oh hey, looks like this girl's all girl. Lucky little mare.\"\n    ] She pauses and giggles, kissing the hand that grabs her lips. \"Hey, I'm not an elf.\"\n    \n    Still looking so bubbly she might just foam over, she presents the bundle to you so that you can bring your beautiful new baby girl to your waiting [pc.breast]. Cait gently brushes your forehead with a warm cloth as your eyes flutter closed, content.\n    \n    \"Get some rest, [pc.name],\" she murmurs. \"You need it.\"\n    \n    You fall asleep almost instantly, your arms spread around your child in a mother's protective embrace. Dreaming of nothing, you sleep until the next day.\n    ",
-      "translation": "\n    你突然 [pc.mascFem\n        |哼了一声。\n        |（注：根据语境，“gasp”在这里更适合作为拟声词，表示“倒抽一口气”的动作或声音，因此没有采用常见的翻译方式如“气喘吁吁”或“倒抽一口气”，而是直接保留了原词。）\n    ] 那种剧烈的阵痛会紧紧抓住你的腰部，持续不断，让你脸上露出痛苦的表情——这就是怀孕带来的滋味啊！ [atFH\n        |在……的帮助下 [party.solo\n            |客栈里的客人\n            |你的朋友们\n        ]在格温和凯特的陪伴下，你走进了婴儿室。她们一边轻抚着你的头发，一边安慰你，一切就这样开始了。\n        |你急忙赶回城镇。[party.solo\n            | 尽你所能\n            | 在……的引导与保护下 [party.compNames]\n        ]在格温和凯特的陪伴下，你走到了婴儿房。她们一边轻抚着你的头发，一边安慰你，一切就这样开始了。\n    ]\n    \n    分娩过程出奇地顺利，就好像你的孩子一直在你的体内奋力挣扎着想要出来……这也就能解释为什么会有那些踢腿的动作了。仅仅用了大约一个小时的用力推拉和喘息，凯特就从一个痛苦中诞下了一个哭闹着、不停扭动的小生命。当孩子试图抓住那只轻轻摆动的小猫耳朵时，你脸上不由自主地露出了灿烂而幸福的笑容。\n    \n    [var0\n        |哦，这个小女孩什么特点都有呢，”凯特一边说一边给婴儿擦干身体。“既像妈妈，又像玛尔。我打赌，她长大后一定会像哈莎特那样高挑美丽。\n        |哦，看样子这个女孩身边只有女性朋友呢。真是个幸运的小姑娘。\n    ] 她停顿了一下，咯咯地笑了起来，然后亲了亲那只捂住她嘴唇的手：“嘿，我可不是精灵哦。”\n\n她依然显得那么活泼开朗，仿佛随时都会冒出泡泡来，然后她把那个包裹递给你，让你可以把你那可爱的新生女婴带去等待你的地方。 [pc.breast]凯特用一块温暖的布轻轻擦拭你的额头，此时你的眼睛已经缓缓闭上了，显得十分满足。\n\n“好好休息吧，”她说道。 [pc.name]你需要它，”她轻声说道。\n\n你几乎立刻就进入了梦乡，双臂紧紧搂住自己的孩子，就像一位母亲那样保护着她。你没有做任何梦，就这样一直睡到了第二天。\n    ",
+      "translation": "\n    你突然 [pc.mascFem\n        |哼了一声。\n        |倒吸一口气\n    ] 那种剧烈的阵痛会紧紧抓住你的腰部，持续不断，让你脸上露出痛苦的表情——这就是怀孕带来的滋味啊！ [atFH\n        |在……的帮助下 [party.solo\n            |客栈里的客人\n            |你的朋友们\n        ]在格温和凯特的陪伴下，你走进了婴儿室。她们一边轻抚着你的头发，一边安慰你，一切就这样开始了。\n        |你急忙赶回城镇。[party.solo\n            | 尽你所能\n            | 在……的引导与保护下 [party.compNames]\n        ]在格温和凯特的陪伴下，你走到了婴儿房。她们一边轻抚着你的头发，一边安慰你，一切就这样开始了。\n    ]\n    \n    分娩过程出奇地顺利，就好像你的孩子一直在你的体内奋力挣扎着想要出来……这也就能解释为什么会有那些踢腿的动作了。仅仅用了大约一个小时的用力推拉和喘息，凯特就从一个痛苦中诞下了一个哭闹着、不停扭动的小生命。当孩子试图抓住那只轻轻摆动的小猫耳朵时，你脸上不由自主地露出了灿烂而幸福的笑容。\n    \n    [var0\n        |哦，这个小女孩什么特点都有呢，”凯特一边说一边给婴儿擦干身体。“既像妈妈，又像玛尔。我打赌，她长大后一定会像哈莎特那样高挑美丽。\n        |哦，看样子这个女孩身边只有女性朋友呢。真是个幸运的小姑娘。\n    ] 她停顿了一下，咯咯地笑了起来，然后亲了亲那只捂住她嘴唇的手：“嘿，我可不是精灵哦。”\n\n她依然显得那么活泼开朗，仿佛随时都会冒出泡泡来，然后她把那个包裹递给你，让你可以把你那可爱的新生女婴带去等待你的地方。 [pc.breast]凯特用一块温暖的布轻轻擦拭你的额头，此时你的眼睛已经缓缓闭上了，显得十分满足。\n\n“好好休息吧，”她说道。 [pc.name]你需要它，”她轻声说道。\n\n你几乎立刻就进入了梦乡，双臂紧紧搂住自己的孩子，就像一位母亲那样保护着她。你没有做任何梦，就这样一直睡到了第二天。\n    ",
       "start": 783693,
       "end": 785702,
       "line": 1,
       "raw": "'\\n    You suddenly [pc.mascFem\\n        |grunt\\n        |gasp\\n    ] as a rough contraction seizes you around the waist and doesn\\'t stop, twisting a grimace out of your face. The pregnancy! [atFH\\n        |Aided by [party.solo\\n            |the occupants of the inn\\n            |your friends\\n        ], you head into the nursery accompanied by Gwyn and Cait, the two of them stroking your hair and comforting you as it begins.\\n        |You rush back to town[party.solo\\n            | as best you can\\n            | guided and guarded by [party.compNames]\\n        ], making your way to the nursery accompanied by Gwyn and Cait, the two of them stroking your hair and comforting you as it begins.\\n    ]\\n    \\n    The birth comes surprisingly easy, as if your child has been fighting their way out of you the whole time... which would explain all the hoofie-kicks. It barely takes an hour of pushing and hard breathing before Cait\\'s pulling a bundle of mewling, wriggling half-mare from \\'twixt your aching nethers, unable to keep the bright and whole-hearted smile from spreading on your face when the child tries to grab a flicking kitty-ear.\\n    \\n    [var0\\n        |\"Oh, this little girl\\'s got a bit of everything,\" Cait comments, drying the baby off. \"Like Mare like momma, I guess. I bet she\\'s gonna grow up big like Hashat.\"\\n        |\"Oh hey, looks like this girl\\'s all girl. Lucky little mare.\"\\n    ] She pauses and giggles, kissing the hand that grabs her lips. \"Hey, I\\'m not an elf.\"\\n    \\n    Still looking so bubbly she might just foam over, she presents the bundle to you so that you can bring your beautiful new baby girl to your waiting [pc.breast]. Cait gently brushes your forehead with a warm cloth as your eyes flutter closed, content.\\n    \\n    \"Get some rest, [pc.name],\" she murmurs. \"You need it.\"\\n    \\n    You fall asleep almost instantly, your arms spread around your child in a mother\\'s protective embrace. Dreaming of nothing, you sleep until the next day.\\n    '",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_prompt_leak_fix",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:785738:785748:a1ab1ae2a059",
@@ -16343,13 +16357,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 823419,
       "end": 823429,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:823451:823453:da39a3ee5e6b",
@@ -16411,13 +16427,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Him",
-      "translation": "去他的吧。",
+      "translation": "肏他",
       "start": 823552,
       "end": 823562,
       "line": 1,
       "raw": "\"Fuck Him\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:823584:823586:da39a3ee5e6b",
@@ -16438,13 +16456,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck the archer in the butt.",
-      "translation": "去他妈的弓箭手。",
+      "translation": "肏那个弓箭手的屁股。",
       "start": 823587,
       "end": 823617,
       "line": 1,
       "raw": "\"Fuck the archer in the butt.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:823631:823633:da39a3ee5e6b",
@@ -17977,13 +17997,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Buttfuck",
-      "translation": "去他的",
+      "translation": "肛交",
       "start": 899765,
       "end": 899775,
       "line": 1,
       "raw": "\"Buttfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:899794:899808:ffc4f084efcb",
@@ -20628,13 +20650,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 1061998,
       "end": 1062008,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1062038:1062040:da39a3ee5e6b",
@@ -20669,13 +20693,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Tits",
-      "translation": "去他妈的。",
+      "translation": "肏乳房",
       "start": 1062135,
       "end": 1062146,
       "line": 1,
       "raw": "\"Fuck Tits\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1062177:1062179:da39a3ee5e6b",
@@ -21647,13 +21673,15 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n                Having thoroughly enjoyed the show the mare gave you, you [pc.hasCock|put your [pc.cock] away|[pc.hasVagina|pull you hand out of your [pc.bottomGarments] licking your fingers |]] and silently slink back[party.isJustPC| to camp| to your friends]. After a brutal fucking like that you doubt that the shaman will be giving you any trouble for a little while at least. You make a mental note of where the pond is and continue through the valley.\n            ",
-      "translation": "\n                在彻底欣赏了那匹母马为你表演的节目之后，你…… [pc.hasCock|请注意，这个短语“put your”本身并不完整，它通常需要后接其他词汇才能构成完整的句子。在游戏文本的翻译中，我们通常会根据上下文来推断它应该搭配哪些词汇。例如，它可能会被翻译为“使用你的……”或“把你的……放在……上”等等。因此，在具体的翻译过程中，还需要根据具体的语境来确定最合适的表达方式。 [pc.cock] 离开|[pc.hasVagina|把你从……中拯救出来 [pc.bottomGarments] 垂涎三尺 |]] 然后悄悄地溜了回去。[party.isJustPC| 去露营| 告诉你的朋友们吧。]经历了那样一场激烈的战斗之后，你至少可以肯定，在短时间内，那个萨满不会再给你带来任何麻烦了。你在心里记下了那个池塘的位置，然后继续沿着山谷前行。\n            ",
+      "translation": "\n                在彻底欣赏了那匹母马为你表演的节目之后，你…… [pc.hasCock|抽出你的 [pc.cock]|[pc.hasVagina|把你从……中拯救出来 [pc.bottomGarments] 垂涎三尺 |]] 然后悄悄地溜了回去。[party.isJustPC| 去露营| 告诉你的朋友们吧。]经历了那样一场激烈的战斗之后，你至少可以肯定，在短时间内，那个萨满不会再给你带来任何麻烦了。你在心里记下了那个池塘的位置，然后继续沿着山谷前行。\n            ",
       "start": 1191158,
       "end": 1191633,
       "line": 1,
       "raw": "\"\\n                Having thoroughly enjoyed the show the mare gave you, you [pc.hasCock|put your [pc.cock] away|[pc.hasVagina|pull you hand out of your [pc.bottomGarments] licking your fingers |]] and silently slink back[party.isJustPC| to camp| to your friends]. After a brutal fucking like that you doubt that the shaman will be giving you any trouble for a little while at least. You make a mental note of where the pond is and continue through the valley.\\n            \"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1191668:1191674:bc981983e7f5",
@@ -24191,13 +24219,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Facefuck",
-      "translation": "脸贴脸亲吻",
+      "translation": "颜面交",
       "start": 1286776,
       "end": 1286786,
       "line": 1,
       "raw": "\"Facefuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1286812:1286814:da39a3ee5e6b",
@@ -25900,7 +25930,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Ford South",
-      "translation": "福特南区",
+      "translation": "南浅滩",
       "start": 1377514,
       "end": 1377526,
       "line": 1,
@@ -25914,7 +25944,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Ford The River South",
-      "translation": "福特河畔南城",
+      "translation": "渡河南下",
       "start": 1377550,
       "end": 1377572,
       "line": 1,
@@ -25969,7 +25999,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Ford North",
-      "translation": "福特北方公司",
+      "translation": "北浅滩",
       "start": 1377885,
       "end": 1377897,
       "line": 1,
@@ -25983,7 +26013,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Ford The River North",
-      "translation": "福特河北区",
+      "translation": "渡河北上",
       "start": 1377921,
       "end": 1377943,
       "line": 1,
@@ -27376,13 +27406,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1393128,
       "end": 1393134,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1393152:1393154:da39a3ee5e6b",
@@ -27403,13 +27435,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck the horny ranger's ass.",
-      "translation": "去他妈的那些好色的护林员。",
+      "translation": "肏那个好色游侠的屁股。",
       "start": 1393155,
       "end": 1393185,
       "line": 1,
       "raw": "\"Fuck the horny ranger's ass.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1393225:1393232:02184d95f826",
@@ -27555,7 +27589,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck & Cure",
-      "translation": "该内容包含不适当词汇，未进行翻译。",
+      "translation": "交合与治愈",
       "start": 1393561,
       "end": 1393574,
       "line": 1,
@@ -27650,13 +27684,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Asshole",
-      "translation": "去他妈的混蛋",
+      "translation": "肛交",
       "start": 1394161,
       "end": 1394175,
       "line": 1,
       "raw": "\"Fuck Asshole\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1394217:1394219:da39a3ee5e6b",
@@ -29350,13 +29386,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1449056,
       "end": 1449062,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1449073:1449075:da39a3ee5e6b",
@@ -29599,13 +29637,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1453903,
       "end": 1453909,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1453920:1453922:da39a3ee5e6b",
@@ -29656,13 +29696,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1456803,
       "end": 1456809,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1456824:1456826:da39a3ee5e6b",
@@ -33078,13 +33120,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Female Slime",
-      "translation": "去他妈的女性黏液生物",
+      "translation": "肏雌性史莱姆",
       "start": 1581126,
       "end": 1581145,
       "line": 1,
       "raw": "\"Fuck Female Slime\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1581146:1581234:cb0eec95fa5d",
@@ -33106,13 +33150,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Fuck Female Slime",
-      "translation": "去他妈的女性黏液生物",
+      "translation": "肏雌性史莱姆",
       "start": 1581248,
       "end": 1581267,
       "line": 1,
       "raw": "\"Fuck Female Slime\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1581268:1581320:7781af89fc2b",
@@ -33148,13 +33194,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Male Slime",
-      "translation": "去他的雄性黏液怪",
+      "translation": "肏雄性史莱姆",
       "start": 1581368,
       "end": 1581385,
       "line": 1,
       "raw": "\"Fuck Male Slime\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1581386:1581479:879ca003d21f",
@@ -35934,13 +35982,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 1688329,
       "end": 1688341,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1688394:1693534:3400cb906f1f",
@@ -36195,13 +36245,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 1710007,
       "end": 1710017,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1710070:1722031:1acbda5df6ae",
@@ -36334,13 +36386,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Fuck Valencia's pussy.",
-      "translation": "去他妈的瓦伦西亚。",
+      "translation": "肏瓦伦西亚的阴户。",
       "start": 1724618,
       "end": 1724642,
       "line": 1,
       "raw": "\"Fuck Valencia's pussy.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1724656:1724658:da39a3ee5e6b",
@@ -37745,13 +37799,15 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n            \"[pc.name]. Wake up.\"\n            \n            Cait's sweet voice brings you back to consciousness, greeting you with a lot less hurt than normal after a sexual excursion with Valencia. Though you suppose you haven't been too heavy with her tailcunt this time. The first thing you notice is that you're now on the bed instead of being at the foot of it as well as the fact that a heavily sleeping Valencia is in your arms.\n            \n            \"Well, you and Valencia fell asleep after several rounds, and so I moved you onto the bed to sleep,\" Cait whispers.\n            \n            Thanks, Cait.\n            \n            \"No worries. You two look <b>so</b> cute together. I couldn't bring myself to separate you. But anyway, we should probably get going.\"\n            \n            Yeah, she's right. \n            \n            \"Hey, I call dibs on her cock the next time we do this, okay?\"\n            \n            Oh, but Valencia will miss her big milky kitty to feed her.[pc.isMilky\n                |\n                \n                \"Tsk, you can feed her, you probably do it all the time!\"\n                \n                [pc.isBimbo\n                    |Yeah, but she would totally like, love to try some different milk every once in a while! \n                    |Yes, but as a lover of breastmilk she would love to sample something different every once in a while.\n                ]\n                |\n            ]\n            \n            Cait finds it hard to argue with that, but still pushes her case after a bit of pouting. \"Yes, but I still wanna get drunk off of her cock, okay? You can't expect me to stay away with <b>that</b> piece of meat around.\"\n            \n            [party.randComp berwyn arona\n                |\"What the fuck are you arguing about?\" Berwyn asks as you regroup with him in Valencia's living room.\n                \n                [pc.isBimbo\n                    |Just sucking dick and milky titties.\n                    \n                    \"What?\" he asks, more confused than ever.\n                    |Nothing.\n                ]\n                |\"Are you two really arguing about sucking dick?\" Arona asks as you regroup with her in Valencia's living room.\n                \n                \"Yes, we are,\" Cait says with pride in her voice.\n                \n                \"Sluts,\" Arona snorts.\n                \n                [arona.isSub\n                    |\"Oh, don't act like you're not slaving away at [pc.name]'s [pc.hasCock\n                        |[pc.cock]\n                        |[pc.vag]\n                    ] all day!\"\n                    \n                    \"Shut up!\"\n                    |\n                ]\n                |Alright, maybe.\n                \n                \"What do you mean maybe?\"\n            ]\n            ",
-      "translation": "\n            \"[pc.name]醒醒。”\n\n凯特甜美的声音将你从昏迷中唤醒，与瓦伦西亚发生性关系后，她的问候语中几乎没有丝毫责备之意。你暗自想，这次自己应该没有对她太过粗暴吧。 你首先注意到的是，你现在躺在床上，而不是站在床脚；同时，你怀里还抱着熟睡中的瓦伦西亚。\n\n“嗯，经过几轮游戏后，你和瓦伦西亚都睡着了，所以我把你们搬到了床上让你们继续睡觉。”凯特轻声说道。\n            \n            没关系。你们两个看起来…… <b>所以</b> 你们俩真是一对，我实在舍不得把你们分开。不过，不管怎样，我们还是该走了。”\n\n“对，她说得对。”\n\n“嘿，下次再做这种事的时候，这个家伙就归我啦，好吗？”\n\n“哦，但瓦伦西亚会想念她那可爱的、需要喂奶的小家伙的。[pc.isMilky\n                |\n                \n                啧，你完全可以喂她啊，你平时不也是经常这么做的吗！\n                \n                [pc.isBimbo\n                    |是啊，但她确实很乐意偶尔尝试一些不同的牛奶品种！ \n                    |是的，但作为一个喜欢母乳喂养的人，她偶尔也会想尝试一些不同的东西。\n                ]\n                |\n            ]\n            \n            凯特觉得很难反驳这一点，但还是在嘟着嘴坚持自己的观点：“好吧，但我还是想喝得烂醉如泥，明白吗？你总不能指望我远离那个…… <b>那个</b> 只是个任人摆布的傀儡罢了。\n            \n            [party.randComp berwyn arona\n                |你们到底在争论些什么？”当你们在瓦伦西亚的客厅里重新聚在一起时，贝尔温问道。\n                \n                [pc.isBimbo\n                    |就是些无聊的事情，还有一些奶酪般柔软的胸部而已。\n\n“什么？”他问道，此时的他比以往任何时候都更加困惑。\n                    |没什么。\n                ]\n                |你们俩真的在为谁更会‘口交’而争吵吗？”当你们在瓦伦西亚的客厅里重新聚在一起时，阿罗娜问道。\n\n“没错，我们就是在争论这个。”凯特骄傲地回答道。\n\n“真是一群荡妇。”阿罗娜嗤笑道。\n                \n                [arona.isSub\n                    |哦，别装作你没有在拼命工作一样。 [pc.name]s”在英语中通常表示所有格，即“……的”。例如，“John's book”表示“约翰的书”。在游戏文本的翻译中，我们也会保留这一用法，以保持原文的 ownership 表示习惯。因此，“'s”可以直接翻译为“的”。 [pc.hasCock\n                        |[pc.cock]\n                        |[pc.vag]\n                    ] 一整天都在说这个！”\n\n“闭嘴！\n                    |\n                ]\n                |好吧，也许吧。\n\n“你说‘也许’是什么意思？\n            ]\n            ",
+      "translation": "\n            \"[pc.name]醒醒。”\n\n凯特甜美的声音将你从昏迷中唤醒，与瓦伦西亚发生性关系后，她的问候语中几乎没有丝毫责备之意。你暗自想，这次自己应该没有对她太过粗暴吧。 你首先注意到的是，你现在躺在床上，而不是站在床脚；同时，你怀里还抱着熟睡中的瓦伦西亚。\n\n“嗯，经过几轮游戏后，你和瓦伦西亚都睡着了，所以我把你们搬到了床上让你们继续睡觉。”凯特轻声说道。\n            \n            没关系。你们两个看起来…… <b>所以</b> 你们俩真是一对，我实在舍不得把你们分开。不过，不管怎样，我们还是该走了。”\n\n“对，她说得对。”\n\n“嘿，下次再做这种事的时候，这个家伙就归我啦，好吗？”\n\n“哦，但瓦伦西亚会想念她那可爱的、需要喂奶的小家伙的。[pc.isMilky\n                |\n                \n                啧，你完全可以喂她啊，你平时不也是经常这么做的吗！\n                \n                [pc.isBimbo\n                    |是啊，但她确实很乐意偶尔尝试一些不同的牛奶品种！ \n                    |是的，但作为一个喜欢母乳喂养的人，她偶尔也会想尝试一些不同的东西。\n                ]\n                |\n            ]\n            \n            凯特觉得很难反驳这一点，但还是在嘟着嘴坚持自己的观点：“好吧，但我还是想喝得烂醉如泥，明白吗？你总不能指望我远离那个…… <b>那个</b> 只是个任人摆布的傀儡罢了。\n            \n            [party.randComp berwyn arona\n                |你们到底在争论些什么？”当你们在瓦伦西亚的客厅里重新聚在一起时，贝尔温问道。\n                \n                [pc.isBimbo\n                    |就是些无聊的事情，还有一些奶酪般柔软的胸部而已。\n\n“什么？”他问道，此时的他比以往任何时候都更加困惑。\n                    |没什么。\n                ]\n                |你们俩真的在为谁更会‘口交’而争吵吗？”当你们在瓦伦西亚的客厅里重新聚在一起时，阿罗娜问道。\n\n“没错，我们就是在争论这个。”凯特骄傲地回答道。\n\n“真是一群荡妇。”阿罗娜嗤笑道。\n                \n                [arona.isSub\n                    |哦，别装作你没有在拼命工作一样。 [pc.name]的 [pc.hasCock\n                        |[pc.cock]\n                        |[pc.vag]\n                    ] 一整天都在说这个！”\n\n“闭嘴！\n                    |\n                ]\n                |好吧，也许吧。\n\n“你说‘也许’是什么意思？\n            ]\n            ",
       "start": 1810400,
       "end": 1813280,
       "line": 1,
       "raw": "'\\n            \"[pc.name]. Wake up.\"\\n            \\n            Cait\\'s sweet voice brings you back to consciousness, greeting you with a lot less hurt than normal after a sexual excursion with Valencia. Though you suppose you haven\\'t been too heavy with her tailcunt this time. The first thing you notice is that you\\'re now on the bed instead of being at the foot of it as well as the fact that a heavily sleeping Valencia is in your arms.\\n            \\n            \"Well, you and Valencia fell asleep after several rounds, and so I moved you onto the bed to sleep,\" Cait whispers.\\n            \\n            Thanks, Cait.\\n            \\n            \"No worries. You two look <b>so</b> cute together. I couldn\\'t bring myself to separate you. But anyway, we should probably get going.\"\\n            \\n            Yeah, she\\'s right. \\n            \\n            \"Hey, I call dibs on her cock the next time we do this, okay?\"\\n            \\n            Oh, but Valencia will miss her big milky kitty to feed her.[pc.isMilky\\n                |\\n                \\n                \"Tsk, you can feed her, you probably do it all the time!\"\\n                \\n                [pc.isBimbo\\n                    |Yeah, but she would totally like, love to try some different milk every once in a while! \\n                    |Yes, but as a lover of breastmilk she would love to sample something different every once in a while.\\n                ]\\n                |\\n            ]\\n            \\n            Cait finds it hard to argue with that, but still pushes her case after a bit of pouting. \"Yes, but I still wanna get drunk off of her cock, okay? You can\\'t expect me to stay away with <b>that</b> piece of meat around.\"\\n            \\n            [party.randComp berwyn arona\\n                |\"What the fuck are you arguing about?\" Berwyn asks as you regroup with him in Valencia\\'s living room.\\n                \\n                [pc.isBimbo\\n                    |Just sucking dick and milky titties.\\n                    \\n                    \"What?\" he asks, more confused than ever.\\n                    |Nothing.\\n                ]\\n                |\"Are you two really arguing about sucking dick?\" Arona asks as you regroup with her in Valencia\\'s living room.\\n                \\n                \"Yes, we are,\" Cait says with pride in her voice.\\n                \\n                \"Sluts,\" Arona snorts.\\n                \\n                [arona.isSub\\n                    |\"Oh, don\\'t act like you\\'re not slaving away at [pc.name]\\'s [pc.hasCock\\n                        |[pc.cock]\\n                        |[pc.vag]\\n                    ] all day!\"\\n                    \\n                    \"Shut up!\"\\n                    |\\n                ]\\n                |Alright, maybe.\\n                \\n                \"What do you mean maybe?\"\\n            ]\\n            '",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1813494:1813500:bc981983e7f5",
@@ -38306,7 +38362,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Ass",
-      "translation": "去死吧",
+      "translation": "肛交",
       "start": 1846972,
       "end": 1846982,
       "line": 1,
@@ -38374,13 +38430,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 1847131,
       "end": 1847143,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:1847165:1847167:da39a3ee5e6b",
@@ -42022,13 +42080,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 2121107,
       "end": 2121117,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2121134:2121136:da39a3ee5e6b",
@@ -45168,13 +45228,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 2586183,
       "end": 2586193,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2586207:2586209:da39a3ee5e6b",
@@ -48469,13 +48531,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 2849169,
       "end": 2849179,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2849198:2849200:da39a3ee5e6b",
@@ -48537,13 +48601,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 2849289,
       "end": 2849301,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2849322:2849324:da39a3ee5e6b",
@@ -48619,13 +48685,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 2849546,
       "end": 2849556,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2849600:2849602:da39a3ee5e6b",
@@ -48687,13 +48755,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 2849691,
       "end": 2849703,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2849749:2849751:da39a3ee5e6b",
@@ -48768,13 +48838,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Vag",
-      "translation": "去他的阴道。",
+      "translation": "肏阴道",
       "start": 2849864,
       "end": 2849874,
       "line": 1,
       "raw": "\"Fuck Vag\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:2849892:2849894:da39a3ee5e6b",
@@ -50965,7 +51037,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Morwen Fuck",
-      "translation": "莫文，去死吧。",
+      "translation": "莫文交配",
       "start": 2998982,
       "end": 2998995,
       "line": 1,
@@ -51144,13 +51216,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 3021384,
       "end": 3021396,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:3021448:3028605:f9854c2bacad",
@@ -52906,13 +52980,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 3107050,
       "end": 3107056,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:3107076:3107078:da39a3ee5e6b",
@@ -52974,13 +53050,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 3107170,
       "end": 3107182,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Valley.712dcef3443eee5bcd35.js:3107207:3107209:da39a3ee5e6b",

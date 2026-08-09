@@ -1263,13 +1263,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 26955,
       "end": 26965,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:27068:27070:da39a3ee5e6b",
@@ -1525,13 +1527,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Dick Fuck Harem",
-      "translation": "迪克·福克后宫",
+      "translation": "阴茎后宫性交",
       "start": 31045,
       "end": 31062,
       "line": 1,
       "raw": "\"Dick Fuck Harem\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:31092:31094:da39a3ee5e6b",
@@ -1593,13 +1597,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Vag Fuck Harem",
-      "translation": "流浪汉的后宫",
+      "translation": "阴道后宫性交",
       "start": 31313,
       "end": 31329,
       "line": 1,
       "raw": "\"Vag Fuck Harem\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:31361:31363:da39a3ee5e6b",
@@ -1661,13 +1667,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 31581,
       "end": 31591,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:31694:31696:da39a3ee5e6b",
@@ -2915,13 +2923,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Butt",
-      "translation": "蠢货",
+      "translation": "肛交",
       "start": 105989,
       "end": 106000,
       "line": 1,
       "raw": "\"Fuck Butt\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:106033:106048:823745a56533",
@@ -3598,13 +3608,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Pussy",
-      "translation": "去他妈的。",
+      "translation": "肏阴户",
       "start": 137145,
       "end": 137157,
       "line": 1,
       "raw": "\"Fuck Pussy\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:137212:142169:51e15fd918d0",
@@ -3681,7 +3693,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Fuck it, sure.",
-      "translation": "去他的，好吧。",
+      "translation": "肏它，当然了。",
       "start": 142360,
       "end": 142376,
       "line": 1,
@@ -7249,7 +7261,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 254800,
       "end": 254806,
       "line": 1,
@@ -7764,7 +7776,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 284410,
       "end": 284416,
       "line": 1,
@@ -11247,13 +11259,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Wall-fuck",
-      "translation": "去他的",
+      "translation": "墙边性交",
       "start": 459387,
       "end": 459398,
       "line": 1,
       "raw": "\"Wall-fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:459414:459425:4cfe56bbce73",
@@ -11261,13 +11275,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Wall-fuck",
-      "translation": "去他的",
+      "translation": "墙边性交",
       "start": 459414,
       "end": 459425,
       "line": 1,
       "raw": "\"Wall-fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:459426:459476:067492076952",
@@ -11366,13 +11382,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Fuck the motherly matron's ass.",
-      "translation": "去他妈的。",
+      "translation": "肏那位母性女舍监的屁股。",
       "start": 471255,
       "end": 471288,
       "line": 1,
       "raw": "\"Fuck the motherly matron's ass.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:471304:471311:b3fa5da5b4c0",
@@ -12408,13 +12426,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Lift Fuck",
-      "translation": "升起来，混蛋",
+      "translation": "抱起性交",
       "start": 527902,
       "end": 527913,
       "line": 1,
       "raw": "\"Lift Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:527936:527938:da39a3ee5e6b",
@@ -12478,13 +12498,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck and Grope",
-      "translation": "乱搞一通",
+      "translation": "边肏边摸",
       "start": 528110,
       "end": 528126,
       "line": 1,
       "raw": "\"Fuck and Grope\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:528150:528152:da39a3ee5e6b",
@@ -12614,13 +12636,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Titfuck",
-      "translation": "愚蠢至极的行为",
+      "translation": "乳交",
       "start": 528457,
       "end": 528466,
       "line": 1,
       "raw": "\"Titfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:528488:528490:da39a3ee5e6b",
@@ -15164,7 +15188,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 629880,
       "end": 629886,
       "line": 1,
@@ -17115,13 +17139,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 730128,
       "end": 730138,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:730152:730154:da39a3ee5e6b",
@@ -17197,13 +17223,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Titfuck",
-      "translation": "愚蠢至极的行为",
+      "translation": "乳交",
       "start": 730312,
       "end": 730321,
       "line": 1,
       "raw": "\"Titfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:730338:730340:da39a3ee5e6b",
@@ -20292,13 +20320,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Her",
-      "translation": "去她的",
+      "translation": "肏她",
       "start": 864299,
       "end": 864309,
       "line": 1,
       "raw": "\"Fuck Her\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:864323:864325:da39a3ee5e6b",
@@ -20319,13 +20349,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Tame the fire in your wife's [silly|coochie|loins].",
-      "translation": "平息你妻子心中的怒火吧。 [silly|coochie”这个词在非正式语境中通常用来指代女性的私密部位，属于比较俚语和通俗的表达方式。在游戏相关的文本中，使用这个词可能会让一些玩家感到不适或觉得这种表达不够正式。因此，在游戏本地化翻译中，通常会选择更合适、更礼貌的词汇来替代“coochie”这个词。|腰部].",
+      "translation": "平息你妻子[silly|阴户|腰腹]中的欲火。",
       "start": 864326,
       "end": 864379,
       "line": 1,
       "raw": "\"Tame the fire in your wife's [silly|coochie|loins].\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_prompt_leak_fix",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:864393:864402:b1e5359f3a13",
@@ -21817,7 +21849,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 941398,
       "end": 941404,
       "line": 1,
@@ -22837,14 +22869,16 @@
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:988617:988623:38d0f91a99c5",
       "file": "Content_CentaurVillage.567593a04b712b2c6eb3.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "fuck",
-      "translation": "",
+      "translation": "肏",
       "start": 988617,
       "end": 988623,
       "line": 1,
       "raw": "\"fuck\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:988624:988630:bff272e9d673",

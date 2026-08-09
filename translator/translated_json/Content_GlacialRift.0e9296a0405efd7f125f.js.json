@@ -8299,13 +8299,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 538987,
       "end": 538993,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:539043:539360:78042ffeb8c4",
@@ -10150,13 +10152,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 687269,
       "end": 687275,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:687327:688232:cfb37d59b517",
@@ -10219,13 +10223,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Kind Fuck",
-      "translation": "去他的吧",
+      "translation": "温柔性交",
       "start": 688407,
       "end": 688418,
       "line": 1,
       "raw": "\"Kind Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:688436:688438:da39a3ee5e6b",
@@ -11014,13 +11020,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Pussy",
-      "translation": "去他妈的。",
+      "translation": "肏阴户",
       "start": 731518,
       "end": 731530,
       "line": 1,
       "raw": "\"Fuck Pussy\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:731547:731549:da39a3ee5e6b",
@@ -14202,13 +14210,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 954738,
       "end": 954744,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:954763:954765:da39a3ee5e6b",
@@ -14973,13 +14983,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Assfuck",
-      "translation": "混蛋",
+      "translation": "肛交",
       "start": 977498,
       "end": 977507,
       "line": 1,
       "raw": "\"Assfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:977548:988015:7e22a95b6d6b",
@@ -15550,7 +15562,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    As you traverse the [var0], you spot another huddle of valkyries in the distance. The leader of the squad sees you and waves, whistling to make sure she has your attention.\n\n    \"Hail, [pc.isValk|Lightsworn|[pc.mf|brother|sister]]! We're on a hunt. Care to join us?\" she asks. Some of the others in her group give you hopeful smiles, eagerly awaiting your answer.",
-      "translation": "\n    当你穿越……时 [var0]在远处，你看到了另一群女武神。那支小队的队长发现了你，她向你招手，并吹口哨以确认你已经注意到了她。\n\n“你好…… [pc.isValk|光之誓约者|[pc.mf|兄弟|姐姐]]我们正在寻找某样东西，你想加入我们吗？”她问道。她所在小组中的其他人也都向你投来了充满希望的笑容，急切地等待着你的回答。",
+      "translation": "\n    当你穿越[var0]时，在远处你看到了另一群女武神。那支小队的队长发现了你，她向你招手，并吹口哨以确认你已经注意到了她。\n\n“你好…… [pc.isValk|光之誓约者|[pc.mf|兄弟|姐姐]]我们正在寻找某样东西，你想加入我们吗？”她问道。她所在小组中的其他人也都向你投来了充满希望的笑容，急切地等待着你的回答。",
       "start": 1012600,
       "end": 1012974,
       "line": 1,
@@ -16089,7 +16101,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Pitch Anal",
-      "translation": "音高分析",
+      "translation": "提议肛交",
       "start": 1029056,
       "end": 1029068,
       "line": 1,
@@ -20166,13 +20178,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Vag",
-      "translation": "去他的阴道。",
+      "translation": "肏阴道",
       "start": 1433011,
       "end": 1433021,
       "line": 1,
       "raw": "\"Fuck Vag\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:1433039:1433041:da39a3ee5e6b",

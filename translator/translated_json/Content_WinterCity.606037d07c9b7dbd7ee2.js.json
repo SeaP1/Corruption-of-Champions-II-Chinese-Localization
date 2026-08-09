@@ -2928,13 +2928,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 100112,
       "end": 100118,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:100161:100489:f4e600c57402",
@@ -3373,13 +3375,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Fuck this consort's brains out.",
-      "translation": "去他妈的，把这个女人彻底搞疯吧。",
+      "translation": "把这个侍妾肏到神魂颠倒。",
       "start": 127852,
       "end": 127885,
       "line": 1,
       "raw": "\"Fuck this consort's brains out.\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:127899:127901:da39a3ee5e6b",
@@ -3414,13 +3418,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 127941,
       "end": 127953,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:127996:133247:0f8a3c7afeb8",
@@ -6210,13 +6216,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Rough Assfuck",
-      "translation": "粗野的混蛋",
+      "translation": "粗暴肛交",
       "start": 258273,
       "end": 258288,
       "line": 1,
       "raw": "\"Rough Assfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:258305:258307:da39a3ee5e6b",
@@ -17873,13 +17881,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck Me",
-      "translation": "去你的",
+      "translation": "肏我",
       "start": 1201046,
       "end": 1201055,
       "line": 1,
       "raw": "\"Fuck Me\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:1201076:1201078:da39a3ee5e6b",
@@ -20484,13 +20494,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1295557,
       "end": 1295563,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:1295592:1295594:da39a3ee5e6b",
@@ -20593,13 +20605,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Fuck",
-      "translation": "去他的",
+      "translation": "肏",
       "start": 1295790,
       "end": 1295796,
       "line": 1,
       "raw": "\"Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:1295825:1295827:da39a3ee5e6b",

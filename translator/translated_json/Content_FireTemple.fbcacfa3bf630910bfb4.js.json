@@ -1199,13 +1199,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Titfuck",
-      "translation": "愚蠢至极的行为",
+      "translation": "乳交",
       "start": 19969,
       "end": 19978,
       "line": 1,
       "raw": "\"Titfuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_FireTemple.fbcacfa3bf630910bfb4.js:19996:19998:da39a3ee5e6b",

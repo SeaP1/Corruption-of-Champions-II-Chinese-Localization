@@ -2853,13 +2853,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Suck & Fuck",
-      "translation": "糟糕透顶",
+      "translation": "边吸边肏",
       "start": 146739,
       "end": 146752,
       "line": 1,
       "raw": "\"Suck & Fuck\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_DreamPalace.253f5f0c3a75d9035341.js:146774:146776:da39a3ee5e6b",
@@ -3639,13 +3641,15 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Get Fucked",
-      "translation": "去你的吧",
+      "translation": "被肏",
       "start": 217701,
       "end": 217713,
       "line": 1,
       "raw": "\"Get Fucked\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated_short_fuck_terms",
+      "translationModel": "manual"
     },
     {
       "id": "Content_DreamPalace.253f5f0c3a75d9035341.js:217716:217718:da39a3ee5e6b",
