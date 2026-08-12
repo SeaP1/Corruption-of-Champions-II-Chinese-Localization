@@ -82,6 +82,27 @@ function keepLexicon(row, kind) {
   if (/^(up|down|both|true|false|null|none|left|right|skin|ass|asshole|anus|butt|butts|cock|cocks|cunt|cunts|pussy|pussies|vagina|vaginas|clit|clits|clitoris|clitorises|nipple|nipples|breast|breasts|chest|chests|areola|areolae|ball|balls|testicle|testicles|sack|sheath|belly|hip|hips|hair|eye|eyes|face|maw|mouth|arm|arms|leg|legs|tail|tails|tongue|ear|ears|horn|horns|wing|wings|body|armor|weapon|shield|boots|gear|apparel|equipment|item|accessory|ring|rings|necklace|clothing|clothes|underwear|panties)$/i.test(t)) return false;
   return true;
 }
+function looksHardUnsafeSourceWanted(row) {
+  const t = String(row.original || "").trim();
+  if (/^(?:<b>)?\s*(?:ERROR|Error|Parse Error)\b/i.test(t) || /\b(?:INVALID ARG|NONVALID FLUID|NO WANGS DETECTED|CockDescript|CockShape2|CockHead|breastDescript|wombdescript|multiCockDescript|simpleCockNoun|CLITDESCRIPT)\b/i.test(t)) return true;
+  if (!t || !hasLetters(t) || hasCjk(t)) return true;
+  if (!balancedStructure(t)) return true;
+  if (isHtmlOnlyFragment(t) || isDeveloperMessage(t)) return true;
+  if (/^(?:function|undefined|null|arguments|prototype|constructor|value|string|object|array|promise|symbol|iterator)$/i.test(t)) return true;
+  if (/^rgba\(/i.test(t) || /^\.[A-Za-z0-9_-]+$/.test(t)) return true;
+  if (/\.(svg|png|jpg|jpeg|webp|gif|mp3|ogg|wav|js|css|json|woff2?|ttf|otf)(\b|$|[?#])/i.test(t)) return true;
+  if (/^damage\.(attackType|damage)$/.test(t)) return true;
+  if (/^[{};,.()+\][]{1,8}$/.test(t)) return true;
+  if (/\.test\(|\.includes\(|\.toLowerCase\(|readMainTextInput\(|NameKiddo\(|processTime\(|addButton\(|addGatedButton\(|return\s+[^\n]*textify|\}\);|=>/.test(t)) return true;
+  if (/\b(function|return|typeof|undefined|null|Promise|Object|Array|RegExp|prototype|constructor|WEBPACK|regeneratorRuntime)\b/.test(t)) return true;
+  if (/\.(concat|map|filter|forEach|then|catch|slice|apply|call|bind)\s*\(/.test(t)) return true;
+  return false;
+}
+function keepSourceWanted(row) {
+  if (!row.shouldTranslate) return false;
+  if (looksHardUnsafeSourceWanted(row)) return false;
+  return true;
+}
 function keepVisible(row, key, kind) {
   const t = row.original.trim();
   if (!cleanBase(t)) return false;
@@ -100,6 +121,7 @@ function keepVisible(row, key, kind) {
 }
 function decide(row, key, kind) {
   if (!row.shouldTranslate && !cleanBase(row.original)) return { keep: false, reason: "source_not_translatable" };
+  if (keepSourceWanted(row)) return { keep: true, reason: "505_source_should_translate_safe" };
   if (keepLexicon(row, kind)) return { keep: true, reason: `505_lexicon_${kind}` };
   if (row.shouldTranslate && keepVisible(row, key, kind)) return { keep: true, reason: `505_visible_${key.replace(/[^A-Za-z0-9]+/g, "_")}_${row.category}` };
   return { keep: false, reason: "disabled_for_505_safety" };

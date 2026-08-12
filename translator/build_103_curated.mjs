@@ -87,6 +87,26 @@ function keepConfirmOrPopup(row) {
   if (t.length <= 60 && isTitleish(t)) return true;
   return false;
 }
+function looksHardUnsafeSourceWanted(row) {
+  const t = String(row.original || "").trim();
+  if (!t || !hasLetters(t) || hasCjk(t)) return true;
+  if (!balancedStructure(t)) return true;
+  if (looksResourceOrUrl(t) || looksRuntimeError(t)) return true;
+  if (/^\s*(?:<\/?[A-Za-z][^>]*>|[.!?,;:])+\s*$/.test(t)) return true;
+  if (/^\[[A-Za-z0-9_]+\]$/.test(t)) return true;
+  if (/^[:](hold|new|was)$/.test(t)) return true;
+  if (/^\.[A-Za-z0-9_-]+$/.test(t)) return true;
+  if (/rgba\(|opacity:\s*0|pointer-events:none|flex-direction:|Cardo,\s*Times,\s*Sans Serif/i.test(t)) return true;
+  if (/[{};]/.test(t)) return true;
+  if (/\b(function|return|typeof|undefined|null|Promise|Object|Array|RegExp|prototype|constructor|WEBPACK|regeneratorRuntime|className)\b/.test(t)) return true;
+  if (/\.(concat|map|filter|forEach|then|catch|slice|push|apply|call|bind)\s*\(/.test(t)) return true;
+  return false;
+}
+function keepSourceWanted(row) {
+  if (!row.shouldTranslate) return false;
+  if (looksHardUnsafeSourceWanted(row)) return false;
+  return true;
+}
 function keepGeneralSafe(row) {
   const t = String(row.original || "").trim();
   if (!row.shouldTranslate) return false;
@@ -97,6 +117,7 @@ function keepGeneralSafe(row) {
   return false;
 }
 function keepRow(row) {
+  if (keepSourceWanted(row)) return { keep: true, reason: "103_source_should_translate_safe" };
   if (keepOptionArea(row)) return { keep: true, reason: "103_options_area" };
   if (keepConfirmOrPopup(row)) return { keep: true, reason: "103_confirm_or_popup" };
   if (keepGeneralSafe(row)) return { keep: true, reason: "103_general_safe_visible" };

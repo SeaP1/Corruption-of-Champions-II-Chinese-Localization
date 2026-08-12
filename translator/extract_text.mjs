@@ -6,7 +6,7 @@ const ROOT = path.resolve("resources", "app");
 const OUT_DIR = path.resolve("translator", "extracted_json");
 
 const args = new Set(process.argv.slice(2));
-const mode = args.has("--all") ? "all" : "sample";
+const mode = (args.has("--all") || args.has("-all")) ? "all" : "sample";
 
 const SAMPLE_FILES = ["Content_Forest.dc28793bf13e3dfdc5b8.js"];
 const ALL_FILE_PATTERNS = [/\.js$/i];
