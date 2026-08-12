@@ -17649,7 +17649,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Submit",
-      "translation": "提交",
+      "translation": "屈服",
       "start": 1183017,
       "end": 1183025,
       "line": 1,
@@ -26279,7 +26279,9 @@
       "end": 1622986,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:1623071:1623078:466bc8cef3e7",
@@ -26292,7 +26294,9 @@
       "end": 1623078,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_WinterCity.606037d07c9b7dbd7ee2.js:1623292:1623298:bc981983e7f5",

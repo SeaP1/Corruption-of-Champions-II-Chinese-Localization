@@ -705,15 +705,17 @@
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:13723:13729:7d44bc449c2a",
       "file": "Content_CentaurVillage.567593a04b712b2c6eb3.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Blue",
-      "translation": "蓝色",
+      "translation": "",
       "start": 13723,
       "end": 13729,
       "line": 1,
       "raw": "\"Blue\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:13756:13758:da39a3ee5e6b",
@@ -16861,15 +16863,17 @@
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:693909:693916:b406fb57b29f",
       "file": "Content_CentaurVillage.567593a04b712b2c6eb3.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Black",
-      "translation": "黑色",
+      "translation": "",
       "start": 693909,
       "end": 693916,
       "line": 1,
       "raw": "\"Black\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_CentaurVillage.567593a04b712b2c6eb3.js:693936:693938:da39a3ee5e6b",

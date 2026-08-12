@@ -3719,7 +3719,9 @@
       "end": 220435,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_DreamPalace.253f5f0c3a75d9035341.js:220520:220527:466bc8cef3e7",
@@ -3732,7 +3734,9 @@
       "end": 220527,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_DreamPalace.253f5f0c3a75d9035341.js:220642:220648:bc981983e7f5",

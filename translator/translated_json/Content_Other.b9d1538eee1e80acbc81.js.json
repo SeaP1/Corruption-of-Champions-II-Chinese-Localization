@@ -5232,7 +5232,9 @@
       "end": 313619,
       "line": 1,
       "raw": "\"human\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:313638:313648:456ee93c5d77",
@@ -5258,7 +5260,9 @@
       "end": 313676,
       "line": 1,
       "raw": "\"catfolk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:313695:313703:1611726adc52",
@@ -5346,14 +5350,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:318515:318522:e31663b107b9",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Human",
-      "translation": "人类",
+      "translation": "",
       "start": 318515,
       "end": 318522,
       "line": 1,
       "raw": "\"Human\"",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:318564:318566:da39a3ee5e6b",
@@ -5428,16 +5434,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:319412:319421:ae665893319c",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Catfolk",
-      "translation": "猫族",
+      "translation": "",
       "start": 319412,
       "end": 319421,
       "line": 1,
       "raw": "\"Catfolk\"",
       "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated_glossary_exact",
-      "translationModel": "manual"
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:319463:319465:da39a3ee5e6b",
@@ -5796,7 +5802,9 @@
       "end": 321812,
       "line": 1,
       "raw": "\"human\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:321842:321852:456ee93c5d77",
@@ -5822,7 +5830,9 @@
       "end": 321891,
       "line": 1,
       "raw": "\"catfolk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:321921:321929:1611726adc52",
@@ -5867,14 +5877,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:322555:322568:e260bbbc4d98",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Noble Scion",
-      "translation": "高贵的后裔",
+      "translation": "",
       "start": 322555,
       "end": 322568,
       "line": 1,
       "raw": "\"Noble Scion\"",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:322625:322627:da39a3ee5e6b",
@@ -5986,14 +5998,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:323983:323992:e443046c7de7",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Soldier",
-      "translation": "士兵",
+      "translation": "",
       "start": 323983,
       "end": 323992,
       "line": 1,
       "raw": "\"Soldier\"",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:324046:324048:da39a3ee5e6b",
@@ -6587,14 +6601,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:333563:333569:3f3a489c72de",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Male",
-      "translation": "男性",
+      "translation": "",
       "start": 333563,
       "end": 333569,
       "line": 1,
       "raw": "\"Male\"",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:333607:333609:da39a3ee5e6b",
@@ -6626,14 +6642,16 @@
       "id": "Content_Other.b9d1538eee1e80acbc81.js:333626:333634:b7c17e97d3d6",
       "file": "Content_Other.b9d1538eee1e80acbc81.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Female",
-      "translation": "女性",
+      "translation": "",
       "start": 333626,
       "end": 333634,
       "line": 1,
       "raw": "\"Female\"",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:333672:333674:da39a3ee5e6b",
@@ -7042,9 +7060,8 @@
       "line": 1,
       "raw": "\"bronze\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7093,9 +7110,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7191,9 +7207,8 @@
       "line": 1,
       "raw": "\"bronze\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7242,9 +7257,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7327,9 +7341,8 @@
       "line": 1,
       "raw": "\"bronze\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7378,9 +7391,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7465,9 +7477,8 @@
       "line": 1,
       "raw": "\"bronze\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7533,9 +7544,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7628,9 +7638,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7662,9 +7671,8 @@
       "line": 1,
       "raw": "\"bronze\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7713,9 +7721,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7760,9 +7767,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7858,9 +7864,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7943,9 +7948,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -7977,9 +7981,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -8062,9 +8065,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -8113,9 +8115,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -8215,9 +8216,8 @@
       "line": 1,
       "raw": "\"black\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -8299,7 +8299,9 @@
       "end": 336821,
       "line": 1,
       "raw": "\"catfolk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:336897:336905:afaed75406bd",
@@ -8371,9 +8373,8 @@
       "line": 1,
       "raw": "\"Unkempt\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -8986,9 +8987,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -9101,9 +9101,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -9203,9 +9202,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -9339,9 +9337,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -9373,9 +9370,8 @@
       "line": 1,
       "raw": "\"blue\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter",
-      "translationError": "",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping",
       "disabledReason": "creation_ui_internal_value_display_mapped"
     },
     {
@@ -9921,7 +9917,9 @@
       "end": 342685,
       "line": 1,
       "raw": "\"human\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:342710:342720:456ee93c5d77",
@@ -9947,7 +9945,9 @@
       "end": 342762,
       "line": 1,
       "raw": "\"catfolk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:342779:342787:1611726adc52",
@@ -10077,7 +10077,9 @@
       "end": 343417,
       "line": 1,
       "raw": "\"human\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:343449:343452:ae4f281df5a5",
@@ -10129,7 +10131,9 @@
       "end": 343504,
       "line": 1,
       "raw": "\"catfolk\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Other.b9d1538eee1e80acbc81.js:343528:343531:6dcd4ce23d88",

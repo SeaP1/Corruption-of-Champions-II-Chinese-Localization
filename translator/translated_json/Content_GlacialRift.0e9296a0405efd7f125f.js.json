@@ -7748,7 +7748,9 @@
       "end": 516509,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:516510:516518:afaed75406bd",
@@ -7826,7 +7828,9 @@
       "end": 516559,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:516603:516605:da39a3ee5e6b",
@@ -19898,15 +19902,17 @@
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:1425057:1425063:3f3a489c72de",
       "file": "Content_GlacialRift.0e9296a0405efd7f125f.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Male",
-      "translation": "男性",
+      "translation": "",
       "start": 1425057,
       "end": 1425063,
       "line": 1,
       "raw": "\"Male\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:1425106:1426678:3ec8916a3c2e",
@@ -20010,15 +20016,17 @@
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:1426949:1426957:b7c17e97d3d6",
       "file": "Content_GlacialRift.0e9296a0405efd7f125f.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Female",
-      "translation": "女性",
+      "translation": "",
       "start": 1426949,
       "end": 1426957,
       "line": 1,
       "raw": "\"Female\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_GlacialRift.0e9296a0405efd7f125f.js:1427000:1429021:d11c728338fd",

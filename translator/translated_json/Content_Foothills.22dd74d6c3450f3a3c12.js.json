@@ -10437,7 +10437,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n        You sigh, but figure it's better to lose a few coins than deal with her shit. You fish out a handful of electrum coins and toss them into the harpy's waiting hands. She grins triumphantly beneath her cowl, grabbing the shiny treasure and tucking them into a pouch on her hip.\n        \n        ",
-      "translation": "\n        你叹了口气，但觉得还不如损失一些金币，总比应付她的麻烦要好。你掏出几枚电银币，扔到了那个女妖伸出的手部中。她戴着兜帽，露出胜利的微笑，抓起那些闪亮的硬币，把它们塞进了腰间的袋子里。\n        \n        ",
+      "translation": "\n        你叹了口气，但觉得还不如损失一些金币，总比应付她的麻烦要好。你掏出几枚琥珀金币，扔到了那个女妖伸出的手部中。她戴着兜帽，露出胜利的微笑，抓起那些闪亮的硬币，把它们塞进了腰间的袋子里。\n        \n        ",
       "start": 472827,
       "end": 473134,
       "line": 1,
@@ -11022,7 +11022,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": " electrum coins.",
-      "translation": "电银币。",
+      "translation": "琥珀金币。",
       "start": 485886,
       "end": 485904,
       "line": 1,
@@ -11148,7 +11148,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": " electrum coins.",
-      "translation": "电银币。",
+      "translation": "琥珀金币。",
       "start": 493399,
       "end": 493417,
       "line": 1,
@@ -22645,7 +22645,9 @@
       "end": 1015275,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1015276:1015282:b0f7f128338b",
@@ -22794,7 +22796,9 @@
       "end": 1024630,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1024631:1024637:b0f7f128338b",
@@ -22892,15 +22896,17 @@
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1024828:1024834:7d44bc449c2a",
       "file": "Content_Foothills.22dd74d6c3450f3a3c12.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Blue",
-      "translation": "蓝色",
+      "translation": "",
       "start": 1024828,
       "end": 1024834,
       "line": 1,
       "raw": "\"Blue\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1024861:1024863:da39a3ee5e6b",
@@ -23211,7 +23217,9 @@
       "end": 1037245,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1037246:1037252:b0f7f128338b",
@@ -23309,15 +23317,17 @@
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1037445:1037451:7d44bc449c2a",
       "file": "Content_Foothills.22dd74d6c3450f3a3c12.js",
       "category": "button_or_tooltip",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Blue",
-      "translation": "蓝色",
+      "translation": "",
       "start": 1037445,
       "end": 1037451,
       "line": 1,
       "raw": "\"Blue\"",
       "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1037478:1037480:da39a3ee5e6b",
@@ -23623,7 +23633,9 @@
       "end": 1039605,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_Foothills.22dd74d6c3450f3a3c12.js:1039606:1039612:b0f7f128338b",

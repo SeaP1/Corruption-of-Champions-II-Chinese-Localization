@@ -541,7 +541,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    No motive, no connection to the victim, a criminal record and a poor family... \"So he was just a hired shot after all.\"\n    \n    Eirina snaps her fingers. \"Exactly. And here's the kicker.\" The Astrida reaches into her weapon belt and draws out a wood disk. She flicks it to you with a smirk. \"The guy got his windfall and immediately rented a red room at the House of Mallach. He paid a bunny-girl with pretty feet to do all sorts of things to him with a whole gold coin.\"\n    \n    You look at the wooden disk in your palm, completely devoid of inscription. Or value. [pc.isMage\n        |\"A glamor, or transmutation?\" \n        \n        \"Transmutation,\" Eirina says. \"Good thought about the glamor, but that wouldn't pass the touch check for long. \n        |You furrow your brow. \"Magic counterfeiting?\"\n        \n        \"Exactly,\" Eirina says. \"\n    ] This is why we use electrum coins; they're almost impossible to spoof with magic or alchemy. But gold is gold to a whore, I guess, and she was happy to take it. Happier to let me swap it for real hawks after I undid the transmutation. Still, that's <b>real</b> advanced magic. Highly illegal, too.\"\n    \n    \"Far beyond the ability of a grain-fed hick,\" Ynes adds. \"This is the kind of magic that would require decades of dedicated training to master.\"\n    \n    \"More evidence there's a powerful mage behind all this,\" you say.\n    \n    The girls both nod. \n    ",
-      "translation": "\n    没有作案动机，与受害者也没有任何关联，还有犯罪前科，家庭条件也很贫困……“所以，他终究只是一个受雇的枪手罢了。”\n\n艾琳娜打了个响指：“没错。而最关键的一点就在这里。”阿斯特里达从武器带里拿出一个木盘。 她带着一丝笑意把东西扔给你：“那个家伙一下子赚了一大笔钱，立刻在马拉赫旅馆租了一间红色的房间。他还付给一个足部趾漂亮的小姑娘一枚金币，让她为自己做各种事情。\n    \n    你看着掌心中的那块木盘，上面没有任何铭文，也没有任何价值。 [pc.isMage\n        |是一种魅力，还是某种转变呢？”\n\n“转变，”艾琳娜说道，“关于魅力的想法很不错，但那样的变化很快就会被人发现。 \n        |你皱起了眉头：“魔法伪造？”\n“没错，”艾琳娜说道。\n    ] 这就是我们使用电银币的原因：用魔法或炼金术来伪造它们几乎是不可能的。不过，对那个女人来说，黄金就是黄金吧，所以她很乐意接受它。而当我取消那次转化后，她更高兴的是能让我把电银币换成真正的鹰币。不过，无论如何…… <b>真实的</b> 高级魔法。而且也是极其违法的。”\n\n“这种魔法远远超出了一个乡下土包子的能力范围，”伊内斯补充道，“要掌握这种魔法，需要花费数十年的时间进行专注的训练。”\n\n“这进一步证明了背后肯定有一位强大的法师在操纵这一切，”你说。\n\n两个女孩都点了点头。 \n    ",
+      "translation": "\n    没有作案动机，与受害者也没有任何关联，还有犯罪前科，家庭条件也很贫困……“所以，他终究只是一个受雇的枪手罢了。”\n\n艾琳娜打了个响指：“没错。而最关键的一点就在这里。”阿斯特里达从武器带里拿出一个木盘。 她带着一丝笑意把东西扔给你：“那个家伙一下子赚了一大笔钱，立刻在马拉赫旅馆租了一间红色的房间。他还付给一个足部趾漂亮的小姑娘一枚金币，让她为自己做各种事情。\n    \n    你看着掌心中的那块木盘，上面没有任何铭文，也没有任何价值。 [pc.isMage\n        |是一种魅力，还是某种转变呢？”\n\n“转变，”艾琳娜说道，“关于魅力的想法很不错，但那样的变化很快就会被人发现。 \n        |你皱起了眉头：“魔法伪造？”\n“没错，”艾琳娜说道。\n    ] 这就是我们使用琥珀金币的原因：用魔法或炼金术来伪造它们几乎是不可能的。不过，对那个女人来说，黄金就是黄金吧，所以她很乐意接受它。而当我取消那次转化后，她更高兴的是能让我把琥珀金币换成真正的鹰币。不过，无论如何…… <b>真实的</b> 高级魔法。而且也是极其违法的。”\n\n“这种魔法远远超出了一个乡下土包子的能力范围，”伊内斯补充道，“要掌握这种魔法，需要花费数十年的时间进行专注的训练。”\n\n“这进一步证明了背后肯定有一位强大的法师在操纵这一切，”你说。\n\n两个女孩都点了点头。 \n    ",
       "start": 8538,
       "end": 9983,
       "line": 1,
@@ -5881,7 +5881,9 @@
       "end": 312141,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_TychrisPalace.ae05682ac4c1b69664bb.js:312142:312152:c6e2f87cd267",

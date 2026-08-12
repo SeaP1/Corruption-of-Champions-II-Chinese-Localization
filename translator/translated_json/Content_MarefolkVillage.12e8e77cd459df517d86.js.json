@@ -13320,7 +13320,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    \"Great!\" She hands you a small book filled with hairstyles they have on offer along with some painted representations of each. \"Just pick what you like. Everything's 100 Electrum.\"\n    \n    She gives you time to paw through your options.\n    ",
-      "translation": "\n    太好了！”她递给你一本小册子，里面列出了他们提供的所有发型，还附有每种发型的插图。“你随便挑选吧，所有发型都只需100枚电银币而已。”\n\n她给了你足够的时间来浏览这些选择。\n    ",
+      "translation": "\n    太好了！”她递给你一本小册子，里面列出了他们提供的所有发型，还附有每种发型的插图。“你随便挑选吧，所有发型都只需100枚琥珀金币而已。”\n\n她给了你足够的时间来浏览这些选择。\n    ",
       "start": 529942,
       "end": 530196,
       "line": 1,
@@ -13551,7 +13551,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    \"Great!\" She hands you a small book filled with hairstyles they have on offer along with some painted representations of each. \"Just pick what you like. Everything's 100 Electrum.\"\n    \n    She gives you time to paw through your options.\n    ",
-      "translation": "\n    太好了！”她递给你一本小册子，里面列出了他们提供的所有发型，还附有每种发型的插图。“你随便挑选吧，所有发型都只需100枚电银币而已。”\n\n她给了你足够的时间来浏览这些选择。\n    ",
+      "translation": "\n    太好了！”她递给你一本小册子，里面列出了他们提供的所有发型，还附有每种发型的插图。“你随便挑选吧，所有发型都只需100枚琥珀金币而已。”\n\n她给了你足够的时间来浏览这些选择。\n    ",
       "start": 531214,
       "end": 531468,
       "line": 1,
@@ -14076,16 +14076,16 @@
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:533842:533851:d349de1f550a",
       "file": "Content_MarefolkVillage.12e8e77cd459df517d86.js",
       "category": "unknown",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "Unkempt",
-      "translation": "蓬乱",
+      "translation": "",
       "start": 533842,
       "end": 533851,
       "line": 1,
       "raw": "\"Unkempt\"",
       "updateStatus": "disabled_by_update_filter",
-      "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:533852:533938:c6f35237c95a",
@@ -14466,7 +14466,9 @@
       "end": 536642,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:536659:536665:4c9a82ce72ca",
@@ -14479,7 +14481,9 @@
       "end": 536665,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:536682:536689:9166eeff1e50",
@@ -14583,7 +14587,9 @@
       "end": 536861,
       "line": 1,
       "raw": "\"black\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:536880:536888:5e1bc90d0d9f",
@@ -14635,7 +14641,9 @@
       "end": 536966,
       "line": 1,
       "raw": "\"blue\"",
-      "updateStatus": "disabled_by_update_filter"
+      "updateStatus": "disabled_by_update_filter",
+      "translationStatus": "disabled_dynamic_attribute_key",
+      "translationModel": "display_mapping"
     },
     {
       "id": "Content_MarefolkVillage.12e8e77cd459df517d86.js:536985:536993:f8248e127277",
