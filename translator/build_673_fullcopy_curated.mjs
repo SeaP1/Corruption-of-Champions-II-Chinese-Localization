@@ -7,6 +7,9 @@ if (!sourceName) throw new Error(`No extracted 673.*.js.json found in ${sourceDi
 const sourcePath = path.join(sourceDir, sourceName);
 const outDir = path.resolve("translator", "extracted_json_curated");
 const outPath = path.join(outDir, sourceName);
+const appName = sourceName.slice(0, -5);
+const sourceJsPath = path.resolve("resources", "app", appName);
+const sourceText = fs.readFileSync(sourceJsPath, "utf8");
 
 function hasLetters(s) { return /[A-Za-z]/.test(String(s || "")); }
 function hasCjk(s) { return /[\u4e00-\u9fff]/.test(String(s || "")); }
@@ -27,9 +30,14 @@ function titleLike(s) {
   const small = new Set(["a", "an", "and", "as", "at", "by", "for", "from", "in", "into", "of", "on", "or", "the", "to", "with"]);
   return parts.every((w, i) => /^[A-Z0-9][A-Za-z0-9'.&:\-]*$/.test(w) || (i > 0 && small.has(w)));
 }
+function isInternalClassKey(row) {
+  const pre = sourceText.slice(Math.max(0, row.start - 24), row.start);
+  return /(?:\{|,)\s*key\s*:\s*$/.test(pre);
+}
 function rejectReason(row) {
   const raw = String(row.original || "");
   const t = raw.trim();
+  if (isInternalClassKey(row)) return "reject_internal_class_key";
   if (!row.shouldTranslate) return "source_not_translatable";
   if (!t || !hasLetters(t) || hasCjk(t)) return "reject_base";
   if (!balanced(t) && !pipeTextFragment(t)) return "reject_unbalanced";

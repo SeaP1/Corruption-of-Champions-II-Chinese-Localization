@@ -74,6 +74,10 @@ function contextKind(sourceText, row) {
   if (/textify\s*\([^\[]*\[\s*$/s.test(pre)) return "textify_array";
   return "other";
 }
+function isInternalClassKey(sourceText, row) {
+  const pre = sourceText.slice(Math.max(0, row.start - 24), row.start);
+  return /(?:\{|,)\s*key\s*:\s*$/.test(pre);
+}
 function keepLexicon(row, kind) {
   const t = row.original.trim();
   if (!(kind === "randCollection_array" || kind === "push_arg")) return false;
@@ -119,7 +123,9 @@ function keepVisible(row, key, kind) {
   }
   return false;
 }
-function decide(row, key, kind) {
+function decide(row, key, kind, internalClassKey) {
+  if (internalClassKey) return { keep: false, reason: "disabled_internal_class_key" };
+  if (BAD_CONTEXT_PREFIXES.has(key)) return { keep: false, reason: "disabled_internal_lookup_key" };
   if (!row.shouldTranslate && !cleanBase(row.original)) return { keep: false, reason: "source_not_translatable" };
   if (keepSourceWanted(row)) return { keep: true, reason: "505_source_should_translate_safe" };
   if (keepLexicon(row, kind)) return { keep: true, reason: `505_lexicon_${kind}` };
@@ -137,7 +143,7 @@ for (const row of doc.rows || []) {
   const kind = contextKind(sourceText, row);
   row.contextKey = key;
   row.contextKind = kind;
-  const d = decide(row, key, kind);
+  const d = decide(row, key, kind, isInternalClassKey(sourceText, row));
   row.shouldTranslate = d.keep;
   row.curatedReason = d.reason;
   if (d.keep) {

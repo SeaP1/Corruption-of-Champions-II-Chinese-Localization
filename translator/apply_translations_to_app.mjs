@@ -75,16 +75,46 @@ function patchSelectItemShortLabels(source, appName) {
     "Fade": "渐层短发", "Box Braids": "盒形辫", "Braid Pompadour": "辫子蓬巴杜", "Pompadour": "蓬巴杜",
     "Spiky with Bangs": "带刘海尖刺发", "Shave It": "剃光", "Trim": "修剪", "Long": "长须", "Bushman": "浓密胡须"
   };
+  // Tattoo names are internal keys: keep e.name in English and translate only e.short.
+  // This map is invoked only inside the StylistsTattoos* function range below.
+  const tattooMap = {
+    "Heart-Mark": "心形印记", "Rune": "符文", "Slut": "荡妇", "Swirl": "漩涡", "Gothic Swirls": "哥特式漩涡",
+    "Runes": "符文", "Slut Markings": "荡妇标记", "Ivy and Vines": "常春藤与藤蔓", "Ivy": "常春藤",
+    "Hearts": "心形图案", "Serpent Eyes": "蛇之眼", "Vines and Flowers": "藤蔓与花朵", "Flames": "火焰",
+    "Wings": "羽翼", "Demonic Heart": "恶魔之心", "Cute Heart": "可爱之心", "Sun": "太阳", "Wolf": "狼", "Paw Print": "爪印"
+  };
   const mapExpr = JSON.stringify(hairMap);
-  const inject = "var __cnSelectLabelMap=" + mapExpr + ",__cnSelectLabel=function(e){return __cnSelectLabelMap[e]||e},__cnPatchSelectShort=function(e){return e&&e.name&&__cnSelectLabelMap[e.name]&&(e.short=__cnSelectLabelMap[e.name]),e};";
+  const tattooMapExpr = JSON.stringify(tattooMap);
+  const inject = "var __cnSelectLabelMap=" + mapExpr + ",__cnTattooLabelMap=" + tattooMapExpr + ",__cnSelectLabel=function(e){return __cnSelectLabelMap[e]||e},__cnPatchSelectShort=function(e){return e&&e.name&&__cnSelectLabelMap[e.name]&&(e.short=__cnSelectLabelMap[e.name]),e},__cnPatchTattooSelectItem=function(e){var t;return e&&e.name&&(t=__cnTattooLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t,e.short=t),e},__cnWrapTattooSelectCallback=function(e){return function(){var t=arguments[0];return t&&t.__cnOriginalName&&(t.name=t.__cnOriginalName,t.short=t.__cnOriginalShort,delete t.__cnOriginalName,delete t.__cnOriginalShort),e.apply(this,arguments)}};";
   if (!source.includes("__cnPatchSelectShort=function")) {
     if (appName.startsWith("Content_Hawkethorne.") || appName.startsWith("Content_MarefolkVillage.")) {
-      source = source.replace(/(window\.[A-Za-z0-9_$]+Hairdressing=function\(\)\{)/, "$1" + inject);
-      source = source.replace(/(window\.[A-Za-z0-9_$]+Beard=function\(\)\{)/, "$1" + inject);
+      // Several menus in the same content bundle call stubItemForSelect.  Keep
+      // the display-only helper in bundle scope so tattoo and other menus can
+      // use it too; injecting it inside Hairdressing/Beard made it local to
+      // those functions and caused ReferenceError in StylistsTattoosAss.
+      source = inject + source;
     }
   }
-  if (appName.startsWith("Content_Hawkethorne.") || appName.startsWith("Content_MarefolkVillage.")) {
-    source = source.replace(/(\b[a-zA-Z_$][\w$]*\.c\.stubItemForSelect\("([^"]+)","[^"]*",GLOBALS\.ITEM_MISC,[a-zA-Z_$][\w$]*(?:\)|\),\{canSelect:function\(\)\{return [^}]+\}\}))/g, "__cnPatchSelectShort($1)");
+  const wrapGeneralSelectLabels = (part) => part.replace(
+    /(\b[a-zA-Z_$][\w$]*\.c\.stubItemForSelect\("([^"]+)","[^"]*",GLOBALS\.ITEM_MISC,[a-zA-Z_$][\w$]*(?:\)|\),\{canSelect:function\(\)\{return [^}]+\}\}))/g,
+    "__cnPatchSelectShort($1)"
+  );
+  if (appName.startsWith("Content_Hawkethorne.")) {
+    const tattooStart = source.indexOf("window.StylistsTattoosAss");
+    const tattooEnd = source.indexOf("window.StylistsBeards", tattooStart);
+    if (tattooStart >= 0 && tattooEnd > tattooStart) {
+      const beforeTattoo = wrapGeneralSelectLabels(source.slice(0, tattooStart));
+      const tattooRegion = source.slice(tattooStart, tattooEnd).replace(
+        /\bDoItemSelectTable\(([a-zA-Z_$][\w$]*),([a-zA-Z_$][\w$]*),/g,
+        "DoItemSelectTable($1.map(__cnPatchTattooSelectItem),__cnWrapTattooSelectCallback($2),"
+      );
+      const afterTattoo = wrapGeneralSelectLabels(source.slice(tattooEnd));
+      source = beforeTattoo + tattooRegion + afterTattoo;
+    } else {
+      source = wrapGeneralSelectLabels(source);
+    }
+  } else if (appName.startsWith("Content_MarefolkVillage.")) {
+    source = wrapGeneralSelectLabels(source);
   }
   return source;
 }
@@ -109,6 +139,69 @@ function patch505CombatPhrases(source) {
 }
 
 function patch673UiLabels(source) {
+  // tattoo_appearance_templates_095
+  const tattooLabelMap673 = {
+    "heart-mark":"心形印记","rune":"符文","slut":"荡妇","swirl":"漩涡",
+    "gothic swirls":"哥特式漩涡","runes":"符文","slut markings":"荡妇标记",
+    "ivy and vines":"常春藤与藤蔓","ivy":"常春藤","hearts":"心形图案",
+    "serpent eyes":"蛇之眼","vines and flowers":"藤蔓与花朵","flames":"火焰",
+    "wings":"羽翼","demonic heart":"恶魔之心","cute heart":"可爱之心",
+    "sun":"太阳","wolf":"狼","paw print":"爪印","花藤丛中":"藤蔓与花朵"
+  };
+  const injectTattoo673 = `globalThis.cnTattooLabel=globalThis.cnTattooLabel||function(e){var t=String(e||"");var n=t.toLowerCase();return Object.prototype.hasOwnProperty.call(globalThis.cnTattooLabel.map,n)?globalThis.cnTattooLabel.map[n]:t};globalThis.cnTattooLabel.map=Object.assign(globalThis.cnTattooLabel.map||{},${JSON.stringify(tattooLabelMap673)});`;
+  if (!source.includes("globalThis.cnTattooLabel=globalThis.cnTattooLabel||function")) source = source.includes('"use strict";') ? source.replace('"use strict";', '"use strict";' + injectTattoo673) : injectTattoo673 + source;
+
+  for (const [from, to] of [
+    [
+      'e.hasBackTattoo()&&(t+=" [pc.hasWings|Between your wings|Centered on your back] "+(ie(e.getBackTattoo())?"are tattoos":"is a tattoo")+" of [pc.backTattoo].")',
+      'e.hasBackTattoo()&&(t+=" [pc.hasWings|你的双翼之间|你的背部中央]纹着"+(ie(e.getBackTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getBackTattoo()):e.getBackTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasCollarTattoo()&&(t+=" [pc.hasMane|Hidden beneath your mane|All along your collar] "+(ie(e.getCollarTattoo())?"are tattoos":"is a tattoo")+" of [pc.collarTattoo].")',
+      'e.hasCollarTattoo()&&(t+=" [pc.hasMane|你的鬃毛下隐藏着|你的颈部一带纹着]"+(ie(e.getCollarTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getCollarTattoo()):e.getCollarTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasShoulderTattoo()&&(t+=" [pc.hasCollarTattoo|Nearby, y|Y]our shoulders are covered by "+(ie(e.getShoulderTattoo())?"tattoos":"a tattoo")+" of [pc.shoulderTattoo].")',
+      'e.hasShoulderTattoo()&&(t+=" [pc.hasCollarTattoo|附近，你的|你的]双肩覆盖着"+(ie(e.getShoulderTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getShoulderTattoo()):e.getShoulderTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasArmTattoo()&&(t+=" [pc.hasFur|Beneath your arms\' fur|[pc.hasArmTags furred|Beneath the fur on both of your arms|Across both of your arms]] is a set of matching tattoos of [pc.sleeveTattoo].")',
+      'e.hasArmTattoo()&&(t+=" [pc.hasFur|你双臂的毛发下|[pc.hasArmTags furred|你双臂的毛发下|你的双臂上]]纹着一组对称的"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getSleeveTattoo()):e.getSleeveTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasLegTattoo()&&(t+=" [pc.hasFur|Hidden underneath the fur of your legs|[pc.hasLegTags furred|Hidden underneath the fur of your legs|Running down your legs]] are tattoos of [pc.legTattoo].")',
+      'e.hasLegTattoo()&&(t+=" [pc.hasFur|你双腿的毛发下|[pc.hasLegTags furred|你双腿的毛发下|你的双腿上]]纹着"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getLegTattoo()):e.getLegTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasChestTattoo()&&(t+=" Across your [pc.chestNoun] is a tattoo of [a] [pc.chestTattoo].")',
+      'e.hasChestTattoo()&&(t+=" 你的[pc.chestNoun]上纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getChestTattoo()):e.getChestTattoo())+"纹身。")'
+    ],
+    [
+      'e.hasWombTattoo()&&("druidic fertility"===e.getWombTattoo()?t+=" Right above your [pc.crotch] is a tattoo made up of druidic swirls, lovingly imbued by Kalysea. They roughly depict the shape of a womb[pc.hasPussy| overlaid atop your own].":t+=" Right above your [pc.crotch] is a tattoo of [a] [pc.wombTattoo].")',
+      'e.hasWombTattoo()&&("druidic fertility"===e.getWombTattoo()?t+=" 你的胯部正上方纹着由德鲁伊式漩涡组成的纹身，并由卡莉西娅倾注爱意加持。图案大致呈子宫形状[pc.hasPussy|，正好覆盖在你自己的子宫位置上]。":t+=" 你的胯部正上方纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getWombTattoo()):e.getWombTattoo())+"纹身。")'
+    ],
+    [
+      'return e.hasAssTattoo()&&(t+=" Just above your correctly-located asshole is a tattoo of"+(ie(e.getShoulderTattoo())?"":" a")+" [pc.assTattoo]."),t',
+      'return e.hasAssTattoo()&&(t+=" 你的肛门正上方纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getAssTattoo()):e.getAssTattoo())+"纹身。"),t'
+    ]
+  ]) source = source.split(from).join(to);
+  // effigy_battle_text_095
+  // These are visible battle strings embedded in a minified class body, not translatable JSON literals.
+  const effigyDefeatFrom = '"Getting hit yet again, ".concat(this.getDescription("combatName")," staggers and falls down. Thankfully, that means [party.isJustPC|you have|your party has] one less problem to worry about.")';
+  const effigyDefeatTo = '"\u518d\u6b21\u906d\u53d7\u91cd\u521b\u540e\uff0c".concat(this.getDescription("combatName"),"\u8e09\u8dc4\u7740\u5012\u4e0b\u4e86\u3002\u8c22\u5929\u8c22\u5730\uff0c[party.isJustPC|\u4f60|\u4f60\u7684\u961f\u4f0d]\u73b0\u5728\u5c11\u4e86\u4e00\u4e2a\u9700\u8981\u5e94\u4ed8\u7684\u9ebb\u70e6\u3002")';
+  source = source.split(effigyDefeatFrom).join(effigyDefeatTo);
+
+  // Only alter the encounterText belonging to the class anchored by effigy_bust.
+  const effigyAnchor = 'e.bust="effigy_bust"';
+  const effigyStart = source.indexOf(effigyAnchor);
+  const deadFrom = 'return this.HP()<=0?e+="down and out of the fight":';
+  const deadTo = 'return this.HP()<=0?e="".concat(this.getDescription("CombatName")," \u5df2\u7ecf\u5012\u4e0b\uff0c\u65e0\u6cd5\u7ee7\u7eed\u6218\u6597"):';
+  if (effigyStart >= 0) {
+    const deadAt = source.indexOf(deadFrom, effigyStart);
+    if (deadAt >= effigyStart && deadAt < effigyStart + 4000) {
+      source = source.slice(0, deadAt) + deadTo + source.slice(deadAt + deadFrom.length);
+    }
+  }
   // appearance_elegant_source_templates
   // Source-level Appearance templates. Word choices come from cnAttrLabel/cnBodyLabel;
   // these patches only adjust Chinese sentence glue where English word order cannot work.
@@ -267,6 +360,25 @@ function patch673UiLabels(source) {
   source = source.replace(
     'else if(1===e.cockTotal())t+="Your "+e.simpleCockNoun(0)+" is "+Math.floor(10*e.cocks[0].length())/10+" inches long and ",Math.floor(10*e.cocks[0].thickness())/10<2&&Math.floor(10*e.cocks[0].thickness())/10==1?t+=Math.round(10*e.cocks[0].thickness())/10+" inch thick.":t+=Math.round(10*e.cocks[0].thickness())/10+" inches across.",t+=ce(e,0);',
     'else if(1===e.cockTotal())t+="你的"+e.simpleCockNoun(0)+"长"+Math.floor(10*e.cocks[0].length())/10+"英寸，宽",Math.floor(10*e.cocks[0].thickness())/10<2&&Math.floor(10*e.cocks[0].thickness())/10==1?t+=Math.round(10*e.cocks[0].thickness())/10+"英寸。":t+=Math.round(10*e.cocks[0].thickness())/10+"英寸。",t+=ce(e,0);'
+  );
+
+  // appearance_scrotum_chinese_grammar
+  // Keep internal method/status keys in English; only alter generated display grammar.
+  source = source.replace(
+    '1===this.balls||a||(r+="s"),r',
+    '1===this.balls||a||/[\\u4e00-\\u9fff]/.test(r)||(r+="s"),r'
+  );
+  source = source.replace(
+    '0===e.cockTotal()?l+="[A] "+e.sackDesc(!0,!0)+" with "+a+" swings heavily under where a penis would normally grow.":l+="[A] "+e.sackDesc(!0,!0)+" with "+a+" swings heavily beneath your "+e.multiCockDesc()+"."',
+    '0===e.cockTotal()?l+="一个"+e.sackDesc(!0,!0)+"，里面有"+a+"，垂在通常应长出阴茎的位置下方。":l+="一个"+e.sackDesc(!0,!0)+"，里面有"+a+"，沉甸甸地悬在你的"+e.multiCockDesc()+"下方。"'
+  );
+  source = source.replace(
+    '0===e.cockTotal()?l+="An oozing, semi-solid sack with "+a+" swings heavily under where a penis would normally grow.":l+="An oozing, semi-solid sack with "+a+" swings heavily beneath your "+e.multiCockDesc()+"."',
+    '0===e.cockTotal()?l+="一个渗着黏液的半固态囊袋，里面有"+a+"，垂在通常应长出阴茎的位置下方。":l+="一个渗着黏液的半固态囊袋，里面有"+a+"，沉甸甸地悬在你的"+e.multiCockDesc()+"下方。"'
+  );
+  source = source.replace(
+    'e.hasRealCock()&&!e.hasTrapPouch()?1===e.balls?l+=" You estimate the testicle to be about "+Math.round(e.ballSize())+" ":l+=" You estimate each testicle to be about "+Math.round(e.ballSize())+" ":1===e.balls?l+=" You estimate it to be about "+Math.round(e.ballSize())+" ":l+=" You estimate each of them to be about "+Math.round(e.ballSize())+" ",1===Math.round(e.ballSize())?l+="inch":l+="inches";var u=Math.round(10*e.ballDiameter())/10;""!=(l+=" around and "+u+(1!==u?" inches":" inch")+" across.")',
+    'e.hasRealCock()&&!e.hasTrapPouch()?1===e.balls?l+=" 你估计这颗睾丸约有"+Math.round(e.ballSize())+"英寸周长":l+=" 你估计每颗睾丸约有"+Math.round(e.ballSize())+"英寸周长":1===e.balls?l+=" 你估计它约有"+Math.round(e.ballSize())+"英寸周长":l+=" 你估计每颗约有"+Math.round(e.ballSize())+"英寸周长";var u=Math.round(10*e.ballDiameter())/10;""!=(l+="，横径"+u+"英寸。")'
   );
 
   // appearance_round1b_exact_generated_fragments
@@ -780,6 +892,35 @@ function applyOne(jsonName) {
   return { jsonName, outputPath, applied, skipped };
 }
 
+function copyUntranslatedJsFiles(summaries) {
+  const generated = new Set(
+    summaries
+      .filter((item) => item.outputPath)
+      .map((item) => path.normalize(path.relative(TRANSLATED_APP_DIR, item.outputPath)))
+  );
+  let copiedOriginalJs = 0;
+  let generatedTranslatedJs = generated.size;
+
+  function walk(currentDir) {
+    for (const entry of fs.readdirSync(currentDir, { withFileTypes: true })) {
+      const sourcePath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) {
+        walk(sourcePath);
+        continue;
+      }
+      if (!entry.isFile() || !entry.name.endsWith(".js")) continue;
+      const relativePath = path.normalize(path.relative(ORIGINAL_APP_DIR, sourcePath));
+      if (generated.has(relativePath)) continue;
+      const destinationPath = path.join(TRANSLATED_APP_DIR, relativePath);
+      fs.mkdirSync(path.dirname(destinationPath), { recursive: true });
+      fs.copyFileSync(sourcePath, destinationPath);
+      copiedOriginalJs += 1;
+    }
+  }
+
+  if (fs.existsSync(ORIGINAL_APP_DIR)) walk(ORIGINAL_APP_DIR);
+  return { copiedOriginalJs, generatedTranslatedJs, totalJsOutput: copiedOriginalJs + generatedTranslatedJs };
+}
 function main() {
   const summaries = collectJsonFiles().map(applyOne);
   let totalApplied = 0;
@@ -789,10 +930,11 @@ function main() {
     totalSkipped += item.skipped || 0;
     console.log(`${item.jsonName}: applied=${item.applied || 0}, skipped=${item.skipped || 0}${item.reason ? `, ${item.reason}` : ""}`);
   }
-  const summary = { generatedAt: new Date().toISOString(), totalApplied, totalSkipped, files: summaries };
+  const jsOutput = copyUntranslatedJsFiles(summaries);
+  const summary = { generatedAt: new Date().toISOString(), totalApplied, totalSkipped, ...jsOutput, files: summaries };
   fs.writeFileSync(path.resolve("translator", "apply_translations_summary.json"), `${JSON.stringify(summary, null, 2)}\n`, "utf8");
   console.log(`\nTotal applied=${totalApplied}, skipped=${totalSkipped}`);
+  console.log(`JS output: translated=${jsOutput.generatedTranslatedJs}, copied original=${jsOutput.copiedOriginalJs}, total=${jsOutput.totalJsOutput}`);
 }
 
 main();
-
