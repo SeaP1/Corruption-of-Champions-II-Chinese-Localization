@@ -49,8 +49,8 @@ try {
     throw 'Cannot find runtime exe after sync: ' + $GameExe
   }
 
-  Write-Log 'Launch CN runtime.'
-  Start-Process -FilePath $GameExe -WorkingDirectory $Runtime
+  Write-Log 'Launch CN runtime with Chromium sandbox disabled.'
+  Start-Process -FilePath $GameExe -WorkingDirectory $Runtime -ArgumentList '--no-sandbox'
 } catch {
   Write-Log ('ERROR: ' + $_.Exception.Message)
   Add-Type -AssemblyName PresentationFramework -ErrorAction SilentlyContinue
