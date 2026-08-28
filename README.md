@@ -26,6 +26,8 @@
 ##### 电脑
 将exe与translator放入游戏根目录下，双击exe即可启动汉化
 
+<big>是translator文件夹**里面的文件**，translator-/<版本号>放进去是打不开汉化的</big>
+
 若发现无法启动，请使用noSandBox.exe启动
 ##### 安卓
 下载APK，安装
