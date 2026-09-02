@@ -1,16 +1,16 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.95\\resources\\app\\103.964d28af5cd7e165945f.js",
+  "sourceFile": "D:\\Codex\\COC2 0.96\\resources\\app\\103.964d28af5cd7e165945f.js",
   "sourceSha1": "a26d019e34199dbbe5eb164d0503557dae117fa1",
   "migratedFrom": [
-    "103.1b30118fd9319da18481.js.json"
+    "103.964d28af5cd7e165945f.js.json"
   ],
-  "updateGeneratedAt": "2026-08-23T13:18:11.223Z",
+  "updateGeneratedAt": "2026-09-01T23:46:29.366Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 7748,
   "shouldTranslate": 472,
-  "inherited": 471,
-  "inheritedState": 7366,
+  "inherited": 473,
+  "inheritedState": 7367,
   "newlyAdded": 0,
   "byCategory": {
     "unknown": 3388,
@@ -614,8 +614,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -934,8 +934,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1042,8 +1042,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1105,8 +1105,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1198,8 +1198,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1291,8 +1291,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1519,8 +1519,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -1942,8 +1942,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -2733,8 +2733,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -4606,7 +4606,7 @@
       "end": 21371,
       "line": 1,
       "raw": "\"Corruption\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -4879,8 +4879,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -4927,8 +4927,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -4975,8 +4975,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5661,8 +5661,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5679,8 +5679,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5697,8 +5697,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5715,8 +5715,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -6613,8 +6613,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7074,8 +7074,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9362,8 +9362,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -10325,8 +10325,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -11477,8 +11477,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -12616,7 +12616,7 @@
       "end": 62965,
       "line": 1,
       "raw": "\"Armor\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -12859,8 +12859,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -13557,7 +13557,7 @@
       "end": 67249,
       "line": 1,
       "raw": "\"Armor\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -15206,8 +15206,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -15269,8 +15269,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -17826,7 +17826,7 @@
       "end": 85687,
       "line": 1,
       "raw": "\"Armor\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -17841,7 +17841,7 @@
       "end": 85697,
       "line": 1,
       "raw": "\"Warding\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -17856,7 +17856,7 @@
       "end": 85705,
       "line": 1,
       "raw": "\"Focus\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -18156,7 +18156,7 @@
       "end": 86339,
       "line": 1,
       "raw": "\"Initiative\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18173,7 +18173,7 @@
       "end": 86374,
       "line": 1,
       "raw": "\"Leadership\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18190,7 +18190,7 @@
       "end": 86402,
       "line": 1,
       "raw": "\"Accuracy\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18237,7 +18237,7 @@
       "end": 86440,
       "line": 1,
       "raw": "\"Attack Power\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18254,7 +18254,7 @@
       "end": 86478,
       "line": 1,
       "raw": "\"Armor Penetration\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18271,7 +18271,7 @@
       "end": 86514,
       "line": 1,
       "raw": "\"Spellpower\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18288,7 +18288,7 @@
       "end": 86551,
       "line": 1,
       "raw": "\"Spell Penetration\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18305,7 +18305,7 @@
       "end": 86585,
       "line": 1,
       "raw": "\"Sexiness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18322,7 +18322,7 @@
       "end": 86613,
       "line": 1,
       "raw": "\"Temptation\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18339,7 +18339,7 @@
       "end": 86648,
       "line": 1,
       "raw": "\"Critical Chance\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18356,7 +18356,7 @@
       "end": 86690,
       "line": 1,
       "raw": "\"Critical Effectiveness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18448,7 +18448,7 @@
       "end": 86966,
       "line": 1,
       "raw": "\"Max Health\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18465,7 +18465,7 @@
       "end": 86988,
       "line": 1,
       "raw": "\"Evasion\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18482,7 +18482,7 @@
       "end": 87010,
       "line": 1,
       "raw": "\"Armor\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18499,7 +18499,7 @@
       "end": 87041,
       "line": 1,
       "raw": "\"Physical Defense\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18516,7 +18516,7 @@
       "end": 87069,
       "line": 1,
       "raw": "\"Warding\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18533,7 +18533,7 @@
       "end": 87099,
       "line": 1,
       "raw": "\"Magic Defense\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18550,7 +18550,7 @@
       "end": 87122,
       "line": 1,
       "raw": "\"Focus\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18567,7 +18567,7 @@
       "end": 87151,
       "line": 1,
       "raw": "\"Mental Defense\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18644,7 +18644,7 @@
       "end": 87197,
       "line": 1,
       "raw": "\"Acid Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18661,7 +18661,7 @@
       "end": 87227,
       "line": 1,
       "raw": "\"Blight Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18678,7 +18678,7 @@
       "end": 87261,
       "line": 1,
       "raw": "\"Crushing Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18695,7 +18695,7 @@
       "end": 87293,
       "line": 1,
       "raw": "\"Fire Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18712,7 +18712,7 @@
       "end": 87322,
       "line": 1,
       "raw": "\"Frost Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18729,7 +18729,7 @@
       "end": 87351,
       "line": 1,
       "raw": "\"Holy Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18746,7 +18746,7 @@
       "end": 87386,
       "line": 1,
       "raw": "\"Penetrating Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18763,7 +18763,7 @@
       "end": 87422,
       "line": 1,
       "raw": "\"Storm Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18780,7 +18780,7 @@
       "end": 87452,
       "line": 1,
       "raw": "\"Tease Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18797,7 +18797,7 @@
       "end": 87481,
       "line": 1,
       "raw": "\"Drug Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18814,7 +18814,7 @@
       "end": 87514,
       "line": 1,
       "raw": "\"Pheromone Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18831,7 +18831,7 @@
       "end": 87550,
       "line": 1,
       "raw": "\"Fatigue Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18848,7 +18848,7 @@
       "end": 87581,
       "line": 1,
       "raw": "\"Mind Resist\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18940,7 +18940,7 @@
       "end": 87844,
       "line": 1,
       "raw": "\"Corruption\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -18957,7 +18957,7 @@
       "end": 87870,
       "line": 1,
       "raw": "\"Libido\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19037,8 +19037,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -19130,8 +19130,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -19190,7 +19190,7 @@
       "end": 88894,
       "line": 1,
       "raw": "\"Class\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19207,7 +19207,7 @@
       "end": 88907,
       "line": 1,
       "raw": "\"Story\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19224,7 +19224,7 @@
       "end": 88921,
       "line": 1,
       "raw": "\"Sexual\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19241,7 +19241,7 @@
       "end": 88934,
       "line": 1,
       "raw": "\"Other\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19528,7 +19528,7 @@
       "end": 89592,
       "line": 1,
       "raw": "\"Femininity\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19545,7 +19545,7 @@
       "end": 89632,
       "line": 1,
       "raw": "\"Tallness (hands)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19562,7 +19562,7 @@
       "end": 89646,
       "line": 1,
       "raw": "\"Height (in)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19579,7 +19579,7 @@
       "end": 89685,
       "line": 1,
       "raw": "\"Tone\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19596,7 +19596,7 @@
       "end": 89712,
       "line": 1,
       "raw": "\"Thiccness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19613,7 +19613,7 @@
       "end": 89724,
       "line": 1,
       "raw": "\"Thickness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19630,7 +19630,7 @@
       "end": 89753,
       "line": 1,
       "raw": "\"Belly Rating\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19647,7 +19647,7 @@
       "end": 89785,
       "line": 1,
       "raw": "\"Butt Rating\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19664,7 +19664,7 @@
       "end": 89815,
       "line": 1,
       "raw": "\"Hip Rating\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19681,7 +19681,7 @@
       "end": 89844,
       "line": 1,
       "raw": "\"Lip Rating\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19773,7 +19773,7 @@
       "end": 90117,
       "line": 1,
       "raw": "\"Anal Capacity\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19790,7 +19790,7 @@
       "end": 90153,
       "line": 1,
       "raw": "\"Anal Looseness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19807,7 +19807,7 @@
       "end": 90184,
       "line": 1,
       "raw": "\"Feracity\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19914,7 +19914,7 @@
       "end": 90274,
       "line": 1,
       "raw": "\"Current Milk (ml)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19931,7 +19931,7 @@
       "end": 90307,
       "line": 1,
       "raw": "\"Milk Capacity (ml)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -19948,7 +19948,7 @@
       "end": 90346,
       "line": 1,
       "raw": "\"Milk Rate (ml/hr)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20055,7 +20055,7 @@
       "end": 90441,
       "line": 1,
       "raw": "\"Current Cum (ml)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20072,7 +20072,7 @@
       "end": 90472,
       "line": 1,
       "raw": "\"Cum Capacity (ml)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20089,7 +20089,7 @@
       "end": 90504,
       "line": 1,
       "raw": "\"Cum Rate (ml/hr)\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20106,7 +20106,7 @@
       "end": 90532,
       "line": 1,
       "raw": "\"Virility\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20183,7 +20183,7 @@
       "end": 90609,
       "line": 1,
       "raw": "\"Vaginal Wetness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20200,7 +20200,7 @@
       "end": 90650,
       "line": 1,
       "raw": "\"Vaginal Looseness\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20217,7 +20217,7 @@
       "end": 90692,
       "line": 1,
       "raw": "\"Vaginal Capacity\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -20234,7 +20234,7 @@
       "end": 90725,
       "line": 1,
       "raw": "\"Fertility\"",
-      "inheritedMatchMode": "occurrence_original_category_changed",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
       "curatedReason": "103_source_should_translate_safe",
@@ -22547,8 +22547,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -22610,8 +22610,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -25416,8 +25416,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -25464,8 +25464,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -25512,8 +25512,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -25575,8 +25575,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -25901,8 +25901,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -26054,8 +26054,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -26511,8 +26511,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -26949,8 +26949,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -27904,7 +27904,7 @@
       "category": "unknown",
       "shouldTranslate": true,
       "original": "You are attempting to sell unique items with the unique item sell confirmation option enabled. Press the <b>[Checkout]</b> button once more to confirm the sale of the following unique items:\n",
-      "translation": "您正在尝试出售具有“唯一物品销售确认”功能的独特物品。请点击确认。 <b>[Checkout]</b> 再次点击按钮，以确认购买以下独特物品：\n",
+      "translation": "你正在尝试出售独特物品，且已启用独特物品出售确认选项。请再次点击<b>[Checkout]</b>按钮，确认出售以下独特物品：\n",
       "start": 127496,
       "end": 127690,
       "line": 1,
@@ -28344,8 +28344,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -28497,8 +28497,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -29207,8 +29207,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -30340,8 +30340,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -30463,8 +30463,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -31068,8 +31068,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -31600,8 +31600,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -31708,8 +31708,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32030,8 +32030,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32341,8 +32341,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32689,8 +32689,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32884,7 +32884,7 @@
       "end": 149496,
       "line": 1,
       "raw": "\"Story\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "103_source_should_translate_safe",
       "updateStatus": "inherited_translation"
     },
@@ -33162,8 +33162,7 @@
       "translationStatus": "ollama_translated",
       "translationModel": "huihui_ai/hy-mt1.5-abliterated:latest",
       "curatedReason": "103_options_area",
-      "updateStatus": "inherited_not_translatable",
-      "translatedAt": "2026-08-23T16:40:07.825Z"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.964d28af5cd7e165945f.js:150464:150472:76ece3e95d80",
@@ -33180,8 +33179,7 @@
       "translationStatus": "ollama_translated",
       "translationModel": "huihui_ai/hy-mt1.5-abliterated:latest",
       "curatedReason": "103_options_area",
-      "updateStatus": "inherited_not_translatable",
-      "translatedAt": "2026-08-23T16:40:08.237Z"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.964d28af5cd7e165945f.js:150473:150479:50c3f10f5b1c",
@@ -33559,8 +33557,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -35616,8 +35614,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -35927,8 +35925,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -36065,8 +36063,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -36520,8 +36518,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -36866,7 +36864,7 @@
       "category": "unknown",
       "shouldTranslate": true,
       "original": "You are attempting to drop unique items with the unique item drop confirmation option enabled. Press the <b>[Confirm]</b> button once more to confirm the drop of the following unique items:\n",
-      "translation": "当唯一物品掉落确认选项处于启用状态时，您正在尝试掉落这些唯一物品。请点击 <b>[Confirm]</b> 再次点击按钮，以确认掉落以下独特物品：\n",
+      "translation": "当唯一物品掉落确认选项处于启用状态时，您正在尝试掉落这些唯一物品。请点击<b>[Confirm]</b>再次点击按钮，以确认掉落以下独特物品：\n",
       "start": 166024,
       "end": 166217,
       "line": 1,
@@ -37923,8 +37921,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -38061,8 +38059,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -38516,8 +38514,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -39760,7 +39758,7 @@
       "end": 179170,
       "line": 1,
       "raw": "\"Armor\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -40951,8 +40949,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -41089,8 +41087,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -41514,8 +41512,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43040,8 +43038,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43422,8 +43420,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43470,8 +43468,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43700,8 +43698,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43733,8 +43731,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -45281,8 +45279,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -45434,8 +45432,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -45647,8 +45645,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -46123,8 +46121,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -47074,8 +47072,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -48360,8 +48358,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -48723,8 +48721,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -49311,8 +49309,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -49344,8 +49342,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -49377,8 +49375,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -49530,8 +49528,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -50792,8 +50790,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -51642,7 +51640,7 @@
       "end": 230409,
       "line": 1,
       "raw": "\"Other\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -52172,8 +52170,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -53740,8 +53738,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -55858,8 +55856,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -55936,8 +55934,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -56089,8 +56087,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -56546,7 +56544,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Unknown! Try using [Sense].",
-      "translation": "未知！请尝试使用其他方法。 [Sense].",
+      "translation": "未知！请尝试使用[Sense]。",
       "start": 253750,
       "end": 253779,
       "line": 1,
@@ -56655,7 +56653,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Unknown! Try using [Sense].",
-      "translation": "未知！请尝试使用其他方法。 [Sense].",
+      "translation": "未知！请尝试使用[Sense]。",
       "start": 254102,
       "end": 254131,
       "line": 1,
@@ -56732,7 +56730,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Unknown! Try using [Sense].",
-      "translation": "未知！请尝试使用其他方法。 [Sense].",
+      "translation": "未知！请尝试使用[Sense]。",
       "start": 254328,
       "end": 254357,
       "line": 1,
@@ -57554,8 +57552,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -58850,8 +58848,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -58883,8 +58881,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -58916,8 +58914,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -59221,8 +59219,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_for_103_curated_safety",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -59599,8 +59597,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -59632,8 +59630,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -61762,8 +61760,9 @@
       "end": 285879,
       "line": 1,
       "raw": "\"combatBusts/eirina_bust.Moira.0.png\"",
-      "updateStatus": "disabled_by_update_filter",
-      "curatedReason": "disabled_for_103_curated_safety"
+      "inheritedMatchMode": "occurrence_original_category",
+      "curatedReason": "disabled_for_103_curated_safety",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "103.964d28af5cd7e165945f.js:285880:285915:2cb455927bd1",
@@ -111780,8 +111779,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -111798,8 +111797,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -111831,8 +111830,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -111849,8 +111848,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112047,8 +112046,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112110,8 +112109,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112158,8 +112157,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112251,8 +112250,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112314,8 +112313,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112347,8 +112346,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -112380,8 +112379,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -113088,8 +113087,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -113106,8 +113105,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -113790,8 +113789,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -113838,8 +113837,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -113886,8 +113885,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114326,8 +114325,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114344,8 +114343,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114362,8 +114361,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114380,8 +114379,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114398,8 +114397,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114416,8 +114415,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114434,8 +114433,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114452,8 +114451,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114470,8 +114469,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114488,8 +114487,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114506,8 +114505,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114524,8 +114523,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114542,8 +114541,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114560,8 +114559,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114578,8 +114577,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114596,8 +114595,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114614,8 +114613,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114632,8 +114631,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114650,8 +114649,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114668,8 +114667,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114686,8 +114685,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114704,8 +114703,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114722,8 +114721,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114740,8 +114739,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114758,8 +114757,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114776,8 +114775,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114794,8 +114793,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114812,8 +114811,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114830,8 +114829,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114848,8 +114847,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114866,8 +114865,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114884,8 +114883,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114902,8 +114901,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114920,8 +114919,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114938,8 +114937,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114956,8 +114955,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114974,8 +114973,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -114992,8 +114991,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115010,8 +115009,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115028,8 +115027,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115046,8 +115045,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115064,8 +115063,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115082,8 +115081,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115100,8 +115099,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115118,8 +115117,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115136,8 +115135,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115154,8 +115153,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115172,8 +115171,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115190,8 +115189,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115208,8 +115207,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115226,8 +115225,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115244,8 +115243,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115262,8 +115261,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115280,8 +115279,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115298,8 +115297,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115316,8 +115315,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115334,8 +115333,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115352,8 +115351,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115370,8 +115369,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115388,8 +115387,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115406,8 +115405,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115424,8 +115423,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115442,8 +115441,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115460,8 +115459,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115478,8 +115477,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115496,8 +115495,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115514,8 +115513,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115532,8 +115531,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115610,8 +115609,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115643,8 +115642,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -115683,12 +115682,14 @@
       "category": "dialogue",
       "shouldTranslate": false,
       "original": "\n    \n        Created by Savin\n        Lead Writing: Savin | Lead Coding: UpcastDrake | Lead Arting: Moira\n        Editing by <b>YOU</b>. Do your part to combat the bug/typo menace.\n        Report errors <a href=\"https://forum.fenoxo.com/forums/coc2-bug-reports.26/\" onclick=\"window.open(this.href); return false;\">here</a>. \n    \n        Inspired by, and created under license from, Fenoxo. \n    \n        This is an adult game meant to be played by adults. By playing, you confirm that you are 18 or older. CoC2 contains many weird and exotic fetishes, including but not limited to: sexually invasive tentacles, overly-amorous monstergirls, furry futa femdom, uncontrollable breeding urges, and horny demon sex-wizards. \n        <b>You've been warned.</b><i> </i>\n    \n        [var0|New builds and updates available at <a href=\"https://www.fenoxo.com/\" onclick=\"window.open(this.href); return false;\">www.Fenoxo.com</a>\n\n        Love the game?\n        Support us on <a href=\"https://www.patreon.com/Savinmander\" onclick=\"window.open(this.href); return false;\">Patreon</a> and get access to more frequent backer builds!\n        Or buy the Public Version on <a href=\"https://store.steampowered.com/app/1292690/Corruption_of_Champions_II/\" onclick=\"window.open(this.href); return false;\">Steam</a> to get auto-updates, trading cards, and other goodies!]\n        ",
-      "translation": "\n    \n        Created by Savin\n        Lead Writing: Savin | Lead Coding: UpcastDrake | Lead Arting: Moira\n        Editing by <b>YOU</b>. Do your part to combat the bug/typo menace.\n        Report errors <a href=\"https://forum.fenoxo.com/forums/coc2-bug-reports.26/\" onclick=\"window.open(this.href); return false;\">here</a>. \n    \n        Inspired by, and created under license from, Fenoxo. \n    \n        This is an adult game meant to be played by adults. By playing, you confirm that you are 18 or older. CoC2 contains many weird and exotic fetishes, including but not limited to: sexually invasive tentacles, overly-amorous monstergirls, furry futa femdom, uncontrollable breeding urges, and horny demon sex-wizards. \n        <b>You've been warned.</b>\n        <b>本汉化完全免费，如遇收费请退款并投诉<\b>\n<b>如遇问题，请确认是否使用最新版汉化且英文原版正常后反馈<\b><i> </i>\n    \n        [var0|New builds and updates available at <a href=\"https://www.fenoxo.com/\" onclick=\"window.open(this.href); return false;\">www.Fenoxo.com</a>\n\n        Love the game?\n        Support us on <a href=\"https://www.patreon.com/Savinmander\" onclick=\"window.open(this.href); return false;\">Patreon</a> and get access to more frequent backer builds!\n        Or buy the Public Version on <a href=\"https://store.steampowered.com/app/1292690/Corruption_of_Champions_II/\" onclick=\"window.open(this.href); return false;\">Steam</a> to get auto-updates, trading cards, and other goodies!]\n        ",
+      "translation": "\n    \n        Created by Savin\n        Lead Writing: Savin | Lead Coding: UpcastDrake | Lead Arting: Moira\n        Editing by <b>YOU</b>. Do your part to combat the bug/typo menace.\n        Report errors <a href=\"https://forum.fenoxo.com/forums/coc2-bug-reports.26/\" onclick=\"window.open(this.href); return false;\">here</a>. \n    \n        Inspired by, and created under license from, Fenoxo. \n    \n        This is an adult game meant to be played by adults. By playing, you confirm that you are 18 or older. CoC2 contains many weird and exotic fetishes, including but not limited to: sexually invasive tentacles, overly-amorous monstergirls, furry futa femdom, uncontrollable breeding urges, and horny demon sex-wizards. \n        <b>You've been warned.</b>\n        <b>本汉化完全免费，如遇收费请退款并投诉</b>\n<b>如遇问题，请确认是否使用最新版汉化且英文原版正常后反馈</b><i> </i>\n    \n        [var0|New builds and updates available at <a href=\"https://www.fenoxo.com/\" onclick=\"window.open(this.href); return false;\">www.Fenoxo.com</a>\n\n        Love the game?\n        Support us on <a href=\"https://www.patreon.com/Savinmander\" onclick=\"window.open(this.href); return false;\">Patreon</a> and get access to more frequent backer builds!\n        Or buy the Public Version on <a href=\"https://store.steampowered.com/app/1292690/Corruption_of_Champions_II/\" onclick=\"window.open(this.href); return false;\">Steam</a> to get auto-updates, trading cards, and other goodies!]\n        ",
       "start": 425646,
       "end": 427026,
       "line": 1,
       "raw": "'\\n    \\n        Created by Savin\\n        Lead Writing: Savin | Lead Coding: UpcastDrake | Lead Arting: Moira\\n        Editing by <b>YOU</b>. Do your part to combat the bug/typo menace.\\n        Report errors <a href=\"https://forum.fenoxo.com/forums/coc2-bug-reports.26/\" onclick=\"window.open(this.href); return false;\">here</a>. \\n    \\n        Inspired by, and created under license from, Fenoxo. \\n    \\n        This is an adult game meant to be played by adults. By playing, you confirm that you are 18 or older. CoC2 contains many weird and exotic fetishes, including but not limited to: sexually invasive tentacles, overly-amorous monstergirls, furry futa femdom, uncontrollable breeding urges, and horny demon sex-wizards. \\n        <b>You\\'ve been warned.</b><i> </i>\\n    \\n        [var0|New builds and updates available at <a href=\"https://www.fenoxo.com/\" onclick=\"window.open(this.href); return false;\">www.Fenoxo.com</a>\\n\\n        Love the game?\\n        Support us on <a href=\"https://www.patreon.com/Savinmander\" onclick=\"window.open(this.href); return false;\">Patreon</a> and get access to more frequent backer builds!\\n        Or buy the Public Version on <a href=\"https://store.steampowered.com/app/1292690/Corruption_of_Champions_II/\" onclick=\"window.open(this.href); return false;\">Steam</a> to get auto-updates, trading cards, and other goodies!]\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_translation"
     },
@@ -115918,8 +115919,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117257,8 +117258,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117395,8 +117396,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117428,8 +117429,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_unknown_visible",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_unknown_visible",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117446,8 +117447,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117464,8 +117465,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_unknown_visible",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_unknown_visible",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117482,8 +117483,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "generic_possible_text",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "generic_possible_text",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -117627,40 +117628,5 @@
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     }
-  ],
-  "curated": {
-    "generatedAt": "2026-08-23T16:07:34.053Z",
-    "source": "D:\\Codex\\COC2 0.95\\translator\\extracted_json\\103.964d28af5cd7e165945f.js.json",
-    "sourceJs": "D:\\Codex\\COC2 0.95\\resources\\app\\103.964d28af5cd7e165945f.js",
-    "sourceJsBytes": 437706,
-    "policy": "Curated visible UI/configuration text from 103 core chunk. Keeps options UI, confirm popups, concise buttons/headings/descriptions; disables runtime errors, paths, CSS/classes, React internals, and code fragments.",
-    "kept": 472,
-    "disabled": 7276,
-    "keptByReason": {
-      "103_source_should_translate_safe": 470,
-      "103_options_area": 2
-    },
-    "keptByCategory": {
-      "unknown": 118,
-      "possible_text": 228,
-      "property_text": 1,
-      "button_or_tooltip": 125
-    },
-    "windows": {
-      "optionArea": [
-        148000,
-        159200
-      ],
-      "confirmWindows": [
-        [
-          127000,
-          128000
-        ],
-        [
-          165700,
-          168100
-        ]
-      ]
-    }
-  }
+  ]
 }
