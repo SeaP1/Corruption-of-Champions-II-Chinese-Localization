@@ -253,7 +253,21 @@
       "Caliope": "卡利俄佩",
       "Renia": "雷妮亚",
       "Auren": "奥伦",
-      "Raizel": "雷泽尔"
+      "Raizel": "雷泽尔",
+      "Vaska": "瓦斯卡",
+      "Theodane": "西奥丹",
+      "Thore": "托雷",
+      "Sayumi": "沙由美",
+      "Sayumi Ishida": "石田沙由美",
+      "Gaspare": "加斯帕雷",
+      "Hitoshi": "仁",
+      "Hitoshi Kurokawa": "黑川仁",
+      "Aisling": "艾丝琳",
+      "High Lady Otomo": "乙女大君",
+      "Jūshirō": "十次郎",
+      "Jushiro": "十次郎",
+      "Takeru": "石田武",
+      "Takeru Ishida": "石田武"
     },
     "Roaming Encounters": {
       "Avanai Rider": "阿瓦奈骑手",
@@ -369,7 +383,11 @@
       "Fritte": "弗里特",
       "Elaril": "埃拉瑞尔",
       "Merielle": "梅里尔",
-      "Wyvern Girl": "双足飞龙女孩"
+      "Wyvern Girl": "双足飞龙女孩",
+      "Pexighast": "佩克西加斯特",
+      "Pexighast Hunters": "佩克西加斯特猎手",
+      "Hellhound": "地狱犬",
+      "Knife-wielding crab": "持刀螃蟹"
     },
     "Event Encounters": {
       "Abyssal Thing": "深渊之物",
@@ -485,7 +503,11 @@
       "Wraith-Touched Raiders": "幽灵触染劫掠者",
       "Twisted Troll": "扭曲巨魔",
       "WraithShadowcaster": "幽魂影术师",
-      "Wraith Raider": "幽魂劫掠者"
+      "Wraith Raider": "幽魂劫掠者",
+      "Count Julius": "朱利叶斯伯爵",
+      "Prince Philander": "菲兰德王子",
+      "Iridessa": "伊里德萨",
+      "Riquelz": "里奎尔兹"
     },
     "Marked Mercenary Band": {
       "Unnamed Dogdick Mercenary": "无名犬根佣兵",
@@ -635,7 +657,9 @@
       "Undermountain": "山腹深域",
       "Windy Peaks": "风啸峰",
       "Greyvales": "灰谷",
-      "Greyvale Mountains": "灰谷山脉"
+      "Greyvale Mountains": "灰谷山脉",
+      "Jassira": "贾西拉",
+      "Old Belhar": "旧贝尔哈"
     },
     "Settlements": {
       "Centaur Village": "半人马村落",
@@ -729,12 +753,21 @@
       "Khor'minos Harbor": "科尔米诺斯港",
       "The Baronies": "诸侯领",
       "Tychris Palace": "提克里斯宫殿",
-      "Cathedral of Nareva": "娜瑞瓦大教堂"
+      "Cathedral of Nareva": "娜瑞瓦大教堂",
+      "Elthos Bay": "埃尔索斯湾",
+      "Frostwolf": "霜狼旅店"
     }
   },
   "Items": {
-    "Equipment": {},
-    "Weapons": {},
+    "Equipment": {
+      "Rogues Boots": "盗贼长靴",
+      "Sarashi": "裹胸布"
+    },
+    "Weapons": {
+      "Bewitching Staff": "魅惑法杖",
+      "Icerime Rod": "霜凇权杖",
+      "Elosan Grail": "艾洛莎圣杯"
+    },
     "Consumables": {},
     "Transformative Items": {},
     "Background Items": {
@@ -1041,7 +1074,11 @@
       "Way Walker": "道途行者"
     },
     "Summons": {},
-    "Codex": {},
+    "Codex": {
+      "Lumian": "卢米亚人",
+      "Lumians": "卢米亚人",
+      "Lightning of Takeru": "武之雷"
+    },
     "Money": {
       "Electrum Coins": "琥珀金币"
     }
