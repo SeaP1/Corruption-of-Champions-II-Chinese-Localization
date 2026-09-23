@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.97\\resources\\app\\Content_DragonLair.a22c870484febce6f9f2.js",
+  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\Content_DragonLair.a22c870484febce6f9f2.js",
   "sourceSha1": "24137d68840f35fdaf0ac7a5263258cb309cc483",
   "migratedFrom": [
     "Content_DragonLair.a22c870484febce6f9f2.js.json"
   ],
-  "updateGeneratedAt": "2026-09-11T04:35:19.475Z",
+  "updateGeneratedAt": "2026-09-22T10:43:18.620Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 927,
@@ -168,10 +168,10 @@
       "line": 1,
       "raw": "\"Dreams [flags.ASHE_DREAMS|Off|On]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:4968:4970:da39a3ee5e6b",
@@ -199,10 +199,10 @@
       "line": 1,
       "raw": "\"[flags.ASHE_DREAMS|Stop Ashe from visiting your dreams!|Have Ashe visit your dreams tonight.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:5082:5096:17f0c0b64cdd",
@@ -245,10 +245,10 @@
       "line": 1,
       "raw": "\"How does Ashe think you're doing?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:5177:5187:b6fe7f5e7917",
@@ -337,10 +337,10 @@
       "line": 1,
       "raw": "\"Sex\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:5393:5395:da39a3ee5e6b",
@@ -428,10 +428,10 @@
       "line": 1,
       "raw": "'\\n    \"It would be my pleasure!\" The mace beams at you... or at least gives you the impression of beaming.\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:5834:8149:0bf3ccadf81f",
@@ -494,10 +494,10 @@
       "line": 1,
       "raw": "'\\n    \"How sensitive are you, as a mace?\" You tease, wiggling your hips and eyeing those <b>delectable</b> flanges like a true deviant.\\n    \\n    \"I— uh, uhm!\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11018:11026:d011986407b1",
@@ -511,10 +511,10 @@
       "line": 1,
       "raw": "\"Polish\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11042:11044:da39a3ee5e6b",
@@ -542,10 +542,10 @@
       "line": 1,
       "raw": "\"Get a coarse cloth, some weapon polish, and go to fucking <b>town</b> on those flanges. [silly|You love it, you slut.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11186:11196:2a2d471dabc2",
@@ -559,10 +559,10 @@
       "line": 1,
       "raw": "\"Shafting\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11214:11216:da39a3ee5e6b",
@@ -590,10 +590,10 @@
       "line": 1,
       "raw": "\"Get shafted, literally.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11268:11270:da39a3ee5e6b",
@@ -621,10 +621,10 @@
       "line": 1,
       "raw": "\"This isn't the place for that.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:11379:17313:4a23d1cf43ea",
@@ -860,10 +860,10 @@
       "line": 1,
       "raw": "'\\n            \"That means a lot, thank you...\" \\n            \\n            The dragon smiles again and pats your leg. \"I will be around for a long time, a simple promise is no match for the opportunity to do so, and to bask in the sun, and see the world change around me once more. \" \\n            \\n            \"It could be a long time, what if I do something you don\\'t like?\"\\n            \\n            Ashe shrugs. \"I will try to help you, however I can. For now though, I will wish you sweet sleep. I know <b>I</b> am <b>really</b> looking forward to a nap. Just don\\'t let me do so for decades at a time.\"\\n            '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:30314:30320:bc981983e7f5",
@@ -964,10 +964,10 @@
       "line": 1,
       "raw": "\"\\n            You're not exactly sure how you feel about this serious promise, you just wanted [evelyn.dragon|a hot dragon dom|to end the suffering]. You give her a firm nod, and Ashe seems to understand... not that she recants her promise, she simply pats you on the leg. \\\"Until next time you wish to see me, dear flame...\\n            \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:30809:30815:bc981983e7f5",
@@ -1038,10 +1038,10 @@
       "line": 1,
       "raw": "\"Hard to say how you feel about that.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:30895:30900:dc7c8671b22d",
@@ -1144,10 +1144,10 @@
       "line": 1,
       "raw": "\"Poor sad baby. [silly|;a;]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:33043:33051:7d23384bc9c2",
@@ -1190,10 +1190,10 @@
       "line": 1,
       "raw": "\"Talk with Ashe about Iveryn; clearly they were more than just friends right?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:33169:33180:83b9c7c64247",
@@ -1280,10 +1280,10 @@
       "line": 1,
       "raw": "\"More, you choose 'more'.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:33371:39304:4fcf9ef1ced0",
@@ -1389,10 +1389,10 @@
       "line": 1,
       "raw": "'\\n        \"Good morning, dear flame,\" your mace chimes happily. \"You were sawing logs most of the night. [var0\\n            |I\\'m amazed your partner wasn\\'t woken up...\\n            |amazing you didn\\'t wake up the whole [atCamp\\n                |campsite\\n                |tavern\\n            ].\\n        ]\"\\n        \\n        You\\'d swear you can still feel fingers teasing their way [pc.hasHair\\n            |through your hair\\n            |along your scalp\\n        ]. \"It was a decent sleep, yeah...[pc.isDK\\n            |\\n            | thanks.\\n        ]\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:43364:43370:bc981983e7f5",
@@ -1523,10 +1523,10 @@
       "line": 1,
       "raw": "\"Eat Ashe out.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44119:44129:625ebd165ed6",
@@ -1571,10 +1571,10 @@
       "line": 1,
       "raw": "\"Get [pc.cockVagBoth|blown|eaten out|blown and fingered].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44224:44233:82aec2560744",
@@ -1588,10 +1588,10 @@
       "line": 1,
       "raw": "\"Tailpeg\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44251:44253:da39a3ee5e6b",
@@ -1619,10 +1619,10 @@
       "line": 1,
       "raw": "\"Sit in Ashe's lap while she tailfucks your ass.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44319:44331:3a1c54aa5c62",
@@ -1667,10 +1667,10 @@
       "line": 1,
       "raw": "\"Hike up a leg and have Ashe fuck your [pc.vagOrAss].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44429:44441:40ad2029eca1",
@@ -1715,10 +1715,10 @@
       "line": 1,
       "raw": "\"Pound Ashe's pussy.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:44499:44501:da39a3ee5e6b",
@@ -1929,10 +1929,10 @@
       "line": 1,
       "raw": "\"It's such an exotic dick...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:68262:68269:b3fa5da5b4c0",
@@ -1977,10 +1977,10 @@
       "line": 1,
       "raw": "\"It's a truly beautiful pussy.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:68430:69733:020dd329aa75",
@@ -2102,10 +2102,10 @@
       "line": 1,
       "raw": "\"Enjoy a cock to press against your tummy while you're pegged.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:78769:78776:b3fa5da5b4c0",
@@ -2484,10 +2484,10 @@
       "line": 1,
       "raw": "'\\n    Evelyn smiles at you as you enter. \"[pc.name]. How good to see you again.\"\\n    \\n    \"The pleasure is mine,\" you say.\\n    \\n    \"Oh, I\\'m sure,\" she purrs. Taking a seat on her throne, she reclines and gives you a lazy smirk, stretching her pantyhose-covered legs. The effortless sexiness has a dull fire lit in your loins already. \"Spend some time with me, [pc.name]. I can\\'t always be focused on myself.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:138800:138818:7e6290333cac",
@@ -2540,7 +2540,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    [weightedRand 60 20 20\n        |Evelyn smiles at you as you enter. \"[pc.name]. It's good to see you again.\"\n        \n        \"The pleasure is mine,\" you say.\n        \n        \"Oh, I'm sure,\" she purrs. Taking a seat on her throne, she reclines and gives you a lazy smirk. \"Spend some time with me, [pc.name]. I can't always be focused on myself.\"\n        |Evelyn is on you as soon as you enter. The scent of fresh sweat and arousal enters your nostrils the moment she presses herself against you, stealing your lips [pc.hasBreasts\n            |as your nipples grow rock-hard in an instant\n            |[pc.hasCock\n                |as you grow hard in an instant\n                |as your pussy grows warm\n            ]\n        ]. Her thick, rigid dick rubs against [pc.hasCock\n            |yours\n            |your stomach\n        ] while she reaches down to grip your ass, getting two firm handfuls before she starts to strip you naked. You barely notice your clothes littering the floor, too intently focused on her tongue in your mouth.\n        \n        The moment your [pc.vagAss\n            |pussy\n            |ass\n        ] is bared Evelyn picks you up off the ground, holding you in her arms and lifting you so she can [pc.vagAss\n            |lay the head of her cock against your soft wet lips, your arousal drooling down her obscene length for a second before the inevitable. She spears your slippery cunt with her fat, bulging cock, stretching your labia wide as she drives herself to the hilt inside you.\n            |slide her upright cock between your [pc.assRange 0 6 9 12\n                |taut cheeks\n                |lusty cheeks\n                |jiggling cheeks\n                |fat, curvy cheeks\n            ]. She gives you a second to recognize the warmth of her cockhead pushing against your [pc.asshole], heralding the inevitable before it happens. She spears your ass with her fat, bulging cock, stretching your ring wide as she drives herself to the hilt inside you.\n        ]\n        \n        \"Ohhhhmmffh!\" you moan into her mouth.\n        \n        Filling you utterly, the only thing you can feel as you hug her is how <i>tightly</i> you're wrapped around her cock, the ecstasy of your impalement buzzing in your head. Everything feels light and dizzy as Evelyn walks you towards her bed, bouncing you up and down on her massive cock with her breath hot on your face.\n        \n        [pc.vagAss\n            |Every time she sheathes her dick balls-deep in your [pc.loosenessRange 0 3\n                |tight little pussy\n                |warm, wet pussy\n            ] your clit <i>throbs</i>, the pleasure of it robbing you of the ability to do anything but moan.\n            |[pc.hasCock\n                |Your [pc.cockRange 0 4 8 16\n                    |tiny cock\n                    |raging hard cock\n                    |big, hard cock\n                    |massive cock\n                ] starts going limp as she repeatedly brushes against your prostate, merely a monument to your utter submission. The pleasure of it is almost unbearable and only made worse by the way she's rocking her hips against you on your descent, robbing you of the ability to do anything but moan.\n                |You can feel your clit <i>throbbing</i> every time her cock drives deep into your ass, wetness dripping from your pussy.\n            ]\n        ]\n        \n        Evelyn throws you onto the bed and kneels over you, grunting as she drives her swollen dick straight down into your [pc.vagAss\n            |[pc.vagTypeMulti equine\n                |thick, rubbery marecunt\n                |vulnerable cunt\n            ]\n            |asshole\n        ], the power in her thighs shaking the mattress. Grabbing your ankles she pushes your legs out and back until you're heels over head, raising your [pc.ass] off the bed. Every savage thrust downwards feels like a thunderbolt from the sky, the dragon's bed creaking with the strength of her.\n        \n        \"Oh! OH!\" you [pc.mascFem\n            |howl\n            |scream\n        ]. \"EVELYN! <b>EVELYN!</b>\"\n        \n        Evelyn snarls as her cock starts to throb and flex inside you, her pretty face twisting as she grits her teeth in pleasure, her breath coming hard and fast while she destroys you utterly. She's fucking you so hard you're bouncing back up after she pounds you downwards, sweat flying from your bodies as her ass slaps against yours. The sheer violence has you arching your back, [pc.hasToes\n            |your toes pointing as the dragoness forces you to cum with her\n            |your calves twitching\n        ].\n        \n        \"<b>Uunngh!</b>\" Evelyn grunts.\n        \n        [pc.isSquirter\n            |You squirt all over the bed as she\n            |You cum the moment she\n        ] fully sheathes herself inside you, your mouth stretching open in a silent scream while your ass rises an inch or two off the bed to meet her. You can <b>feel</b> the torrent of thick white jizz that unloads into your [pc.vagAss\n            |[pc.pregStage 1\n                |squeezing pussy, filling your canal from end to end before bursting forth from between your reddened lips.\n                |hungry womb, filling you to excess before spurting down your canal to burst forth from between your reddened lips.\n            ]\n            |guts, filling you so deeply that only a trickle runs down your backside.\n        ] Her balls rub and pulse against you as she pushes you down into the mattress, leaning down to suck on your tongue while you cum your brains out.\n        \n        [pc.cockVagBoth\n            |Spunk goes everywhere, shooting from your hardening cock while Evelyn throbs in your ass. Every twitch puts pressure on your prostate, the dragoness's orgasm spurring on your own. Rendered helpless, the only thing you can do is kiss her back while she holds you down and empties her balls deep into your insides, filling you with her warm, virile sperm while jizz spurts from the end of your dick.\n            |You can feel Evelyn's heartbeat in your [pc.vagAss\n                |vagina, your soft, jizz-soaked walls\n                |asshole, your jizz-soaked insides\n            ] squeezing her throbbing length so tightly you could mentally map out the veins winding along it. Every twitch of her dick stimulates you further, the dragoness's orgasm spurring on your own. Rendered helpless, the only thing you can do is kiss her back while she holds you down and empties her balls [pc.vagAss\n                |into your cunt, filling you with her warm, virile sperm while you struggle against the pleasure. You can feel your abs tensing in time with Evelyn's ejaculations...\n                |deep into your insides, filling you with her warm, virile sperm while you struggle against the pleasure. You can feel your abs tensing in time with Evelyn's ejaculations...\n            ]\n            |Spunk goes everywhere, shooting from your [pc.vagAss\n                |unbelievably stiff cock\n                |hardening cock\n            ] while Evelyn throbs in your [pc.vagAss\n                |cunt\n                |ass\n            ]. [pc.vagAss\n                |Evelyn's heart beats inside you, your soft, jizz-soaked walls squeezing her throbbing length so tightly you could mentally map out the veins winding along it. Every twitch of her dick stimulates you further, the dragoness's orgasm spurring on your own. Rendered helpless, the only thing you can do is kiss her back while she holds you down and empties her balls into your cunt, filling you with her warm, virile sperm while you struggle against the pleasure. You can feel your abs tensing in time with Evelyn's ejaculations...\n                |Evelyn's heart beats inside you, your jizz-soaked insides squeezing her throbbing length so tightly you could mentally map out the veins winding along it. Every twitch of her dick puts pressure on your prostate, the dragoness's orgasm spurring on your own. Rendered helpless, the only thing you can do is kiss her back while she holds you down and empties her balls deep into your insides, filling you with her warm, virile sperm while you struggle against the pleasure. You can feel your abs tensing in time with Evelyn's ejaculations...\n            ]\n        ]\n        \n        \"Nngh, <b>gods</b>,\" Evelyn huffs, kissing you harder. \"Mmmmmm...\"\n        \n        \"Mm! Mmmm!\" you plead, trying to arch your back only to have your captor put her knees over your arms. \"Mmmm- mmmmmm...\"\n        \n        The dragon queen doesn't let you move an inch until she's fully drained, grunting in your mouth as she sates herself in your stretched, dripping [pc.vagAss\n            |cunt\n            |asshole\n        ]. She pulls back with a breath of relief, slowly dredging herself free of your aching [pc.vagAss\n            |vagina\n            |ring\n        ] and coming free with an audible [pc.vagAss\n            |slurp\n            |pop\n        ].\n        \n        Dull pain throbs in your [pc.vagAss\n            |stretched-out pussy\n            |hollowed-out fuckhole\n        ], but it's outweighed several times over by the post-orgasmic bliss. All you want to do now is...\n        \n        Evelyn picks you up by one arm and lifts you off the bed. \"Time for a bath.\"\n        \n        You're politely deposited in the tub as water begins to fill it, Evelyn turning the faucets and roasting the water herself until it reaches an acceptable temperature. Climbing down to join you, she puts an arm around your shoulders and leans back with a sigh. [var0\n            |Comfortable silence passes you by until you think to ask a question.\n            \n            \"[pc.mascFem\n                |Does\n                |Um... does\n            ] using your power make you horny?\" you say.\n            \n            Evelyn stretches, wiggling her toes in the water. \"Were I <b>just</b> a dragon, I believe there would be no issue. But I am <b>not</b> 'just a dragon'.\" She gestures vaguely at her groin. \"Power and arousal sometimes go hand in hand for me.\"\n            \n            You mull that over for a few seconds. \"That seems like it could lead down a dangerous path.\"\n            \n            Evelyn laughs. \"Very. But I am nothing if not strong-willed.\"\n            \n            That <i>is</i> true, from what you've seen.\n            \n            \"But I do sometimes get caught up in it all after my training... and I find myself needing to blow off steam,\" she continues, smiling at you. \"A lot of steam.\"\n            \n            [pc.isBimbo\n                |\"Wow, so as long as you have me around to fuck everything's okay!\" you say.\n                |You smile. \"Are you suggesting the only thing between Savarra and an out-of-control tyrant are my sexual skills?\"\n            ]\n            \n            \"You do yourself a disfavor with that description,\" Evelyn purrs, stroking you under your chin. \"You're <b>quite</b> the counter-balancing force, [pc.name]. Believe me. But yes,\" she whispers, \"having you around to fuck senseless whenever I want <b>is</b> important to me.\"\n            |Comfortable silence passes by until you raise a question. \"Do you think you're getting better at controlling arousal when you use your power..?\"\n            \n            Evelyn stretches, wiggling her toes in the water. \"Who said I wanted to control it? Maybe I want to be ravenously aroused when I have you around, [pc.name].\"\n        ] \n        \n        The reddening of your cheeks can't be wholly played off by the temperature of the water. \"I'll keep that in mind, then.\"\n        \n        She plants a kiss on your [pc.hasMuzzle\n            |snout\n            |nose\n        ]. \"See that you do.\"\n        \n        You get out of the bath with her some time later, shaky-legged and walking a little gingerly. But <i>oh</i>, that was worth it...\n        \n        Evelyn smiles at you. \"Anything else while you're here, [pc.name]?\"\n        |The moment you enter you see Evelyn, naked as can be, her cock swollen and fully erect. She seems to be ignoring it until she meets your eyes, smiles, and puts her hands on her hips.\n        \n        No words pass between you as you cross to her and kneel, opening your mouth wide for her to use. Accepting the invitation, she takes your head in her hands and hisses in satisfaction as she slides her fat engorged cock between your lips and right into your throat, rocking her hips forward. Her heavy balls slap your chin before she holds you in place, letting out a long sigh of pleasure while you kiss her groin.\n        \n        After several seconds of having her sheathed in your throat she allows you a breath then pushes even deeper, hanging a leg over your shoulder while pulling you into her lap. You stay still and obedient as she starts to fuck your face in earnest, pulling back and plunging her cock into the depths of your throat with groans of bliss, your own gag reflex betraying you by tightening up around her when she's balls-deep and relenting as she pulls out. She <i>trained</i> this into you, you realize. She <i>wants</i> you to gag on her cock.\n        \n        \"Hhhaaahhhh,\" she pants, relaxing as your bulging throat tenses and tightens around her enormous shaft, massaging her thick, hard length. \"Ngh...\"\n        \n        Your eyes water while she commandingly fucks your throat, her cock flexing inside you as her sticky precum drools down your gullet. At first it seemed like she just wanted to satisfy herself – now she's <i>luxuriating</i> in it, stroking her cock up and down your tight, slick throat and shivering in pleasure as the head rubs against the soft, pliable walls. It's little more than masturbation using your mouth, and yet for some reason her blissful pants and growls have you [pc.cockVagBoth\n            |so hard it actually hurts when your dick tenses up\n            |so wet you're dripping [pc.hasBottomGarment\n                |through your panties\n                |on the ground\n            ]\n            |so hard it actually hurts when you tense up, dripping arousal all across the ground below\n        ].\n        \n        Every time she thrusts herself into your struggling throat your eyes bulge and your hips imperceptibly rock, pleasure zipping down your spine and reminding you that no matter how strong you become, you're utterly powerless before Evelyn. She gasps in joy while she fucks you harder and harder, her tightening ballsack slapping your chin in her eagerness and her giant cock throbbing in your throat. Carried away in her indulgence, she pounds away at you until she inevitably pushes herself over the edge, letting out a cry of rapturous joy.\n        \n        You can't help yourself. Your hips buck just once as [pc.hasCock\n            |hot cum pumps out of your cock in time with Evelyn's massive ejaculations, each straining flex of her gorgeous penis followed by your own offering spattered between her shaking thighs\n            |you [pc.isSquirter\n                |squirt\n                |cum\n            ] without being touched, each of Evelyn's massive ejaculations spurring another resonation of pleasure in your tightening cunt\n        ]. Thick, warm spunk streams down your throat by the quart, Evelyn's loud groans of ecstasy resounding in your ears while she fills your stomach with a roiling, bubbling pool of her jizz. Hardly more than her condom, you let her pump load after load into you until your stomach is stretching and sagging to contain it all. [pc.hasPussy\n            |[pc.pregStage 1\n                |\n                |You look a few months pregnant by the time she's done with you.\n            ]\n        ]\n        \n        \"Oohhhhh,\" she groans, leaning her horned head back and drinking in the decadence of her situation. \"You really are irreplaceable, [pc.name]...\"\n        \n        She drags herself free of your sloppy throat and slaps her still-hard cock against your upturned face with a smirk as you try to catch your breath, panting while spunk drips [pc.hasHair\n            |into your hair\n            |down the back of your neck\n        ].\n        \n        \"Go get the bath ready, [pc.name],\" Evelyn purrs. \"And clean me up before you go.\"\n        \n        She makes you suck her dry, watching you lick up every droplet of sweat from her fat, hanging balls before she allows you to fill the bath. She joins you not long after to heat it up, pulling you in to join her and hugging you close while she relaxes in the water. By the time each of you get out and dry off she's teasing and touching you again, smiling as she takes a seat on her throne of gold.\n        \n        \"So, did you come here just to polish my balls?\" she says. \"And if you did, get to it.\"\n    ]\n    ",
-      "translation": "\n    [weightedRand 60 20 20\n        |当你走进来时，伊芙琳对你露出了微笑。[pc.name]很高兴再次见到你。”\n\n“能与你见面是我的荣幸，”你说道。\n\n“哦，当然了，”她轻声说道。她坐在自己的王座上，微微仰靠着身体，对你露出一个慵懒的笑容，“陪我一会儿吧。[pc.name]我不可能总是把自己放在第一位。\n        |你一进门，伊芙琳就立刻扑到了你身上。当她紧紧贴向你，将她的嘴唇贴在你的嘴唇上时，一股新鲜汗液与兴奋的气息立刻钻进了你的鼻孔。[pc.hasBreasts\n            |你的乳头会在瞬间变得坚硬如石。\n            |[pc.hasCock\n                |瞬间变得坚强起来\n                |等你的身体变得温暖起来……\n            ]\n        ]她那粗壮而坚硬的阴茎不断摩擦着[pc.hasCock\n            |你的\n            |你的肚子\n        ]当她伸手抓住你的臀部，紧紧抓住你的身体后，才开始脱掉你的衣服。你甚至没有注意到自己的衣服散落在地上，因为你完全沉浸在她用舌头舔弄你的感觉之中。\n\n就在那一刻[pc.vagAss\n            |猫咪\n            |蠢货\n        ]伊芙琳将你从地上扶起，把她抱在怀里，然后把你举高，这样她就可以[pc.vagAss\n            |她的阴茎头部轻轻触碰到你柔软湿润的嘴唇，你的兴奋之情让她的阴茎分泌出液体，这些液体在她阴茎上滑动了一瞬间，随后不可避免的事情发生了——她那粗壮的阴茎狠狠地插入了你那湿润的阴道，将你的阴唇撑得大大的，然后彻底地进入了你的体内。\n            |将她的阴茎插入你的体内[pc.assRange 0 6 9 12\n                |紧绷的双颊\n                |红润的脸颊\n                |颤动的脸颊\n                |圆润、富有曲线的面颊\n            ]她给了你一秒，让你感受温热的龟头抵着[pc.asshole]，预告即将发生的事。她将粗壮胀大的阳具刺入你的后庭，撑开穴口，一直插到根部。\n        ]\n        \n        哦……”你在她的唇边呻吟着。\n\n当你紧紧拥抱她时，唯一能感受到的，就是<i>紧密地</i>你完全沉浸在她的怀抱之中，那种被她紧紧拥住的愉悦感在你的脑海中回荡。当伊芙琳带你走向她的床边时，一切仿佛都变得轻飘而眩晕；她用她那巨大的身体将你上下颠簸着，她的呼吸热气扑在你的脸上\n        \n        [pc.vagAss\n            |每次她都将自己的阴茎深深地插入你的体内[pc.loosenessRange 0 3\n                |紧绷的小阴户\n                |温暖而湿润的阴户\n            ]你的阴蒂<i>跳动着</i>这种快感会让你完全无法做其他任何事，只能不停地呻吟。\n            |[pc.hasCock\n                |你的[pc.cockRange 0 4 8 16\n                    |小阴茎\n                    |勃起的阴茎\n                    |粗大的阴茎\n                    |巨大的阴茎\n                ]当她反复摩擦你的前列腺时，你的身体逐渐失去了反应力，这一切仅仅证明了你的彻底屈服。这种快感几乎让人难以忍受，而当她在你向下运动时摆动臀部，让你根本无法做出任何其他反应，只能不断地呻吟时，这种感觉更是变得难以忍受。\n                |你能感受到自己的阴蒂。<i>跳动感</i>每次她的阴茎深入你的肛门时，你的阴道里都会流出液体。\n            ]\n        ]\n        \n        伊芙琳将你推倒在床上，然后跪在你的身上，一边发出低沉的声音，一边将她那肿胀的阴茎狠狠地插入你的体内[pc.vagAss\n            |[pc.vagTypeMulti equine\n                |粗壮、富有弹性的阴户\n                |脆弱的女人\n            ]\n            |混蛋\n        ]她大腿的力量让床垫不断震动。她抓住你的脚踝，将你的双腿向外、向后推，直到你的脚后跟朝上，从而将你的身体抬高[pc.ass]从床上起来。每一次猛烈的向下冲刺都像天降雷电，龙床在她的力量作用下发出吱嘎声。\n\n“哦！哦！”你[pc.mascFem\n            |嚎叫\n            |尖叫\n        ]伊芙琳！<b>伊芙琳！</b>伊芙琳发出低吼，她的阴茎在你体内开始剧烈抽动、弯曲，她那漂亮的脸庞因愉悦而扭曲，牙齿紧咬着，呼吸变得急促而粗重，她彻底地将你征服了。她用力地抽插着你，每一次向下冲击后，你都会被反弹起来，汗水从你们的身上飞溅而出，她的臀部不断撞击着你的身体。这种狂暴的节奏让你不得不弓起背部。[pc.hasToes\n            |当这位龙女迫使你达到高潮时，你的脚趾都会不自觉地绷直。\n            |你的小腿在不停地抽搐。\n        ].\n        \n        \"<b>嗯！</b>伊芙琳哼了一声。\n        \n        [pc.isSquirter\n            |当她的时候，你把液体喷得到了处都是，弄得到了床上到处都是。\n            |她一出现，你就立刻兴奋不已了。\n        ]她完全融入你的身体之中，你的嘴巴无声地张开，仿佛在发出尖叫，而你的臀部则微微离开床面，与她相拥。你可以<b>感受到</b>那股浓稠的白色精液喷涌而出，注入你的体内[pc.vagAss\n            |[pc.pregStage 1\n                |将阴部挤压得紧紧的，让液体从你的阴道深处充满整个通道，然后从你泛红的嘴唇间喷涌而出。\n                |那饥饿的子宫，先将你充满到极致，随后再将它们通过你的通道涌出，从你红润的嘴唇间迸发出来。\n            ]\n            |那种感觉如此强烈，以至于只有一丝余韵从你的后背缓缓流下。\n        ]当她将你压在床垫上时，她的阴部会不断摩擦着你，同时她的身体也会随着动作而产生脉动；她还会俯身去吮吸你的舌头，而你则会在这一过程中达到高潮。\n        \n        [pc.cockVagBoth\n            |当伊芙琳在你体内剧烈蠕动时，你的阴茎会剧烈勃起并射出精液。她的每一次动作都会对你的前列腺产生压迫，而她的高潮会进一步激发你的性冲动。在这种无助的状态下，你所能做的只有任由她按住你，将她的精液注入你的体内，让那温暖而充满活力的精液充满你的整个身体，而与此同时，你的阴茎也会喷出精液。\n            |你能感受到伊芙琳的心跳就在你的手中。[pc.vagAss\n                |阴道，你那柔软、浸满精液的壁壁……\n                |混蛋，你那被精液浸透的内脏……\n            ]你将她那跳动着的身体紧紧握在手中，甚至能够清晰地感受到沿着她身体蜿蜒而动的静脉。她身体的每一次颤动都会让你更加兴奋，而这位“龙女”的高潮更是将你的欲望推向了顶点。在这种无助的状态下，你所能做的唯一事情，就是在她将你压在身下的时候，吻她……同时让她将自己的精液释放出来。[pc.vagAss\n                |进入你的体内，将她那温暖而充满活力的精液注入你的体内，而你却在享受这种快感的同时拼命抵抗……你能感觉到自己的腹肌随着伊芙琳的射精而不断收缩……\n                |它深入你的体内，将她那温暖而充满活力的精液注入你的体内，而你却在竭力抵抗这种愉悦感。你可以感受到自己的腹肌随着伊芙琳的射精动作而不断收缩……\n            ]\n            |勇气无处不在，它从你体内迸发而出[pc.vagAss\n                |硬得离谱的阴茎\n                |勃起\n            ]而伊芙琳在你体内剧烈地跳动着[pc.vagAss\n                |阴道\n                |蠢货\n            ]. [pc.vagAss\n                |伊芙琳的心跳在你体内回荡，你那柔软、浸满精液的肉壁紧紧包裹着她那跳动着的肉茎，以至于你几乎能够在脑海中清晰地勾勒出沿着它蜿蜒而动的血管。她每一次的抽动都会让你更加兴奋，而这位龙女的高潮更是加剧了你自身的欲望。当你陷入这种无助的境地时，唯一能做的就是，在她将你按住、将她的精液注入你的体内时，也回应她的亲吻。在那种愉悦与挣扎交织的感觉中，你能感觉到自己的腹肌随着伊芙琳的射精而不断收缩。..\n                |伊芙琳的心跳在你体内回荡，你体内浸满精液的器官紧紧包裹着她那跳动着的肉体，以至于你几乎能够在脑海中清晰地勾勒出那些缠绕在其上的血管。她每一次的抽动都会对你的前列腺产生压力，而这位龙女的高潮更是会加剧你的欲望。当你陷入无助之时，唯一能做的就是任由她将你压在身下，让她将精液注入你的体内。在那种愉悦与挣扎交织的感觉中，你能感受到自己的腹肌随着伊芙琳的射精而不断收缩。..\n            ]\n        ]\n        \n        嗯<b>神明</b>埃弗琳气呼呼地说，同时更加用力地吻着你。‘嗯……’”\n\n“嗯！嗯……’你挣扎着，试图挺直身体，但囚禁你的人立刻用膝盖压住了你的双臂。‘嗯……嗯……’”\n\n直到她完全满足了自己的欲望，龙后才允许你动弹一下。她在你因兴奋而紧绷、渗出液体的身体上尽情满足自己的欲望，同时发出低沉的呻吟声[pc.vagAss\n            |阴户\n            |混蛋\n        ]她松了一口气，慢慢地将自己从你的拥抱中解脱出来。[pc.vagAss\n            |阴道\n            |按铃\n        ]并且还会附带一个音频文件，可免费获取。[pc.vagAss\n            |slurp\n            |弹出\n        ]你的[pc.vagAss\n            |被撑开的阴道\n            |被掏空的后穴\n        ]隐隐作痛，但是这种痛苦与性高潮带来的愉悦相比，简直微不足道。此刻，你唯一想做的就是……\n\n伊芙琳抓住你的手臂，将你从床上拉起来：“该去洗澡了。”\n\n她礼貌地将你放到浴缸里，然后打开水龙头，亲自调节水温，直到它达到合适的温度。她自己也走下来，搂住你的肩膀，轻轻叹了口气。[var0\n            |一种舒适的沉默在你周围弥漫，直到你忍不住想要问一个问题。[pc.mascFem\n                |是否\n                |嗯……是不是……\n            ]利用你的力量会让你产生性冲动吗？”你问道。\n\n伊芙琳伸了伸懒腰，把脚趾在水中晃动。“如果真是这样的话<b>只是</b>一条龙的话，我想应该不会有任何问题。但我<b>不是</b>只不过是一条龙罢了。”她含糊地指了指自己的下体，“对我来说，力量与欲望有时候是密不可分的。”\n\n你仔细思考了几秒钟，然后说道：“这样下去似乎会走上危险的道路。”\n\n伊芙琳笑了：“确实如此。但我有一个非常坚定的意志。”\n\n就是这样。<i>是</i>确实，从你刚才看到的情况来看，确实是这样。”\n\n“不过有时候，在训练结束后，我就会陷入这些事情当中……然后我就觉得需要发泄一下情绪，”她边说边对你微笑，“而且是需要发泄很多情绪呢。\n            \n            [pc.isBimbo\n                |哇，只要我有你在身边，什么问题都能解决！”你说道。\n                |你微笑着说道：“你是想说，Savarra和那个失控的暴君之间唯一的区别，就在于我的性技巧吗？\n            ]\n            \n            用那样的描述来形容自己，其实是在亏待自己啊，”伊芙琳轻声说道，同时轻轻抚摸着你的下巴。“你<b>相当</b>这种平衡力量，[pc.name]相信我，”她轻声说道，“有你在身边，随时都能让我开心得发狂<b>是</b>对我来说非常重要。\n            |一阵舒适的沉默在空气中流淌，直到你提出了一个问题：“你觉得，当你使用自己的能力时，自己在控制性兴奋方面是不是变得更好了……？”\n\n伊芙琳伸展了一下身体，让脚趾在水中活动着。“谁说我想控制它了？也许，当你在我身边的时候，我反而希望自己能处于极度兴奋的状态吧。[pc.name].\"\n        ] \n        \n        你的脸颊变红，可不能完全归咎于水的温度。“那我记住了。”\n\n然后，她在你的脸颊上轻轻一吻。[pc.hasMuzzle\n            |吻部\n            |鼻子\n        ]一定要做到。”\n\n过了一会儿，你和她一起走出了浴缸，双腿还在发抖，走路时也有些小心翼翼。但是<i>哦</i>那真的值得……\n\n伊芙琳对你笑了笑：“你既然来了，还有其他事情需要帮忙的吗？[pc.name]?\"\n        |你一走进去，就看到了伊芙琳——她全身赤裸，阴茎勃起得厉害。起初她似乎没有注意到这一点，直到与你的目光相遇，她才笑了笑，然后将双手叉在腰上。\n\n你们之间没有说一句话，你只是走到她面前跪了下来，张大嘴巴让她使用。应允了这个邀请，她将你的头捧在手中，满意地发出嘶嘶声，然后将她那肿胀的阴茎滑入你的嘴唇，再送入你的喉咙，同时将臀部向前摆动。她那重型的阴囊轻轻拍打着你的下巴，随后她固定住你的位置，当你亲吻她的腹股沟时，她长长地发出一声愉悦的叹息。\n        \n        几秒钟后，当她的阴茎完全进入你的喉咙时，她会让你喘口气，然后再次将阴茎深入你的喉咙，同时把一条腿搭在你的肩膀上，将你拉到她的腿上。你一动不动，乖乖地配合着她。她开始认真地“攻击”你的喉咙，她的阴茎一次次地进出你的喉咙，她发出愉悦的呻吟声。而当她的阴茎完全深入你的喉咙时，你的呕吐反射会让你不由自主地收紧喉咙，但当她将阴茎拔出来时，这种反应又会消失。她<i>受过训练的</i>你明白我的意思吧？她<i>想要</i>她让你用喉咙去“含住”她的阴茎。\n\n“哈哈哈……”她喘着气说道，当你那肿胀的喉咙紧紧地包裹住她那巨大的阴茎时，她感到无比放松，那坚硬的阴茎在她的喉咙里蠕动，仿佛在按摩着她那粗壮的部分。“嗯……”\n\n当她强势地控制着你，让你的喉咙不断活动时，你的眼睛开始流泪。她那阴茎在你喉咙里不断伸缩，而她那黏稠的精液则顺着你的食道流下来。起初，她似乎只是想满足自己的欲望——但现在，她<i>尽情享受</i>它的头部在你的紧致、光滑的喉咙中上下移动，当你感受到它的触碰时，你会因愉悦而浑身颤抖。这其实不过是用你的嘴巴进行自慰而已，但出于某种原因，她那愉悦的表情以及发出的低吼声却让你[pc.cockVagBoth\n            |硬到那种程度，就连阴茎勃起的时候都会感到疼痛。\n            |湿得浑身都是水，滴水不停。[pc.hasBottomGarment\n                |从你的内裤里……\n                |在地面上\n            ]\n            |紧张到真的会让人感到疼痛，那种兴奋的情绪简直像液体一样洒落在周围的一切地方。\n        ]每当她将自己推向你那几乎无法承受的怀抱时，你的眼睛会瞪得大大的，你的臀部也会不自觉地微微晃动，那种快感会沿着你的脊椎迅速蔓延，让你意识到：无论你变得多么强大，在伊芙琳面前，你依然是毫无反抗之力。她兴奋地喘息着，用力地与你交合着，她紧绷的阴囊因为过于急切而不断撞击你的下巴，而她那巨大的阴茎则在你的喉咙中剧烈抽动。完全沉浸在这种快感之中，她不断地用力撞击你，直到最终无法控制自己，发出一声充满狂喜的尖叫。\n        \n        你根本控制不住自己。你的臀部就会不由自主地抖动一下。[pc.hasCock\n            |当伊芙琳进行剧烈射精时，你的精液也会随之喷出；她那美丽阴部的每一次收缩与蠕动，都会引发你的射精，你的精液会喷洒在她颤抖的大腿之间。\n            |你[pc.isSquirter\n                |喷射\n                |累积\n            ]在没有任何触碰的情况下，伊芙琳每一次强烈的射精都会在你逐渐紧致的阴道中引发又一次愉悦的震动。\n        ]浓稠而温暖的精液大量涌入你的喉咙，伊芙琳兴奋的呻吟声在你耳边回荡，同时她的精液也在你的腹中不断涌动、翻腾。几乎没有什么阻碍，你任由她一次又一次地将精液注入你的体内，直到你的腹部因为容纳了如此多的精液而开始膨胀、下垂。[pc.hasPussy\n            |[pc.pregStage 1\n                |\n                |等她玩完你之后，你看起来就会像怀孕了几个月的人一样。\n            ]\n        ]\n        \n        哦哦哦……”她呻吟着，将长角的头向后仰，尽情享受这种奢华而令人陶醉的感觉。“你确实是无可替代的[pc.name]她从你那松弛的怀抱中挣脱出来，坏笑着将仍然坚硬的阴茎抵在你的脸上，而你则试图喘息，气喘吁吁的同时，精液还在不断滴落[pc.hasHair\n            |弄得一团糟\n            |后颈处\n        ]去把浴缸准备好，[pc.name]埃弗琳轻轻哼着，说道：‘还有，走之前要把我擦干净。’”\n\n她会让你把她舔干，看着你把她那些肥硕、悬挂在身上的汗珠一一舔干净，然后才会让你去放水洗澡。没过多久，她也会加入你，一起把水加热，还会拉着你一起泡在水中，紧紧地抱着你，享受这份温暖。等你们一个个出来擦干身体时，她又开始逗弄你们、触碰你们，然后微笑着坐在她的黄金王座上。\n\n“那么，你们来这里是专门来擦我的蛋蛋的吗？”她说道，“如果是的话，那就快动手吧。\"\n    ]\n    ",
+      "translation": "\n    [weightedRand 60 20 20\n        |当你走进来时，伊芙琳对你露出了微笑。[pc.name]很高兴再次见到你。”\n\n“能与你见面是我的荣幸，”你说道。\n\n“哦，当然了，”她轻声说道。她坐在自己的王座上，微微仰靠着身体，对你露出一个慵懒的笑容，“陪我一会儿吧。[pc.name]我不可能总是把自己放在第一位。\n        |你一进门，伊芙琳就立刻扑到了你身上。当她紧紧贴向你，将她的嘴唇贴在你的嘴唇上时，一股新鲜汗液与兴奋的气息立刻钻进了你的鼻孔。[pc.hasBreasts\n            |你的乳头会在瞬间变得坚硬如石。\n            |[pc.hasCock\n                |瞬间变得坚强起来\n                |等你的身体变得温暖起来……\n            ]\n        ]她那粗壮而坚硬的阴茎不断摩擦着[pc.hasCock\n            |你的\n            |你的肚子\n        ]当她伸手抓住你的臀部，紧紧抓住你的身体后，才开始脱掉你的衣服。你甚至没有注意到自己的衣服散落在地上，因为你完全沉浸在她用舌头舔弄你的感觉之中。\n\n就在那一刻[pc.vagAss\n            |猫咪\n            |蠢货\n        ]伊芙琳将你从地上扶起，把她抱在怀里，然后把你举高，这样她就可以[pc.vagAss\n            |她的阴茎头部轻轻触碰到你柔软湿润的嘴唇，你的兴奋之情让她的阴茎分泌出液体，这些液体在她阴茎上滑动了一瞬间，随后不可避免的事情发生了——她那粗壮的阴茎狠狠地插入了你那湿润的阴道，将你的阴唇撑得大大的，然后彻底地进入了你的体内。\n            |将她的阴茎插入你的体内[pc.assRange 0 6 9 12\n                |紧绷的双颊\n                |红润的脸颊\n                |颤动的脸颊\n                |圆润、富有曲线的面颊\n            ]她给了你一秒，让你感受温热的龟头抵着[pc.asshole]，预告即将发生的事。她将粗壮胀大的阳具刺入你的后庭，撑开穴口，一直插到根部。\n        ]\n        \n        哦……”你在她的唇边呻吟着。\n\n当你紧紧拥抱她时，唯一能感受到的，就是<i>紧密地</i>你完全沉浸在她的怀抱之中，那种被她紧紧拥住的愉悦感在你的脑海中回荡。当伊芙琳带你走向她的床边时，一切仿佛都变得轻飘而眩晕；她用她那巨大的身体将你上下颠簸着，她的呼吸热气扑在你的脸上\n        \n        [pc.vagAss\n            |每次她都将自己的阴茎深深地插入你的体内[pc.loosenessRange 0 3\n                |紧绷的小阴户\n                |温暖而湿润的阴户\n            ]你的阴蒂<i>跳动着</i>这种快感会让你完全无法做其他任何事，只能不停地呻吟。\n            |[pc.hasCock\n                |你的[pc.cockRange 0 4 8 16\n                    |小阴茎\n                    |勃起的阴茎\n                    |粗大的阴茎\n                    |巨大的阴茎\n                ]当她反复摩擦你的前列腺时，你的身体逐渐失去了反应力，这一切仅仅证明了你的彻底屈服。这种快感几乎让人难以忍受，而当她在你向下运动时摆动臀部，让你根本无法做出任何其他反应，只能不断地呻吟时，这种感觉更是变得难以忍受。\n                |你能感受到自己的阴蒂。<i>跳动感</i>每次她的阴茎深入你的肛门时，你的阴道里都会流出液体。\n            ]\n        ]\n        \n        伊芙琳将你推倒在床上，然后跪在你的身上，一边发出低沉的声音，一边将她那肿胀的阴茎狠狠地插入你的体内[pc.vagAss\n            |[pc.vagTypeMulti equine\n                |粗壮、富有弹性的阴户\n                |脆弱的女人\n            ]\n            |混蛋\n        ]她大腿的力量让床垫不断震动。她抓住你的脚踝，将你的双腿向外、向后推，直到你的脚后跟朝上，从而将你的身体抬高[pc.ass]从床上起来。每一次猛烈的向下冲刺都像天降雷电，龙床在她的力量作用下发出吱嘎声。\n\n“哦！哦！”你[pc.mascFem\n            |嚎叫\n            |尖叫\n        ]伊芙琳！<b>伊芙琳！</b>伊芙琳发出低吼，她的阴茎在你体内开始剧烈抽动、弯曲，她那漂亮的脸庞因愉悦而扭曲，牙齿紧咬着，呼吸变得急促而粗重，她彻底地将你征服了。她用力地抽插着你，每一次向下冲击后，你都会被反弹起来，汗水从你们的身上飞溅而出，她的臀部不断撞击着你的身体。这种狂暴的节奏让你不得不弓起背部。[pc.hasToes\n            |当这位龙女迫使你达到高潮时，你的脚趾都会不自觉地绷直。\n            |你的小腿在不停地抽搐。\n        ].\n        \n        \"<b>嗯！</b>伊芙琳哼了一声。\n        \n        [pc.isSquirter\n            |当她的时候，你把液体喷得到了处都是，弄得到了床上到处都是。\n            |她一出现，你就立刻兴奋不已了。\n        ]她完全融入你的身体之中，你的嘴巴无声地张开，仿佛在发出尖叫，而你的臀部则微微离开床面，与她相拥。你可以<b>感受到</b>那股浓稠的白色精液喷涌而出，注入你的体内[pc.vagAss\n            |[pc.pregStage 1\n                |将阴部挤压得紧紧的，让液体从你的阴道深处充满整个通道，然后从你泛红的嘴唇间喷涌而出。\n                |那饥饿的子宫，先将你充满到极致，随后再将它们通过你的通道涌出，从你红润的嘴唇间迸发出来。\n            ]\n            |那种感觉如此强烈，以至于只有一丝余韵从你的后背缓缓流下。\n        ]当她将你压在床垫上时，她的阴部会不断摩擦着你，同时她的身体也会随着动作而产生脉动；她还会俯身去吮吸你的舌头，而你则会在这一过程中达到高潮。\n        \n        [pc.cockVagBoth\n            |当伊芙琳在你体内剧烈蠕动时，你的阴茎会剧烈勃起并射出精液。她的每一次动作都会对你的前列腺产生压迫，而她的高潮会进一步激发你的性冲动。在这种无助的状态下，你所能做的只有任由她按住你，将她的精液注入你的体内，让那温暖而充满活力的精液充满你的整个身体，而与此同时，你的阴茎也会喷出精液。\n            |你能感受到伊芙琳的心跳就在你的手中。[pc.vagAss\n                |阴道，你那柔软、浸满精液的壁壁……\n                |混蛋，你那被精液浸透的内脏……\n            ]你将她那跳动着的身体紧紧握在手中，甚至能够清晰地感受到沿着她身体蜿蜒而动的静脉。她身体的每一次颤动都会让你更加兴奋，而这位“龙女”的高潮更是将你的欲望推向了顶点。在这种无助的状态下，你所能做的唯一事情，就是在她将你压在身下的时候，吻她……同时让她将自己的精液释放出来。[pc.vagAss\n                |进入你的体内，将她那温暖而充满活力的精液注入你的体内，而你却在享受这种快感的同时拼命抵抗……你能感觉到自己的腹肌随着伊芙琳的射精而不断收缩……\n                |它深入你的体内，将她那温暖而充满活力的精液注入你的体内，而你却在竭力抵抗这种愉悦感。你可以感受到自己的腹肌随着伊芙琳的射精动作而不断收缩……\n            ]\n            |勇气无处不在，它从你体内迸发而出[pc.vagAss\n                |硬得离谱的阴茎\n                |勃起\n            ]而伊芙琳在你体内剧烈地跳动着[pc.vagAss\n                |阴道\n                |蠢货\n            ]. [pc.vagAss\n                |伊芙琳的心跳在你体内回荡，你那柔软、浸满精液的肉壁紧紧包裹着她那跳动着的肉茎，以至于你几乎能够在脑海中清晰地勾勒出沿着它蜿蜒而动的血管。她每一次的抽动都会让你更加兴奋，而这位龙女的高潮更是加剧了你自身的欲望。当你陷入这种无助的境地时，唯一能做的就是，在她将你按住、将她的精液注入你的体内时，也回应她的亲吻。在那种愉悦与挣扎交织的感觉中，你能感觉到自己的腹肌随着伊芙琳的射精而不断收缩。..\n                |伊芙琳的心跳在你体内回荡，你体内浸满精液的器官紧紧包裹着她那跳动着的肉体，以至于你几乎能够在脑海中清晰地勾勒出那些缠绕在其上的血管。她每一次的抽动都会对你的前列腺产生压力，而这位龙女的高潮更是会加剧你的欲望。当你陷入无助之时，唯一能做的就是任由她将你压在身下，让她将精液注入你的体内。在那种愉悦与挣扎交织的感觉中，你能感受到自己的腹肌随着伊芙琳的射精而不断收缩。..\n            ]\n        ]\n        \n        嗯<b>神明</b>埃弗琳气呼呼地说，同时更加用力地吻着你。‘嗯……’”\n\n“嗯！嗯……’你挣扎着，试图挺直身体，但囚禁你的人立刻用膝盖压住了你的双臂。‘嗯……嗯……’”\n\n直到她完全满足了自己的欲望，龙后才允许你动弹一下。她在你因兴奋而紧绷、渗出液体的身体上尽情满足自己的欲望，同时发出低沉的呻吟声[pc.vagAss\n            |阴户\n            |混蛋\n        ]她松了一口气，慢慢地将自己从你的拥抱中解脱出来。[pc.vagAss\n            |阴道\n            |按铃\n        ]并且还会附带一个音频文件，可免费获取。[pc.vagAss\n            |slurp\n            |弹出\n        ]你的[pc.vagAss\n            |被撑开的阴道\n            |被掏空的后穴\n        ]隐隐作痛，但是这种痛苦与性高潮带来的愉悦相比，简直微不足道。此刻，你唯一想做的就是……\n\n伊芙琳抓住你的手臂，将你从床上拉起来：“该去洗澡了。”\n\n她礼貌地将你放到浴缸里，然后打开水龙头，亲自调节水温，直到它达到合适的温度。她自己也走下来，搂住你的肩膀，轻轻叹了口气。[var0\n            |一种舒适的沉默在你周围弥漫，直到你忍不住想要问一个问题。[pc.mascFem\n                |是否\n                |嗯……是不是……\n            ]利用你的力量会让你产生性冲动吗？”你问道。\n\n伊芙琳伸了伸懒腰，把脚趾在水中晃动。“如果真是这样的话<b>只是</b>一条龙的话，我想应该不会有任何问题。但我<b>不是</b>只不过是一条龙罢了。”她含糊地指了指自己的下体，“对我来说，力量与欲望有时候是密不可分的。”\n\n你仔细思考了几秒钟，然后说道：“这样下去似乎会走上危险的道路。”\n\n伊芙琳笑了：“确实如此。但我有一个非常坚定的意志。”\n\n就是这样。<i>是</i>确实，从你刚才看到的情况来看，确实是这样。”\n\n“不过有时候，在训练结束后，我就会陷入这些事情当中……然后我就觉得需要发泄一下情绪，”她边说边对你微笑，“而且是需要发泄很多情绪呢。\n            \n            [pc.isBimbo\n                |哇，只要我有你在身边，什么问题都能解决！”你说道。\n                |你微笑着说道：“你是想说，萨瓦拉和那个失控的暴君之间唯一的区别，就在于我的性技巧吗？\n            ]\n            \n            用那样的描述来形容自己，其实是在亏待自己啊，”伊芙琳轻声说道，同时轻轻抚摸着你的下巴。“你<b>相当</b>这种平衡力量，[pc.name]相信我，”她轻声说道，“有你在身边，随时都能让我开心得发狂<b>是</b>对我来说非常重要。\n            |一阵舒适的沉默在空气中流淌，直到你提出了一个问题：“你觉得，当你使用自己的能力时，自己在控制性兴奋方面是不是变得更好了……？”\n\n伊芙琳伸展了一下身体，让脚趾在水中活动着。“谁说我想控制它了？也许，当你在我身边的时候，我反而希望自己能处于极度兴奋的状态吧。[pc.name].\"\n        ] \n        \n        你的脸颊变红，可不能完全归咎于水的温度。“那我记住了。”\n\n然后，她在你的脸颊上轻轻一吻。[pc.hasMuzzle\n            |吻部\n            |鼻子\n        ]一定要做到。”\n\n过了一会儿，你和她一起走出了浴缸，双腿还在发抖，走路时也有些小心翼翼。但是<i>哦</i>那真的值得……\n\n伊芙琳对你笑了笑：“你既然来了，还有其他事情需要帮忙的吗？[pc.name]?\"\n        |你一走进去，就看到了伊芙琳——她全身赤裸，阴茎勃起得厉害。起初她似乎没有注意到这一点，直到与你的目光相遇，她才笑了笑，然后将双手叉在腰上。\n\n你们之间没有说一句话，你只是走到她面前跪了下来，张大嘴巴让她使用。应允了这个邀请，她将你的头捧在手中，满意地发出嘶嘶声，然后将她那肿胀的阴茎滑入你的嘴唇，再送入你的喉咙，同时将臀部向前摆动。她那重型的阴囊轻轻拍打着你的下巴，随后她固定住你的位置，当你亲吻她的腹股沟时，她长长地发出一声愉悦的叹息。\n        \n        几秒钟后，当她的阴茎完全进入你的喉咙时，她会让你喘口气，然后再次将阴茎深入你的喉咙，同时把一条腿搭在你的肩膀上，将你拉到她的腿上。你一动不动，乖乖地配合着她。她开始认真地“攻击”你的喉咙，她的阴茎一次次地进出你的喉咙，她发出愉悦的呻吟声。而当她的阴茎完全深入你的喉咙时，你的呕吐反射会让你不由自主地收紧喉咙，但当她将阴茎拔出来时，这种反应又会消失。她<i>受过训练的</i>你明白我的意思吧？她<i>想要</i>她让你用喉咙去“含住”她的阴茎。\n\n“哈哈哈……”她喘着气说道，当你那肿胀的喉咙紧紧地包裹住她那巨大的阴茎时，她感到无比放松，那坚硬的阴茎在她的喉咙里蠕动，仿佛在按摩着她那粗壮的部分。“嗯……”\n\n当她强势地控制着你，让你的喉咙不断活动时，你的眼睛开始流泪。她那阴茎在你喉咙里不断伸缩，而她那黏稠的精液则顺着你的食道流下来。起初，她似乎只是想满足自己的欲望——但现在，她<i>尽情享受</i>它的头部在你的紧致、光滑的喉咙中上下移动，当你感受到它的触碰时，你会因愉悦而浑身颤抖。这其实不过是用你的嘴巴进行自慰而已，但出于某种原因，她那愉悦的表情以及发出的低吼声却让你[pc.cockVagBoth\n            |硬到那种程度，就连阴茎勃起的时候都会感到疼痛。\n            |湿得浑身都是水，滴水不停。[pc.hasBottomGarment\n                |从你的内裤里……\n                |在地面上\n            ]\n            |紧张到真的会让人感到疼痛，那种兴奋的情绪简直像液体一样洒落在周围的一切地方。\n        ]每当她将自己推向你那几乎无法承受的怀抱时，你的眼睛会瞪得大大的，你的臀部也会不自觉地微微晃动，那种快感会沿着你的脊椎迅速蔓延，让你意识到：无论你变得多么强大，在伊芙琳面前，你依然是毫无反抗之力。她兴奋地喘息着，用力地与你交合着，她紧绷的阴囊因为过于急切而不断撞击你的下巴，而她那巨大的阴茎则在你的喉咙中剧烈抽动。完全沉浸在这种快感之中，她不断地用力撞击你，直到最终无法控制自己，发出一声充满狂喜的尖叫。\n        \n        你根本控制不住自己。你的臀部就会不由自主地抖动一下。[pc.hasCock\n            |当伊芙琳进行剧烈射精时，你的精液也会随之喷出；她那美丽阴部的每一次收缩与蠕动，都会引发你的射精，你的精液会喷洒在她颤抖的大腿之间。\n            |你[pc.isSquirter\n                |喷射\n                |累积\n            ]在没有任何触碰的情况下，伊芙琳每一次强烈的射精都会在你逐渐紧致的阴道中引发又一次愉悦的震动。\n        ]浓稠而温暖的精液大量涌入你的喉咙，伊芙琳兴奋的呻吟声在你耳边回荡，同时她的精液也在你的腹中不断涌动、翻腾。几乎没有什么阻碍，你任由她一次又一次地将精液注入你的体内，直到你的腹部因为容纳了如此多的精液而开始膨胀、下垂。[pc.hasPussy\n            |[pc.pregStage 1\n                |\n                |等她玩完你之后，你看起来就会像怀孕了几个月的人一样。\n            ]\n        ]\n        \n        哦哦哦……”她呻吟着，将长角的头向后仰，尽情享受这种奢华而令人陶醉的感觉。“你确实是无可替代的[pc.name]她从你那松弛的怀抱中挣脱出来，坏笑着将仍然坚硬的阴茎抵在你的脸上，而你则试图喘息，气喘吁吁的同时，精液还在不断滴落[pc.hasHair\n            |弄得一团糟\n            |后颈处\n        ]去把浴缸准备好，[pc.name]埃弗琳轻轻哼着，说道：‘还有，走之前要把我擦干净。’”\n\n她会让你把她舔干，看着你把她那些肥硕、悬挂在身上的汗珠一一舔干净，然后才会让你去放水洗澡。没过多久，她也会加入你，一起把水加热，还会拉着你一起泡在水中，紧紧地抱着你，享受这份温暖。等你们一个个出来擦干身体时，她又开始逗弄你们、触碰你们，然后微笑着坐在她的黄金王座上。\n\n“那么，你们来这里是专门来擦我的蛋蛋的吗？”她说道，“如果是的话，那就快动手吧。\"\n    ]\n    ",
       "start": 146911,
       "end": 163868,
       "line": 1,
@@ -2621,10 +2621,10 @@
       "line": 1,
       "raw": "\"Talk\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:164207:164209:da39a3ee5e6b",
@@ -2666,10 +2666,10 @@
       "line": 1,
       "raw": "\"Offer Self\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:164260:164262:da39a3ee5e6b",
@@ -2712,10 +2712,10 @@
       "line": 1,
       "raw": "\"Tribute\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:164347:164349:da39a3ee5e6b",
@@ -2803,10 +2803,10 @@
       "line": 1,
       "raw": "\"Spar\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:164714:164716:da39a3ee5e6b",
@@ -2893,10 +2893,10 @@
       "line": 1,
       "raw": "\"Having Her Children\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:165206:165227:bc1a2f9ad439",
@@ -2910,10 +2910,10 @@
       "line": 1,
       "raw": "\"Having Her Children\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:165228:165269:c29b00a1977c",
@@ -2942,10 +2942,10 @@
       "line": 1,
       "raw": "\"Having Her Children\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:165340:165455:fe3aaf3fc229",
@@ -3305,10 +3305,10 @@
       "line": 1,
       "raw": "\"Belhar\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:189891:189893:da39a3ee5e6b",
@@ -3384,10 +3384,10 @@
       "line": 1,
       "raw": "\"She's out here on her own. Have there been any sightings?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:190155:190164:0ac111125c7c",
@@ -3474,10 +3474,10 @@
       "line": 1,
       "raw": "\"Evelyn has become quite the force in Harvest Valley...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:190465:190472:4a7fdd8c1742",
@@ -3761,10 +3761,10 @@
       "line": 1,
       "raw": "'\\n    [var0\\n        |\"How is your pregnancy going, [pc.name]?\" Evelyn asks. \"Are you enduring?\"\\n        \\n        You nod. \"It\\'s not as bad as the first time. At least I\\'m used to it; I know what to expect. All the changes...\"\\n        \\n        Evelyn smiles. \"They make you all the more beautiful.\"\\n        \\n        \"Thank you,\" you say. \"I wish you\\'d tell our children to stop kicking, though.\"\\n        \\n        She laughs. \"I\\'ll mention it when I see them. Perhaps lying down for a massage might be nice, too.\"\\n        \\n        That does sound enticing...\\n        |\"How is your pregnancy going, [pc.name]?\" Evelyn asks. \"Are you enduring?\"\\n        \\n        You nod. \"It\\'s better than the first time. I\\'m used to all the sensations, and all the changes.\"\\n        \\n        Evelyn smiles. \"They make you all the more beautiful.\"\\n        \\n        \"Thank you,\" you say. \"If the kids would stop kicking me that would be nice, though.\"\\n        \\n        She laughs. \"I\\'ll mention it when I see them. Perhaps lying down for a massage might be nice, too.\"\\n        \\n        That does sound enticing...\\n        |\"How is your pregnancy going, [pc.name]?\" Evelyn asks. \"Is it as enjoyable as the first time?\"\\n        \\n        You smile. \"Yes. Knowing what we know now, going through this feels all the more worth it. How could it not? I love our children, even if they do kick me while I\\'m trying to sleep sometimes.\"\\n        \\n        Evelyn laughs. \"I\\'ll tell them to stop when I see them. In the meantime, perhaps lying down for a massage might be nice.\"\\n        \\n        That does sound enticing...\\n        |Evelyn smiles at you. \"How is your latest pregnancy, my broodmate? Are you enjoying your belly heavy with our children?\"\\n        \\n        \"Yes,\" you say, blushing slightly. You put a hand to your stomach, feeling the life growing there. \"It\\'s... fulfilling.\"\\n        \\n        \"Mmm. And then you will carry the next litter,\" Evelyn purrs. \"You make an amazing mother, [pc.name]. The very image of it. I can hardly wait to put the next litter in you.\"\\n        \\n        <b>That\\'s</b> a promise you\\'re looking forward to seeing fulfilled...\\n    ]\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:194008:194147:58771881824c",
@@ -3778,10 +3778,10 @@
       "line": 1,
       "raw": "'\\n    Evelyn pokes through your thoughts like a ray of sunshine through fluffy clouds. \"Is it difficult being pregnant, [pc.name]?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:194218:194229:ca76c4de8950",
@@ -3810,10 +3810,10 @@
       "line": 1,
       "raw": "'\\n        \"It is hard,\" you admit. \"It strains my body, and my mind. Every day I wake up with some novel new problem. It sucks in the moment, but when I think about the fact I\\'ll be having your children, it doesn\\'t seem so bad.\"\\n        \\n        Evelyn smiles. \"I\\'m happy you think so, [pc.name]. And I hope I can ease the aches and pains, if only for a moment. Both my bath and my bed are always open to you, of course.\"\\n        \\n        \"I appreciate that,\" you murmur.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:194849:194851:da39a3ee5e6b",
@@ -3871,10 +3871,10 @@
       "line": 1,
       "raw": "'\\n        \"It\\'s not that bad,\" you reply automatically. \"When I think about why I\\'m going through it, the aches and pains aren\\'t hard to put up with. Though it\\'s easier to say that when the children aren\\'t kicking.\"\\n        \\n        Evelyn smiles. \"I\\'m glad. Both my bath and my bed are always open to you if you\\'d like to ease your aches and pains one way or another, of course.\"\\n        \\n        You smile. \"Thank you.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:195461:195463:da39a3ee5e6b",
@@ -3932,10 +3932,10 @@
       "line": 1,
       "raw": "'\\n        \"It’s not so bad!\" you say. \"Yes, there are little aches and pains. But I like the idea that I’m full of life, and I want to see our children.\" You smile. \"I can\\'t wait to meet them.\"\\n        \\n        \"I\\'m glad to hear it,\" Evelyn says. \"I\\'m looking forward to it too, [pc.name]. Perhaps our family might end up quite large?\"\\n        \\n        \"I think I\\'d like that,\" you say.\\n        \\n        Evelyn smiles.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:196077:196079:da39a3ee5e6b",
@@ -3995,10 +3995,10 @@
       "line": 1,
       "raw": "'\\n        \"I... like it,\" you say slowly. \"It\\'s nice. The thought that you\\'ve <b>bred</b> me, that I\\'m carrying your children...\" you say, smiling as you trail off, lost in your fantasies. \"I love it.\"\\n        \\n        \"Oh?\" Evelyn purrs. \"Perhaps you might be more suited to being a broodmother, [pc.name]. I\\'ll be sure to give you all the pregnancies you can handle.\"\\n        \\n        You blush. \"Of course.\"\\n        \\n        Evelyn laughs. \"So interesting that you agreed without thought. Don\\'t worry, [pc.name]. I\\'ll gladly hold you down and fuck another litter into you after you give birth to our wonderful children.\"\\n        \\n        <b>That</b> sounds nice...\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:196986:196988:da39a3ee5e6b",
@@ -4150,10 +4150,10 @@
       "line": 1,
       "raw": "\"Belhar\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:223373:223396:27f24e350aaa",
@@ -4401,10 +4401,10 @@
       "line": 1,
       "raw": "\"Employing every technique of your gifted mouth you'll bring your queen to the height of pleasure, step by step, until she has what will surely be the orgasm of her life.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:255863:255879:be04a3adc379",
@@ -4418,10 +4418,10 @@
       "line": 1,
       "raw": "\"Rough & Sloppy\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:255936:261664:1531d749bad7",
@@ -4481,10 +4481,10 @@
       "line": 1,
       "raw": "'\\n    \"Are you-\" you start, hesitating. \"Are you not going to...?\"\\n    \\n    Evelyn smiles wide, eyes glittering with mirth. \"Not going to <b>what</b>, darling? Hmmmm?\"\\n    \\n    You blush. \"You know... make me suck your dick while we talk.\"\\n    \\n    \"Did you like it that much, [pc.name]?\" she says, standing up from her throne and making her way over to you. She cups your cheek, practically purring with delight as she regards you. \"Being taken and used so casually?\" She smiles. \"I\\'ve trained you well, haven\\'t I? Why don\\'t you get down on your knees for me?\"\\n    \\n    Being told to suck Evelyn\\'s cock makes you feel like...\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:262666:262674:a91bcce893b5",
@@ -4513,10 +4513,10 @@
       "line": 1,
       "raw": "'\\n        \"There you go, that\\'s right,\" Evelyn coos, stroking the back of your head as you obediently wrap your [pc.hasLipstick\\n            |pretty [pc.lipstickColor] lips\\n            |soft, pliant lips\\n        ] around her swollen cockhead and suck, rubbing her against the inside of your cheek. \"You can\\'t get enough of it, can you?\" She smiles at you. \"Stay down there and suck until I fill your stomach with seed. I\\'ll always have more for you later, and don\\'t think I won\\'t use you whenever I feel like it.\"\\n        \\n        The thought of it has you [pc.cockVagBoth\\n            |rock-hard\\n            |dripping wet\\n            |rock-hard and dripping\\n        ] already. You grip her cock with one hand and use your tight, wet throat to stroke her sensitive flesh up and down, burying her twitching cockhead in your gullet before coming back up. She lets out a moan of pleasure under her breath, relaxing her thighs.\\n        \\n        \"Go on, [pc.name],\" she says. \"If you <b>did</b> want to talk, that is.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:263846:263848:da39a3ee5e6b",
@@ -4544,10 +4544,10 @@
       "line": 1,
       "raw": "\"You would <b>never</b> let your queen go without her cock being sucked should she desire it. You'll always suck her glorious cock during conversations in the future.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:264032:264043:1bc4d666c7b5",
@@ -4576,10 +4576,10 @@
       "line": 1,
       "raw": "'\\n        \"Aaahhh,\" Evelyn sighs, stroking your head as you lap at her cock. \"There you go. I suppose you should be granted <b>some</b> reprieve, [pc.name]... occasionally.\" She grins. \"Don\\'t think I won\\'t have you hold it in your throat whenever I feel like it, however.\"\\n        \\n        \"I wouldn\\'t expect anything less,\" you murmur, planting a kiss on her cockhead.\\n        \\n        \"Mmhh... go ahead and ask your questions, [pc.name],\" she purrs. \"If you <b>did</b> want to talk, that is.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:264685:264687:da39a3ee5e6b",
@@ -4622,10 +4622,10 @@
       "line": 1,
       "raw": "'\\n    Evelyn grins, [pc.hasHorns\\n        |gripping your horns. \"If you\\'re quite done talking, I have a better use for that mouth of yours. I do love these horns of yours, by the way – so easy to make <b>use of!</b>\"\\n        \\n        She simultaneously pulls you down and slams her hips forwards as she talks, ramming her entire cock down your throat so hard her balls slap you in the chin.\\n        |placing both hands on your head. \"If you\\'re quite done talking, I have a better use for that mouth of yours!\"\\n        \\n        She simultaneously pulls you down and slams her hips forwards as she finishes speaking, ramming her entire cock down your throat so hard her balls slap you in the chin.\\n    ] You choke and gag, your throat tightening around her massive dick, and she takes advantage by way of holding you there to feel the contractions. With a deep, satisfied groan she pushes you away, only to pull you back in with just as much force as the first time.\\n    \\n    Saliva explodes down your chin as you\\'re unceremoniously facefucked, your neck bulging outwards with the passage of Evelyn\\'s giant cock. You can\\'t help but loudly gag and gurgle as she violently makes use of you, [pc.hasEyeshadow\\n        |your mascara running down your face while the dragon queen satisfies her lusts\\n        |the sound of your deepthroating efforts echoing in the cave\\n    ]. Totally unrestrained in pace and pleasure, it doesn\\'t take too long for her to cum.\\n    \\n    \"Rrrr- rrrgggh!\" Evelyn strains. She bobs your head up and down the last few inches of her throbbing cock, rubbing the sensitive head against the recesses of your throat, and finally lets out her first rope of seed straight into your stomach. \"Uuuugh!\"\\n    \\n    The dragoness holds you down, her powerful thighs hemming you in while a torrent of thick white seed courses down your pliant throat. She groans in bliss, rubbing her groin against your [pc.hasLipstick\\n        |[pc.lipstickColor] \\n    ]lips as you\\'re made to drink what feels like a gallon of warm cum, pumped into your tummy one load at a time. Her grip on you slowly relents, and you\\'re allowed to gracelessly pull yourself off the end of her cock.\\n    \\n    You can hardly believe it, but she didn\\'t spill a single drop. Evelyn smirks at you, leaning back in her throne. \"Good [pc.boyGirl], [pc.name]. Did you need anything else while you were here, or was the stomachful of my seed all for the day?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:267511:269645:e86f44265638",
@@ -4639,10 +4639,10 @@
       "line": 1,
       "raw": "'\\n    [pc.isBimbo\\n        |Your eyes shine with eagerness. [pc.hasWings\\n            |\"Do you wanna fly together again? Last time was so fun!\"\\n            |\"Do you wanna go flying again? Last time was so fun!\"\\n        ]\\n        |\"Would you like to [pc.hasWings\\n            |fly with me again, Evelyn?\" you say, smiling. \"You know, survey your territory.\"\\n            |go flying again, Evelyn?\" you say, smiling. \"You know, survey your territory.\"\\n        ]\\n    ]\\n    \\n    Evelyn laughs. [pc.hasWings\\n        |\"I don\\'t see why not.\"\\n        |\"With you in my arms. Well, why not?\" She smiles. \"It is a thrill.\"\\n    ]\\n    \\n    You follow Evelyn down the stairs leading out of her cave, emerging into the open air and gazing at the sky with your heart pounding in your chest.\\n    \\n    [pc.hasWings\\n        |She gathers herself up and launches herself into the[dayNight\\n            |\\n            | starry\\n        ] sky ahead of you, turning and beckoning you to follow as she keeps herself afloat with beats of her great draconic wings. You spring into the air with your [pc.wings] propelling you upwards, the dragoness laughing gently as you all but leap into her arms, hugging her close.\\n        |She hugs you to her chest, gathers herself up, and launches into the[dayNight\\n            |\\n            | starry\\n        ] sky with a thunderous beat of her great draconic wings. She laughs gently as you wrap yourself around her, bundled up against her chest.\\n    ]\\n    \\n    \"Hold on tight,\" Evelyn says, smiling.\\n    \\n    Coasting through the [dayNight\\n        |sunlit\\n        |starlit sky\\n    ] in the embrace of your lover, you watch Evelyn for a while. She\\'s focused on keeping the two of you afloat, still familiarizing herself with her new body, though it seems to come naturally. Every so often she glances down to give you a smile, carving through the skies with her giant wings.\\n    \\n    [flags.DRAGON_EVE_FLY\\n        |You <i>could</i> distract her a little if you wanted more attention...\\n        |An idea slowly forms in your mind as you gaze at the beautiful fair dragoness.\\n    ]\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:269688:269697:7363222f7a83",
@@ -4702,10 +4702,10 @@
       "line": 1,
       "raw": "\"Evelyn looks so pretty and powerful from here you can't help but get a bit <i>inspired</i>... and you're sure she'll catch you if anything were to happen.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:275721:275731:edeaacc353c4",
@@ -4856,10 +4856,10 @@
       "line": 1,
       "raw": "\"Throw Fight\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:296891:296893:da39a3ee5e6b",
@@ -4887,10 +4887,10 @@
       "line": 1,
       "raw": "\"Evelyn looks very, <b>very</b> worked up right now. If she knows you're throwing the fight, the punishment <i>won't</i> be a light one...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:297114:297652:e29d0cadd301",
@@ -4904,10 +4904,10 @@
       "line": 1,
       "raw": "'\\n    \"Do you want to spar again?\" you say. \"More practice always helps.\"\\n    \\n    Evelyn gazes meaningfully at your pregnant stomach. \"Sparring with my pregnant lover? I think not. Not that I doubt your ability to fight, but I would be troubled to lift a hand against you.\"\\n    \\n    \"Not even for fun?\" you say, giving her a pleading look.\\n    \\n    \"Not even for fun,\" she says, taking your hand and pulling you in to kiss you on the lips. \"I can think of many <b>other</b> ways we could burn off excess energy, however...\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:297799:298310:9161012892bc",
@@ -4921,10 +4921,10 @@
       "line": 1,
       "raw": "\"\\n    You're fighting Evelyn!\\n\\n    The wild-looking dragoness stands before you, all of her noble refinement seemingly having vanished into the ether. She's almost panting with unrestrained eagerness, emerald eyes gleaming as she brandishes her claws and grins at you. Even her teeth seem a little sharper[dayNight|| under the moonlight], her wings poised to propel her forward at a moment's notice.\\n    \\n    Though she stands before you in mostly-human guise – right now she feels more dragon than woman.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:298400:298408:96f894a98daf",
@@ -5044,10 +5044,10 @@
       "line": 1,
       "raw": "\"Take the horny dragoness in your ass.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:309115:309122:8b89346ec194",
@@ -5122,10 +5122,10 @@
       "line": 1,
       "raw": "'\\n    Evelyn staggers as she tries to lunge for you, tumbling into your arms as you twist to keep her from crashing into the ground.\\n    \\n    \"Nice fight,\" you say.\\n    \\n    [flags.DRAGON_EVE_VICTORY\\n        |\"I lost again,\" Evelyn says. \"I suppose this means we should practice more often, [pc.name].\"\\n        \\n        \"Can\\'t improve without it,\" you say. \"Now, what should I do with you?\"\\n        \\n        She smirks. \"I\\'m sure you can figure <b>something</b> out.\"\\n        |\"Huh... you really are strong,\" Evelyn huffs. \"I\\'m impressed, [pc.name].\"\\n        \\n        You smile, gently lowering her to the ground. \"I get a lot of practice.\"\\n        \\n        \"Nnnhh... I suppose you must,\" she says.\\n        \\n        \"What am I going to do with you now that I\\'ve won, hmm?\" you say.\\n        \\n        Evelyn smiles. \"Anything you want. Can you fuck your queen as well as you fight her, [pc.name]?\"\\n        \\n        That\\'s a challenge if you\\'ve ever heard one.\\n    ]\\n    \\n    The dragoness slowly lets her clothes fall to the ground while you\\'re considering her.\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:316698:316715:9d7c64a084a0",
@@ -5322,10 +5322,10 @@
       "line": 1,
       "raw": "\"Ride Her\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:334217:352321:c0dfbdf7a655",
@@ -5371,10 +5371,10 @@
       "line": 1,
       "raw": "'\\n            \"Oh... [pc.name],\" Evelyn sighs, rubbing your back as you lie, exhausted, atop her. It\\'s been minutes since you collapsed, worn out by your incredible efforts. \"You certainly make the most of your wins... that was incredible.\"\\n            \\n            \"Mmm... thank you,\" you mumble. \"You were amazing too. Can you help me up?\"\\n            \\n            \"Allow me,\" she murmurs, carefully getting up from her back with you still in her arms. \"Let\\'s retire to the bath... I think that\\'s enough fighting for the [dayNight\\n                |day\\n                |night\\n            ].\"\\n            \\n            She lowers you into the warm waters of her bath before joining you, letting you lean your head against her shoulder as you relax. You don\\'t even realize you\\'re closing your eyes until you\\'ve drifted off for several minutes, stifling a yawn.\\n            \\n            \"Perhaps we should reconvene in bed,\" Evelyn says. \"Come.\"\\n            \\n            You find yourself dried off and borne to bed, cuddled up in Evelyn\\'s arms while she idly watches you fall asleep with a smile lingering on her face. She\\'s still there when you awaken a couple of hours later, snoozing herself, and you\\'re happy enough to wait in the warmth of her embrace until she rises once more. She watches as you swing your legs over the edge of the bed and put your [pc.hasToes\\n                |feet\\n                |hooves\\n            ] on the ground.\\n            \\n            \"Can you walk?\" she says.\\n            \\n            \"I\\'ll be a little shaky for a bit, but I\\'ll be okay,\" you say, smiling at her. \"Thanks.\"\\n            \\n            She takes your hand and kisses it before leading you back out to her throne room, whereupon she reclines across her treasure with you at her side. This is nice. To the victor goes the spoiling, it seems.\\n            \\n            <b>Having studied you intensely, Evelyn has learned from the way you fight. The next time you challenge her, she will be stronger.</b>\\n            '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:354583:354585:da39a3ee5e6b",
@@ -5430,10 +5430,10 @@
       "line": 1,
       "raw": "\"Take that big, hard dragoncock and ride it for yourself. Evelyn's certainly got the endurance to make it worthwhile...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:354800:363668:d0609326ceb1",
@@ -5631,10 +5631,10 @@
       "line": 1,
       "raw": "\"\\n                    You're sure the creaking of the bed can be heard in the inn below, Evelyn's arm tensing against your neck while she ravages your [pc.vagAss|reddened cunt|reddened asshole] from above. Her powerful legs wrapped around your own, she grunts in your ear as her balls loudly slap against your butt, each thrust pinning you to the bed. \\n                    \\n                    \\\"Oh- hhhh-\\\" you gasp, straining both to breathe and to endure the pleasure. Your head is spinning, and you're not sure if it's the way the crook of her arm is squeezing your throat or the bliss of having [pc.vagAss\\n                        |your pussy filled with her warm, rock-hard cock\\n                        |[pc.hasCock\\n                            |her warm, rock-hard cock crushing your prostate\\n                            |your ass filled with her warm, rock-hard cock\\n                        ]\\n                    ]. All you know is that you're right on the verge of release. \\\"Hhk- khhuhh-\\\"\\n                    \\n                    \\\"<b>Cum</b> for me!\\\" Evelyn urges you, her breath hot on your ear. \\n                    \\n                    [pc.hasToes\\n                        |Your toes curl and your thighs flex\\n                        |Your thighs flex\\n                    ] with all their strength as you tighten around Evelyn's impossibly thick cock, your entire body tightening around it as she holds it balls-deep [pc.vagAss\\n                        |in your dripping flower\\n                        |between your quivering asscheeks\\n                    ]. Drool spills from the corners of your lips as your mouth hangs open, [pc.hasEyeshadow\\n                        |your eyeshadow running down your face\\n                        |tears shimmering in your eyes\\n                    ] as the pleasure of all pleasures blossoms in your core. [pc.vagAss\\n                        |Your pleated walls clench and massage\\n                        |Your insides fervently massage\\n                    ] Evelyn's flexing cock, stroking her immense length while she pants with lust. [pc.vagAss\\n                        |\\n                        |[pc.hasCock\\n                            |Not a single drop of spunk escapes your obscenely [pc.cockTypeMulti equine canine\\n                                |swollen, flaring cock\\n                                |swollen dogcock\\n                                |swollen cock\\n                            ], its passage completely blocked by Evelyn's overwhelming size.\\n                        ]\\n                    ]\\n                    \\n                    You instinctively fight to pull your thighs inwards, battling against the might of the dragoness, but it's no use. After several seconds of trying as hard as you possibly can you give in and she triumphantly spreads your legs as wide as she can, holding you tight as she [pc.vagAss\\n                        |flattens your pussylips against her groin\\n                        |holds her groin against your asshole\\n                    ]. Your eyes roll back in your head as your jaw works, no sound escaping your straining throat while Evelyn's cock throbs in your [pc.vagAss\\n                        |squeezing cunt\\n                        |guts\\n                    ].\\n                    \\n                    \\\"Good <b>[pc.boyGirl]</b>,\\\" she whispers.\\n                    \\n                    [pc.isSquirter\\n                        |You squirt all over the bed\\n                        |Your eyelids flutter closed\\n                    ] the moment the honeyed words leave her lips, the weight of Evelyn's breasts pressing against your arched, sweaty back as your toes dig into the sheets. It feels like you might be really, truly losing your mind. Everything is spinning, and you can't stop cumming. Every time the pleasure should start receding it only renews itself, the awareness of Evelyn's giant cock buried inside you enveloping your brain.\\n                    \\n                    The dominant dragoness cums inside you with a low growl, her hefty balls pulling taut in her sack and twitching against your [pc.vagAss\\n                        |stiff little clit\\n                        |[pc.hasPussy\\n                            |pussy\\n                            |underside\\n                        ]\\n                    ]. A sensation of warmth [pc.vagAss\\n                        |[pc.pregStage 1\\n                            |grows deep in your quivering cunt before her semen eventually starts to drip from between your outstretched lips, running down your underside and staining the sheets\\n                            |flowers deep in your womb, filling you so utterly that your stomach begins to sag against the sheets\\n                        ].\\n                        |flowers in what feels like your stomach, filling you so utterly that your tummy begins to sag against the sheets.\\n                    ]\\n                    \\n                    \\\"Oh. <b>Oh</b>,\\\" Evelyn grunts in your ear, shuddering. \\\"Nnnnghhh...\\\"\\n                    \\n                    She grinds against you, all but pulling you into a pose of surrender as she forces your ass into the bed and pulls you up with her arm around your neck, muscles bulging as she strains to empty herself into your depths. You think you can hear the sound of wings beating in the air, but maybe it's just the blood pounding in your head. It's impossible to tell if you've even taken a breath in the past few minutes – you can feel Evelyn's heartbeat inside you through her cock, or maybe it's your own. Maybe yours is beating in time with hers.\\n                    \\n                    There's no grand moment of reawakening, either. When Evelyn finishes dumping load after load into your [pc.vagAss\\n                        |gaping pussy\\n                        |gaping asshole\\n                    ] you're barely cognizant, though you're just aware enough to feel her lift your head to kiss you. Her tongue wraps around your own, enveloping you, and you absentmindedly swallow her spit while she rests her twitching cock inside you.\\n                    \\n                    You understand now. You were born to take care of this woman's desires, to be filled with her lust, to pleasure her cock. It all makes sense in light of that realization, and when you manage to summon your voice in between aggressive kisses you can only think of one thing to say.\\n                    \\n                    \\\"Don't stop,\\\" you mumble.\\n                    \\n                    Evelyn grins, and you can see the dragon in her.\\n                    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:375119:375125:bc981983e7f5",
@@ -5956,10 +5956,10 @@
       "line": 1,
       "raw": "'\\n    \"I need to go,\" you sigh.\\n    \\n    Evelyn smiles. \"Don\\'t be sad. I\\'ll be here for you when you next return. The maidens still need saving and the demons still need slaying, after all.\" She draws closer and kisses you, slipping her arms around you and letting her midriff gently press against your pregnant stomach. \"Be well.\"\\n    \\n    You smile back at her. \"I\\'ll be back.\"\\n    \\n    \"I know,\" she says. She gives you a little kiss on the forehead. \"Now go on.\"\\n    \\n    You head down the rocky stairs to the cave\\'s exit, rejoining the outside world. Time to get to slaying and saving.\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:379576:379582:bc981983e7f5",
@@ -6092,10 +6092,10 @@
       "line": 1,
       "raw": "\"Get on your hands and knees for her.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:383779:383790:02650fb8fef3",
@@ -6109,10 +6109,10 @@
       "line": 1,
       "raw": "\"Pronebone\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:383815:383817:da39a3ee5e6b",
@@ -6186,10 +6186,10 @@
       "line": 1,
       "raw": "\"Worship your queen's beautiful feet.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:383976:383988:d9f78f024a57",
@@ -6278,10 +6278,10 @@
       "line": 1,
       "raw": "\"You want to watch the dragon queen as she takes you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:384217:384227:249c04b1227e",
@@ -6295,10 +6295,10 @@
       "line": 1,
       "raw": "\"Spooning\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:384251:384253:da39a3ee5e6b",
@@ -6326,10 +6326,10 @@
       "line": 1,
       "raw": "\"Settle in front of the dragoness while she takes you from behind.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:384414:399529:8a57368d14ad",
@@ -6375,10 +6375,10 @@
       "line": 1,
       "raw": "'\\n        You emerge from Evelyn\\'s bedroom a shaky, weak-kneed wreck a few hours later, wobbling on your [pc.hasToes\\n            |feet\\n            |hooves\\n        ] until the dragoness half-drags, half-walks you to the bath in the other room. Filling it with water until it comes up to her midriff, she sits down with you and relaxes.\\n        \\n        \"Here,\" she says absentmindedly, putting a hand on your head and pulling you down into her lap. \"Suck it.\"\\n        \\n        Though she\\'s already filled your [pc.vagAss\\n            |pussy\\n            |ass\\n        ] with her spunk three times over you find yourself sucking her off to completion for a fourth, holding your breath to dive underwater and throat her cock while she shivers in delight. Your movement sends waves through the bath as Evelyn gets closer and closer to orgasm, culminating in a loud moan of pure bliss as you\\'re forced to swallow it to the hilt and gulp down yet more of her jizz. Her legs spread, head reclined back over the edge of the bath, and with you desperately sucking her cum into your tummy, it seems like your queen is more than happy to relax. She humps your face a few times, ensuring you get every last drop, and finally relents with a sigh of happiness.\\n        \\n        \"Good [pc.boyGirl],\" Evelyn tells you, [pc.hasHair\\n            |ruffling your hair\\n            |patting your head\\n        ] as you sit up. \"Wash up and get yourself a towel.\" [flags.DRAGON_EVE_DOGGY\\n            |\\n            |\\n            \\n            \"You don\\'t want one?\" you say.\\n            \\n            The dragoness smiles. \"I dry off quickly.\"\\n        ]\\n        \\n        She doesn\\'t rush you to get clean, languidly observing you rubbing yourself down the way one might watch a pet preen themselves, and emerging from the water while you\\'re drying yourself off. Squeezing the water from her hair, she shakes herself off and winks at you before heading back into her cave. You follow her in a couple of minutes later and find her stretched across her pile of treasure, idly picking through some of the contents.\\n        \\n        \"You are welcome to linger, [pc.name],\" she says, glancing at you. \"I do enjoy your company here, after all.\"\\n        \\n        You smile. \"Thank you.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:402032:402034:da39a3ee5e6b",
@@ -6452,10 +6452,10 @@
       "line": 1,
       "raw": "\"\\n        You find yourself borne to the bath in Evelyn's arms after several hours of prolonged pounding, your muscles sore and the raging fire of your libido quelled to low embers, glowing in sympathy with your [pc.vagAss\\n            |aching pussy\\n            |aching butt\\n        ]. The warm water is an incredible boon in your current state, and so is the soft dragoness in whose lap you're sitting. She holds you close, arms wrapped around your midriff.\\n        \\n        Contented with the bath and the treatment, you're just about falling asleep when she tugs you out of the water to dry you off – <i>then</i> puts you back in the bed to nap. One goodnight kiss later and the idea of a nap doesn't seem so bad, the tendrils of sleep enveloping your consciousness. Your dreams are pleasant enough that you don't remember them, left only with a fading warmth as you awaken and hop out into the world at large – Evelyn's cave.\\n        \\n        \\\"You're back up,\\\" she notes as you emerge from the bedroom. She flips a book closed, smiling at you as she lays it across the rest of her treasures. \\\"You can stick around, if you'd like. I don't intend to do anything of import today beyond possibly testing your endurance again.\\\"\\n        \\n        \\\"Thank you,\\\" you say, not sure whether to blush or prostrate yourself.\\n        \\n        The adventure is never far away, but you <i>could</i> stick around... maybe just to verify the claims about putting your endurance to the test.\\n        \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:418340:418342:da39a3ee5e6b",
@@ -6546,10 +6546,10 @@
       "line": 1,
       "raw": "'\\n        It takes close to an hour of sitting in a warm bath for you to recover from the exertion of having your throat occupied by Evelyn\\'s cock for several hours. Even recalling it now makes you blush slightly – she took you in so many ways it\\'s a wonder you lasted as long as you did. Being held upside down while she gleefully fucked the cum up into your stomach would take a toll on anyone but for you, it\\'s just another entry in the long, long list of things you would unquestioningly do for your draconic lover.\\n        \\n        \"Hmmmm,\" Evelyn sighs, stretching out and wiggling her toes beside you in the bath. \"That was time well-spent.\" She smiles at you. \"Don\\'t you agree?\"\\n        \\n        Your cheeks flush with a little more than the heat of the bath, your voice still husky. \"Yes, Evelyn.\"\\n        \\n        \"Mm. Don\\'t worry,\" she says, lowering her voice to a conspiratorial whisper. \"There\\'ll be <b>ample</b> opportunity for us to continue.\"\\n        \\n        You\\'re still beet red by the time you get out.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:434868:434870:da39a3ee5e6b",
@@ -6700,10 +6700,10 @@
       "line": 1,
       "raw": "'\\n        You stumble out of Evelyn\\'s bedroom several hours later, drenched in sweat and panting for breath while the flawlessly beautiful dragonwoman stretches out behind you. A hand in the small of your back guides you to the baths whereupon you all but limblessly slither into the waters before she\\'s even warmed them. She joins you not long after, humming in happiness.\\n        \\n        \"Are your legs still shaking?\" she says.\\n        \\n        \"Well... a little,\" you admit. \"But I can walk.\"\\n        \\n        Evelyn smiles. \"You\\'re as durable as you are excitable.\"\\n        \\n        Between the two of you, you\\'re beginning to suspect Evelyn is the more <i>excitable</i> – her occasionally fiery disposition seems to come to the fore more often after her transformation. Not that you\\'re complaining, of course.\\n        \\n        \"We should spend our days in bed more often,\" she continues. \"After your adventure comes to a close, [pc.name], I see no reason we couldn\\'t spend weeks in bed, tasting each other. Servants can bring us food and wine.\"\\n        \\n        \"That- that is very tempting, my queen,\" you say.\\n        \\n        Evelyn kisses your cheek. \"I am glad to hear you think so.\"\\n        \\n        After thoroughly cleaning and refreshing yourself you wind up back in Evelyn\\'s throne room, idly inspecting her piles of treasure.\\n        \\n        \"Have you looked through all of this?\" you say.\\n        \\n        She smiles. \"Just some of it. Why, do you want it?\"\\n        \\n        \"I was just curious,\" you say.\\n        \\n        \"It is quite the collection, but I haven\\'t found the time,\" the dragoness sighs. \"I keep finding myself... <b>distracted</b>.\"\\n        \\n        Her eyes rake you up and down in very obvious fashion as she says it.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:475692:475694:da39a3ee5e6b",
@@ -6793,10 +6793,10 @@
       "line": 1,
       "raw": "\"Get on your hands and knees for her.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:479312:479323:02650fb8fef3",
@@ -6810,10 +6810,10 @@
       "line": 1,
       "raw": "\"Pronebone\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:479337:479339:da39a3ee5e6b",
@@ -6916,10 +6916,10 @@
       "line": 1,
       "raw": "\"Worship your queen's beautiful feet.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:479567:479579:d9f78f024a57",
@@ -7008,10 +7008,10 @@
       "line": 1,
       "raw": "\"You want to watch the dragon queen as she takes you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:479816:479826:249c04b1227e",
@@ -7025,10 +7025,10 @@
       "line": 1,
       "raw": "\"Spooning\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:479854:479856:da39a3ee5e6b",
@@ -7056,10 +7056,10 @@
       "line": 1,
       "raw": "\"Settle in front of the dragoness while she takes you from behind.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:480021:495181:94c75436ee48",
@@ -7199,10 +7199,10 @@
       "line": 1,
       "raw": "'\\n        It takes close to an hour of sitting in a warm bath for you to recover from the exertion of having your throat occupied by Evelyn\\'s cock for several hours. Even recalling it now makes you blush slightly – she took you in so many ways it\\'s a wonder you lasted as long as you did. Being held upside down while she gleefully fucked the cum up into your stomach would take a toll on anyone but for you, it\\'s just another entry in the long, long list of things you would unquestioningly do for your draconic lover.\\n\\n        \"Hmmmm,\" Evelyn sighs, stretching out and wiggling her toes beside you in the bath. \"That was time well-spent.\" She smiles at you. \"Don\\'t you agree?\"\\n        \\n        Your cheeks flush with a little more than the heat of the bath, your voice still husky. \"Yes, Evelyn.\"\\n        \\n        \"Mm. Don\\'t worry,\" she says, lowering her voice to a conspiratorial whisper. \"There\\'ll be <b>ample</b> opportunity for us to continue.\"\\n        \\n        You\\'re still beet red by the time you get out, escorted by Evelyn.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:513577:513579:da39a3ee5e6b",
@@ -7353,10 +7353,10 @@
       "line": 1,
       "raw": "'\\n        You stumble out of Evelyn\\'s bedroom several hours later, drenched in sweat and panting for breath while the flawlessly beautiful dragonwoman stretches out behind you. A hand in the small of your back guides you to the baths whereupon you all but limblessly slither into the waters before she\\'s even warmed them. She joins you not long after, humming in happiness.\\n        \\n        \"Are your legs still shaking?\" she says.\\n        \\n        \"Well... a little,\" you admit. \"But I can walk.\"\\n        \\n        Evelyn smiles. \"You\\'re as durable as you are excitable.\"\\n        \\n        Between the two of you, you\\'re beginning to suspect Evelyn is the more <i>excitable</i> – her occasionally fiery disposition seems to come to the fore more often after her transformation. Not that you\\'re complaining, of course.\\n        \\n        \"We should spend our days in bed more often,\" she continues. \"After your adventure comes to a close, [pc.name], I see no reason we couldn\\'t spend weeks in bed, tasting each other. Servants can bring us food and wine while I keep you pregnant.\"\\n        \\n        \"That- that is very tempting, my queen,\" you say.\\n        \\n        Evelyn kisses your cheek. \"I am glad to hear you think so.\"\\n        \\n        After thoroughly cleaning and refreshing yourself you wind up back in Evelyn\\'s throne room, idly inspecting her piles of treasure.\\n        \\n        \"Have you looked through all of this?\" you say.\\n        \\n        She smiles. \"Just some of it. Why, do you want it?\"\\n        \\n        \"I was just curious,\" you say.\\n        \\n        \"It is quite the collection, but I haven\\'t found the time,\" the dragoness sighs. \"I keep finding myself... <b>distracted</b>.\"\\n        \\n        Her eyes rake you up and down in very obvious fashion as she says it.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:552488:552490:da39a3ee5e6b",
@@ -7458,10 +7458,10 @@
       "line": 1,
       "raw": "'\\n    \"I\\'ve brought my queen a tribute,\" you say.\\n\\n    \"Oh, really?\" Evelyn says, smiling inquisitively as one of her draconic wings lazily beats the air. \"Show me.\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:553958:553969:1425b8a32a9a",
@@ -7550,10 +7550,10 @@
       "line": 1,
       "raw": "\"Breed Me\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:554244:554246:da39a3ee5e6b",
@@ -7610,10 +7610,10 @@
       "line": 1,
       "raw": "\"[pc.hasVagina|You've already been bred!|You'd need a vagina for that.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:554409:554415:80ed1492c769",
@@ -7760,10 +7760,10 @@
       "line": 1,
       "raw": "\"You don't have a maid costume. Perhaps a seamstress could design one for you...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:555030:555040:90baa67564e8",
@@ -7863,10 +7863,10 @@
       "line": 1,
       "raw": "'\\n    \"I brought you some wine,\" you say, producing the bottle. \"I asked Garth for the best he had.\"\\n\\n    [var0\\n        |[var1\\n            |\"Excellent, excellent,\" Evelyn says. \"You\\'ve done very well, [pc.name]. I\\'m glad this tradition is being kept alive. Let\\'s drink it together, shall we?\"\\n            |\"Ah ha ha!\" Evelyn laughs, spreading an arm. \"Of course, you remembered to bring me more wine. Delightful, [pc.name]. A very fitting tribute.\" She smiles. \"I am glad that remains a constant. Let\\'s drink it together, shall we?\"\\n        ]\\n        |[var1\\n            |\"Excellent, excellent,\" Evelyn murmurs, eyeing the bottle hungrily. \"You\\'ve done very well, [pc.name]. I can always use more good wine. Let\\'s drink it together.\"\\n            |\"Oooh,\" Evelyn murmurs, her eyes narrowing hungrily as she looks at the bottle. \"You\\'ve done well, [pc.name]. I <b>could</b> use some good wine. Let\\'s drink it together.\"\\n        ]\\n    ]\\n    \\n    You unseal the bottle and begin drinking it with her using a couple of crystal goblets she takes from her hoard. Garth was right – this <i>is</i> fancy stuff...\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:556441:556447:bc981983e7f5",
@@ -8120,10 +8120,10 @@
       "line": 1,
       "raw": "'\\n        You get a wooden bucket and a cloth from Evelyn\\'s bathing room, kneeling in front of her before you set to your arduous task. Evelyn watches with her legs crossed and an elegant smile on her face, inspecting her floor when you finally finish with it. A flawless job, if you do say so yourself. Not a trace of your multiple orgasms remains.\\n\\n        \"Very good, little maid,\" Evelyn says, patting your cheek. She gives you a warm smile. \"It does suit you well, you know.\"\\n        \\n        \"Thank you,\" you murmur.\\n        \\n        You spend a few minutes entertaining her by way of cleaning up while still dressed, changing back into your own clothes after you\\'ve polished a few coins to their original lustre. Gazing at the costume while you put it away, your mind whirls as you relive the encounter in your head once more. You can already imagine how a dragoness Evelyn unleashed upon her former maids would act...'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:582478:582484:bc981983e7f5",
@@ -8401,10 +8401,10 @@
       "line": 1,
       "raw": "\"\\n        You hand Garth the coins and he walks into the back to fetch it. The bottle he brings to you is green, filled with dark red liquid and emblazoned with a symbol you don't recognize.\\n        \\n        \\\"<b>Don't</b> drop it,\\\" he growls. \\\"And don't blame me if this dragon of yours doesn't like it. Can't say I've had a drink with one before.\\\"\\n        \\n        \\\"Thanks, Garth,\\\" you say, smiling at him as you take it. \\\"Don't worry, I'm sure she'll love it.\\\"\\n        \\n        You leave the old wolf to mutter under his breath as you step away from the bar, tucking the bottle safely into your pack.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:596675:596681:bc981983e7f5",
@@ -8562,10 +8562,10 @@
       "line": 1,
       "raw": "'\\n        \"Little too rich for my blood,\" you mutter, shaking your head. \"Thanks anyway, Garth.\"\\n        \\n        \"Well, no doubt it\\'ll still be here if you still want it,\" he grunts. \"Not like anyone else here can afford it either.\"\\n        \\n        You\\'re left wondering why he even buys it then, but that\\'s really none of your business.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:597278:597284:bc981983e7f5",
@@ -8636,10 +8636,10 @@
       "line": 1,
       "raw": "\"Never mind.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:597406:597681:e12039245916",
@@ -8653,10 +8653,10 @@
       "line": 1,
       "raw": "'\\n    \"I have some friends that would be interested in having our queen cum all over our faces,\" you say with a smile. \"If you were interested.\"\\n    \\n    \"A suitable tribute,\" Evelyn purrs, her wings flaring out to the sides. \"Go fetch them, [pc.name]. I\\'ll wait.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:597845:597857:5063ed162712",
@@ -8699,10 +8699,10 @@
       "line": 1,
       "raw": "\"You know just the pair to offer up to Evelyn's raging desires...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:597981:597983:da39a3ee5e6b",
@@ -8730,10 +8730,10 @@
       "line": 1,
       "raw": "\"You need them both around to do this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:598038:598044:b52b36b7269f",
@@ -8869,10 +8869,10 @@
       "line": 1,
       "raw": "\"Suck Balls\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:602535:602537:da39a3ee5e6b",
@@ -8900,10 +8900,10 @@
       "line": 1,
       "raw": "\"Those two smooth, perfect orbs of hers just don't get enough attention. You can solve that <i>and</i> ensure whoever's blowing her gets an enormous load to swallow — it's win-win.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:602735:602744:17f6fecab6ac",
@@ -8948,10 +8948,10 @@
       "line": 1,
       "raw": "\"Evelyn's big, curvy butt deserves some <i>real</i> love, and a little bit of prostate play would no doubt inspire her to ejaculations of incredible proportions.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:603024:603044:621a6d8c33ff",
@@ -9400,10 +9400,10 @@
       "line": 1,
       "raw": "'\\n    [flags.DRAGON_EVE_DIPLOMACY\\n        |\"Should I accompany you on another diplomatic visit, my queen?\" you ask.\\n        \\n        Evelyn hums in thought. \"Do you have a location in mind, my esteemed advisor?\"\\n        |\"Have you put any more thought towards diplomacy, my queen?\" you ask.\\n        \\n        Evelyn meets your eyes with a smirk. \"I have. It seems to me that my best diplomatic asset was sitting right under my nose the whole time – namely, you. You\\'re an adventurer, [pc.name]. I\\'m sure you have knowledge and connections with local provinces. Can I rely on your expertise?\"\\n        \\n        \"What would you like?\" you say.\\n        \\n        \"The first step is visiting and establishing contact,\" Evelyn says. \"Names, places. Where should I start? In your esteemed opinion.\"\\n        \\n        You can think of a few places...\\n    ]\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:699546:699564:20fc0b5b4231",
@@ -9479,10 +9479,10 @@
       "line": 1,
       "raw": "\"[flags.ASANI_MET|You'll need to resolve the problems with the surrounding areas – such as the centaur village – before diplomacy can take place.|Perhaps you should visit and talk to people of particular importance there to gauge the situation first, like the ex-chieftain.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:700198:700204:b52b36b7269f",
@@ -9689,10 +9689,10 @@
       "line": 1,
       "raw": "\"Suck Asani's Cock\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:713874:713876:da39a3ee5e6b",
@@ -9720,10 +9720,10 @@
       "line": 1,
       "raw": "\"Suck and deepthroat Asani's giant horsecock while Evelyn ruts her from behind. When she cums, there's going to be a <b>lot</b> to swallow.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:714033:714052:c14cadfa9a83",
@@ -9768,10 +9768,10 @@
       "line": 1,
       "raw": "\"Get bounced in Asani's arms while Evelyn roughly takes her from behind. That massive horsecock is <i>begging</i> for a sheath...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:714221:714233:093bb9ef4d19",
@@ -9785,10 +9785,10 @@
       "line": 1,
       "raw": "\"Rim Evelyn\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:714252:714254:da39a3ee5e6b",
@@ -9816,10 +9816,10 @@
       "line": 1,
       "raw": "\"Spread Evelyn's curvy asscheeks to lovingly worship her asshole with your tongue.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:714404:714422:7af97942c079",
@@ -10551,10 +10551,10 @@
       "line": 1,
       "raw": "'\\n    You enter Evelyn\\'s lair, glancing about. You don\\'t even notice her until she stirs, and what your eyes fall upon is reminiscent of a painting.\\n    \\n    A beautiful, bountiful woman is draped across glittering golden treasures, her clothing barely concealing her lascivious body. Her coverings shine with the glamor and allure of jewelry, her meshed scales glittering across her full breasts and wide, curvy hips. She is the picture of divine femininity, and her lust-filled eyes are fixed solely on you.\\n    \\n    \"[pc.name],\" Evelyn purrs, a smile slowly spreading across her lips. \"How fortuitous. I was just thinking of you.\"\\n    \\n    \"You were?\" you say.\\n    \\n    Evelyn\\'s eyes rove up and down your form, all but drinking you in. \"Oh yes. I wanted to talk to you, [pc.name]. About the past... and the future.\" She beckons you in with a single finger. \"Come.\"\\n    \\n    She raises herself into a sitting position as you draw closer, and the moment you\\'re within reach she pulls you onto her lap. Face-to-face with the covetous dragoness, you\\'re momentarily struck dumb. Her arm slides around your waist, palm planted on your lower back while she gazes into your eyes.\\n    \\n    \"You have done much for me in our time together,\" she murmurs, gently stroking your back. \"I am not so arrogant as to deny I would have been nothing without you.\" She smiles. \"You are irreplaceable.\"\\n    \\n    You blush a little under the hail of compliments. \"Thank you, Evelyn.\"\\n    \\n    Her smile widens[pc.hasTopGarment|. \"Take off your top, [pc.name].\"\\n    \\n    That\\'s an abrupt instruction... but you\\'re used to obeying her without question by now. You take your clothes off, [pc.hasBreasts\\n        |baring your [pc.breasts] to your draconic lover\\n        |baring your chest to your draconic lover\\n    ]. She lightly places her other hand on your stomach, fingertips brushing your skin.| as she lightly places her other hand on your stomach, fingertips brushing your skin.]\\n    \\n    \"I was close to helpless when I arrived. Resigned to whiling away my time with pleasant distractions,\" she says. \"But after I found you, everything has changed. For once... <b>once</b> in my life... I am in total control of my own destiny.\"\\n    \\n    She leans forward, silken black hair spilling down her chest as her glittering green eyes drink all of you in.\\n    \\n    \"Perhaps it\\'s my natural inclination, or perhaps it\\'s the dragon inside me... but I want you, [pc.name]. I want to have you. I want to mark you. I want to <b>keep</b> you. I want... to make you <b>mine</b>.\"\\n    \\n    She takes your face in her hand and now instead of her fingers brushing your stomach, it\\'s her growing cock. Under her hungry gaze, you feel like a mouse in an eagle\\'s grip.\\n    \\n    \"I want you,\" she says, \"to bear my children, [pc.name]. I was going to wait until after my eventual campaign... but the urge to have you now is too strong.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:749103:749112:a0adbc0c6279",
@@ -10914,10 +10914,10 @@
       "line": 1,
       "raw": "'\\n    \"That was amazing,\" you sigh, looking up into Evelyn\\'s eyes. \"You know... I\\'m sure Alice would enjoy being subject to the same terms...\"\\n    \\n    Evelyn laughs. \"You would have me take a harem? Perhaps fitting for a dragon queen.\"\\n    \\n    \"I think a powerful queen being surrounded by her devoted and very pregnant lovers would be quite a sight,\" you murmur. \"Don\\'t you?\"\\n    \\n    The dragoness gazes at you, lips curled in a smile. \"And would these lovers be concubines?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:766538:766544:bc981983e7f5",
@@ -11228,10 +11228,10 @@
       "line": 1,
       "raw": "'\\n    The fire in Evelyn\\'s eyes dies a little as she sighs. \"I understand. I am disappointed, but your circumstances are... quite specific. I suppose I can wait until either your quest concludes or you become more amenable to being a mother to my brood.\" She smiles. \"I am open to either.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:778195:778360:d23fb762b688",
@@ -11245,10 +11245,10 @@
       "line": 1,
       "raw": "'\\n    You clear your throat. \"I\\'ve been thinking about children again...\"\\n    \\n    Evelyn leans forward, her gaze filled with barely-contained lust. \"Oh?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:778403:778412:a0adbc0c6279",
@@ -11292,10 +11292,10 @@
       "line": 1,
       "raw": "\"You've decided that, after all, you <b>do</b> want to have Evelyn's babies.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:778539:778563:1aebae209624",
@@ -11367,10 +11367,10 @@
       "line": 1,
       "raw": "\"\\n    You suddenly feel slightly nauseous. It's only a momentary spell, and it passes as soon as it came – but you can't help thinking of the hours Evelyn spent breeding you. [evelyn.numKids 1\\n        |Is it possible you're with child again already?\\n        \\n        Given how thorough she was with you, perhaps it's even <i>likely</i>. The thought makes you a little anxious, but also excited. To bear more of Evelyn's children, and to be so treasured... the thought puts a small spring in your step. She'd be so happy if it were true...\\n        |Is it possible...?\\n    ]\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:779346:779352:bc981983e7f5",
@@ -11513,10 +11513,10 @@
       "line": 1,
       "raw": "\"\\n    It's beyond certainty now: Evelyn has gotten you pregnant, and you're probably carrying twins or even triplets. Nothing else would explain how quickly your stomach is growing, not to mention the rest of your body. \\n    \\n    Your waistline has gained several inches as your belly rounds out, and your breasts have gone up a couple of cup sizes. You wouldn't mind the full, rounded shape so much if they weren't also perceptibly heavier, but at least they've stopped hurting.\\n    \\n    As if in response to your thoughts, you feel a slight tingling sensation in your nipples – <b>you've begun lactating</b>. At least your children certainly won't be going hungry. It might pay to see if Evelyn wants to help you deal with all this milk! If nothing else, you'd like to see her now that you're showing.\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:780752:780758:bc981983e7f5",
@@ -11587,10 +11587,10 @@
       "line": 1,
       "raw": "\"\\n    Your breasts are tender, your waistline has filled out yet again, it's getting difficult to bend over, your hips, butt, thighs, and chest have all grown in response to the pregnancy, and it's a little annoying to even walk. Action leaves you short of breath.\\n    \\n    [flags.DRAGON_EVE_PREG_SEX\\n        |Despite all that, it doesn't seem nearly as bad after the bedbreaking sex with Evelyn. Well, it was actually very gentle and loving, but it sure <i>felt</i> like the earth was moving under you. You smile, troubles momentarily forgotten.\\n        |All you really want to do is lie down and rest, or maybe get a massage. A visit to Evelyn might be nice...\\n    ]\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:781595:781601:bc981983e7f5",
@@ -11661,10 +11661,10 @@
       "line": 1,
       "raw": "\"\\n    You long to soak in a warm bath. For a month, maybe two. And after that, for Evelyn to fuck you hard enough to make you scream, and then back to the bath.\\n    \\n    Really, any kind of distraction from the veritable cornucopia of distinct and unpleasant physical sensations you're enduring would be nice. Your tits are sore. The babies are kicking. Your clothes are stretched around you. Your stomach is tight and heavy. Your cheeks are warm enough to be annoying. Your [pc.hasToes\\n        |feet hurt\\n        |hooves hurt in a way you hadn't known possible\\n    ].\\n    \\n    What might be worst is that you get told you're \\\"glowing\\\", like a radiant icon of femininity. You don't feel like one – right now you feel like an ornery blob. Well, at least until Evelyn smiles at you, or you pet your tummy to quiet your children. The miracle of birth is still a little way off, but there are small fondnesses to be found in the experience. Occasionally.\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:782724:782730:bc981983e7f5",
@@ -11735,10 +11735,10 @@
       "line": 1,
       "raw": "\"\\n    You're so close to giving birth now that you feel ready to pop. You're having triplets, and <i>everyone</i> can tell. Your pregnancy invites all sorts of congratulatory comments and discussion, and you can just about feel a proud, smiling Evelyn alongside you as you address them.\\n    \\n    Moving is an effort, and moving with purpose even more so. You spend a lot of time with a hand on your stomach, subconsciously supporting it and rubbing when the babies kick. They're just about ready to come out, and they're fine with letting you know.\\n    \\n    Your big, round breasts are constantly dripping milk into your clothes, but at least they're handily supported by the omnipresent curve of your massive protruding stomach. You haven't [pc.hasToes\\n        |seen your feet in a long time\\n        |been able to see your hooves for a long time\\n    ], now. Just breathing is a little annoying.\\n    \\n    [evelyn.numKids 1\\n        |This isn't as bad as it was the last time, [flags.DRAGON_EVE_PREG_SEX\\n            |and both the sex and the pampering have been amazing\\n            |honestly\\n        ]... after putting up with this for so long, it's almost become routine. Perhaps you'll have more children when you safely deliver these ones. You'll have some time to think about it.\\n        |[flags.DRAGON_EVE_PREG_SEX\\n            |The sex and pampering has been amazing, but you're pretty ready for this to be over...\\n            |You're pretty ready for this to be over...\\n        ] at least you'll be able to see your beautiful children after all you've been through, and that'll be worth more than any aches and pains.\\n    ]\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:784539:784545:bc981983e7f5",
@@ -12133,10 +12133,10 @@
       "line": 1,
       "raw": "'\\n    When you stir from sleep a few hours later, Evelyn\\'s arms still around you and her body encompassing yours, you realize you don\\'t want to leave just yet. Instead you let yourself slowly come to wakefulness, appreciating the warmth and security. Evelyn awakens not long after with a yawn, nuzzling into the back of your neck and murmuring.\\n    \\n    She hugs you from behind, letting out a long breath of warm air from her nose. \"Mmm. I do like waking up to this.\"\\n    \\n    You smile. \"Me too.\"\\n    \\n    The dragoness sighs. \"In a different world, perhaps a simple life with my lovely [pc.mf\\n        |husband\\n        |wife\\n    ] and our children wouldn\\'t have been so bad.\" She kisses the back of your neck and pulls back. \"Alas.\"\\n    \\n    You roll onto your back as she gets up and stretches. She really is a sight to behold, her fit, curvaceous body on full display – as if Evelyn has ever been shy. She looks back at you and smiles. \"Going to rest the day away?\"\\n    \\n    You gaze at her over the blankets. \"Only if you\\'re going to stand there and pose for me to look at all day.\"\\n    \\n    She laughs. \"I\\'ll have to commission you a statue sometime.\"\\n    \\n    You eventually get up out of bed, cajoled in part by your draconic lover. You walk out to the wider area of the cave to see Evelyn sitting atop her pile of treasure.\\n    \\n    \"So good of you to join the waking world,\" she purrs. \"Need anything?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:805758:805764:bc981983e7f5",
@@ -13237,10 +13237,10 @@
       "line": 1,
       "raw": "'\\n    \"I\\'ll go and get Azzy.\"\\n    \\n    You\\'ve never seen a dragon smile before, but it\\'s a weak thing that lifts the corners of her muzzle. \"What is this Azzy like?\"\\n    \\n    You do your best to describe the knightly virtues of your [liaden.poly\\n        |polyamorous cuddlebug\\n        |honey-sweet companion\\n    ], and there\\'s the weakest, amused little twitch of the dragon\\'s tail around her throne. \"Very well, I shall await...\"\\n    \\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:853502:853510:6376b33e5123",
@@ -13325,10 +13325,10 @@
       "line": 1,
       "raw": "'\\n    \"I can get Evelyn, she\\'s a princess.\"\\n    \\n    You\\'ve never seen a dragon smile before, but it\\'s a weak thing that lifts the corners of her muzzle. \"What is this Evelyn like?\"\\n    \\n    There are few words you can bring to mind when it comes to describing the awe Evelyn can inspire in you, but you do your best to describe her in as positive and... justice-oriented a light as you can. The rest will be down to Evelyn herself.\\n    \\n    There\\'s the weakest, amused little twitch of the dragon\\'s tail around her throne. \"Very well, I shall await...\"\\n    \\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:854350:854358:6376b33e5123",
@@ -13551,10 +13551,10 @@
       "line": 1,
       "raw": "'\\n                \"Bwuh,\" your tongue has trouble forming words, adding yet another layer to the emotional whiplash.\\n                \\n                Azzy smiles and tilts her head to the side, wings twitching. \"I\\'m itchy all over, and everything\\'s fitting very differently.\" When she tilts her head she seems to notice the additional weight, reaching up flinching when horns meet her fingertips. \"Oh.\"\\n                \\n                Her shaggy blonde locks hang down to her thighs now, impossibly long and glossy. Scales with the same deep shine as her chitin pattern her hips and cheeks, and the definition of her abs could grate a smaller [pc.mf\\n                    |man\\n                    |woman\\n                ] to powder. Her wings too, despite being made mostly of their usual shimmering membranes glow faintly to match her eyes, and are set inside the tightly-scaled and hooked frame of a dragon\\'s own.\\n                \\n                Not even her clothing remains unchanged; the majority of the fabric has shifted in sheen and become sheer enough to see clearly through, while the armor has migrated towards her shoulders to set for an imposing mantle alongside her fuzzy hornet-fluff.\\n                \\n                Once your jaw has found a way to click shut again, you speak up. \"How do you feel?\"\\n                \\n                Azzy purses her glistening black lips, trailing her fingers across the scale-ridge protecting her elfin ears. \"I don\\'t... know how to put it into words. I feel <b>incredible</b>; everything is so tough, and tight. There\\'s a fire inside of me and I have nowhere for it to go. It\\'s also very difficult to be horny and sad about Miss Ashe at the same time.\" Her brow furrows at that. \"My head feels clear, at least. Full of purpose. [azzy.fucked\\n                    |Just... also I want to pin you up against the wall and fill you with eggs, and turn you into my sweet little hive-[pc.mf\\n                        |husband\\n                        |wife\\n                    ]\\n                    |[azzy.liaden\\n                        |Just... also I want to pin Liaden up against a wall and fill her with eggs. I want to make her into my sweet little hive-wife\\n                        |I could also use a sweet, bullyable cutie to pin against a wall and fill with eggs\\n                    ]\\n                ].\"\\n                \\n                [party.comp agni arona atugia brienne brint cait etheryn kiyoko quin viv\\n                    |\"...And here I thought I\\'d run out of new experiences in life,\" Agni mutters.\\n                    |\"Fucking hell, can\\'t say I disagree with that.\" Arona grunts, somewhat-agape herself; seems she was watching the hornet\\'s transformation while you were distracted.\\n                    |\"I— uh, wow. That is... wow.\" Atugia just about manages to stop herself from drooling.\\n                    |\"That is an incredible look for you!\" Brienne looks shocked herself, poofy-tipped tail swishing around. \"I wonder if your honey\\'s changed?\"\\n                    |\"...Damn girl, remind me to avoid the room next to yours tonight if I want to get any sleep.\" Brint grunts; he tries for \\'reassuring\\', but your massive bull-boy[brint.fucked|friend] mostly just looks impressed.\\n                    |\"...Mnf.\" Cait positively eyefucks the muscular hornet, a throaty purr building up. \"Let me know if you need help with that.\"\\n                    |[etheryn.lnhConfidence\\n                        |\"I— I... oh Lumia.\"\\n                        |\"Lumia bless— Azzy, that\\'s quite incredible...\"\\n                        |\"Lumia\\'s tits, Azzy! You\\'re...\"\\n                    ] Ryn trails off, trying to think of an apt description for her, before finally settling for awed, horny silence.\\n                    |\"And here I had thought this land was running out of surprises for me...\" Even Kiyoko\\'s confidence takes a minor hit in the face of such shock, not to mention the passing of such an ancient creature in her presence.\\n                    |Quin only just barely bites down a thirsty wolf-whistle, but he looks impressed all the same. \"Damn girl, if you want to give all of that muscle a go with me, just say.\"\\n                    |[viv.isDemon\\n                        |\"And here I thought <b>my</b> transformation was spectacular...\" the demonic Viv sighs softly. \"She does look gorgeous, however.\"\\n                        |\"Mnf, traveling with you only gets better and better, [pc.name]. Look at her; she\\'s <b>gorgeous</b>.\"\\n                    ]\\n                ]\\n                \\n                Azzy\\'s luminescent eyes shimmer, and she visibly tamps down on her own enthusiasm. \"But... not here. [azzy.fucked\\n                    |[liaden.poly\\n                        |Just wait until I have you and Lia to myself, we\\'re going to destroy a bed.\\n                        |I want to destroy a bed with you.\\n                    ]\\n                    |There\\'ll be time for messing around later... and I want to find a mirror!\\n                ]\" \\n                \\n                There\\'s still a pile of treasure untouched, as grim as such a thing might be; Ashe certainly won\\'t be using it. As though to begrudge that fact, you\\'re keenly aware of the weight of her mace on your belt... it doesn\\'t stop Azyrran from sauntering over and scooping up as much as she can carry. \\n                \\n                With a [pc.dcb\\n                    |wicked grin\\n                    |sigh\\n                    |sad sigh\\n                ], you make for the waystone out of here, ready to leave behind this now \\'freshly-robbed\\' tomb. Telling Kaina about this is going to be awkward.\\n                \\n                '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:868388:868408:e75d56c7bf98",
@@ -14001,10 +14001,10 @@
       "line": 1,
       "raw": "\"\\n    [flags.AZZY_DRAGOON\\n        |It leaves a foul taste in your mouth, stepping around Ashlander's remains in order to scrabble for loot. You would miss it if you didn't know what you were looking for; resting in a gouged-out pit created by her scrabbling claws is a small silver charm.\\n        |As though it's waiting for you, a soft ring of silver clinks down from... somewhere — a shelf maybe? You don't see one though — and rolls across the floor. Well, that's convenient. Your deliciously dommy dragon-girlfriend doesn't even notice, busily cleaning her nails with a satisfied smile on her face. Hmn.\\n    ]\\n    \\n    You slip the ring onto the chain dangling from your greatsword, relieved to see it melt onto the chain and fit securely. Now when you give the hilt a shake it jingles pleasantly.\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_DragonLair.a22c870484febce6f9f2.js:886636:886642:bc981983e7f5",

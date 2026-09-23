@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.97\\resources\\app\\Content_Followers.de64b10269e483e3defb.js",
+  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\Content_Followers.de64b10269e483e3defb.js",
   "sourceSha1": "df49127be280c9693ee4cd8dd37381e1163f9cdc",
   "migratedFrom": [
     "Content_Followers.de64b10269e483e3defb.js.json"
   ],
-  "updateGeneratedAt": "2026-09-11T04:35:19.868Z",
+  "updateGeneratedAt": "2026-09-22T10:43:18.978Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 133,
@@ -91,10 +91,10 @@
       "line": 1,
       "raw": "'\\n    \"Oh,\" Kalysea says suddenly, stopping in her tracks. \"Aren’t these beautiful?\"\\n    \\n    She’s looking at a cluster of flowers sprouting from under an outcropping of rock. They\\'re not particularly spectacular, but the fashion in which they\\'re persevering has a type of rugged beauty to it. Kalysea stops and bends down, reaching for some.\\n    \\n    \"Would you help me make a flower crown, [pc.name]?\" she asks.\\n    \\n    \"A quick break won\\'t hurt,\" you say.\\n    \\n    You find yourself kneeling down next to Kalysea, picking flowers out alongside the druid.\\n    \\n    \"Have you thought about your future, [pc.name]?\" she asks. \"What you will do beyond your adventure?\"\\n    \\n    \"I have, but ultimately I have to get there to worry about it properly,\" you say. \"Have you?\"\\n    \\n    She studies you for a moment. \"I\\'m still thinking about what to do.\"\\n    \\n    You nod, looking down at the flowers in your hand. \"Well, you\\'d best hurry. I don\\'t think the demons are going to give us much time to decide.\"\\n    \\n    Kalysea pauses – then picks up another flower. \"That is true enough.\"\\n    \\n    The two of you work together to create a wreathe of flowers, and to your mild surprise she places it on your head instead of her own. She smiles [pc.isHeight 84\\n        |\\n        |down \\n    ]at you. \"Receive the druid\\'s blessing.\"\\n    \\n    You smile. \"Thanks.\"\\n    \\n    For a while, you journey with a crown of flowers set atop your head.\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:3901:3907:bc981983e7f5",
@@ -151,10 +151,10 @@
       "line": 1,
       "raw": "'\\n    [FWCO\\n        |Kalysea is accompanying you in a corner of the inn\\n        |Kalysea is accompanying you in the courtyard\\n        |Kalysea is accompanying you by the fire\\n        |Kalysea is accompanying you on your journey\\n    ] when she suddenly speaks.\\n    \\n    \"You know, mare, in the time we’ve spent together I’ve come to understand you better,\" she says, smiling at you, \"and I think you’ve come to understand <b>me</b>. You know what I like, and I know what you like. We make quite the pair when we’re together.\"\\n    \\n    It’s hard to disagree — any time spent with Kalysea is... exciting, to say the least.\\n    \\n    She reaches out for you, gently cupping your chin in her hand[pc.heightRange 0 86\\n        | and tilting your face up towards her\\n    ].\\n    \\n    \"I\\'ve come to really want to make you <b>mine</b>,\" she murmurs, eyes roving over your face – and lingering upon your lips. \"I want to treasure you, little mare. What say you?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:5414:5437:7213d05cf80d",
@@ -198,10 +198,10 @@
       "line": 1,
       "raw": "\"You want nothing more than for Kalysea to make you hers.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:5561:5591:5fd301baecd7",
@@ -305,10 +305,10 @@
       "line": 1,
       "raw": "'\\n    [flags.KALYSEA_ENTAIL\\n        |\"I... think I am ready for such a commitment,\" you say.\\n        \\n        \"Wonderful,\" Kalysea says. \"I really am impressed by your devotion, mare. I do love that about you. It’s hard to imagine a pair better aligned... and I shall tell you anyway, as I would like you to know.\"\\n        |\"Of... of course,\" you breathe.\\n        \\n        Kalysea smirks. \"I really am impressed by your devotion, mare — you don’t even need to know what you are being made party to, only that you feel the same way that I do. I do love that about you, [pc.name]. It’s hard to imagine a pair better aligned... and I shall tell you anyway, as I would like you to know.\"\\n    ]\\n    \\n    \"I am going to marry you,\" Kalysea purrs, meeting your eyes, \"to my cock. A life-long commitment, symbolic and literal.\"\\n    \\n    You\\'re unable to keep your gaze from dropping lower as she talks, honing in on her majestic equine shaft. It swells and thickens with arousal in front of your eyes, bulging with barely-contained lust, promising pleasure beyond compare.\\n    \\n    \"You would be ever at my side, dedicated to your beloved,\" she continues, subtly directing your gaze back upwards with a smile. \"I need you, [pc.name]. And I want to hear that you want the same. That you will devote yourself, body and soul.\"\\n    \\n    It\\'s not difficult to imagine the future of such a path. Your remaining years, leashed to Kalysea\\'s thick, heavy horsecock, emptying her heavy balls and pleasuring her whenever she wishes. A lifetime spent in worship, praying at the altar of Kalysea\\'s captivating beauty and virility and being consecrated in her holy seed. <i>Bound</i> to her.\\n    \\n    You can\\'t imagine anything you want more.[pc.cockVagBoth\\n        | Your raging-hard dick seems to agree.\\n        | Your dripping pussy seems to agree.\\n        | Both your raging-hard dick and your dripping pussy seem to agree.\\n    ]\\n    \\n    \"Yes,\" you whisper.\\n    \\n    Kalysea smirks. \"Don\\'t be nervous, mare... you\\'ll still be able to adventure. The only difference is that you will be a fixture at my side. Ooh, I am going to pump <b>so</b> many loads between those [pc.mascFem\\n        |lips\\n        |pretty plump lips\\n    ] of yours... but I\\'m getting ahead of myself. Come and find me when you have time spare, [pc.name]. I\\'ll prepare some things for the ritual.\"\\n    \\n    She lets you go, turning away and fishing around in her pack. Looks like she intends to do exactly what she said, leaving you to fantasize about the specifics of those loads she mentioned...\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:8654:8660:bc981983e7f5",
@@ -365,10 +365,10 @@
       "line": 1,
       "raw": "'\\n    \"If not for the timing, I...\" you hesitate.\\n    \\n    Kalysea smiles. \"Very well. I understand; it <b>is</b> true we\\'ve met at an unusual time, though I am appreciative – we may not have met at all otherwise, and that would be a tragedy. Think it over for some time, [pc.name]. Perhaps a more fortuitous time will avail itself in the near future?\"\\n    \\n    You nod. You\\'re going to be thinking about this...\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:9263:9269:bc981983e7f5",
@@ -425,10 +425,10 @@
       "line": 1,
       "raw": "'\\n    \"So... about becoming yours...\" you prompt.\\n    \\n    \"Ah, yes. In the time we’ve spent together I’ve come to understand you better,\" Kalysea says, smiling at you, \"and I think you’ve come to understand <b>me</b>. You know what I like, and I know what you like. We make quite the pair when we’re together.\"\\n    \\n    It’s hard to disagree — any time spent with Kalysea is... exciting, to say the least.\\n    \\n    She reaches out for you, gently cupping your chin in her hand[pc.heightRange 0 86\\n        | and tilting your face up towards her\\n    ].\\n    \\n    \"I\\'ve come to really want to make you <b>mine</b>,\" she murmurs, eyes roving over your face – and lingering upon your lips. \"I want to treasure you, little mare. What say you?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:10261:10736:d760876a1af6",
@@ -442,10 +442,10 @@
       "line": 1,
       "raw": "'\\n    \"What does that... mean, exactly?\" you say.\\n    \\n    Kalysea smiles wide. \"I would like us to perform a rite of ritual binding. To mate us for life. <b>You will still be able to adventure, of course, if that was your concern</b>.\"\\n    \\n    \"But irrevocably linked to you, forevermore,\" you say.\\n    \\n    \"Yes, exactly,\" Kalysea says, pleased. \"That is exactly what I want – and, if I know you, what you want. What reason do you have to refuse, [pc.name]?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:10884:11191:1b4c880d70bd",
@@ -521,10 +521,10 @@
       "line": 1,
       "raw": "\"Kiss Her Balls\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:11430:11446:b308b3ef9be5",
@@ -538,10 +538,10 @@
       "line": 1,
       "raw": "\"Kiss Her Balls\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:11447:11495:e039fff5365e",
@@ -555,10 +555,10 @@
       "line": 1,
       "raw": "\"Polish those big brown balls with your tongue.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:11511:11528:82ce1a857637",
@@ -739,10 +739,10 @@
       "line": 1,
       "raw": "'\\n    You\\'re happy to wait and watch, observing Kalysea\\'s work. She\\'s grinding powders and herbs into pastes, stowing them in her pack and humming as she works. True to her word, it doesn\\'t take that long for her to be finished.\\n    \\n    \"All ready,\" Kalysea announces. She smiles. \"Apologies for keeping you waiting, mare. Shall we go?\"\\n    \\n    \"Of course,\" you say.\\n    \\n    \"Now, we will need a suitable area to conduct our ritual... which does mean in nature,\" Kalysea says. \"It will be somewhat of a walk, but that won’t bother either of us, really. Come.\" \\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:14625:14645:ee80305e0c6d",
@@ -848,10 +848,10 @@
       "line": 1,
       "raw": "'\\n    If you\\'re going to accompany Kalysea to your ritual of bonding, you\\'d like for it to be dignified – at least for now. There\\'ll be all the time in the world for her to watch smirking as you shed your ego to marry her proud cock when you get there. As it is, you\\'d like to stay alongside her.\\n    \\n    Kalysea smiles at you. \"I am looking forward to this, mare. It means a lot to me that we see eye-to-eye.\"\\n    \\n    \"Me too,\" you say, [pc.heightRange 0 90\\n        |looking up at her\\n        |meeting her gaze\\n    ]. \"I... I want this.\"\\n    \\n    Kalysea smirks, reaching out to brush the backs of her fingers across your cheek. \"I know, [pc.name]. And I am going to give it to you every night for the rest of your life. Don\\'t you worry about that.\"\\n    \\n    You walk the rest of the way [pc.hasCock\\n        |with your dick pushing against your [pc.hasBottomGarment\\n            |underclothes, \\n        ]precum beading at the tip\\n        |with arousal dripping down your thighs\\n    ].\\n    \\n    When you finally arrive at your destination, Kalysea spreads her arms. \"This seems nice.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:16113:16137:0b02040aded9",
@@ -895,10 +895,10 @@
       "line": 1,
       "raw": "\"Together with Kalysea, make your preparations to be married and ritually bonded to her cock.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:16355:19859:d72faf2f3b2b",
@@ -959,10 +959,10 @@
       "line": 1,
       "raw": "\"Together with Kalysea, make your preparations to be married and ritually bonded to her cock.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:20146:21700:e46dff59415a",
@@ -1080,10 +1080,10 @@
       "line": 1,
       "raw": "'\\n    \"Could you <b>make</b> it permanent?\" you ask.\\n    \\n    Kalysea lifts an eyebrow, then smiles. \"Well, for you, pet, of course. The old gods would approve – they were very enthusiastic about fertility rituals. Marking someone carried some significance. [pc.hasWombTattoo\\n        |A pity you already have a tattooed belly... but I could replace it, if you like.\\n        |We could do that together, if you like.\\n    ]\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:22470:22475:5397e0583f14",
@@ -1112,10 +1112,10 @@
       "line": 1,
       "raw": "'\\n        \"Traditionally, markings of this type were impermanent, only for the duration of the ritual,\" Kalysea says. She grins. \"But my cock <b>is</b> going to get very hard every time I see these markings on your body, mare... and I know you\\'re as happy about that as I am.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:22844:22846:da39a3ee5e6b",
@@ -1173,10 +1173,10 @@
       "line": 1,
       "raw": "'\\n        Kalysea nods. \"I understand. Traditionally, markings of this type were only for the duration of the rituals, anyway. It is no matter – let us continue.\" She smiles. \"You are not the type to need a marking on your skin to know your place.\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:23410:23412:da39a3ee5e6b",
@@ -1204,10 +1204,10 @@
       "line": 1,
       "raw": "\"[pc.hasWombTattoo|You don't want to replace your womb tattoo.|You don't want a permanent [pc.hasPussy|womb tattoo|on your lower stomach] permanent.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:23698:25976:71f8b4e52c07",
@@ -1221,10 +1221,10 @@
       "line": 1,
       "raw": "'\\n    You blush and she coos, sweeping her hand across your stomach. \"You are going to make such a wonderful partner for my cock, [pc.name]. I can hardly wait.\"\\n\\n    Kalysea takes the pigments from her pouches and begins to daub them across your body, long strokes of her fingers painting in evocative lines and swirls. She paints you with care, \\n    \\n    She stands back to admire you in your naked glory. \"You really are an inspirational sight, mare. I\\'d <b>love</b> to fuck you senseless right now, but all things in good time.\" [pc.hasCock\\n        |She smiles. \"And that upright cock of yours is certainly flattering.\"\\n    ]\\n    \\n    The druid makes a couple of last adjustments to your markings, [pc.hasHair\\n        |running her fingers through your hair[pc.hasLongHair\\n            | and ruffling it\\n        ]\\n        |running her fingers over your head\\n    ]. \"Are you ready to be bonded to my cock, [pc.name]?\"\\n    \\n    You incline your head. \"Yes, Kalysea.\"\\n    \\n    \"Very good,\" she says. \"You know, this will be dependent on the ring I made out of your graciously-given items.\"\\n    \\n    \"What does the ring do?\" you say.\\n    \\n    \"It can do many things,\" Kalysea says. \"But on its own, nothing, really. It\\'s a thing of potential. In this case, it\\'s going to act as a magical anchor between the two of us. A focal point for the ritual, taking in its energies.\"\\n    \\n    \"Is the ritual complicated?\" you say.\\n    \\n    \"Not at all,\" Kalysea says. \"There are no steps to follow, or anything of the like. The old gods were very lackadaisical about how you worshipped them. It\\'s an entwining of two wills towards one end, a kind of... free-flowing dance, I suppose, that takes us to where we want to be. Don\\'t worry – I will guide you through it. Does that satisfy your curiosities, mare?\"\\n    \\n    You smile at her. \"Thank you for indulging me.\"\\n    \\n    \"Of course,\" she purrs. \"I can tell you have one more question in you, though.\"\\n    \\n    \"What will being bonded be like?\" you say.\\n    \\n    The centaur chuckles. \"I\\'m not fully certain either, pet. I haven\\'t experienced it myself. We\\'ll be finding out together, and I\\'m very much looking forward to it. Now, then.\"\\n    \\n    Kalysea smiles. \"Are you ready to begin?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:26017:26036:2e4cec6db569",
@@ -1238,10 +1238,10 @@
       "line": 1,
       "raw": "\"druidic fertility\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:26060:26065:5397e0583f14",
@@ -1331,10 +1331,10 @@
       "line": 1,
       "raw": "\"Bestow Your Love and Devotion\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:30287:30367:ed7d49703ef3",
@@ -1423,10 +1423,10 @@
       "line": 1,
       "raw": "'\\n    You and Kalysea set up your tent together, resting inside and nestling up against each other. Have you ever truly taken the time to admire her glossy fur and muscled body? Not enough, you tell yourself.\\n    \\n    \"Mmm,\" Kalysea murmurs, stroking [pc.hasHair\\n        |her fingers through your hair\\n        |your head\\n    ]. \"I <b>am</b> glad we did this...\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:41979:41989:fab736a9a39d",
@@ -1650,10 +1650,10 @@
       "line": 1,
       "raw": "'\\n    \"Is it possible for a person already bonded to another to bond to additional people? Or for an unbonded person to bond to multiple others at once?\" you ask.\\n    \\n    Kalysea looks surprised. \"I don\\'t know. The ritual avoids specificity of that manner... so perhaps you could.\" Her lips curl in amusement. \"Are you thinking of bringing me a harem, mare?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:44548:45015:4ec119b16791",
@@ -1667,10 +1667,10 @@
       "line": 1,
       "raw": "'\\n        Kalysea laughs. \"Well, either way, I do not know. I am not sure if that would be an additional bond, so to speak — in the sense that it would be between me and another as well as yourself and myself — or between me, you, and another, as a triplet. The former lacks a sort of meaning to me, and the latter seems extraordinarily difficult.\" She considers you with a smile. \"But perhaps, if you and another felt strongly enough about the matter...\"\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:45076:45102:8f00c0c78aff",
@@ -1787,10 +1787,10 @@
       "line": 1,
       "raw": "'\\n    \"What is the chain between our bindings?\" you ask.\\n    \\n    \"Proof of our bond, in a way,\" Kalysea says. \"It links us together quite literally, but also spiritually and mentally. Though anyone can see our golden ornaments, only we can see the chain connecting the two of us.\" She smiles. \"Think of it as our little secret. It carries our thoughts, our desires, our passions and our loves to each other.\"\\n    \\n    You nod. \"But on a... primal level, you said.\"\\n    \\n    \"Exactly,\" she says. \"I wouldn\\'t be able to tell what you were thinking, for instance. But I might be able to feel it if you were having particularly lustful thoughts about what you\\'d like me to do to you.\" The centaur boops you on the [pc.hasMuzzle\\n        |snout\\n        |nose\\n    ]. \"But then, you don\\'t make it very difficult anyway, mare.\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:46208:46219:bc608bbaeffb",
@@ -1879,10 +1879,10 @@
       "line": 1,
       "raw": "\"\\n    You've been walking for a while now, and for the last several minutes your thoughts have increasingly been of the centaur walking in front of you. The way Kalysea moves as she walks is indescribable, almost as though she's <i>trying</i> to tempt you with the motion of her hips... and her big, swinging nuts. You know that's not really true – it's just by virtue of her size – but even so you find yourself wholly occupied by her incredible body.\\n    \\n    You don't even notice that you're slowly getting closer and closer as you walk until Kalysea stops in her tracks, and you stumble face-first into her big, curvy ass. You hear a familiar clink and realize the chain between your collar and her cockring has already formed without you noticing.\\n    \\n    \\\"You're getting distracted,\\\" Kalysea says, and you look up to see her smiling back at you. \\\"Let's take a quick break, [pc.name]. You can hardly be an effective fighter like that.\\\"\\n    \\n    She's right. [pc.cockVagBoth\\n        |Your dick is rock-hard\\n        |Your pussy is dripping wet\\n        |Your dick is rock-hard and your pussy is dripping wet\\n    ], but even more distracting than that are Kalysea's big, bulging balls and her thick hanging cock. You need to vent these lusts, and she obviously knows it.\\n    \\n    Kalysea spreads her hindlegs wide as you kneel behind her, giving you full access to her massive balls and sweaty horsecock in the second before you grip her muscular hindlegs and lean in to suck her nuts. You're loud, rude, and wet, and if her grunts of pleasure are any indicator, she appreciates the effort.\\n    \\n    The chain pulls you closer and you obey your combined lusts, coming further in to lick and stroke Kalysea's giant cock. You've scarcely started jacking her off before you realize you don't want her to waste her thick, creamy load on the ground – there's somewhere better she can offload it.\\n    \\n    \\\"Good [pc.boyGirl],\\\" she murmurs as you position yourself. \\\"Open wide, mare.\\\"\\n    \\n    She slams her giant cock down your inviting throat with all the grace of a raging beast, her flare pounding into your stomach. You don't have the time to make an occasion of it, and she obliges your needs by fucking your face with unmatched violence.\\n    \\n    Kalysea doesn't bother to talk, or to tease. She pumps her cock between your outstretched lips as if you were a breeding mount, penetrating all the way into your core with her enormous flare. You can feel the outline of her cock pressing against your golden collar, and the chain between your ring and hers bounces as she thrusts.\\n    \\n    You keep your mouth open and your body braced for her to fuck with abandon, gagging and spluttering while the centaur pounds your throat. She doesn't bother holding back, and the urgency with which she breeds your mouth is infectious. Your hips are bucking before she even finishes.\\n    \\n    The moment Kalysea cums into your stomach with a loud groan you [pc.hasCock\\n        |spunk all over the ground\\n        |orgasm\\n    ], gulping down a mindblowing amount of her sperm while pleasure winds its way through your swelling core. She unloads into you like a condom, straining and grunting as her flare throbs inside you, expelling pulsing rivers of hot seed into your belly. Each time she flexes you can feel the skin of your tummy pulling taut, rounding with her jizz until the chain relinquishes its grip on you and she pulls out of you with a moan.\\n    \\n    \\\"There,\\\" she pants. \\\"That should keep you occupied for a while, [pc.name].\\\"\\n    \\n    You get to your feet unsteadily, bracing yourself against Kalysea's proud haunches. You <b>do</b> feel satisfied after that – and well-fed. At the very least, you'll be a little less distracted walking with Kalysea... \\n    \\n    Until the next time, of course.\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Followers.de64b10269e483e3defb.js:55288:55294:bc981983e7f5",

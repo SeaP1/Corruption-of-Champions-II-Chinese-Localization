@@ -1,21 +1,17 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.97\\resources\\app\\505.2c7afa8be82a186b0df8.js",
+  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\505.2c7afa8be82a186b0df8.js",
   "sourceSha1": "8b8670e1218eb70bf0d5743b777b40a759ec063f",
   "migratedFrom": [
-    "505.9f98c18ad1ae821e2c6e.js.json"
+    "505.2c7afa8be82a186b0df8.js.json"
   ],
-  "updateGeneratedAt": "2026-09-11T04:35:02.266Z",
+  "updateGeneratedAt": "2026-09-22T10:43:17.064Z",
   "updateMode": "preview",
-  "keptByReason": {
-    "generic_possible_text": 2,
-    "generic_property_text": 2,
-    "generic_dialogue": 2
-  },
+  "keptByReason": {},
   "total": 7877,
-  "shouldTranslate": 3577,
-  "inherited": 3571,
-  "inheritedState": 7554,
-  "newlyAdded": 6,
+  "shouldTranslate": 3556,
+  "inherited": 3554,
+  "inheritedState": 7526,
+  "newlyAdded": 0,
   "byCategory": {
     "unknown": 6024,
     "possible_text": 1515,
@@ -3684,8 +3680,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -11786,8 +11782,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -69374,16 +69370,18 @@
       "id": "505.2c7afa8be82a186b0df8.js:241182:241191:58b07725a4ca",
       "file": "505.2c7afa8be82a186b0df8.js",
       "category": "unknown",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "demonic",
-      "translation": "恶魔般的",
+      "translation": "",
       "start": 241182,
       "end": 241191,
       "line": 1,
       "raw": "\"demonic\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "curatedReason": "disabled_internal_corruption_coin_key",
+      "updateStatus": "inherited_translation",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241211:241222:e0eae4bc0bb3",
@@ -69397,8 +69395,10 @@
       "line": 1,
       "raw": "\"corrupted\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "disabled_internal_corruption_coin_key",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241240:241249:de5ba98bdc71",
@@ -69412,8 +69412,10 @@
       "line": 1,
       "raw": "\"tainted\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "disabled_internal_corruption_coin_key",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241264:241270:afe003f11764",
@@ -69427,8 +69429,10 @@
       "line": 1,
       "raw": "\"pure\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "disabled_internal_corruption_coin_key",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "disabled_code_key",
+      "translationModel": "safety_filter"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241271:241273:da39a3ee5e6b",
@@ -69466,59 +69470,67 @@
       "category": "unknown",
       "shouldTranslate": true,
       "original": "demonic",
-      "translation": "恶魔般的",
+      "translation": "恶魔化",
       "start": 241340,
       "end": 241349,
       "line": 1,
       "raw": "\"demonic\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "curatedReason": "505_visible_corruption_title",
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241369:241380:e0eae4bc0bb3",
       "file": "505.2c7afa8be82a186b0df8.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "corrupted",
-      "translation": "",
+      "translation": "已腐化",
       "start": 241369,
       "end": 241380,
       "line": 1,
       "raw": "\"corrupted\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "505_visible_corruption_title",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241398:241407:de5ba98bdc71",
       "file": "505.2c7afa8be82a186b0df8.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "tainted",
-      "translation": "",
+      "translation": "受污染",
       "start": 241398,
       "end": 241407,
       "line": 1,
       "raw": "\"tainted\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "505_visible_corruption_title",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241422:241428:afe003f11764",
       "file": "505.2c7afa8be82a186b0df8.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "pure",
-      "translation": "",
+      "translation": "纯洁",
       "start": 241422,
       "end": 241428,
       "line": 1,
       "raw": "\"pure\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable"
+      "curatedReason": "505_visible_corruption_title",
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:241429:241431:da39a3ee5e6b",
@@ -72399,8 +72411,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -72417,8 +72429,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -80142,8 +80154,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "505_source_should_translate_safe",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "505_source_should_translate_safe",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -87888,8 +87900,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -87906,8 +87918,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -87924,8 +87936,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -87942,8 +87954,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
-      "curatedReason": "disabled_internal_lookup_key",
       "disabledReason": "inherited_disabled_code_key",
+      "curatedReason": "disabled_internal_lookup_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -105709,10 +105721,11 @@
       "end": 505680,
       "line": 1,
       "raw": "\"bewitching staff\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:505689:505707:13f10c81e551",
@@ -105725,10 +105738,11 @@
       "end": 505707,
       "line": 1,
       "raw": "\"Bewitching Staff\"",
-      "curatedReason": "generic_property_text",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_property_text",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:505740:506321:3f243adc1449",
@@ -105741,10 +105755,11 @@
       "end": 506321,
       "line": 1,
       "raw": "\"A rosewood staff, capped with a treated catalyst gem cut into a heart shape by Jassiran artisans centuries ago. There's a pair of forked wings flanking the catalyst stone, painted to resemble the feathers of some great and colorful bird of the southern oases. According to Lady Evergreen, it belonged to a traveling cleric of Mallach some time ago, and it certainly fits the profile of a passion priestess. Just looking at it makes you think warm, affectionate thoughts.\\n        \\n        <b>Special Effect</b>: When you cast a spell on an ally, that ally is Blessed for a turn.\"",
-      "curatedReason": "generic_dialogue",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_dialogue",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:506728:506741:b0118ca14ed2",
@@ -105757,10 +105772,11 @@
       "end": 506741,
       "line": 1,
       "raw": "\"Icerime Rod\"",
-      "curatedReason": "generic_possible_text",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_possible_text",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:506750:506763:b0118ca14ed2",
@@ -105773,10 +105789,11 @@
       "end": 506763,
       "line": 1,
       "raw": "\"Icerime Rod\"",
-      "curatedReason": "generic_property_text",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_property_text",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:506796:507154:16d530eb0840",
@@ -105789,10 +105806,11 @@
       "end": 507154,
       "line": 1,
       "raw": "\"An ancient druidic catalyst, once employed by the Cult of Abyssal Ice as a rod of office. Half of its is entombed in a perpetual shroud of hoarfrost, sprouting razor-sharp crystals in a crown of ice that could very well carve someone's face open. \\n        \\n        <b>Special Effect</b>: When you land a Critical Hit on an enemy, it is Frigid for a turn.\"",
-      "curatedReason": "generic_dialogue",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_dialogue",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:507478:507496:7a7746336c31",
@@ -106995,7 +107013,7 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Velunite blade",
-      "translation": "维鲁尼特之刃",
+      "translation": "维伦信徒之刃",
       "start": 525314,
       "end": 525330,
       "line": 1,
@@ -111515,7 +111533,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n        The pride and joy of the Order of the Oriflamme — or rather, it was. Casual inspection suggests that it's little more than an elaborate sword hilt with far too much gilding, but upon activation by the wielder a blade of burning, blood-red light bursts forth from the guard, dripping malice and capable of cleaving through metal with ease. Guard and pommel alike gleam with an unnatural, menacing light; the sword itself has undoubtedly developed a taste for blood.\n\n        Holding it, the sensation emanating from the weapon is palpable: the desire for strength, battle and power. Might makes right in this world, and one should not be so squeamish as to acknowledge that truth and exploit it.\n        \n        <b>Special Effect</b>: Allows the use of <i>Sword Soul</i>.\n        ",
-      "translation": "\n        奥里弗拉姆骑士团引以为傲的武器——至少曾经是。乍看之下，它不过是一个装饰华丽的剑柄，上面镀了过多的金饰；但当使用者激活它时，剑护手上会迸发出炽热的血红色光芒，那光芒充满恶意，能够轻易切割金属。剑柄与剑刃都散发着一种不自然、充满威胁的光芒；毫无疑问，这把剑已经对鲜血产生了渴望。\n\n        握在手中时，能明显感受到这种武器所散发出来的力量——那种对力量、战斗与权力的渴望。在这个世界上，力量就是正义。一个人不应该过于懦弱，而应该承认这个事实并加以利用。\n        \n        <b>特效</b>：允许使用<i>剑魂</i>.\n        ",
+      "translation": "\n        圣焰骑士团引以为傲的武器——至少曾经是。乍看之下，它不过是一个装饰华丽的剑柄，上面镀了过多的金饰；但当使用者激活它时，剑护手上会迸发出炽热的血红色光芒，那光芒充满恶意，能够轻易切割金属。剑柄与剑刃都散发着一种不自然、充满威胁的光芒；毫无疑问，这把剑已经对鲜血产生了渴望。\n\n        握在手中时，能明显感受到这种武器所散发出来的力量——那种对力量、战斗与权力的渴望。在这个世界上，力量就是正义。一个人不应该过于懦弱，而应该承认这个事实并加以利用。\n        \n        <b>特效</b>：允许使用<i>剑魂</i>.\n        ",
       "start": 582262,
       "end": 583059,
       "line": 1,
@@ -120158,7 +120176,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641320:641339:69fa31f897a5",
@@ -120175,7 +120194,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641363:641375:ecc97ebc1361",
@@ -120189,10 +120209,11 @@
       "line": 1,
       "raw": "\"Spellpower\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641393:641412:26bc0fe9fc0b",
@@ -120209,7 +120230,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641436:641446:4c103be39eae",
@@ -120223,10 +120245,11 @@
       "line": 1,
       "raw": "\"Sexiness\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641462:641474:4ceef146ef32",
@@ -120240,10 +120263,11 @@
       "line": 1,
       "raw": "\"Temptation\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641492:641502:12a3a4f498b2",
@@ -120257,10 +120281,11 @@
       "line": 1,
       "raw": "\"Accuracy\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641518:641535:02b687084d24",
@@ -120277,7 +120302,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641553:641560:b1fc5d10fc8c",
@@ -120294,7 +120320,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641573:641591:22677b83be6b",
@@ -120311,7 +120338,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641610:641619:5abdfa5930d6",
@@ -120325,10 +120353,11 @@
       "line": 1,
       "raw": "\"Warding\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641634:641649:5b210908a2b7",
@@ -120345,7 +120374,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641665:641672:fe7f55b8bf68",
@@ -120359,10 +120389,11 @@
       "line": 1,
       "raw": "\"Focus\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "disabled_for_505_safety",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641685:641701:dfbe54a1995c",
@@ -120379,7 +120410,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641718:641727:bce8cf990550",
@@ -120393,10 +120425,11 @@
       "line": 1,
       "raw": "\"Evasion\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641742:641755:b90d9f18590c",
@@ -120413,7 +120446,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641770:641785:346696bb639b",
@@ -120430,7 +120464,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641802:641819:ec442cd81d2b",
@@ -120447,7 +120482,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641838:641851:7ca72925c673",
@@ -120464,7 +120500,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641866:641880:63fc851f9d90",
@@ -120481,7 +120518,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641896:641909:7e0c5c5202bf",
@@ -120498,7 +120536,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641924:641944:25a6c5b7533d",
@@ -120515,7 +120554,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641966:641980:7f277c29e1a1",
@@ -120532,7 +120572,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:641996:642010:41c2976eaeb3",
@@ -120549,7 +120590,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642026:642039:efcfbb7cee93",
@@ -120566,7 +120608,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642054:642072:d41fc3a98d07",
@@ -120583,7 +120626,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642092:642108:dfe4d272869b",
@@ -120600,7 +120644,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642126:642139:99350750ad6f",
@@ -120617,7 +120662,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642209:642216:fe7f55b8bf68",
@@ -120631,10 +120677,11 @@
       "line": 1,
       "raw": "\"Focus\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "disabled_for_505_safety",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642217:642224:b1fc5d10fc8c",
@@ -120651,7 +120698,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642225:642231:31d20079cb16",
@@ -120665,10 +120713,11 @@
       "line": 1,
       "raw": "\"Ward\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "disabled_for_505_safety",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642310:642317:b1fc5d10fc8c",
@@ -120685,7 +120734,8 @@
       "translationStatus": "disabled_code_key",
       "translationModel": "safety_filter",
       "curatedReason": "505_source_should_translate_safe",
-      "updateStatus": "inherited_translation"
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642318:642327:5abdfa5930d6",
@@ -120699,10 +120749,11 @@
       "line": 1,
       "raw": "\"Warding\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "source_not_translatable",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "source_not_translatable",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642328:642335:fe7f55b8bf68",
@@ -120716,10 +120767,11 @@
       "line": 1,
       "raw": "\"Focus\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "disabled_for_505_safety",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "disabled_code_key",
-      "translationModel": "safety_filter"
+      "translationModel": "safety_filter",
+      "curatedReason": "disabled_for_505_safety",
+      "disabledReason": "inherited_disabled_code_key",
+      "updateStatus": "disabled_code_key"
     },
     {
       "id": "505.2c7afa8be82a186b0df8.js:642365:642370:26021f1f4700",

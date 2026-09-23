@@ -1,19 +1,17 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.97\\resources\\app\\Content_FireTemple.a0a212d5bb038aef23a1.js",
+  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\Content_FireTemple.a0a212d5bb038aef23a1.js",
   "sourceSha1": "7c6671e1ef518b25b2683236a4d0a4fe02f777d6",
   "migratedFrom": [
-    "Content_FireTemple.fbcacfa3bf630910bfb4.js.json"
+    "Content_FireTemple.a0a212d5bb038aef23a1.js.json"
   ],
-  "updateGeneratedAt": "2026-09-11T04:35:19.861Z",
+  "updateGeneratedAt": "2026-09-22T10:43:18.971Z",
   "updateMode": "preview",
-  "keptByReason": {
-    "generic_dialogue": 1
-  },
+  "keptByReason": {},
   "total": 230,
   "shouldTranslate": 126,
-  "inherited": 125,
-  "inheritedState": 226,
-  "newlyAdded": 1,
+  "inherited": 126,
+  "inheritedState": 230,
+  "newlyAdded": 0,
   "byCategory": {
     "unknown": 50,
     "speaker": 1,
@@ -364,10 +362,10 @@
       "line": 1,
       "raw": "\" is the last thing [pc.combatName] need right now. The way she's moving, it seems like she's focusing her attention on guarding her lair more than anything; a quick feint for the inner doors is all it takes to put her on the back foot enough for [pc.combatName] to make a run for the exit.\\n\\n    The \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:7172:7391:d34cfea74dc5",
@@ -398,10 +396,10 @@
       "line": 1,
       "raw": "\" does not pursue [pc.combatName] past the grounds. That was too close... <b>Better come back prepared for another fight</b> if you intend to explore this fiery temple.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:7579:7590:2907e11b3721",
@@ -477,10 +475,10 @@
       "line": 1,
       "raw": "\"Breed Her\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8683:8685:da39a3ee5e6b",
@@ -508,10 +506,10 @@
       "line": 1,
       "raw": "\"Fuck that Hellhound's pussy like no tomorrow.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8747:8749:da39a3ee5e6b",
@@ -539,10 +537,10 @@
       "line": 1,
       "raw": "\"You need at least a twig, though berries help with breeding too.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8837:8848:2db2deff517d",
@@ -585,10 +583,10 @@
       "line": 1,
       "raw": "\"Giddyup and ride that hellhound's face!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8930:8932:da39a3ee5e6b",
@@ -616,10 +614,10 @@
       "line": 1,
       "raw": "\"You need a pussy!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8968:8977:8bee00367b9b",
@@ -633,10 +631,10 @@
       "line": 1,
       "raw": "\"Nursing\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:8995:8997:da39a3ee5e6b",
@@ -664,10 +662,10 @@
       "line": 1,
       "raw": "\"Suck on this hot dog's [silly|mommy milkers|fat tits].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:9070:9079:3987923ad641",
@@ -675,7 +673,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Patslut",
-      "translation": "帕茨卢特",
+      "translation": "摸头荡妇",
       "start": 9070,
       "end": 9079,
       "line": 1,
@@ -740,10 +738,10 @@
       "line": 1,
       "raw": "'\\n        You shake your head at the defeated pup, sitting in a puddle of her own lusts, and turn your attentions to the temple itself. Time to exp—\\n\\n        \"H-hey!\" she growls, tail flicking more rapidly. \"What are you — don\\'t just ignore me! Th-the victor must claim [pc.hisHer] spoils! It is tradition.\"\\n        \\n        You wave her off. \"Not right now, girl.\"\\n        \\n        [silly|\"BUT MY CUMMIES!!?!\" she huffs indignantly.|\"What rudeness, first to break into my home and now to leave me wanting! Hrmph!\" She huffs, crossing her arms.] When you make no sign of changing your mind, the hellish hound staggers to her feet and turns towards the door. \"Fine then! I will find satiation elsewhere. [silly|Good day, [pc.mf|sir|madam]!|Best you be gone when I\\'ve recovered my strength and return!]\"\\n        \\n        Yeah okay, whatever.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:10136:10142:bc981983e7f5",
@@ -991,10 +989,10 @@
       "line": 1,
       "raw": "\"Fire Gems\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:13217:13219:da39a3ee5e6b",
@@ -1022,10 +1020,10 @@
       "line": 1,
       "raw": "\"While you haven't seen any fire gems about the temple, perhaps you could ask the temple's guardian about them. She might know something that isn't obvious to you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:13465:18541:b9407760ee32",
@@ -1114,10 +1112,10 @@
       "line": 1,
       "raw": "\"\\n        Knowing just what makes this hellhound's heart flutter, you take a confident step forward and grab her around the hips, pushing her back and down into the soft embrace of her bedding. She's breathing hard before her back even impacts the pillows, and her long, black tail curls under a leg as the infernal flames that once seemed to wreathe her visage flicker and fade in sudden submission. She can't resist her beloved mate even for a moment when you act the alpha, can she?\\n\\n        \\\"You... you're my mate. My stud! Sire of my children... I eagerly submit my body to you. Take me however you please. I crave it.\\\"\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19547:19558:b6fb09111442",
@@ -1131,10 +1129,10 @@
       "line": 1,
       "raw": "\"Breed Her\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19577:19579:da39a3ee5e6b",
@@ -1162,10 +1160,10 @@
       "line": 1,
       "raw": "\"Fuck that Hellhound's pussy like no tomorrow.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19641:19643:da39a3ee5e6b",
@@ -1193,10 +1191,10 @@
       "line": 1,
       "raw": "\"You need at least a twig, though berries help with breeding too.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19731:19742:2db2deff517d",
@@ -1239,10 +1237,10 @@
       "line": 1,
       "raw": "\"Giddyup and ride that hellhound's face!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19824:19826:da39a3ee5e6b",
@@ -1270,10 +1268,10 @@
       "line": 1,
       "raw": "\"You need a pussy!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19862:19871:8bee00367b9b",
@@ -1287,10 +1285,10 @@
       "line": 1,
       "raw": "\"Nursing\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19889:19891:da39a3ee5e6b",
@@ -1318,10 +1316,10 @@
       "line": 1,
       "raw": "\"Suck on this hot dog's [silly|mommy milkers|fat tits].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:19969:19978:b0d80004f7db",
@@ -1366,10 +1364,10 @@
       "line": 1,
       "raw": "\"Have the chesty firebrand get on her knees and pleasure your cock with her mouth and breasts.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:20108:20110:da39a3ee5e6b",
@@ -1397,10 +1395,10 @@
       "line": 1,
       "raw": "\"You need a cock to get titfucked.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:20150:20152:da39a3ee5e6b",
@@ -1428,10 +1426,10 @@
       "line": 1,
       "raw": "\"Take the lead and assert dominance over this overgrown puppy. She'll love every second of it.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:20339:20350:fd08fccf67e6",
@@ -1445,10 +1443,10 @@
       "line": 1,
       "raw": "\"Fire Gems\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:20369:20371:da39a3ee5e6b",
@@ -1476,10 +1474,10 @@
       "line": 1,
       "raw": "\"While you haven't seen any fire gems about the temple, perhaps you could ask the temple's guardian about them. She might know something that isn't obvious to you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:20551:20558:7e3520a97331",
@@ -1714,10 +1712,11 @@
       "end": 68545,
       "line": 1,
       "raw": "\"\\n    [var0\\n        |\\\"Oh, you want a taste of these, don't you? A mate thirsting for the milk meant for the pups [pc.mf\\n            |he fathered\\n            |she sired\\n        ]?\\\" Grinning lazily, the hellhound cups her hefty tits in her hands and squeezes lightly; even that gentle pressure is enough to set her mammaries to overflowing. \\\"It's all right, momma's perfectly capable of making enough for all of you; you're doing my the favor by emptying me out, rather than the other way around. Now get your pretty ass over here and let momma do good by you while you soothe her aches, hmm?\\\"\\n        \\n        Watching those huge, milky titties heave and jiggle in the hellhound's hands is hypnotic in its own right, and [var1\\n            |doubly so when they're even bigger and fuller, lying heavily atop the swollen roundness of the she-beast's pregnant belly. You can't help yourself, stumbling\\n            |you can't help yourself. Stumbling\\n        ] forward in a daze, you take the hellhound's hands in your own, feeling her give them a tender squeeze before she guides them to her bosom.\\n        \\n        \\\"Go on, then,\\\" she croons, knowing full well that you're falling deeper and deeper into this honey trap and loving every moment of it. \\\"You should get a good feel of these before tasting them for what they are.\\\"\\n        \\n        With her egging you on like that, you <i>have</i> to. Squeezing down on the hellhound's hefty rack, you wonder as your fingertips meet resistance coming the other way, and then hot milk comes spurting forth from the she-beast's nipples, tepid as if it'd just been warmed over a stove. The hellhound stifles a greedy moan as you knead and roll, but it's too late: you know her for the milk-slut [pc.hasCock\\n            |your [pc.cockNoun]\\n            |knocking her up\\n        ] has turned her into.\\n        \\n        As warmth coats your wrists and drips to the floor, the hellhound's sensitive, overstuffed tits flow across your grasp in delightful warm tingles. The rich, slightly pungent cream within continues to ooze forth at the slightest provocation, reminding you just how absolutely overstuffed her [silly\\n            |mommy \\n        ]milkers are and how they need to be put to their intended task of feeding pups lest they just leak and spray all over the place like she's doing now. Maybe if you give her more pups to feed, consumption will eventually catch up to production? Or maybe this lusty bitch will just become more and more of a milk-slut... \\n        \\n        \\\"G-good, good,\\\" the hellhound gasps, still trying to sound as if she's in control here even though she's obviously getting into it as much as you are. \\\"Make momma feel like all this was worth it.\\\"\\n        \\n        Perhaps you ought to have come up with a clever answer to that, but her swollen dugs command all of your attention. Even though she's already leaking and oozing all over the place from your diligent milking, you can smell the sweet promise of yet more rich cream backed up behind those diamond-hard nipples and dark, bulging areolae. That glorious fountain of hot, steaming milk wants to be free, to spurt out all over the temple ground, to flow and gush and feed as many hellhound pups as you can put into that belly of hers. [var1\\n            |She'll never have to worry about running dry — once that pup pops out of her bulging womb, you'll fill her right up again to make sure that she stays milky forever.\\n            |In fact, that does beg the question: why isn't there one in her already? You've been keeping on top of your duties as a hellhound's mate, right?\\n        ]\\n        \\n        Right?\\n        |[var1\\n            |\\\"So, you want a first taste of my tits before our pup does? I guess it can't be helped when you're such a greedy creature, dear mate of mine,\\\" the hellhound chuckles. Grinning lazily, the she-beast cups her hefty tits in her hands and squeezes lightly; even that gentle pressure is enough to set her mammaries to overflowing. \\\"Ohhh, they feel so heavy and full, and they ache and tingle so much. Some nights it drives me crazy no matter how much I squeeze and grope them.[silly\\n                |\\n                \\n                You did this to me! Take responsibility!\\n            ]\\\"\\n            \\n            Watching those huge, milky titties heave and jiggle in the hellhound's hands is hypnotic in its own right, and doubly so when they're even bigger and fuller, lying heavily atop the swollen roundness of the she-beast's pregnant belly. All that roundness with those milk-swollen tits hanging low and heavy, the full, curvaceous zenith lying atop yet more proof of her maternal nature — all it would take would be the slightest caress from you to send ripples of pleasure careening through the she-beasts hormonal, fuck-hungry body. You can't help yourself, stumbling forward in a daze, you take the hellhound's hands in your own, feeling her give them a tender squeeze before she guides them to her bosom.\\n            \\n            \\\"Go on, then,\\\" she croons, knowing full well that you're falling deeper and deeper into this honey trap and loving every moment of it. Grinning, she pushes on her tits, making them seem even larger when viewed from where you are. \\\"You should get a good feel of these before tasting them for what they are.\\\"\\n            \\n            With her egging you on like that, you <i>have</i> to. Squeezing down on the hellhound's hefty rack, you wonder as your fingertips meet resistance coming the other way, and then hot milk comes spurting forth from the she-beast's nipples, tepid as if it'd just been warmed over a stove. The hellhound stifles a greedy moan as you knead and roll, but it's too late: you know her for the milk-slut [pc.hasCock\\n                |your [pc.cockNoun]\\n                |knocking her up\\n            ] has turned her into.\\n            \\n            As warmth coats your wrists and drips to the floor, the hellhound's sensitive, overstuffed tits flow across your grasp in delightful warm tingles. The rich, slightly pungent cream within continues to ooze forth at the slightest provocation, reminding you just how absolutely overstuffed her [silly\\n                |mommy \\n            ]milkers are and how they need to be put to their intended task of feeding pups lest they just leak and spray all over the place like she's doing now. Gods, the idea of this powerful she-beast becoming an equally lusty bitch as she becomes more and more of a milk-slut...\\n            \\n            \\\"Fuck,\\\" the hellhound groans, her breath coming hot and heavy through her teeth as her lungs heave. \\\"Fuck, why does this feel so <b>good</b>? Why does everything feel so sensitive... what have you done to me, you ass? Why does being pregnant have to feel so <b>good</b>?\\\"\\n            \\n            She's trying to sound as if she's still in control here, but the horny she-beast is clearly starting to crack, her body making her experience sensations she's never quite encountered before. Your only answer to that is to redouble your efforts — even though she's already leaking and oozing all over the place from your diligent milking, you can smell the sweet promise of yet more rich cream backed up behind those diamond-hard nipples and dark, bulging areolae. That glorious fountain of hot, steaming milk wants to be free, to spurt out all over the temple ground, to flow and gush and feed as many hellhound pups as you can put into that belly of hers. She'll never have to worry about running dry — once that pup pops out of her bulging womb, you'll fill her right up again to make sure that she stays milky forever.\\n            \\n            Panting and growling, the hellhound's large hands have already folded over yours, squeezing down hard with the clear intent of not letting you go anytime soon.\\n            |\\\"Oh, so you want some of these, huh? Momma's willing to entertain a [pc.mascFem\\n                |handsome\\n                |cute\\n            ] thing like you if you're willing to make her feel good in return, ha.\\\" Grinning lazily, the she-beast cups her hefty, teardrop-shaped tits in her hands and starts bouncing them up and down; she makes sure you get a good look at how they spill over the edges of her palms, then presses them together to show you just how deep her cleavage is. \\\"I can't blame you for wanting some of <b>these</b> — I do, too. They're pretty great, aren't they?\\\"\\n            \\n            That's a massive understatement — it's all you can do to stare transfixed as the hellhound lets her tits fall from her hands, each teardrop-shaped mammary bouncing lightly before settling back into place. A grin on her face, the she-beast pads towards you and puts herself close enough for you to feel the heat radiating off her muscled body before arching her back and pushing her rack straight into your face. All that roundness with those milk-swollen tits hanging low and heavy, the full, curvaceous zenith of each one testament to the hormonal mess you've turned her into. Those dark nipples are barely inches from your [pc.heightRange 66\\n                |chin\\n                |lips\\n            ] at this point, their presence palpable even though she hasn't so much as touched you yet.\\n            \\n            \\\"Go on, then,\\\" she croons, knowing full well that you're falling deeper and deeper into this honey trap and loving every moment of it. Grinning, she flexes her chest muscles, making her tits bounce slightly without even using her hands. \\\"You should get a good feel of these before tasting them for what they are.\\\"\\n            \\n            Now that's an invitation if you ever heard one. The hellhound coos as your fingers touch the supple, springy surface of her mammaries, her hands folding about yours to gently guide your fingers into position. No sooner have you started squeezing down that the she-beast lets out a little gasp, the initial resistance giving way into pliancy as you curl your fingers in and out, over and over again.\\n            \\n            \\\"There's no need to be shy,\\\" she snickers. \\\"Give it to momma good and hard — or is this all you're capable of?\\\"\\n            \\n            She doesn't give you a choice in the matter, not with her fingers pressing atop your own and pushing down with eager lust; her tits squeeze and roll into your hands, hard nipples pressing into the heels of your palms as she directs you to grope her with the combined strength of your fingers. The hellhound relishes in manhandling you as she pleases, gentle strength with the threat of it becoming much more forceful if need be. Not that she needs to press home the point, not with luxuriant heat engulfing your fingertips, rushing down your wrists and seeping into the rest of your body; she even makes a show of flexing her underlying chest muscles as you continue to knead and grope away, jiggling her tits and pushing them even further into your hands as she reminds you of her power.\\n            \\n            \\\"Damn,\\\" the hellhound grunts, her breath coming hot and heavy and teeth bared into a grin as her lungs heave. \\\"You've got some fingers on you — if the temple weren't off-limits to your kind, I'd be tempted to keep you around more. Oh no, don't stop, this is pretty great.\\\"\\n            \\n            She doesn't need to tell you that for you to figure it out... \\n        ]\\n    ]\\n    \\n    \\\"Ah, gods, I think I need to find somewhere to sit down before my legs give out,\\\" the hellhound grunts. \\\"Guess I underestimated you, didn't I? Come along now.\\\"\\n    \\n    She doesn't need to tell you twice — with your hands still firmly attached to those [silly\\n        |mommy \\n    ]milkers of hers, the she-beast finds a bit of fallen rubble and makes herself comfortable atop it, tail wagging all the while. You're forced to kneel to keep your hands on level with her rack,[var1\\n        | her big pregnant belly jutting out across her lap and at you,\\n    ] and she finally allows her sighs and grunts to turn into openly whorish gasps and moans as you continue to grope her, [var2\\n        |hot hellhound milk pouring all over her belly and lap as she gives in to maternal pleasure.\\n        |the true sensitivity of her tits finally getting to her. It really is a lot more satisfying when someone else does it for you, isn't it?\\n    ] Sliding your hands to the sides of the hellhound's tits, you push them in from the sides so that her nipples are together, and then give both of the pleasure-buds a little nibble to begin with. The she-beast trembles and groans, laying her hands on the back of your head, but doesn't force the issue just yet; you turn your head to the side and rub your cheek all over her damp nipples, luxuriating in the burning heat of her bosom. Back and forth, back and forth you go, letting your lips brush against her teats and your breath cool them when you switch from one cheek to the other; the fact that her tits are hefty and pliant enough for her nipples to be pulled together like this is a wonder in and of itself.\\n    \\n    The horny she-beast before you can't hold herself back any longer, locking her fingers behind your head and forcing your face straight against her cleavage. [var1\\n        |Your chin presses firmly into the hellhound's big pregnant belly, and as the huge, engorged titties flatten between your bodies a veritable geyser of hellhound cream comes rushing out, striking your tongue in a warm, creamy jet. It's not just your lips and tongue at work — reaching up with your hands, you take a gentle hold of the base of both her breasts and knead gently, massaging away the aches and pains of being so absolutely <i>full</i>. With the monstrous she-beast before in a family way, her milk is especially rich and nourishing with the hormonal mess her body's become; you intend to lovingly abuse her weakness for all it's worth while she's carrying your pups.\\n        \\n        Hot damn. The hellhound's areolae were already swollen before, but with the loving stimulation of your tongue and lips they've become absolutely puffy, pushing out against you as you suckle furiously; the she-beast throws her head back and moans wordlessly, trying her best to grab you with her knees. Not that there's much chance of that with her big round belly taking up just about all of her lap, but it doesn't stop an aggressive beast like her from doing what her instincts want, anyway.\\n        \\n        As for the milk, there's just so much of it to the point where it's drink or drown. One tit should have been enough for the constantly ravenous creature a hellhound pup is, but <b>two</b> pressed into your mouth at the same time is more than even you can stomach. Piping-hot cream, warm as if it was fresh off the stove, explodes from the hellhound's overfull tits, down your gullet and into your stomach; you can't help but want more of this thick, wonderful stuff that's no doubt packed with all the energy your pups will need to grow as big and strong as their momma. \\n        [var3]\\n        With her body egging you on to this fateful end, you've no choice but to relinquish control to your instincts. Sucking at the hellhound's engorged tits, you pull at both her fat nipples as if your life depended on it, washing the warm, sensitive nub with repeated passes of your tongue mixed with spit and milk alike; less than half of the milk bursting out of her actually enters your stomach, while the rest simply overflows to run down your chin and across the taut dome of her big pregnant belly. The more milk you spill all over the place, the more the hellhound's moans and muffled curses turn into outright animalistic yips and snarls, her aggressive nature taking hold as pleasure and maternal fugue alike conspire to revert her into a mindless milky slut. The flow is endless; it feels like your efforts are only stimulating the powerful she-beast to make more milk on the spot, more than what you just drained from her.\\n        |[var0\\n            |Your lips press firmly against the hellhound's dark areolae, breastflesh rolling around your cheeks and filling them with maternal warmth; as the huge, engorged titties flatten between your bodies a veritable geyser of hellhound cream comes rushing out, striking your tongue in a warm, creamy jet. It's not just your lips and tongue at work — reaching up with your hands, you take a gentle hold of the base of both her breasts and knead gently, massaging away the aches and pains of being so absolutely <i>full</i>. With the monstrous she-beast before you all heavy and laden with wobbling cargo, her milk is especially rich and nourishing with the hormonal mess her body's become; you intend to lovingly abuse her weakness for all it's worth while she's mothering your pups. It's no less intense than it was when she was pregnant, just in a different manner... and there's no reason she can't get knocked up again with how aggressive her libido's become.\\n            \\n            Hot damn. The hellhound's areolae were already swollen before, but with the loving stimulation of your tongue and lips they've become absolutely puffy, pushing out against you as you suckle furiously; the she-beast throws her head back and moans wordlessly, grabbing you with her knees and crushing you between her legs. An aggressive beast like her from doing what her instincts want, holding you firmly in place while you service her needs — is there anything better to be had?\\n            \\n            As for the milk, there's just so much of it to the point where it's drink or drown. One tit should have been enough for the constantly ravenous creature a hellhound pup is, but <b>two</b> pressed into your mouth at the same time is more than even you can stomach. Piping-hot cream, warm as if it was fresh off the stove, explodes from the hellhound's overfull tits, down your gullet and into your stomach; you can't help but want more of this thick, wonderful stuff that's no doubt packed with all the energy your pups will need to grow as big and strong as their momma. \\n            [var3]\\n            With her body egging you on to this fateful end, you've no choice but to relinquish control to your instincts. Sucking at the hellhound's engorged tits, you pull at both her fat nipples as if your life depended on it, washing the warm, sensitive nub with repeated passes of your tongue mixed with spit and milk alike; less than half of the milk bursting out of her actually enters your stomach, while the rest simply overflows to run down your chin and across her muscular midriff and powerful thighs. The more milk you spill all over the place, the more the hellhound's moans and muffled curses turn into outright animalistic yips and snarls, her aggressive nature taking hold as pleasure and maternal fugue alike conspire to revert her into a mindless milky slut. The flow is endless; it feels like your efforts are only stimulating the powerful she-beast to make more milk on the spot, more than what you just drained from her.\\n            |Your lips press firmly against the hellhound's dark areolae, breastflesh rolling around your cheeks and filling them with maternal warmth; their firm springiness pushes back against you as you nuzzle appreciatively into the valley and hills. You're content to kiss and tickle her bulging nipples with the tip of your tongue, to build up the pressure and aggression within this volatile she-beast until she blows, and judging by the grunts and growls that the hellhound is using to try and disguise her pleasure, it's obvious that she isn't used to holding in her lusts. No, it's not just your lips and tongue at work — reaching up with your hands, you take a gentle hold of the base of both her breasts and knead gently. Titflesh bunches up above your grasp and swells as you push it forward towards your lips; even though she's not producing, you milk her well and good anyway.\\n            \\n            And she reacts, gods, does she react. The way she can make that hefty rack of hers jiggle simply by flexing the underlying muscle, the way you can <i>feel</i> it as if she were taking a swing at your cheeks — oh, while you knew the hellhound was horny and an all-round aggressive libido, you didn't know that she was so particularly weak in her chest. Others might have been content servicing one nipple at a time, but not you, no. You want <i>both</i> all at once, and it's not like the shuddering she-beast in front of you is going to accept anything less.\\n            \\n            And look. The hellhound's areolae were already swollen before, but with the loving stimulation of your tongue and lips they've become absolutely puffy, pushing out against you as you suckle furiously; the she-beast throws her head back and moans wordlessly, grabbing you with her knees and crushing you between her legs. An aggressive beast like her from doing what her instincts want, holding you firmly in place while you service her needs — is there anything better to be had?\\n            [var3]\\n            With her body egging you on to this fateful end, you've no choice but to relinquish control to your instincts. Sucking at the hellhound's engorged tits, you pull at both her fat nipples as if your life depended on it, washing the warm, sensitive nub with repeated passes of your tongue mixed with spit and milk alike. She's holding you so close that you might just well suffocate in her cleavage, but given the way things are both of you hardly care at the moment. Squeezing and pushing, licking and nibbling, you explore the she-beast's teardrop-shaped tits, finding out for yourself — and to her surprise, too — just how you can make a hellhound whine and shake from pleasure as you stimulate spots she didn't even know she had.\\n        ]\\n    ]\\n    \\n    \\\"Fuck yeeees,\\\" the hellhound half-groans, half-growls. She's pushing your face into her cleavage with all her might, not caring if you suffocate there and then in your bosom; to be perfectly fair, you feel the same way right now. \\\"Don't stop, don't stop — \\\"\\n    \\n    At this juncture, you couldn't even if you wanted to, and neither of you have any intention of resisting the tide that's about to sweep the both of you away. Pushing down hard with your lips, you [var2\\n        |send a heavy spatter of thick cream flying in all directions as you gleefully give her the boobgasm she deserves for so faithfully conceiving and raising your pups. Each shake, each wobble of the slutty [silly\\n            |pupper's\\n            |bitch's\\n        ] maternal rack pushes back against your cheeks, losing neither weight nor turgidity no matter how much hot cream you drain from her. The more greedily you drink, the more pleasure she receives, and the more eagerly her powerful body churns out more milk for the making. Hellhound pups must really be ravenous for her body to become such a blatant icon of indiscriminate lactation... that, or she's just a milk-slut through and through.\\n        \\n        But even this isn't enough for the she-bitch. With a throaty growl, the hellhound surges forward and leans her weight on you, pressing her rack even more heavily against your lips. Her eyes only hold animalistic vigor at this point, her fingers wrapped about your head so tightly that she might very well just crush your skull without realizing her own strength. It's all you can do to support her prodigious weight, keeping it off you in the face of suffocation and head trauma like; of course, that means pressing against her tit, and <i>that</i> means even more milk...\\n        \\n        To say that this feels great is an understatement. So much milk's coming out, filling your mouth, turning your [pc.skinFurScalesNoun] warm and sopping wet; on her part, the hellhound repeatedly thrusts her chest back and forth, alternating between pulling away and smushing her chest into your face. It's a small mercy that allows you to breathe in all of this, but judging by the growling moans rising from the she-beast's throat she really, <i>really</i> likes having her tits tugged on... \\n        |make a deep dent in the pliable curves of the hellhound's tits as you gleefully give her the boobgasm that she needs, that she deserves. Each shake, each wobble of the slutty [silly\\n            |pupper's\\n            |bitch's\\n        ] rack pushes back against your cheeks, the weight and turgidity all too palpable in this single moment of release and glory. The more powerfully you suck on her heaving teats, the more pleasure she receives, and the more eagerly her powerful body presses down on you, craving the taste of what she's unable to create for herself. Her body tightens, her muscle tense, and even as you lick, suck and nibble at the she-beast's full rack you get the sensation that her body's being wound up and ready to pounce.\\n        \\n        But as much as you're giving her, this isn't enough for the she-bitch. With a throaty growl, the hellhound surges forward and leans her weight on you, pressing her rack even more heavily against your lips. Her eyes only hold animalistic vigor at this point, her fingers wrapped about your head so tightly that she might very well just crush your skull without realizing her own strength. It's all you can do to support her prodigious weight, keeping it off you in the face of suffocation and head trauma like; of course, that means pressing against her tit, and <i>that</i> means drowning in ever more boob.\\n        \\n        What a way to go... to say that this feels great is an understatement. It's not just her chest and the way it's rolling about the whole of your face, it's the way her knees and thighs are pressing down on you like a vise, it's the grunting, growling and panting that the hellhound's constantly making, her faculties lost to pleasure. She doesn't behave like this even when otherwise fucking — perhaps her [silly\\n            |mommy milkers\\n            |tits\\n        ] really are <i>that</i> sensitive... \\n        \\n        Your musings are cut short by the hellhound repeatedly thrusting her chest back and forth, alternating between pulling away and smushing her chest into your face. It's a small mercy that allows you to breathe in all of this, but judging by the growling moans rising from the she-beast's throat she really, <i>really</i> likes having her tits tugged on... \\n    ]\\n    \\n    But at long last, it — or rather, she — comes. The only warning you have is a sudden clenching of the hellhound's knees, and then the she-beast quakes and shudders as she stains her seat and thighs with her release. Teeth gritted, fingers locked about your head, she relies on you to support her as she bows her head and her eyes cross. You can tell that she's desperately trying not to lose control in front of you, but it's a losing battle that her heart isn't <i>really</i> in to begin with. You're already doing all you can to try and push her over the edge into panting, moaning, <i>animal</i> release, and you see just how close you come to success — her teeth still gritted, the hellhound throws her head back and her bosom [var1\\n        |and big pregnant belly alike quake\\n        |quakes\\n    ] even as you feel her insides clench and flex, the ripples and convulsions palpable through her skin. Gods, she feels quite literally steaming hot as her climax reaches a zenith...\\n    \\n    But eventually, she has to wind down. As powerful as she is, the hellhound eventually pulls herself away from you, your lips detaching from the wet, smooth surface of her tits with a wet noise. Even so, the way they heave up and down[var2\\n        |, still dribbling hot hellhound cream,\\n    ] is nothing short of hypnotic. Her burning gaze slowly steadies itself, and she tries to look as if every part of this escapade had been planned by her from the outset.\\n    \\n    It doesn't work.\\n    \\n    \\\"D-don't stare at me with your mouth hanging open like that!\\\" the she-beast mumbles, doing her best to sound stern. \\\"If... if you keep on acting that way, I'll have no choice but to give in and have another go, and that might kill you!\\\"\\n    \\n    Maybe that's exactly what you want.\\n    \\n    The hellhound scowls, then her expression finally softens. Making a little sated sound in the back of her throat, she rolls her shoulders and finally loosens her grip on you. \\\"Well then, I'm not giving it to you, since I still have use for you[pc.hasCock\\n        |... or if you're feeling cynical, your fuck-stick\\n    ]. That'll do for now... that'll do.\\\"\\n    \"",
-      "curatedReason": "generic_dialogue",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "generic_dialogue",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:68724:68734:a1a24748f929",
@@ -1730,7 +1729,8 @@
       "end": 68734,
       "line": 1,
       "raw": "\"kariSucc\"",
-      "updateStatus": "disabled_by_update_filter"
+      "inheritedMatchMode": "occurrence_original_category",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:68743:68748:ea3a2c23f389",
@@ -1743,7 +1743,8 @@
       "end": 68748,
       "line": 1,
       "raw": "\"65%\"",
-      "updateStatus": "disabled_by_update_filter"
+      "inheritedMatchMode": "occurrence_original_category",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:68755:68768:fd9e419804c1",
@@ -1756,7 +1757,8 @@
       "end": 68768,
       "line": 1,
       "raw": "\"fit-content\"",
-      "updateStatus": "disabled_by_update_filter"
+      "inheritedMatchMode": "occurrence_original_category",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:68814:68820:bc981983e7f5",
@@ -2188,10 +2190,10 @@
       "line": 1,
       "raw": "\"\\n    If she doesn't mind waiting a moment, you've got business in the temple this time and actually would like to ask for her help.\\n    \\n    The fuck-hungry hellhound sniffs derisively. \\\"Oh, really? I guess it might be interesting; you'd better make it quick before I decide I don't care for your silly games, though.\\\"\\n    \\n    You quickly explain your need for three kinds of fire gems, and that you were hoping to see if there were any left in a place as dedicated to elemental flame as this. The hellhound cocks her head and listens to all of this with feigned disinterest, although it's quite obvious from her wagging tail that she's obviously quite excited about the prospect.\\n    \\n    \\\"Oh, you want some of the gewgaws that've been gathering dust in the treasury? I can certainly part with some of them, if that's what you want.\\\" She grins toothily at you. \\\"The greater treasures are off-limits even to me, but I was always allowed a couple toys to play with as I pleased.\\\"\\n    \\n    ...The temple has a treasury? You never noticed one while you were here.\\n    \\n    \\\"It's <b>very</b> well-hidden,\\\" the hellhound chuckles, clearly very smug with herself at this turn of events. She's realized she's holding the chips here in this bargain, and is going to milk her advantage for all it's worth. \\\"Only those who actually serve the terrestrial flame can enter the treasury... and these days, that's just me.\\\"\\n    \\n    All right, and what does she want in exchange? She doesn't have to deny it, you can guess at the words even before they're even out of her mouth.\\n    \\n    \\\"Well, you guessed as much. [var0\\n        |I can smell the virility pouring off your crotch even from here — submit to me and help me scratch this itch that's been bothering me all day. If you're lucky, I may even allow you to put a pup inside of me!\\\" The hellhound's smile widens, and her eyes gleam even as she unthinkingly rubs her lower belly in anticipation. \\\"That rod of yours might be just the thing I need to put out this heat of mine, and it'd feel so much better if you were under me \\n        |Why don't you take responsibility and submit to your duties, help me scratch this itch that's been bothering me all day. To think I was silly enough to imagine putting out my heat would be any kind of relief — if anything, it's only made me <b>more</b> horny than before.\\\" Smirking, the hellhound blows you a kiss while she rubs her swollen belly with no small amount of self-satisfaction. \\\"[pc.hasCock\\n            |I just need a good prick like the one that knocked me up to get to the places my fingers can't reach — it's just so <b>frustrating</b>\\n            |You may have lost the prick, but there're other ways in which you can make it up to me\\n        ]\\n        |I've been horny and in heat all week now, and there's only so much that one woman can do for herself. You can get at the itches I can't quite reach myself, if nothing else.\\\"\\n        \\n        Like on her back?\\n        \\n        \\\"Ha ha, very funny\\n    ]. Well, what do you say? You'd have to be a fool to say no to such a great deal. It's a bit of a fantasy, to be sure — a devilish rogue of a temple robber comes in expecting treasure and winds up utterly ravished by its guardian, but as fantasies go I don't think it's a bad one.\\\"\\n    \\n    You have a moment to decide — the hellhound clearly isn't expecting you to deny her. On one hand, there's absolutely no chance you're going to find this supposed temple treasury without her cooperation. On the other hand, you're going to have to throw away what dignity you have, submit to the hellhound and judging by the way she's behaving, get absolutely and thoroughly pounded into the ground. <b>It doesn't look like you're going to be able to walk back your decision here, so carefully decide how much your dignity is worth.</b>\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:118676:118684:2dacf6595984",
@@ -2220,10 +2222,10 @@
       "line": 1,
       "raw": "\"\\n        The hellhound's smugness only grows as she realizes her gambit's worked. Sauntering up to you, she scratches you under the chin in the most derisive manner she can manage.\\n        \\n        \\\"There, there. Momma's making a lot of sense, isn't she? Good thing you're capable of listening to reason — [var0\\n            |I <b>knew</b> you'd be a good mate. One can only hope that it passes down to this pup inside of me\\n            |it would've ruined the fantasy to get all hot and bothered over it\\n        ]. Once we're done here, I'll go get you your gewgaws, since they make you so happy.\\n        \\n        \\\"Now, about helping me scratch that itch...\\\"\\n        \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:119496:119502:bc981983e7f5",
@@ -2324,10 +2326,10 @@
       "line": 1,
       "raw": "\"\\n        As tempting as it might be to do things the easy way, this really smacks a little too much of prostitution for your liking. Not that it's necessarily intrinsically a bad thing, but when it comes to this lady... she's big and strong, she ought to be taking what she desires instead of bargaining for them. \\n        \\n        The hellhound huffs derisively. \\\"Oh, a whole lot of pretty words for someone who thinks [pc.himHer]self all so high and mighty. Now you've gone and ruined the fantasy — you want me to take my due? I guess I'll just have to oblige!\\\"\\n        \\n        The tension in the air snaps as the hellhound bunches her powerful thighs and leaps straight for you, [var0\\n            |surprisingly agile despite her gravid form\\n            |her fuck-hunger getting the better of her\\n        ].\\n        \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:120645:120653:9dfa9093f10b",
@@ -2398,10 +2400,10 @@
       "line": 1,
       "raw": "\"No, your dignity's too valuable to be giving into the hellhound's whims.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:120843:126500:46ddfaff3eb6",
@@ -2551,10 +2553,10 @@
       "line": 1,
       "raw": "\"\\n        The hellhound's face crumples as if you'd just stuck a lemon straight into the she-beast's maw. \\\"W-what? Why? Have you gotten bored of my body now that you've already put pups inside of me?\\\"\\n        \\n        No, that's not it, but you simply don't find her offer up to snuff for what she's asking.\\n        \\n        She huffs and folds her arms. \\\"Oh, not enough, you say? Fine, have it your way; I certainly aren't about to force you if you're not up to the task. You'll come back to momma anyway... but as far as I'm concerned, no deal is no deal. Don't come back crying to me later when [silly\\n            |you discover that farming up a bunch of random drops is too hard on you\\n            |you come to regret it\\n        ].\\\"\\n        \\n        Turning tail on you, the hellhound pads off, very deliberately giving you a good look of her wide booty beneath that swinging tail of hers. Well, you'll just have to find another way to get those fire gems, but at least you don't feel like a prostitute today.\\n        \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:128902:128908:bc981983e7f5",
@@ -2625,10 +2627,10 @@
       "line": 1,
       "raw": "\"No, your dignity's too valuable to be giving into the hellhound's whims.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:129093:130911:33f15eb77f3a",
@@ -2776,10 +2778,10 @@
       "line": 1,
       "raw": "\"Return to the Frostwood.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:132941:132949:237d114fd9b1",
@@ -2852,10 +2854,10 @@
       "line": 1,
       "raw": "\"\\n        [var1\\n            |The altar is covered in runes that glow like embers, which seem to form a kind of spell — a ritual of summoning and binding, related to the black flame. It's incomplete, but perhaps if you add these rites to your own flame-spirit summoning spell...\\n            |The altar is covered in runes that glow like embers, [var0\\n                |which seem to form a kind of spell — a ritual of summoning and binding, related to the black flame. But it's incomplete; perhaps if you yourself could summon flame spirits, you could make some sense of it.\\n                |but they don't make any particular sense to you. If you knew some measure of fire magic... perhaps this place is used for some sort of summoning?\\n            ]\\n        ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:134371:134385:d56983d4470c",
@@ -2942,10 +2944,10 @@
       "line": 1,
       "raw": "\"\\n        There's a set of what looks to be dusty clothing off to the side here. Perhaps the raiments of the priests that once commanded the Terrestrial Fire?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:134886:134896:d31d367bc5c7",
@@ -3017,10 +3019,10 @@
       "line": 1,
       "raw": "'\\n    [flags.FIRE_DOOR\\n        |You approach the towering obsidian statue, wandering your eyes across the carven salamander\\'s buffed frame. She\\'s idealized even by the standards of that draconic race, goddess-like in her proportions and titanic in her musculature. She holds out a bronze offering bowl in one hand, down and out so it\\'s about on your level, while her blazing staff looms high above you to illuminate the chamber.\\n    \\n        You\\'ve already given the statue what it wants, and the door to the temple\\'s inner sanctum remains open for you to progress freely. And yet the bronze bowl in her hand remains available, and the glow within her tail never wanes. If you\\'d like to make another offering – or if you just want to offload some junk to its fire – then there\\'s nothing stopping you.\\n        |You approach the towering obsidian statue, wandering your eyes across the carven salamander\\'s buffed frame. She\\'s idealized even by the standards of that draconic race, goddess-like in her proportions and titanic in her musculature. She holds out a bronze offering bowl in one hand, down and out so it\\'s about on your level, while her blazing staff looms high above you to illuminate the chamber. \\n\\n        Now that you\\'re a little closer, you can see an inscription chiseled into the base under her clawed soles. There\\'s three lines, one each in Belharan, Boer\\'alvarin, and Draconic: \"Give unto me that ice which never melts, and behold the ungodly power of Terrestrial Fire.\"\\n        \\n        [party.has cait\\n            |\"Hmm!\" Cait purrs, brushing the dust off the statue\\'s legs. \"She\\'s pretty... and pretty huge. Those muscles make [brint.name] look tiny!\"\\n            \\n            [party.has brint brienne\\n                |\"Hey...\" your minotaur huffs.\\n            ]\\n            \\n            Cait taps her chin, looking the statue up and down. \"Tsk, well, it\\'s clearly an offering bowl of some kind. \\'Ice that never melts,\\' huh? Must want some kind of magic. Maybe an alchemical component? I\\'m more worried about this ungodly power, though. I\\'ve read that deep beneath the earth there\\'s some kind of primordial abyss, where all the elements run wild like the forges of creation; maybe this Terrestrial Fire is linked to it.\"\\n        ]\\n        \\n        [party.has ryn\\n            |\"It says the same thing in alvarin as in Belharan,\" Ryn notes, leaning in to read the inscription. \"What could it mean...?\"\\n            \\n            [party.has arona\\n                |Your big green brawler comes up and claps Etheryn on the ass, making the little elf nearly jump out of her skin in surprise. \"Your cum\\'s like ice innit? Ha, bet if you nut in the bowl that\\'ll get the door to open. Pervy druids probably circle-jerked into it and-\"\\n                \\n                \"No!\" Ryn squirms. \"Th-that\\'s not how druidic magic works!\"\\n                \\n                \"How do you know if we don\\'t try?\" Arona grins, gesturing at her crotch. \"C\\'moooooon.\"\\n                \\n                \"[etheryn.lnhLibido\\n                    |N-nooo thank you.\"\\n                    |Uhhh I don\\'t think that\\'s really necessary....\"\\n                    |M-maybe later, Arona,\" Ryn says with a wink. \"Let\\'s actually try and get this open before <b>I</b> get opened up.\"\\n                ]\\n            ]\\n        ]\\n        \\n        [party.has arona\\n            |Arona looks the statue up and down, hands on her hips. \"Damn, I need to work out more. Lookit them biceps, gods damn.\"\\n        ]\\n        \\n        [party.has brint\\n            |\"Strong woman,\" Brint acknowledges, nodding at the obsidian \\'mander. \"If she was real, I\\'d have loved to try wrestling with her!\"\\n            \\n            You\\'re sure that\\'s not all...\\n        ]\\n        \\n        [party.has brienne\\n            |\"Strong woman,\" Brienne acknowledges, nodding at the obsidian \\'mander. \"Reminds me of the old days, with muscles that big. Maybe I ought to put on a little more beef again...\"\\n        ]\\n    ]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:139128:139140:79070184f805",
@@ -3064,10 +3066,10 @@
       "line": 1,
       "raw": "\"You are attempting to sacrifice a unique item with the unique item drop confirmation option enabled. Press the <b>[Confirm]</b> button once more to confirm the sacrifice of the unique item:\\n- \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:139589:139591:da39a3ee5e6b",
