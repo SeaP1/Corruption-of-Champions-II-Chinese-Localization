@@ -30,7 +30,9 @@
       "Hethia": "赫希娅",
       "Isadora": "伊莎多拉",
       "Kasyrra": "卡希拉",
-      "Kinu": "小娟"
+      "Kinu": "小娟",
+      "Dal": "达尔",
+      "Izzy": "伊兹"
     },
     "Followers & Character Items": {
       "Alante": "阿兰特",
@@ -305,7 +307,19 @@
       "Miko": "米可",
       "Ramien": "拉米恩",
       "Sinead": "西妮德",
-      "Yolihuali": "约利哈瓦利"
+      "Yolihuali": "约利哈瓦利",
+      "Telfir": "泰尔菲尔",
+      "Evergreen": "常青女士",
+      "Caera": "凯拉",
+      "Cass": "卡丝",
+      "Gia": "吉娅",
+      "Sandre": "桑德蕾",
+      "Thalia": "塔莉娅",
+      "Ylvy": "伊尔薇",
+      "Tamarin": "塔玛琳德",
+      "Tammy": "塔米",
+      "Rags": "拉格斯",
+      "Kari": "卡莉"
     },
     "Roaming Encounters": {
       "Avanai Rider": "阿瓦奈骑手",
@@ -560,7 +574,10 @@
       "Oracle Drider": "蛛化精灵神谕者",
       "Stone Titan": "石之泰坦",
       "Reggie": "雷吉",
-      "Harpy Wingleader": "鹰身女妖翼队长"
+      "Harpy Wingleader": "鹰身女妖翼队长",
+      "Bloodfavor": "血恩",
+      "Dior": "迪奥",
+      "Opal": "欧珀"
     },
     "Marked Mercenary Band": {
       "Unnamed Dogdick Mercenary": "无名犬根佣兵",
@@ -585,7 +602,8 @@
       "Kailani": "凯拉妮",
       "San & Cae": "桑 & 凯",
       "Raqian": "拉奇安",
-      "Elexis": "艾丽克丝"
+      "Elexis": "艾丽克丝",
+      "Raq": "拉奇"
     },
     "Ruins of Xadaron Characters": {
       "Mie Xadaron": "米耶·萨达隆",
@@ -707,7 +725,42 @@
       "var Clare": "瓦尔·克莱尔",
       "Vesparius": "维斯帕里乌斯",
       "Vilda": "维尔达",
-      "Yoli": "约莉"
+      "Yoli": "约莉",
+      "Alkezhar": "阿尔克扎尔",
+      "Ariande": "阿里安德",
+      "Carissa": "卡莉莎",
+      "Charan": "查兰",
+      "El-Qesirren": "埃尔-凯西伦",
+      "Ephenos": "埃菲诺斯",
+      "Fannock": "范诺克",
+      "Fenraus": "芬劳斯",
+      "Helena": "海伦娜",
+      "Hillebrand": "希勒布兰德",
+      "Ignafaerus": "伊格纳法鲁斯",
+      "Khaius": "凯乌斯",
+      "Senator Khaius": "凯乌斯参议员",
+      "Lazaran": "拉扎兰",
+      "Lazaran en Felurze": "拉扎兰·恩·费卢尔泽",
+      "Marianthe": "玛丽安特",
+      "Martellus": "马泰勒斯",
+      "Nephele": "内菲尔",
+      "Rathgar": "拉思加尔",
+      "Rathor": "拉索尔",
+      "Rjonar": "瑞乔纳",
+      "Rylon": "莱伦",
+      "Thea": "西娅",
+      "Tricia": "特里西亚",
+      "Vacia": "瓦西亚",
+      "Vay-ahn": "瓦扬",
+      "Velta": "维尔塔",
+      "Vernon": "弗农",
+      "Vrundar": "冯达",
+      "Yngrith": "英格里斯",
+      "Zainem": "扎伊奈姆",
+      "Lewyn": "莱温",
+      "Vulgra": "沃尔格拉",
+      "Gerry": "杰里",
+      "Moongiven": "穆恩吉文"
     },
     "Named Mounts": {
       "Leo": "利奥"
@@ -826,7 +879,12 @@
       "Ghostmoot": "幽灵集会",
       "Godswar": "神战",
       "Hearth's Eve": "炉火节前夜",
-      "Festivus": "仲冬节"
+      "Festivus": "仲冬节",
+      "Lion Witch's War": "雄狮女巫战争",
+      "White Week": "白色星期",
+      "Clam Slam": "蛤蜊大满贯",
+      "Tycathalon": "泰卡塔隆",
+      "Tychathalon": "泰卡塔隆"
     }
   },
   "Places of Interest": {
@@ -852,7 +910,9 @@
       "Sailgraves": "帆葬海岸",
       "Sea of Sapphires": "蓝宝石之海",
       "the Marches": "边境地区",
-      "the Rift": "裂谷"
+      "the Rift": "裂谷",
+      "Dreamscape": "梦境世界",
+      "Ways": "界间之路"
     },
     "Settlements": {
       "Centaur Village": "半人马村落",
@@ -870,7 +930,8 @@
       "Maidenbridge": "梅登布里奇",
       "Felurze": "费卢尔泽",
       "Corlund": "科伦德",
-      "Horn High": "霍恩海"
+      "Horn High": "霍恩海",
+      "Altenspire": "阿尔滕斯派尔"
     },
     "Locations": {
       "Abandoned Temple": "废弃神殿",
@@ -978,7 +1039,10 @@
       "Telduum": "泰尔杜姆",
       "The Whore's Bosom": "妓女之胸",
       "Twin Roses": "双生玫瑰",
-      "Underquarry": "地下矿场"
+      "Underquarry": "地下矿场",
+      "Frosthound": "寒霜猎犬",
+      "Fuckhouse": "妓院",
+      "Pasture": "牧场"
     }
   },
   "Items": {
@@ -1495,16 +1559,16 @@
         "Orange Lenses": "橙色镜片",
         "Purple Lenses": "紫色镜片",
         "Red Lenses": "红色镜片",
-        "Red Scrub": "红色刷",
-        "Brown Scrub": "棕色刷",
-        "Black Scrub": "黑色刷",
-        "Blonde Scrub": "亚麻色刷",
-        "White Scrub": "白色刷",
-        "Purple Scrub": "紫色刷",
-        "Blue Scrub": "蓝色刷",
-        "Silver Scrub": "银色刷",
-        "Gold Scrub": "金色刷",
-        "Pink Scrub": "粉色刷",
+        "Red Scrub": "红色染色膏",
+        "Brown Scrub": "棕色染色膏",
+        "Black Scrub": "黑色染色膏",
+        "Blonde Scrub": "亚麻色染色膏",
+        "White Scrub": "白色染色膏",
+        "Purple Scrub": "紫色染色膏",
+        "Blue Scrub": "蓝色染色膏",
+        "Silver Scrub": "银色染色膏",
+        "Gold Scrub": "金色染色膏",
+        "Pink Scrub": "粉色染色膏",
         "Growth Stopper Scrub": "生长抑制刷",
         "Hair Growth Potion": "促毛药水",
         "Beard Growth Potion": "胡须生长药水",
@@ -1744,7 +1808,8 @@
       "Wyrmtooth": "龙牙",
       "Zither": "齐特琴",
       "Emblem of True Power": "真力徽记",
-      "Nameless Swords": "无名双剑"
+      "Nameless Swords": "无名双剑",
+      "Dracian blood-gem": "龙族血宝石"
     },
     "Supplemental Runtime Items": {
       "gnarled staff": "扭曲法杖",
@@ -1811,7 +1876,8 @@
       "Keros' Smile": "凯罗斯的微笑",
       "Myth & Western 1911": "神话与西部1911型",
       "omikuji": "占卜纸条",
-      "Winner's Token": "获胜者代币"
+      "Winner's Token": "获胜者代币",
+      "Canine Pepper": "犬胡椒"
     },
     "Item-Related Plants": {
       "Razorcup": "剃刀杯"
@@ -1934,7 +2000,18 @@
       "Storm Witch": "风暴女巫",
       "Sun warrior": "太阳武士",
       "Talon": "利爪",
-      "Your Eminence": "阁下"
+      "Your Eminence": "阁下",
+      "'mander-mage": "火蜥蜴法师",
+      "alchemeowst": "炼金喵术士",
+      "Alchemikitty": "炼金猫",
+      "Champ": "冠军",
+      "Champion": "冠军",
+      "Crown Prince": "王储",
+      "horse-lord": "马王",
+      "Princeps": "亲王",
+      "warmaiden": "女战士",
+      "Strategos": "统帅",
+      "Decanus": "十夫长"
     },
     "Summons": {
       "Unique": {
@@ -2053,7 +2130,8 @@
       "Electrum Coins": "琥珀金币",
       "Belharan hawks": "贝尔哈兰鹰币",
       "EC": "琥珀金币",
-      "metal bits": "金属币"
+      "metal bits": "金属币",
+      "hawks": "鹰币"
     },
     "Forms & States": {
       "Dragon Form": "龙之形态"
@@ -2083,7 +2161,10 @@
       "magicock": "魔法鸡巴",
       "matron's womb": "圣母之胎",
       "slutsune": "淫荡的狐妖",
-      "Tail Bondage": "尾巴束缚"
+      "Tail Bondage": "尾巴束缚",
+      "AnalPronebone": "俯卧肛交",
+      "Edge": "边缘控制",
+      "Bang Bros": "打炮兄弟"
     }
   },
   "World & Culture": {
@@ -2131,13 +2212,32 @@
       "Minoans": "米诺斯人",
       "orcazon": "兽人女战士",
       "Signian": "西格尼亚人",
-      "Wyrm": "巨蛇"
+      "Wyrm": "巨蛇",
+      "Dreamless": "无梦者",
+      "frostscale": "霜鳞",
+      "galepup": "疾风犬",
+      "genie": "灯神",
+      "goofolk": "黏液人",
+      "hobgoblin": "大地精",
+      "Khor'minoan": "科尔米诺斯的",
+      "lizan": "蜥蜴人",
+      "minos": "米诺斯人",
+      "Narevan": "娜瑞瓦教派的",
+      "Valkyrie": "女武神",
+      "veparus": "维帕鲁斯",
+      "water wyrd": "水灵",
+      "Sailgravers": "帆葬海岸人",
+      "Machan": "马昌"
     },
     "Military Units": {
       "Chargers": "冲锋者",
       "Purr Platoon": "呼噜小队",
       "Red Dragons (second imperial infantry company)": "红龙军团",
-      "Warriors of White": "白袍战士"
+      "Warriors of White": "白袍战士",
+      "Auxiliary": "辅助部队",
+      "Legion": "军团",
+      "Royal Legion": "皇家军团",
+      "Royal Siege Corps": "皇家攻城军团"
     },
     "Religion & Deities": {
       "treefather": "树父",
@@ -2157,7 +2257,8 @@
       "Kerosite": "凯罗斯信徒",
       "Marae": "玛拉埃",
       "the August Master": "天中尊主",
-      "the August Master at the Center of Heaven": "天之中央尊主"
+      "the August Master at the Center of Heaven": "天之中央尊主",
+      "Storm Maiden": "风暴少女"
     },
     "Works & Texts": {
       "War Against Demons": "对抗恶魔的战争",
@@ -2202,15 +2303,28 @@
       "Tael Alliance": "泰尔联盟",
       "Valkyrie Order": "女武神骑士团",
       "Var Ridell": "瓦·里德尔",
-      "var Ridells": "里德尔家族"
+      "var Ridells": "里德尔家族",
+      "Moratia": "莫拉蒂亚",
+      "House Moratia": "莫拉蒂亚家族",
+      "Grune": "格鲁恩"
     },
     "Materials & Substances": {
-      "Lethicite": "灵魂晶石"
+      "Lethicite": "灵魂晶石",
+      "Agate": "玛瑙",
+      "Amethyst": "紫水晶",
+      "Jade": "翡翠",
+      "Lapis": "拉皮斯",
+      "shadowlith": "影石",
+      "electrum": "琥珀金"
     },
     "Artifacts & Monuments": {
       "Matron Statue": "主母雕像",
       "Stud Statue": "种马雕像",
       "Ruby Throne": "红宝石王座"
+    },
+    "Languages & Dialects": {
+      "bell-har-in": "贝拉兰语",
+      "Ay-ah": "哎—哈"
     }
   }
 }

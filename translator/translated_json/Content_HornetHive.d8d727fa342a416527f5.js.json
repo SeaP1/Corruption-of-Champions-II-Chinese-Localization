@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\Content_HornetHive.d8d727fa342a416527f5.js",
+  "sourceFile": "D:\\Codex\\COC2 0.99\\resources\\app\\Content_HornetHive.d8d727fa342a416527f5.js",
   "sourceSha1": "60ea0ffd41b5acb1ae6d053c99b67f9ff1c9a681",
   "migratedFrom": [
     "Content_HornetHive.d8d727fa342a416527f5.js.json"
   ],
-  "updateGeneratedAt": "2026-09-22T10:43:29.514Z",
+  "updateGeneratedAt": "2026-09-26T19:18:52.755Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 1108,
@@ -220,10 +220,10 @@
       "line": 1,
       "raw": "'\\n    \"Tell me about the corruption in your hive?\"\\n\\n    Azyrran sighs. \"I\\'ve barely been back since the storm, and when I have, I see the hive more and more changed from what I remember. My sisters are turning into sex fiends, losing their reasoning. My mother\\'s no longer the glorious warrior queen of her youth, but a...\" Azzy struggles to find the right word. \"A bimbo! All she thinks about is spreading her eggs throughout the forest, whether anyone wants them or not. The honey reserves are overflowing, and it\\'s like it\\'s triggered her to go into some sort of breeding frenzy.\"\\n    \\n    She steels herself, clenching her chitinous fingers. \"But I have a plan. Or the makings of one, anyway!\"\\n    \\n    [pc.dcb\\n        |You arch an eyebrow. \"Is that right? What do you have in mind?\"\\n        |You grin at her. \"That\\'s great news! What do you have in mind?\"\\n        |Yay! \"What\\'s the plan, cutiebuzz?\" you ask.\\n    ]\\n    \\n    Her wings twitch behind her, and you can see Azyrran\\'s fingers dancing across the hilt of her great lance as she thinks. \"The hive has a single main pool of nectar we keep for the winter where it\\'s all stored once the pollen has been refined. My sisters have been taking corrupted pollen home in huge amounts. I fear that has become the ongoing source of the corruption. If we can purify it, there\\'s a chance the damage may yet be undone to my sisters...\"\\n    \\n    \"So we just clear the rot out of the larder? It\\'s that simple?\"\\n    \\n    Azzy\\'s smile falters. \"I... I don\\'t know. I hope. I <b>have hope</b>. The damage to the other hive knights and workers isn\\'t permanent, I know that much. I shrugged off the start of the curse and fled when I first came home and realized what was afoot. Purify the source, and my sisters will recover... slowly. The only problem is...\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:3709:3715:bc981983e7f5",
@@ -266,10 +266,10 @@
       "line": 1,
       "raw": "'\\n        You press her. \"The problem is?\"\\n\\n        She sighs. \"My mother. I can\\'t turn my lance against her, but she can\\'t be allowed to feed the hive from her own breasts once we purify the reserves, as she\\'s become even more corrupted than the rest of my sisters.\" The caramel cuddlebug looks a little... embarrassed to continue. \"She\\'s a veritable honeypot now, and drinking from her addles the mind even more severely than the tainted nectar from the pool. I fear we must... <b>you</b> must subdue her.\"\\n        \\n        So in summary: find a way to purify the hive\\'s honey reserves, defeat the queen, find a way to purify her too. Sounds easy, right? \"Where do we start?\"\\n        \\n        The Hive Knight’s face opens up into a warm smile again. \"I knew I could count on you! So, first, a way to purify the hive. We hornets are children of Lumia, beloved of the Sun Queen, and I am sure that one of her lightbringers could see us through this trial. Someone well versed in her most powerful rituals and rites. I\\'ve heard that the little hamlet to the south is where a great arch-paladin of the goddess retired to many years ago. Ser Riordan Sanders! If you could convince him to help us...\"\\n        \\n        [flags.SANDERS_MET\\n            |\"Brother Sanders? I know him! I can go talk to him.\"\\n            |\"Right, I can ask around.\"\\n        ]\\n        \\n        Azzy smiles. \"That would be a great help.\"\\n        \\n        Back to town, then.\\n\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:5265:5267:da39a3ee5e6b",
@@ -547,10 +547,10 @@
       "line": 1,
       "raw": "\"\\n    When you arrive in the outskirts of the garden, you find that Liaden's arrived safe and sound. She's sitting on the edge of one of the great flowers, deep in conversation with Azyrran. The caramel cuddlebug's giggling at some remark when she notices you, and quickly throws up a hand in greeting. \\\"[pc.name]! You found a lovely paladin to help us, indeed! I'm grateful.\\\"\\n    \\n    Liaden rises and dusts off the hem of her tunic. \\\"The goddess protects. Always. Unfortunately she doesn't take care of all our problems for us. Gotta make us work for it. And I've been watchin' the hive since I got here. Not gonna be easy getting in.\\\"\\n    \\n    You can hear the buzzing of them through the whole forest. No telling how many are in the hive itself.\\n    \\n    \\\"We've got to get inside... but my sisters won't allow you [party.som\\n        |two\\n        |three\\n        |four\\n    ] to enter. Even I may not be allowed back, without my mind addled.\\\" \\n    \\n    \\\"Yeah, I met some of your sisters coming this way,\\\" Liaden adds. \\\"Real friendly. If I hadn't beat 'em about with my axe I'd probably be as gravid as my sister-in-law. I know Lumia's the goddess of fertility, but you forcin' somebody to bear your children's anathema. Corrupted.\\\"\\n    \\n    Azyrran sighs. \\\"I apologize for them. I... we weren't like this before.\\\"\\n    \\n    \\\"We can take advantage of it, though,\\\" Liaden says, hefting up her axe. \\\"No way we're fighting through that many, so we'll have to draw them off. And I need to reserve most of my power for purifying the, what'd you call it, nectar reserves in the pool? So seems to me like I ought to shake my ass at some hornets and go running for it. Lady Azyrran takes you across the ravine while the guards are trying to egg me, then you just sneak through and beat up the queen. That ought to call off the guards right quick.\\\"\\n    \\n    \\\"Beat up Queen Nyzerrah?\\\" Azzy looks between you and Liaden. \\\"I can't... she's my mother.\\\"\\n    \\n    \\\"We gotta deal with her somehow. I don't know. You'll think of something. Hopefully confronting her will be enough to draw the guards back to the hive so I can climb up. Got a rope and hook in my pack. I'll meet you in the pool room once Nyzerrah's dealt with.\\\"\\n    \\n    Sounds like a plan. Now you just need to commit.\\n    \\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:13666:13674:6376b33e5123",
@@ -730,10 +730,10 @@
       "line": 1,
       "raw": "\"\\n                \\\"Of course I'll come with you,\\\" Azyrran reiterates, couching her lance under an arm. \\\"These are my sisters... my family. I can't shrug off responsibility for their actions. Alright! Lead the way, [pc.name]. I'll be behind you all the way to the queen's chambers.\\\"\\n    \\n                [silly|Avaunt!|Onward, ho!]\\n                \\n                \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:17614:17616:da39a3ee5e6b",
@@ -818,10 +818,10 @@
       "line": 1,
       "raw": "\"Take Azyrran\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:17842:17910:81b3b49f145e",
@@ -850,10 +850,10 @@
       "line": 1,
       "raw": "\"No Azzy\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:17964:17971:505e9f71a97c",
@@ -969,10 +969,10 @@
       "line": 1,
       "raw": "\"No Azyrran\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:19139:19175:355a0b6136d5",
@@ -1175,10 +1175,10 @@
       "line": 1,
       "raw": "\"\\n    You reach down into the pool and fish out the prince's discarded whip. It's still fragrant with the smell of honey and venom, enough that when you sniff it, your cheeks immediately flush. Striking someone with this thing is really gonna get 'em off. Grinning to yourself, your spool it up and sling it on your belt.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:20180:20186:bc981983e7f5",
@@ -1310,10 +1310,10 @@
       "line": 1,
       "raw": "\"\\n    With his drones beaten and your victory assured, the prince finally collapses to the floor of the milking room. His whip clatters across the floor, <b>slipping into one of the troughs and falling into the honey pool below</b>. Nyze grabs his clothes with a defiant groan, face flushing bright red as the corruption in his veins races hotter in his defeat to your skills.\\n\\n    \\\"F-Fuck... why... why did <b>I</b> lose? [party.has azyrran|You're an exile, Azyrran! You're nothing! You can't <b>beat me</b>... it's not allowed!|You're not even strong like that pesky hive knight I exiled! This isn't fair!]\\\"\\n    \\n    The bimbos and males nearby all watch, some of them eagerly approaching the group. Their pent-up stress from constantly edging and teasing their hive mates on is clearly effecting them; every cock is hard and every set of nipples stiff, each hornet biting their lips and whispering. Defeating their tyrannical kin has left a power vacuum in the honey room's staff... and all of them are waiting for your next move. If you want, you can find a way to have fun with Nyze or you can opt instead to leave the femboy and his harem to the justice of the hive's rank-and-file. But first, you recover a key that fell from the prince when he was defeated: the <b>Honey Key!</b>\\n    \\n    [party.has azyrran|Azyrran sighs and turns away, snatching they key from his belt. \\\"Do what you want with him, [pc.name]. I can't bear the sight of him simpering now.\\\"]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:25854:25864:0d13aac998f1",
@@ -1446,10 +1446,10 @@
       "line": 1,
       "raw": "\"A cute [silly|BOI|boy] like him deserves a little payback for how he's riling all these hornets up; you're going to fuck <b>him</b>!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:35450:35452:da39a3ee5e6b",
@@ -1524,10 +1524,10 @@
       "line": 1,
       "raw": "\"Inside\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:40542:42722:ca7a6d85dc4b",
@@ -1643,10 +1643,10 @@
       "line": 1,
       "raw": "\"Since he asked so nicely, you'll allow it.[pc.isDK| This time.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:43099:43105:2f35cebebca8",
@@ -1807,10 +1807,10 @@
       "line": 1,
       "raw": "\"You can use your pussy to give him the exact same treatment he's inflicting on all these girls; ride him into the edge and leave him buzzing without release.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:47065:47067:da39a3ee5e6b",
@@ -1838,10 +1838,10 @@
       "line": 1,
       "raw": "\"Without a cunt, you're probably not going to get the position for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:47162:47179:3caf44b29977",
@@ -1855,10 +1855,10 @@
       "line": 1,
       "raw": "\"Drone Threesome\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:47213:47226:9f8d5b13dbb9",
@@ -2048,10 +2048,10 @@
       "line": 1,
       "raw": "\"Drone Threesome\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:66626:66686:7d48bc14ce30",
@@ -2290,10 +2290,10 @@
       "line": 1,
       "raw": "\"\\n    You pull out [pc.cl thief|your set of picks and go about busily forcing the padlock. It's simple enough — the hornets don't seem to be afraid of burglars so much as errant drones getting in here, so the lock isn't terribly secure. You're able to pop it in a minute or so, and it gives a satisfying <i>ka-chunk</i> as it falls away.|the venom mage's key — this one seems to fit well enough. You slide it in and, sure enough, a moment later there's a satisfying <i>ka-chunk</i> as the lock falls away.]\\n\\n    You push the door open, revealing a room full of wooden racks loaded down with long bronze war-spears and bronze-faced circular shields, not unlike Azyrran's own kit. Some stands near the far wall have breastplates, greaves, and leather skirts displayed on wax mannequins, too. Seems you've found the armory!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:78293:78299:bc981983e7f5",
@@ -2611,10 +2611,10 @@
       "line": 1,
       "raw": "\"You need a dick to enjoy those wet and wild boobs of hers this way!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:89036:89050:cebd5d473585",
@@ -2797,10 +2797,10 @@
       "line": 1,
       "raw": "'\\n        \"Good,\" Jyrranaz says, her smirk turning into something smug and confident, but just as creepy. \"I knew you and I had something in common as soon as you said our Rightful Queen’s name.\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:94774:95833:1307534d63ba",
@@ -3010,10 +3010,10 @@
       "line": 1,
       "raw": "'\\n    As you\\'re heading south, looking towards a massive pair of sealed, honey-gold doors that can only mark the lair of the hive\\'s queen, you [\\n        pc.cunningRange 66\\n        |draw in a sharp breath and look down, just as your foot\\'s about to crush a tiny little tripwire running taut between a couple of the support pillars, its ends embedded in the wax. \\n    \\n        \"Trap,\" you breathe, slowly setting your foot down on the other side. \\n        \\n        [party.has azyrran|\"A trap?\" Azyrran gasps, kneeling down beside it. \"This wasn\\'t here before... and I don\\'t think any of my sisters have the presence of mind to have strung it.\"|You doubt any of the bimbo bugs would have had the presence of mind to string a trap like this. Too subtle.]\\n    \\n        Has someone else been here already...?\\n        |[pc.agilityRange 66\\n            |feel something snap under your [pc.foot] — a tripwire. Oh gods. You look up just in time to see an almost-imperceptibly thin wire running between the pillars and up to the shadows above, where a pair of clay jugs start falling towards the floor. Fuck! You leap up one of the pillars as fast as you can, snatching the first jar out of the air, and then kick off towards the other side, tucking your catch under an arm as you go diving for the second. \\n    \\n            You skid across the floor and grab it just in time, a mere inch from the floor. Whew! You groan with the stress and set the two jars gently down on the ground. From the scent they\\'re giving off, that\\'s pure pollen and fuck-pheromones bottled up in there. Getting dosed with that right before meeting the bimbo queen herself would have been... bad.\\n            \\n            [party.has azyrran|\"A trap?\" Azyrran gasps, kneeling down beside you. \"This wasn\\'t here before... and I don\\'t think any of my sisters have the presence of mind to have strung it.\"|You doubt any of the bimbo bugs would have had the presence of mind to string a trap like this. Too subtle.]\\n            \\n            Has someone else been here already...?\\n            |[party.has azyrran\\n                |feel Azyrran\\'s chitinous hands grip your shoulder, pulling you back. \"Wait!\" she hisses, pointing upwards towards the darkness. \"Do you see that? A falling trap. That wasn\\'t there before...\"\\n    \\n                \"Good catch,\" you say, sighing with relief. You can only just make out a pair of clay pots wedged into the waxy ceiling near a pair of support pillars. Must be a tripwire... there it is! \\n                \\n                You kneel down and point it out, brushing a finger along the taunt silk wire. \\n                \\n                \"I don\\'t think any of my sisters have the presence of mind to have strung this,\" Azzy adds, shaking her head. \"Has someone been here before us?\"\\n                \\n                Good question.\\n                |feel something snap under your [pc.foot] — a tripwire. Oh gods. You look up just in time to see an almost-imperceptibly thin wire running between the pillars and up to the shadows above, where a pair of clay jugs start falling towards the floor. Fuck! You leap towards one of the pillars, trying to catch it before it falls... and get smashed directly in the face for your trouble. The pot shatters hard, blasting you with a huge cloud of pollen and pheromonal juices all mixed together in a horrifically sexual aroma. \\n    \\n                The other jar shatters on the ground behind you moments later, sending another blast of pheromones all over [party.ya\\'ll]. The sexual vapors hug you like a blanket, billowing about like a cloud. When it finally clears, pollen clings to you, masking the dark flush on your cheeks and the [pc.cockVagBoth|raging erection|soaked thighs|raging boner and soaked thighs] you\\'re sporting.\\n                \\n                This is going to make the queenly audience awkward...\\n            ]\\n        ]\\n    ]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:118041:118047:bc981983e7f5",
@@ -3070,10 +3070,10 @@
       "line": 1,
       "raw": "\"\\n    You approach the door and brandish your pair of keys. Azyrran, standing by the doorside, takes a deep breath and steels herself. Her dusky digits curl around her lance, but she gives you a firm nod as you insert the keys and give them a twist. You hear a mechanism in the doors clinking around, and then the lock comes undone. \\n\\n    You're in.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:118618:118624:bc981983e7f5",
@@ -3162,10 +3162,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:123931:126890:d3a2fe870f38",
@@ -3284,10 +3284,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:127754:142541:63d4bf1ef2ce",
@@ -3423,10 +3423,10 @@
       "line": 1,
       "raw": "'\\n        \"O-oh fuck!\" Nyzerrah whimpers, finally dropping her greatspear to the ground. It clangs loudly enough to make you [party.som|wince|and [companion.name] wince|and your party wince]. Before you can even approach her she’s sprawled out on her giant sofa, driving fingers into her juicy box with enough force to set her chitinous toes to curling. \"You win, just, please! I need release!\"\\n\\n        There’s a nervous squirm from Azyrran beside her, looking a little bit more battered than her lusty queen.\\n        \\n        [azzy.lowTrust|Azyrran stumbles in your direction, trying not to pay attention to the lurid squelching of the queen — her own mother — sinking her fingers into a gushing honeypot. \"I... I don\\'t know how you did it, but you did... I\\'m— uh.\" She trails off at the awkwardness and clears her throat, blushing and hiding her head against your chest. \"I\\'m sorry, and thank you.\"]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:145489:145494:e301dd6062f7",
@@ -3528,10 +3528,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:145874:151461:37b0789ff27c",
@@ -3579,10 +3579,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:151668:159059:ed4bf084116e",
@@ -3642,10 +3642,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:159265:162451:0ad5c284d54b",
@@ -3659,10 +3659,10 @@
       "line": 1,
       "raw": "'\\n            It’s too late; she’s already so warm and inviting. With Azyrran pressed up behind you it’s not exactly easy to pull out, either. You plant your palm on her great big clit again and grind at it while you hammer her sodden box until juices are squirting out around the seal. Moans are music to your ears, your heart’s hammering in your chest from the druggy load pumping through your veins, and her body seems desperate to keep you buried deep inside of her.\\n\\n            You let yourself go with one last slam. The lurid clap of flesh-on-flesh is accompanied by your own ecstatic cry, muffled as it is by the hive knight’s fingers coiled with your tongue. Surprisingly enough, cumming <b>hurts</b>; getting that first rope of jizz to escape your cumslit is a challenge, as though the queen’s body realizes you’re about to cum and has already locked down in preparation to keep your seed sealed in her.\\n            \\n            Grunting and humping wildly, you finally earn enough \\'stretch\\' out of her to cum. You fire off hot ropes of [pc.cumColor] jizz that flood her depths. Even if you’d walked into this damned hive with nothing but a shot in you, there’s so much fuck-toxin in your blood that your [pc.hasBalls|nuts are weighty enough to ache|prostate feels a fist thick in your depths]. The orgasm itself lasts for a few long minutes, not stopping until breathing is near impossible and your body is dripping with sweat.\\n            \\n            When you look up at Nyzerrah’s tummy you’d expect it to look positively pregnant, but much to your chagrin she’s a massive woman... her breastplate has barely moved, although you suspect there might be a bit of squish to her underneath it. Pulling out doesn’t even truly put you to an end; you get to watch the flushed depths of her twat clench and squeeze at the air while drooling your potent cum, and your own cocktip slowly drools what remains of your chemically-empowered reserves.\\n            \\n            Azyrran helps you step away, but her face is scrunched up in a funny expression. Before you’re able to ask what the matter is, she’s on her knees and sucking you off as though dying of thirst.\\n            \\n            There’s a wicked smile creeping through Nyzerrah’s bimbo-blissed expression, and she gets you settled down on the sofa next to her while you’re sucked and slurped clean. She coos and presses your face against the side of a squishy tit, forcing you to resist the urge to latch right onto it.\\n            \\n            By the time you’re finally cleaned, Azyrran’s face is resting on your thigh while she pants for breath. \"I-I have no idea what came over me, [pc.name]... I... you just smelt so good all of a sudden!\"\\n            \\n            With a sigh, you pull her up into your lap, earning a soft \\'yelp\\' of surprise before you settle on petting her head. Your mouth feels awfully dry, your tongue thick, and your ears are still pounding... but at least your initial need is dealt with. And in the case of Nyzerrah, she looks plenty more relaxed for having had a dick in her.\\n            \\n            \"Well then,\" Nyzerrah begins. \"Did you want to make your demands?\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:162514:162526:c4587d77b4b3",
@@ -3748,10 +3748,10 @@
       "line": 1,
       "raw": "\"Not like she isn’t already getting regular doses.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:162692:162703:58798260d518",
@@ -3765,10 +3765,10 @@
       "line": 1,
       "raw": "\"On Thighs\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:162796:162806:7f332abbe616",
@@ -3782,10 +3782,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:162833:166300:9f13af54059f",
@@ -3873,10 +3873,10 @@
       "line": 1,
       "raw": "\"Cum On Her Thighs\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:166479:166508:3643663d9ae8",
@@ -3919,10 +3919,10 @@
       "line": 1,
       "raw": "\"There may be a whole lot going on with her bug-bum. But that cunt deserves fucking.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:166614:166616:da39a3ee5e6b",
@@ -3981,10 +3981,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:166778:175860:ee28b29c1b5d",
@@ -4030,10 +4030,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:176040:178453:00e22241c126",
@@ -4047,10 +4047,10 @@
       "line": 1,
       "raw": "\"\\n            Pulling out of Nyzerrah’s ovipositor is the final signal to set everything into motion. The bimbo queen cries out in her most luscious voice, and honey flows in a sympathetic flood from her tits to the sofa beneath. Her huge tits sway one last time before she goes still, soaking her thighs — and Azyrran’s back — in girlcum. Eggs flow from her one after the other, ensuring that her orgasm is extended in waves.\\n\\n            You’re far more intent on your own prize though; now that Azzy’s let go of the ovipositor, you can simply pull her closer. She gives you one last needy whimper through lust-drugged eyes before latching onto your cock, suckling and moaning into you while her wings nervously flutter from being splashed with lurid juices. The last rope of potent spunk you can dredge up catches her right in the back of the throat, but she barely even seems to notice thanks to the drugs rocking her to the core. She lashes your cocktip with her tongue while her cheeks turn concave, shivering like an addict getting her fix.\\n            \\n            And honestly right now she actually <b>is</b>. You fill her stomach, hosing it down as though it might put out fires burning away inside of her before she finally releases you without spilling a drop.\\n            \\n            It still takes a few minutes for you to properly master yourself, and when you do so there’s sweat beading all over your body, your legs don’t seem to want to move, and you might actually be turned inside out. Azyrran continues to blink at you through her fugue, a funny look on her face. You’re sure if she had pupils, they’d be dinner plates like yours. Nyzerrah, much to your surprise, looks more refreshed than anything. \\n            \\n            With weak limbs, you stagger over to the sofa, uncaring of how sticky it is. There’s a giggle from Nyzerrah when you lean on her in exhaustion, and it turns into a soft 'dawwwh' once you scoop up Azyrran. \\n            \\n            The knight lets out a soft 'yelp' of surprise, only settling down once you pet her on the head. Your mouth feels awfully dry, your tongue thick, and your ears are still pounding... but at least your initial need is dealt with. And in the case of Nyzerrah, she looks plenty more relaxed for having been painted like a wall.\\n            \\n            \\\"Well then,\\\" Nyzerrah begins. \\\"Did you want to make your demands?\\\"\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:178516:178528:c4587d77b4b3",
@@ -4121,10 +4121,10 @@
       "line": 1,
       "raw": "\"Cum In Azyrran’s Mouth\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:178637:178661:32e9f339c786",
@@ -4153,10 +4153,10 @@
       "line": 1,
       "raw": "\"Paint Azzy\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:178780:178790:7f332abbe616",
@@ -4170,10 +4170,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:178817:181217:aa31902e3372",
@@ -4261,10 +4261,10 @@
       "line": 1,
       "raw": "\"Paint Azyrran\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:181392:181448:fa2e971b0789",
@@ -4278,10 +4278,10 @@
       "line": 1,
       "raw": "\"Time to thoroughly cover your lover. That’ll show her.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:181452:181454:da39a3ee5e6b",
@@ -4367,10 +4367,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:181676:195244:4f0273acfadc",
@@ -4416,10 +4416,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:195420:197022:de61df4b2b56",
@@ -4507,10 +4507,10 @@
       "line": 1,
       "raw": "\"Push Out Eggs\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:197215:197270:1e969f4a5329",
@@ -4524,10 +4524,10 @@
       "line": 1,
       "raw": "\"Like anal beads. Huge. Soft. Lube-covered anal beads.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:197289:197300:eea66bc47bbe",
@@ -4541,10 +4541,10 @@
       "line": 1,
       "raw": "\"Keep Eggs\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:197393:197403:7f332abbe616",
@@ -4558,10 +4558,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:197430:198108:567d52e1e9c9",
@@ -4575,10 +4575,10 @@
       "line": 1,
       "raw": "'\\n            Fuck that, pushing them out might actually snap your brain clear in two. Honestly it’s kind of nice to be so incredibly filled with warmth... especially while the venomous lubricants are still potent inside you. You walk — okay, no, you waddle — over to the sofa before sitting heavily in it. Azyrran settles in beside you and rests her head on your oversized tummy where you can pet it. At least you’ve got your knight back.\\n\\n            \"That was super fun, [pc.mf|sir|miss]! Now, you totally made some awesome sounds. And you were lovely and tight, and I feel <b>really</b> good n— Oh! That’s right. You had something you wanted to talk to me about, right?\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:198189:198201:c4587d77b4b3",
@@ -4721,10 +4721,10 @@
       "line": 1,
       "raw": "\"Spread your ring and take the queen for a ride.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:198664:198674:7f332abbe616",
@@ -4738,10 +4738,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:198703:200105:8f1277803da4",
@@ -4804,10 +4804,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:202899:207498:eddd75dcb8a9",
@@ -4853,10 +4853,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:207702:210503:ed4817ee7412",
@@ -5014,10 +5014,10 @@
       "line": 1,
       "raw": "'\\n    \"Hey, [pc.name]!\" \\n    \\n    You turn just in time to see Liaden coming into the milking chamber, covered in sweat and not a small amount of golden goo sticking to her once-white tunic. Her armor\\'s scarred and dented in a few places, but she looks unharmed all things considered.\\n    \\n    \"Just got here,\" she confirms, setting her axe against the door of the honey pool as she marches in. \"Guess I was right. Soon as you finished with the queen, all the hornets turned tail. Like they knew somehow. Anyhoo, nobody tried fighting me when I climbed up in here. Gonna need a heck of a bath after all that; must\\'ve run twenty miles. C\\'mon, let\\'s [silly\\n        |get \\'er done\\n        |finish this\\n    ].\"\\n    \\n    You march down from the lurid milking-room, throwing open the doors separating it from wherever the honey-troughs lead into... and the moment you do, you\\'re almost knocked over by the wall of over-sweet scents billowing out of the room. Beneath you, connected to the milking room by sweeping stairs, is a room that is barely anything more than a massive pool of honey, overflowing with the vesparans\\' corrupted bounty. Dozens of hornet-girls lounge in the pool or on the steps leading down into it, blissed out by their sexual extravagency. Their breasts are the smallest you\\'ve seen in this place, drained down to nearly-normal proportions.\\n    \\n    [party.has azyrran\\n        |\"Before I left the hive, this pool was barely up to my ankles. We were near to starving,\" Azzy admits. \"Now... now look at us. We are wealthy beyond measure. But what a cost my sisters have paid...\"\\n    ]\\n    \\n    \"Give me a minute to set my things up and we\\'ll see about setting things right. I think I\\'ve got just the thing.\"\\n    \\n    You wait as Liaden slings her pack off her shoulder and startings unloading holy oils and incense, arranging it on the edge of the pool. \\n    \\n    \"Gods, the smell...\" you murmur. \"It\\'s making my eyes water.\" \\n    \\n    \"Yeah,\" Liaden says. \"Didn\\'t know the <b>air</b> could be so sweet it hurts.\" \\n    \\n    \"Awww, that\\'s sooo rude!\" \\n    \\n    You glance around, searching for the hornet that [pc.dcb\\n        |dares taunt you like that\\n        |spoke up\\n        |has such a cute, bubbly voice\\n    ]. Instead, you see the various hornet-girls sprawled out around the place start paddling for the waxy rim of the room, scattering like sheep. What the...\\n    \\n    \"Heeeey! Over here, dummy!\" the voice laughs again. This time, despite the echo, you follow it straight to the now-vacant middle of the pool. \"Yeah, there ya goo!\" \\n    \\n    The surface of the pool ripples, and then begins to rise. Tentacles of glistening honey writhe into being and lunge for you. Liaden grabs her poleaxe and slashes at one, but the blade passes harmlessly through the viscous goo; it just twists around and splash the hell out of her, throwing the paladin back against the hive\\'s honeycomb wall. \\n    \\n    The honey in the pool wobbles and erupts, spilling upwards from the once-placid surface and shaping itself into a distinctly humanoid shape — a huge, busty venus of a babe made entirely of honey, with a pair of tits spilling out and leaking the excess straight back into the pool. Curly \\'hair\\' spills down well past her shoulders and a little button nose and dark-gold eyes start forming on from the momentarily-blank face, followed by a smile on pillowy yellow lips.\\n    \\n    \"I got a way funner kinda magic right here, silly. Why don\\'tcha let me cast a spell on all of you instead?\"\\n    \\n    You don\\'t think she\\'ll take \\'no\\' for an answer...'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:214549:214557:9dfa9093f10b",
@@ -5103,10 +5103,10 @@
       "line": 1,
       "raw": "\"\\n    Your [pc.weapon] slips from your hand, and a moment later, tendrils of sickly-sweet amber honey are wrapping around your arms and legs, yanking you off the ground and into the buxom goo-girl's embrace.\\n\\n    \\\"So naughty, making me work that hard just for some fun. Mommy said I ought to punish anybody that inter, uh, interfare... messed with the hive! Gave me all this magic to make all my precious lil' hornets so nice and juicy. I wonder if it'll work on you? Let's find out!\\\"\\n\\n    She titters as her gooey body clings to you. Tendrils of sticky honey form from the fringes of her hair and around her hips, tearing your [pc.armor] off your body and wrapping around your limp limbs. She spreads your legs as several smaller tendrils snake up your [pc.thighs] towards your [pc.butt].\\n    \\n    [var0|You hear [comp1.name] crying out behind you, accompanied by the buzzing of hornet wings. Arms wrap around her waist, dragging her off towards fates unknown — though doubtless one full of countless eggnancies.]\\n    \\n    [var1|[comp1.isMale|[comp1.name]|[comp2.name]] grunts and curses as hornet workers come streaming back into the pool room, grabbing him and driving their stingers into his ass to subdue him. It only takes a few moments to leave him a rock-hard, moaning mess that they're easily able to drag away.]\\n    \\n    [var2|Your lady-companions scream and struggle behind you, accompanied by the buzzing of hornet wings. They're grabbed by the waists and stung into submission before being dragged out of the pool room and to fates unknown — but doubtless full out countless eggnancies.]\\n    \\n    [var3|Your battle-bros are grunting and struggling behind you as hornets spill back into the pool room. There's a flurry of stings and curses, and then they're down on the ground in rock-hard leaking pools of their own cum. The hornets drag them away easily.]\\n    \\n    You're alone against this lasicious fuck-beast, disarmed and now disrobed, and as her tentacles of honey-goo rub up against your [pc.asshole][pc.hasVagina| and pussy], you realize that there's no escape. She grins wickedly as her gooey tendrils plunge towards your [pc.cockVagBoth|asshole|[pc.vagOrAss]|ass and pussy]. You scream and kick your legs, struggling desperately in that last futile moment before honey fills your body, every hole plowed by her wriggling tentacles — even your mouth is filled by her tongue in a wet, sweet-tasting kiss. She doesn't <b>stop</b> there, though — her face presses into yours, and then spreads <b>across</b> it, engulfing you inch by inch. \\n\\n    Your screams turn to moans as you're penetrated and surrounded, filled with so much honey that your [pc.belly] starts swelling with the volume.\\n    \\n    \\\"You know, I've always been so jealous of the hornets!\\\" the goo comments, almost nonchalantly, as she absorbs you. \\\"That big fat queen upstairs gets to have all the babies she wants. Like a bajillion of them every day! And I ain't got none. She and her daughters just drink my honey day in, day out. But now I've got my very own fleshbag and nobody's gonna tell me what I can do with you! Nobody!\\\"\\n    \\n    It's impossible to see anything at this point — when you can force yourself to open your eyes, your sight is completely engulfed by golden reflection, a cascade of indistinct lights and shapes flitting through the goo-girl's body. It would be dazzling, if you weren't already enraptured by the ecstasy she brings you. Your [pc.vagOrAss] is going wild, unable to repulse the invader that's bringing you closer and closer to orgasm with every breath. You can't even squeeze around her — she's liquid, after all, and no amount of clenching can stop her forcing you back open again. \\n    \\n    Something hits your [pc.lips] — something <b>solid</b>. Her <b>CORE</b>! If you could just get that, find a way to push it out of her, maybe...\\n    \\n    ...Maybe she'll push it into you instead.\\n    \\n    You gasp as pressure mounts against your mouth, forcing it open even wider. Oh gods it's going inside you, pushed in by a wall of unrelenting honey. From all around your head, you hear the goo-girl's tittering voice. \\\"I can do anything I want with you... and the first thing I want... is to <b>be</b> you. Let's have lots of fun sex together, forever and ever and ever...\\\"\\n    \\n    You black out as the goo core, and gallons of sweet honey, are forced down your throat.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:220009:220021:8dd64291c069",
@@ -5151,10 +5151,10 @@
       "line": 1,
       "raw": "\"Take It\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:221536:221548:8dd64291c069",
@@ -5257,10 +5257,10 @@
       "line": 1,
       "raw": "\"Take the honey-goo's corrupted core by force.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:222657:222670:751fee57f201",
@@ -5274,10 +5274,10 @@
       "line": 1,
       "raw": "\"Fuck It Out\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:222697:222709:8dd64291c069",
@@ -5322,10 +5322,10 @@
       "line": 1,
       "raw": "'\\n            A couple of minutes of cleanup later, and you stride out of the honey pool room to find [party.som\\n                |Liaden\\n                |your companions\\n                |your companions\\n            ] outside waiting on you. You casually toss the core to Liaden. \"There.\"\\n            \\n            She flails her arms, barely catching it. \"Damn, you really had to do all that, huh?\"\\n            \\n            \"Figured she deserved a proper send-off.\"\\n            \\n            \"Right. Well, let\\'s do this thing, shall we?\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:224034:224052:a4559eb6c9e0",
@@ -5383,10 +5383,10 @@
       "line": 1,
       "raw": "\"Pound It Out\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:224149:224161:8dd64291c069",
@@ -5502,10 +5502,10 @@
       "line": 1,
       "raw": "\"Fuck the goo until she squirts that corrupted core right out.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:232812:232814:da39a3ee5e6b",
@@ -5533,10 +5533,10 @@
       "line": 1,
       "raw": "\"You need a cock for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:232856:232867:d1cb9584ffef",
@@ -5550,10 +5550,10 @@
       "line": 1,
       "raw": "\"Get Goo'd\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:232894:232911:d407bba27c17",
@@ -5669,10 +5669,10 @@
       "line": 1,
       "raw": "\"Tell that giant honey-babe to grow a big fat honey-cock to fuck you with. May involve some tentacles.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:240037:240039:da39a3ee5e6b",
@@ -5865,10 +5865,10 @@
       "line": 1,
       "raw": "'\\n        \"You should stay in town for a while at least,\" you suggest. \"I\\'m sure Brother Sanders will want to meet you, too.\"\\n\\n        \"Y-you really think so?\" Liaden says, a hint of nervousness in her voice. \"I hope so. No, you\\'re right, I ought to stick around. Things\\'re pretty bad around here, maybe I can keep helping. The goddess sent me out here for a reason, I\\'m sure of it.\"\\n        \\n        Azzy buzzes happily. \"Then maybe I\\'ll see you again. You too, [pc.name]. Come back tomorrow, and I\\'ll hopefully introduce you properly to my mother.\"\\n        \\n        \"Right. Until later.\" You nod, patting the hornet on the head and regathering your [party.som\\n            |belongings\\n            |companion\\n            |companions\\n        ] before venturing forth. Liaden gives you a wave before jogging off ahead, back towards town no doubt.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:246472:246474:da39a3ee5e6b",
@@ -5896,10 +5896,10 @@
       "line": 1,
       "raw": "\"The town could use another paladin around, and she deserves the chance to meet the man she came here to see.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:246599:246619:6daf306b2d3a",
@@ -5928,10 +5928,10 @@
       "line": 1,
       "raw": "'\\n        \"You should go while you can,\" you suggest. \"You have responsibilities, don\\'t you?\"\\n\\n        She nods. \"You\\'re right, of course. The Order sent us here for a reason. I might not see y\\'all again, so if not... it\\'s been a pleasure, both of you.\"\\n        \\n        \"Goddess go with you, Lady Liaden!\" Azzy buzzes.\\n        \\n        The two share a parting hug, and then Liaden makes to leave. \\n        \\n        \"You should go, too,\" Azzy says. \"I\\'ll see you tomorrow, hopefully with mother feeling better!\"\\n        \\n        \"Right. Until later.\" You nod, patting the hornet on the head and regathering your [party.som\\n            |belongings\\n            |companion\\n            |companions\\n        ] before venturing forth.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:247496:247498:da39a3ee5e6b",
@@ -5959,10 +5959,10 @@
       "line": 1,
       "raw": "\"Liaden should go and meet her mother as quickly as she can. <b>This will remove Liaden from the game</b>.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:247691:247923:884d16762131",
@@ -6036,10 +6036,10 @@
       "line": 1,
       "raw": "\"\\n    Azyrran waits for you at the entrance to the hive with a bright smile on her face, a bouquet of pink and purple flowers in her arms. There's a guard on either side of the entrance, both grinning and sliding flowers into their pretty flaxen tresses. \\\"[party.som|[pc.name]! I'm glad you've come back, are you ready to meet the queen?|[pc.name]! [companion1.name]! I'm glad you've come back, are you ready to meet the queen?|Welcome back everyone! I'm glad you've all returned... would you like to meet the queen?]\\\"\\n\\n    Well, after everything you've done so far, how could you not? Azyrran smiles and hugs the flowers to her chest, before holding them out to you. \\\"Here, these are for you. I had some time to just... relax, and walk through the flowers with a couple of my sisters.\\\" The knight lets out a deep sigh, caramel cheeks taking on a tinge of pink. \\\"They insisted on gathering up a bouquet for you, maybe it will look nice in your room later?\\\"\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:249116:249127:71234c6895c1",
@@ -6099,10 +6099,10 @@
       "line": 1,
       "raw": "'\\n            You smile and saunter close enough to be face-deep in her tits again, looking up from the warm, jiggly shelf at her pure black orbs. \"It seems you\\'re interested in a little quality time with <b>me</b>,\" you insist. \"And you bet your beautiful body I am.\"\\n\\n            Azyrran stammers beside you, while the queen draws you into a hard kiss. The taste is wonderful; flowers and honey, gentle perfume coupled with a feminine sweetness. When she parts from you, she nuzzles your neck and leaves golden-paint lip prints all over you.\\n\\n            '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:253522:253524:da39a3ee5e6b",
@@ -6174,10 +6174,10 @@
       "line": 1,
       "raw": "'\\n            Honestly you\\'re not feeling up to getting pounded by a freshly rehabilitated amazon queen after all is said and done, but there is something far more delightful that you have in mind anyway; making her blush.\\n\\n            You pounce her and hug her tightly, right down into your [pc.chest] before nuzzling into her beautiful flaxen tresses. She squirms and lets the <i>tiniest</i> surprised yelp part her lips before she melts into the hug, letting out a sigh into your ear after a few moments more. \"Mmm, my thanks. You are just too precious; are you sure I couldn\\'t make you mine forever?\"\\n            \\n            Alas, you have a land to conquer, you insist once the hug runs its course.\\n            \\n            \"But you\\'d better come back and visit soon, do you hear me [pc.name]?\" The glitter in her eyes, and the warmth of her smile is unmistakable... as is the ruddy pink blush creeping out of her sculpted cheekbones.\\n            \\n            Soon, indeed.\\n\\n            '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:254776:254778:da39a3ee5e6b",
@@ -6292,10 +6292,10 @@
       "line": 1,
       "raw": "\"\\n        You accept the bouquet, stepping in and pressing your [pc.lips] up against Azzy's. You can actually feel the heat coming off of her cheeks, mouth opening instinctively so that you can dance tongue-to-tongue for a few hungry moments.\\n\\n        By the time you part again she's turned into a caramel-hued tomato, twiddling her fingers together while you carefully stow the flowers away for later. \\\"Y-you didn't have to do that...\\\"\\n        \\n        She'd probably stammer for a few more minutes if not for you looping an arm through one of hers, guiding the knight through the door while the guards grin at you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:255672:255678:bc981983e7f5",
@@ -6366,10 +6366,10 @@
       "line": 1,
       "raw": "\"She's begging for it.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:255730:255738:bb54db510a92",
@@ -6398,10 +6398,10 @@
       "line": 1,
       "raw": "'\\n        With a smile you accept the bouquet, taking a deep whiff before gently stowing it into your pack. [pc.dcb|\"These\\'re pretty, I\\'m sure I can find a place for them.\"|\"Aww they\\'re lovely, thank you Azzy!\"|\"Yay! These are like, super sweet! Thank you cutie!\"]\\n\\n        \"Don\\'t mention it,\" Azzy insists with a wave, before gesturing towards the entrance past two grinning guards. \"Shall we?\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:256229:256235:bc981983e7f5",
@@ -6472,10 +6472,10 @@
       "line": 1,
       "raw": "\"Take it easy, the [dayNight|day|night] is young.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:256517:256520:ae4f281df5a5",
@@ -6717,10 +6717,10 @@
       "line": 1,
       "raw": "\"Given how copiously her breasts are leaking that purple fluid, a slide between them is guaranteed to be wet and slippery!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:263910:263912:da39a3ee5e6b",
@@ -6748,10 +6748,10 @@
       "line": 1,
       "raw": "\"You need a dick to enjoy those wet and wild boobs of hers this way!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:263998:264012:cebd5d473585",
@@ -6765,10 +6765,10 @@
       "line": 1,
       "raw": "\"Milk Stinger\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:264061:264063:da39a3ee5e6b",
@@ -8061,10 +8061,10 @@
       "line": 1,
       "raw": "\"Nyzerrah\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:354179:354185:dbcdf4a33b67",
@@ -8092,10 +8092,10 @@
       "line": 1,
       "raw": "'\\n    There’s a sudden gurgling in your stomach, and for a moment pangs of cramp settle into your gut. With a groan you fall to your knees while sweat pours from you; when were you poisoned? What did you eat?\\n\\n    ...And then there’s another gurgle, and something inside of you shifts. Rather abruptly that pain turns to pleasure, a rush of chemical goodness that starts to loosen you up and settle your worries. [party.has azyrran|\"Ah!\" Azyrran gasps, joining you and placing a hand on your stomach. \"It looks like your eggs are close... are you okay?\"|You take a deep breath and stand up again, wiping your brow of the sudden sweat that’s creeping up on you.]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:354927:354933:bc981983e7f5",
@@ -8166,10 +8166,10 @@
       "line": 1,
       "raw": "'\\n    This time you’re a little more ready for the gurgling in your guts; the eggs buried within you feel huge now, and their movement sets off little extra shocks of pleasure thanks to the aphrodisiac-tainted lube that coats them and stuffs up your depths. Your breathing goes short, and it’s a struggle to keep your feet at the ecstasy roiling in you. [party.oneComp azyrran cait|\"Oh... are you alright, [pc.name]? Your eggs are nearly there now, you should be more careful.\"|\"Ah... the miracle of childbirth. Are you alright, [pc.name]?\" Cait brushes a hand across your brow, frowning faintly at the sweat that coats it. \"Please be careful when you’re so close.\"|You slowly lick your lips and rub your face, feeling sweat drip from your brow at the rush of chemical lust.]\\n\\n    <b>If ever your body were giving you warnings, this would be it. Another shift in your guts like that and you’re going to have to run back to the hive.</b>'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:356033:356039:bc981983e7f5",
@@ -8494,10 +8494,10 @@
       "line": 1,
       "raw": "'\\n        \"How’re you all doing?\" you ask, looking Nyzerrah up and down. \\n\\n        [nyzerrah.isBimbo|\"Horny! Duh. Are you planning on doing something about it?\"\\n        \\n        \"Soon, maybe. Have you been behaving?\"\\n        \\n        \"Yes! I keep my promises. I’m doing well, everyone’s doing well. You’ve still saved the day until further notice.\" The Queen gives you her bubbliest smile. \"Anything else?\"|\"I’m doing well, thank you.\" Nyzerrah gives you a confident smile, placing a hand on your shoulder. \"I have plenty of energy to burn however, and even after your... appreciated assistance, I can’t imagine I would mind some of your company. If you’re free, of course.\" \\n        \\n        Tempting prospect, that.] Just breathing seems to make Nyzerrah’s chest quake enticingly, and you’ve got to put in a concerted effort to maintain eye contact.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:375133:375146:f8af7cd4433d",
@@ -8540,10 +8540,10 @@
       "line": 1,
       "raw": "\"Check on Nyzerrah and her family.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:375263:375274:14fb43a05013",
@@ -8659,10 +8659,10 @@
       "line": 1,
       "raw": "\"Flirt with the massive hornet Queen.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:375513:375520:4c3e3ab8ee1c",
@@ -8676,10 +8676,10 @@
       "line": 1,
       "raw": "\"Honey\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:375535:375537:da39a3ee5e6b",
@@ -8797,10 +8797,10 @@
       "line": 1,
       "raw": "\"Ask the queen about a sword charm.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:375943:375945:da39a3ee5e6b",
@@ -8828,10 +8828,10 @@
       "line": 1,
       "raw": "\"You haven't brought the blade with you!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:376111:376132:346199b64b79",
@@ -8874,10 +8874,10 @@
       "line": 1,
       "raw": "\"You were here to help the hornets, it's time they return the favor.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:376239:376246:7e3520a97331",
@@ -9304,10 +9304,10 @@
       "line": 1,
       "raw": "\"Nevermind\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:380605:380607:da39a3ee5e6b",
@@ -9349,10 +9349,10 @@
       "line": 1,
       "raw": "'\\n    \"[pc.dcb|Want some fuck?|Are you interested in a little personal time with me?|Oh! How about we bang now?]\" \\n\\n    [nyzerrah.isBimbo|\"Duh! Let’s smash until the sofa breaks!\"| The Queen’s dark cheeks turn darker with the smallest semblance of a blush. \"...I could be persuaded.\"]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381092:381103:ab087006d071",
@@ -9397,10 +9397,10 @@
       "line": 1,
       "raw": "\"Lay into those plump lips.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381169:381171:da39a3ee5e6b",
@@ -9428,10 +9428,10 @@
       "line": 1,
       "raw": "\"You need a cock for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381220:381231:169aaa69e1f6",
@@ -9549,10 +9549,10 @@
       "line": 1,
       "raw": "\"Thrust between her huge honey faucets.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381440:381442:da39a3ee5e6b",
@@ -9580,10 +9580,10 @@
       "line": 1,
       "raw": "\"You need a cock for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381486:381498:4ea4a003411a",
@@ -9643,10 +9643,10 @@
       "line": 1,
       "raw": "\"Bath\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381609:381611:da39a3ee5e6b",
@@ -9718,10 +9718,10 @@
       "line": 1,
       "raw": "\"Bring in the handmaidens too! Ovipositors and eggs and honey all around!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381824:381826:da39a3ee5e6b",
@@ -9749,10 +9749,10 @@
       "line": 1,
       "raw": "\"[pc.isButtPregnant|You're already butt pregnant!|You're too fatigued for a proper hornet orgy.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:381939:381945:b52b36b7269f",
@@ -9809,10 +9809,10 @@
       "line": 1,
       "raw": "'\\n    [nyzerrah.isBimbo|\"So, your tits are full?\" you ask, planting your hands on your hips.\\n\\n    \"Uh-huh! Like, literally all the time! And they feel super good... why? Want a go on them?\"|\"So... I know you’ve been cured and you’re honey’s safe... do your tits still get full?\" you ask, smiling softly.\\n    \\n    The Queen blinks and clears her throat, trying to avoid eye contact. \"They get very heavy still, yes...\"]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:382496:382503:098ba28fa139",
@@ -9873,10 +9873,10 @@
       "line": 1,
       "raw": "'\\n                    [azzy.kdb|Azyrran sighs in relief when you step away, although there’s a pout from the Queen. \"Thanks, [pc.name]... I uh, I appreciate it. I don’t want to feel like the only sane girl in a sea of bimbos, you know?\"|Azyrran nods, trailing a fingertip along one of your [pc.ears] \"Very well. I suppose you would not want to be lost in thoughtless incandescence like mother.\"|Azzy pouts, bouncing in front of you and wiggling her hips on the spot. \"Weeell... okay, guess you wouldn\\'t be special if you were just like me and mom.\"]\\n\\n                    \"I heard that.\" Nyzzy huffs, but thankfully she doesn’t press the issue. \"Is there anything else you’d like instead, [pc.name]? Maybe you could milk me instead!\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:384275:384285:a9036927aad8",
@@ -9921,10 +9921,10 @@
       "line": 1,
       "raw": "\"Well, she <b>is</b> still incredibly full.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:384365:384371:b52b36b7269f",
@@ -10026,10 +10026,10 @@
       "line": 1,
       "raw": "'\\n                    No, you’re definitely doing this. Being a bimbo is absolutely the sweetest. Pun like, totally intended. You nudge Azzy away again with a little smile. \"It’s okay cutie, it’s fun! And I’ll love you all the same!\"\\n\\n                    While she’s distracted by her blush you climb back into the Queen’s lap, bouncing on her plush thighs. This time when you bury yourself into her beautiful tits and suck, you can feel it truly. There’s a heat, flooding your mouth. Your thoughts become even more sluggish, and there’s just a burning <b>need</b> in you...'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:385134:385145:14567c7e0763",
@@ -10164,10 +10164,10 @@
       "line": 1,
       "raw": "'\\n                        It’s inevitable, the path to happiness is paced in cum. You bury yourself harder into her chest, sucking on the Queen’s tits until golden honey flows like a river. Instead of the usual head-pats and bum-rubs, Nyzerrah’s arms stay wrapped around you in an intimate, loving hug. \"That’s right, it’s fun. It’s right to be one of us...\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:386654:386660:bc981983e7f5",
@@ -10196,10 +10196,10 @@
       "line": 1,
       "raw": "'\\n                            You blink back to reality with a groan of confusion, stroking your heavy belly. Azyrran’s looking down at you with a sad expression, and you do your best to cheer your cutie up with a bubbly-bright smile. \"I’m okay!\"\\n\\n                            \"Y-yeah...\" She lets out a sigh, mustering her thoughts before tucking her hair back a little and pulling you to your feet. \"I guess this is just you now, huh?\"\\n                            \\n                            \"Uh-huh.\" You smile, pulling Azzy down into a hug. Silly thing, she’ll only worry for a little bit. Then you two can fuck!'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:387491:387502:a17ad895a73f",
@@ -10682,10 +10682,10 @@
       "line": 1,
       "raw": "'\\n    The Queen smiles when you enquire about your kids, [nyzerrah.isBimbo|doing a little wiggle on the spot|patting you gently on the head]. \"They’re doing wonderfully. Shall I let them know you’re here?\"\\n\\n    At a nod she gently calls over a handmaiden, before sending her down to... wherever it is the children sleep or rest. You settle in on the sofa beside the Queen, waiting patiently. It’s not a long wait, judging by the flurry of buzzes that approach.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:404028:404034:bc981983e7f5",
@@ -10950,10 +10950,10 @@
       "line": 1,
       "raw": "\"Dive!\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:432776:434538:fcac12fa3ae0",
@@ -10967,10 +10967,10 @@
       "line": 1,
       "raw": "'\\n        Unfortunately for Nyzerrah, you’ve not interested in getting directly acquainted with the taste of your own cock. Or perhaps fortunately, because it looks like the only avenue of escape is to slip into her hug and drive your face into her cleavage. She gasps [nyzerrah.isBimbo|and gives you a great big bubbly bimbo-giggle when you rub your face from side to side, planting a series of lusty kisses and lovebites on her while she drools honey from her plump nipples.|before laughing softly, running fingers through your hair as you nibble and kiss her chocolatey skin until honey drools freely from her plump nipples.] After a few moments, the Queen seems comfortable to sit and restore the state of her makeup while you straddle her lap and kiss her cleavage.\\n\\n        Of course, all good things must come to an end, and when you snap out of your boob-induced daze it looks like quite the bit of time has passed since the face-fucking. \"Ready to leave so soon?\" Nyzerrah smirks. [nyzerrah.isBimbo| \"Unless you like, totally want to stay and watch me fist myself!\" ...Tempting, that. But you probably have things to be getting on with.| \"Such a shame, but I suppose it’s time I did some exercising... and found something hot to drink so a sore throat doesn’t develop, hmm?\" There’s the faintest hint of a blush on her cheeks, and she pointedly clears her throat. True, you probably have things to be getting on with as well.]\\n        \\n        Azyrran smiles and buzzes over once you’re dressed again, looking you up and down. \"I wanted to come over earlier, but you looked too comfy...[party.has azyrran| Ready to go?| I’ll escort you out yeah?]\" She loops an arm through your own, wiggling her way in comfortably with a little buzz of her wings.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:434573:434579:bc981983e7f5",
@@ -11041,10 +11041,10 @@
       "line": 1,
       "raw": "\"She has tits, hide in them.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:434648:434655:bdf1738458bf",
@@ -11073,10 +11073,10 @@
       "line": 1,
       "raw": "'\\n        Even makeup smeared, flushed, and wanton, her face is the picture of femininity and her soft lips are just begging to be kissed. You straddle her lap and sink into the Queen’s embrace, matching lip-to-lip and moaning into one-another’s mouths. Her tongue sinks into you, wrestling gently with your tongue and sharing the taste of sex. You can feel the way her lips form a smile against you and her fingers caress you while you’re curled up against each other. You can practically hear the pounding of her heart as her body tries to come down from air loss and fuck-adrenaline. \\n\\n        To be fair, a passionate tongue-filled kiss probably isn’t doing her any favors in getting her breath back, but you’re both far too caught up in indulging in the simple creature comfort of kissing after such an exhausting face-fucking. \"That was wonderful. [nyzerrah.isBimbo|You have super delicious cum, and your kisses are the bestest. Did you know that?|I don’t think there’s anyone else I’d let ravage my lips like that. And you... taste very good.]\" She slowly exhales, licking her lips gently. She lets you rest there in her lap and cozy up, restoring her makeup to its former glory while you ride out the afterglow.\\n        \\n        Eventually you’re brought back to reality by slender chitinous fingers slipping through your hair. \"[pc.name]? [nyzerrah.isBimbo|It’s not sleepy-time!|Be careful not to fall asleep...] I’m sure you’ve got things to do, heroics to attend to?\"\\n        \\n        Unfortunately she’s right; you probably do have things to do. Azyrran smiles and buzzes over once you’re dressed again, looking you up and down. \"I wanted to come over earlier, but you looked too comfy...[party.has azyrran| Ready to go?| I’ll escort you out yeah?]\" She loops an arm through your own, wiggling her way in comfortably with a little buzz of her wings.'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:436614:436620:bc981983e7f5",
@@ -11295,10 +11295,10 @@
       "line": 1,
       "raw": "'\\n    Your gaze — although struggling to leave [nyzerrah.isBimbo|the Queen’s bimbocious rack|the Queen’s perfect figure] — lands on Azyrran. [azzy.kdb|The hive knight blinks at you in confusion before you reach out and give her a gentle head rub. \"W-wait, what are you doing, [pc.name]?\" she gasps, before you pet her into blushing submission.|The dragoon blinks in surprise before pointing at herself. \"Wait, me too?\" she mutters, surprised, before you pull her into a kiss.|The caramel cuddlebug bounces on her heels and points at herself, putting on her most enticingly-sweet pose. \"Me too?\"]\\n\\n    [nyzerrah.isBimbo|Nyzerrah giggles, reaching out to pat her head too. \"Oooh, naughty, naughty [pc.mf|boy|girl]! Are you thinking of making this a threesome?\"|Nyzerrah blinks before a wicked little grin forms on her plump lips. \"Aren’t you a greedy [pc.mf|boy|girl], involving my sweet innocent Azyrran too?\"] The Queen leans over the little knight, nearly crushing the girl’s head with her heaving tits while staring closely enough to bump noses with you. \"I like it.\" When she backs away again, there’s a soft smile on her face as she tosses back her [nyzerrah.isBimbo|ebon-streaked ]hair. \"But how would you like to do this? We have plenty of options available to us...\"\\n    \\n    There’s an affirmative muffled grunt from Azyrran before she’s released from marshmallow-hell... [nyzerrah.isBimbo|wiping honey from her cheek with a sigh.|licking honey-glazed lips with a cheeky little smile.]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:470204:470216:c4587d77b4b3",
@@ -11340,10 +11340,10 @@
       "line": 1,
       "raw": "\"Use Dick\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:470385:486438:ec95b3946d0a",
@@ -11505,10 +11505,10 @@
       "line": 1,
       "raw": "\"You need a cock for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:486829:486839:c1cdecc06a74",
@@ -11658,10 +11658,10 @@
       "line": 1,
       "raw": "\"Have Azyrran pound your cunt while you’re trapped between the Queen’s thighs.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:504914:504916:da39a3ee5e6b",
@@ -11689,10 +11689,10 @@
       "line": 1,
       "raw": "\"You need a pussy for this.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:505084:506530:50fd474042c2",
@@ -11706,10 +11706,10 @@
       "line": 1,
       "raw": "'\\n    [pc.dcb|\"I’m pretty sure if I do that I won’t be going anywhere for a long while. I will pass, I think.\"|\"Tempting, very tempting! But I’m sorry I must decline your gracious offer. I’ve got things to do.\"|\"Awww nuts. I super want to! But there’s lotsa stuff I gotta do. Next time, though! We can totally bang more!\"]\\n    \\n    Nyzerrah sighs, patting your head and waiting instead for you to finish coming down. By the time the world has stopped trying to go black and white, Azyrran’s found her own legs again and redressed. She helps you pull on your own gear with a [azzy.kdb|shy smile|dirty-grin|fuck-brained giggle], looking you up and down as Nyzerrah makes her way to the baths.\\n    \\n    [azzy.kdb|Azyrran buzzes over, a blush still very much on her face|Azyrran saunters up to you, looking a little jealous|Azzy buzzes up to the two of you, tweaking and teasing one of her nipples and smiling] on seeing the Queen saunter casually past covered in spunk and honey. [party.has azyrran|She takes your arm and sighs when you practically stick to her. \"Shall we go then, [pc.name]?\"|She’s careful not to make contact with you while you’re all sticky, instead smiling and humming softly as she escorts you out of the hive.\\n    \\n    \"Come back soon, okay [pc.name]? I uh... I miss you when you’re gone, you know?\" she’s already winging away again before you can respond, but at least it was nice to watch her being shy and squirmy.]'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:506565:506571:bc981983e7f5",
@@ -11946,10 +11946,10 @@
       "line": 1,
       "raw": "\"\\n        You’re woken up by slender — if incredibly sticky — fingers stroking your forehead. One of the Queen’s handmaidens is looking down at you, sat by your side with a sated expression. Before you can croak anything out she places a finger to her lips to shush you, indicating the bacchanal devastation around you. The perfect image of salaciousness and endless pleasure surround you in the forms of sticky bodies and breasts rising and falling with their own exhausted breaths. \\n        \\n        A few of the handmaidens are already awake however, and taking sticky steps towards the Queen’s bathroom so that they can become somewhat presentable... but at least you’ve got the time to gather your wits unmolested. One of the handmaidens fights down a knowing laugh and sits you up, giving you a glass of water that might well be the difference between life and death considering your diet of sex and honey.\\n        \\n        Unfortunately, it looks like the baths are going to be taken up for a while, and Nyzerrah’s an utterly blissed-out pool of honey and cum. [party.has azyrran|A similarly sex-coated Azyrran is laid out heavily and you have to carry her in your arms on the way out of the Queen's room before she even regains some semblance of consciousness.|Azyrran is in a similarly blissful state, eyes half-lidded while her fingers trail the juices that drools from her flushed cunt. With a sigh you lean down and give her a peck on the lips, earning only a soft moan before you go and hunt out your clothes.] You’re... a mess, and everything squelches when you put it on. You’re stuffed with eggs, covered in cum, drooling lube from your asshole[pc.hasCunt| and twat], and dripping with honey.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:527999:528011:c4587d77b4b3",
@@ -12240,10 +12240,10 @@
       "line": 1,
       "raw": "'\\n    \"Mmmn?\" Nyzerrah gives you an indulgent smile, leaning back in her sofa and gesturing you closer. The scent of honey and sex wafts up to you, stirring your depths until [pc.cockVagBoth\\n        |precum is trickling down your thigh\\n        |you\\'re slick with desire\\n        |your cock and cunt both make it clear they\\'d be interested in some personal-time\\n    ]. \"I have a number of trinkets from old conquests! What does it look like?\"\\n    \\n    \"Silver ring with a bell on it, I think.\"\\n    \\n    Nyzzy frowns and scratches her head, pondering for a moment while she toys with her glorious golden tresses. \"I... that sounds familiar! One moment.\"\\n    \\n    The queen waves over one of her handmaidens, smiling and exchanging a few words before she giggles and buzzes off. \"There, we\\'ll have it to you in just a moment.\"\\n    \\n    \"That was easy...\"\\n    \\n    \"My dear, we owe everything to you! Unless you\\'d be willing to take it as a dowry, make you into my hive-[pc.mf\\n        |husband\\n        |wife\\n    ]?\" She flutters her lashes and tents her fingers.\\n    \\n    Before you can respond, one of Nyzerrah\\'s handmaidens return, this one actually nude but for a sleeping gown that hangs off of her shoulders. You can immediately see the charm you seek; the delicate silver ring-and-bell has been used as a stomach piercing, and she watches you with half-asleep curiosity. \"You wanted my piercing, champion?\"\\n    \\n    It takes a few seconds for your brain to kick itself into gear, particularly when you\\'ve found yourself surrounded by muscular, curvaceous, pheromonally-laced hornet amazons. \"...Yes.\"\\n    \\n    \"Well then, here you go!\" The handmaiden smiles and fiddles with the jewelry, unpinning it and sighing when it slips quickly free from a now-sensitive belly button. \"All good?\"\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:545607:545619:6b5a752cfeb1",
@@ -12404,10 +12404,10 @@
       "line": 1,
       "raw": "'\\n        \"Thank you, [pc.dcb\\n            |appreciated.\\n            |sorry that I had to part you from something so pretty.\\n            |it\\'s a shame I had to take something off your pretty tum-tum though!\\n        ]\"\\n        \\n        \"It\\'s fine, gives me a chance to find some new jewelry.\" The handmaiden insists.\\n        \\n        You slip the ring onto the chain dangling from your greatsword, relieved to see it melt onto the chain and fit securely. Now when you give the hilt a shake it jingles pleasantly.\\n        '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:547295:547301:bc981983e7f5",
@@ -12478,10 +12478,10 @@
       "line": 1,
       "raw": "\"Thank the horny hornet.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:547435:560953:1c10f5effcc2",
@@ -12742,10 +12742,10 @@
       "line": 1,
       "raw": "\"Honey\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:562929:562931:da39a3ee5e6b",
@@ -12773,10 +12773,10 @@
       "line": 1,
       "raw": "\" If he has some to spare, maybe you can get some honey.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:563028:563030:da39a3ee5e6b",
@@ -12834,10 +12834,10 @@
       "line": 1,
       "raw": "\"Sex?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:563236:563238:da39a3ee5e6b",
@@ -12865,10 +12865,10 @@
       "line": 1,
       "raw": "\"Everyone, particularly you, wants to have sex with a dreamy hornet boy.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:563327:563334:7e3520a97331",
@@ -12925,10 +12925,10 @@
       "line": 1,
       "raw": "'\\n    \"Talking?\" The royal fuckboy blushes a shade darker. \"... Why would I wish to speak to you?\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:563621:563627:f116ccf7e3b9",
@@ -12957,10 +12957,10 @@
       "line": 1,
       "raw": "'\\n        \"The hive is well; though the effects of that substance... corruption, I think... is lowered, we have always been productive. [flags.HIVE_CLEARED|I will admit that I am more clear-headed now but such things remind me that we have traitors and far too little honey reserves to grow complacent|Growing adjusted to this strange sensation in me is difficult, but if that <b>annoyance</b> did it, then I must as well. This hotness and the satisfaction I gain from corruption keeps me working so much more diligently... it truly is astounding, if I must say so. But we still have nowhere near enough honey].\"\\n\\n        Is honey gathering really such a problem? They have a giant pool of it.\\n        \\n        \"... Of course, we have a pool. But most of our honey is <b>in</b> the pool for storage.\" Nyze pushes a chitin-clad finger against his lower lip. \"The issue is that even with this much, we only have luxury on the surface. Corruption allowed us to greatly increase our supply, yet even this much is rather paltry for feeding and tending to our every need. [flags.HIVE_CLEARED|That\\'s before speaking about how things will get as it works out of our systems. As more hornets return from the effects of this arousing state we\\'ve been riled up into, it\\'ll be much harder to milk their bounty as we have.|While we aren\\'t devoid of corruption, your rule has certainly brought some changes; we barely have any girls around mewling or struggling through their new body\\'s desires. See?]\"\\n        \\n        Nyze turns and points a finger at the stockades; many of them have emptied compared to the first time you came through, with only a few girls even squeezing and massaging their chests to add to the pool below.\\n        \\n        \"Once we\\'ve recovered fully, there may yet be more challenges ahead for our humble hive and its warriors. Of course, not for me; my work is here... ensuring we get the most honey possible from the girls who can provide it.\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:565698:565704:f116ccf7e3b9",
@@ -13033,10 +13033,10 @@
       "line": 1,
       "raw": "'\\n        [flags.HIVE_WHIP|You hold his weapon outward, giving him a nice look and chance to reclaim it.|His whip is in the pool still; isn\\'t he going to get it?]\\n        \\n        \"Huh? My whip?\" Nyze stares at you for a few long seconds... before finally scoffing and raising an identical but new whip. \"You mean one of these? You can have the other one; I dropped it so it isn\\'t like it matters that much to me. Whips are just tools, after all, that serve better off for more... perverse means than gentle ones for extracting copious amounts of honey. Why would you assume I would cherish a whip so much as to ask for it back?\"\\n\\n        The prince scoffs. \"Of course, now that I ask it should be obvious a weird[flags.NYZE_FUCKED| pervert|o] like you would assume as much.\"'",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:566695:566697:da39a3ee5e6b",
@@ -13093,10 +13093,10 @@
       "line": 1,
       "raw": "\"\\n        [flags.NYZE_TALK_SEX\\n            |\\\"Sorry, no. I am still not in the mood for having any further sexual encounters with you.\\\" Nyze's formal speaking abruptly ends with his face twisting with embarrassment and anger. \\\"Ask me another day![pc.hasCock|[silly| Why are you so interested in me, anyway? What are you, gay? Are you into boipussy? Come on! I-I'm not even into dudes, you know? Your dick just magically makes me gay! I'm one-hundred percent heterosexual, b-b-b-baka!]]\\\"\\n            |[flags.NYZE_FUCKED|Isn't he up for having sex again? ]You'd like to go another round or two with the prince if he's game for some intercourse.\\n\\n            \\\"... No.\\\"\\n            \\n            Nyze crosses his arms and stares [pc.isHeight 63|up at you|down at you] with a glare. This is different from his casually defiant and grumpy demeanor; the stubborn prince's wings flutter in annoyance, shifting his hips and averting his gaze.\\n            \\n            \\\"[flags.NYZE_FUCKED|Just because we had sex once, you think it's that easy? ]I have a reputation to uphold; if I started fucking everyone who asked, I'd never get any work done. Not to mention that as the princeling of the hive, I have <b>responsibilities</b> to make sure that nothing I do with others is anything more than casual.\\\"\\n            \\n            You haven't even discussed the idea of being serious, though. All you mentioned was having sex, right? For now, you sigh and relent; if he's really so against it, then you can wait until he's open to it again. You didn't save the hive just to send it toppling into chaos over having sex with its drone princeling. Actually you appreciate that he's so focused on working hard; would he be open to you asking every once in a while?\\n            \\n            \\\"... Very well, you may <b>ask</b>. But I cannot guarantee I will be very open to it anytime soon.\\\" The prince's skirt rides up his soft, effeminate thighs and highlights the tell-tale sign of a bulge, throbbing into view just for a moment. \\\"Besides... it isn't as if I am <b>entirely</b> against it.[flags.NYZE_FUCKED| You weren't terrible. But it was rather rude to make me look so pathetic in front of all the others, your sexual technique is... admirable.] In the future, if we have such intimate encounters... do not be surprised if I expect <b>more</b> from you.\\\"\\n        ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:569260:569266:371f13d6b15d",
@@ -13139,10 +13139,10 @@
       "line": 1,
       "raw": "\"Is he in the mood to fuck around with you[flags.NYZE_FUCKED| again]?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:569369:569371:da39a3ee5e6b",
@@ -13286,10 +13286,10 @@
       "line": 1,
       "raw": "\"This pregnancy of yours doesn't make a ton of sense to you. Maybe Nyze has answers.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:569778:569784:b52b36b7269f",
@@ -13346,10 +13346,10 @@
       "line": 1,
       "raw": "\"\\n    \\\"H-Honey?\\\" Nyze panics but stops himself; the prince smooths out his skirt and clears his throat[silly| of all that gay jizz he swallows non-stop]. \\\"I mean... do you really desire to have some of our honey? I can allow it... but only a small amount. If that will suffice, then grant me a bit of your time. Wait here.\\\"\\n\\n    The hornet prince turns and moves over to his aides, bullying a small group of other drones to rush off. One of the swollen-chested hornet gals follows along, giggling and petting them between their antennae. You're only made to wait a few minutes before the group returns and the girl's chest looks far less bulging. The drones hand Nyze a jar before dispersing back to their jobs, whilst the prince returns to you and offers you their bounty.\\n    \\n    \\\"Now, remember; I can't give you this very often. [flags.HIVE_CLEARED|With the corruption's effects fading from the hive, we can't provide you very much at all. But I assure you that I am doing this out of the Queen's goodwill... understand?|I only do it because the Queen has tolerated you, so... you're an ally of ours.]\\\"\\n    \\n    [silly|Yeah, or he just wants you[pc.hasCock|r dick up his butt| to grow a cock and fuck him]. ]You appreciate the gift, bowing your head and stowing the honey for now...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:571321:576006:f4f6d7be95db",
@@ -13363,10 +13363,10 @@
       "line": 1,
       "raw": "'\\n    [var0\\n        |\"They\\'re... okay.\"\\n        \\n        Nyze huffs and looks toward the door leading back into the hive-proper. \"They\\'re growing up a bit slower than normal hornets but that\\'s okay. It must be so lonely, though, since normally we hornets are born in groups.\"\\n        |\"Our kids are doing good,\" Nyze grumbles. \"When they\\'re not up to no good, that is.\"\\n        \\n        \"What do you mean?\"\\n        \\n        The drone prince sets a hand on his hip, buzzing his wings and looking toward the doorway leading back toward the hive. \"They\\'re taking after me. Bossy little drones are already trying to boss some of the younger girls around just because they\\'re bigger. They may grow slow but they sure don\\'t let their size advantage go to waste.\"\\n        |\"All of them are a menace.\"\\n        \\n        Nyze rubs his butt, reminiscing with a grumble. \"One of them stole my whip and actually got me good. The little runts are really a handful for the hive. Maybe we should stop having them.\"\\n        \\n        You grin. \"I\\'ll consider it... but maybe they\\'re more like me if they\\'re [flags.NYZE_ANAL\\n            |after the same thing I am\\n            |teasing you so much\\n        ].\"\\n        \\n        As much as he likes to play it off, your words get a blush out of the prince that makes you feel all warm and fuzzy inside. Honestly a lot like how getting plugged full of his honey feels.\\n        |\"Our Queen has them training.\"\\n        \\n        [flags.NYZE_TALK_MANY_KIDS\\n            |\"And what are they working on now?\"\\n            \\n            [rand\\n                |\"Magical training,\" Nyze sighs. \"A few of them are showing promise at using our command pheromones in coordination with it, so they\\'re getting training in what little we understand of healing magic.\"\\n                |\"Combat training,\" Nyze grumbles. \"Fighting me and some of the tougher girls. Honestly, it\\'s a bit annoying since they\\'re not weak but also not strong enough to win in a one-on-one. But they\\'re my kids so I just need to suck it up and make sure they get good enough to make it interesting.\"\\n                |\"Hive integration.\" Nyze looks at a passing group of hornets, waving to them before looking back at you. \"They may be special but their job is still part of our hive. They\\'ve been paired off with some of the older scouts, drones, and workers in an effort to have them rely and work together with others besides their siblings.\"\\n                |\"Unit tactics,\" Nyze says, pridefully grinning. \"And they\\'re already in the top five hopeful groups!\"\\n                \\n                Well, they <b>are</b> your kids. It stands to reason they\\'d have talent like that.\\n                \\n                \"Of course. It looks adorable when they\\'re wrestling with the other girl groups, though. They might be bigger than some of the hornets their age but the older girls are starting to teach them that they\\'re still drones. We\\'re smaller but they\\'ll learn to adjust for that just like I did. Hopefully.\"\\n            ]\\n            |You blink in confusion. \"Wait, what? The Queen is training them? What for?\"\\n            \\n            Nyze crosses his arms, yet casts a look at a group of hornets heading by on their way to the baths. You turn and look, too, seeing the girls sporting similar clothing and all closely intimate in their touches and talks.\\n            \\n            \"She wants them to be like the girls,\" he starts, waiting for the group to pass before looking at you. \"Drones in our hive have always been a bit on the lower side because we\\'ve not really had a ton of use compared to warriors like Azyrran. But... well... our kids are special. Not only do they grow slower, but we think they\\'ll also live longer than most of our kind. Plus, a lot of them ended up being pretty magical. Before all of this, she was thinking about assigning them throughout the hive to become mages or personal servants of our elite but they\\'re so numerous that she thinks it\\'s better to just... well... train them as a unit.\"\\n            \\n            So you had so many kids that the hive is getting an entire group of warrior drones? Compared to normal drones leading and organizing parties whenever they seldomly left the hive, doesn\\'t that mean they\\'ll have almost as much freedom as the girls?\\n            \\n            Nyze nods. \"Yes. Of course, that could still change if they flunk out. But our kids are pretty skilled. Some of them use a whip like me but they\\'re already showing they\\'re adaptable. In a couple years, they\\'ll probably be one of the strongest groups our hive has ever produced.\"\\n        ]\\n    ]\\n    '",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:576193:576203:64e1b7a4b620",
@@ -13474,10 +13474,10 @@
       "line": 1,
       "raw": "\"That round ass of his is <b>yours</b>.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:582594:582596:da39a3ee5e6b",
@@ -13505,10 +13505,10 @@
       "line": 1,
       "raw": "\"If you don't have a dick or something else to perform the job, how can you fuck him?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:582704:582714:3a8b32745bdd",
@@ -13551,10 +13551,10 @@
       "line": 1,
       "raw": "\"Bullying a hornet cutie like him is what you're here for.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:582805:582807:da39a3ee5e6b",
@@ -13716,10 +13716,10 @@
       "line": 1,
       "raw": "\"Inside\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:601140:605411:a80c6fa2522e",
@@ -13966,10 +13966,10 @@
       "line": 1,
       "raw": "\"\\n    You feel weird. Maybe it's something you ate, or you didn't get enough sleep, but your body feels sluggish. Of course, there's an alternative. Rather than ill or worn out, maybe your recent sex is bearing fruit: what if you're pregnant? \\n    \\n    [var0|Wait, is it possible that Nyze got you pregnant?]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:610665:610671:bc981983e7f5",
@@ -14040,10 +14040,10 @@
       "line": 1,
       "raw": "\"\\n    The first signs of your pregnancy's physical changes are finally here: your belly is slowly distending and you're getting food cravings. Giving birth may still be a far-off circumstance but you're excited to be the center of this magnificent process. It's a scary reality to have a kid but soon you're going to have [var0|yours|more] without any regrets.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:611250:611256:bc981983e7f5",
@@ -14128,10 +14128,10 @@
       "line": 1,
       "raw": "\"\\n    If there was any chance of someone mistaking it for simply gaining weight, there's no chance anyone makes it now: you're in the last part of your pregnancy. A large, swollen belly makes you no different from the hundreds of other potential mothers out there.[pc.hasBreasts| You also are becoming productive, too.] You're afraid yet excited, feeling each kick and movement inside you with a euphoria that no sex can ever replicate. You won't be waiting much longer now.\\n    \\n    <b>You're lactating honey!</b>\\n    You sling your armor back on and get moving, trying to ignore your sensitive honey-pots for the time being.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:612245:612248:50c9e8d5fc98",
@@ -14258,10 +14258,10 @@
       "line": 1,
       "raw": "\"\\n    [flags.NYZE_PREG_TALKED\\n        |You're definitely going into labor. This is bad! You're not prepared at all and-\\n        \\n        \\\"[pc.name]!\\\"\\n        \\n        Nyze [var0\\n            |runs up\\n            |drops from above\\n        ], escorted by a few of the hornets from the hive. The drone prince looks out of breath but relieved to see you. \\\"You're okay! You're ready to give birth[var0\\n            | again\\n        ], right? We're here to take you back to the hive's hatchery! There's a place there we set-up just for this and-\\\"\\n        \\n        \\\"My prince in slutty attire,\\\" you laugh, collapsing into his arms as the kicking blots out your reason. \\\"Let's just get going, okay?\\\"\\n        |You drop to the ground, clutching your belly as liquid drips down your thighs and pools below you. Your water breaking is rough but the initial tremors of birth setting in make just standing up nearly impossible.\\n        \\n        But you soldier on; [party.som\\n            |you stumble and stamper, making your way back toward town alone\\n            |[comp1.name] takes one of your arms and helps stand you up, walking with you back toward town\\n            |thankfully for you, your party is here to take either arm and lift you up, carrying your pregnant ass and letting you relax on the way to town\\n        ]. The nursery is the only place you can have this kid and you're at least going to get that far!\\n    ]\\n    \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:614214:614220:bc981983e7f5",
@@ -14350,10 +14350,10 @@
       "line": 1,
       "raw": "\"\\n                The next two days are extremely eventful; from your arrival and the early stages of labor, you spent most of it on your back squeezing Nyze's hand and listening to the midwife's directions. Despite not being used to live-birth, the honest effort made by drones and buzzy girls passing in and out of the room to make it more comfortable help keep you calm and relaxed as best as you can be. By the end of it all, of course, you eventually had your child: a healthy boy. [var0\\n                    |Like last time, this one grows rapidly and explosively within an hour of coming out of your womb.\\n                    |Nyze looked pretty shocked at you giving birth to a drone but what was more impressive was how fast he grew. Every hornet in the room gasped at him going from the normal hatched size to a toddler's in the span of an hour.\\n                ]\\n                \\n                Thankfully, though, they had tons of honey on hand and in the teats of some of the hatchery's attendants to handle his hunger. You fell asleep sometime during the panicking but by the time you awoke, all the noise had died down. Nyze sat groggily beside you with the drone in his lap, stroking the boy's hair and smiling at you.\\n                \\n                \\\"Hey,\\\" he quietly whispers. \\\"You did... great. Did you sleep well?\\\"\\n                \\n                You [pc.mf\\n                    |laugh\\n                    |giggle\\n                ] but keep a hand over your mouth to help muffle the noise, trying your hardest not to wake your son up. Nyze rolls his eyes but slides over the bedside to rest beside you, forming a three-way cuddle between the three of you.\\n                \\n                And in the morning, that cuddle-party ended with the girls needing the room back for new eggs. Your son was taken off to a different part of the hive to be put with other young hornets whilst Nyze walked you back to his place to relax. Eventually that too came to an end, of course... and you eventually descended the stairs leading to Nyze's place and looked out over the big honey pool with a smile. It may not have been normal by their standards but knowing that one of your offspring is in the hive... there's nothing more personal than that.\\n                \\n                Of course, it's also time for you to resume your adventure.\\n                \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:618257:618263:bc981983e7f5",
@@ -14541,10 +14541,10 @@
       "line": 1,
       "raw": "\"\\n                An entire day of relaxing and resting later, you finally wrestle yourself out of bed and gather your things. Gwyn and your new little one are waiting outside, albeit the lupine is the only one awake between the two. As big as a toddler, the drone is dozing on her lap while she strokes his head. Since she's not able to get up, the two of you pass a wave to one another before you head outside. By the time you come back, you're sure he'll have left.\\n                \\n                Time to get back to the adventurer's grind.\\n                \"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:620650:620656:bc981983e7f5",
@@ -14657,10 +14657,10 @@
       "line": 1,
       "raw": "\"\\n    The foot of the great hive complex gives way to an open lip, extended out over the river valley canyon from a pair of vaulted archways, allowing entrance to the hornets' domain. There are no doors per se — you doubt the militant hornets were too concerned with uninvited guests considering the remote nature of their home. \\n\\n    [flags.HIVE_GOLEM\\n        |A small group of hornet warriors are milling around nearby. You can probably get a ride back to the forest floor from them when you're ready.\\n        |Now that you're here, you realize that there's no easy way back across...\\n    ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:621545:621552:7e3520a97331",
@@ -14777,10 +14777,10 @@
       "line": 1,
       "raw": "\"Travel back the Old Forest.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:623939:623941:da39a3ee5e6b",
@@ -14808,10 +14808,10 @@
       "line": 1,
       "raw": "\"Now that you're here, you realize that there's no easy way back across...\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624080:624593:49da47f5adc8",
@@ -14857,10 +14857,10 @@
       "line": 1,
       "raw": "\"\\n        Which level would you like to go to?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624741:624748:916a78d701de",
@@ -14874,10 +14874,10 @@
       "line": 1,
       "raw": "\"First\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624749:624751:da39a3ee5e6b",
@@ -14920,10 +14920,10 @@
       "line": 1,
       "raw": "\"Second\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624822:624831:c78b1fbd8725",
@@ -14979,10 +14979,10 @@
       "line": 1,
       "raw": "\"Third\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624887:624896:a36c521ea9e7",
@@ -15038,10 +15038,10 @@
       "line": 1,
       "raw": "\"Fourth\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:624953:624963:e4092b2afbc5",
@@ -15168,10 +15168,10 @@
       "line": 1,
       "raw": "\"\\n    The smell of honey and sex permeates the room wall-to-wall; jars and amphora filled with honey line the walls, each the byproduct of the hive's[flags.HIVE_PURIFIED|| corrupted] bounty. A cliff-like balcony cuts out into a massive open chamber, giving a great view to a massive pool of the viscous delicacy. Stairs on the sides of the balcony lead down to the honey pool.\\n    \\n    [flags.HIVE_CLEARED\\n        |[var0\\n            |The prince is nearby ordering drones and honey-filled hornet girls alike around. Every once in a while, he shoots you a blushy look; it seems he's still embarrassed after [flags.NYZE_FUCKED|you made him cum|his defeat].\\n            |That rough sex left your little Drone Princeling all tuckered out. You'll need to give Nyze a day to unwind and catch his breath.\\n        ]\\n        |The defeated prince is nearby, crowded by hornet girls all hungrily fucking him. You're not going to get another shot at him until things calm down.\\n    ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:626202:626215:525563085d7c",
@@ -15257,10 +15257,10 @@
       "line": 1,
       "raw": "\"\\n    Leading down from the lurid milking room east of here is a huge hex chamber, completely dominated by a vast pool filled to the brim with fragrant, sweet honey. Rivers of the stuff run down in channels from the milking room, flowing like molasses into the waiting pool. A narrow lip of waxy floor runs around the edge of the chamber, letting worker-hornets harvest their hive's bounty by the bucket-load. \\n\\n    [flags.HIVE_WHIP||The hornet prince's whip is floating on top of the honey pool, now that the goo has been taken care of. Easy pickings, if you want it.]\\n    \\n    [flags.HIVE_CORRUPT|Liaden is sitting by the poolside, giggling as a gaggle of the ditzy hornet workers gather around her and work her nipples, milking streams of sweet honey into the pool — just as if she was part of the hive!]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:627418:627429:83fc8b854d1d",
@@ -15350,10 +15350,10 @@
       "line": 1,
       "raw": "\"\\n        Which level would you like to go to?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:628273:628280:916a78d701de",
@@ -15367,10 +15367,10 @@
       "line": 1,
       "raw": "\"First\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:628306:628315:67f1cfb81c4c",
@@ -15426,10 +15426,10 @@
       "line": 1,
       "raw": "\"Second\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:628355:628357:da39a3ee5e6b",
@@ -15472,10 +15472,10 @@
       "line": 1,
       "raw": "\"Third\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:628427:628436:a36c521ea9e7",
@@ -15531,10 +15531,10 @@
       "line": 1,
       "raw": "\"Fourth\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:628493:628503:e4092b2afbc5",
@@ -15661,10 +15661,10 @@
       "line": 1,
       "raw": "\"\\n    [flags.HIVE_CLEARED\\n        |You stand in Jyrranaz's isolated lair, removed from the rest of the handmaidens' chambers and surrounded by glasswork and scrolls amassed in every corner, even sticking out of the walls. The sorceress herself is busily working, but smiles faintly as you draw near.\\n        |You survey to the study where you found and fought Jyrranaz, the vesparan venom-chemist. [var0\\n            |Weirdly, she isn’t anywhere to be found – everything is where you left it, from the haphazard pieces of parchment scattered around the place, to the books on her shelves, to her chemistry set on the table in the corner, but Jyrranaz herself is missing. Likely to tend to her wounds; you doubt she’d leave her life’s work unattended for long.\\n            |And she’s exactly where you left her: comatose on the floor, leaking venom from just about every orifice it can leak from. She’s snoring, so you know she’s alive.[flags.JYRR_FUCKED| Frankly, it’s almost flattering to know that you could fuck someone into a coma like that.]\\n        ]\\n        \\n        There isn’t anything left for you here right now. <b>Maybe you could come back later, once the queen is dealt with?</b>\\n    ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:630017:630027:89b990b4432b",
@@ -15754,10 +15754,10 @@
       "line": 1,
       "raw": "\" hours before they'll have some update on their progress for you.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:630494:631042:0dc4f23b0888",
@@ -15803,10 +15803,10 @@
       "line": 1,
       "raw": "\"\\n        Which level would you like to go to?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:631182:631189:916a78d701de",
@@ -15820,10 +15820,10 @@
       "line": 1,
       "raw": "\"First\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:631215:631224:67f1cfb81c4c",
@@ -15879,10 +15879,10 @@
       "line": 1,
       "raw": "\"Second\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:631281:631290:c78b1fbd8725",
@@ -16110,10 +16110,10 @@
       "line": 1,
       "raw": "\"\\n    You stand in an interior section of the hive, a hexagonal room seeming to serve little purpose besides connecting other chambers. The walls are catacombed with smaller hexes, some filled with honey or baubles, others empty. Several have been waxed over, keeping their contents safe and hidden. Open archways connect to chambers south, north, and west. The western passage is adorned with a pair of crossed spears, and unlike most of the vaulted arches you've passed, this one actually has a <i>door</i> set in it.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:632153:632166:8ddd93477a10",
@@ -16156,10 +16156,10 @@
       "line": 1,
       "raw": "\"[pc.cl thief|Hah, a simple lock can't stop a thief like you!|Go ahead and open the sealed chamber.]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:632359:632361:da39a3ee5e6b",
@@ -16202,10 +16202,10 @@
       "line": 1,
       "raw": "\"\\n    These must be the handmaidens' quarters, lavishly adorned with silk bedding and amphoras of honey-mead. [flags.HIVE_SAVED\\n        |Said handmaidens seem to have shrugged off the worst of their bimbofication alongside their mother, and though they play a little grab-ass with each other, they're mostly busy preparing for guard duty or patrols. They salute you, and smile warmly, when you approach.\\n        |Several blissed-out former amazons are sprawled out on the beds, idly masturbating or sucking on each others' tits. They barely pay you any mind.\\n    ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:633144:634551:bff1a7d14a2f",
@@ -16219,10 +16219,10 @@
       "line": 1,
       "raw": "\"\\n    The armory is full of wooden racks loaded down with long bronze war-spears and bronze-faced circular shields, not unlike Azyrran's own kit. Some stands near the far wall have breastplates, greaves, and leather skirts displayed on wax mannequins, too.\\n    \\n    [flags.HIVE_SHIELD\\n        |There's an empty shrine here, dedicated to the Rosebloom Shield.\\n        |Your eyes are inevitably drawn to a single display stand on the far side of the armory, where a shield has been propped up surrounded by candles and wild roses picked from the nearby forest. It's almost like a shrine of sorts...\\n\\n        [party.has azyrran|\\\"The Rosebloom Shield,\\\" Azyrran explains, gesturing towards it. \\\"Our hive's founder, Queen Lyzzerahn, carried it when she came north. It's said that no one could stand against her for long, for her presence was so overbearing that her enemies would drop their weapons and fall to their knees and worship her like a goddess of battle. [flags.HIVE_SAVED|Mother does not fight with a shield, and you have helped our tribe so... I think that you would be a worthy wielder, if you desire it.|In mother's current state... I don't think she would object if you took our ancestral shield up to help in our quest to bring her to her senses.]]\\n        \\n        The shield gives off a powerful, flowery fragrance even from across the room. You could take it, if you wished.\\n    ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:634588:634601:a2007090e3fb",
@@ -16312,10 +16312,10 @@
       "line": 1,
       "raw": "\"\\n        Which level would you like to go to?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:635558:635565:916a78d701de",
@@ -16329,10 +16329,10 @@
       "line": 1,
       "raw": "\"First\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:635591:635600:67f1cfb81c4c",
@@ -16632,10 +16632,10 @@
       "line": 1,
       "raw": "\"\\n    You stand outside a massive pair of [flags.HIVE_QDOOR||sealed, ]honey-gold doors to the south, separating the room you're in — a lavish antechamber adorned with silks and pillows and long divans — from the chambers of the queen. Waxy pillars support the room along all six walls, displaying banners and silky drapery that help assure you that you'll soon stand in the presence of true royalty. \\n\\n    [flags.HIVE_CLEARED||[\\n        flags.HIVE_QDOOR\\n        |Azyrran stands next to the door, anxiously waiting for your go-ahead. \\\"I'm ready when you are, [pc.name]...\\\"\\n        |Azyrran rocks on her heels beside the door, glancing between it and you. \\\"We need two keys to open the queen's chambers without her consent: the Honey Key and the Venom Key. If you don't have them, we'd need a ram and several hours to batter down these doors...\\\"\\n    \\n        [party.has brint|Brint chuckles. \\\"Wanna bet?\\\"\\n        \\n        Easy, big guy.]\\n    ]]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_deepseekv41",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_HornetHive.d8d727fa342a416527f5.js:637415:637429:8a4d6a4a860f",

@@ -1,19 +1,17 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.98\\resources\\app\\103.85eee0fb8f4f0560a4b0.js",
+  "sourceFile": "D:\\Codex\\COC2 0.99\\resources\\app\\103.85eee0fb8f4f0560a4b0.js",
   "sourceSha1": "3d394f8aae4fc5387db6b3234127a55569346b06",
   "migratedFrom": [
-    "103.7add8679cf52b4212f48.js.json"
+    "103.85eee0fb8f4f0560a4b0.js.json"
   ],
-  "updateGeneratedAt": "2026-09-22T10:43:16.930Z",
+  "updateGeneratedAt": "2026-09-26T19:18:49.704Z",
   "updateMode": "preview",
-  "keptByReason": {
-    "carried_from_old_json": 1
-  },
+  "keptByReason": {},
   "total": 7783,
-  "shouldTranslate": 480,
-  "inherited": 478,
-  "inheritedState": 7401,
-  "newlyAdded": 1,
+  "shouldTranslate": 483,
+  "inherited": 483,
+  "inheritedState": 7402,
+  "newlyAdded": 0,
   "byCategory": {
     "unknown": 3389,
     "possible_text": 4203,
@@ -4412,10 +4410,10 @@
       "line": 1,
       "raw": "\"Fur Gold\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "103_visible_silly_currency_label",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "103_visible_silly_currency_label",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.85eee0fb8f4f0560a4b0.js:20956:20972:524e14cfb394",
@@ -12878,7 +12876,7 @@
       "end": 64005,
       "line": 1,
       "raw": "\"None\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -15378,7 +15376,7 @@
       "end": 76471,
       "line": 1,
       "raw": "\"None\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -22734,7 +22732,7 @@
       "end": 102903,
       "line": 1,
       "raw": "\"None\"",
-      "inheritedMatchMode": "context_original_category",
+      "inheritedMatchMode": "occurrence_original_category",
       "curatedReason": "disabled_for_103_curated_safety",
       "updateStatus": "inherited_not_translatable"
     },
@@ -36484,16 +36482,18 @@
       "id": "103.85eee0fb8f4f0560a4b0.js:163728:163735:8dce170de238",
       "file": "103.85eee0fb8f4f0560a4b0.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "Value",
-      "translation": "",
+      "translation": "价值",
       "start": 163728,
       "end": 163735,
       "line": 1,
       "raw": "\"Value\"",
       "inheritedMatchMode": "occurrence_original_category",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.85eee0fb8f4f0560a4b0.js:163739:163746:f32b67c7e263",
@@ -38480,16 +38480,18 @@
       "id": "103.85eee0fb8f4f0560a4b0.js:173554:173561:8dce170de238",
       "file": "103.85eee0fb8f4f0560a4b0.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "Value",
-      "translation": "",
+      "translation": "价值",
       "start": 173554,
       "end": 173561,
       "line": 1,
       "raw": "\"Value\"",
       "inheritedMatchMode": "occurrence_original_category",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.85eee0fb8f4f0560a4b0.js:173565:173572:f32b67c7e263",
@@ -41478,16 +41480,18 @@
       "id": "103.85eee0fb8f4f0560a4b0.js:188420:188427:8dce170de238",
       "file": "103.85eee0fb8f4f0560a4b0.js",
       "category": "unknown",
-      "shouldTranslate": false,
+      "shouldTranslate": true,
       "original": "Value",
-      "translation": "",
+      "translation": "价值",
       "start": 188420,
       "end": 188427,
       "line": 1,
       "raw": "\"Value\"",
       "inheritedMatchMode": "occurrence_original_category",
+      "translationStatus": "manual_translated",
+      "translationModel": "manual",
       "curatedReason": "disabled_for_103_curated_safety",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.85eee0fb8f4f0560a4b0.js:188431:188438:f32b67c7e263",
@@ -55122,10 +55126,11 @@
       "end": 248197,
       "line": 1,
       "raw": "\"None\"",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "new_in_version",
+      "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "103.85eee0fb8f4f0560a4b0.js:248205:248223:3d7d2ed7c1d8",
