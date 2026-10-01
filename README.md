@@ -90,7 +90,7 @@ translate_each_file会调用ollama_translate_v2文件。通过修改ollama_trans
 
 ### 反馈问题
 
-译者目前暂无修正问题的时间，请参考下文文件结构自行修正
+请参考<b>关于本仓库</b>部分，于issue反馈
 
 ### 版本号规则
 
