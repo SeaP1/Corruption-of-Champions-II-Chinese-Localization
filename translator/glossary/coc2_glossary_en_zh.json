@@ -4,6 +4,7 @@
       "Agnimitra": "阿格尼米特拉",
       "Arona": "阿罗娜",
       "Atugia": "阿图吉娅",
+      "Tui": "阿图",
       "Azyrran": "阿兹兰",
       "Azzy": "阿齐",
       "Brienne": "布蕾妮",
@@ -29,6 +30,7 @@
       "Gweyr": "格维尔",
       "Hethia": "赫希娅",
       "Isadora": "伊莎多拉",
+      "Lady Nuts": "蛋蛋女士",
       "Kasyrra": "卡希拉",
       "Kinu": "小娟",
       "Dal": "达尔",
@@ -760,7 +762,8 @@
       "Lewyn": "莱温",
       "Vulgra": "沃尔格拉",
       "Gerry": "杰里",
-      "Moongiven": "穆恩吉文"
+      "Moongiven": "穆恩吉文",
+      "Lady of the Lake": "湖中女士"
     },
     "Named Mounts": {
       "Leo": "利奥"
@@ -1103,7 +1106,8 @@
         "Thigh High Leather Boots": "过膝皮靴",
         "Weed-walkers": "踏草靴",
         "Winged Sabatons": "飞翼铁靴",
-        "Rogues Boots": "盗贼长靴"
+        "Rogues Boots": "盗贼长靴",
+        "Rogue's Boots": "盗贼长靴"
       },
       "Hands": {
         "Arm Guards": "护臂",
@@ -1178,6 +1182,7 @@
         "Ring of Wealth": "财富戒指",
         "Rogue's Ring": "盗贼之戒",
         "Signet Ring": "印玺戒指",
+        "Aurora Ring": "极光戒指",
         "White Blossom Ring": "白花戒指",
         "Wizard Ring": "巫师戒指"
       },
@@ -2324,7 +2329,8 @@
     },
     "Languages & Dialects": {
       "bell-har-in": "贝拉兰语",
-      "Ay-ah": "哎—哈"
+      "Ay-ah": "哎—哈",
+      "nojya": "诺雅"
     }
   }
 }
