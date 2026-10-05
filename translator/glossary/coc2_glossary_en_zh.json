@@ -34,7 +34,8 @@
       "Kasyrra": "卡希拉",
       "Kinu": "小娟",
       "Dal": "达尔",
-      "Izzy": "伊兹"
+      "Izzy": "伊兹",
+      "Berry": "贝里"
     },
     "Followers & Character Items": {
       "Alante": "阿兰特",
@@ -321,7 +322,8 @@
       "Tamarin": "塔玛琳德",
       "Tammy": "塔米",
       "Rags": "拉格斯",
-      "Kari": "卡莉"
+      "Kari": "卡莉",
+      "Electra": "伊莱克特拉"
     },
     "Roaming Encounters": {
       "Avanai Rider": "阿瓦奈骑手",
@@ -446,7 +448,9 @@
       "Fortuna Zorba": "福尔图娜·佐尔巴",
       "Talsna": "塔尔斯娜",
       "Byvernia Talsna": "拜维尼亚·塔尔斯娜",
-      "Zorba": "佐尔巴"
+      "Zorba": "佐尔巴",
+      "Junkrat": "狂鼠",
+      "Siorcanna Beta": "希奥卡纳族贝塔"
     },
     "Event Encounters": {
       "Abyssal Thing": "深渊之物",
@@ -587,7 +591,8 @@
       "Boomer": "布默",
       "Janeen": "贾宁",
       "Lusamine": "露萨敏",
-      "Leofric": "利奥弗里克"
+      "Leofric": "利奥弗里克",
+      "Jerk Merc": "混蛋佣兵"
     },
     "The Seven": {
       "Lumia": "卢米娅",
@@ -763,7 +768,68 @@
       "Vulgra": "沃尔格拉",
       "Gerry": "杰里",
       "Moongiven": "穆恩吉文",
-      "Lady of the Lake": "湖中女士"
+      "Lady of the Lake": "湖中女士",
+      "Aafi": "阿菲",
+      "Amalthea": "阿玛尔西娅",
+      "Arvenred": "阿文雷德",
+      "Atheldred": "阿塞尔德雷德",
+      "AveryBirb": "艾弗里·伯布",
+      "Botezuri": "博特祖里",
+      "Cata": "卡塔",
+      "Edessari": "埃德萨里",
+      "Ethlyn": "埃思琳",
+      "Freja": "弗蕾雅",
+      "Hirrud Grune": "希鲁德·格鲁恩",
+      "Kassyra": "卡希拉",
+      "Kasy": "卡希",
+      "Kessy": "凯西",
+      "Kesuk": "凯萨克",
+      "Koian": "科伊安",
+      "Leroux": "勒鲁",
+      "Liresh": "莉蕾什",
+      "Lord Ulysses Weyland": "尤利西斯·韦兰德勋爵",
+      "Lydia": "莉迪亚",
+      "Lythen": "莱森",
+      "Mareth": "玛瑞斯",
+      "Marissa": "玛丽莎",
+      "Mary": "玛丽",
+      "Mitra": "米特拉",
+      "Natalia": "娜塔莉亚",
+      "Neddy": "奈迪",
+      "Odain": "奥代恩",
+      "Piper": "派珀",
+      "Piperita": "皮佩里塔",
+      "Sif": "西芙",
+      "Skom": "斯科姆",
+      "Syrena": "希蕾娜",
+      "Syrish": "西瑞什",
+      "Tabitha": "塔比莎",
+      "Talulah": "塔鲁拉",
+      "Tornarii": "托尔纳里",
+      "Twitchy": "抽抽",
+      "Tyranah": "泰拉娜",
+      "Vai": "瓦伊",
+      "Wredi": "韦迪",
+      "Emrisse": "埃姆里斯",
+      "I'ava": "伊阿瓦",
+      "Louis": "路易斯",
+      "Marigold": "玛丽戈尔德",
+      "Toodles": "图多斯",
+      "Asynja": "阿辛雅",
+      "Callie": "凯莉",
+      "Red": "红毛",
+      "Hadred Grune": "哈德雷德·格鲁恩",
+      "Hadred": "哈德雷德",
+      "Hadrien Grune": "哈德良·格鲁恩",
+      "Hadrien": "哈德良",
+      "Calli": "卡莉",
+      "Etheyn": "伊瑟琳",
+      "Livernon": "利弗农",
+      "Siv": "西芙",
+      "Laz": "拉兹",
+      "Theodroe Fautier": "西奥多·福蒂埃",
+      "Ōtomo": "大友",
+      "Ma Siorc": "希奥克老妈"
     },
     "Named Mounts": {
       "Leo": "利奥"
@@ -887,7 +953,9 @@
       "White Week": "白色星期",
       "Clam Slam": "蛤蜊大满贯",
       "Tycathalon": "泰卡塔隆",
-      "Tychathalon": "泰卡塔隆"
+      "Tychathalon": "泰卡塔隆",
+      "The Crowning": "加冕仪式",
+      "Pound Town": "猛干镇"
     }
   },
   "Places of Interest": {
@@ -915,7 +983,9 @@
       "the Marches": "边境地区",
       "the Rift": "裂谷",
       "Dreamscape": "梦境世界",
-      "Ways": "界间之路"
+      "Ways": "界间之路",
+      "Valgarde": "瓦尔加德",
+      "Northern Shield": "北方之盾"
     },
     "Settlements": {
       "Centaur Village": "半人马村落",
@@ -934,7 +1004,10 @@
       "Felurze": "费卢尔泽",
       "Corlund": "科伦德",
       "Horn High": "霍恩海",
-      "Altenspire": "阿尔滕斯派尔"
+      "Altenspire": "阿尔滕斯派尔",
+      "Clairemont": "克莱尔蒙特",
+      "Vulperine Village": "狐人族村落",
+      "City of Glass": "玻璃之城"
     },
     "Locations": {
       "Abandoned Temple": "废弃神殿",
@@ -1045,7 +1118,16 @@
       "Underquarry": "地下矿场",
       "Frosthound": "寒霜猎犬",
       "Fuckhouse": "妓院",
-      "Pasture": "牧场"
+      "Pasture": "牧场",
+      "Daughter's Garden": "女儿的花园",
+      "Manticore Tower": "蝎狮塔",
+      "Odd Orchard": "奥德果园",
+      "Steps of Sorra": "索拉的台阶",
+      "Viv's House": "薇芙的家",
+      "Wayfort Outskirts": "荒废驿堡郊区",
+      "Wayfort Statue": "荒废驿堡雕像",
+      "Waystation Stenn": "斯坦驿站",
+      "City of Sorcery": "魔法之城"
     }
   },
   "Items": {
@@ -1331,7 +1413,8 @@
         "Wing of Asira": "阿西拉之翼",
         "Wooden Rod": "木杖",
         "Bewitching Staff": "魅惑法杖",
-        "Icerime Rod": "霜凇权杖"
+        "Icerime Rod": "霜凇权杖",
+        "Bearded Axe": "长须斧"
       },
       "Offhand": {
         "Ancient Warhorn": "远古战号",
@@ -1882,7 +1965,21 @@
       "Myth & Western 1911": "神话与西部1911型",
       "omikuji": "占卜纸条",
       "Winner's Token": "获胜者代币",
-      "Canine Pepper": "犬胡椒"
+      "Canine Pepper": "犬胡椒",
+      "conjuror's concoction": "术士的调配药剂",
+      "foxberries": "狐莓",
+      "hundred-hawk coin": "百鹰硬币",
+      "mirrorwine": "镜酒",
+      "Pupperidge Pale Ale": "帕珀里奇淡色艾尔",
+      "rune stone": "符文石",
+      "springcap": "春蕈",
+      "Tartan Garb": "花格呢装束",
+      "Strategos Plate": "统帅胸甲",
+      "Bagpipes": "风笛",
+      "Targe": "圆盾",
+      "Dirk": "短剑",
+      "Minoan amphora": "弥诺斯双耳瓶",
+      "ovilixir": "催卵灵药"
     },
     "Item-Related Plants": {
       "Razorcup": "剃刀杯"
@@ -2016,7 +2113,13 @@
       "Princeps": "亲王",
       "warmaiden": "女战士",
       "Strategos": "统帅",
-      "Decanus": "十夫长"
+      "Decanus": "十夫长",
+      "Dawn Maiden": "黎明少女",
+      "flamebearer": "持火者",
+      "wingleader": "翼领者",
+      "Songstress": "歌姬",
+      "spellsinger": "咒歌者",
+      "Jarl": "领主"
     },
     "Summons": {
       "Unique": {
@@ -2036,7 +2139,8 @@
         "Lapis Hoplite": "拉皮斯重装步兵",
         "Minuta": "米努塔",
         "Phyria": "菲莉亚",
-        "Talsenne": "塔尔森"
+        "Talsenne": "塔尔森",
+        "Sporeling Princess": "孢子灵公主"
       },
       "Generic": {
         "Bear": "熊",
@@ -2060,7 +2164,10 @@
         "Effigy Archer": "拟像弓手",
         "Effigy Sureshot": "拟像神射手",
         "Effigy Pollinator": "拟像授粉者",
-        "Effigy Blossom": "拟像花朵"
+        "Effigy Blossom": "拟像花朵",
+        "Fire Dancer": "火之舞者",
+        "Fire Knight": "火骑士",
+        "Earth Elemental": "大地元素"
       }
     },
     "Codex": {
@@ -2106,7 +2213,9 @@
         "Vesparans": "黄蜂族",
         "Vulperines": "狐人族",
         "Wyld Elves": "荒野精灵",
-        "Wyverns": "翼龙"
+        "Wyverns": "翼龙",
+        "Selkie": "海豹精",
+        "Goocat": "黏液猫"
       },
       "Lore": {
         "Arms & Tactics": "武器与战术",
@@ -2139,13 +2248,16 @@
       "hawks": "鹰币"
     },
     "Forms & States": {
-      "Dragon Form": "龙之形态"
+      "Dragon Form": "龙之形态",
+      "Amalgam": "融合体",
+      "half-sexed": "半性人"
     },
     "Powers & Maneuvers": {
       "Spumotti gambit": "斯普莫蒂战术",
       "Harai": "祓禊",
       "Prestidigitation": "魔法伎俩",
-      "seifukujutsu": "整骨术"
+      "seifukujutsu": "整骨术",
+      "Kangen": "管弦"
     }
   },
   "Sexual": {
@@ -2169,7 +2281,11 @@
       "Tail Bondage": "尾巴束缚",
       "AnalPronebone": "俯卧肛交",
       "Edge": "边缘控制",
-      "Bang Bros": "打炮兄弟"
+      "Bang Bros": "打炮兄弟",
+      "Analmancy": "菊术",
+      "amoozon": "亚马逊",
+      "Gigamilk": "吉加米尔克",
+      "Mating Press": "种付位"
     }
   },
   "World & Culture": {
@@ -2232,7 +2348,28 @@
       "veparus": "维帕鲁斯",
       "water wyrd": "水灵",
       "Sailgravers": "帆葬海岸人",
-      "Machan": "马昌"
+      "Machan": "马昌",
+      "Belharan": "贝尔哈兰",
+      "Belharans": "贝尔哈兰人",
+      "Estelorean": "埃斯托洛尔人",
+      "gothmander": "哥特曼德",
+      "gothmanders": "哥特曼德",
+      "'mander": "火蜥蜴人",
+      "'manders": "火蜥蜴人",
+      "lizard-fish": "蜥蜴鱼人",
+      "satyr": "萨提尔",
+      "Satyrs": "萨提尔",
+      "Heartlander": "腹地人",
+      "Heartlanders": "腹地人",
+      "half-lupine": "半狼族",
+      "beefolk": "蜂人",
+      "night-scaled salamander": "夜鳞火蜥蜴人",
+      "frostscale salamander": "霜鳞火蜥蜴人",
+      "frostscale salamanders": "霜鳞火蜥蜴人",
+      "Tychrisian": "提克里斯人",
+      "Valgardian": "瓦尔加德人",
+      "Valgardians": "瓦尔加德人",
+      "elflette": "精灵幼崽"
     },
     "Military Units": {
       "Chargers": "冲锋者",
@@ -2263,7 +2400,15 @@
       "Marae": "玛拉埃",
       "the August Master": "天中尊主",
       "the August Master at the Center of Heaven": "天之中央尊主",
-      "Storm Maiden": "风暴少女"
+      "Storm Maiden": "风暴少女",
+      "Eternal Flame": "永恒之火",
+      "Queen of All Lusts": "所有欲望的女王",
+      "Terrestrial Fire": "大地之火",
+      "Wyld": "荒野",
+      "the Wyld": "荒野",
+      "Wise Serpent": "智慧之蛇",
+      "Sorran": "索拉信仰的",
+      "Tiran": "蒂拉教会的"
     },
     "Works & Texts": {
       "War Against Demons": "对抗恶魔的战争",
@@ -2274,7 +2419,8 @@
       "On Magicka Obscura": "《论暗黑魔法》",
       "Sex & Minos": "《性爱与弥诺斯》",
       "Tables": "桌子棋",
-      "Wyld Mark": "野性印记"
+      "Wyld Mark": "野性印记",
+      "Ibulimo Aluutro": "伊布利莫·阿卢特罗"
     },
     "Nations & Civilizations": {
       "Belhar": "贝尔哈",
@@ -2284,7 +2430,10 @@
       "the Sultanate": "苏丹国",
       "Tronariiani": "特洛纳里语",
       "Barania": "巴拉尼亚",
-      "Valgar": "瓦尔加尔"
+      "Valgar": "瓦尔加尔",
+      "Belharan Imperium": "贝尔哈兰帝国",
+      "en Tychris": "恩·提克里斯",
+      "Dracian": "达拉西亚的"
     },
     "Organizations": {
       "Dragon Generals": "龙将",
@@ -2311,7 +2460,8 @@
       "var Ridells": "里德尔家族",
       "Moratia": "莫拉蒂亚",
       "House Moratia": "莫拉蒂亚家族",
-      "Grune": "格鲁恩"
+      "Grune": "格鲁恩",
+      "River Cultists": "河畔邪教徒"
     },
     "Materials & Substances": {
       "Lethicite": "灵魂晶石",
@@ -2325,12 +2475,24 @@
     "Artifacts & Monuments": {
       "Matron Statue": "主母雕像",
       "Stud Statue": "种马雕像",
-      "Ruby Throne": "红宝石王座"
+      "Ruby Throne": "红宝石王座",
+      "wordlock": "词锁"
     },
     "Languages & Dialects": {
       "bell-har-in": "贝拉兰语",
       "Ay-ah": "哎—哈",
-      "nojya": "诺雅"
+      "nojya": "诺雅",
+      "ibulim": "伊布利姆",
+      "Gaimu": "Gaimu",
+      "Gaul": "Gaul",
+      "guffk": "guffk",
+      "fria": "fria"
+    },
+    "Magic & Enchantments": {
+      "Vodo": "沃多"
+    },
+    "Vessels": {
+      "Vigil": "守望者号"
     }
   }
 }
