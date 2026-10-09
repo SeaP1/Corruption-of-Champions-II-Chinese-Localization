@@ -18,7 +18,7 @@ const coreOnly = args.includes("--core-only");
 
 function forwardedTranslatorArgs() {
   const forwarded = [];
-  const valueOptions = new Set(["--model", "--host"]);
+  const valueOptions = new Set(["--model", "--host", "--save-every"]);
   const flagOptions = new Set([]);
   for (let i = 0; i < args.length; i += 1) {
     const arg = args[i];

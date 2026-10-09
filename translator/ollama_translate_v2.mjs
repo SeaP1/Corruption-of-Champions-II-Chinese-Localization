@@ -6,6 +6,9 @@ const DEFAULT_HOST = "http://127.0.0.1:11434";
 const OUT_DIR = path.resolve("translator", "translated_json");
 const translationMemory = new Map();
 const translationMemoryConflicts = new Set();
+const unitMemory = new Map();
+const unitMemoryConflicts = new Set();
+let activeFlush = null;
 
 function rowsOf(doc) { return Array.isArray(doc?.rows) ? doc.rows : []; }
 function isDisabledCodeRow(row) {
@@ -16,8 +19,9 @@ function usableTranslation(row) {
 }
 function rememberTranslation(row, sourceFile = "") {
   if (!usableTranslation(row)) return;
+  if (row.trailingExpression || /joined_expression/.test(row.translationStatus ?? "")) return;
   const key = row.original;
-  const value = row.translation.trim();
+  const value = row.translation;
   if (translationMemoryConflicts.has(key)) return;
   const existing = translationMemory.get(key);
   if (!existing) {
@@ -36,6 +40,7 @@ function buildTranslationMemory() {
     try {
       const doc = JSON.parse(fs.readFileSync(file, "utf8"));
       for (const row of rowsOf(doc)) rememberTranslation(row, name);
+      rememberDocumentUnits(doc, name);
     } catch {
       // Ignore damaged/nonstandard files; validation can report them separately.
     }
@@ -45,6 +50,7 @@ function reuseTranslationFromMemory(row) {
   if (!row || isDisabledCodeRow(row) || row.shouldTranslate === false || !row.original || translationMemoryConflicts.has(row.original)) return false;
   const hit = translationMemory.get(row.original);
   if (!hit || !hit.translation) return false;
+  if (structuralIssues(row.original, hit.translation).length) return false;
   row.translation = hit.translation;
   delete row.translationError;
   delete row.rejectedTranslation;
@@ -65,7 +71,8 @@ const model = argValue("--model", DEFAULT_MODEL);
 const host = argValue("--host", DEFAULT_HOST).replace(/\/$/, "");
 const limit = Number.parseInt(argValue("--limit", "20"), 10);
 const overwrite = hasArg("--overwrite");
-const inputArg = argValue("--input", path.resolve("translator", "extracted_json", "Content_Forest.dc28793bf13e3dfdc5b8.js.json"));
+const saveEvery = Number.parseInt(argValue("--save-every", "20"), 10);
+const inputArg = argValue("--input", path.resolve("translator", "extracted_json"));
 
 const UI_GLOSSARY = new Map([
   ["Next", "下一步"],
@@ -564,6 +571,68 @@ function splitTranslatedUnit(translated, expressions) {
   return pieces;
 }
 
+// A fragment is reusable only together with its complete expression chain.
+function expressionUnit(rows, startIndex, sourceText) {
+  const unitRows = [rows[startIndex]];
+  const expressions = [];
+  let original = rows[startIndex].original;
+  let index = startIndex;
+  while (index + 1 < rows.length && rows[index + 1].shouldTranslate && !isDisabledCodeRow(rows[index + 1])) {
+    const expression = joinExpressionBetween(sourceText, rows[index], rows[index + 1]);
+    if (!expression) break;
+    const token = `__E${expressions.length}__`;
+    expressions.push({ expression, token });
+    unitRows.push(rows[++index]);
+    original += token + rows[index].original;
+  }
+  return { rows: unitRows, expressions, original, nextIndex: index + 1 };
+}
+function unitKey(unit) {
+  return JSON.stringify([unit.rows.map(r => r.original), unit.expressions.map(e => e.expression)]);
+}
+function rememberUnit(unit, sourceFile) {
+  if (unit.rows.length < 2 || !unit.rows.every(usableTranslation)) return;
+  const translation = unit.rows.map((r, i) => r.translation + (unit.expressions[i]?.token ?? "")).join("");
+  if (structuralIssues(unit.original, translation).length) return;
+  const key = unitKey(unit);
+  if (unitMemoryConflicts.has(key)) return;
+  const old = unitMemory.get(key);
+  if (old && old.translation !== translation) {
+    unitMemory.delete(key);
+    unitMemoryConflicts.add(key);
+  } else if (!old) unitMemory.set(key, { translation, sourceFile, sourceId: unit.rows[0].id });
+}
+function rememberDocumentUnits(doc, sourceFile) {
+  const rows = rowsOf(doc), source = loadSourceText(doc);
+  if (!source) return;
+  for (let i = 0; i < rows.length;) {
+    const unit = expressionUnit(rows, i, source);
+    rememberUnit(unit, sourceFile);
+    i = unit.nextIndex;
+  }
+}
+function reuseUnit(unit) {
+  const key = unitKey(unit), hit = unitMemory.get(key);
+  if (!hit || unitMemoryConflicts.has(key)) return false;
+  const pieces = splitTranslatedUnit(hit.translation, unit.expressions);
+  if (!pieces || pieces.length !== unit.rows.length || structuralIssues(unit.original, hit.translation).length) return false;
+  if (unit.rows.some((row, i) => row.translation?.trim() && row.translation !== pieces[i])) return false;
+  unit.rows.forEach((row, i) => {
+    if (row.translation?.trim()) return;
+    row.translation = pieces[i];
+    row.translationStatus = "reused_joined_expression";
+    row.translationSourceId = hit.sourceId;
+    row.translationSourceFile = hit.sourceFile;
+    delete row.translationError;
+    delete row.rejectedTranslation;
+    if (unit.expressions[i]) {
+      row.trailingExpression = unit.expressions[i].expression;
+      row.trailingExpressionToken = unit.expressions[i].token;
+    }
+  });
+  return true;
+}
+
 async function translateFile(inputPath, budget) {
   const sourceDoc = JSON.parse(fs.readFileSync(inputPath, "utf8"));
   const outPath = outputPathFor(inputPath);
@@ -572,14 +641,42 @@ async function translateFile(inputPath, budget) {
   const sourceText = loadSourceText(target);
   let translated = 0, reused = 0, skipped = 0, failed = 0;
   const startedAt = Date.now();
+  let dirtyWrites = 0;
+  const flush = () => {
+    if (!dirtyWrites) return;
+    ensureDir(path.dirname(outPath));
+    const tempPath = `${outPath}.tmp.${process.pid}`;
+    fs.writeFileSync(tempPath, `${JSON.stringify(target, null, 2)}\n`, "utf8");
+    fs.renameSync(tempPath, outPath);
+    dirtyWrites = 0;
+  };
+  const markDirty = () => { if (++dirtyWrites >= saveEvery) flush(); };
+  activeFlush = flush;
 
+  try {
   for (let index = 0; index < (target.rows || []).length;) {
     const row = target.rows[index];
     if (budget.value <= 0) break;
-    if (!row.shouldTranslate) { skipped++; index++; continue; }
-    if (!overwrite && row.translation && row.translation.trim()) { skipped++; index++; continue; }
+    if (!row.shouldTranslate || isDisabledCodeRow(row)) { skipped++; index++; continue; }
 
-    const unit = buildUnit(target.rows, index, sourceText);
+    const completeUnit = expressionUnit(target.rows, index, sourceText);
+    if (completeUnit.rows.length > 1) {
+      if (!overwrite && completeUnit.rows.every(r => r.translation?.trim())) {
+        skipped += completeUnit.rows.length; index = completeUnit.nextIndex; continue;
+      }
+      if (!overwrite && reuseUnit(completeUnit)) {
+        reused++; markDirty(); index = completeUnit.nextIndex; continue;
+      }
+    } else {
+      if (!overwrite && row.translation?.trim()) { skipped++; index++; continue; }
+      const isFragment = index > 0 && Boolean(joinExpressionBetween(sourceText, target.rows[index - 1], row));
+      if (!isFragment && (applyUiGlossary(row) || (!overwrite && reuseTranslationFromMemory(row)))) {
+        rememberTranslation(row, path.basename(outPath));
+        reused++; markDirty(); index++; continue;
+      }
+    }
+
+    const unit = completeUnit;
     const preview = unit.original.replace(/\s+/g, " ").slice(0, 90);
     const joinNote = unit.rows.length > 1 ? ` joined=${unit.rows.length}` : "";
     process.stdout.write(`[${translated + 1}/${limit}] ${path.basename(inputPath)} #${row.line ?? row.jsonPointer ?? "?"}${joinNote}: ${preview}\n`);
@@ -589,7 +686,8 @@ async function translateFile(inputPath, budget) {
       const pieces = splitTranslatedUnit(unitTranslation, unit.expressions);
       if (!pieces || pieces.length !== unit.rows.length) throw new Error(`missing expression marker; got: ${unitTranslation}`);
       unit.rows.forEach((unitRow, pieceIndex) => {
-        unitRow.translation = pieces[pieceIndex].trim();
+        if (!overwrite && unitRow.translation?.trim()) return;
+        unitRow.translation = pieces[pieceIndex];
         delete unitRow.translationError;
         delete unitRow.rejectedTranslation;
         unitRow.translationStatus = unit.rows.length > 1 ? "ollama_translated_joined_expression" : "ollama_translated";
@@ -601,26 +699,31 @@ async function translateFile(inputPath, budget) {
           unitRow.trailingExpressionToken = unit.expressions[pieceIndex].token;
         }
       });
+      rememberUnit(unit, path.basename(outPath));
       translated++;
       budget.value--;
     } catch (error) {
-      if (row.translation && row.translation.trim()) row.rejectedTranslation = row.translation;
-      row.translation = "";
-      row.translationStatus = "failed";
-      row.translationError = String(error.message || error);
+      for (const failedRow of unit.rows) {
+        if (!overwrite && failedRow.translation?.trim()) continue;
+        if (failedRow.translation?.trim()) failedRow.rejectedTranslation = failedRow.translation;
+        failedRow.translation = "";
+        failedRow.translationStatus = "failed";
+        failedRow.translationError = String(error.message || error);
+      }
       failed++;
       budget.value--;
     }
 
     index = unit.nextIndex;
-    ensureDir(path.dirname(outPath));
-    fs.writeFileSync(outPath, `${JSON.stringify(target, null, 2)}\n`, "utf8");
+    markDirty();
   }
+  } finally { flush(); activeFlush = null; }
   return { inputPath, outPath, translated, reused, skipped, failed, seconds: ((Date.now() - startedAt) / 1000).toFixed(1) };
 }
 
 async function main() {
   if (!Number.isFinite(limit) || limit <= 0) throw new Error("--limit 必须是大于 0 的数字。 ");
+  if (!Number.isFinite(saveEvery) || saveEvery <= 0) throw new Error("--save-every 必须是正整数");
   ensureDir(OUT_DIR);
   buildTranslationMemory();
   const files = collectInputFiles(inputArg);
@@ -630,6 +733,9 @@ async function main() {
   console.log("\n完成：");
   for (const s of summaries) console.log(`${path.basename(s.inputPath)} -> ${s.outPath}, translated=${s.translated}, reused=${s.reused || 0}, skipped=${s.skipped}, failed=${s.failed}, time=${s.seconds}s`);
 }
+process.on("SIGINT", () => { activeFlush?.(); process.exit(130); });
+process.on("SIGTERM", () => { activeFlush?.(); process.exit(143); });
+process.on("exit", () => { activeFlush?.(); });
 main().catch(e => { console.error(e); process.exit(1); });
 
 

@@ -1,7 +1,7 @@
 ﻿import fs from "node:fs";
 import path from "node:path";
 
-const DIR = path.resolve("D:/Codex/COC2 Fixed/translator/translated_json");
+const DIR = path.resolve("translator", "translated_json");
 
 function countMatches(text, regex) {
   return (text.match(regex) || []).length;
