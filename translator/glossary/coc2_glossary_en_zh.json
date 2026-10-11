@@ -1127,7 +1127,9 @@
       "Wayfort Outskirts": "荒废驿堡郊区",
       "Wayfort Statue": "荒废驿堡雕像",
       "Waystation Stenn": "斯坦驿站",
-      "City of Sorcery": "魔法之城"
+      "City of Sorcery": "魔法之城",
+      "Courlund": "科伦德",
+      "Drapsa": "德拉普萨"
     }
   },
   "Items": {
@@ -1605,7 +1607,7 @@
       "Magic Anal Beads": "魔法肛珠",
       "Basket of Javelins": "一篮标枪",
       "Orc Disguise": "兽人伪装",
-      "Jarl's Medallion": "雅尔的勋章",
+      "Jarl's Medallion": "领主的勋章",
       "Rampart Key": "壁垒钥匙",
       "Silver Mirror": "银镜",
       "Dented Pot": "凹痕锅",
@@ -1963,7 +1965,7 @@
       "Infused Milk": "强化牛奶",
       "Keros' Smile": "凯罗斯的微笑",
       "Myth & Western 1911": "神话与西部1911型",
-      "omikuji": "占卜纸条",
+      "omikuji": "御神签",
       "Winner's Token": "获胜者代币",
       "Canine Pepper": "犬胡椒",
       "conjuror's concoction": "术士的调配药剂",
@@ -2098,7 +2100,7 @@
       "Reaver": "掠夺者",
       "Seeker": "探索者",
       "Seneschal": "总管",
-      "Soulbound": "灵魂绑定者",
+      "Soulbound": "灵魂绑定",
       "Storm Witch": "风暴女巫",
       "Sun warrior": "太阳武士",
       "Talon": "利爪",
@@ -2369,7 +2371,9 @@
       "Tychrisian": "提克里斯人",
       "Valgardian": "瓦尔加德人",
       "Valgardians": "瓦尔加德人",
-      "elflette": "精灵幼崽"
+      "elflette": "精灵幼崽",
+      "Macahnese": "玛卡恩人",
+      "Macahns": "玛卡恩人"
     },
     "Military Units": {
       "Chargers": "冲锋者",
@@ -2433,7 +2437,8 @@
       "Valgar": "瓦尔加尔",
       "Belharan Imperium": "贝尔哈兰帝国",
       "en Tychris": "恩·提克里斯",
-      "Dracian": "达拉西亚的"
+      "Dracian": "达拉西亚的",
+      "Macahn": "玛卡恩"
     },
     "Organizations": {
       "Dragon Generals": "龙将",
