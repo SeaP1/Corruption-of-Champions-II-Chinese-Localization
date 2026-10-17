@@ -10894,7 +10894,9 @@
       "line": 1,
       "raw": "\"FABLE\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:253064:253227:7ef0f634a871",
@@ -10908,7 +10910,8 @@
       "line": 1,
       "raw": "\"<i>These are false, but are not lies\\nSeen with your mind, but not your eyes\\nA lesson learned, from words well planned\\nSearch for a meaning, and understand</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:253258:253269:6dbca83297e2",
@@ -33770,13 +33773,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is southeast of me.",
-      "translation": "珍珠在我东南方（Pearl is southeast of me）。",
+      "translation": "珍珠在我东南方（Pearl is southeast of me）",
       "start": 1883724,
       "end": 1883751,
       "line": 1,
       "raw": "\"Pearl is southeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1883752:1883774:786a360ec693",
@@ -33784,13 +33789,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Lapis is west of me.",
-      "translation": "青金石在我西方（Lapis is west of me）。",
+      "translation": "青金石在我西方（Lapis is west of me）",
       "start": 1883752,
       "end": 1883774,
       "line": 1,
       "raw": "\"Lapis is west of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1883775:1883802:db420446dbf8",
@@ -33798,13 +33805,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is southeast of me.",
-      "translation": "珍珠在我东南方（Pearl is southeast of me）。",
+      "translation": "珍珠在我东南方（Pearl is southeast of me）",
       "start": 1883775,
       "end": 1883802,
       "line": 1,
       "raw": "\"Pearl is southeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1883803:1883829:82d2016a3c3f",
@@ -33812,14 +33821,14 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Jade is northeast of me.",
-      "translation": "翡翠在我东北方（翡翠 is northeast of me）。",
+      "translation": "翡翠在我东北方（Jade is northeast of me）",
       "start": 1883803,
       "end": 1883829,
       "line": 1,
       "raw": "\"Jade is northeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
       "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual"
     },
     {
@@ -33884,13 +33893,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Agate is northwest of me.",
-      "translation": "玛瑙在我西北方（Agate is northwest of me）。",
+      "translation": "玛瑙在我西北方（Agate is northwest of me）",
       "start": 1884047,
       "end": 1884074,
       "line": 1,
       "raw": "\"Agate is northwest of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884075:1884102:db420446dbf8",
@@ -33898,13 +33909,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is southeast of me.",
-      "translation": "珍珠在我东南方（Pearl is southeast of me）。",
+      "translation": "珍珠在我东南方（Pearl is southeast of me）",
       "start": 1884075,
       "end": 1884102,
       "line": 1,
       "raw": "\"Pearl is southeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884103:1884130:e5535bdc6855",
@@ -33912,13 +33925,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is northeast of me.",
-      "translation": "琥珀在我东北方（Amber is northeast of me）。",
+      "translation": "琥珀在我东北方（Amber is northeast of me）",
       "start": 1884103,
       "end": 1884130,
       "line": 1,
       "raw": "\"Amber is northeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884131:1884153:d67b1aff95f5",
@@ -33926,13 +33941,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Agate is west of me.",
-      "translation": "玛瑙在我西方（Agate is west of me）。",
+      "translation": "玛瑙在我西方（Agate is west of me）",
       "start": 1884131,
       "end": 1884153,
       "line": 1,
       "raw": "\"Agate is west of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884154:1884180:644ef6208455",
@@ -33940,14 +33957,14 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Jade is southwest of me.",
-      "translation": "翡翠在我西南方（翡翠 is southwest of me）。",
+      "translation": "翡翠在我西南方（Jade is southwest of me）",
       "start": 1884154,
       "end": 1884180,
       "line": 1,
       "raw": "\"Jade is southwest of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
       "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual"
     },
     {
@@ -34012,13 +34029,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Agate is northeast of me.",
-      "translation": "玛瑙在我东北方（Agate is northeast of me）。",
+      "translation": "玛瑙在我东北方（Agate is northeast of me）",
       "start": 1884408,
       "end": 1884435,
       "line": 1,
       "raw": "\"Agate is northeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884436:1884459:47f02c934d34",
@@ -34026,13 +34045,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is south of me.",
-      "translation": "琥珀在我南方（Amber is south of me）。",
+      "translation": "琥珀在我南方（Amber is south of me）",
       "start": 1884436,
       "end": 1884459,
       "line": 1,
       "raw": "\"Amber is south of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884460:1884482:3825d38b867d",
@@ -34040,13 +34061,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is west of me.",
-      "translation": "珍珠在我西方（Pearl is west of me）。",
+      "translation": "珍珠在我西方（Pearl is west of me）",
       "start": 1884460,
       "end": 1884482,
       "line": 1,
       "raw": "\"Pearl is west of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884483:1884513:ecb9bc7aa2b5",
@@ -34054,13 +34077,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amethyst is northwest of me.",
-      "translation": "紫水晶在我西北方（Amethyst is northwest of me）。",
+      "translation": "紫水晶在我西北方（Amethyst is northwest of me）",
       "start": 1884483,
       "end": 1884513,
       "line": 1,
       "raw": "\"Amethyst is northwest of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884514:1884537:eef08380f7b3",
@@ -34068,13 +34093,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Lapis is north of me.",
-      "translation": "青金石在我北方（Lapis is north of me）。",
+      "translation": "青金石在我北方（Lapis is north of me）",
       "start": 1884514,
       "end": 1884537,
       "line": 1,
       "raw": "\"Lapis is north of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1884538:1884540:da39a3ee5e6b",
@@ -36377,13 +36404,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is east of me.",
-      "translation": "珍珠在我东方（Pearl is east of me）。",
+      "translation": "珍珠在我东方（Pearl is east of me）",
       "start": 1978097,
       "end": 1978119,
       "line": 1,
       "raw": "\"Pearl is east of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1978120:1978150:40782a317fe9",
@@ -36391,13 +36420,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amethyst is northeast of me.",
-      "translation": "紫水晶在我东北方（Amethyst is northeast of me）。",
+      "translation": "紫水晶在我东北方（Amethyst is northeast of me）",
       "start": 1978120,
       "end": 1978150,
       "line": 1,
       "raw": "\"Amethyst is northeast of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1978151:1978177:17842329aac1",
@@ -36405,13 +36436,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is adjacent to me.",
-      "translation": "琥珀与我相邻（Amber is adjacent to me）。",
+      "translation": "琥珀与我相邻（Amber is adjacent to me）",
       "start": 1978151,
       "end": 1978177,
       "line": 1,
       "raw": "\"Amber is adjacent to me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1978178:1978180:da39a3ee5e6b",
@@ -36433,14 +36466,14 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Jade is adjacent to me.",
-      "translation": "翡翠与我相邻（翡翠 is adjacent to me）。",
+      "translation": "翡翠与我相邻（Jade is adjacent to me）",
       "start": 1978181,
       "end": 1978206,
       "line": 1,
       "raw": "\"Jade is adjacent to me.\"",
       "inheritedMatchMode": "occurrence_original_category",
       "updateStatus": "inherited_translation",
-      "translationStatus": "manual_translated",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual"
     },
     {
@@ -36449,13 +36482,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is west of me.",
-      "translation": "琥珀在我西方（Amber is west of me）。",
+      "translation": "琥珀在我西方（Amber is west of me）",
       "start": 1978207,
       "end": 1978229,
       "line": 1,
       "raw": "\"Amber is west of me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:1978271:1982611:1834cee04338",
@@ -38177,7 +38212,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    Rounding the next bend on the trail, you're greeted by quite the sight: a palisade formed from boulders, upturned wagons and logs. The former aside, none of these are common in this neck of the mountains, and must've been lugged all the way here. There's even a warning beacon in the form of a bonfire, although it's been long since used up and the cultists haven't had the time or resources to replace the charred remains with fresh wood. All the better for you, else they alert their fellows further along the trail.\n    \n    The barricade itself overlooks a good stretch of open trail leading up to it, with little cover for anyone heading down the only approach and clearly intended to take anyone heading up the trail by surprise while preventing an easy retreat into cover. Whoever ordered this chokepoint reinforced certainly knew what they were doing.\n    \n    [flags.CLOISTER_QUEST_BARRICADE_HANDLED 1 2\n        |Indeed, this would have been quite the impressive roadblock were it not wholly ablaze and the fire spreading by the moment; the fruits of your insidious attack having time to take root in between you climbing down from the cliff and arriving on the trail. Bluish flames so particular of naphtha leap from the puddle of viscous, burning liquid, turning to a more conventional yellow as the dry timbers in the barricade easily catch alight. The smooth ravine yields little in the way of sand, and the cultists' attempts to douse the fire with what little water they have on hand only causes the oil fire to spread even further. With its defenders busy and their minds on more pressing matters, it's easy for [party.combatNames] to creep up on their position, ready for action. Not that your immediate fears are realized — Tollus's goons are losing the battle against the raging flames, and they know it. At length, their efforts flag, and one of the stouter timbers comes crashing down on part of the barricade, crushing cart bodies underneath with its bulk and sending smouldering splinters flying into the air.\n        \n        This is the final straw. Utterly demoralised, the remaining cultists abandon their position and flee northwards, their footsteps echoed by the angry bellows of someone... although to be frank, it sounds more like some<i>thing</i>.\n        \n        What that is quickly reveals itself, silhouetted against the blazing timbers. As ropes fray and snap, sending more of the barricade crashing in upon itself, a towering, imposing figure kicks a wagon wheel aside and storms towards you. He — or at least, you think that's what it is by the general cut of the body under the plated robes — wields a heavy mace in one hand and a diamond-shaped shield of purple crystal in the other, and you dodge aside as its spiked head sails through the air where you were seconds ago. Despite the oddly-shaped helmet he's wearing having neither visor nor slits, being a blank facade of bronze, the cultist leader turns his head towards you as if sizing you up.\n        \n        <i>\"The Master said you might interfere.\"</i> The voice is somewhat muffled by the faceless helmet as he raises his mace for another blow. <i>\"I suppose you were more clever than I took you for, but I don't need to turn you into a pincushion to put you down myself.\"</i>\n        |In fact, it would've been more impressive and perhaps even functional if there were actually people atop the palisade to discourage trespassers from approaching. As things stand, though, no one's there to dissuade your approach; the reason why soon becomes evident as you draw close. Moaning reaches your ears when you're within a stone's throw of the palisade, accompanied by the sounds of raunchy sex. Seems like your gamble paid off — keeping his underlings at least a little horny at all times might get them in the proper frame of mind for being in a demonic sex cult and all, but surely Master Tollus would've accounted for the fact that doing so would have rendered them vulnerable to this sort of attack, right?\n        \n        Their robes lying discarded on the rocky ground and naked, tattooed skin glistening, the cultists who ought to have been manning the barricade are too busy having all kinds of perverse fun with each other to notice [party.combatNames] as you stroll by them, kicking away their bows and blades. Things look they're going to be a walk in the park until your path is blocked by a towering, imposing figure, kicking aside one of his underlings as he makes straight for you. He — or at least, you think that's what it is by the general cut of the body under the plated robes — wields a heavy mace in one hand and a diamond-shaped shield of purple crystal in the other, and you dodge aside as its spiked head sails through the air where you were seconds ago. Despite the oddly-shaped helmet he's wearing having neither visor nor slits, being a blank facade of bronze, the cultist leader turns his head towards you as if sizing you up. Despite his heavy breathing and obvious arousal, he's managed to withstand the effects of the aphrodisiac you doused the barricade with, be it through his sheer size diluting the dosage he received, or through dint of sheer willpower.\n        \n        <i>\"Clever. Very clever. The Master...\"</i> he gasps for air, clenching his armaments so hard his knuckles are white. <i>\"...Said you might interfere. Whatever, I don't need these worthless curs to take you down!\"</i>[party.has quin\n            |\n            \n            \"Oh?\" Quintillus steps out, forcing the man to flinch. It seems the two may very well know one another.\n            \n            The reaver spits, glaring at the taeleer whilst audibly squeezing his mace's handle. \"Quintillus, how are <b>you</b> still alive?\"\n            \n            You look over and spot the bunny's normal cheery and flirtatious demeanor slip, instead glaring down the titanic male with a snarl.\n            \n            \"Don't worry about it; if you live to the end of this day, I'll get <b>real</b> acquainted with you all over again. Now then, [pc.name]... shall we enact some justice on this musclehead?\"\n            |[pc.isDK\n                |\n                \n                A brave front in the face of a considerable setback and bad situation, you see. Oh well, still, it wouldn't do to underestimate this one.\n            ]\n        ]\n        |And judging by the sheer number of arrows nocked and aimed straight for you, the barricade's very certainly manned. Caught between a rock and a hard place, you've barely enough time to drop to the ground while the first salvo of arrows flies into the air, arcing before raining down on your general position.\n        \n        This... is unorthodox. Even at this distance, the dark robes and hoods of Tollus's demon cult are clearly visible, but they aren't taunting you, declaring the power of their dark lady or behaving in a manner that would be more stereotypical of the wild-eyed fanatics. No, it's draw, nock, loose — draw, nock, and loose again in disciplined silence.\n        \n        Well, fuck.\n        \n        [party.has arona\n            |Arona snaps into action, the burly orcess pulling her shield out and holding the massive thing up at an angle. You vaguely wonder where she might've faced such an assault before to instinctively know what to do in the face of danger, but your thoughts are cut short as she grabs you by the scruff of your neck and pulls you into the cover of her pavise.\n            \n            <i>\"Stop fucking around and get in here!\"</i> [party.manyCompanions\n                |Once you're safely pressed against her, she reaches for [companion2.name] and helps [companion2.himHer] into the cover her shield affords\n                |Once she's satisfied you're safe, she braces herself for the next salvo of arrows that's coming down the ravine at you\n            ]. <i>\"Gonna be a bit of a squeeze, but better than nothing.\"</i>\n            \n            As if proving her point, an arrow whistles down and lands smack in Arona's shield, quivering as the barbed head sticks into hide and wood. She snarls and roars a curse [pc.ora orc\n                |that would have made your mother blush\n                |in suitably ferocious orcish\n            ], then breaks into a brisk jog straight for the barricade. Seeing this development, the cultists focus their fire on her, more and more arrows slamming into her shield as she leans this way and that to intercept the missiles aimed for her legs; [party.manyCompanions\n                |you and [companion2.name]\n                |you\n            ] have to hurry to keep up with Arona and the cover she's affording you.\n            \n            A last desperate salvo of arrows manages to graze Arona's arms and legs, painting her green skin with blood. That only enrages her more as she bowls straight into the barricade and the nearest cultist bowman, sending shards and splinters flying in all directions as she hurls him into his fellows, bowling the lot of them over into some nearby scrub.\n            \n            <i>\"Face me up close, you craven cunts!\"</i>\n            \n            Looks like Arona's got her blood up. Bringing up the rear, [party.manyCompanions\n                |you and [comp2.name]\n                |you\n            ] move to back up the orcess as the cultists drop their bows and draw blades and daggers alike.\n            |[pc.hasShield\n                |You don't have time to waste. While the cultists are preparing to loose another volley, you take a defensive half-crouch and raise your [pc.offhand] at an angle to meet the impending attack. Barely have you steadied yourself before an arrow lands smack into your [pc.offhand], making your forearm jerk from the sharp impact as the barbed head digs into the shield's surface. Yeowch, that looks like it'd have been nasty had it actually managed to find its mark.\n                \n                [party.hasCompanions\n                    |Looking around, you shout for [party.compNames] to get in under the cover of your shield. Once you're sure everyone's as safe as can be given the circumstances\n                    |There's nothing for it. Breaking into a brisk, braced walk\n                ], you press ahead resolutely with defenses raised. You've got to close the distance before those bastards can loose more arrows at you!\n                \n                Not that the defenders are slacking any. Seeing you come at them, Tollus's goons loose another salvo, and another — some fall wide, others slam into your shield, and one or two nick your skin, stinging as the barbed heads manage to draw blood. Whatever, better a scrape or two than being turned into a pincushion[pc.isDK\n                    | — but you'll be sure to make them pay dearly for annoying you\n                ]. You soon close the distance[party.hasCompanions\n                    |, [party.compNames] hot in your wake\n                ], and the cultists drop their bows and pull out blades and daggers to meet you in melee.\n                |[var0\n                    |Scrambling to your hands and knees, you search your mind for the appropriate incantation and gestures to deploy the shield of light that you oh-so-painstakingly learned to conjure. [pc.cl blackmage whitemage\n                        |While you've been trained to wield spells under pressure, the sight of a little over a half-dozen arrows nocked and ready to be loosed at you is enough to almost cause you to stumble over the incantation\n                        |Despite your magical aptitude not being at its peak right this moment, you scour your mind and eventually come up with the proper incantation from memory\n                    ]. Still, the shield of shimmering light materializes into existence just in time for the next salvo of arrows to break across its surface, faint sparks of light erupting into existence with each impact.\n                    \n                    Whew. You're safe for now, but also aware that the spell won't last very long under the cultists' continual assault. [party.hasCompanions\n                        |Looking around, you shout for [party.compNames] to get in under the cover of your magical shield. With everyone under the protection of your spell\n                        |Trusting in your magic\n                    ], you break into a run, barreling straight for the barricade. You've got to close the distance before those bastards can loose more arrows at you!\n                    \n                    Seeing you come at them headlong, Tollus's goons loose a final salvo of arrows at you, then drop their bows and draw wicked-looking blades and daggers, clustering about the barricade's entrance to greet you. The last of the missiles shatters your shield, splinters of the magical barrier falling away before dissolving into nothingness. That's fine, because you've already got your [pc.weapon] out and at the ready, closing in on the nearest of the cultists.\n                    |[pc.agilityRange 70\n                        |You turn the drop into a roll, scrambling to your feet in short order. [party.som\n                            |Determined not to be taken any further by surprise, you\n                            |[party.compNames] is still lying in the dirt, and you rush over to lend a hand before Tollus's goons can ready another salvo. Together, the two of you\n                            |[party.compNames] are still lying in the dirt, and you rush over to lend a hand before Tollus's goons can ready another salvo. Together, the three of you\n                        ] make a mad dash for the barricade, zigzagging as erratically as you can while still making expedient progress towards your goal.[party.hasCompanions\n                            | Fortunately for [party.compNames], the cultists have figured that you're the biggest threat here and are focusing their fire on you in an attempt to bring you down. Flattering, perhaps, and you definitely don't need to worry that much about anyone besides yourself, but on the other hand there's a lot of pressure on you to stay standing.\n                        ]\n                        \n                        The experience is harrowing, to say the least. More than once, an arrow comes within inches of burying its cruel, barbed head into your [pc.skinFurScalesNoun], but you're light enough on your feet and blessed with quick enough reflexes to catch yourself in the nick of time and hurl yourself the other way. Several others come really close, searing your flesh as the barbed heads catch and draw blood, but at least you don't suffer wounds any more serious than a couple of stinging grazes. It looks like the cultists were depending too much on quantity instead of quality in their attempt to bring you down, and are paying the price for it.\n                        \n                        Eventually, you're finally within arm's reach of the barricade, but the fight's not over yet. Drawing your [pc.weapon] [party.hasCompanions\n                            |and with [party.compNames] hot on your heels, \n                        ]you vault over an upturned wagon and bound atop a set of palings with your superior agility. Time slows as you plant your feet squarely on one of the bowmen's chests, sending him sprawling off his post and to the rocky ground with an %\"oomph.\" Unperturbed by one of their number going down, the remaining cultists drop their bows and draw wicked-looking blades and daggers, closing in to engage you in melee.\n                        |There's no time to waste. Scrambling to your feet, you sweep the ravine with your eyes for any kind of cover, but Tollus's goons have done their job well and long since removed anything that might shield an approach to the barricade. Cursing, you [party.hasCompanions\n                            |shout for [party.compNames] to get behind you and run. Hopefully you can draw enough fire from the defenders on the barricade that they won't focus so much on your allies.\n                            |start off towards the barricade at a dash, knowing full well that this is quite possibly what the defenders want but having little choice in the matter.\n                        ] With retreat being out of the question, it's either move in or wait to be turned into a pincushion, and you're not giving these bastards the satisfaction of the latter.\n                        \n                        Though you move in as erratic a fashion as possible and zigzag as much as you can, you've simply nowhere near the impressive speed and reflexes someone would need in order to evade the hail of arrows aimed at you simply by dodging. Halfway to the barricade, you become aware of a searing pain in your shoulder as a cruelly barbed arrowhead tears into your shoulder; another one nicks your thigh, leaving your [pc.armor] stained with bright red. It could've been worse — the arrowheads could've lodged in you like the barbs were intended to encourage — but there's a noticeable limp in your step as you force yourself forward and vault over an upturned wagon and onto the palisade[party.hasCompanions\n                            |, [party.compNames] hot on your heels\n                        ].\n                        \n                        The cultists are prepared for this move, and drop their bows to brandish serrated blades and daggers, moving in to meet you in melee. What you can see of their faces under their heavy hoods is grim and neutral, their mouths set in thin lines, and you wonder if Tollus has been recruiting a more... practical bent of underling for his more important projects. Either way... \n                    ]\n                ]\n            ]\n        ]\n    ]\n    \n    <b>It's a fight!</b>",
-      "translation": "\n    在小路上拐过下一个弯道，你眼前出现了一幅颇为壮观的景象：一排由巨石、翻倒的马车和原木堆砌而成的防御工事。抛开那些巨石不谈，这些材料在这片山区都极为罕见，肯定是一路拖运到这里的。甚至还有以篝火形式设置的警示火堆，只不过早已烧尽，那些邪教徒既没有时间也没有资源用新鲜木柴替换烧焦的残骸。这对你来说反倒是件好事，否则他们早就向沿途的其他同伙发出警报了。\n    \n    这道路障本身正好俯瞰着通往它的一段开阔小路。对于从这条唯一通道下来的人来说，几乎没有掩护；而它显然就是为了让沿着小路往上走的人措手不及，同时让他们无法轻易退到掩体后面。下令加固这个咽喉要道的人，肯定清楚自己在做什么。\n    \n    [flags.CLOISTER_QUEST_BARRICADE_HANDLED 1 2\n        |确实，要不是它已经整个烧起来、火势还在不断蔓延，这本会是一道相当可观的拦路障碍；你那次阴险的袭击，在你从悬崖上爬下来、走到小路之前就已经开始生根发芽了。那滩黏稠的燃烧液体中窜起石脑油特有的蓝色火焰，而当路障里的干木头轻易被引燃后，火焰便转为更常见的黄色。光滑的沟壑里几乎没有沙子，那些邪教徒用手头仅有的一点水去扑火，反而让油火蔓延得更快。趁着守军忙得不可开交、心思都放在更要紧的事情上，[party.combatNames]得以悄悄摸近他们的阵地，随时准备动手。倒不是说你担心的那些事真的发生了——托勒斯的打手们正节节败退于熊熊烈火，他们自己也很清楚。最终，他们的努力渐渐松懈，一根较粗的木梁轰然倒下，砸在路障的一部分上，巨力压碎了下面的车厢，也把冒着烟的木屑抛向空中。\n        \n        这成了压垮骆驼的最后一根稻草。彻底丧失斗志的残余邪教徒放弃了阵地，向北逃去，他们的脚步声在某人愤怒的吼声中回荡……不过说实话，那声音听起来更像是某种<i>东西</i>发出的。\n        \n        那东西的真实面目很快就显露了出来，在燃烧的木梁映衬下现出剪影。随着绳索磨断、绷断，更多路障轰然向内塌落，一个高大威猛的身影一脚踢开马车轮子，朝你冲了过来。他——至少从长袍铠甲下大致的身形来看，你觉得那是个“他”——一只手握着重型钉头锤，另一只手拿着一块紫色水晶制成的菱形盾牌；当那带刺的锤头掠过你几秒前所在的位置时，你向旁边闪避。尽管他戴着的头盔形状怪异，既没有面甲也没有开缝，只是一块光秃秃的青铜面罩，但这个邪教头目还是把头转向你，像是在打量你。\n        \n        <i>“大师说过，你可能会来插手。”</i>当他举起钉头锤准备再砸一下时，那无面头盔让他的声音听起来有些发闷。<i>“看来你比我想的还要聪明些，但我要亲手放倒你，也用不着把你射成针插包。”</i>\n        |事实上，如果栅栏上真有人驻守、阻止入侵者靠近，那倒会更令人印象深刻，甚至更实用。可眼下的情况是，根本没人拦你靠近；等你走近了，原因很快就清楚了。离栅栏只有一石之遥时，呻吟声传进你耳中，还伴着淫乱的交合声。看来你的赌注赢了——让手下们始终多少带点欲火，或许真能让他们更适应这个恶魔性爱教派的心态，可托勒斯大师难道就没想过，这样一来他们也会轻易遭受这种袭击吗？\n        \n        他们的长袍被丢弃在岩石地面上，赤裸的纹身皮肤闪着光——本该在路障处站岗的邪教徒们正忙着互相寻欢作乐，各种花样层出不穷，根本无暇注意到[party.combatNames]从他们身边走过时踢开了他们的弓和刀剑。一切看起来都轻松得像散步，直到你的去路被一个高大威猛的身影挡住——他一脚踢开一个手下，径直朝你走来。他——至少从长袍铠甲下大致的身形来看，你觉得那是个“他”——一只手握着重型钉头锤，另一只手拿着一块紫色水晶制成的菱形盾牌；当那带刺的锤头掠过你几秒前所在的位置时，你向旁边闪避。尽管他戴着的头盔形状怪异，既没有面甲也没有开缝，只是一块光秃秃的青铜面罩，但这个邪教头目还是把头转向你，像是在打量你。尽管他呼吸粗重、明显情欲高涨，他还是设法扛住了你浇在路障上的催情剂的影响——要么是他体型太大稀释了吸入的剂量，要么就是凭着一股纯粹的意志力。\n        \n        <i>“聪明。非常聪明。这位大师……”</i>他喘着粗气，双手把武器攥得死紧，指关节都发白了。<i>“……说你可能会来插手。算了，我不需要这些没用的废物来收拾你！”</i>[party.has quin\n            |\n            \n            “哦？”昆蒂卢斯走了出来，逼得那个男人不由得向后一缩。看来这两个人很可能彼此认识。\n            \n            那个掠夺者啐了一口，恶狠狠地瞪着这名泰勒尔，同时用力握紧锤柄，攥得咯吱作响。“昆蒂卢斯，你<b>怎么</b>还活着？”\n            \n            你转头望去，发现那只兔子一向欢快、爱调情的模样不见了，取而代之的是他正冲着那个巨大的雄性龇牙低吼。\n            \n            “别担心；你要是能活过今天，我会让你<b>好好</b>重新认识我一遍。那么，[pc.name]……我们是不是该给这个蠢货一点教训呢？”\n            |[pc.isDK\n                |\n                \n                面对如此巨大的挫折和糟糕的局面，他们依然展现出了坚定的勇气。嗯，无论如何，我们都不能低估他们的实力。\n            ]\n        ]\n        |从那些搭上弓弦、直直瞄准你的箭矢数量来看，这道路障绝对有人把守。你陷入进退两难的境地：第一波箭矢射向空中、划出弧线后倾泻而下之前，你几乎来不及趴倒在地。\n        \n        这……确实有些不寻常。即便隔着这段距离，托勒斯那恶魔教派的黑色长袍和兜帽也清晰可见，但他们并没有挑衅你，也没有宣扬他们那位暗影女士的力量，更没有做出那种狂热信徒该有的疯狂举动。不，是拉弓、搭箭、放弦——拉弓、搭箭，再放弦，全都在纪律严明的沉默中进行。\n        \n        好吧，操。\n        \n        [party.has arona\n            |阿罗娜立刻行动起来，那名魁梧的女兽人抽出盾牌，把那巨大的东西斜举起来。你隐约猜想，她以前在哪里遭遇过这样的攻势，才能本能地知道面对危险该怎么做，但你的思绪被突然打断——她一把揪住你的后颈，把你拽进她那面大盾的掩护里。\n            \n            <i>“别他妈的浪费时间了，快进来！”</i> [party.manyCompanions\n                |等你安全地贴在她身上，她伸手去拉[companion2.name]，帮[companion2.himHer]也躲进她的盾牌所提供的掩护里\n                |等她确信你安全了，便绷紧身体，准备迎接下一波从峡谷中射向你们的箭雨\n            ]。 <i>“空间可能会有点拥挤，但总比没有好。”</i>\n            \n            仿佛是为了证明她的话，一支箭呼啸而下，正正钉进阿罗娜的盾牌，带倒钩的箭头扎进皮革与木头里，兀自颤动。她咆哮着骂了一句[pc.ora orc\n                |那话会让你母亲都脸红\n                |用极其凶悍的兽人语\n            ]，然后快步朝路障冲去。看到这一幕，那些邪教徒把火力全集中到她身上，越来越多的箭矢砸在她的盾牌上；她不断左右闪避，试图拦截那些瞄准她腿部的箭矢；[party.manyCompanions\n                |你和[companion2.name]\n                |你\n            ]必须加快脚步，才能跟上阿罗娜和她为你提供的掩护。\n            \n            最后那波拼命的箭雨堪堪擦过阿罗娜的手臂和腿部，在她绿色的皮肤上染出血痕。这反倒让她更加暴怒——她径直撞进路障和最近的那个邪教弓箭手，把他甩向他的同伙，将那一群人统统撞进附近的灌木丛里，碎片与木屑四下飞溅。\n            \n            <i>“有种就近身跟我打，你们这些懦夫烂货！”</i>\n            \n            看来阿罗娜已经杀红了眼。她殿后掩护， [party.manyCompanions\n                |你和[comp2.name]\n                |你\n            ]你和同伴们上前支援这名女兽人，那些邪教徒纷纷丢下弓箭，拔出刀剑和匕首。\n            |[pc.hasShield\n                |你没有时间可以浪费。趁着那些邪教徒准备再放一轮箭，你摆出防御性的半蹲姿势，斜斜举起[pc.offhand]迎向即将到来的攻击。你才刚站稳，一支箭就正中你的[pc.offhand]，带倒钩的箭头扎进盾面，猛烈的冲击让你的前臂猛地一震。哎哟，这一下要是真扎在身上，可够你受的。\n                \n                [party.hasCompanions\n                    |环顾四周，你大声呼喊，让[party.compNames]都躲到你的盾牌下来。等你确信在眼下这种情况下大家都已尽可能安全\n                    |别无他法，只能绷紧身体快步前进\n                ]，你举着防御坚定地向前推进。你必须在那些混蛋放出更多箭之前拉近距离！\n                \n                防守方也丝毫没有松懈。看到你冲过来，托勒斯的打手们又放了一轮，接着又是一轮——有些箭偏得老远，有些砸在你的盾牌上，还有一两支擦破你的皮肤，带倒钩的箭头划出血来，火辣辣地疼。不过，擦破一两处总比被射成针插包要好[pc.isDK\n                    | ——但你会让他们为惹恼你而付出惨痛代价\n                ]。你很快拉近了距离[party.hasCompanions\n                    |，[party.compNames]紧跟在你身后\n                ]，那些邪教徒放下弓箭，拔出刀剑和匕首，准备与你近身厮杀。\n                |[var0\n                    |你手忙脚乱地撑起身体，在脑海中拼命搜寻那个你曾煞费苦心地学会施展的光之护盾所需的咒语与手势。[pc.cl blackmage whitemage\n                        |虽然你受过在压力下施法的训练，但看到六七支箭已经搭上弓弦、随时准备射向你，这一幕还是足以让你念咒时几乎出错\n                        |尽管你此刻的魔法天赋不在最佳状态，你还是把脑袋翻了个遍，终于从记忆里找出了正确的咒语\n                    ]。那面微光闪烁的盾牌还是及时成形，正好赶上下一波箭矢撞碎在它的表面，每一次撞击都迸出微弱的火花。\n                    \n                    呼。你暂时安全了，但也很清楚，在邪教徒的持续猛攻下，这个法术撑不了多久。[party.hasCompanions\n                        |环顾四周，你大声呼喊，让[party.compNames]都躲到你的魔法护盾下面。既然所有人都处在你的法术保护之下\n                        |信任自己的魔法\n                    ]，你撒腿奔向路障，直冲而去。你必须在那些混蛋放出更多箭之前拉近距离！\n                    \n                    看到你迎面冲来，托勒斯的打手们朝你射出最后一轮箭，然后扔下弓，拔出狰狞的刀剑与匕首，聚在路障入口处等着你。最后一支箭击碎了你的护盾，魔法屏障的碎片纷纷剥落，随即消散于无形。没关系，因为你早已拔出[pc.weapon]严阵以待，正向最近的邪教徒逼近。\n                    |[pc.agilityRange 70\n                        |你就着坠落之势翻滚了一圈，转眼便爬了起来。[party.som\n                            |你决心不再被任何意外打个措手不及，于是\n                            |[party.compNames]还躺在泥地里，你在托勒斯的打手们准备再放一轮箭之前冲过去帮忙。你们两个\n                            |[party.compNames]还躺在泥地里，你在托勒斯的打手们准备再放一轮箭之前冲过去帮忙。你们三个\n                        ]一起拼命冲向路障，动作毫无规律地之字形前进，同时仍尽快接近目标。[party.hasCompanions\n                            | 幸运的是，[party.compNames]那边压力小得多——那些邪教徒已经认定你是这里最大的威胁，正把火力全集中在你身上，企图把你放倒。这或许算是恭维，而且你确实不用太为除自己之外的人操心，但另一方面，这也意味着你必须一直站着，压力全在你身上。\n                        ]\n                        \n                        这种体验至少可以说是惊心动魄。不止一次，箭矢离深深扎进你的[pc.skinFurScalesNoun]只差几英寸，但你脚步够轻、反应够快，总能在最后一刻及时扭身，朝另一边扑去。还有好几支箭贴得极近，带倒钩的箭头擦破皮肉、带出血来，但至少你没受比几处火辣辣的擦伤更重的伤。看来那些邪教徒想放倒你时太依赖数量而非准头，如今正在为此付出代价。\n                        \n                        你终于到了伸手可及路障的地方，但战斗还没结束。你拔出[pc.weapon] [party.hasCompanions\n                            |，而[party.compNames]紧跟在你身后，\n                        ]你凭着一身敏捷翻过一辆翻倒的马车，跃上木栅栏。时间仿佛慢了下来——你双脚稳稳踩上一名弓箭手的胸膛，把他从阵位上踹了下去，，那人 %\"砰\" 的一声摔在岩石地面上。剩下那些邪教徒并没有因为少了一个同伴而动摇，他们扔下弓，拔出狰狞的刀剑与匕首，逼上来与你近身厮杀。\n                        |没有时间可以浪费了。你慌忙站起身，目光扫过峡谷，想找任何能当掩护的东西，但托勒斯的打手们干得很彻底，早就把任何能掩护人接近路障的东西都清走了。你骂了一声，[party.hasCompanions\n                            |呼喊[party.compNames]跟在你身后跑。希望你能吸引路障上守军足够的火力，让他们别再把那么多注意力放在你的同伴身上。\n                            |你朝着路障疾冲而去，心里很清楚这很可能正合守军的心意，却也没有别的选择。\n                        ]既然撤退已不可能，那就只有往前冲，或者等着被射成针插包——而你绝不会让这些混蛋称心如意地看到后者。\n                        \n                        尽管你尽可能动作无常、尽力之字形前进，但你的速度和反应远远达不到仅凭闪避就能躲开迎面箭雨的人所需要的水准。冲到半路时，你感到肩膀一阵剧痛——一支倒钩狰狞的箭头撕开了你的肩膀；另一支箭擦过你的大腿，让你的[pc.armor]染上鲜红。本来还可能更糟——那些箭头本会像倒钩设计的那样嵌在你体内——但当你强撑着往前冲、翻过一辆翻倒的马车登上栅栏时，你的脚步已经明显有些跛了[party.hasCompanions\n                            |，[party.compNames]紧跟在你身后\n                        ]。\n                        \n                        那些邪教徒早已准备好应对这一招，他们放下弓，挥舞着锯齿刀和匕首，迎上来与你近身厮杀。从他们厚重兜帽下能看到的那部分面孔阴冷而木然，嘴唇抿成一条细线，你不禁怀疑，托勒斯是不是为了那些更重要的计划，招募了更……务实的一类手下。无论如何……\n                    ]\n                ]\n            ]\n        ]\n    ]\n    \n    <b>这是一场激烈的战斗！</b>",
+      "translation": "\n    在小路上拐过下一个弯道，你眼前出现了一幅颇为壮观的景象：一排由巨石、翻倒的马车和原木堆砌而成的防御工事。抛开那些巨石不谈，这些材料在这片山区都极为罕见，肯定是一路拖运到这里的。甚至还有以篝火形式设置的警示火堆，只不过早已烧尽，那些邪教徒既没有时间也没有资源用新鲜木柴替换烧焦的残骸。这对你来说反倒是件好事，否则他们早就向沿途的其他同伙发出警报了。\n    \n    这道路障本身正好俯瞰着通往它的一段开阔小路。对于从这条唯一通道下来的人来说，几乎没有掩护；而它显然就是为了让沿着小路往上走的人措手不及，同时让他们无法轻易退到掩体后面。下令加固这个咽喉要道的人，肯定清楚自己在做什么。\n    \n    [flags.CLOISTER_QUEST_BARRICADE_HANDLED 1 2\n        |确实，要不是它已经整个烧起来、火势还在不断蔓延，这本会是一道相当可观的拦路障碍；你那次阴险的袭击，在你从悬崖上爬下来、走到小路之前就已经开始生根发芽了。那滩黏稠的燃烧液体中窜起石脑油特有的蓝色火焰，而当路障里的干木头轻易被引燃后，火焰便转为更常见的黄色。光滑的沟壑里几乎没有沙子，那些邪教徒用手头仅有的一点水去扑火，反而让油火蔓延得更快。趁着守军忙得不可开交、心思都放在更要紧的事情上，[party.combatNames]得以悄悄摸近他们的阵地，随时准备动手。倒不是说你担心的那些事真的发生了——托勒斯的打手们正节节败退于熊熊烈火，他们自己也很清楚。最终，他们的努力渐渐松懈，一根较粗的木梁轰然倒下，砸在路障的一部分上，巨力压碎了下面的车厢，也把冒着烟的木屑抛向空中。\n        \n        这成了压垮骆驼的最后一根稻草。彻底丧失斗志的残余邪教徒放弃了阵地，向北逃去，他们的脚步声在某人愤怒的吼声中回荡……不过说实话，那声音听起来更像是某种<i>东西</i>发出的。\n        \n        那东西的真实面目很快就显露了出来，在燃烧的木梁映衬下现出剪影。随着绳索磨断、绷断，更多路障轰然向内塌落，一个高大威猛的身影一脚踢开马车轮子，朝你冲了过来。他——至少从长袍铠甲下大致的身形来看，你觉得那是个“他”——一只手握着重型钉头锤，另一只手拿着一块紫色水晶制成的菱形盾牌；当那带刺的锤头掠过你几秒前所在的位置时，你向旁边闪避。尽管他戴着的头盔形状怪异，既没有面甲也没有开缝，只是一块光秃秃的青铜面罩，但这个邪教头目还是把头转向你，像是在打量你。\n        \n        <i>“大师说过，你可能会来插手。”</i>当他举起钉头锤准备再砸一下时，那无面头盔让他的声音听起来有些发闷。<i>“看来你比我想的还要聪明些，但我要亲手放倒你，也用不着把你射成针插包。”</i>\n        |事实上，如果栅栏上真有人驻守、阻止入侵者靠近，那倒会更令人印象深刻，甚至更实用。可眼下的情况是，根本没人拦你靠近；等你走近了，原因很快就清楚了。离栅栏只有一石之遥时，呻吟声传进你耳中，还伴着淫乱的交合声。看来你的赌注赢了——让手下们始终多少带点欲火，或许真能让他们更适应这个恶魔性爱教派的心态，可托勒斯大师难道就没想过，这样一来他们也会轻易遭受这种袭击吗？\n        \n        他们的长袍被丢弃在岩石地面上，赤裸的纹身皮肤闪着光——本该在路障处站岗的邪教徒们正忙着互相寻欢作乐，各种花样层出不穷，根本无暇注意到[party.combatNames]从他们身边走过时踢开了他们的弓和刀剑。一切看起来都轻松得像散步，直到你的去路被一个高大威猛的身影挡住——他一脚踢开一个手下，径直朝你走来。他——至少从长袍铠甲下大致的身形来看，你觉得那是个“他”——一只手握着重型钉头锤，另一只手拿着一块紫色水晶制成的菱形盾牌；当那带刺的锤头掠过你几秒前所在的位置时，你向旁边闪避。尽管他戴着的头盔形状怪异，既没有面甲也没有开缝，只是一块光秃秃的青铜面罩，但这个邪教头目还是把头转向你，像是在打量你。尽管他呼吸粗重、明显情欲高涨，他还是设法扛住了你浇在路障上的催情剂的影响——要么是他体型太大稀释了吸入的剂量，要么就是凭着一股纯粹的意志力。\n        \n        <i>“聪明。非常聪明。这位大师……”</i>他喘着粗气，双手把武器攥得死紧，指关节都发白了。<i>“……说你可能会来插手。算了，我不需要这些没用的废物来收拾你！”</i>[party.has quin\n            |\n            \n            “哦？”昆蒂卢斯走了出来，逼得那个男人不由得向后一缩。看来这两个人很可能彼此认识。\n            \n            那个掠夺者啐了一口，恶狠狠地瞪着这名泰勒尔，同时用力握紧锤柄，攥得咯吱作响。“昆蒂卢斯，你<b>怎么</b>还活着？”\n            \n            你转头望去，发现那只兔子一向欢快、爱调情的模样不见了，取而代之的是他正冲着那个巨大的雄性龇牙低吼。\n            \n            “别担心；你要是能活过今天，我会让你<b>好好</b>重新认识我一遍。那么，[pc.name]……我们是不是该给这个蠢货一点教训呢？”\n            |[pc.isDK\n                |\n                \n                面对如此巨大的挫折和糟糕的局面，他们依然展现出了坚定的勇气。嗯，无论如何，我们都不能低估他们的实力。\n            ]\n        ]\n        |从那些搭上弓弦、直直瞄准你的箭矢数量来看，这道路障绝对有人把守。你陷入进退两难的境地：第一波箭矢射向空中、划出弧线后倾泻而下之前，你几乎来不及趴倒在地。\n        \n        这……确实有些不寻常。即便隔着这段距离，托勒斯那恶魔教派的黑色长袍和兜帽也清晰可见，但他们并没有挑衅你，也没有宣扬他们那位暗影女士的力量，更没有做出那种狂热信徒该有的疯狂举动。不，是拉弓、搭箭、放弦——拉弓、搭箭，再放弦，全都在纪律严明的沉默中进行。\n        \n        好吧，操。\n        \n        [party.has arona\n            |阿罗娜立刻行动起来，那名魁梧的女兽人抽出盾牌，把那巨大的东西斜举起来。你隐约猜想，她以前在哪里遭遇过这样的攻势，才能本能地知道面对危险该怎么做，但你的思绪被突然打断——她一把揪住你的后颈，把你拽进她那面大盾的掩护里。\n            \n            <i>“别他妈的浪费时间了，快进来！”</i> [party.manyCompanions\n                |等你安全地贴在她身上，她伸手去拉[companion2.name]，帮[companion2.himHer]也躲进她的盾牌所提供的掩护里\n                |等她确信你安全了，便绷紧身体，准备迎接下一波从峡谷中射向你们的箭雨\n            ]。 <i>“空间可能会有点拥挤，但总比没有好。”</i>\n            \n            仿佛是为了证明她的话，一支箭呼啸而下，正正钉进阿罗娜的盾牌，带倒钩的箭头扎进皮革与木头里，兀自颤动。她咆哮着骂了一句[pc.ora orc\n                |那话会让你母亲都脸红\n                |用极其凶悍的兽人语\n            ]，然后快步朝路障冲去。看到这一幕，那些邪教徒把火力全集中到她身上，越来越多的箭矢砸在她的盾牌上；她不断左右闪避，试图拦截那些瞄准她腿部的箭矢；[party.manyCompanions\n                |你和[companion2.name]\n                |你\n            ]必须加快脚步，才能跟上阿罗娜和她为你提供的掩护。\n            \n            最后那波拼命的箭雨堪堪擦过阿罗娜的手臂和腿部，在她绿色的皮肤上染出血痕。这反倒让她更加暴怒——她径直撞进路障和最近的那个邪教弓箭手，把他甩向他的同伙，将那一群人统统撞进附近的灌木丛里，碎片与木屑四下飞溅。\n            \n            <i>“有种就近身跟我打，你们这些懦夫烂货！”</i>\n            \n            看来阿罗娜已经杀红了眼。她殿后掩护， [party.manyCompanions\n                |你和[comp2.name]\n                |你\n            ]你和同伴们上前支援这名女兽人，那些邪教徒纷纷丢下弓箭，拔出刀剑和匕首。\n            |[pc.hasShield\n                |你没有时间可以浪费。趁着那些邪教徒准备再放一轮箭，你摆出防御性的半蹲姿势，斜斜举起[pc.offhand]迎向即将到来的攻击。你才刚站稳，一支箭就正中你的[pc.offhand]，带倒钩的箭头扎进盾面，猛烈的冲击让你的前臂猛地一震。哎哟，这一下要是真扎在身上，可够你受的。\n                \n                [party.hasCompanions\n                    |环顾四周，你大声呼喊，让[party.compNames]都躲到你的盾牌下来。等你确信在眼下这种情况下大家都已尽可能安全\n                    |别无他法，只能绷紧身体快步前进\n                ]，你举着防御坚定地向前推进。你必须在那些混蛋放出更多箭之前拉近距离！\n                \n                防守方也丝毫没有松懈。看到你冲过来，托勒斯的打手们又放了一轮，接着又是一轮——有些箭偏得老远，有些砸在你的盾牌上，还有一两支擦破你的皮肤，带倒钩的箭头划出血来，火辣辣地疼。不过，擦破一两处总比被射成针插包要好[pc.isDK\n                    | ——但你会让他们为惹恼你而付出惨痛代价\n                ]。你很快拉近了距离[party.hasCompanions\n                    |，[party.compNames]紧跟在你身后\n                ]，那些邪教徒放下弓箭，拔出刀剑和匕首，准备与你近身厮杀。\n                |[var0\n                    |你手忙脚乱地撑起身体，在脑海中拼命搜寻那个你曾煞费苦心地学会施展的光之护盾所需的咒语与手势。[pc.cl blackmage whitemage\n                        |虽然你受过在压力下施法的训练，但看到六七支箭已经搭上弓弦、随时准备射向你，这一幕还是足以让你念咒时几乎出错\n                        |尽管你此刻的魔法天赋不在最佳状态，你还是把脑袋翻了个遍，终于从记忆里找出了正确的咒语\n                    ]。那面微光闪烁的盾牌还是及时成形，正好赶上下一波箭矢撞碎在它的表面，每一次撞击都迸出微弱的火花。\n                    \n                    呼。你暂时安全了，但也很清楚，在邪教徒的持续猛攻下，这个法术撑不了多久。[party.hasCompanions\n                        |环顾四周，你大声呼喊，让[party.compNames]都躲到你的魔法护盾下面。既然所有人都处在你的法术保护之下\n                        |信任自己的魔法\n                    ]，你撒腿奔向路障，直冲而去。你必须在那些混蛋放出更多箭之前拉近距离！\n                    \n                    看到你迎面冲来，托勒斯的打手们朝你射出最后一轮箭，然后扔下弓，拔出狰狞的刀剑与匕首，聚在路障入口处等着你。最后一支箭击碎了你的护盾，魔法屏障的碎片纷纷剥落，随即消散于无形。没关系，因为你早已拔出[pc.weapon]严阵以待，正向最近的邪教徒逼近。\n                    |[pc.agilityRange 70\n                        |你就着坠落之势翻滚了一圈，转眼便爬了起来。[party.som\n                            |你决心不再被任何意外打个措手不及，于是\n                            |[party.compNames]还躺在泥地里，你在托勒斯的打手们准备再放一轮箭之前冲过去帮忙。你们两个\n                            |[party.compNames]还躺在泥地里，你在托勒斯的打手们准备再放一轮箭之前冲过去帮忙。你们三个\n                        ]一起拼命冲向路障，动作毫无规律地之字形前进，同时仍尽快接近目标。[party.hasCompanions\n                            | 幸运的是，[party.compNames]那边压力小得多——那些邪教徒已经认定你是这里最大的威胁，正把火力全集中在你身上，企图把你放倒。这或许算是恭维，而且你确实不用太为除自己之外的人操心，但另一方面，这也意味着你必须一直站着，压力全在你身上。\n                        ]\n                        \n                        这种体验至少可以说是惊心动魄。不止一次，箭矢离深深扎进你的[pc.skinFurScalesNoun]只差几英寸，但你脚步够轻、反应够快，总能在最后一刻及时扭身，朝另一边扑去。还有好几支箭贴得极近，带倒钩的箭头擦破皮肉、带出血来，但至少你没受比几处火辣辣的擦伤更重的伤。看来那些邪教徒想放倒你时太依赖数量而非准头，如今正在为此付出代价。\n                        \n                        你终于到了伸手可及路障的地方，但战斗还没结束。你拔出[pc.weapon] [party.hasCompanions\n                            |，而[party.compNames]紧跟在你身后，\n                        ]你凭着一身敏捷翻过一辆翻倒的马车，跃上木栅栏。时间仿佛慢了下来——你双脚稳稳踩上一名弓箭手的胸膛，把他从阵位上踹了下去，那人 %\"砰\" 的一声摔在岩石地面上。剩下那些邪教徒并没有因为少了一个同伴而动摇，他们扔下弓，拔出狰狞的刀剑与匕首，逼上来与你近身厮杀。\n                        |没有时间可以浪费了。你慌忙站起身，目光扫过峡谷，想找任何能当掩护的东西，但托勒斯的打手们干得很彻底，早就把任何能掩护人接近路障的东西都清走了。你骂了一声，[party.hasCompanions\n                            |呼喊[party.compNames]跟在你身后跑。希望你能吸引路障上守军足够的火力，让他们别再把那么多注意力放在你的同伴身上。\n                            |你朝着路障疾冲而去，心里很清楚这很可能正合守军的心意，却也没有别的选择。\n                        ]既然撤退已不可能，那就只有往前冲，或者等着被射成针插包——而你绝不会让这些混蛋称心如意地看到后者。\n                        \n                        尽管你尽可能动作无常、尽力之字形前进，但你的速度和反应远远达不到仅凭闪避就能躲开迎面箭雨的人所需要的水准。冲到半路时，你感到肩膀一阵剧痛——一支倒钩狰狞的箭头撕开了你的肩膀；另一支箭擦过你的大腿，让你的[pc.armor]染上鲜红。本来还可能更糟——那些箭头本会像倒钩设计的那样嵌在你体内——但当你强撑着往前冲、翻过一辆翻倒的马车登上栅栏时，你的脚步已经明显有些跛了[party.hasCompanions\n                            |，[party.compNames]紧跟在你身后\n                        ]。\n                        \n                        那些邪教徒早已准备好应对这一招，他们放下弓，挥舞着锯齿刀和匕首，迎上来与你近身厮杀。从他们厚重兜帽下能看到的那部分面孔阴冷而木然，嘴唇抿成一条细线，你不禁怀疑，托勒斯是不是为了那些更重要的计划，招募了更……务实的一类手下。无论如何……\n                    ]\n                ]\n            ]\n        ]\n    ]\n    \n    <b>这是一场激烈的战斗！</b>",
       "start": 2073514,
       "end": 2091421,
       "line": 1,
@@ -38923,7 +38958,7 @@
       "line": 1,
       "raw": "\"\\n        <i>With flashing sword and booming cry</i>\\n        <i>With darkness staining land and sky</i>\\n        <i>Soldiers fall in glistening dress</i>\\n        <i>As battles are joined without egress</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "translationStatus": "manual_translated",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual",
       "updateStatus": "inherited_translation"
     },
@@ -38953,7 +38988,9 @@
       "line": 1,
       "raw": "\"STORM\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2122148:2126473:3ba8930336a6",
@@ -39379,7 +39416,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n                <i>\"Ugh...\"</i> Out of both the strength and will to keep on fighting, Whisper staggers back against a nearby toppled statue of Sorra, daggers falling from his grasp and clattering to the ground. His eyes dart this way and that in the dim light, seeking a route of escape. <i>\"...I suppose I failed to appreciate your strength. The loss is mine.\"</i>\n\n                [party.has einin\n                |<i>\"It's over, Berach.\"</i> Breathing hard through gritted teeth, Einin steps forward, her [einin.weapon] still leveled at Whisper. She's not taking any chances. <i>\"Surrender and... and I'll make things right. I'll show you what we were working for... and let them handle us both. . You can't be allowed to continue like this.\"</i>\n\n                <i>\"Not... going to finish me off? Curious. It's not as if you don't have the stomach for it.\"</i> Whisper's gaze rolls back and forth between Einin and you as he lets out a rasping chuckle. <i>\"[pc.isDK|Why, do you need this would-be champion's leave to do even the smallest thing? Do you get off on being beaten down and dominated? Is that it?|Has this goody-two-shoes of a would-be champion rubbed off on you, of all people? Turned over a new leaf, have you? Using the skills you learned for the cause of good and all?] What a joke.\"</i>\n\n                Einin makes a frustrated noise in the back of her throat. <i>\"Berach, I'm trying to help you here! But if you won't accept that you're wrong, even with me on the line... then maybe I should just leave you here!.\"</i>\n\n                <i>\"Oh, so only <b>now</b> have you figured that you don't like me? I knew that years ago. As for your other statement... I'm not going back to that place one way or another. Trust me on that.\"</i>\n\n                |Hmph. Interesting that unlike his master, he can tell when he's beaten.\n\n                <i>\"What... what was the saying again?\"</i> Whisper gasps in that hoarse, breathless voice of his. <i>\"Garbage in, garbage out. If you don't ever acknowledge your mistakes, you'll never improve.\"</i>\n\n                That's surprisingly clear-headed for a murderous demon cultist. Just why exactly is he with Tollus and his posse again?\n\n                <i>\"Have you ever considered... that just as the Master sees the demoness as an opportunity, I see him as a way to achieve certain ends?\"</i>\n\n                ] \n                This is pointless. He's clearly stalling for more time while he recovers and his underlings get ever further from this place. Once bitten, twice shy; whatever you're going to end up doing to him, it's best to apprehend this little bastard first. Without letting your guard down in the slightest[party.hasCompanions| and with [party.compNames] backing you up], you approach a still-grimacing Whisper and make to grab him.\n\n                What happens next is unexpected. While you were certain he would put up some kind of resistance[party.hasCompanions| and had [party.compNames] flank him], Whisper drops straight to the ground instead, hitting the stone floor with a dull thud. You immediately lower your [pc.weapon], ready for him to spring up at you in some sort of ruse, but the shape within the dark, voluminous cloak melts away in the blink of an eye, leaving behind little more than heavy cloth as you swing down upon it.\n\n                Where could he — \n\n                [party.has einin\n                |<i>\"There!\"</i> Einin yells, pointing, already attacking.\n\n                ]\n                You whirl around at the sound of footsteps to find Whisper limping away into the darkness, following the footsteps of his underlings. Even with the little mecian's awkward, shuffling gait, he's covering distance at an astounding rate, and you see why: Whisper's leaping from shadow to shadow, melding into one and exiting through the other as if the patches of darkness were portals. As things are, no matter how quick you're on your feet, there's no hope of catching up to him, not in this dimly lit place beneath the earth.\n\n                [party.has einin\n                |I-is that something he could do?\n\n                <i>\"No... he wasn't like me, he wasn't trained in magic. Not even my mom could do something like that. .\"</i>\n\n                <i>\"Ah well, Einin.\"</i> Whisper's ghastly voice echoes back through the tunnels to you. <i>\"I can't stay the same man you once knew forever. People change.</i>\n\n                <i>\"Now if you'll excuse me, I have to report our success to the Master.\"</i>\n\n                ]\n                [party.has cait\n                |<i>\"Damn it!\"</i> Cait rears back, conjuring a glowing sphere of light in a hand, the other tightly gripped about her staff. <i>\"I'm not letting him get away!\"</i>\n\n                You can see where she's coming from; she's trying to dispel the shadows so Whisper can't use them to escape. It's too late for that, though, even as Cait hurls the ball of energy down the tunnel after him. It sails through the air, travels some distance, and finally explodes in a burst of brilliance, but you get the feeling that the effort was ultimately fruitless.\n\n                ]\n                Wonder if there'll be more cultists coming, or if that's the last of them. There weren't any shortages of patrols on your way up here from the camp... \n\n                [party.has arona\n                |<i>\"If there are, leave them to me,\"</i> Arona growls. <i>\"That little rat bastard wasn't fun to fight in the slightest, and now I'm all worked up and ticked off with no way to let loose.\"</i>\n\n                ]",
-      "translation": "\n                <i>呃……</i>凭借着顽强的意志和继续战斗的力量，低语者踉跄着退到了附近一座倒下的索拉雕像旁，手中的匕首掉落在地，发出刺耳的声响。在昏暗的光线中，他的目光四处游移，试图寻找一条逃生之路。<i>……我想，是我没有充分认识到你的实力。这次失败，确实是我的责任。</i>\n\n                [party.has einin\n                |<i>一切都结束了，贝拉赫。</i>“艾宁咬紧牙关，喘着粗气向前走去。[einin.weapon]依然对准着低语者。她不想冒任何风险。<i>投降吧……我会把一切都说清楚的。我会让你看看我们当初是为了什么而努力的……让让他们来处理我们俩吧。你不能再这样下去了。</i>\n\n                <i>不……打算把我干掉吗？真有意思。你明明有这个能力啊。</i> 低语者的目光在艾宁和你之间来回扫视，同时发出了一声沙哑的笑声。<i>“[pc.isDK|为什么就连做最简单的事情，你也需要这个所谓的“冠军许可”呢？你是从被击败、被支配中获得快感吗？就是这个原因吗？|难道就是你，这个自以为是的伪君子，被这个所谓的“冠军”影响了吧？你终于改过自新了，是吗？开始用你所学到的技能去做好事了，对吧？]真是个笑话。”</i>\n\n                艾宁在喉咙深处发出了一声沮丧的声音。<i>“贝拉赫，我真的是想帮你啊！但如果你就是不肯承认自己错了，即使我也在这里劝你……那么也许我就该把你丢在这儿了！。”</i>\n\n                <i>哦，原来只是<b>现在</b>你才意识到自己不喜欢我？几年前我就已经知道了。至于你说的另外那件事……无论如何，我都不会再去那个地方了。这一点你尽管相信我。”</i>\n\n                |哼，有意思的是，与他的大师不同，他知道自己什么时候被打败了。\n\n                <i>那个……那个说法到底是啥来着？</i> 低语者用他那沙哑、急促的声音喘息着。<i>输入的是垃圾，输出的自然也是垃圾。如果你从不承认自己的错误，就永远无法进步。</i>\n\n                对于一个嗜杀的恶魔崇拜者来说，他的头脑居然如此清醒，实在令人惊讶。那么，他究竟为什么又会跟托勒斯以及他的那些同伙在一起呢？\n\n                <i>你有没有想过……正如主人把那个女恶魔视为一个机会，我也把他看作达成某些目的的手段？</i>\n\n                ] \n                这毫无意义。他显然是在拖延时间，好让自己有更多时间恢复体力，同时也让他的手下们有更多机会离开这个地方。一朝被蛇咬，十年怕井绳；无论你最终要对他采取什么行动，最好先抓住这个小混蛋。千万不能有丝毫松懈。[party.hasCompanions| 并且与[party.compNames]一同支持你]你走近那个仍在痛苦地扭曲着面容的低语者，准备抓住他。\n\n                接下来发生的事情完全出乎意料。你原本以为他会做出某种抵抗[party.hasCompanions| 并且拥有[party.compNames]从侧面包抄他]，低语者却径直摔到了地上，发出沉闷的撞击声，砸在了石质的地板上。你立刻压低手中的[pc.weapon]，以为他会耍什么花招突然窜起来扑向你，但那件宽大黑袍里的身影却在一瞬间消融不见，只留下一堆厚重的布料。当你挥剑向那堆布料劈下时——\n\n                他到底去哪儿了——\n\n                [party.has einin\n                |<i>就是那里！</i>艾宁大喊着，一边指向目标，一边发动了攻击。\n\n                ]\n                听到脚步声，你猛地转过身，发现低语者正一瘸一拐地消失在暗影中，他正沿着那些手下的脚步前进。尽管这个小小的鼠族走路时姿态笨拙、拖拖拉拉，他拉开的距离却快得惊人，你现在明白为什么了：低语者正在一片片阴影之间跳跃，时而融入其中，时而又从另一片阴影中钻出来，就好像那些暗影区域其实是传送门一样。眼下的情况是，无论你脚下多么迅捷，都绝无希望追上他——尤其是在这个昏暗的地下环境中。\n\n                [party.has einin\n                |他真的有能力做到这件事吗？\n\n                <i>不……他和我不一样，他并没有接受过魔法训练。就连我妈妈也不可能做出那样的事情来……</i>\n\n                <i>唉，算了，艾宁。</i>低语者那阴森的声音穿过隧道回荡到你耳边。<i>我不可能永远都是你当初认识的那个人。人是会变的。</i>\n\n                <i>那么恕我失陪，我得去向主人汇报我们的成果了。</i>\n\n                ]\n                [party.has cait\n                |<i>该死！</i>凯特向后退了一步，一只手凝聚出一团发光的光球，另一只手则紧紧握着她的法杖。<i>我绝不会让他逃掉！</i>\n\n                你可以理解她的出发点——她是在试图驱散那些阴影，这样低语者就无法利用它们逃脱了。然而，为时已晚。即使凯特把那团能量球扔进了隧道里，它依然在空气中飞行了一段距离，最终才爆发出一道光芒，但你能感觉到，这一切努力最终还是徒劳无功的。\n\n                ]\n                不知道还会不会有更多的邪教徒出现，还是说他们已经全部到齐了。从营地往这里来的路上，巡逻队可一点都没有少…… \n\n                [party.has arona\n                |<i>如果有的话，就交给我吧。</i>阿罗娜低吼着。<i>那个小混蛋，跟它打架简直一点乐趣都没有，现在我气得不行，却找不到发泄的方式。</i>\n\n                ]",
+      "translation": "\n                <i>呃……</i>凭借着顽强的意志和继续战斗的力量，低语者踉跄着退到了附近一座倒下的索拉雕像旁，手中的匕首掉落在地，发出刺耳的声响。在昏暗的光线中，他的目光四处游移，试图寻找一条逃生之路。<i>……我想，是我没有充分认识到你的实力。这次失败，确实是我的责任。</i>\n\n                [party.has einin\n                |<i>一切都结束了，贝拉赫。</i>“艾宁咬紧牙关，喘着粗气向前走去。[einin.weapon]依然对准着低语者。她不想冒任何风险。<i>投降吧……我会把一切都说清楚的。我会让你看看我们当初是为了什么而努力的……让让他们来处理我们俩吧。你不能再这样下去了。</i>\n\n                <i>不……打算把我干掉吗？真有意思。你明明有这个能力啊。</i> 低语者的目光在艾宁和你之间来回扫视，同时发出了一声沙哑的笑声。<i>“[pc.isDK|为什么就连做最简单的事情，你也需要这个所谓的“冠军许可”呢？你是从被击败、被支配中获得快感吗？就是这个原因吗？|难道就是你，这个自以为是的伪君子，被这个所谓的“冠军”影响了吧？你终于改过自新了，是吗？开始用你所学到的技能去做好事了，对吧？]真是个笑话。”</i>\n\n                艾宁在喉咙深处发出了一声沮丧的声音。<i>“贝拉赫，我真的是想帮你啊！但如果你就是不肯承认自己错了，即使我也在这里劝你……那么也许我就该把你丢在这儿了！”</i>\n\n                <i>哦，原来只是<b>现在</b>你才意识到自己不喜欢我？几年前我就已经知道了。至于你说的另外那件事……无论如何，我都不会再去那个地方了。这一点你尽管相信我。”</i>\n\n                |哼，有意思的是，与他的大师不同，他知道自己什么时候被打败了。\n\n                <i>那个……那个说法到底是啥来着？</i> 低语者用他那沙哑、急促的声音喘息着。<i>输入的是垃圾，输出的自然也是垃圾。如果你从不承认自己的错误，就永远无法进步。</i>\n\n                对于一个嗜杀的恶魔崇拜者来说，他的头脑居然如此清醒，实在令人惊讶。那么，他究竟为什么又会跟托勒斯以及他的那些同伙在一起呢？\n\n                <i>你有没有想过……正如主人把那个女恶魔视为一个机会，我也把他看作达成某些目的的手段？</i>\n\n                ] \n                这毫无意义。他显然是在拖延时间，好让自己有更多时间恢复体力，同时也让他的手下们有更多机会离开这个地方。一朝被蛇咬，十年怕井绳；无论你最终要对他采取什么行动，最好先抓住这个小混蛋。千万不能有丝毫松懈。[party.hasCompanions| 并且与[party.compNames]一同支持你]你走近那个仍在痛苦地扭曲着面容的低语者，准备抓住他。\n\n                接下来发生的事情完全出乎意料。你原本以为他会做出某种抵抗[party.hasCompanions| 并且拥有[party.compNames]从侧面包抄他]，低语者却径直摔到了地上，发出沉闷的撞击声，砸在了石质的地板上。你立刻压低手中的[pc.weapon]，以为他会耍什么花招突然窜起来扑向你，但那件宽大黑袍里的身影却在一瞬间消融不见，只留下一堆厚重的布料。当你挥剑向那堆布料劈下时——\n\n                他到底去哪儿了——\n\n                [party.has einin\n                |<i>就是那里！</i>艾宁大喊着，一边指向目标，一边发动了攻击。\n\n                ]\n                听到脚步声，你猛地转过身，发现低语者正一瘸一拐地消失在暗影中，他正沿着那些手下的脚步前进。尽管这个小小的鼠族走路时姿态笨拙、拖拖拉拉，他拉开的距离却快得惊人，你现在明白为什么了：低语者正在一片片阴影之间跳跃，时而融入其中，时而又从另一片阴影中钻出来，就好像那些暗影区域其实是传送门一样。眼下的情况是，无论你脚下多么迅捷，都绝无希望追上他——尤其是在这个昏暗的地下环境中。\n\n                [party.has einin\n                |他真的有能力做到这件事吗？\n\n                <i>不……他和我不一样，他并没有接受过魔法训练。就连我妈妈也不可能做出那样的事情来……</i>\n\n                <i>唉，算了，艾宁。</i>低语者那阴森的声音穿过隧道回荡到你耳边。<i>我不可能永远都是你当初认识的那个人。人是会变的。</i>\n\n                <i>那么恕我失陪，我得去向主人汇报我们的成果了。</i>\n\n                ]\n                [party.has cait\n                |<i>该死！</i>凯特向后退了一步，一只手凝聚出一团发光的光球，另一只手则紧紧握着她的法杖。<i>我绝不会让他逃掉！</i>\n\n                你可以理解她的出发点——她是在试图驱散那些阴影，这样低语者就无法利用它们逃脱了。然而，为时已晚。即使凯特把那团能量球扔进了隧道里，它依然在空气中飞行了一段距离，最终才爆发出一道光芒，但你能感觉到，这一切努力最终还是徒劳无功的。\n\n                ]\n                不知道还会不会有更多的邪教徒出现，还是说他们已经全部到齐了。从营地往这里来的路上，巡逻队可一点都没有少…… \n\n                [party.has arona\n                |<i>如果有的话，就交给我吧。</i>阿罗娜低吼着。<i>那个小混蛋，跟它打架简直一点乐趣都没有，现在我气得不行，却找不到发泄的方式。</i>\n\n                ]",
       "start": 2162101,
       "end": 2167780,
       "line": 1,
@@ -43245,7 +43282,9 @@
       "line": 1,
       "raw": "\"ECLIPSE\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2402100:2402230:b3178f254e70",
@@ -43259,7 +43298,7 @@
       "line": 1,
       "raw": "\"<i>Our dance lasts forever 'cross the dark ocean's light;\\nthough our meetings are rarer, we turn day into night.\\nWho am I?</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "translationStatus": "manual_translated_chinese_glossary_alias",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual",
       "updateStatus": "inherited_translation"
     },
@@ -44995,15 +45034,17 @@
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2424019:2424029:bc3d464af54a",
       "file": "Content_Dungeons.fbdf9effee9a3af89faa.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "THE DEAD",
-      "translation": "死者",
+      "translation": "",
       "start": 2424019,
       "end": 2424029,
       "line": 1,
       "raw": "\"THE DEAD\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "curatedReason": "internal_puzzle_answer",
+      "translationStatus": "manual_puzzleDoNotModify"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2424030:2424116:f65da406542b",
@@ -45017,7 +45058,8 @@
       "line": 1,
       "raw": "\"<i>They feel no pain\\nNo sorrow no greed\\nThey have no anger\\nNo hatred nor need</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2424147:2424161:1ec0bbe0fb3f",
@@ -48437,7 +48479,9 @@
       "line": 1,
       "raw": "\"SILENCE\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:2498150:2498212:54a999ba2018",
@@ -48451,7 +48495,7 @@
       "line": 1,
       "raw": "\"<i>My love disappears when her name is said, who is she?</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "translationStatus": "manual_translated",
+      "translationStatus": "manual_puzzleDoNotModify",
       "translationModel": "manual",
       "updateStatus": "inherited_translation"
     },
@@ -80639,7 +80683,9 @@
       "line": 1,
       "raw": "\"ADVICE\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:3704494:3704555:9ea29d402b6a",
@@ -80653,7 +80699,8 @@
       "line": 1,
       "raw": "\"<i>Offered by many\\nTaken by few\\nYet can be invaluable</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:3704603:3704605:da39a3ee5e6b",
@@ -100513,7 +100560,9 @@
       "line": 1,
       "raw": "\"RING\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable"
+      "updateStatus": "inherited_not_translatable",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "curatedReason": "internal_puzzle_answer"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:4915376:4915503:a64a4e71a476",
@@ -100527,7 +100576,8 @@
       "line": 1,
       "raw": "\"<i>A precious treasure without end,\\nNor has it a beginning,\\nIts body lacking joint or mend,\\nAnd in the middle nothing.</i>\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:4915563:4915565:da39a3ee5e6b",
@@ -104961,13 +105011,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Pearl is beneath me.",
-      "translation": "珍珠在我下方（Pearl is beneath me）。",
+      "translation": "珍珠在我下方（Pearl is beneath me）",
       "start": 5067713,
       "end": 5067735,
       "line": 1,
       "raw": "\"Pearl is beneath me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:5067736:5067766:bf91b6bb9d46",
@@ -104975,13 +105027,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amethyst is far to my right.",
-      "translation": "紫水晶在我右边较远处（Amethyst is far to my right）。",
+      "translation": "紫水晶在我右边较远处（Amethyst is far to my right）",
       "start": 5067736,
       "end": 5067766,
       "line": 1,
       "raw": "\"Amethyst is far to my right.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:5067767:5067793:cf52d3e12649",
@@ -104989,13 +105043,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Lapis is far to my left.",
-      "translation": "青金石在我左边较远处（Lapis is far to my left）。",
+      "translation": "青金石在我左边较远处（Lapis is far to my left）",
       "start": 5067767,
       "end": 5067793,
       "line": 1,
       "raw": "\"Lapis is far to my left.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:5067794:5067796:da39a3ee5e6b",
@@ -105017,13 +105073,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is directly above me.",
-      "translation": "琥珀在我正上方（Amber is directly above me）。",
+      "translation": "琥珀在我正上方（Amber is directly above me）",
       "start": 5067797,
       "end": 5067826,
       "line": 1,
       "raw": "\"Amber is directly above me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:5067827:5067849:4b8309cac44c",
@@ -105031,13 +105089,15 @@
       "category": "possible_text",
       "shouldTranslate": true,
       "original": "Amber is beneath me.",
-      "translation": "琥珀在我下方（Amber is beneath me）。",
+      "translation": "琥珀在我下方（Amber is beneath me）",
       "start": 5067827,
       "end": 5067849,
       "line": 1,
       "raw": "\"Amber is beneath me.\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation"
+      "updateStatus": "inherited_translation",
+      "translationStatus": "manual_puzzleDoNotModify",
+      "translationModel": "manual"
     },
     {
       "id": "Content_Dungeons.fbdf9effee9a3af89faa.js:5068009:5068016:505e9f71a97c",
@@ -106533,7 +106593,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    You fall back on your ass, staggered enough by her unorthodox fighting style to be completely overwhelmed. You're pretty sure you know where this is going to go, and are already steeling yourself for whatever she plans to do to you.\n    \n    \"Wooo! That was fun! I was, like, gonna go do more pranks and stuff, but you're kinda hot and now I just wanna stay here and do stuff with you!\" she says, reassembling herself and skipping over to plop right down onto your chest.\n    \n    Well that's something. If she just wants you, it'll limit her mischief, and maybe she'll leave your friends alone, as well. Besides, you doubt her worst will leave you much more than sore or a little embarrassed. So be it.\n    \n    \"Fine, get on with it then,\" you say, looking up at her from below.\n    \n    \"Yay! I'll make you feel nice and good!\" she giggles, [pc.hasBreasts\n        |kneading one of your [pc.breasts] in each hand.\n        |rubbing her hands over your chest.\n    ]\n    \n    You can't help but get caught up in her energy, smirking despite yourself as she spins around. Her goat tail wags swiftly as she examines your crotch, stretching her arms above her head and cracking her neck before simply removing one of her arms. There's a poof of pink mist, and she sets that arm down between your legs. It holds one of your thighs for support, while she places her attached hand on your other thigh.\n    \n    \"Gotta get you all ready to go before I get started. It's, like, no fun otherwise!\" she says over her shoulder before leaning face first onto your crotch.\n    \n    She starts off immediately with [pc.hasVagina\n        |[pc.hasCock\n            |a few smooches on your cock and \n        ]a big suckling smooch on your clit. From there, she transitions to slow lapping licks between your folds. Her primary focus is on your lust-button, but she's making sure you're absolutely sodden before continuing.\n        |a few quick smooches on your cock before parting your asscheeks with her tongue. Despite her diminutive stature, there's an unworldly strength in the arms holding your legs apart, and she has no trouble lapping at your [pc.asshole] with long and slow licks. She occasionally pulls back to breathe and to give your [pc.cock] some attention, but her primary focus is on making sure you're absolutely sodden before she moves on.\n    ]\n    \n    \"Mwah! There we go! Now you're, like, all ready for me!\" she says, spinning around again. The fingers of her detached arm are still teasing your entrance with gentle touches. Not enough to get you off, but enough to make sure your lusts don't wane. Not that they were going to in the first place.\n    \n    The turn has revealed a horsecock that's nearly at full mast between her legs, and she scoots up so that she can rest her balls right on your face. You try to resist at first, but after you get a full breath of her musk your heart begins to race. She coos happily as she strokes herself the rest of the way to maximum stiffness. When she's satisfied, she detaches her cock like it's no more than a strapon. Humming happily, she begins coating her cock with a copious coat of saliva, paying extra attention to her tip and medial ring. Soon, the entire thing is covered in a glistening shine.\n    \n    With a devious smile, she hands her dick back over her shoulder, and plops down so her face is right in front of yours. At first, you aren't sure what her plan is, but then you feel the crown of her cock pressing against your entrance. She attempts to penetrate you, but her oblong head simple slides up and down along your thighs and asscheeks. Her smile falters after a solid minute of attempts, and fades to an embarrassed flush.\n    \n    \"Oh for gods sakes! How hard is it to, like, get it in there!?\" she asks, spinning around and scooting back to help her arm line the cock up just right. This time when she pushes it parts your [pc.hasVagina\n        |lips\n        |cheeks\n    ] and slides right in. \"Ahhh, that's so much better!\"\n    \n    Once it's secured, she spins around and plops down in front of you again.\n    \n    \"So what do you wanna do while I'm fucking you? We can smooch, or we could rub our chests together... Oh oh, or you could slap my butt! There's endless options!\" she says, oblivious to how you're struggling to adjust to the living dildo she's filling you with.\n    \n    It's an odd feeling, good for sure, but odd. You <b>knew</b> how big the thing was, as you got a good look at it before it went in, but it feels like it fits your [pc.vagOrAss] perfectly! That makes it simultaneously very easy to adapt to and dangerously pleasurable. Lucky for you, she just offered up several distracting options. There were a lot of 'or's in her offer, but you don't think she'll say no if you go for several at once.\n    \n    Lifting both hands, you clap them down on her asscheeks with a resounding slap. You then have to pause and bite your lip as her cock throbs powerfully inside you. Curious, you give her another spank. A short 'eep' escapes her lips, and her dil-dick throbs again. You're still exhausted from her beatdown, so you can't put much force into the blows, but it looks like she's got at least a little bit of a masochistic streak!\n    \n    \"H-hey! I'm supposed to be topping here. That's, like, no fair,\" she says with an exaggerated pout.\n    \n    \"You suggested this, and turnabout is fair play!\" you say, quelling her grumps with that smooch she suggested.\n    \n    Her complaints die away in an instant, and she resumes kicking her hooves in the air as you slow-smooch her into a stupor. The pleasure is slowly beginning to get to you, but if you can take her with you it should be worth it. You could probably even take control here for the last moments, if you wanted.\n    ",
-      "translation": "\n    你重重摔在地上，她的这种非传统的战斗方式让你彻底陷入了被动。你很清楚接下来会发生什么，也在心里做好了准备，迎接她接下来要对你使出的任何手段。\n    \n    哇哦！太有趣了！我本来还打算再搞些恶作剧呢，但你现在看起来太迷人了，所以我干脆想留在这里，和你一起做各种事情了！”她一边说着，一边整理好自己的姿势，蹦跳着坐到了你的怀里。\n    \n    那可真是件好事。如果她真的只是喜欢你，她的那些恶作剧就会减少，也许也会不再去打扰你的朋友们。而且，就算她做出最过分的事情，顶多也就是让你感到些疼痛或有些尴尬而已。所以，就这样吧。\n    \n    好吧，那就开始吧。”你从下方抬头看着她说道。\n    \n    “太好了！我会让你感觉非常愉快和舒服的！”她咯咯笑着回答。 [pc.hasBreasts\n        |揉捏你的某个部位[pc.breasts]每只手各持一个。\n        |把她的手放在你的胸口上。\n    ]\n    \n    你不由自主地被她的活力所感染，当她旋转起来时，你也不禁会露出微笑。她的羊尾辫快速摆动着，同时她仔细地打量着你的裆部。接着，她将双臂举过头顶，活动了一下脖子，然后终于放下了一只手臂。一阵粉红色的雾气弥漫开来，她将那只手臂放在你的双腿之间。那只手臂托住你的一条大腿作为支撑，而她另一只手则放在你的另一条大腿上。\n    \n    “在我开始之前，得先让你做好一切准备才行。不然的话，就一点意思都没有了！”她边说边把头靠在你的裆部。\n    \n    然后她立刻开始了[pc.hasVagina\n        |[pc.hasCock\n            |在你阴茎上亲几下，然后…… \n        ]她先在你的阴蒂上轻柔地吮吸，然后慢慢地将舌头伸入你的阴部褶皱之间进行舔舐。她的主要目标是刺激你的敏感部位，但在此之前，她会确保你的身体已经充分被激发，变得无比湿润。\n        |在分开你的臀部之前，她会先快速地亲吻你的阴茎几下。尽管她身材娇小，但当她用双手分开你的双腿时，身上却蕴含着一种超凡的力量，她毫不费力地就能用舌头舔弄你的[pc.asshole]她用长而缓慢的舔动动作进行着。偶尔，她会停下来喘口气，然后继续[pc.cock]她虽然会给予一些关注，但她的主要目的就是确保你彻底湿透之后，她才会继续下一步行动。\n    ]\n    \n    哇哦！就这样吧！现在你完全准备好迎接我了！”她一边说着，一边再次旋转起来。她那被切断的手指仍在用轻柔的触碰逗引着你。这些触碰还不足以让你失去兴趣，但确实足以让你的欲望持续下去。其实，这些欲望本来就不会消退的。\n    \n    这一动作让她双腿之间的部位明显凸显出来，几乎处于完全勃起的状态。她随即调整姿势，让那个部位正好紧贴在你的脸上。起初你试图抗性，但当你深深地吸入了她身上散发出的那种独特气味后，你的心跳开始加速。她一边愉快地自慰，一边让自己的阴茎逐渐达到最坚硬的状态。当达到满意的效果后，她就像使用一个普通的假阳具一样将其取下。她开心地哼着小曲，开始用大量的唾液涂抹自己的阴茎，尤其仔细地护理着阴茎的头部和中间部位。很快，整个表面都覆盖上了一层闪闪发光的物质。\n    \n    她露出一个狡黠的笑容，将那东西重新甩到自己肩后，然后坐下来，让脸紧贴在你的面前。起初，你并不明白她的意图，但随后你感觉到她的那个部位顶在了你的入口处。她试图进入你的身体，但那个椭圆形的头部只是在你的大腿和臀部上来回滑动。经过整整一分钟的尝试后，她的笑容消失了，取而代之的是一丝尴尬的红晕。\n    \n    哦，看在上帝的份上！把那个东西放进去到底有多难啊？？”她边问边转过身来，迅速后退了几步，以便更好地调整手臂的位置，让那个东西能够准确地插入到位。这次，当她用力推的时候，那个东西终于成功进入了你的身体[pc.hasVagina\n        |嘴唇\n        |脸颊\n    ]然后它就滑了进去。“啊，这样好多了！”\n    \n    等它固定到位后，她转过身来，又坐到了你面前。\n    \n    “那么，当我在和你做这些的时候，你想做什么呢？我们可以亲亲，或者可以互相摩擦胸部……哦，或者你可以拍拍我的屁股！选择无穷多啊！”她说着，完全不知道你正在努力适应这个塞进你体内的“假阳具”。\n    \n    这种感觉很奇怪，不过确实挺不错的，就是有点奇怪。你<b>知道</b>不管那个东西有多大，在它被送进来之前你已经有机会仔细观察过了，但感觉它还是挺适合你的。[pc.vagOrAss]太好了！这样一来，既很容易适应这种情境，同时又会带来极其愉悦的体验。对你来说运气真好，她正好提供了几个可以分散注意力的选择。她提出的建议里有很多“或者”，但如果你同时选择几项，她应该不会拒绝你的。\n    \n    你举起双手，用力拍在了她的屁股上，发出清脆的声响。随后，当你感觉到她的阴茎在你体内强烈地抽动时，你不得不停下动作，咬住嘴唇。出于好奇，你又打了她一下屁股。她轻轻“哎哟”了一声，她的阴茎又一次开始剧烈地抽动。你还在为刚才那场激烈的交锋而精疲力竭，所以打出的力量自然不会太大，不过看起来她似乎也有那么一点自虐的倾向呢！\n    \n    “喂！我本来应该是处于优势方的啊，这样太不公平了吧！”她一边夸张地撅着嘴说道。\n    \n    这是你提出的主意，那么现在轮到你了！”你说道，然后按照她的建议给了她一个吻，让她不再抱怨了。\n    \n    她的牢骚立刻消失了，而你继续轻轻地吻她，直到她陷入沉睡。这种愉悦感正在慢慢渗透到你心中，但如果你能带着她一起体验，那么这一切肯定都是值得的。如果你愿意的话，甚至可以在最后的关键时刻掌控整个局面。\n    ",
+      "translation": "\n    你重重摔在地上，她的这种非传统的战斗方式让你彻底陷入了被动。你很清楚接下来会发生什么，也在心里做好了准备，迎接她接下来要对你使出的任何手段。\n    \n    哇哦！太有趣了！我本来还打算再搞些恶作剧呢，但你现在看起来太迷人了，所以我干脆想留在这里，和你一起做各种事情了！”她一边说着，一边整理好自己的姿势，蹦跳着坐到了你的怀里。\n    \n    那可真是件好事。如果她真的只是喜欢你，她的那些恶作剧就会减少，也许也会不再去打扰你的朋友们。而且，就算她做出最过分的事情，顶多也就是让你感到些疼痛或有些尴尬而已。所以，就这样吧。\n    \n    好吧，那就开始吧。”你从下方抬头看着她说道。\n    \n    “太好了！我会让你感觉非常愉快和舒服的！”她咯咯笑着回答。 [pc.hasBreasts\n        |揉捏你的某个部位[pc.breasts]每只手各持一个。\n        |把她的手放在你的胸口上。\n    ]\n    \n    你不由自主地被她的活力所感染，当她旋转起来时，你也不禁会露出微笑。她的羊尾辫快速摆动着，同时她仔细地打量着你的裆部。接着，她将双臂举过头顶，活动了一下脖子，然后终于放下了一只手臂。一阵粉红色的雾气弥漫开来，她将那只手臂放在你的双腿之间。那只手臂托住你的一条大腿作为支撑，而她另一只手则放在你的另一条大腿上。\n    \n    “在我开始之前，得先让你做好一切准备才行。不然的话，就一点意思都没有了！”她边说边把头靠在你的裆部。\n    \n    然后她立刻开始了[pc.hasVagina\n        |[pc.hasCock\n            |在你阴茎上亲几下，然后…… \n        ]她先在你的阴蒂上轻柔地吮吸，然后慢慢地将舌头伸入你的阴部褶皱之间进行舔舐。她的主要目标是刺激你的敏感部位，但在此之前，她会确保你的身体已经充分被激发，变得无比湿润。\n        |在分开你的臀部之前，她会先快速地亲吻你的阴茎几下。尽管她身材娇小，但当她用双手分开你的双腿时，身上却蕴含着一种超凡的力量，她毫不费力地就能用舌头舔弄你的[pc.asshole]她用长而缓慢的舔动动作进行着。偶尔，她会停下来喘口气，然后继续[pc.cock]她虽然会给予一些关注，但她的主要目的就是确保你彻底湿透之后，她才会继续下一步行动。\n    ]\n    \n    哇哦！就这样吧！现在你完全准备好迎接我了！”她一边说着，一边再次旋转起来。她那被切断的手指仍在用轻柔的触碰逗引着你。这些触碰还不足以让你失去兴趣，但确实足以让你的欲望持续下去。其实，这些欲望本来就不会消退的。\n    \n    这一动作让她双腿之间的部位明显凸显出来，几乎处于完全勃起的状态。她随即调整姿势，让那个部位正好紧贴在你的脸上。起初你试图抗性，但当你深深地吸入了她身上散发出的那种独特气味后，你的心跳开始加速。她一边愉快地自慰，一边让自己的阴茎逐渐达到最坚硬的状态。当达到满意的效果后，她就像使用一个普通的假阳具一样将其取下。她开心地哼着小曲，开始用大量的唾液涂抹自己的阴茎，尤其仔细地护理着阴茎的头部和中间部位。很快，整个表面都覆盖上了一层闪闪发光的物质。\n    \n    她露出一个狡黠的笑容，将那东西重新甩到自己肩后，然后坐下来，让脸紧贴在你的面前。起初，你并不明白她的意图，但随后你感觉到她的那个部位顶在了你的入口处。她试图进入你的身体，但那个椭圆形的头部只是在你的大腿和臀部上来回滑动。经过整整一分钟的尝试后，她的笑容消失了，取而代之的是一丝尴尬的红晕。\n    \n    哦，看在上帝的份上！把那个东西放进去到底有多难啊？”她边问边转过身来，迅速后退了几步，以便更好地调整手臂的位置，让那个东西能够准确地插入到位。这次，当她用力推的时候，那个东西终于成功进入了你的身体[pc.hasVagina\n        |嘴唇\n        |脸颊\n    ]然后它就滑了进去。“啊，这样好多了！”\n    \n    等它固定到位后，她转过身来，又坐到了你面前。\n    \n    “那么，当我在和你做这些的时候，你想做什么呢？我们可以亲亲，或者可以互相摩擦胸部……哦，或者你可以拍拍我的屁股！选择无穷多啊！”她说着，完全不知道你正在努力适应这个塞进你体内的“假阳具”。\n    \n    这种感觉很奇怪，不过确实挺不错的，就是有点奇怪。你<b>知道</b>不管那个东西有多大，在它被送进来之前你已经有机会仔细观察过了，但感觉它还是挺适合你的。[pc.vagOrAss]太好了！这样一来，既很容易适应这种情境，同时又会带来极其愉悦的体验。对你来说运气真好，她正好提供了几个可以分散注意力的选择。她提出的建议里有很多“或者”，但如果你同时选择几项，她应该不会拒绝你的。\n    \n    你举起双手，用力拍在了她的屁股上，发出清脆的声响。随后，当你感觉到她的阴茎在你体内强烈地抽动时，你不得不停下动作，咬住嘴唇。出于好奇，你又打了她一下屁股。她轻轻“哎哟”了一声，她的阴茎又一次开始剧烈地抽动。你还在为刚才那场激烈的交锋而精疲力竭，所以打出的力量自然不会太大，不过看起来她似乎也有那么一点自虐的倾向呢！\n    \n    “喂！我本来应该是处于优势方的啊，这样太不公平了吧！”她一边夸张地撅着嘴说道。\n    \n    这是你提出的主意，那么现在轮到你了！”你说道，然后按照她的建议给了她一个吻，让她不再抱怨了。\n    \n    她的牢骚立刻消失了，而你继续轻轻地吻她，直到她陷入沉睡。这种愉悦感正在慢慢渗透到你心中，但如果你能带着她一起体验，那么这一切肯定都是值得的。如果你愿意的话，甚至可以在最后的关键时刻掌控整个局面。\n    ",
       "start": 5121302,
       "end": 5127155,
       "line": 1,
