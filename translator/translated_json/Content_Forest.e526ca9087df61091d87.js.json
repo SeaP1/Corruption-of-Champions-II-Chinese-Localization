@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_Forest.e526ca9087df61091d87.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_Forest.e526ca9087df61091d87.js",
   "sourceSha1": "3a0ab8cbf90d8e95c032750d61952982b814a921",
   "migratedFrom": [
     "Content_Forest.e526ca9087df61091d87.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:10.018Z",
+  "updateGeneratedAt": "2026-10-17T01:13:18.045Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 4873,
@@ -19045,6 +19045,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -19504,6 +19505,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -22974,6 +22976,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -29199,6 +29202,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32721,6 +32725,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -40964,6 +40969,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -41064,6 +41070,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -41108,6 +41115,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -43708,6 +43716,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -55845,9 +55854,9 @@
       "line": 1,
       "raw": "\"[drifa.captured|You had an obligation to rescue Drifa|You did it for Drifa].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Forest.e526ca9087df61091d87.js:2858122:2858132:40f073237966",
@@ -56383,6 +56392,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -69111,6 +69121,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -69687,9 +69698,9 @@
       "line": 1,
       "raw": "\"[silly|Find out what that mouth do|Get the witch's lips around your cock].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Forest.e526ca9087df61091d87.js:3331572:3331574:da39a3ee5e6b",

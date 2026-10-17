@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_WindyPeaks.2e719cb9dd55ee628d42.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_WindyPeaks.2e719cb9dd55ee628d42.js",
   "sourceSha1": "88c520f0222ea7103508059e04b4e691de422593",
   "migratedFrom": [
     "Content_WindyPeaks.2e719cb9dd55ee628d42.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:14.200Z",
+  "updateGeneratedAt": "2026-10-17T01:13:29.078Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 1902,
@@ -4138,10 +4138,10 @@
       "line": 1,
       "raw": "\"[silly|We all know where this is going by now|You've won, but let the big guy take it out on you anyway].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_WindyPeaks.2e719cb9dd55ee628d42.js:251450:251461:ab087006d071",
@@ -5981,6 +5981,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -20070,10 +20071,10 @@
       "line": 1,
       "raw": "\"Sorran Altar\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_WindyPeaks.2e719cb9dd55ee628d42.js:1018330:1018332:da39a3ee5e6b",
@@ -21155,6 +21156,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -21171,6 +21173,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -22860,6 +22863,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -22918,6 +22922,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {

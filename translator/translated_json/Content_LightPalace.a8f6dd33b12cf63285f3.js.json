@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_LightPalace.a8f6dd33b12cf63285f3.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_LightPalace.a8f6dd33b12cf63285f3.js",
   "sourceSha1": "513e87fea4e19e7f35dafd14999387cf34949590",
   "migratedFrom": [
     "Content_LightPalace.a8f6dd33b12cf63285f3.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:11.949Z",
+  "updateGeneratedAt": "2026-10-17T01:13:27.197Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 2021,
@@ -13380,10 +13380,10 @@
       "line": 1,
       "raw": "\"[silly|No double dipping|You can't promise your soul to two gods at once].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_LightPalace.a8f6dd33b12cf63285f3.js:1017910:1017930:6452148f63ae",
@@ -14006,10 +14006,10 @@
       "line": 1,
       "raw": "\"[silly|No double dipping|You can't promise your soul to two gods at once].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_LightPalace.a8f6dd33b12cf63285f3.js:1023048:1023054:e0d73143de80",

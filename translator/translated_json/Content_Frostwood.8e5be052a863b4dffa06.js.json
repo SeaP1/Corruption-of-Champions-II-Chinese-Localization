@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_Frostwood.8e5be052a863b4dffa06.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_Frostwood.8e5be052a863b4dffa06.js",
   "sourceSha1": "2a6ca61228bc16403f90ca43afc5c3eab0d89e9c",
   "migratedFrom": [
     "Content_Frostwood.8e5be052a863b4dffa06.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:10.260Z",
+  "updateGeneratedAt": "2026-10-17T01:13:18.322Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 6317,
@@ -2504,6 +2504,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -36729,6 +36730,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -56866,9 +56868,9 @@
       "line": 1,
       "raw": "\"RIVER\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "manual_puzzleDoNotModify",
-      "curatedReason": "internal_puzzle_answer"
+      "curatedReason": "internal_puzzle_answer",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_Frostwood.8e5be052a863b4dffa06.js:2781280:2781387:27b2d69e9819",
@@ -86917,6 +86919,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -91347,6 +91350,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -91363,6 +91367,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -91393,6 +91398,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -91451,6 +91457,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {

@@ -1,15 +1,15 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_Other.a3f87c2a2bc41bf28514.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_Other.a3f87c2a2bc41bf28514.js",
   "sourceSha1": "5c70d33a963b05ae5851d439aefafeb17726168a",
   "migratedFrom": [
     "Content_Other.a3f87c2a2bc41bf28514.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:12.589Z",
+  "updateGeneratedAt": "2026-10-17T01:13:27.970Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 833,
-  "shouldTranslate": 333,
-  "inherited": 333,
+  "shouldTranslate": 334,
+  "inherited": 334,
   "inheritedState": 702,
   "newlyAdded": 0,
   "byCategory": {
@@ -132,6 +132,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -878,9 +879,9 @@
       "line": 1,
       "raw": "\"Alchemy\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Other.a3f87c2a2bc41bf28514.js:27166:27168:da39a3ee5e6b",
@@ -1466,6 +1467,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5460,6 +5462,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -5672,6 +5675,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7608,6 +7612,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7624,6 +7629,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7640,6 +7646,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7656,6 +7663,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7672,6 +7680,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7688,6 +7697,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7704,6 +7714,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7720,6 +7731,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7750,6 +7762,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7766,6 +7779,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7782,6 +7796,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7798,6 +7813,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7814,6 +7830,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7830,6 +7847,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7846,6 +7864,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7862,6 +7881,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7878,6 +7898,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7894,6 +7915,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7910,6 +7932,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7926,6 +7949,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7942,6 +7966,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7958,6 +7983,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7974,6 +8000,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -7990,6 +8017,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8006,6 +8034,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8023,6 +8052,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8039,6 +8069,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8056,6 +8087,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8072,6 +8104,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8088,6 +8121,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8104,6 +8138,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8120,6 +8155,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8136,6 +8172,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8236,6 +8273,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8252,6 +8290,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8268,6 +8307,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8284,6 +8324,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8300,6 +8341,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8316,6 +8358,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8332,6 +8375,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8362,6 +8406,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8378,6 +8423,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8394,6 +8440,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8410,6 +8457,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8426,6 +8474,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8456,6 +8505,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8472,6 +8522,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8488,6 +8539,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8504,6 +8556,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8520,6 +8573,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8536,6 +8590,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8552,6 +8607,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8568,6 +8624,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8584,6 +8641,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8600,6 +8658,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8616,6 +8675,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8632,6 +8692,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8648,6 +8709,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8664,6 +8726,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8680,6 +8743,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8696,6 +8760,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8712,6 +8777,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8728,6 +8794,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8744,6 +8811,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8760,6 +8828,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8776,6 +8845,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8792,6 +8862,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8808,6 +8879,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8824,6 +8896,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8840,6 +8913,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8856,6 +8930,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8888,6 +8963,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8948,6 +9024,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8964,6 +9041,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8981,6 +9059,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -8998,6 +9077,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9014,6 +9094,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9030,6 +9111,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9047,6 +9129,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9063,6 +9146,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9080,6 +9164,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9096,6 +9181,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9112,6 +9198,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9128,6 +9215,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9145,6 +9233,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9161,6 +9250,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9177,6 +9267,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9193,6 +9284,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9210,6 +9302,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9226,6 +9319,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9242,6 +9336,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9258,6 +9353,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9274,6 +9370,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9290,6 +9387,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9307,6 +9405,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9323,6 +9422,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9340,6 +9440,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9356,6 +9457,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9373,6 +9475,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9389,6 +9492,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9545,6 +9649,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9561,6 +9666,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9577,6 +9683,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9593,6 +9700,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9609,6 +9717,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9625,6 +9734,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9655,6 +9765,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9671,6 +9782,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9687,6 +9799,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9703,6 +9816,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9719,6 +9833,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9735,6 +9850,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9751,6 +9867,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9767,6 +9884,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9783,6 +9901,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9799,6 +9918,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9815,6 +9935,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9831,6 +9952,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9847,6 +9969,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9863,6 +9986,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9879,6 +10003,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9895,6 +10020,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9911,6 +10037,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9927,6 +10054,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9943,6 +10071,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -9959,6 +10088,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -11631,6 +11761,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {

@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_Valley.32cefd9703703eabee96.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_Valley.32cefd9703703eabee96.js",
   "sourceSha1": "3939538c1050df0e3b5f49c6a20aeec5ae213283",
   "migratedFrom": [
     "Content_Valley.32cefd9703703eabee96.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:13.520Z",
+  "updateGeneratedAt": "2026-10-17T01:13:28.376Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 4617,
@@ -16985,6 +16985,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -17263,9 +17264,9 @@
       "line": 1,
       "raw": "\"\\n    After an exhausting fight, [lastStanding.combatName] finally falls to the ground.\\n\\n    Do you decide to turn the tables on them and use them, or will you just leave them there to sort out their lust on their own?\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Valley.32cefd9703703eabee96.js:833440:833450:0878c3b7dc1f",
@@ -21709,6 +21710,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -26573,6 +26575,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -32623,9 +32626,9 @@
       "line": 1,
       "raw": "\"Take care for now, [silly|bnuy|bun].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Valley.32cefd9703703eabee96.js:1522045:1522212:8cd2c5e77ac6",
@@ -32773,9 +32776,9 @@
       "line": 1,
       "raw": "\"Take care for now, [silly|bnuy|bun].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Valley.32cefd9703703eabee96.js:1522533:1522539:2ced57f12591",
@@ -32905,9 +32908,9 @@
       "line": 1,
       "raw": "\"Take care for now, [silly|bnuy|bun].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Valley.32cefd9703703eabee96.js:1522785:1523150:c7110b6f4440",
@@ -61497,6 +61500,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -63456,6 +63460,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -63501,6 +63506,7 @@
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
       "curatedReason": "carried_from_old_json",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {

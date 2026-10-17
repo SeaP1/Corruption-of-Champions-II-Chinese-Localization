@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_Undermountain.d030bf98ce3c5401b17c.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_Undermountain.d030bf98ce3c5401b17c.js",
   "sourceSha1": "35d075dba1f12f30298bbe4e92ff8510f2160f1b",
   "migratedFrom": [
     "Content_Undermountain.d030bf98ce3c5401b17c.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:13.341Z",
+  "updateGeneratedAt": "2026-10-17T01:13:28.202Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 2154,
@@ -6640,8 +6640,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
-      "updateStatus": "inherited_translation",
-      "translationError": ""
+      "translationError": "",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Undermountain.d030bf98ce3c5401b17c.js:437086:437092:bc981983e7f5",
@@ -8989,8 +8989,8 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationStatus": "manual_translated",
       "translationModel": "manual",
-      "updateStatus": "inherited_translation",
-      "translationError": ""
+      "translationError": "",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Undermountain.d030bf98ce3c5401b17c.js:574158:574160:da39a3ee5e6b",
@@ -22048,6 +22048,7 @@
       "inheritedMatchMode": "occurrence_original_category",
       "translationModel": "safety_filter",
       "disabledReason": "inherited_disabled_code_key",
+      "translationStatus": "disabled_code_key",
       "updateStatus": "disabled_code_key"
     },
     {
@@ -23574,9 +23575,9 @@
       "line": 1,
       "raw": "\"DARKNESS\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "manual_puzzleDoNotModify",
-      "curatedReason": "internal_puzzle_answer"
+      "curatedReason": "internal_puzzle_answer",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_Undermountain.d030bf98ce3c5401b17c.js:2050489:2050642:5fafc02bf52c",
@@ -23948,9 +23949,9 @@
       "line": 1,
       "raw": "\"\\n        You quickly look around, trying to find somewhere to bunker down!\\n        \\n        [var0\\n            |A moment later and you're running for an alcove in the tunnel wall that you can hide in while the rolling debris passes you by. [party.CombatNames] duck into a recess in the tunnel wall and flatten yourselves against the rock face, watching as hundreds of pounds of stone goes roaring past. There're plenty of small boulders strewn about the place when it's all over, but at least everyone's unharmed.\\n            |You spend just a little too long looking for shelter: by the time you realize there's none to be found, it's too late to run completely out of the way: you end up slammed into the ground by stone, pelted black and blue by debris!\\n        ]\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_Undermountain.d030bf98ce3c5401b17c.js:2055192:2055315:11e56cb9b8b4",

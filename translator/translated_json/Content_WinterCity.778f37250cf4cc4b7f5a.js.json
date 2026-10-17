@@ -1,10 +1,10 @@
 {
-  "sourceFile": "D:\\Codex\\COC2 0.911\\resources\\app\\Content_WinterCity.778f37250cf4cc4b7f5a.js",
+  "sourceFile": "D:\\Codex\\COC2 0.912\\resources\\app\\Content_WinterCity.778f37250cf4cc4b7f5a.js",
   "sourceSha1": "ef5c84881a7600776c74575570df4939eea369d7",
   "migratedFrom": [
     "Content_WinterCity.778f37250cf4cc4b7f5a.js.json"
   ],
-  "updateGeneratedAt": "2026-10-10T14:18:14.282Z",
+  "updateGeneratedAt": "2026-10-17T01:13:29.164Z",
   "updateMode": "preview",
   "keptByReason": {},
   "total": 1975,
@@ -2636,9 +2636,9 @@
       "line": 1,
       "raw": "\"SUNLIGHT\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "updateStatus": "inherited_not_translatable",
       "translationStatus": "manual_puzzleDoNotModify",
-      "curatedReason": "internal_puzzle_answer"
+      "curatedReason": "internal_puzzle_answer",
+      "updateStatus": "inherited_not_translatable"
     },
     {
       "id": "Content_WinterCity.778f37250cf4cc4b7f5a.js:81674:83646:8278828edc8e",
@@ -20194,10 +20194,10 @@
       "line": 1,
       "raw": "\"[flags.TELFIR_AMALGRAM|Buy Telfir's services|Visit Telfir to inquire about dresses].\"",
       "inheritedMatchMode": "occurrence_original_category",
-      "curatedReason": "carried_from_old_json",
-      "updateStatus": "inherited_translation",
       "translationStatus": "manual_translated",
-      "translationModel": "manual"
+      "translationModel": "manual",
+      "curatedReason": "carried_from_old_json",
+      "updateStatus": "inherited_translation"
     },
     {
       "id": "Content_WinterCity.778f37250cf4cc4b7f5a.js:1246658:1246660:da39a3ee5e6b",
