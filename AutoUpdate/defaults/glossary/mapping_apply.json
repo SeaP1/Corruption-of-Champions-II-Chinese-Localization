@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-08T00:55:57.341Z",
+  "generatedAt": "2026-11-08T20:59:29.665Z",
   "source": "mapping_manual.json",
   "mappings": {
     "cnCombatPrefix": {
@@ -279,7 +279,7 @@
       "slutty": "淫荡的",
       "smooth": "光滑的",
       "soft": "柔软的",
-      "sphincter": "括约口",
+      "sphincter": "穴口",
       "spongy": "绵软的",
       "succulent": "饱满诱人的",
       "supple": "柔软的",
@@ -323,7 +323,25 @@
       "rump": "臀部",
       "bottom": "臀部",
       "rear end": "臀部",
-      "tush": "小屁股"
+      "tush": "小屁股",
+      "scale": "鳞片",
+      "feather": "羽毛",
+      "feathers": "羽毛",
+      "arms": "双臂",
+      "hands": "双手",
+      "claws": "利爪",
+      "goo": "黏液",
+      "chitin": "甲壳",
+      "wrists": "手腕",
+      "elbows": "手肘",
+      "ankles": "脚踝",
+      "knees": "膝盖",
+      "ear": "耳朵",
+      "ears": "耳朵",
+      "elven ear": "精灵耳",
+      "elven ears": "精灵耳",
+      "crown": "龟头",
+      "bowels": "肠道"
     },
     "cnAttributeLabel": {
       "acolyte": "侍僧",
@@ -1513,7 +1531,8 @@
       "Harpy Siren": "鹰身女妖塞壬",
       "Harpy Charmblade": "鹰身女妖魅刃",
       "Harpy Witch": "鹰身女妖女巫",
-      "Violette": "维奥莱特"
+      "Violette": "维奥莱特",
+      "You": "你"
     },
     "cnMakeupLabel": {
       "Black": "黑色",
