@@ -29757,7 +29757,7 @@ globalThis.cnPlaceLabel=globalThis.cnPlaceLabel||function(e){var t=String(e==nul
               textify(
                 oe ||
                   (oe = nt([
-                    "\n    [var0\n        |What is your sister’s name?\n        |You can’t name either of them after yourself!\n    ]\n    ",
+                    "\n    [var0\n        |你妹妹叫什么名字？\n        |你不能用自己的名字给她们中的任何一个命名！\n    ]\n    ",
                   ])),
               ),
               [
@@ -29775,11 +29775,11 @@ globalThis.cnPlaceLabel=globalThis.cnPlaceLabel||function(e){var t=String(e==nul
               textify(
                 ae ||
                   (ae = nt([
-                    "\n        What is your sister’s name?\n        ",
+                    "\n        你妹妹叫什么名字？\n        ",
                   ])),
               ),
             ),
-            NameKiddo(omaSisValidName, "Sis"));
+            NameKiddo(omaSisValidName, "妹妹"));
         }),
         (window.omaSisValidName = function (e) {
           var t = e.toLowerCase();

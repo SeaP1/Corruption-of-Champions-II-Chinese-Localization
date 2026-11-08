@@ -154062,7 +154062,7 @@
       "stableId": "505.556864beb2407f9746a7.js:text:abe7d96f1e06:0",
       "file": "505.556864beb2407f9746a7.js",
       "category": "possible_text",
-      "shouldTranslate": true,
+      "shouldTranslate": false,
       "original": "$1<i>$2</i>$3",
       "translation": "",
       "start": 1005959,
@@ -154078,7 +154078,10 @@
       "previousId": "505.70e7bc7a49d21d52d0b7.js:1026723:1026738:abe7d96f1e06",
       "migrationMatch": "patience_unique_anchor",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual_reviewed_false",
+      "translationModel": "manual",
+      "curatedReason": "正则表达式 replace() 的捕获组替换模板；翻译会破坏 $1/$2/$3 与 <i> 标签包装逻辑。"
     },
     {
       "id": "505.556864beb2407f9746a7.js:1006042:1006045:2ace62c1befa",

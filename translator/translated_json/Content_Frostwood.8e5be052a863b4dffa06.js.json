@@ -5204,7 +5204,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "Next",
-      "translation": "",
+      "translation": "下一步",
       "start": 163149,
       "end": 163155,
       "line": 1111,
@@ -5218,7 +5218,10 @@
       "previousId": "Content_Frostwood.8e5be052a863b4dffa06.js:164259:164265:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "addButton 的可见按钮标签。"
     },
     {
       "id": "Content_Frostwood.8e5be052a863b4dffa06.js:163339:163341:da39a3ee5e6b",
@@ -13068,7 +13071,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "Next",
-      "translation": "",
+      "translation": "下一步",
       "start": 332216,
       "end": 332222,
       "line": 2338,
@@ -13082,7 +13085,10 @@
       "previousId": "Content_Frostwood.8e5be052a863b4dffa06.js:334553:334559:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "addButton 的可见按钮标签。"
     },
     {
       "id": "Content_Frostwood.8e5be052a863b4dffa06.js:332238:332240:da39a3ee5e6b",

@@ -167192,7 +167192,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Confirm",
-      "translation": "",
+      "translation": "确认",
       "start": 6547529,
       "end": 6547538,
       "line": 28562,
@@ -167206,7 +167206,10 @@
       "previousId": "Content_Hawkethorne.0bbdef283d7f54271082.js:6575092:6575101:04a212215ef9",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "修改姓名界面的 addButton 可见标签，不参与姓名校验。"
     },
     {
       "id": "Content_Hawkethorne.2b15bcfd275fb9db90ec.js:6547914:6548747:3d9beaa30ed2",
@@ -167357,7 +167360,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Never Mind",
-      "translation": "",
+      "translation": "算了",
       "start": 6549068,
       "end": 6549080,
       "line": 28586,
@@ -167371,7 +167374,10 @@
       "previousId": "Content_Hawkethorne.0bbdef283d7f54271082.js:6576655:6576667:74bbe595f199",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "取消修改头衔的 addButton 可见标签。"
     },
     {
       "id": "Content_Hawkethorne.2b15bcfd275fb9db90ec.js:6549283:6549473:bc2b95635723",
@@ -167453,7 +167459,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    \"Like I told you when we first met, if anyone wants people around Hawkethorne and the Marches to know something, all they have to do is come to me. It's not just the locals who get their news from me — it's practically everyone passing through town, and <b>they</b> will spread that word further into the Marches.\"\n\n    Right. You'd like to spread the word of your deeds out in the Marches, and let everyone know how they should address you in light of what you've accomplished during your adventures.\n    \n    \"Of course, of course.\" River waggles a finger at you. \"I've been keeping eyes and ears out for the exploits of our latest rising star — I know what you've been doing, because that's my job, after all. That being said, I'm not going to risk my reputation by spreading deceptions... so don't try claiming titles you haven't earned. Quite important, that. And there's the matter of the fee...\"\n    \n    [var0||Ah, yes. The fee, which you can't afford. \n    \n    River clicks his tongue at that. \"Ah, you poor thing. All right, I'll waive the fee, because I like you and know you're <b>really</b> broke, as opposed to just pretending to be broke like some people do at Garth's. But don't keep on doing this...\"]",
-      "translation": "",
+      "translation": "\n    “就像我初次见你时说的那样，若有人想让鹰棘镇和边疆一带的人知道什么，只需来找我即可。不只是本地人从我这里打听消息——几乎所有途经镇子的人都会来，而<b>他们</b>还会把消息进一步传遍边疆。”\n\n    没错。你想把自己的冒险事迹传遍边疆，让所有人都知道，凭你在旅途中取得的成就，他们该如何称呼你。\n    \n    “当然，当然。”瑞弗朝你晃了晃手指。“我一直在留心咱们这位新晋红人的壮举——我知道你都做了些什么，毕竟这就是我的工作。不过，我可不会冒着砸掉招牌的风险替人散播谎言……所以别想冒领自己尚未赢得的头衔。这一点相当重要。还有费用的问题……”\n    \n    [var0||啊，对。费用，而你付不起。 \n    \n    瑞弗咂了咂舌。“啊，你这可怜虫。好吧，我就免了这笔费用，因为我喜欢你，而且我知道你是<b>真的</b>穷，不像加斯那里某些只是假装没钱的人。不过可别老这样……”]",
       "start": 6549911,
       "end": 6551154,
       "line": 28611,
@@ -167467,7 +167473,10 @@
       "previousId": "Content_Hawkethorne.0bbdef283d7f54271082.js:6577523:6578766:b4ab644f148a",
       "migrationMatch": "patience_unique_anchor",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "RiverChangeTitle 的完整可见对话；术语采用鹰棘镇、瑞弗、加斯，并完整保留 HTML、分支与换行缩进。"
     },
     {
       "id": "Content_Hawkethorne.2b15bcfd275fb9db90ec.js:6551390:6551396:bc981983e7f5",
@@ -205942,7 +205951,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "Next",
-      "translation": "",
+      "translation": "下一步",
       "start": 8429177,
       "end": 8429183,
       "line": 36033,
@@ -205956,7 +205965,10 @@
       "previousId": "Content_Hawkethorne.0bbdef283d7f54271082.js:8463062:8463068:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "addButton 的可见按钮标签。"
     },
     {
       "id": "Content_Hawkethorne.2b15bcfd275fb9db90ec.js:8429199:8429201:da39a3ee5e6b",

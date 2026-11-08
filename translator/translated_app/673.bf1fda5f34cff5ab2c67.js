@@ -3584,7 +3584,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       : "";
                 if (!(e < 50))
                   return Promise.reject({
-                    message: "Attempted to save to invalid slot.",
+                    message: "尝试保存至无效的存档槽位。",
                   });
                 var n = this.getSaveObject(t),
                   o = {
@@ -3617,7 +3617,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         return JSON.parse(e).data;
                       })
                   : Promise.reject({
-                      message: "Attempted to load from invalid slot.",
+                      message: "尝试从无效的存档槽位读取。",
                     });
               },
             },
@@ -3670,7 +3670,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       : "";
                 if ("number" == typeof t && !(t < 50))
                   return Promise.reject({
-                    message: "Attempted to save to invalid slot.",
+                    message: "尝试保存至无效的存档槽位。",
                   });
                 var o = this.getSaveObject(n),
                   r = {
@@ -3712,7 +3712,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                             return e.abrupt(
                               "return",
                               Promise.reject({
-                                message: "Attempted to load from invalid slot.",
+                                message: "尝试从无效的存档槽位读取。",
                               }),
                             );
                           case 3:
@@ -3944,10 +3944,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                                   return t.createWriter(function (o) {
                                     ((o.onwriteend = function () {
                                       (showNotification(
-                                        "Data Dump Complete",
-                                        'File "'.concat(
+                                        "数据导出完成",
+                                        "文件“".concat(
                                           t.name,
-                                          '" saved successfully.',
+                                          "”已成功保存。",
                                         ),
                                       ),
                                         e());
@@ -4012,10 +4012,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                                     var r = new FileReader();
                                     ((r.onloadend = function () {
                                       (showNotification(
-                                        "Data Dump Restored",
-                                        'File "'.concat(
+                                        "数据导入完成",
+                                        "文件“".concat(
                                           n.name,
-                                          '" restored successfully.',
+                                          "”已成功恢复。",
                                         ),
                                       ),
                                         e(this.result));
@@ -4311,7 +4311,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               arguments.length > 0 && void 0 !== arguments[0]
                 ? arguments[0]
                 : e,
-            t = e.skinFurScales(!0, !0, !1, !0);
+            t = (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0, !1, !0)):e.skinFurScales(!0, !0, !1, !0));
           return (
             e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
               ? (t = e.furColor + "毛发")
@@ -4332,10 +4332,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             ? " 你没有头发，头顶只有" +
                 (e.hasSkinTags(GLOBALS.BODY_TAG_FLUFFY) ? "" : "薄薄的") +
                 "一层" +
-                e.skinNoun(!1, !0) +
+                (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0)) +
                 "，覆盖着本该长头发的位置。"
             : " 你没有头发，本该长发的位置只露出光亮的" +
-                e.skinFurScales() +
+                (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales()):e.skinFurScales()) +
                 "。";
         },
         u = function () {
@@ -4830,7 +4830,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "，在你的" +
                     (r.hasFeathers() && r.hasLegFur()
                       ? "fur"
-                      : r.skinFurScales(!1, !1, !1, !0))),
+                      : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(r.skinFurScales(!1, !1, !1, !0)):r.skinFurScales(!1, !1, !1, !0)))),
                 w + "。"
               );
             default:
@@ -4920,11 +4920,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 t.skinType === GLOBALS.SKIN_TYPE_FUR ||
                 t.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
                   ? (a +=
-                      "Your face is that of an equine and is covered in " +
+                      "你的面容如同马匹，覆盖着" +
                       s(t) +
                       "。在毛发下方，你有" +
                       t.skin(!0, !1, !0) +
-                      ".")
+                      "。")
                   : [
                         GLOBALS.SKIN_TYPE_SCALES,
                         GLOBALS.SKIN_TYPE_BARK,
@@ -4932,13 +4932,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       ].includes(t.skinType) ||
                       t.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                     ? (a +=
-                        "While you may have the head structure of a horse, it is not covered in fur like one would expect. Instead, it is overlaid with " +
+                        "尽管你的头部结构如同马匹，却没有意料中的毛发，而是覆盖着" +
                         s(t) +
-                        ".")
+                        "。")
                     : (a +=
-                        "Your face is equine in shape and structure. The odd visage is hairless and covered with " +
+                        "你的面部轮廓与结构如同马匹。这张奇特的面孔没有毛发，覆盖着" +
                         s(t) +
-                        "."),
+                        "。"),
                 a
               );
             case 2:
@@ -4946,27 +4946,27 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.hasHair()
                   ? ((i +=
-                      " The " +
+                      "你的" +
                       t.hairDesc(!0, !0) +
                       "在头顶处分开，露出一对向上竖起、极具马类特征的耳朵。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间伸出一对触角。"))
                   : ((i += l(t)),
                     (i +=
-                      " A pair of horse-like ears rise up from the top of your " +
+                      "一对马耳从你的" +
                       u(t) +
-                      "."),
+                      "。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 i
               );
             case 6:
               var c = "";
               return (
                 (c +=
-                  " Hard, hoof-like tips have grown in place of fingernails, covering the end of each"),
+                  "坚硬的蹄状尖端取代了指甲，覆盖着每根"),
                 t.hasArmTags(GLOBALS.BODY_TAG_GOOEY) && (c += "黏滑的"),
                 c +
                   "根手指的末端都覆盖着闪亮的黑色蹄甲。你仍能照常通过它们感知触碰。"
@@ -4998,7 +4998,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     globalThis.cnAttrLabel(t.cocks[r].color) +
                     "色，并遍布粗大的血管。";
             case e:
-              return " The exterior lips are fat and swollen. They could easily be described as rubbery, and they often shine with a wet sheen, regardless of your arousal. When you're aroused, you're told that they wink.";
+              return "你的外阴唇肥厚而肿胀，触感近似橡胶；无论是否兴奋，表面都常泛着湿润的光泽。据说在你兴奋时，它们还会微微翕动。";
             default:
               return te(t, n, o, r);
           }
@@ -5024,20 +5024,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   ? t.skinType === GLOBALS.SKIN_TYPE_FUR ||
                     t.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
                     ? (a +=
-                        " Your muzzle is covered by a layer of " + s(t) + ".")
+                        "你的口鼻部覆盖着一层" + s(t) + "。")
                     : t.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                         t.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                       ? (a +=
                           capitalized(s(t)) +
                           "覆盖着你狐类面孔的每一寸。")
                       : (a +=
-                          " Instead of fur like you'd expect with such a fox-like muzzle, said muzzle has a layer of " +
+                          "这副狐类口鼻部并未如预想般覆有毛发，而是覆盖着一层" +
                           s(t) +
-                          " coating it.")
+                          "。")
                   : (a +=
-                      " Strangely, you lack any form of fur coating over it. " +
+                      "奇怪的是，上面完全没有毛发，而是覆盖着" +
                       s(t) +
-                      "."),
+                      "。"),
                 a
               );
             case 1:
@@ -5047,20 +5047,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.hasHair()
                   ? ((i +=
-                      " The " +
+                      "你的" +
                       t.hairDesc(!0, !0) +
                       "在头顶处分开，露出一对硕大而灵敏、仿佛时刻都在倾听的狐耳。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间伸出一对触角。"))
                   : ((i += l(t)),
                     (i +=
-                      " A pair of large, adept fox ears sit high on your " +
+                      "一对硕大而灵敏的狐耳高高长在你的" +
                       u(t) +
-                      ", always listening."),
+                      "上，时刻聆听着周围。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 i
               );
             case 6:
@@ -5070,7 +5070,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.isRace(RACES.Kitsune)
                   ? (c +=
-                      " Behind you rest [pc.tailCount] fluffy tails, each one soft, silken and sensitive to touch. They're possessed of a life of their own, flicking, twitching and curling even when you're not cognizant of their movements, getting up to all kinds of mischief behind your back. Their color matches that of your hair, a rich [pc.hairColor], and light gleams off each strand in a lustrous hue.")
+                      "你的身后生着[pc.tailCount]条蓬松的尾巴，每一条都柔软如丝，触感敏锐。它们仿佛拥有自己的生命，即使你没有留意，也会轻摆、抽动、卷曲，在你身后做出各种淘气的小动作。尾巴的颜色与你的头发相同，呈浓郁的[pc.hairColor]，每一缕毛发都闪耀着华美的光泽。")
                   : 1 === t.numTails
                     ? t.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
                       ? (c +=
@@ -5104,7 +5104,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var h = "";
               return (
                 h +
-                " Your legs are crooked into high knees with hocks and long feet, like those of a fox; cute bulbous toes decorate the ends."
+                "你的双腿弯曲成高耸的膝部、跗关节和修长的脚掌，如同狐狸；末端长着可爱的圆润脚趾。"
               );
             case e:
               return f(t, n, o, r);
@@ -5128,42 +5128,42 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 (r +=
-                  "You have a face that seems halfway between a human's and a snake's"),
+                  "你的面容仿佛介于人类与蛇类之间"),
                 e.skinType === GLOBALS.SKIN_TYPE_FUR ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
-                  ? (r += ", though it's covered in a layer of " + s(e) + ".")
+                  ? (r += "，不过上面覆盖着一层" + s(e) + "。")
                   : e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                       e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                     ? (r +=
-                        " and covered in " +
+                        "，并覆盖着" +
                         s(e) +
                         "，鉴于它的蛇形构造，这正是你所能预料的模样。")
                     : e.skinType === GLOBALS.SKIN_TYPE_FEATHERS ||
                         e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED)
                       ? (r +=
-                          ". Your " +
+                          "。你的" +
                           s(e) +
                           "使你看起来如同神话中的羽蛇。")
                       : (r +=
-                          ", though instead of scales, snout is covered in " +
+                          "，不过口鼻部并非覆盖鳞片，而是覆有" +
                           e.skin(!0, !0, !0) +
-                          "."),
+                          "。"),
                 0 === rand(2)
                   ? (r +=
-                      " A pair of retractable fangs sit in place of your canines.")
+                      "一对可伸缩的毒牙取代了你的犬齿。")
                   : (r +=
-                      " A pair of fangs protrude from your mouth, resting over your lower lip."),
+                      "一对尖牙从口中探出，搭在你的下唇上。"),
                 r
               );
             case 1:
               return d(e, n);
             case 3:
-              return " A snake-like [pc.tongueNoun] occasionally flits between your lips, tasting the air.";
+              return "一条蛇般的[pc.tongueNoun]偶尔从你的双唇间探出，品尝空气中的气息。";
             case 9:
               return (
-                " It's a deep, iridescent " +
+                "它呈深邃而带虹彩的" +
                 e.cocks[o].color +
-                " in color. Unlike [a] " +
+                "。与" +
                 e.originalRace +
                 "阴茎；其茎身分布着多个球状凸起，可以刺激交合对象，整体光滑而富有光泽。"
               );
@@ -5194,26 +5194,26 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 1:
               var a = "";
               if (0 === rand(2)) {
-                switch (((a += " Your eyes are bulgy and "), e.eyeColor)) {
+                switch (((a += "你的双眼微微凸起，显得"), e.eyeColor)) {
                   case "black":
-                    a += "abyssal";
+                    a += "深邃之感";
                     break;
                   case "cyan":
-                    a += "refractive";
+                    a += "折光之感";
                     break;
                   case "white":
-                    a += "reflective";
+                    a += "反光之感";
                     break;
                   case "gold":
-                    a += "radiant";
+                    a += "耀眼光芒";
                     break;
                   default:
-                    a += "iridescent";
+                    a += "虹彩光泽";
                 }
-                a += ", interfering with the natural light around them.";
+                a += "，甚至扰乱了周围的自然光线。";
               } else
                 a +=
-                  " Your " +
+                  "你的" +
                   e.eyeColor +
                   "球状双眼微微向前凸出，笼罩在柔和的微光中。";
               return a;
@@ -5222,21 +5222,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? (i +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "遮住了两块隆起的膜状组织——那便是你的耳朵。")
                   : ((i += l(e)),
                     (i +=
-                      " A pair of moth ears are recessed at the sides of your " +
+                      "一对飞蛾般的耳朵凹陷在你的" +
                       u(e) +
                       "，看起来如同微微隆起的膜状组织。")),
                 i
               );
             case 3:
               return (
-                " Your " +
+                "你的" +
                 e.mouthDesc(!0) +
-                " contains a long [pc.tongueNoun] that can extend a foot past past your [pc.lips] when fully extended. The tip has a tube inside it, capable of gathering sweet nectar from jungle flowers or lovers."
+                "中含有一条修长的[pc.tongueNoun]，完全伸展时能探出你的[pc.lips]足足一英尺。舌尖内部有一根管道，可以从丛林花朵或爱侣身上汲取甘甜的花蜜。"
               );
             case 5:
               var c = "";
@@ -5249,45 +5249,45 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   "蛾翼从你的背部长出，上面遍布对称的抽象花纹。"),
                 e.wingTexture() === GLOBALS.BODY_TAG_FURRED
                   ? (c +=
-                      " They're covered in a soft fuzz and feel very light.")
-                  : (c += " They feel very light and delicate to the touch."),
+                      "它们覆有柔软的绒毛，感觉十分轻盈。")
+                  : (c += "它们触感轻盈而纤巧。"),
                 c +
-                  " They fold behind you neatly and compactly, the ends lining up with the back of your lower calves. They let you hover for a short time and glide easily, although true flight is deceptively difficult to maintain."
+                  "它们整齐而紧凑地收拢在你的背后，末端与小腿后侧齐平。它们能让你短暂悬浮并轻松滑翔，不过要维持真正的飞行却出乎意料地困难。"
               );
             case 6:
               var h = "";
               return (
                 e.hasArmTags(GLOBALS.BODY_TAG_FLUFFY)
                   ? (h +=
-                      " Your arms are covered in " +
+                      "你的双臂覆盖着" +
                       e.furColor +
                       "蛾族般的绒毛。")
                   : 0 === rand(2)
                     ? (h +=
-                        " Your arms are almost skeletal, a fine exoskeleton of " +
+                        "你的双臂近乎骨感，覆有一层细薄的" +
                         e.scaleColor +
-                        " " +
+                        "​" +
                         (e.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                          ? "goo"
-                          : "chitin") +
+                          ? "黏液"
+                          : "甲壳") +
                         "，令它们显得格外纤细。")
                     : (h +=
-                        " Your lithe, graceful arms and hands are deceptively sturdy and covered in " +
+                        "你修长优雅的手臂和双手看似纤细，实则十分结实，表面覆盖着" +
                         e.scaleColor +
-                        " " +
+                        "​" +
                         (e.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                          ? "goo"
-                          : "chitin") +
-                        "."),
+                          ? "黏液"
+                          : "甲壳") +
+                        "。"),
                 h
               );
             case 8:
               return (
-                " Your legs are covered in a layer of soft, " +
+                "你的双腿覆盖着一层柔软的" +
                 e.furColor +
                 "绒毛，末端是一对" +
                 e.feetDesc(!0, !0) +
-                "."
+                "。"
               );
             case 9:
               return 0 === rand(2)
@@ -5313,15 +5313,15 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var c = "";
               return (
                 (c +=
-                  "Your face is shark-like in shape, with a snout and an upper jaw that pushes past your lower one, and at the very tip, there are two nasal holes."),
+                  "你的面部轮廓如同鲨鱼，口鼻部和上颚向前突出，越过下颚，最前端有两个鼻孔。"),
                 (e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                   e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)) &&
                 e.hasSkinTags(GLOBALS.BODY_TAG_LUBRICATED)
                   ? (c +=
-                      " The glistening surface is slick to the touch, as if you just lubed up not too long ago.")
+                      "闪亮的表面触感滑腻，仿佛不久前才涂过润滑剂。")
                   : e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                       e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
-                    ? (c += " The surface is covered in fine scales.")
+                    ? (c += "表面覆盖着细密的鳞片。")
                     : [GLOBALS.SKIN_TYPE_FUR, GLOBALS.SKIN_TYPE_FEATHERS].find(
                           function (t) {
                             return t === e.skinType;
@@ -5330,7 +5330,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                         e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED)
                       ? (c +=
-                          " The surface is covered with " +
+                          "表面覆盖着" +
                           s(e) +
                           "，使你看起来像个颇为奇特的混种。")
                       : [GLOBALS.SKIN_TYPE_CHITIN, GLOBALS.SKIN_TYPE_BARK].find(
@@ -5347,7 +5347,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                               : "让你显得强韧而流线") +
                             ".")
                         : (c +=
-                            " Even without scales, the surface is smooth and hairless, perfect for underwater exploration."),
+                            "即使没有鳞片，表面依然光滑无毛，非常适合在水下活动。"),
                 c +
                   " 一排锋利如剃刀且能够收缩的鲨齿填满了你的口腔，让你的面容显出几分威胁感。"
               );
@@ -5355,20 +5355,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var h = "";
               return (
                 (h +=
-                  " Your eyes are a curious mix of piscine and feline features; a pair of black vertical slits instead of rounded pupils,"),
+                  "你的双眼奇妙地融合了鱼类与猫科动物的特征；瞳孔不是圆形，而是一对黑色的竖直狭缝，"),
                 t(e)
                   ? (h +=
-                      " sat amongst metallically glistening pools of " +
+                      "周围环绕着泛有金属光泽的" +
                       e.eyeColor +
-                      " irises.")
+                      "虹膜。")
                   : n(e)
                     ? (h +=
-                        " each nestled in a shimmering gemstone-like " +
+                        "每一个都嵌在如宝石般闪耀的" +
                         e.eyeColor +
-                        " iris.")
+                        "虹膜中。")
                     : o(e)
-                      ? (h += " each nestled within [a] [pc.eyeColor] iris.")
-                      : (h += " each sat within [a] [pc.eyeColor] iris."),
+                      ? (h += "每一个都嵌在[pc.eyeColor]虹膜中。")
+                      : (h += "每一个都位于[pc.eyeColor]虹膜之中。"),
                 h +
                   " 你的眼睛周围环绕着一圈粗黑的纹路，眼睑会从侧面闭合。"
               );
@@ -5382,34 +5382,34 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       "在头顶处分开，露出一对分成三片的帆状耳朵。最上方的一片笔直竖起，另外两片较小的则向下弯曲。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间伸出一对触角。"))
                   : ((f += l(e)),
                     (f +=
-                      " A pair of triple-parted, sail-like ears protrude from the sides of your " +
+                      "一对分成三片、形似风帆的耳朵从你的" +
                       u(e) +
                       "。最上方的一片笔直竖起，另外两片较小的则向下弯曲。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 f
               );
             case 6:
               var d = "";
               return (
                 d +
-                " Your arms are covered in fine [pc.scaleColor] scales, with webs between sharp-nailed fingers that reach up to your first-knuckles."
+                "你的双臂覆盖着细密的[pc.scaleColor]鳞片，长有锋利指甲的手指之间生着蹼，一直延伸到第一节指关节。"
               );
             case 7:
               var g = "";
               return (
                 g +
-                " You have a large, muscular shark tail of [pc.scaleColor]-colored fine scales, capable of guiding you when swimming, accelerating you through the water, and dishing out a hefty slap."
+                "你有一条肌肉发达的硕大鲨尾，覆盖着[pc.scaleColor]的细密鳞片；它能在游泳时为你掌舵、助你在水中加速，也能甩出沉重的一击。"
               );
             case 8:
               var y = "";
               return (
                 y +
-                " Your legs are [pc.scaleColor]-scaled and end in four-toed claws with webbing to allow for fast swimming."
+                "你的双腿覆盖着[pc.scaleColor]鳞片，末端是四趾利爪，趾间生着便于快速游泳的蹼。"
               );
             default:
               return te(e, r, a, i);
@@ -5428,36 +5428,36 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 : 0;
           switch (o) {
             case 0:
-              return "You have the blunt, triangular snout of a pig, with a set of bulky tusks completing the look.";
+              return "你长着猪一样钝而呈三角形的口鼻部，一对粗壮的獠牙令这副模样更加完整。";
             case 2:
               var a = "";
               return (
                 t.hasHair()
                   ? ((a +=
-                      " A pair of triangular ears poke out from your " +
+                      "一对三角形耳朵从你的" +
                       t.hairDesc(!0, !0) +
                       "，还经常层叠折起。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间伸出一对触角。"))
                   : ((a += l(t)),
                     (a +=
-                      " A pair of triangular ears poke out from your " +
+                      "一对三角形耳朵从你的" +
                       u(t) +
                       "，还经常层叠折起。"),
                     t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 a
               );
             case 7:
-              return " [pc.hasTails|[pc.TailCount] curled [pc.skinColor] tails twist|A curled [pc.skinColor] tail twists] around just above your [pc.butt], shortened by the circular twist[pc.hasTails|s].";
+              return "[pc.hasTails|[pc.TailCount]条卷曲的[pc.skinColor]尾巴|一条卷曲的[pc.skinColor]尾巴]在你的[pc.butt]上方盘绕，圆环般的卷曲令其显得更短[pc.hasTails|]。";
             case 8:
-              return " Your almost-digitigrade legs leave you standing on a set of porcine hooves.";
+              return "你近似趾行的双腿令你以一对猪蹄站立。";
             case 9:
-              return " Your bright red dick tapers into a slight twist, and retracts into a sheath when flaccid.";
+              return "你鲜红的阴茎末端略微扭转，疲软时会缩回鞘内。";
             case e:
-              return " The exterior lips are typically featureless, except for when you're aroused and they swell outward.";
+              return "你的外阴唇通常没有明显特征，只有在兴奋时才会向外肿胀。";
             default:
               return te(t, n, o, r);
           }
@@ -5479,38 +5479,38 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 "gold" === t.eyeColor
                   ? (a +=
-                      " Your eyes are completely pitch black with the exception of your vibrant golden irises.")
+                      "你的双眼漆黑一片，唯有鲜亮的金色虹膜除外。")
                   : "black" !== t.eyeColor
                     ? (a +=
-                        " Your eyes are pitch black with " +
+                        "你的双眼漆黑一片，环绕着" +
                         t.eyeColor +
-                        " irises.")
+                        "虹膜。")
                     : (a +=
-                        " The black sclera and iris of both of your eyes make them appear as solid black and very alien."),
+                        "你的巩膜与虹膜皆为黑色，使双眼看起来浑然漆黑，极具异域感。"),
                 a +
                   " 这种构造让你拥有更广阔的视野，也能捕捉到极其迅捷的动作。"
               );
             case 3:
               return (
-                " Your " +
+                "你的" +
                 t.mouthDesc(!0) +
-                " contains a long, bright yellow [pc.tongueNoun] that can extend a foot past past your [pc.lips] when fully extended. The tip has a tube inside it, capable of gathering sweet nectar from jungle flowers or lovers."
+                "中含有一条修长、亮黄色的[pc.tongueNoun]，完全伸展时能探出你的[pc.lips]足足一英尺。舌尖内部有一根管道，可以从丛林花朵或爱侣身上汲取甘甜的花蜜。"
               );
             case 5:
               var i = "";
               return (
                 2 === t.wingCount
-                  ? (i += " A pair of")
+                  ? (i += "一")
                   : 4 === t.wingCount
-                    ? (i += " A quartet of")
+                    ? (i += "两")
                     : t.wingCount > 1 &&
-                      (i += " " + capitalize(num2Text(t.wingCount))),
+                      (i += "​" + capitalize(num2Text(t.wingCount))),
                 i +
                   "对巨大的昆虫翅膀从你的背部长出，光线透过透明的翅膜时折射出美丽光泽；只要你愿意飞行，它们足以承载你的体重。"
               );
             case 6:
               return t.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                ? " Shiny hardened " +
+                ? "闪亮的硬化" +
                     t.scaleColor +
                     "黏液从肱二头肌以下覆盖着你的双臂，远看如同一双" +
                     t.scaleColor +
@@ -5520,10 +5520,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var s = "";
               return (
                 (s +=
-                  " A large, insectile abdomen dangles from just above your backside, bobbing with its own weight as you shift. It is covered in hard"),
+                  "一截硕大的昆虫腹部从你的臀部上方垂下，随着你移动而因自身重量晃动。其表面覆盖着坚"),
                 t.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? (s += "ened " + t.scaleColor + " goo")
-                  : (s += " black chitin"),
+                  ? (s += "硬的" + t.scaleColor + "黏液")
+                  : (s += "硬的黑色甲壳"),
                 s + "，末端生着一根针状螫刺。"
               );
             case 8:
@@ -5543,14 +5543,14 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.cocks[r].hasTags(GLOBALS.BODY_TAG_FORESKINNED)
                   ? (l +=
-                      " There's a lot in common between human and zil genitals, but the alien member you're packing has a much longer, stretchier foreskin than most humans can pack. It also")
-                  : (l += " The zil-like member you're packing "),
+                      "人类与齐尔人的生殖器有许多相似之处，但你身上的异星器官拥有远比多数人类更长、更富弹性的包皮，而且")
+                  : (l += "你身上那根齐尔人般的器官"),
                 l +
                   "看起来泛着微微的光泽，仿佛刚刚涂过油。"
               );
             case e:
               if ("black and gold" === t.vagina.vaginaColor)
-                return " The exterior folds are a dusky black, while the inner lining of your tunnel is a glorious golden hue.";
+                return "外侧阴唇呈暗黑色，甬道内壁则泛着华丽的金色。";
             default:
               return te(t, n, o, r);
           }
@@ -5571,16 +5571,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 (r +=
-                  "Your face is a narrow, reptilian muzzle. It looks like a predatory lizard's at first glance, but with an unusual array of spikes along the under-jaw. It gives you a regal but fierce visage. Opening your mouth reveals several rows of dagger-like sharp teeth. The fearsome visage is decorated by " +
+                  "你的面部是一副狭长的爬行动物口鼻部。乍看之下像某种掠食蜥蜴，但下颚沿线长着一排不同寻常的尖刺，令你显得威严而凶猛。张开嘴，可以看到数排匕首般锋利的牙齿。这副骇人的面孔覆盖着" +
                   s(e) +
                   "。"),
                 e.hasFaceTags(GLOBALS.BODY_TAG_FRECKLED) &&
                   (e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) || e.hasFur()
-                    ? (r += " Beneath your fur, f")
-                    : (r += " F"),
+                    ? (r += "在你的毛发下，雀")
+                    : (r += "雀"),
                   (r += e.mf(
-                    "reckles spot your cheeks.",
-                    "reckles cutely adorn your cheeks.",
+                    "斑点缀着你的脸颊。",
+                    "斑可爱地点缀着你的脸颊。",
                   ))),
                 r
               );
@@ -5588,9 +5588,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var a = "";
               return (
                 (a +=
-                  " Your eyes are as those of a beast of legend: a pair of black vertical slits instead of rounded pupils, each sat within [a] " +
+                  "你的双眼如传说中的野兽：瞳孔不是圆形，而是一对黑色的竖直狭缝，每一个都位于" +
                   e.eyeColor +
-                  " iris.") +
+                  "虹膜之中。") +
                 " 一圈粗黑的纹路环绕着你的双眼，使它们显得深陷而富有掠食性。"
               );
             case 2:
@@ -5598,49 +5598,49 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((i +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "在头顶处分开，露出头部两侧的一对圆形突起；突起上的小孔便是你的耳朵，后方还长着骨质鳍片。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间伸出一对触角。"))
                   : ((i += l(e)),
-                    (i += " A pair of rounded protrusions with small holes"),
-                    e.skinType === GLOBALS.SKIN_TYPE_FUR && (i += " hidden"),
+                    (i += "一对带有小孔的圆形突起"),
+                    e.skinType === GLOBALS.SKIN_TYPE_FUR && (i += "隐藏"),
                     (i +=
-                      " on the sides of your " +
+                      "在你的" +
                       u(e) +
                       "构成了你的耳朵，后方还长着骨质鳍片。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 i
               );
             case 3:
               return (
-                " Your " +
+                "你的" +
                 e.mouthDesc(!0) +
-                " contains a thick, fleshy [pc.tongueNoun] that, if you so desire, can telescope to a distance of about four feet. It has sufficient manual dexterity that you can use it almost like a third arm."
+                "中含有一条粗厚多肉的[pc.tongueNoun]；只要你愿意，它能像伸缩杆般伸到约四英尺远，而且灵活得足以让你把它当成第三条手臂使用。"
               );
             case 4:
               return 2 === e.horns
-                ? " A pair of " +
+                ? "一对" +
                     Math.round(e.hornLength) +
                     "英寸长的角从你的头部两侧长出，向后弯曲，使你的面容更显威严。"
                 : " 两对约一英尺长的角从你的头部两侧长出，向后弯曲，令你显得威势逼人，宛如传说中的巨龙。";
             case 5:
               return (
-                " Magnificent " +
+                "华美的" +
                 e.wingColor() +
                 "色翅膀从你的肩部生出。展开后，它们比你的臂展还宽，只需拍动一次便能带你升上天空。它们有些像蝙蝠翅膀，但翅膜覆盖着细密精致的鳞片，每根翼骨末端还伸出一枚凶锐的爪。"
               );
             case 7:
               var c = "";
               return (
-                (c += " A thin,"),
+                (c += "一条纤细、"),
                 e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? (c += " gooey")
-                  : (c += " scaly"),
+                  ? (c += "黏滑、")
+                  : (c += "覆有鳞片的"),
                 c +
                   "、能够卷握的爬行动物尾巴在你身后如活体长鞭般摆动，长度几乎与你的身高相当；尾端生着骨刺，足以给予敌人痛击。"
               );
@@ -5648,12 +5648,12 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var h = "";
               return (
                 (h +=
-                  " " +
+                  "​" +
                   capitalize(num2Text(e.legCount)) +
                   "条近似人类的腿从你的" +
                   e.hipDesc() +
-                  ", sheathed in " +
-                  (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "gooey " : "") +
+                  "，覆盖着" +
+                  (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "黏液状的" : "") +
                   "鳞片，末端则是爪足。") +
                 " 前方生有三根修长脚趾，后方还有一枚较小的后爪。"
               );
@@ -5661,25 +5661,25 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var f = "";
               return (
                 (f +=
-                  " With its " +
+                  "凭借其" +
                   (e.cocks[o].hasTags(GLOBALS.BODY_TAG_TAPERED)
-                    ? "tapered"
-                    : "bulbous") +
+                    ? "锥形"
+                    : "球状") +
                   "尖端，你几乎可以钻进任何孔洞。"),
                 (f +=
-                  " It has a strange, knot-like bulb at its base, but doesn't usually flare during arousal as a dog's knot would."),
+                  "它的根部有一块形似肉结的奇特膨大组织，但在兴奋时通常不会像犬类的肉结那样进一步胀大。"),
                 e.cocks[o].knotRatio < 1.4
                   ? (f +=
-                      " The small knot of thicker flesh near the base of your " +
+                      "你那根" +
                       e.cockDesc(o) +
                       "已经随时可以插入雌性体内。")
                   : e.cocks[o].knotRatio <= 2
                     ? (f +=
-                        " The large bulge of flesh nestles just above the bottom of your " +
+                        "你那根" +
                         e.cockDesc(o) +
                         "，确保它在交配时牢牢留在应有的位置。")
                     : (f +=
-                        " The obscenely swollen lump of flesh near the base of your " +
+                        "你那根" +
                         e.cockDesc(o) +
                         "相较于你的阴茎，似乎大得有些过头。"),
                 f
@@ -5703,11 +5703,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 0:
               var r = "";
               return (
-                (r += "Your face is shaped like that of a kangaroo "),
+                (r += "你的面部轮廓如同袋鼠，"),
                 e.skinType !== GLOBALS.SKIN_TYPE_SKIN ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
-                  ? (r += "and covered with " + s(e))
-                  : (r += "but bald, not covered in fur"),
+                  ? (r += "，并覆盖着" + s(e))
+                  : (r += "但没有覆盖毛发，光秃秃的"),
                 r +
                   "。它看起来几乎像兔子的口鼻，只是长度有所不同。"
               );
@@ -5722,33 +5722,33 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   return t === e.skinType;
                 });
                 ((a +=
-                  " The " +
+                  "你的" +
                   (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                   "在头顶处分开，露出一对修长的"),
-                  i || (a += ", furred"),
-                  (a += " kangaroo ears that stick out at an angle."),
+                  i || (a += "，长着覆有毛发的"),
+                  (a += "袋鼠耳朵，斜向伸出。"),
                   e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                     (a +=
-                      " Your hair is broken up by a pair of antennae protruding from the top of your head."));
+                      "你的头发间伸出一对触角。"));
               } else
                 ((a += l(e)),
                   (a +=
-                    " A pair of pointed dog-like ears protrude from your " +
+                    "一对尖尖的犬耳从你的" +
                     u(e) +
                     "上伸出，尖而警觉地竖立着。"),
                   e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                     (a +=
-                      " Nearby, two antennae jut out from the top of your head."));
+                      "附近还有两根触角从你的头顶伸出。"));
               return a;
             case 7:
               var c = "";
               return (
-                (c += " A conical, "),
+                (c += "一条圆锥状、"),
                 e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? (c += "gooey, " + e.skinColor)
-                  : (c += "furry, " + e.furColor),
+                  ? (c += "黏液状的" + e.skinColor)
+                  : (c += "覆有毛发的" + e.furColor),
                 c +
-                  " tail extends from your " +
+                  "尾巴从你的" +
                   (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
                   "伸出，随着你的动作上下弹跳，帮助你维持平衡。"
               );
@@ -5756,16 +5756,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var h = "";
               return (
                 h +
-                " Your " +
-                (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "gooey" : "furry") +
+                "你的" +
+                (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "黏液状的" : "覆有毛发的") +
                 "腿有着短小的大腿、修长的小腿，以及更长的双足；脚趾末端生着显眼的趾甲。"
               );
             case 9:
               var f = "";
               return (
-                (f += " It"),
+                (f += "它"),
                 e.hasSheath(o) &&
-                  (f += " usually lies coiled inside a sheath, but"),
+                  (f += "通常盘绕在鞘内，但"),
                 f +
                   "会轻柔地起伏，勃起时逐渐收束成尖端，看起来有些像直根。"
               );
@@ -5788,12 +5788,12 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             var r = "";
             return (
               e.cocks[o].hasTags(GLOBALS.BODY_TAG_FORESKINNED)
-                ? (r += " From the slit of your foreskin pokes out a bundle of")
-                : (r += " The crown is surrounded by"),
+                ? (r += "一束")
+                : (r += "冠部周围环绕着"),
               (r +=
-                " tiny tentacles with a venomous, aphrodisiac payload. At its base a number of similar, longer tentacles have formed, "),
+                "细小的触手，携带着有毒的催情液。根部还长出了数条相似但更长的触手，"),
               e.hasSheath(o) &&
-                (r += "the sheath forcing them to coil around your shaft, "),
+                (r += "鞘迫使它们缠绕在你的阴茎上，"),
               r +
                 "确保你的伴侣不得不承受它带来的快感。"
             );
@@ -5817,34 +5817,34 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.hasBeak()
                   ? (a +=
-                      "You have a bird-like face, complete with [a] [pc.lipColor] beak")
+                      "你长着一副鸟类面孔，还有一张[pc.lipColor]鸟喙")
                   : (a +=
-                      "Your facial structure blends humanoid features with those of a bird, but lacking the signature beak"),
+                      "你的面部结构融合了人形与鸟类特征，却没有标志性的鸟喙"),
                 t.hasMuzzle() &&
                   (t.hasBeak()
                     ? (a +=
-                        " — rather it looks like a beak, but is more like a muzzle in structure, retaining lips and teeth instead of sharp beak edges. But they are almost impossible to spot without closer inspection")
+                        "——更准确地说，它看似鸟喙，结构却更接近口鼻部，保留着嘴唇和牙齿，而非鸟喙锋利的边缘。不过若不仔细观察，几乎无法看出这些区别")
                     : (a +=
-                        ". Instead you have a toothy reptilian muzzle, making your visage rather unsettling")),
-                (a += "."),
+                        "。取而代之的是一副长满尖牙的爬行动物口鼻部，令你的面容颇为骇人")),
+                (a += "。"),
                 t.hasFeathers() ||
                 t.hasScales() ||
                 t.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED) ||
                 t.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
-                  ? ((a += " It is adorned with " + s(t)),
+                  ? ((a += "上面覆盖着" + s(t)),
                     t.hasMuzzle() &&
                       !t.hasBeak() &&
-                      (a += ", completing the image"),
-                    (a += "."))
+                      (a += "，使这副形象更加完整"),
+                    (a += "。"))
                   : (a +=
-                      " The lack of feathers on your " +
-                      t.skinNoun() +
+                      "你的" +
+                      (globalThis.cnBodyLabel?globalThis.cnBodyLabel(t.skinNoun()):t.skinNoun()) +
                       "看起来颇为怪异。"),
                 t.hasBeak() &&
                   !t.hasFeathers() &&
                   !t.hasFur() &&
                   t.isBald() &&
-                  (a += " You somewhat resemble a vulture."),
+                  (a += "你看起来有些像秃鹫。"),
                 a
               );
             case 1:
@@ -5852,9 +5852,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 "black" === t.eyeColor
                   ? (i +=
-                      " Your eyes resemble black beads, shiny and expressionless. Only the occasional flickering of your nictitating membranes reveal that they are not made of glass.")
+                      "你的双眼如同黑色珠子，明亮却毫无表情。只有瞬膜偶尔闪动，才表明它们并非玻璃制品。")
                   : (i +=
-                      " Your eyes are human-like at first glance, but the black iris, " +
+                      "你的双眼乍看与人类相似，但黑色的虹膜、" +
                       t.eyeColor +
                       "巩膜、从不眨动的凝视，以及偶尔掠过的瞬膜，都显露出它们的鸟类特征。"),
                 i
@@ -5863,16 +5863,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var c = "";
               if (t.hasHair())
                 ((c +=
-                  " The " +
+                  "你的" +
                   t.hairDesc(!0, !0) +
                   "遮住了构成你耳朵的两个小孔，但"),
                   t.skinType === GLOBALS.SKIN_TYPE_GOO
-                    ? (c += " fin-like protrusions")
-                    : (c += " tufts of feathers"),
-                  (c += " which act as auricles are quite noticeable."),
+                    ? (c += "鳍状突起")
+                    : (c += "羽毛簇"),
+                  (c += "作为耳廓，显得格外醒目。"),
                   t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                     (c +=
-                      " Your hair is broken up by a pair of antennae protruding from the top of your head."));
+                      "你的头发间伸出一对触角。"));
               else {
                 var h = [
                   GLOBALS.SKIN_TYPE_GOO,
@@ -5882,30 +5882,30 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   return e === t.skinType;
                 });
                 ((c += l(t)),
-                  (c += " A pair of small holes"),
-                  (h && !t.hasFeathers()) || (c += " hidden"),
+                  (c += "一对小孔"),
+                  (h && !t.hasFeathers()) || (c += "隐藏"),
                   (c +=
-                    " on the sides of your " +
+                    "在你的" +
                     u(t) +
                     "构成了你的耳朵；它们的位置因"),
                   t.skinType === GLOBALS.SKIN_TYPE_GOO
-                    ? (c += " fin-like protrusions")
-                    : (c += " tufts of feathers"),
-                  (c += " which act as auricles."),
+                    ? (c += "鳍状突起")
+                    : (c += "羽毛簇"),
+                  (c += "充当耳廓。"),
                   t.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                     (c +=
-                      " Nearby, two antennae jut out from the top of your head."));
+                      "附近还有两根触角从你的头顶伸出。"));
               }
               return c;
             case 5:
               var f = "";
               return (
                 2 === t.wingCount
-                  ? (f += " A pair of")
+                  ? (f += "一")
                   : 4 === t.wingCount
-                    ? (f += " A quartet of")
+                    ? (f += "两")
                     : t.wingCount > 1 &&
-                      (f += " " + capitalize(num2Text(t.wingCount))),
+                      (f += "​" + capitalize(num2Text(t.wingCount))),
                 f +
                   "对巨大的羽翼从你的背部长出。虽然你通常会把这些" +
                   t.wingColor() +
@@ -5916,32 +5916,32 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 t.hasArmTags(GLOBALS.BODY_TAG_PAWS)
                   ? ((d +=
-                      " Your hands are tipped with sharp claws, like that of a bird, with"),
+                      "你的双手末端长着鸟类般的锋利爪子，并有"),
                     (t.skinType === GLOBALS.SKIN_TYPE_SKIN ||
                       t.hasFeathers()) &&
-                      (d += " rough skin,"),
-                    (d += " short palms and long, padded fingers."),
+                      (d += "粗糙的皮肤、"),
+                    (d += "短小的手掌和修长、带肉垫的手指。"),
                     t.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (d += " Feather-shaped shingles of goo")
-                      : (d += " A feathery fringe"),
+                      ? (d += "羽片状的黏液覆层")
+                      : (d += "一圈羽毛饰边"),
                     (d +=
-                      " covers them down to your " +
+                      "一直覆盖到你的" +
                       (t.hasArmTags(GLOBALS.BODY_TAG_FLUFFY)
-                        ? "wrists"
-                        : "elbows") +
+                        ? "手腕"
+                        : "肘部") +
                       "，令你的双手裸露在外。"))
                   : (t.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (d += " Feather-shaped shingles of goo")
-                      : (d += " Feathers"),
+                      ? (d += "羽片状的黏液覆层")
+                      : (d += "羽毛"),
                     (d +=
-                      " hang off your arms from shoulder to wrist, giving them a slightly wing-like look.")),
+                      "从肩膀一直垂到手腕，使双臂略显翼状。")),
                 d
               );
             case 7:
               var g = "";
               return (
-                (g += " A tail of"),
-                t.hasTailTags(GLOBALS.BODY_TAG_GOOEY) && (g += " gooey"),
+                (g += "一条由"),
+                t.hasTailTags(GLOBALS.BODY_TAG_GOOEY) && (g += "黏液状"),
                 g +
                   "色羽毛从你的" +
                   t.buttDesc() +
@@ -5951,24 +5951,24 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var y = "";
               return (
                 (y +=
-                  " You have powerful thighs perfect for launching you into the air which end in slender bird-like legs, covered with "),
+                  "你有一双强健的大腿，非常适合跃入空中；下方连接着覆有"),
                 t.hasLegTags(GLOBALS.BODY_TAG_GOOEY)
                   ? (y +=
-                      "feather-shaped shingles of goo down to your " +
+                      "羽片状黏液覆层，一直延伸到你的" +
                       (t.hasSkinTags(GLOBALS.BODY_TAG_FLUFFY)
-                        ? " ankles"
-                        : " knees"))
+                        ? "脚踝"
+                        : "膝盖"))
                   : ((y +=
                       t.furColor +
                       "色羽毛一直覆盖到你的" +
                       (t.hasSkinTags(GLOBALS.BODY_TAG_FLUFFY)
-                        ? "ankles"
-                        : "knees") +
+                        ? "脚踝"
+                        : "膝盖") +
                       "和一枚"),
                     t.hasFeathers() || t.skinType === GLOBALS.SKIN_TYPE_SKIN
-                      ? (y += "rough, " + t.skinColor + " skin")
-                      : (y += t.skinFurScales(!0, !0, !0, !0)),
-                    (y += " below")),
+                      ? (y += "粗糙的" + t.skinColor + "皮肤")
+                      : (y += (globalThis.cnBodyLabel?globalThis.cnBodyLabel(t.skinFurScales(!0, !0, !0, !0)):t.skinFurScales(!0, !0, !0, !0))),
+                    (y += "以下")),
                 y +
                   "。你的双足" +
                   (t.hasLegTags(GLOBALS.BODY_TAG_DIGITIGRADE)
@@ -5979,12 +5979,12 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 9:
               var p = "";
               return (
-                (p += " It is"),
+                (p += "它"),
                 t.cocks[r].hasTags(GLOBALS.BODY_TAG_NUBBY) ||
                   t.cocks[r].hasTags(GLOBALS.BODY_TAG_RIBBED) ||
-                  (p += " smooth,"),
+                  (p += "表面光滑，"),
                 p +
-                  " " +
+                  "​" +
                   t.color(r) +
                   "，形状略带波浪，勃起时逐渐收束成尖端。"
               );
@@ -5992,14 +5992,14 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var m = "";
               return (
                 (m +=
-                  " The exterior lips are thin, flat and mostly featureless, appearing much like a bird's cloaca at glance"),
+                  "你的外阴唇薄而平坦，几乎没有明显特征，乍看很像鸟类的泄殖腔"),
                 (t.hasFur() || t.hasFeathers()) &&
                   (m +=
-                    " and barely visible under your " +
+                    "，在你的" +
                     (t.hasFeathers() && t.hasLegFur
-                      ? "fur"
-                      : t.skinFurScales(!1, !1, !1, !0))),
-                m + "."
+                      ? "毛发"
+                      : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(t.skinFurScales(!1, !1, !1, !0)):t.skinFurScales(!1, !1, !1, !0)))),
+                m + "。"
               );
             default:
               return te(t, n, o, r);
@@ -6019,7 +6019,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
           switch (n) {
             case 3:
               return (
-                " Your " +
+                "你的" +
                 e.mouthDesc(!0) +
                 "中有一条修长、能够卷握的触手状舌头。"
               );
@@ -6027,20 +6027,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 2 === e.wingCount
-                  ? (r += " A pair of")
+                  ? (r += "一")
                   : 4 === e.wingCount
-                    ? (r += " A quartet of")
+                    ? (r += "两")
                     : e.wingCount > 1 &&
-                      (r += " " + capitalize(num2Text(e.wingCount))),
+                      (r += "​" + capitalize(num2Text(e.wingCount))),
                 r +
                   "对巨大的昆虫翅膀从你的背部长出，光线透过透明的翅膜时折射出美丽光泽；只要你愿意飞行，它们足以承载你的体重。"
               );
             case 6:
-              return " Your arms are actually bunches of tentacles, formed together into arm-like shapes. They end in long, wiggly tentacle fingers.";
+              return "你的双臂其实是一束束触手聚合成的臂状结构，末端则是修长而蠕动的触手手指。";
             case 7:
               return 1 === e.numTails
                 ? " 一条修长扭动的触手状尾巴拖曳在你身后，臀部稍有动作，它便随之起伏摆动。"
-                : " " +
+                : "​" +
                     capitalize(num2Text(e.numTails)) +
                     "条修长扭动、外观相近的触手尾巴拖曳在你身后。稍加观察便能发现，你可以极其自如地控制它们。";
             case 8:
@@ -6054,10 +6054,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.cocks[o].hasTags(GLOBALS.BODY_TAG_LUBRICATED)
                   ? (a +=
-                      " The entirety of its " +
+                      "它的整个" +
                       e.cocks[o].color +
                       "表面不断渗出一颗颗滑腻的水珠。它")
-                  : (a += " Its " + e.cocks[o].color + " length"),
+                  : (a += "它的" + e.cocks[o].color + "长度"),
                 a +
                   "经常自行扭动；略显硕大的蘑菇状顶端会在你兴奋时转为紫红色。"
               );
@@ -6081,20 +6081,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 (r +=
-                  "You have the face of a demon. It's mostly human in appearance, with [pc.skinColor] skin, but you've got sharp predatory fangs and a certain beguiling visage."),
+                  "你长着一副恶魔般的面孔。整体上仍近似人类，有着[pc.skinColor]皮肤，但尖锐的掠食者獠牙与蛊惑人心的容貌暴露了你的本质。"),
                 (e.skinType !== GLOBALS.SKIN_TYPE_SKIN &&
                   e.skinType !== GLOBALS.SKIN_TYPE_GOO) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_CHITINOUS)
                   ? (r +=
-                      " Strangely enough, your face is also covered with " +
+                      "奇怪的是，你的脸上还覆盖着" +
                       s(e) +
-                      ".")
+                      "。")
                   : (r +=
-                      " Complementing the corruption, your face is covered in " +
+                      "与这股腐化相呼应，你的脸上覆盖着" +
                       e.skin(!0, !0, !0) +
-                      "."),
+                      "。"),
                 r
               );
             case 1:
@@ -6112,41 +6112,41 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((i +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "在头顶处分开，露出一对"),
                     e.earLength > 1 &&
-                      (i += " " + Math.round(e.earLength) + "-inch long,"),
-                    (i += " wicked-looking demonic ears."),
+                      (i += "​" + Math.round(e.earLength) + "英寸长的"),
+                    (i += "邪气十足的恶魔耳。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((i += l(e)),
-                    (i += " A pair of wicked-looking ears point outwards"),
+                    (i += "一对邪气十足的耳朵向外伸出"),
                     e.earLength > 1 &&
-                      (i += " " + Math.round(e.earLength) + " inches"),
-                    (i += " from your " + u(e) + "."),
+                      (i += "​" + Math.round(e.earLength) + "英寸"),
+                    (i += "，从你的" + u(e) + "。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (i +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 i
               );
             case 3:
-              return " A slowly undulating [pc.tongueNoun] occasionally slips from between your lips. It hangs nearly two feet long when you let the whole thing slide out, though you can retract it to appear normal.";
+              return "一条缓缓蠕动的[pc.tongueNoun]偶尔会从你的双唇之间滑出。完全伸出时，它垂下近两英尺长，不过你也能将其收回，恢复成正常的模样。";
             case 4:
               return e.horns <= 2
-                ? " A " +
+                ? "一" +
                     (e.hornLength <= 2
-                      ? "small pair of"
-                      : "pair of " + Math.round(e.hornLength) + "-inch long") +
+                      ? "对小巧的"
+                      : "对" + Math.round(e.hornLength) + "英寸长") +
                     "枚尖角刺破了你的" +
                     e.skin() +
                     "，从前额上冒出，向所有看见它们的人宣告你身上的恶魔污秽。"
                 : e.horns <= 4
-                  ? " A quartet of " +
+                  ? "四根" +
                     (e.hornLength <= 4
-                      ? "prominent"
-                      : e.hornLength + "-inch long") +
+                      ? "醒目的"
+                      : e.hornLength + "英寸长") +
                     "只角刺破了你的" +
                     e.skin() +
                     "。后面一对较长，沿着头部向后弯曲；前面一对则带着恶魔般的气势向前突出。"
@@ -6155,7 +6155,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       e.skin() +
                       "，后方两对越过头顶向后弯曲，延伸至颈部；前方两只角则向上耸立" +
                       (e.hornLength < 8
-                        ? "almost eight"
+                        ? "将近八"
                         : Math.round(e.hornLength)) +
                       "英寸，并略微向前倾斜。"
                     : " 大量粗壮的恶魔角刺破你的" +
@@ -6164,26 +6164,26 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       Math.round(e.hornLength) +
                       "英寸，其余的则越过头顶向后弯曲，有些尖端一直延伸到耳朵下方。你估计自己总共有" +
                       e.horns +
-                      " horns.";
+                      "角。";
             case 5:
               var c = "";
               2 === e.wingCount
-                ? (c += " A pair of")
+                ? (c += "一对")
                 : 4 === e.wingCount
-                  ? (c += " A quartet of")
+                  ? (c += "四只")
                   : e.wingCount > 1 &&
-                    (c += " " + capitalize(num2Text(e.wingCount)));
+                    (c += "​" + capitalize(num2Text(e.wingCount)));
               var h = e.hasWingTags(GLOBALS.BODY_TAG_SHORT);
               return (
                 c +
-                " "
+                "​"
                   .concat(
-                    h ? "small" : "large",
-                    " bat-like demon-wings fold behind your shoulders. With a muscle-twitch, you can ",
+                    h ? "小巧的" : "硕大的",
+                    "蝙蝠般的恶魔翅膀收拢在你的肩后。只需肌肉一动，你便能",
                   )
                   .concat(
-                    h ? "flutter" : "extend",
-                    " them, and use them to soar gracefully through the air.",
+                    h ? "轻振" : "展开",
+                    "它们，并借此优雅地翱翔于空中。",
                   )
               );
             case 6:
@@ -6213,7 +6213,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "，缠绕着你的" +
                     e.leg() +
                     "，一有机会便会诱人地缠绕其上。"
-                : " " +
+                : "​" +
                     capitalize(num2Text(e.numTails)) +
                     "条细长的尾巴从你的" +
                     (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
@@ -6225,16 +6225,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 ? " 两条人类双腿从你的腰部向下延伸，末端是一双优雅的脚；每只脚后跟长出的弧形骨骼形成了永久的高跟。"
                 : " 你轻盈的双腿末端是灵活的爪足。原本脚趾甲的位置长出锐利的黑色爪甲，赋予你极强的抓地力。";
             case 9:
-              var g = " The ";
+              var g = "它的";
               return (
                 e.cocks[o].hasTags(GLOBALS.BODY_TAG_FLARED)
-                  ? (g += "flared ")
+                  ? (g += "外扩的")
                   : e.cocks[o].hasTags(GLOBALS.BODY_TAG_BLUNT) &&
-                    (g += "blunt "),
+                    (g += "钝圆的"),
                 (g +=
-                  "crown is ringed with a circle of rubbery protrusions that grow larger "),
+                  "冠部环绕着一圈富有弹性的突起，它们会逐渐变大"),
                 e.cocks[o].hasTags(GLOBALS.BODY_TAG_FORESKINNED) &&
-                  (g += "and push the foreskin down "),
+                  (g += "并将包皮向下推挤"),
                 g +
                   "；随着你愈发兴奋，它也会发生变化。整个器官泛着光泽，遍布细小而敏感的凸结，恶魔的影响昭然若揭。"
               );
@@ -6258,33 +6258,33 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var c = "";
               return (
                 (c +=
-                  "Your face is anuran in shape, reflecting the frog-like transformations you've undergone. The smooth visage is further exaggerated with a notable lack of a nose, having broadly spaced nostrils instead."),
+                  "你的脸呈蛙类形态，显露出你所经历的蛙类变化。光滑的面庞上没有明显的鼻子，取而代之的是一对间距很宽的鼻孔，更加凸显了这种特征。"),
                 (e.skinType !== GLOBALS.SKIN_TYPE_SKIN &&
                   e.skinType !== GLOBALS.SKIN_TYPE_GOO) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_CHITINOUS)
                   ? (c +=
-                      " Strangely enough, your face is also covered with " +
+                      "奇怪的是，你的脸上还覆盖着" +
                       s(e) +
-                      ".")
+                      "。")
                   : (c +=
-                      " Your face is covered in " + e.skin(!0, !0, !0) + "."),
+                      "你的脸上覆盖着" + e.skin(!0, !0, !0) + "。"),
                 c
               );
             case 1:
               var h = "";
               return (
                 "black" === e.eyeColor
-                  ? (h += " Void black eyes with glowing iridescent")
+                  ? (h += "一双虚空般漆黑、泛着虹彩光泽的眼睛长着")
                   : (t(e)
-                      ? (h += " Metallically glistening " + e.eyeColor)
+                      ? (h += "泛着金属光泽的" + e.eyeColor)
                       : n(e)
-                        ? (h += " Like jewels, shimmering " + e.eyeColor)
+                        ? (h += "如宝石般闪耀的" + e.eyeColor)
                         : o(e)
-                          ? (h += " Like twinkling beacons, " + e.eyeColor)
-                          : (h += " " + capitalize(e.eyeColor)),
-                    (h += " eyes with dark")),
+                          ? (h += "如信标般闪烁的" + e.eyeColor)
+                          : (h += "​" + capitalize(e.eyeColor)),
+                    (h += "眼睛长着深色的")),
                 h +
                   "形似“+”号的瞳孔轻松观察着周围环境。"
               );
@@ -6293,31 +6293,31 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((f +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "在头顶处分开，露出一对"),
                     e.earLength > 1 &&
-                      (f += " " + Math.round(e.earLength) + "-inch long,"),
-                    (f += " wicked-looking demonic ears."),
+                      (f += "​" + Math.round(e.earLength) + "英寸长的"),
+                    (f += "邪气十足的恶魔耳。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((f += l(e)),
-                    (f += " A pair of small indented holes"),
-                    e.skinType === GLOBALS.SKIN_TYPE_FUR && (f += " hidden"),
+                    (f += "一对微微凹陷的小孔"),
+                    e.skinType === GLOBALS.SKIN_TYPE_FUR && (f += "隐藏"),
                     (f +=
-                      " on the sides of your " + u(e) + "构成了你的耳朵。"),
+                      "在你的两侧" + u(e) + "构成了你的耳朵。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 f
               );
             case 3:
               return e.hasTongueTags(GLOBALS.BODY_TAG_LONG)
-                ? " Your " +
+                ? "你的" +
                     e.mouthDesc(!0) +
                     "中有一条修长而富有弹性的蛙舌，伸展距离远超大多数种族。"
-                : " Your " +
+                : "你的" +
                     e.mouthDesc(!0) +
                     "中有一条富有弹性的蛙类舌头。";
             case 6:
@@ -6325,20 +6325,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 (e.hasFur() && e.hasFeathers()) ||
                   (d +=
-                    " Your arms are incredibly smooth with a tendency to glisten in the light."),
+                    "你的双臂异常光滑，在光线下隐隐泛着光泽。"),
                 d +
                   " 你的蹼手具有鲜明的两栖类特征。每根修长的手指末端都有圆形肉球，可以像吸盘一样附着在平坦表面。"
               );
             case 7:
-              return " Your stubby frog tail wiggles around at the back of your waist, just asking to be squeezed.";
+              return "你那短粗的蛙尾在腰后扭来扭去，仿佛正等着被人揉捏。";
             case 8:
               var g = "";
               return (
-                (g += " " + capitalize(num2Text(e.legCount))),
+                (g += "​" + capitalize(num2Text(e.legCount))),
                 e.hasLegTags(GLOBALS.BODY_TAG_DIGITIGRADE)
-                  ? (g += " digitigrade")
+                  ? (g += "趾行的")
                   : e.hasLegTags(GLOBALS.BODY_TAG_PLANTIGRADE) &&
-                    (g += " plantigrade"),
+                    (g += "跖行的"),
                 g +
                   "条腿从你的" +
                   e.hipDesc() +
@@ -6364,22 +6364,22 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               e.hasLegTags(GLOBALS.BODY_TAG_AMORPHOUS)
                 ? ((r +=
-                    " In place of legs you have a shifting, amorphous blob. It splits apart just beneath your"),
-                  (r += " genitals"),
-                  (r += " into two semi-solid limbs."))
-                : ((r += " You have two semi-solid, gel-like limbs"),
+                    "你的双腿已被一团不断变形的无定形物质取代。它在你的"),
+                  (r += "性器下方"),
+                  (r += "分裂成两条半固态的肢体。"))
+                : ((r += "你有两条半固态的凝胶状肢体"),
                   e.hasLegTags(GLOBALS.BODY_TAG_PREHENSILE)
                     ? (r +=
-                        ", shaped into prehensile masses that bend and twist as you move")
+                        "，形成能够抓握的团块，随着你的动作弯折扭动")
                     : e.hasLegTags(GLOBALS.BODY_TAG_TENDRIL)
                       ? (r +=
-                          ", shaped into tendrils that wriggle about when you move")
+                          "，形成触须，随着你的动作不断蠕动")
                       : (e.hasLegTags(GLOBALS.BODY_TAG_DIGITIGRADE)
-                          ? (r += ", shaped into digitigrade legs and")
+                          ? (r += "，形成趾行腿，并")
                           : e.hasLegTags(GLOBALS.BODY_TAG_PLANTIGRADE) &&
-                            (r += ", shaped into plantigrade legs and"),
-                        (r += " ending in " + e.feetDesc())),
-                  (r += ".")),
+                            (r += "，形成跖行腿，并"),
+                        (r += "，末端是" + e.feetDesc())),
+                  (r += "。")),
               r
             );
           }
@@ -6403,21 +6403,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 e.skinType === GLOBALS.SKIN_TYPE_FUR ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
                   ? (r +=
-                      "You have a face resembling that of an anthropomorphic bovine, with cow-like features, particularly a squared off wet nose. Your " +
+                      "你的脸像一头拟人化的牛，带有鲜明的牛类特征，尤其是那方正湿润的鼻子。你的" +
                       s(e) +
                       "在你的头部明显变厚，覆盖面孔后显得蓬乱而颇为狰狞。")
                   : e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                       e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                     ? (r +=
-                        "Your face resembles an anthropomorphic bovine's, though strangely, it is covered in shimmering scales, right up to the flat, cow-like nose that protrudes from your face.")
+                        "你的脸像一头拟人化的牛，但奇怪的是，脸上覆盖着闪亮的鳞片，一直延伸到从面部突出的扁平牛鼻。")
                     : ((r +=
-                        "You have a face resembling that of an anthropomorphic bovine, with cow-like features, particularly a squared off wet nose."),
+                        "你的脸像一头拟人化的牛，带有鲜明的牛类特征，尤其是那方正湿润的鼻子。"),
                       e.skinType === GLOBALS.SKIN_TYPE_GOO ||
                         e.hasFaceTags(GLOBALS.BODY_TAG_GOOEY) ||
                         (r +=
-                          " Despite your lack of fur elsewhere, your visage does have a short layer of " +
+                          "尽管身体其他部位没有毛发，你的脸上却覆盖着一层短短的" +
                           e.furColor +
-                          " fuzz.")),
+                          "绒毛。")),
                 r
               );
             case 2:
@@ -6425,24 +6425,24 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((a +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "在头顶处分开，露出一对向两侧伸出的圆润牛耳。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((a += l(e)),
                     (a +=
-                      " A pair of round, floppy cow ears protrude from the sides of your " +
+                      "一对圆润下垂的牛耳从你的两侧伸出。" +
                       u(e) +
-                      "."),
+                      "。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 a
               );
             case 3:
-              return " A slowly undulating [pc.tongueNoun] occasionally slips from between your lips. It hangs nearly two feet long when you let the whole thing slide out, though you can retract it to appear normal.";
+              return "一条缓缓蠕动的[pc.tongueNoun]偶尔会从你的双唇之间滑出。完全伸出时，它垂下近两英尺长，不过你也能将其收回，恢复成正常的模样。";
             case 4:
               return e.hornLength < 1
                 ? " 两枚角状小突起从你的前额冒出，像是人类饲养的幼畜刚刚长出的嫩角。"
@@ -6453,11 +6453,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     : e.hornLength < 4
                       ? " 一对足有三英寸长的牛角从你的前额突出。"
                       : e.hornLength < 5
-                        ? " Two horns protrude through the [pc.skin] of your forehead. Each is about four inches in length and impossible to ignore."
+                        ? "两根角穿过你额头的[pc.skin]向外伸出。每根约有四英寸长，显眼得令人无法忽视。"
                         : e.hornLength < 6
                           ? " 两只粗壮的牛角从你的前额突出。它们沉甸甸的重量时刻提醒着你，自己看起来多么像一头" +
                             e.mf("公牛", "母牛") +
-                            "."
+                            "。"
                           : e.hornLength < 8
                             ? " 一对强壮的牛角从你的头上伸出约半英尺。只要稍稍低头，你顿时就会显得危险十足。"
                             : e.hornLength < 12
@@ -6477,6 +6477,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     (i +=
                       "绒毛，来回摆动着，仿佛在驱赶苍蝇。"))
                   : ((i +=
+                      "​" +
                       globalThis.cnAttrLabel(num2Text(e.numTails)) +
                       "条长长的牛尾，末端各有一簇"),
                     e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
@@ -6488,8 +6489,8 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               );
             case 8:
               return (
-                " Your legs are muscled and jointed oddly, covered in " +
-                (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "goo" : "fur") +
+                "你的双腿肌肉发达，关节构造奇特，表面覆盖着" +
+                (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY) ? "黏液" : "毛发") +
                 "，末端是一对兽蹄。"
               );
             default:
@@ -6514,21 +6515,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 e.skinType === GLOBALS.SKIN_TYPE_FUR ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
                   ? (r +=
-                      "You have a wolf's face, wide and majestic, with jaws filled with sharp teeth. You've got " +
+                      "你长着一张宽阔威严的狼脸，颌中布满利齿。你有" +
                       s(e) +
-                      ", hiding your " +
+                      "，遮住你的" +
                       e.skin(!0, !0, !0) +
                       "之下。")
                   : e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                       e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                     ? (r +=
-                        "You have the facial structure of a wolf, wide and majestic, but overlaid with " +
+                        "你的面部结构如狼一般宽阔威严，但表面覆盖着" +
                         s(e) +
                         "，嘴里还长满了锋利的牙齿。")
                     : (r +=
-                        "You have a wolf-like face, wide and majestic, with jaws filled with sharp teeth. The odd visage is hairless and covered with " +
+                        "你长着一张宽阔威严的狼脸，颌中布满利齿。这张奇异的面孔没有毛发，表面覆盖着" +
                         s(e) +
-                        "."),
+                        "。"),
                 r
               );
             case 2:
@@ -6544,7 +6545,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         " 你的头发被一对从头顶伸出的触角分开。"))
                   : ((a += l(e)),
                     (a +=
-                      " A pair of pointed wolf-like ears protrude from your " +
+                      "一对尖尖的狼耳从你的两侧伸出。" +
                       u(e) +
                       "上伸出，尖而警觉地竖立着。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
@@ -6565,33 +6566,33 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "毛发覆盖着你的双臂，使其显出鲜明的兽类特征。"),
                 e.hasArmTags(GLOBALS.BODY_TAG_PAWS) &&
                   (i +=
-                    " Soft pads rest on the tips of each of your fingers. "),
+                    "每根手指尖端都长着柔软的肉垫。"),
                 (i +=
-                  " Your fingers are tipped with thick, canine claws as well") +
+                  "你的指尖还长着粗厚的犬类利爪") +
                   "。"
               );
             case 7:
               var c = "";
               return (
                 1 === e.numTails
-                  ? ((c += " A"),
-                    e.hasTailTags(GLOBALS.BODY_TAG_LONG) && (c += " long,"),
+                  ? ((c += "一"),
+                    e.hasTailTags(GLOBALS.BODY_TAG_LONG) && (c += "长长的"),
                     e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (c += " gooey")
-                      : (c += " fuzzy"),
+                      ? (c += "黏液构成的")
+                      : (c += "毛茸茸的"),
                     (c +=
-                      " " +
+                      "​" +
                       e.furColor +
                       "条狼尾从你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
                       "上方长出，每当你高兴时便会来回摇摆。"))
-                  : ((c += " " + capitalize(num2Text(e.numTails))),
-                    e.hasTailTags(GLOBALS.BODY_TAG_LONG) && (c += " long,"),
+                  : ((c += "​" + capitalize(num2Text(e.numTails))),
+                    e.hasTailTags(GLOBALS.BODY_TAG_LONG) && (c += "长长的"),
                     e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (c += " gooey")
-                      : (c += " fuzzy"),
+                      ? (c += "黏液构成的")
+                      : (c += "毛茸茸的"),
                     (c +=
-                      " " +
+                      "​" +
                       e.furColor +
                       "条狼尾从你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
@@ -6601,11 +6602,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 8:
               var h = "";
               return (
-                (h += " " + capitalize(num2Text(e.legCount)) + " powerful"),
+                (h += "​" + capitalize(num2Text(e.legCount)) + "强健的"),
                 e.hasLegTags(GLOBALS.BODY_TAG_DIGITIGRADE)
-                  ? (h += " digitigrade")
+                  ? (h += "趾行的")
                   : e.hasLegTags(GLOBALS.BODY_TAG_PLANTIGRADE) &&
-                    (h += " plantigrade"),
+                    (h += "跖行的"),
                 h +
                   "腿从你的腰部向下延伸，末端是长着锋利犬爪的硕大兽足。"
               );
@@ -6629,7 +6630,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 (r +=
-                  "You have a snubby, tapered mouse's face, with whiskers, a little pink nose, and "),
+                  "你长着一张短而尖细的鼠脸，带有胡须、小巧的粉色鼻子，以及"),
                 [
                   GLOBALS.SKIN_TYPE_FUR,
                   GLOBALS.SKIN_TYPE_SCALES,
@@ -6640,7 +6641,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_SCALED) ||
                 e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED)
-                  ? (r += e.skin(!0, !0, !0) + " under your " + s(e))
+                  ? (r += e.skin(!0, !0, !0) + "，位于你的下方" + s(e))
                   : (r += e.skin(!0, !0, !0)),
                 r + "。两颗硕大的门齿令这副面孔更加完整。"
               );
@@ -6649,25 +6650,25 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((a +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "在头顶处分流，绕过一对硕大而呈圆盘状、醒目竖起的鼠耳。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((a += l(e)),
                     (a +=
-                      " A pair of large, dish-shaped mouse ears stick up prominently atop of your " +
+                      "一对硕大的碟状鼠耳醒目地竖在你的头顶。" +
                       u(e) +
-                      "."),
+                      "。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 a
               );
             case 7:
               return (
-                " A naked, " +
+                "一条裸露的" +
                 e.skinColor +
                 "色鼠尾从你的臀部伸出，拖在地面上，偶尔还会抽动几下。"
               );
@@ -6696,7 +6697,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   "羊类口鼻。"),
                 (e.skinType === GLOBALS.SKIN_TYPE_FUR ||
                   e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)) &&
-                  (c += " A coat of " + s(e) + "。"),
+                  (c += "一层" + s(e) + "。"),
                 c
               );
             case 1:
@@ -6710,7 +6711,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       ? (h += " 如灯塔般闪耀的")
                       : (h += " 你的"),
                 h +
-                  " " +
+                  "​" +
                   e.eyeColor +
                   "眼睛有着羊类特征，瞳孔呈水平状。"
               );
@@ -6719,20 +6720,20 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasHair()
                   ? ((f +=
-                      " The " +
+                      "你的" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "被一对可爱地垂在头部两侧的羊耳分开。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((f += l(e)),
                     (f +=
                       " 一对羊耳可爱地垂在你的" +
                       u(e) +
-                      "."),
+                      "。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 f
               );
             case 4:
@@ -6746,7 +6747,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 7:
               return 1 === e.numTails
                 ? " 一条羔羊般的小尾巴从你的臀部长出。"
-                : " " +
+                : "​" +
                     capitalize(num2Text(e.numTails)) +
                     "羔羊般的小尾巴从你的臀部长出。";
             case 8:
@@ -6777,7 +6778,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var r = "";
               return (
                 e.hasMuzzle()
-                  ? ((r += "You have a short-muzzled face"),
+                  ? ((r += "你长着一张短吻的面孔"),
                     [GLOBALS.SKIN_TYPE_FUR, GLOBALS.SKIN_TYPE_SCALES].find(
                       function (t) {
                         return t === e.skinType;
@@ -6785,7 +6786,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     ) ||
                     e.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                     e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
-                      ? (r += " covered in " + s(e) + ".")
+                      ? (r += "，覆盖着" + s(e) + "。")
                       : [
                             GLOBALS.SKIN_TYPE_FEATHERS,
                             GLOBALS.SKIN_TYPE_CHITIN,
@@ -6795,7 +6796,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                           }) ||
                           e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED) ||
                           e.hasFaceTags(GLOBALS.BODY_TAG_CHITINOUS)
-                        ? (r += " framed with " + s(e) + ".")
+                        ? (r += "，四周长着" + s(e) + "。")
                         : [
                               GLOBALS.SKIN_TYPE_SKIN,
                               GLOBALS.SKIN_TYPE_GOO,
@@ -6803,10 +6804,10 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                             ].find(function (t) {
                               return t === e.skinType;
                             })
-                          ? (r += " with " + e.skin(!0, !0, !0) + ".")
-                          : (r += "."),
+                          ? (r += "，并带有" + e.skin(!0, !0, !0) + "。")
+                          : (r += "。"),
                     (r +=
-                      " The constant twitches of your nose and the length of your incisors gives your visage an obvious bunny-like cuteness."))
+                      "不断抽动的鼻子和修长的门牙，让你的面容显露出鲜明的兔子般可爱。"))
                   : (e.hasFaceTags(GLOBALS.BODY_TAG_SMOOTH) ||
                     [
                       GLOBALS.SKIN_TYPE_SKIN,
@@ -6816,89 +6817,89 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       return t === e.skinType;
                     })
                       ? (r +=
-                          "Your face is human in shape and structure, with " +
+                          "你的面部形状与结构都属于人类，并带有" +
                           e.skin(!0, !0, !0) +
-                          ".")
+                          "。")
                       : e.skinType === GLOBALS.SKIN_TYPE_FUR ||
                           e.hasFaceTags(GLOBALS.BODY_TAG_FURRED)
                         ? (r +=
-                            "Under your " +
+                            "在你的" +
                             s(e) +
                             "你的头部呈人形，并有" +
                             e.skin(!0, !0, !0) +
-                            ".")
+                            "。")
                         : e.skinType === GLOBALS.SKIN_TYPE_SCALES ||
                             e.hasFaceTags(GLOBALS.BODY_TAG_SCALED)
                           ? (r +=
-                              "Your face is fairly human in shape, but is covered in " +
+                              "你的面部形状相当接近人类，但表面覆盖着" +
                               s(e) +
-                              " over " +
+                              "，覆盖在" +
                               e.skin(!0, !0, !0) +
-                              ".")
+                              "。")
                           : e.skinType === GLOBALS.SKIN_TYPE_FEATHERS ||
                               e.hasFaceTags(GLOBALS.BODY_TAG_FEATHERED)
                             ? (r +=
-                                "Your face is human-shaped with " +
+                                "你的脸呈人类形态，并带有" +
                                 e.skin(!0, !0, !0) +
                                 "，周围还浅浅环绕着" +
                                 s(e) +
-                                ".")
+                                "。")
                             : e.skinType === GLOBALS.SKIN_TYPE_CHITIN ||
                                 e.hasFaceTags(GLOBALS.BODY_TAG_CHITINOUS)
                               ? (r +=
-                                  "Your face is mostly human in shape, decorated with " +
+                                  "你的脸大体呈人类形态，并点缀着" +
                                   s(e) +
-                                  " over " +
+                                  "，覆盖在" +
                                   e.skin(!0, !0, !0) +
-                                  ".")
+                                  "。")
                               : e.skinType === GLOBALS.SKIN_TYPE_BARK &&
                                 (r +=
-                                  "Your face is mostly human in shape, with hints of " +
+                                  "你的脸大体呈人类形态，同时隐约带有" +
                                   s(e) +
-                                  " over " +
+                                  "，覆盖在" +
                                   e.skin(!0, !0, !0) +
-                                  "."),
+                                  "。"),
                     (r +=
-                      " The constant twitches of your nose and the length of your incisors gives your visage a hint of bunny-like cuteness.")),
+                      "不断抽动的鼻子和修长的门牙，让你的面容隐约带着兔子般的可爱。")),
                 r
               );
             case 2:
               var a = "";
               return (
                 e.hasHair()
-                  ? ((a += " A pair of"),
-                    e.hasFloppyEars() ? (a += " floppy") : (a += " alert"),
+                  ? ((a += "一对"),
+                    e.hasFloppyEars() ? (a += "下垂的") : (a += "竖立的"),
                     (a +=
-                      " rabbit ears stick up out of your " +
+                      "兔耳从你的头顶伸出，" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
-                      ","),
-                    e.earLength > e.tallness && (a += " dragging on the floor"),
+                      "，"),
+                    e.earLength > e.tallness && (a += "拖在地面上"),
                     e.earLength > e.tallness / 2
-                      ? (a += " swaying about")
+                      ? (a += "来回摇摆")
                       : e.hasFloppyEars() || 0 === rand(2)
-                        ? (a += " bouncing around")
-                        : (a += " swaying and darting"),
-                    (a += " as you walk."),
+                        ? (a += "上下弹动")
+                        : (a += "摇摆窜动"),
+                    (a += "，伴随着你的步伐。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((a += l(e)),
-                    (a += " A pair of"),
-                    e.hasFloppyEars() ? (a += " floppy") : (a += " alert"),
+                    (a += "一对"),
+                    e.hasFloppyEars() ? (a += "下垂的") : (a += "竖立的"),
                     (a +=
-                      " rabbit ears stick up from the top of your " +
+                      "兔耳从你的头顶竖起，" +
                       u(e) +
-                      ","),
-                    e.earLength > e.tallness && (a += " dragging on the floor"),
+                      "，"),
+                    e.earLength > e.tallness && (a += "拖在地面上"),
                     e.earLength > e.tallness / 2
-                      ? (a += " swaying about")
+                      ? (a += "来回摇摆")
                       : e.hasFloppyEars() || 0 === rand(2)
-                        ? (a += " bouncing around")
-                        : (a += " swaying and darting"),
-                    (a += " as you walk."),
+                        ? (a += "上下弹动")
+                        : (a += "摇摆窜动"),
+                    (a += "，伴随着你的步伐。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (a +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 a
               );
             case 6:
@@ -6906,45 +6907,45 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasArmTags(GLOBALS.BODY_TAG_THICK)
                   ? (e.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (i += " Your thick, gooey arms ")
-                      : (i += " Your thick, fur-covered arms "),
+                      ? (i += "你粗壮的黏液手臂")
+                      : (i += "你粗壮且覆有毛发的手臂"),
                     (i +=
-                      "end with broad forearms and big fingers. In contrast, delicate pads line the underside."))
+                      "末端是宽阔的前臂和粗大的手指；与之形成反差的是，手掌下方排列着细嫩的肉垫。"))
                   : (e.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (i += " Your gooey arms ")
-                      : (i += " Your furry arms "),
+                      ? (i += "你的黏液手臂")
+                      : (i += "你覆有毛发的手臂"),
                     (i +=
-                      "end with small, delicate paws. Each finger has a soft pad on the underside as well. You couldn't ask for a less threatening pair of mitts.")),
+                      "末端是小巧精致的爪子，每根手指下方也都有柔软的肉垫。再也找不到比这双手更没有威胁感的了。")),
                 i
               );
             case 7:
               var c = "";
               return (
                 1 === e.numTails
-                  ? ((c += " A short,"),
+                  ? ((c += "一条短短的"),
                     e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (c += " slimy")
-                      : (c += " soft"),
+                      ? (c += "黏滑的")
+                      : (c += "柔软的"),
                     (c +=
-                      " bunny tail sprouts just above your " +
+                      "兔尾从你的上方长出。" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
                       "，每当你分心时便不停抽动。"))
-                  : ((c += " " + capitalize(num2Text(e.numTails)) + " short,"),
+                  : ((c += "​" + capitalize(num2Text(e.numTails)) + "短短的"),
                     e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                      ? (c += " slimy")
-                      : (c += " soft"),
+                      ? (c += "黏滑的")
+                      : (c += "柔软的"),
                     (c +=
-                      " bunny tails sprout just above your " +
+                      "兔尾从你的上方长出。" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc()) +
                       "，每当你的注意力转向别处时便不停抽动。其实它们想动时就会动——这么多叛逆的小绒球实在很难控制。")),
                 c
               );
             case 8:
               return (
-                " Your legs thicken below the waist as they turn into " +
+                "你的双腿从腰部以下逐渐变粗，变成" +
                 (e.hasLegTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? "goo-covered"
-                  : "soft-furred") +
+                  ? "覆有黏液的"
+                  : "覆有柔软毛发的") +
                 "条兔类双腿；你甚至长着一双硕大的兔足，让跳跃比行走更加轻松。"
               );
             default:
@@ -6972,23 +6973,23 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var l = "";
               return (
                 (l +=
-                  " In addition to your primary two eyes, you have a second, smaller pair on your forehead"),
+                  "除了主要的两只眼睛外，你的额头上还长着一对较小的眼睛"),
                 t(e)
                   ? (l +=
-                      ", all of which reflect back a metallic " +
+                      "，所有眼睛都会在光线下反射出带金属光泽的" +
                       e.eyeColor +
-                      " in the light.")
+                      "。")
                   : n(e)
                     ? (l +=
-                        ", all of which shimmer " +
+                        "，所有眼睛都闪烁着" +
                         e.eyeColor +
                         "，在光线下如宝石般闪耀。")
                     : o(e)
                       ? (l +=
-                          ", all of which beam " +
+                          "，所有眼睛都散发着" +
                           e.eyeColor +
-                          " in the darkness.")
-                      : (l += ", all of which are " + e.eyeColor + "."),
+                          "的光芒，照亮黑暗。")
+                      : (l += "，所有眼睛都是" + e.eyeColor + "。"),
                 l
               );
             case 6:
@@ -6996,23 +6997,23 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 e.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
                   ? (u +=
-                      " Shiny hardened " +
+                      "闪亮而坚硬的" +
                       e.scaleColor +
                       "黏液从肱二头肌以下覆盖着你的双臂，远看如同一双" +
                       e.scaleColor +
                       "色长手套。")
                   : (u +=
-                      " Shining black exoskeleton covers your arms from the biceps down, resembling a pair of long black gloves from a distance."),
+                      "闪亮的黑色外骨骼从肱二头肌以下覆盖着你的双臂，远看如同一双黑色长手套。"),
                 u
               );
             case 7:
               var h = "";
               return (
                 (h +=
-                  " A large, spherical spider-abdomen has grown out from your backside, covered in shiny"),
+                  "一个硕大的球形蜘蛛腹部从你的背后长出，表面覆盖着闪亮的"),
                 e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? (h += " hardened " + e.scaleColor + "黏液")
-                  : (h += " black chitin"),
+                  ? (h += "坚硬的" + e.scaleColor + "黏液")
+                  : (h += "黑色甲壳"),
                 h +
                   "。尽管它十分沉重，并随每次动作上下晃动，却似乎丝毫不会拖慢你的速度。"
               );
@@ -7043,23 +7044,23 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 4:
               if (!e.hasHorns()) return;
               var r =
-                1 === e.horns ? "solo" : 2 === e.horns ? "pair of" : "set of";
+                1 === e.horns ? "一根" : 2 === e.horns ? "一对" : "一组";
               return (
-                " A " +
+                "你的" +
                 (e.hornLength <= 2
-                  ? "small ".concat(r)
+                  ? "小巧的".concat(r)
                   : ""
-                      .concat(r, " ")
-                      .concat(Math.round(e.hornLength), "-inch long")) +
-                " elegant ".concat(
-                  1 === e.horns ? "horn juts" : "horns just",
-                  " through the ",
+                      .concat(r, "​")
+                      .concat(Math.round(e.hornLength), "英寸长")) +
+                "优雅的".concat(
+                  1 === e.horns ? "角" : "角",
+                  "穿过",
                 ) +
                 e.skin() +
                 "从你的头部两侧长出，如恶魔冠冕般向前并朝中央弯曲，为你平添一股天生的王者气度。"
               );
             case 8:
-              return " Your perfectly lissom legs end in mostly human feet, apart from the horn protruding straight down from the heel that forces you to walk with a sexy, swaying gait. Surprisingly your mobility isn't impaired by having your feet converted into natural high heels, although you are forced to totter about with your upper body thrust forward a little to compensate, leaving you permanently locked into an awkwardly sexy pose.";
+              return "你那纤柔完美的双腿末端基本仍是人类的双脚，唯有从脚跟笔直向下伸出的角迫使你以性感摇曳的步态行走。令人惊讶的是，这双天然高跟鞋并未妨碍你的行动，不过你不得不让上身略微前倾、摇摇晃晃地保持平衡，始终维持着一种笨拙却性感的姿势。";
             default:
               return te(e, t, n, o);
           }
@@ -7079,25 +7080,25 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             var r = "";
             return (
               2 === e.wingCount
-                ? (r += " A pair of")
-                : (r += " " + capitalize(num2Text(e.wingCount))),
+                ? (r += "一对")
+                : (r += "​" + capitalize(num2Text(e.wingCount))),
               e.wingCount < 4
                 ? e.hasWingTags(GLOBALS.BODY_TAG_MAGIC)
                   ? (r +=
-                      " resplendent golden wings adorn your back, flickering into existence when needed. They're visually similar to gigantic dove's wings, and can fold around your shoulders like a cloak. They're powerful enough to glide with, but soft and warm to the touch.")
+                      "华美的金色翅膀装点着你的背部，需要时便会闪现。它们看起来像巨大的鸽翼，能够如斗篷般收拢在肩头；既强健得足以供你滑翔，触感又柔软温暖。")
                   : (r +=
-                      " " +
+                      "​" +
                       e.wingColor() +
                       "色翅膀装点着你的背部，覆有如鸽羽般的羽毛；收拢在身上时大得足以当作斗篷。它们强韧得足以供你滑翔，触感却十分柔软。")
                 : e.wingCount < 6
                   ? (r +=
-                      " wings sprout from your back, each covered in wonderfully soft " +
+                      "翅膀从你的背后长出，每一只都覆盖着无比柔软的" +
                       e.wingColor() +
                       "色羽毛；当全部" +
                       num2Text(e.wingCount) +
                       "收拢在身上时，足以像长袍般裹住你。它们的排列互不妨碍，展开后你仍能凭借它们滑翔。")
                   : (r +=
-                      " wings sprout from your back, each covered in wonderfully soft " +
+                      "翅膀从你的背后长出，每一只都覆盖着无比柔软的" +
                       e.wingColor() +
                       "色羽毛；当全部" +
                       num2Text(e.wingCount) +
@@ -7123,11 +7124,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               e.numTails <= 1
                 ? (r +=
-                    " A lengthy scorpion tail waves slowly through the air behind you, covered in a layer of hard " +
+                    "一条修长的蝎尾在你身后缓缓挥动，表面覆盖着一层坚硬的" +
                     (e.scaleColor || e.furColor) +
                     "甲壳，唯有尖端例外；那里生着一枚硕大的螫刺，随时可以刺穿敌人。")
                 : (r +=
-                    " " +
+                    "​" +
                     capitalize(num2Text(e.numTails)) +
                     "条蝎尾在你身后的空中缓慢摆动，每一条都覆盖着一层坚硬的" +
                     (e.scaleColor || e.furColor) +
@@ -7154,11 +7155,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 r.hasMuzzle()
                   ? (h +=
-                      "Your face is that of a hyena, which is covered in " +
+                      "你长着一张鬣狗的脸，表面覆盖着" +
                       s(r) +
                       "，令你显得格外凶蛮。你的口吻仿佛永远咧着笑，长满利齿的颌骨天生就适合咬碎骨头。")
                   : (h +=
-                      "You have a hyena's face with a perpetual laidback grin, overlaid with " +
+                      "你长着一张鬣狗的脸，始终挂着懒散的笑容，表面覆盖着" +
                       s(r) +
                       "，以及长满利齿、足以咬碎骨头的颌骨。"),
                 h
@@ -7166,35 +7167,35 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             case 1:
               var f = "";
               return (
-                (f += " Your canine eyes have large"),
+                (f += "你的犬类双眼有着"),
                 t(r)
-                  ? (f += ", metallically glistening " + r.eyeColor + " irises")
+                  ? (f += "巨大而泛着金属光泽的" + r.eyeColor + "虹膜")
                   : n(r)
-                    ? (f += ", shimmering " + r.eyeColor + " irises")
-                    : (o(r), (f += " " + r.eyeColor + " irises")),
+                    ? (f += "闪烁着" + r.eyeColor + "虹膜")
+                    : (o(r), (f += "​" + r.eyeColor + "虹膜")),
                 (f +=
-                  " occupying most of their surface when the pupils are not dilated") +
-                  "."
+                  "；瞳孔未扩张时，虹膜几乎占据整个眼球表面") +
+                  "。"
               );
             case 2:
               var d = "";
               return (
                 r.hasHair()
                   ? ((d +=
-                      " A pair of pointed hyena-like ears protrude from your " +
+                      "一对尖尖的鬣狗耳从你的两侧伸出。" +
                       r.hairDesc(!0, !0) +
-                      "."),
+                      "。"),
                     r.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (d +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((d += l(r)),
                     (d +=
-                      " A pair of pointed hyena-like ears protrude from your " +
+                      "一对尖尖的鬣狗耳从你的两侧伸出。" +
                       u(r) +
-                      "."),
+                      "。"),
                     r.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (d +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 d
               );
             case 6:
@@ -7203,41 +7204,41 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 r.skinType !== GLOBALS.SKIN_TYPE_FUR &&
                   r.hasArmTags(GLOBALS.BODY_TAG_FURRED) &&
                   (g +=
-                    " A coat of " +
+                    "一层" +
                     r.furColor +
                     "毛发覆盖着你的双臂，使其显出鲜明的兽类特征。"),
                 (g +=
-                  " The color shifts to a darker shade just before your wrists, where your hands end in padded palms and fingers tipped with blunt claws") +
-                  "."
+                  "毛色在手腕前逐渐转深；你的手掌长有肉垫，指尖则带着钝爪") +
+                  "。"
               );
             case 7:
               var y = 1 === r.numTails,
-                p = " "
-                  .concat(y ? "A" : capitalize(num2Text(r.numTails)), " ")
+                p = "​"
+                  .concat(y ? "一" : capitalize(num2Text(r.numTails)), "​")
                   .concat(
-                    r.hasTailTags(GLOBALS.BODY_TAG_LONG) ? "long" : "bushy",
-                    " ",
+                    r.hasTailTags(GLOBALS.BODY_TAG_LONG) ? "条修长的" : "条蓬松的",
+                    "​",
                   )
-                  .concat(r.furColor, " tail")
-                  .concat(y ? "" : "s", " sprout")
-                  .concat(y ? "s" : "", " above your ")
+                  .concat(r.furColor, "尾巴")
+                  .concat(y ? "" : "​", "长出")
+                  .concat(y ? "​" : "", "，位于你的上方")
                   .concat(
                     r.buttDesc(),
-                    " resembling a paintbrush in appearance and ending in a coarse black tip.",
+                    "，外形如同画笔，末端是一簇粗硬的黑毛。",
                   );
               return p;
             case 8:
               return (
-                " Your legs are crooked into high knees with hocks and fairly long digitigrade feet, like those of a hyena, each ending with thick padded paws and toes tipped with blunt claws. The " +
+                "你的双腿像鬣狗一样弯曲，膝位高耸、带有跗关节，脚掌则是相当修长的趾行结构；每条腿末端都有肉垫厚实的爪掌，脚趾尖长着钝爪。" +
                 (r.hasLegTags(GLOBALS.BODY_TAG_FURRED)
-                  ? "fur"
-                  : r.skinNoun(!1, !0)) +
+                  ? "毛发"
+                  : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(r.skinNoun(!1, !0)):r.skinNoun(!1, !0))) +
                 "在脚踝附近逐渐变深，令你的鬣狗特征更加完整。"
               );
             case 9:
               return "";
             case e:
-              return " The exterior lips are that of a bitch and have a tendency to swell when in heat, giving it a very animalistic bent.";
+              return "你的外阴唇有着母犬般的形态，发情时往往会肿胀，呈现出鲜明的兽类特征。";
             default:
               return te(r, a, i, c);
           }
@@ -7255,37 +7256,37 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 : 0;
           switch (n) {
             case 1:
-              return " Your oval, reptilian eyes gleam with gold pupils over black sclera, adding a predatory look to your glare.";
+              return "你那椭圆的爬虫类眼睛有着漆黑的巩膜与金色的瞳孔，为你的目光平添了捕食者般的凶意。";
             case 2:
               var r = "";
               return (
                 e.hasHair()
                   ? ((r +=
-                      " A pair of frilled fin-like ears protrude from your " +
+                      "一对带褶边、形似鳍片的耳朵从你的两侧伸出。" +
                       (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0)) +
                       "，使你更添几分流畅锐利的爬行动物气质。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (r +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
+                        "你的头发间还伸出一对触角。"))
                   : ((r += l(e)),
                     (r +=
-                      " A pair of frilled fin-like ears protrude from your " +
+                      "一对带褶边、形似鳍片的耳朵从你的两侧伸出。" +
                       u(e) +
                       "，使你更添几分流畅锐利的爬行动物气质。"),
                     e.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (r +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 r
               );
             case 6:
               return randCollection([
-                " Your hands have morphed and advanced into a salamander's claws. Covered in " +
+                "你的双手已经变成了火蜥蜴般的利爪，表面覆盖着" +
                   (e.hasTailTags(GLOBALS.BODY_TAG_SCALED)
-                    ? "scales"
-                    : e.skinNoun(!1, !0)) +
+                    ? "鳞片"
+                    : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0))) +
                   "，末端生着略微弯曲的利爪，既便于抓握、维持平衡，也令你显得威势十足。",
-                " Your " +
-                  plural(e.armDesc()) +
+                "你的" +
+                  (globalThis.cnBodyLabel?globalThis.cnBodyLabel(plural(e.armDesc())):plural(e.armDesc())) +
                   "灵巧而抓握有力；这些爪子仿佛能钩住乃至刺入任何表面，牢牢固定住你。",
               ]);
             case 7:
@@ -7293,84 +7294,84 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 i = e.numTails > 1;
               return (
                 (a += randCollection([
-                  " Your tail"
-                    .concat(i ? "s are" : " is", " almost as long as you are. ")
-                    .concat(i ? "Their" : "Its", " ")
+                  "你的尾巴"
+                    .concat(i ? "全都" : "​", "几乎与你的身高相当。")
+                    .concat(i ? "这些尾巴覆有" : "尾巴覆有", "​")
                     .concat(
                       e.hasTailTags(GLOBALS.BODY_TAG_SCALED)
-                        ? "scale"
-                        : e.skinNoun(!1, !0),
-                      "-covered length is thick with dexterous muscle and is perfect for balance... or wrapping around a partner.",
+                        ? "鳞片"
+                        : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0)),
+                      "，其肌肉粗壮而灵活，非常适合维持平衡……或缠住伴侣。",
                     ),
-                  " Your salamander tail"
+                  "你的火蜥蜴尾巴"
                     .concat(
-                      i ? "s are" : " is",
-                      " long and nimble, moving effortlessly and thoughtlessly. The ",
+                      i ? "全都" : "​",
+                      "长而灵活，无需思考便能轻松摆动。",
                     )
                     .concat(
                       e.hasTailTags(GLOBALS.BODY_TAG_SCALED)
-                        ? "scales"
-                        : e.skinNoun(!1, !0),
-                      " along ",
+                        ? "鳞片"
+                        : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0)),
+                      "沿",
                     )
-                    .concat(i ? "their" : "its", " length add")
+                    .concat(i ? "这些尾巴的" : "尾巴的", "尾身上延伸")
                     .concat(
-                      e.hasTailTags(GLOBALS.BODY_TAG_SCALED) ? "" : "s",
-                      " a subtle, imposing edge to your form.",
+                      e.hasTailTags(GLOBALS.BODY_TAG_SCALED) ? "" : "​",
+                      "，为你的身形增添几分含蓄而威严的气势。",
                     ),
                 ])),
                 e.hasTailTags(GLOBALS.BODY_TAG_IGNAN)
                   ? (a += randCollection(
-                      " On the very tip of your tail"
+                      "你的尾巴尖端"
                         .concat(
-                          i ? "s are" : " is",
-                          " a burning red flame that perpetuates through unknown means. All you know is that deep down inside, you're filled with boisterous, sweltering energy that waxes and wanes with your ",
+                          i ? "燃着" : "燃着",
+                          "一簇以未知方式永不熄灭的炽红火焰。你只知道，自己内心深处充满了喧腾灼热的能量，它会随着",
                         )
-                        .concat(i ? "tails'" : "tail's", " flame."),
-                      " To crown your salamander tail".concat(
-                        i ? "s are" : " is",
-                        " the telltale lick of red flame. It drags slowly in the air in a distracting, enchanting fashion and just looking at it ignites your inner energy.",
+                        .concat(i ? "尾巴上的" : "尾巴上的", "火焰一同起伏。"),
+                      "你的火蜥蜴尾巴顶端".concat(
+                        i ? "燃着" : "燃着",
+                        "一簇标志性的红色火焰。它缓缓掠过空气，摇曳得令人分神而着迷；仅仅看着它，便会点燃你体内的能量。",
                       ),
                     ))
                   : e.hasTailTags(GLOBALS.BODY_TAG_ARCTIC)
                     ? (a += randCollection(
-                        " On the very tip of your tail"
+                        "你的尾巴尖端"
                           .concat(
-                            i ? "s are" : " is",
-                            " an ethereal blue flame that perpetuates through unknown means. All you know is that deep down inside, you're filled with cooled, volatile energy that waxes and wanes with your ",
+                            i ? "燃着" : "燃着",
+                            "一簇以未知方式永不熄灭的幽蓝火焰。你只知道，自己内心深处充满了冰冷而躁动的能量，它会随着",
                           )
-                          .concat(i ? "tails'" : "tail's", " cold flame."),
-                        " To crown your salamander tail".concat(
-                          i ? "s are" : " is",
-                          " the telltale lick of ghostly blue flame. It drags slowly in the air in a distracting, enchanting fashion and just looking at it ignites your inner energy.",
+                          .concat(i ? "尾巴上的" : "尾巴上的", "寒焰一同起伏。"),
+                        "你的火蜥蜴尾巴顶端".concat(
+                          i ? "燃着" : "燃着",
+                          "一簇标志性的幽蓝鬼火。它缓缓掠过空气，摇曳得令人分神而着迷；仅仅看着它，便会点燃你体内的能量。",
                         ),
                       ))
                     : e.hasTailTags(GLOBALS.BODY_TAG_FLUSHED) &&
                       (a += randCollection(
-                        " On the very tip of your tail"
+                        "你的尾巴尖端"
                           .concat(
-                            i ? "s are" : " is",
-                            " a burning pink flame that perpetuates through unknown means. All you know is that deep down inside, you're filled with boisterous, sweltering energy that waxes and wanes with your ",
+                            i ? "燃着" : "燃着",
+                            "一簇以未知方式永不熄灭的粉色火焰。你只知道，自己内心深处充满了喧腾灼热的能量，它会随着",
                           )
-                          .concat(i ? "tails'" : "tail's", " flame."),
-                        " To crown your salamander tail".concat(
-                          i ? "s are" : " is",
-                          " the telltale lick of pink flame. It drags slowly in the air in a distracting, enchanting fashion and just looking at it ignites your inner energy.",
+                          .concat(i ? "尾巴上的" : "尾巴上的", "火焰一同起伏。"),
+                        "你的火蜥蜴尾巴顶端".concat(
+                          i ? "燃着" : "燃着",
+                          "一簇标志性的粉色火焰。它缓缓掠过空气，摇曳得令人分神而着迷；仅仅看着它，便会点燃你体内的能量。",
                         ),
                       )),
                 a
               );
             case 8:
               return randCollection([
-                " Your legs are covered in " +
+                "你的双腿覆盖着" +
                   (e.hasLegTags(GLOBALS.BODY_TAG_SCALED)
-                    ? "scales"
-                    : e.skinNoun(!1, !0)) +
+                    ? "鳞片"
+                    : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0))) +
                   "。你的脚掌宽阔而平坦，足以承托体重并维持平衡；它们接近趾行结构，兼具两种形态的优点，末端还生着抓握力极强的爪。",
-                " Your salamander legs give you perfect, natural balance on top of clawed feet. Their muscles ripple just below your " +
+                "你的火蜥蜴双腿让你凭借带爪的双脚，自然而然地保持完美平衡。肌肉在你的" +
                   (e.hasLegTags(GLOBALS.BODY_TAG_SCALED)
-                    ? "scales"
-                    : e.skinNoun(!1, !0)) +
+                    ? "鳞片"
+                    : (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0))) +
                   "，随时蓄势待发。",
               ]);
             case 9:
@@ -7395,27 +7396,27 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var c = "";
               return (
                 (c +=
-                  "You have the face of a tanuki; you even have the whiskers and little black nose! A black mask covers the space around your eyes, itself differentiated from the rest of your " +
+                  "你有着狸猫般的面庞，连胡须和小小的黑鼻头都一应俱全！双眼周围覆着一圈黑色面罩，与其余的" +
                   s(r) +
-                  " by a band of white."),
+                  "之间隔着一道白色条纹。"),
                 r.skinType !== GLOBALS.SKIN_TYPE_SKIN ||
                   r.hasFaceTags(GLOBALS.BODY_TAG_FURRED) ||
                   (c +=
-                    " The lack of fur does create something of a strange look but you've seen similar on half-tanuki."),
+                    "没有毛发让你的模样显得有些奇怪，不过你也曾在半狸猫身上见过类似的特征。"),
                 c
               );
             case 1:
               var h = "";
               return (
-                (h += " Your canine eyes have large"),
+                (h += "你的犬类双眼有着硕大的"),
                 t(r)
-                  ? (h += ", metallically glistening " + r.eyeColor + " irises")
+                  ? (h += "、泛着金属光泽的" + r.eyeColor + "虹膜")
                   : n(r)
-                    ? (h += ", shimmering " + r.eyeColor + " irises")
-                    : (o(r), (h += " " + r.eyeColor + " irises")),
+                    ? (h += "、闪烁着光芒的" + r.eyeColor + "虹膜")
+                    : (o(r), (h += "​" + r.eyeColor + "虹膜")),
                 (h +=
-                  " occupying most of their surface when the pupils are not dilated") +
-                  "."
+                  "；瞳孔未扩张时，虹膜几乎占据整个眼球表面") +
+                  "。"
               );
             case 2:
               var f = "",
@@ -7429,24 +7430,24 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return (
                 r.hasHair()
                   ? ((f +=
-                      " The " +
+                      "你的" +
                       r.hairDesc(!0, !0) +
                       "在头顶处分开，露出一对蛋形的"),
-                    d || (f += ", furry"),
-                    (f += " raccoon ears."),
+                    d || (f += "、毛茸茸的"),
+                    (f += "狸猫耳。"),
                     r.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Your hair is broken up by a pair of antennae protruding from the top of your head."))
-                  : ((f += " A pair of vaguely egg-shaped"),
-                    (f += " raccoon ears adorns your " + u(r) + "."),
+                        "你的头发间还伸出一对从头顶探出的触角。"))
+                  : ((f += "一对形状近似卵形的"),
+                    (f += "狸猫耳朵点缀在你的" + u(r) + "。"),
                     r.hasFaceTags(GLOBALS.BODY_TAG_ANTENNAE) &&
                       (f +=
-                        " Nearby, two antennae jut out from the top of your head.")),
+                        "附近还有两根触角从你的头顶伸出。")),
                 f
               );
             case 3:
               return (
-                " Your " +
+                "你的" +
                 r.mouthDesc(!0) +
                 "中有一条扁平的舌头，不断淌着口水。"
               );
@@ -7454,14 +7455,14 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               var g = "";
               return (
                 r.hasArmTags(GLOBALS.BODY_TAG_GOOEY)
-                  ? (g += " Your gooey arms end with gel-padded fingers. ")
+                  ? (g += "你的黏液手臂末端是带有胶质肉垫的手指。")
                   : r.hasFur()
                     ? (g +=
                         " 一层" +
                         r.furColor +
                         "毛发覆盖着你肩部以下的双臂，指尖还生着深棕色肉垫。")
                     : (g +=
-                        " Dark brown pads rest on the tips of each of your fingers. "),
+                        "每根手指尖端都长着深棕色的肉垫。"),
                 g + "它们甚至比最上等的皮革还要柔软而富有韧性。"
               );
             case 7:
@@ -7618,7 +7619,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 "毛发从肘部上方一路覆盖到强壮而带肉垫的手指尖端。你的手指比普通人略粗，也更具兽性，每根末端都长着一枚凶狠锋利的爪子。",
               );
             case 7:
-              return " You have one short, fluffy bear tail that occasionally waggles this way and that expressively.";
+              return "你有一条短短的蓬松熊尾，偶尔会富有感情地来回摆动。";
             case 8:
               return " 你的双腿强健有力，覆盖着一层蓬松的".concat(
                 e.furColor,
@@ -7779,7 +7780,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return " 你的蜥蜴尾巴修长蜿蜒，可以帮助维持平衡。表面覆盖着厚实坚韧的防护鳞片，尾端呈铲形。";
             case 9:
               var a =
-                " Your cock is a tapered slab of ribbed, veiny [pc.cockColor] meat, a thick knot at its base.";
+                "你的阴茎是一根逐渐收尖、布满棱纹与血管的[pc.cockColor]肉棒，根部有一个粗大的肉结。";
               return (
                 t.ballTags.includes(GLOBALS.BODY_TAG_INTERNAL) &&
                   (a +=
@@ -8050,7 +8051,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                             : 0 === rand(2)
                               ? (l += " 看起来普通的" + globalThis.cnAttrLabel(r.eyeColor))
                               : (l +=
-                                  " " + globalThis.cnAttrLabel(r.eyeColor) + "​"),
+                                  "​" + globalThis.cnAttrLabel(r.eyeColor) + "​"),
                         (l +=
                           "眼睛让你能够毫无困难地观察周围。")),
                 l
@@ -8120,7 +8121,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 r.hasFeet() &&
                   ((c += "，末端是"),
                   1 === r.legCount
-                    ? (c += "[a] " + globalThis.cnBodyLabel(r.foot(!0, !0)))
+                    ? (c += "​" + globalThis.cnBodyLabel(r.foot(!0, !0)))
                     : (c += globalThis.cnBodyLabel(r.feetDesc(!0, !0)))),
                 c + "。"
               );
@@ -8129,11 +8130,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               return "";
             default:
               return (
-                "<b> ERROR: This type doesn't have this body part! Type tag:" +
+                "<b>错误：此类型没有该身体部位！类型标签：" +
                 a +
-                ", Part: " +
+                "，部位：" +
                 i(s) +
-                ".</b>"
+                "。</b>"
               );
           }
         },
@@ -8401,11 +8402,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               switch (e.skinType) {
                 case GLOBALS.SKIN_TYPE_FUR:
                   t +=
-                    "，大部分覆盖着一层" + e.skinFurScales(!0, !0);
+                    "，大部分覆盖着一层" + (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0)):e.skinFurScales(!0, !0));
                   break;
                 case GLOBALS.SKIN_TYPE_SCALES:
                 case GLOBALS.SKIN_TYPE_CHITIN:
-                  t += "，覆盖着一层" + e.skinFurScales(!0, !0);
+                  t += "，覆盖着一层" + (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0)):e.skinFurScales(!0, !0));
                   break;
                 case GLOBALS.SKIN_TYPE_GOO:
                   e.getStatusEffect("Opaque Skin")
@@ -8417,16 +8418,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "，覆盖着" +
                     (0 === rand(2) ? "斑驳的" : "一层") +
                     "​" +
-                    e.skinFurScales(!0, !0)),
+                    (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0)):e.skinFurScales(!0, !0))),
                     e.hasLegTags(GLOBALS.BODY_TAG_FURRED) &&
                       (t +=
                         "，腰部以上如此，腰部以下则覆盖着相近颜色的毛发"));
                   break;
                 case GLOBALS.SKIN_TYPE_PLANT:
-                  t += "，覆盖着" + e.skinFurScales(!0, !0);
+                  t += "，覆盖着" + (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0)):e.skinFurScales(!0, !0));
                   break;
                 case GLOBALS.SKIN_TYPE_BARK:
-                  t += "，覆盖着一层" + e.skinFurScales(!0, !0);
+                  t += "，覆盖着一层" + (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinFurScales(!0, !0)):e.skinFurScales(!0, !0));
               }
               return t;
             })(e) + "。";
@@ -8497,7 +8498,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     !e.hasSkinTags(GLOBALS.BODY_TAG_FEATHERED)) ||
                   (t +=
                     " 你的" +
-                    e.skinNoun(!1, !0) +
+                    (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0)) +
                     "覆盖着一层柔软的" +
                     (e.hasSkinTags(GLOBALS.BODY_TAG_FEATHERED)
                       ? "羽毛"
@@ -8512,7 +8513,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     e.furColor +
                     " " +
                     (e.hasFur() || e.hasFeathers()
-                      ? e.skinNoun(!1, !0)
+                      ? (globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.skinNoun(!1, !0)):e.skinNoun(!1, !0))
                       : "毛发") +
                     "。")),
                 e.hasSkinTags(GLOBALS.BODY_TAG_WOOLY) &&
@@ -8524,7 +8525,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 e.hasSkinTags(GLOBALS.BODY_TAG_FRECKLED) &&
                   (e.hasFur() || e.hasFeathers()
                     ? (t += " 在你的体毛之下，雀")
-                    : (t += " F"),
+                    : (t += "​"),
                   (t += "斑点缀在各处皮肤上。")),
                 e.hasSkinTags(GLOBALS.BODY_TAG_SPIKED) &&
                   (t +=
@@ -8536,19 +8537,19 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               ) {
                 var n =
                     e.wingType === GLOBALS.BODY_TYPE_DEMONIC
-                      ? "devilishly"
-                      : "incredibly",
-                  o = e.mf("handsome", "cute");
+                      ? "邪气十足、"
+                      : "极其",
+                  o = e.mf("帅气", "可爱");
                 e.hasWings()
                   ? (t +=
-                      " 主翼下方、臀部两侧还长着一对较小的翅翼——它们太小，无法用于飞行，但却"
-                        .concat(n, " ")
-                        .concat(o, "，还能衬托你的臀胯曲线。"))
-                  : (t += " 一对"
+                      "主翼下方、臀部两侧还长着一对较小的翅翼——它们太小，无法用于飞行，但显得"
+                        .concat(n, "​")
+                        .concat(o, "，也更衬托你的臀胯曲线。"))
+                  : (t += "你的髋部上方长着一对"
                       .concat(n, "​")
                       .concat(
                         o,
-                        "，两只小翅膀从髋部上方生出。它们无法用于飞行，却能更好地衬托你的臀胯曲线。",
+                        "的小翅膀。它们无法用于飞行，却能更好地衬托你的臀胯曲线。",
                       ));
               }
               if (e.getStatusEffect(SEFFECTS.CumCovered)) {
@@ -9247,7 +9248,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                           Math.round(10 * e.cocks[o].thickness()) / 10 +
                           "英寸粗。")),
                 2 === n &&
-                  ((t += "\nThe " + r(o + 1) + "​"),
+                  ((t += "\n你的第" + r(o + 1) + "​"),
                   (t +=
                     globalThis.cnBodyLabel(e.simpleCockNoun(o)) +
                     "长" +
@@ -9582,7 +9583,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                           ? "诱人的环状软肉中央有一个精巧的小孔"
                           : "，在双臀之间微微肿起") +
                         "。");
-          } else t += "JESUS CHRIST THIS IS BUGGED YOU DON'T HAVE A BUTTHOLE";
+          } else t += "老天啊，这里出错了：你根本没有肛门";
           return (
             e.hasAssTattoo() &&
               (t +=
@@ -12391,7 +12392,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   r = function () {
                     (clearMenu(),
                       (window.lastStanding = o),
-                      addButton(0, globalThis.cnButtonLabel("Confirm"), function () {
+                      addButton(0, "确认", function () {
                         (output(
                           "\n你不再继续战斗，而是举起双手投降，希望能得到最好的结果。[party.som||你让[companion.name]也这么做，尽管[companion.hisHer]很不情愿。|你让所有队员也同样投降，并希望对方能够公平对待你们。]",
                         ),
@@ -12552,7 +12553,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   flags.TUT_STATUS >= 1 &&
                     addGatedButton(
                       3,
-                      globalThis.cnButtonLabel("Tease"),
+                      "挑逗",
                       function () {
                         var n = function (n) {
                           if ((clearMenu(), o.hasSensed(n))) {
@@ -12645,7 +12646,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                               }),
                               addButton(
                                 14,
-                                globalThis.cnButtonLabel("Back"),
+                                "返回",
                                 function () {
                                   return o.combatAI(e, t);
                                 },
@@ -12664,13 +12665,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       )
                     : addDisabledButton(
                         4,
-                        globalThis.cnButtonLabel("Sense"),
+                        "感知",
                         "",
                         "没有可以感知的目标！",
                       ),
                   addButton(
                     5,
-                    globalThis.cnButtonLabel("Defend"),
+                    "防御",
                     function () {
                       (clearMenu(),
                         new POWERS.Defend(o).execute(e, t),
@@ -12681,7 +12682,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   ),
                   addButton(
                     10,
-                    globalThis.cnButtonLabel("Auto"),
+                    "自动",
                     function () {
                       (clearMenu(),
                         N(j(H.prototype), "combatAI", o).call(o, e, t),
@@ -12690,12 +12691,16 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "自动战斗",
                     "让游戏的 AI 自动执行操作。",
                   ),
-                  addButton(11,globalThis.cnCombatMenuLabel("Flow:".concat(["Player","Manual","Auto"][CombatManager.combatFlow])),
+                  addButton(
+                    11,
+                    "模式：".concat(
+                      ["玩家", "手动", "自动"][CombatManager.combatFlow],
+                    ),
                     function () {
                       (clearMenu(),
                         addButton(
                           0,
-                          globalThis.cnButtonLabel("Player"),
+                          "玩家",
                           function () {
                             ((CombatManager.combatFlow = 0), o.combatAI(e, t));
                           },
@@ -12704,7 +12709,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         ),
                         addButton(
                           1,
-                          globalThis.cnButtonLabel("Manual"),
+                          "手动",
                           function () {
                             ((CombatManager.combatFlow = 1), o.combatAI(e, t));
                           },
@@ -12713,7 +12718,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         ),
                         addButton(
                           2,
-                          globalThis.cnButtonLabel("Auto"),
+                          "自动",
                           function () {
                             ((CombatManager.combatFlow = 2),
                               clearMenu(),
@@ -12725,7 +12730,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         ),
                         addButton(
                           14,
-                          globalThis.cnButtonLabel("Back"),
+                          "返回",
                           function () {
                             return o.combatAI(e, t);
                           },
@@ -12737,12 +12742,12 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     "更改战斗流程设置。",
                   ),
                   this === pc &&
-                    addButton(12, globalThis.cnButtonLabel("Inventory"), function () {
+                    addButton(12, "库存", function () {
                       return ui.showCombatInventory(e, t);
                     }),
                   addGatedButton(
                     13,
-                    globalThis.cnButtonLabel("Flee"),
+                    "逃跑",
                     function () {
                       return CombatManager.tryFlee(e, t);
                     },
@@ -12754,7 +12759,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   ),
                   addGatedButton(
                     14,
-                    globalThis.cnButtonLabel("Surrender"),
+                    "投降",
                     r,
                     "",
                     "不再抵抗，直接投降。",
@@ -12799,7 +12804,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   a(n.targetSelection(e, t)),
                   addButton(
                     14,
-                    globalThis.cnButtonLabel("Back"),
+                    "返回",
                     function () {
                       return o.combatAI(e, t);
                     },
@@ -16247,7 +16252,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         this.getDescription("CombatName"),
                         "大概也不会介意！",
                       )
-                  : "The last blow lands on ".concat(
+                  : "最后一击重重落在".concat(
                       this.getDescription("CombatName"),
                       "身上，打得这位猫女踉跄后退。她惊叫一声，跌坐在地，双腿摊开，丝滑的白色内裤暴露无遗。片刻后，她的脑袋也垂落到地面，彻底失去了战意。",
                     );
@@ -21406,13 +21411,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e += "呼吸沉重，看上去伤得不轻")
                         : this.RQ() < 0.5
@@ -22103,21 +22108,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e +=
                             "已经难以维持飞行，遍体鳞伤，看起来相当狼狈")
                         : this.RQ() < 0.5
                           ? (e += "随着欲望升高而喘息不止")
                           : (e +=
-                              "fluttering around and squawking, seeming relatively unscathed"),
-                  e + "."
+                              "拍打着翅膀四处乱飞、尖声鸣叫，看起来几乎毫发无伤"),
+                  e + "。"
                 );
               },
             },
@@ -22342,21 +22347,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e +=
                             "已经难以维持飞行，遍体鳞伤，看起来相当狼狈")
                         : this.RQ() < 0.5
                           ? (e += "随着欲望升高而喘息不止")
                           : (e +=
-                              "fluttering around and squawking, seeming relatively unscathed"),
-                  e + "."
+                              "拍打着翅膀四处乱飞、尖声鸣叫，看起来几乎毫发无伤"),
+                  e + "。"
                 );
               },
             },
@@ -22629,7 +22634,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "已经昏迷，彻底失去行动能力")
@@ -22978,13 +22983,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e +=
                             "正低声呻吟，遍体鳞伤到几乎无力维持双翼")
@@ -23687,9 +23692,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         this.getDescription("combatHisHer"),
                         "无心再战地跪倒在地。这全都归功于[party.isJustPC|你的努力|你们队伍的共同努力]。解决一个！",
                       )
-                  : "Getting hit yet again, ".concat(
+                  : "再次遭到攻击，".concat(
                       this.getDescription("combatName"),
-                      " staggers and falls down. Thankfully, that means [party.isJustPC|you have|your party has] one less problem to worry about.",
+                      "踉跄倒地。谢天谢地，这意味着[party.isJustPC|你少了|你的队伍少了]一个需要操心的敌人。",
                     );
               },
             },
@@ -24435,7 +24440,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HPQ() < 0.5
                     ? (e += "如今已开始动摇，疯狂挥舞着触手。")
@@ -24650,9 +24655,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         this.getDescription("combatHisHer"),
                         "无心再战地跪倒在地。这全都归功于[party.isJustPC|你的努力|你们队伍的共同努力]。解决一个！",
                       )
-                  : "Getting hit yet again, ".concat(
+                  : "再次遭到攻击，".concat(
                       this.getDescription("combatName"),
-                      " staggers and falls down. Thankfully, that means [party.isJustPC|you have|your party has] one less problem to worry about.",
+                      "踉跄倒地。谢天谢地，这意味着[party.isJustPC|你少了|你的队伍少了]一个需要操心的敌人。",
                     );
               },
             },
@@ -24672,8 +24677,8 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         : this.RQ() < 0.5
                           ? (e +=
                               "正低声呻吟，兴奋之态从渗液的花朵上一览无余")
-                          : (e += "standing strong"),
-                  e + "."
+                          : (e += "仍稳稳站着"),
+                  e + "。"
                 );
               },
             },
@@ -25270,7 +25275,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0 || this.resolve() <= 0
                     ? (e +=
@@ -28736,7 +28741,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HPQ() < 0.5
                     ? (e +=
@@ -31909,13 +31914,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e +=
                             "咬紧牙关，试图忍痛继续战斗")
@@ -32134,13 +32139,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e += "呼吸沉重，看上去伤得不轻")
                         : this.RQ() < 0.5
@@ -32369,13 +32374,13 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HP() <= 0
                     ? (e += "脸朝下倒在泥地里，几乎一动不动")
                     : this.resolve() <= 0
                       ? (e +=
-                          "completely flushed red, obviously on the brink of collapse")
+                          "满脸通红，显然已经濒临崩溃")
                       : this.HPQ() < 0.5
                         ? (e += "呼吸沉重，看上去伤得不轻")
                         : this.RQ() < 0.5
@@ -32796,7 +32801,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   t,
                   n = textify(
                     wu ||
-                      ((e = ["", " is "]),
+                      ((e = ["", "​"]),
                       t || (t = e.slice(0)),
                       (wu = Object.freeze(
                         Object.defineProperties(e, {
@@ -33261,7 +33266,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         : this.RQ() < 0.5
                           ? (e += "那根隆起的".concat(
                               this.getDescription("CombatNames"),
-                              " clit-dick is evident against her loincloth even as she hurls herself at you with renewed vigor; she's determined to give you everything she's got before she succumbs to her lusts.",
+                              "她裆布下那根阴蒂阴茎清晰可见；即便如此，她仍以全新的气势朝你猛扑而来，决心在屈服于欲望之前使出浑身解数。",
                             ))
                           : (e += "".concat(
                               this.getDescription("CombatName"),
@@ -33887,7 +33892,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HPQ() <= 0.33
                     ? (e +=
@@ -34183,7 +34188,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e +=
@@ -34195,7 +34200,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                         ? (e +=
                             "像发情的母狗般喘息，竭力压制自己的欲望。")
                         : (e +=
-                            "standing strong, unfazed by your battle thus far."),
+                            "仍稳稳站着，至今的战斗似乎未能撼动她。"),
                   e
                 );
               },
@@ -34521,7 +34526,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e +=
@@ -34854,7 +34859,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e += "已经昏迷。可怜的小狗。")
@@ -35263,7 +35268,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e += "脸朝下趴在地上呻吟。")
@@ -35271,7 +35276,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                       ? (e += "因疼痛而咬紧牙关。")
                       : this.RQ() < 0.5
                         ? (e += "随着欲望压倒理智，呼吸变得沉重。")
-                        : (e += "standing strong."),
+                        : (e += "仍稳稳站着。"),
                   e
                 );
               },
@@ -35489,7 +35494,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e += "已经无法行动。")
@@ -35771,7 +35776,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e +=
@@ -35979,7 +35984,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.isDefeated()
                     ? (e += "脸朝下趴在泥地里，气息微弱。")
@@ -37394,7 +37399,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               value: function () {
                 return "".concat(
                   this.getDescription("CombatName"),
-                  " fights with the resilience of undeath; you can't tell if he's wounded, tiring, or if specters like him can even feel such things.",
+                  "以亡灵般的韧性继续战斗；你无法判断他是否受了伤、是否感到疲惫，甚至不知道像他这样的幽灵能否感受到这些。",
                 );
               },
             },
@@ -38261,8 +38266,8 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 var o = textify(
                     Rf ||
                       (Rf = Nf([
-                        "\n        [char.Name] has changed [char.hisHer] set to ",
-                        ".",
+                        "\n        [char.Name]已将[char.hisHer]装备配置更换为",
+                        "。",
                       ])),
                     n.name,
                   ),
@@ -38541,7 +38546,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             {
               key: "encounterText",
               value: function () {
-                var e = "".concat(this.getDescription("CombatName"), " is ");
+                var e = "".concat(this.getDescription("CombatName"), "​");
                 return (
                   this.HPQ() < 0.5
                     ? (e +=
@@ -172598,7 +172603,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                     ])),
                   CombatHelper.descPhysicalDmg(o.owner, e ? 20 : 30),
                   e
-                    ? " and "
+                    ? "和"
                         .concat(CombatHelper.descPhysicalDmg(o.owner, 10), " ")
                         .concat(e, " damage")
                     : "",
@@ -243291,7 +243296,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             .then(function (e) {
               return showNotification(
                 "文件保存完成",
-                'File "'.concat(e, "/").concat(a, "保存成功。"),
+                "文件“".concat(e, "/").concat(a, "”保存成功。"),
               );
             })
             .catch(function (e) {
@@ -250762,7 +250767,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             ),
           addButton(
             0,
-            globalThis.cnButtonLabel("Confirm"),
+            "确认",
             function () {
               var t = readMainTextInput();
               if (!n(t))
@@ -253080,7 +253085,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 key: "desc",
                 get: function () {
                   var e =
-                    globalThis.cnPerkText("Permanent bonuses based on starting race, class, and background.");
+                    "根据初始种族、职业和背景获得的永久加成。";
                   return (
                     this.values.forEach(function (t, n) {
                       t &&
@@ -253298,7 +253303,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                             .forEach(function (e, n) {
                               ((window.target = t[n]),
                                 output(
-                                  "\n[target.CombatName] [tps|is|are] [target.isLustImmune|not ]affected by [attacker.combatNames] pheromones!".concat(
+                                  "\n[target.CombatName][tps||][target.isLustImmune|未|]受到[attacker.combatNames]的信息素影响！".concat(
                                     CombatHelper.output(e),
                                   ),
                                 ));
@@ -253462,7 +253467,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                             .forEach(function (e, n) {
                               ((window.target = t[n]),
                                 output(
-                                  "\n[target.CombatName] [tps|is|are] affected by [attacker.combatNames] aura!".concat(
+                                  "\n[target.CombatName][tps||]受到[attacker.combatNames]的光环影响！".concat(
                                     CombatHelper.output(e),
                                   ),
                                 ));
@@ -259345,9 +259350,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             for (var o = arguments.length, r = new Array(o), a = 0; a < o; a++)
               r[a] = arguments[a];
             return (
-              ((e = t.call.apply(t, [this].concat(r))).name = "Astrida Writ"),
+              ((e = t.call.apply(t, [this].concat(r))).name = "阿斯特里达通行令"),
               (e.description = function () {
-                return "A writ penned by Prince Philandros of Tychris two and a half centuries ago. Might be able to convince an equally ancient giant that you should be allowed to pass.";
+                return "两百五十年前由提克里斯的菲兰德罗斯王子签署的一纸通行令。或许能说服同样古老的巨人，让你获准通过。";
               }),
               (e.state = e.state || 0),
               e
@@ -259466,7 +259471,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   Ti ||
                     (Ti = Qm([
                       "\n    一阵撕裂般的剧痛猛然贯穿头颅，你呻吟着捂住前额。这个动作让你注意到掌下令人不安的位移感；当你挪开双手寻找源头时，很快便明白：<b>你长出了",
-                      " horns!</b> \n\n    Luckily, it doesn’t take much longer for the pair to settle into a new position, and your headache passes as quickly as it came.",
+                      "只角！</b> \n\n    幸运的是，这对角没过多久就稳定在新位置上；头痛来得快，去得也同样快。",
                     ])),
                   num2Text(e.horns),
                 ),
@@ -259486,7 +259491,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   ki ||
                     (ki = Qm([
                       "\n    一声突如其来的碎裂声让你猛然警觉，惊慌地四下寻找声音的来源，却没看见任何异样……至少，直到你低头，看见[var1||||不止]一对旧角躺在[char.feet]旁的地面上。<b>看来你只剩下",
-                      " horn[var0|s] left!</b>",
+                      "只角[var0|]了！</b>",
                     ])),
                   num2Text(e.horns),
                 ),
@@ -259614,7 +259619,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 Ci ||
                   (Ci = Qm([
                     "\n    [char.hasFur\n    |皮肤上传来细微的抓挠感，你的毛发开始变化。\n    |你浑身发痒了一两秒，随后毛发从全身各处冒出——不仅长在应有的位置，甚至也出现在一些你从未想过会长毛的地方。]<b>它们华美、柔顺而富有光泽，形成了一层浓密的",
-                    " pelt</b> anyone would be proud of, the kind you might expect to find on several bawdy tapestries throughout the Marches. You give the lush coat of fur an experimental run-through with your fingers, and suppress a shiver at the warm sensations the motion produces in the pit of your stomach. If you simply let go, you could pet yourself forever...",
+                    "毛皮</b>，足以令任何人自豪，就像边境地区那些情色挂毯上常见的华美皮毛。你试着用手指梳过这层丰厚毛发，动作在腹中激起一阵暖意，让你强忍住战栗。若彻底放任自己，你大概能永远这样抚摸下去……",
                   ])),
                 r,
               ),
@@ -259696,8 +259701,8 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 Hi ||
                   (Hi = Qm([
                     "\n    [rand\n        |随着地面似乎不断远离，你略显踉跄地向前一步。一切稳定下来后，你发现周围的世界似乎比以前小了一点——或者说，是你变大了。很快，绷紧的衣服证实了这一点：<b>你长高了",
-                    " inch[var0|es]</b>!\n        |You feel a momentary discomfort come over your entire body and stumble, holding out an arm to steady yourself before glancing downwards. Your center of gravity is noticeably higher... <b>you've become taller!</b>\n        |The hems of your [char.gear][var1| feels more constraining than usual|’s hems are too short],[char.hasHandwear| the fit of your [char.gloves] a tad too tight,] not to mention your [char.underwear]’s fit is now just a smidge too snug around your [char.waist]. <b>It seems you’ve gained ",
-                    " inch[var0|es] in height!</b>\n    ]\n    ",
+                    "英寸[var0|]</b>！\n        |一阵短暂的不适席卷全身，你踉跄了一下，伸出手臂稳住身体后低头查看。你的重心明显升高了……<b>你变得更高了！</b>\n        |你的[char.gear][var1|感觉比平常更拘束|的下摆变得太短了]，[char.hasHandwear|[char.gloves]也稍微有些紧，|]更不用说[char.underwear]在[char.waist]周围也略显紧绷。<b>看来你长高了",
+                    "英寸[var0|]！</b>\n    ]\n    ",
                   ])),
                 num2Text(a),
                 num2Text(a),
@@ -259747,7 +259752,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 Yi ||
                   (Yi = Qm([
                     "\n    [rand\n        |你的衣服似乎变大了一点，你却不知道原因；匆忙检查自己后，你终于明白了。<b>你没有以前那么高了。</b>\n        |一阵寒颤沿脊柱传遍四肢，你感觉全身每一块肌肉都在震颤。紧接着，你猛地抽搐起来——短暂却剧烈的痉挛令双臂胡乱挥舞，你也本能地蜷缩身体；幸好它很快便过去了。深呼吸几次后，你重新站直，却发现地面……似乎比刚才更近，视线高度也已下降。衣服松垮地挂在身上，你猛然意识到：<b>你的身高减少了",
-                    " inch[var0|es] in height!</b>\n    ]\n    ",
+                    "英寸[var0|]！</b>\n    ]\n    ",
                   ])),
                 num2Text(a),
               ),
@@ -260373,7 +260378,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 Ss ||
                   (Ss = Qm([
                     "\n    双臂传来的麻痒是新变化来临的第一个征兆；它顺畅地席卷全身，没有引发任何意外。<b>你现在拥有了",
-                    " skin!</b>",
+                    "皮肤！</b>",
                   ])),
                 r,
               ),
@@ -260449,17 +260454,17 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 function () {
                   switch (r) {
                     case "light-blue":
-                      return "changing your skin color to a celestial blue";
+                      return "你的肤色变成了天蓝色";
                     case "blue":
-                      return "leaving you with deep blue-colored skin";
+                      return "你的皮肤变成了深蓝色";
                     case "purple":
-                      return "altering your skin color to a royal purple";
+                      return "你的肤色变成了高贵的紫色";
                     case "lavender":
-                      return "changing your skin color to a soft lavender";
+                      return "你的肤色变成了柔和的薰衣草色";
                     case "pink":
-                      return "leaving you with pink skin";
+                      return "你的皮肤变成了粉色";
                     default:
-                      return "changing your skin color to ".concat(r);
+                      return "你的肤色变成了".concat(r);
                   }
                 },
               ],
@@ -269547,7 +269552,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "火焰之灵"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.threatMod = 30),
               (o.weaponPrimary = o.weaponSecondary =
                 Object.assign(new ITEMS.RustyKnife(), {
@@ -269598,7 +269603,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "石元素"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_CONSTRUCT),
               (o.genderPref = 0),
               (o.level = 2),
@@ -269635,7 +269640,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "With that last strike, the rocks holding ".concat(
+                  return "最后一击使维系".concat(
                     this.getDescription("combatName"),
                     "一块块地从它的身上脱落，直到最后只剩下一堆毫无生气的岩石。",
                   );
@@ -269667,7 +269672,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "Effigy"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_PLANT),
               (o.class = GLOBALS.CLASS_NONE),
               (o.background = GLOBALS.CLASS_NONE),
@@ -269795,7 +269800,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "With a pained yip, the translucent manifestation of ".concat(
+                  return "随着一声痛苦的呜咽，半透明的".concat(
                     this.getDescription("CombatName"),
                     "它无法保持自身的完整性，于是崩解了，在坠落到地面之前，只是一些零散的余烬罢了！",
                   );
@@ -269912,7 +269917,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "影分身"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_CONSTRUCT),
               (o.genderPref = 0),
               (o.level = 2),
@@ -270049,9 +270054,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "With a shriek, ".concat(
+                  return "伴随着一声尖啸，".concat(
                     this.getDescription("CombatName"),
-                    "那只鸟猛地向下坠向地面。伊瑟琳大声呼喊着他的名字，但那只鸟已经完全失去了控制！至少它还在呼吸。",
+                    "猛然坠地。伊瑟琳大声呼喊着它的名字，但那只鸟已经完全失去了战斗能力！至少它还在呼吸。",
                   );
                 },
               },
@@ -270147,7 +270152,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "守护傀儡"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_PLANT),
               (o.genderPref = 0),
               (o.level = 2),
@@ -270204,9 +270209,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "Weak and flimsy, ".concat(
+                  return "脆弱不堪的".concat(
                     this.getDescription("combatName"),
-                    "这些物品会分解成各自的组成部分。然而，由于制造者所创造的东西具有抗脆弱性，他完全可以一次次地将这些碎片重新组装起来……",
+                    "散架成了一个个零件。不过，工匠的造物有着愈挫愈强的特性，他可以一遍又一遍地用这些碎片把它们重新组装起来……",
                   );
                 },
               },
@@ -270234,7 +270239,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "被诅咒的木偶"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_PLANT),
               (o.genderPref = 0),
               (o.level = 2),
@@ -270271,9 +270276,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "Weak and flimsy, ".concat(
+                  return "脆弱不堪的".concat(
                     this.getDescription("combatName"),
-                    "这些物品会分解成各自的组成部分。然而，由于制造者所创造的东西具有抗脆弱性，他完全可以一次次地将这些碎片重新组装起来……",
+                    "散架成了一个个零件。不过，工匠的造物有着愈挫愈强的特性，他可以一遍又一遍地用这些碎片把它们重新组装起来……",
                   );
                 },
               },
@@ -270301,7 +270306,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "爆炸人偶"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_PLANT),
               (o.genderPref = 0),
               (o.level = 2),
@@ -270338,9 +270343,9 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "Weak and flimsy, ".concat(
+                  return "脆弱不堪的".concat(
                     this.getDescription("combatName"),
-                    "这些物品会分解成各自的组成部分。然而，由于制造者所创造的东西具有抗脆弱性，他完全可以一次次地将这些碎片重新组装起来……",
+                    "散架成了一个个零件。不过，工匠的造物有着愈挫愈强的特性，他可以一遍又一遍地用这些碎片把它们重新组装起来……",
                   );
                 },
               },
@@ -270368,7 +270373,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "狼灵"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.threatMod = 70 + o.owner.presence()),
               (o.taxa = GLOBALS.TAXA_ETHEREAL),
               o.libido(0, !0),
@@ -270416,7 +270421,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "狐火微光"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.threatMod = 30),
               (o.weaponPrimary = o.weaponSecondary =
                 Object.assign(new ITEMS.RustyKnife(), {
@@ -270454,7 +270459,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function () {
-                  return "With a soft pulse of cool heat, "
+                  return "伴随着一阵柔和的凉热脉动，"
                     .concat(
                       this.getDescription("combatName"),
                       "化作缕缕蔚蓝火焰，悄然重新融入其中",
@@ -270474,7 +270479,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "Sporeling"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_PLANT),
               (o.class = GLOBALS.CLASS_NONE),
               (o.background = GLOBALS.CLASS_NONE),
@@ -270520,11 +270525,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "encounterText",
                 value: function () {
-                  return "A sporeling dances beside the druidess looking ".concat(
+                  return "一只孢子孽生在德鲁伊身旁舞动，看上去".concat(
                     this.HPQ() > 0.5
-                      ? "healthier than ever"
-                      : "close to vanishing",
-                    ".",
+                      ? "比以往任何时候都更健康"
+                      : "就快消散了",
+                    "。",
                   );
                 },
               },
@@ -270546,7 +270551,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "火焰公牛"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_BEAST),
               (o.genderPref = 0),
               (o.level = 3),
@@ -270591,7 +270596,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "火焰舞者"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.genderPref = 1),
               (o.level = 5),
               (o.strengthAlloc = 0.5),
@@ -270624,11 +270629,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   return ""
                     .concat(
                       this.getDescription("CombatName"),
-                      ' collapses to her knees, her blades tumbling out of her hands. "My apologies, ',
+                      "跪倒在地，双刃从手中滑落。“抱歉，",
                     )
                     .concat(
                       this.owner.getDescription("master"),
-                      '... I am afraid my time is at an end. Until next time," she sighs, already fading into nothing but embers.',
+                      "……恐怕我的时间到了。下次再见。”她叹息着，已逐渐化为余烬消散。",
                     );
                 },
               },
@@ -270644,7 +270649,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "火焰骑士"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.genderPref = 0),
               (o.level = 5),
               (o.strengthAlloc = 1),
@@ -270686,11 +270691,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   return ""
                     .concat(
                       this.owner.getDescription("CombatName"),
-                      ' collapses to his knees, his greatsword tumbling out of his hands. "My apologies, ',
+                      "跪倒在地，巨剑从手中滑落。“抱歉，",
                     )
                     .concat(
                       this.owner.getDescription("master"),
-                      '... I am afraid my time is at an end. Until next time," he sighs, already fading into nothing but embers.',
+                      "……恐怕我的时间到了。下次再见。”他叹息着，已逐渐化为余烬消散。",
                     );
                 },
               },
@@ -270747,11 +270752,11 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                   return ""
                     .concat(
                       this.owner.getDescription("CombatName"),
-                      " begins to look less and less solid by the moment, returning to the jade mist surrounding your ring. \"I'm sorry, ",
+                      "的身影逐渐变得透明，重新化入戒指周围的翠绿色雾气中。“对不起，",
                     )
                     .concat(
                       this.owner.getDescription("master"),
-                      ", I can't help any further. Till next time!\"",
+                      "，我已经帮不上忙了。下次再见！”",
                     );
                 },
               },
@@ -270767,7 +270772,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "腐化晨曦剑"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_CONSTRUCT),
               (o.genderPref = 0),
               (o.level = 6),
@@ -270808,7 +270813,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "拉皮斯重装步兵"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_CONSTRUCT),
               (o.genderPref = 1),
               (o.femininity = 90),
@@ -270849,7 +270854,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 key: "encounterText",
                 value: function () {
                   return ""
-                    .concat(this.getDescription("CombatName"), " is at ")
+                    .concat(this.getDescription("CombatName"), "位于")
                     .concat(this.owner.getDescription("combatNames"), "侧面。");
                 },
               },
@@ -270874,7 +270879,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "邪异触手"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_DEMON),
               (o.femininity = 0),
               (o.tone = 40),
@@ -270912,21 +270917,21 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 key: "encounterText",
                 value: function () {
                   return ""
-                    .concat(this.getDescription("CombatName"), " is at ")
+                    .concat(this.getDescription("CombatName"), "位于")
                     .concat(this.owner.getDescription("combatNames"), "侧面。");
                 },
               },
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "With that last blow, "
+                  return "最后一击将"
                     .concat(
                       this.getDescription("CombatName"),
-                      " is severed from ",
+                      "从",
                     )
                     .concat(
                       this.owner.getDescription("combatNames"),
-                      "主体部分。它在地上蠕动了一会儿，随后化作一股浓绿色的雾气消散在了空气中。",
+                      "的主体上斩断。它在地上蠕动片刻，随后化作一股浓绿色雾气消散在空气中。",
                     );
                 },
               },
@@ -270948,7 +270953,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "Tentacles"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_DEMON),
               (o.isPlural = !0),
               (o.femininity = 0),
@@ -270988,7 +270993,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 key: "encounterText",
                 value: function () {
                   return ""
-                    .concat(this.getDescription("CombatName"), " are at ")
+                    .concat(this.getDescription("CombatName"), "位于")
                     .concat(this.owner.getDescription("combatNames"), "侧面。");
                 },
               },
@@ -271019,7 +271024,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "腐化的触手"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_DEMON),
               (o.femininity = 0),
               (o.tone = 40),
@@ -271057,7 +271062,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
                 key: "encounterText",
                 value: function () {
                   return ""
-                    .concat(this.getDescription("CombatName"), " is at ")
+                    .concat(this.getDescription("CombatName"), "位于")
                     .concat(this.owner.getDescription("combatNames"), "侧面。");
                 },
               },
@@ -271192,7 +271197,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function (e) {
-                  return "The great boar ".concat(
+                  return "巨大的野猪".concat(
                     this.getDescription("CombatName"),
                     "在倒下侧躺之前，它还发出了一声最后的、响亮的喷鼻声，随后便开始逐渐消散了。 [party.has ryn|埃瑟琳终于能够松了一口气……]",
                   );
@@ -271210,7 +271215,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "霜蛾"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_FEY),
               (o.class = GLOBALS.CLASS_WARRIOR),
               (o.background = GLOBALS.BG_BARBARIAN),
@@ -271278,7 +271283,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "欲望元素"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.threatMod = 30),
               (o.weaponPrimary = new ITEMS.AphrodisiacWhip()),
               (o.bust = "lust_elemental_bust"),
@@ -271309,7 +271314,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function () {
-                  return "Defeated, the ".concat(
+                  return "战败后，".concat(
                     this.getDescription("combatName"),
                     "随着一声长长的叹息，它又重新化作雾气消散了。",
                   );
@@ -271327,7 +271332,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "Slime"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.bust = "slime_pink_bust"),
               (o.genderPref = 1),
               setTaxa(Jk(o), o.taxa),
@@ -271363,7 +271368,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
               {
                 key: "defeatedText",
                 value: function () {
-                  return "As [attacker.combatNames] blow lands, "
+                  return "随着[attacker.combatNames]的攻击命中，"
                     .concat(
                       this.owner.getDescription("combatNames"),
                       "黏液已经无法维持自身的形态了。它倒在地上，重新变回了最初的黏稠状态。",
@@ -271386,7 +271391,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "Bear"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_BEAST),
               (o.genderPref = 0),
               (o.level = 7),
@@ -271707,7 +271712,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "水元素"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.taxa = GLOBALS.TAXA_CONSTRUCT),
               (o.class = GLOBALS.CLASS_CHARMER),
               (o.background = GLOBALS.BG_MINSTREL),
@@ -271745,7 +271750,7 @@ globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=Str
             return (
               Uk(this, n),
               ((o = t.call(this, e)).name = "远古守护者"),
-              (o.soloCombatPrefix = "the "),
+              (o.soloCombatPrefix = "这只"),
               (o.genderPref = 0),
               (o.level = 6),
               (o.strengthAlloc = 1),

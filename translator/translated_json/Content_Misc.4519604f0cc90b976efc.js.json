@@ -169275,7 +169275,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    [var0\n        |What is your sister’s name?\n        |You can’t name either of them after yourself!\n    ]\n    ",
-      "translation": "",
+      "translation": "\n    [var0\n        |你妹妹叫什么名字？\n        |你不能用自己的名字给她们中的任何一个命名！\n    ]\n    ",
       "start": 5692027,
       "end": 5692147,
       "line": 29762,
@@ -169289,7 +169289,10 @@
       "previousId": "Content_Misc.0384354704d22129d1da.js:5721786:5721906:727b291e0c47",
       "migrationMatch": "patience_unique_anchor",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "NameKiddo 流程中的可见条件提示；完整保留 var0 分支、换行及缩进。"
     },
     {
       "id": "Content_Misc.4519604f0cc90b976efc.js:5692434:5692439:0967082f2aa1",
@@ -169321,7 +169324,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n        What is your sister’s name?\n        ",
-      "translation": "",
+      "translation": "\n        你妹妹叫什么名字？\n        ",
       "start": 5692587,
       "end": 5692636,
       "line": 29780,
@@ -169335,7 +169338,10 @@
       "previousId": "Content_Misc.0384354704d22129d1da.js:5722364:5722413:62f5b43f58ef",
       "migrationMatch": "patience_unique_anchor",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "NameKiddo 流程中的可见提问；保留换行及缩进。"
     },
     {
       "id": "Content_Misc.4519604f0cc90b976efc.js:5692732:5692737:60a9e2501223",
@@ -169344,7 +169350,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "Sis",
-      "translation": "",
+      "translation": "妹妹",
       "start": 5692732,
       "end": 5692737,
       "line": 29784,
@@ -169358,7 +169364,10 @@
       "previousId": "Content_Misc.0384354704d22129d1da.js:5722513:5722518:60a9e2501223",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "传给 addMainTextInput() 的可见输入框占位文字，不参与后续姓名判断。"
     },
     {
       "id": "Content_Misc.4519604f0cc90b976efc.js:5693316:5693765:cb162b1048fc",

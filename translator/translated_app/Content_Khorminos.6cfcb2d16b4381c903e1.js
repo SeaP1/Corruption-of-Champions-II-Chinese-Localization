@@ -22537,7 +22537,7 @@ globalThis.cnButtonLabel=globalThis.cnButtonLabel||function(e){var t=String(e==n
                     ),
                   ),
                   processTime(2, 3),
-                  addButton(0, globalThis.cnButtonLabel("Next"), mainGameMenu, "", ""));
+                  addButton(0, "下一步", mainGameMenu, "", ""));
               },
               "",
               "你得改天再来吧。",

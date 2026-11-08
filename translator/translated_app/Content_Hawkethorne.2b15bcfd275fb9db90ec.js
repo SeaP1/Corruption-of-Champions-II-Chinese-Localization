@@ -28559,7 +28559,7 @@ var __cnSelectLabelMap={"Afro":"爆炸头","Afro Ponytail":"爆炸头马尾","Af
           };
           (addButton(
             0,
-            globalThis.cnButtonLabel("Confirm"),
+            "确认",
             function () {
               var e = readMainTextInput();
               if (!o(e)) return RiverChangeName(pc.name === e ? 2 : 1);
@@ -28583,7 +28583,7 @@ var __cnSelectLabelMap={"Afro":"爆炸头","Afro Ponytail":"爆炸头马尾","Af
           ),
             addButton(
               1,
-              globalThis.cnButtonLabel("Never Mind"),
+              "算了",
               function () {
                 (riverClear(),
                   output(
@@ -28608,7 +28608,7 @@ var __cnSelectLabelMap={"Afro":"爆炸头","Afro Ponytail":"爆炸头马尾","Af
             textify(
               h ||
                 (h = ae([
-                  "\n    \"Like I told you when we first met, if anyone wants people around Hawkethorne and the Marches to know something, all they have to do is come to me. It's not just the locals who get their news from me — it's practically everyone passing through town, and <b>they</b> will spread that word further into the Marches.\"\n\n    Right. You'd like to spread the word of your deeds out in the Marches, and let everyone know how they should address you in light of what you've accomplished during your adventures.\n    \n    \"Of course, of course.\" River waggles a finger at you. \"I've been keeping eyes and ears out for the exploits of our latest rising star — I know what you've been doing, because that's my job, after all. That being said, I'm not going to risk my reputation by spreading deceptions... so don't try claiming titles you haven't earned. Quite important, that. And there's the matter of the fee...\"\n    \n    [var0||Ah, yes. The fee, which you can't afford. \n    \n    River clicks his tongue at that. \"Ah, you poor thing. All right, I'll waive the fee, because I like you and know you're <b>really</b> broke, as opposed to just pretending to be broke like some people do at Garth's. But don't keep on doing this...\"]",
+                  "\n    “就像我初次见你时说的那样，若有人想让鹰棘镇和边疆一带的人知道什么，只需来找我即可。不只是本地人从我这里打听消息——几乎所有途经镇子的人都会来，而<b>他们</b>还会把消息进一步传遍边疆。”\n\n    没错。你想把自己的冒险事迹传遍边疆，让所有人都知道，凭你在旅途中取得的成就，他们该如何称呼你。\n    \n    “当然，当然。”瑞弗朝你晃了晃手指。“我一直在留心咱们这位新晋红人的壮举——我知道你都做了些什么，毕竟这就是我的工作。不过，我可不会冒着砸掉招牌的风险替人散播谎言……所以别想冒领自己尚未赢得的头衔。这一点相当重要。还有费用的问题……”\n    \n    [var0||啊，对。费用，而你付不起。 \n    \n    瑞弗咂了咂舌。“啊，你这可怜虫。好吧，我就免了这笔费用，因为我喜欢你，而且我知道你是<b>真的</b>穷，不像加斯那里某些只是假装没钱的人。不过可别老这样……”]",
                 ])),
             ),
             [
@@ -36030,7 +36030,7 @@ var __cnSelectLabelMap={"Afro":"爆炸头","Afro Ponytail":"爆炸头马尾","Af
               ),
             ),
             processTime(2),
-            addButton(0, globalThis.cnButtonLabel("Next"), mainGameMenu, "", ""));
+            addButton(0, "下一步", mainGameMenu, "", ""));
         }),
         (window.SugoAppearance = function () {
           (fe(),

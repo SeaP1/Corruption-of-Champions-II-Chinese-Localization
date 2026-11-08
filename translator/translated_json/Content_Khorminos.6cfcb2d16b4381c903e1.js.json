@@ -119844,7 +119844,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "Next",
-      "translation": "",
+      "translation": "下一步",
       "start": 4629418,
       "end": 4629424,
       "line": 22540,
@@ -119858,7 +119858,10 @@
       "previousId": "Content_Khorminos.a6bdc32f7abc0c44a7ea.js:4651510:4651516:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "addButton 的可见按钮标签。"
     },
     {
       "id": "Content_Khorminos.6cfcb2d16b4381c903e1.js:4629440:4629442:da39a3ee5e6b",

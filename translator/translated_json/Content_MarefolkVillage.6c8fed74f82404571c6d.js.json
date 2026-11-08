@@ -7303,7 +7303,7 @@
       "category": "button_or_tooltip",
       "shouldTranslate": true,
       "original": "Confirm",
-      "translation": "",
+      "translation": "确认",
       "start": 207394,
       "end": 207403,
       "line": 1278,
@@ -7317,7 +7317,10 @@
       "previousId": "Content_MarefolkVillage.6c8fed74f82404571c6d.js:208671:208680:04a212215ef9",
       "migrationMatch": "anchored_common_prefix",
       "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_state"
+      "updateStatus": "inherited_state",
+      "translationStatus": "manual",
+      "translationModel": "manual",
+      "curatedReason": "命名界面的 addButton 可见标签，不参与名称校验。"
     },
     {
       "id": "Content_MarefolkVillage.6c8fed74f82404571c6d.js:207493:207501:a45a746cd4ec",
