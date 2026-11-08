@@ -1,13 +1,97 @@
 ﻿import fs from "node:fs";
 import path from "node:path";
+import { rebaseRowsToSource } from "./js_text_tools.mjs";
 
 const TRANSLATED_JSON_DIR = path.resolve("translator", "translated_json");
 const TRANSLATED_APP_DIR = path.resolve("translator", "translated_app");
 const ORIGINAL_APP_DIR = path.resolve("resources", "app");
 const includeAll = process.argv.includes("--all");
+const DISPLAY_MAPPING_PATH = path.resolve("translator", "glossary", "mapping_apply.json");
+const DISPLAY_MAPPING_DOC = fs.existsSync(DISPLAY_MAPPING_PATH) ? JSON.parse(fs.readFileSync(DISPLAY_MAPPING_PATH, "utf8")) : { mappings: {} };
+function displayMapping(groupName) { return DISPLAY_MAPPING_DOC.mappings?.[groupName] || {}; }
+
 
 function jsStringLiteral(value) {
   return JSON.stringify(value);
+}
+
+function jsStringContent(value, quote = '"') {
+  let content = JSON.stringify(value).slice(1, -1);
+  if (quote === "'") content = content.replaceAll("'", "\\'");
+  if (quote === "`") content = content.replaceAll("`", "\\`").replaceAll("${", "\\${");
+  return content;
+}
+
+function looseCodePattern(code, flags = "g") {
+  const tokens = [];
+  for (let i = 0; i < code.length;) {
+    if (/\s/.test(code[i])) { i += 1; continue; }
+    const ch = code[i];
+    if (ch === '"' || ch === "'" || ch === "`") {
+      const quote = ch;
+      let j = i + 1, escaped = false;
+      while (j < code.length) {
+        const current = code[j++];
+        if (escaped) { escaped = false; continue; }
+        if (current === "\\") { escaped = true; continue; }
+        if (current === quote) break;
+      }
+      tokens.push(code.slice(i, j)); i = j; continue;
+    }
+    const identifier = /^[A-Za-z_$][\w$]*/.exec(code.slice(i));
+    if (identifier) { tokens.push(identifier[0]); i += identifier[0].length; continue; }
+    const number = /^(?:\d+(?:\.\d*)?|\.\d+)/.exec(code.slice(i));
+    if (number) { tokens.push(number[0]); i += number[0].length; continue; }
+    const operator = /^(?:===|!==|>>>|\*\*|=>|==|!=|<=|>=|&&|\|\||\+\+|--|\+=|-=|\*=|\/=|\?\?|\?\.)/.exec(code.slice(i));
+    if (operator) { tokens.push(operator[0]); i += operator[0].length; continue; }
+    tokens.push(ch); i += 1;
+  }
+  const escape = (value) => value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  let pattern = "";
+  for (let i = 0; i < tokens.length; i += 1) {
+    if (i) pattern += /^[\])}]$/.test(tokens[i]) ? "\\s*,?\\s*" : "\\s*";
+    pattern += escape(tokens[i]);
+  }
+  return new RegExp(pattern, flags);
+}
+
+function looseCount(source, code) {
+  return [...source.matchAll(looseCodePattern(code))].length;
+}
+
+function replaceLooseCode(source, from, to, { expected = 1, label = from, fatal = false, all = true } = {}) {
+  const fromCount = looseCount(source, from);
+  const toCount = looseCount(source, to);
+  if (fromCount === expected) return source.replace(looseCodePattern(from), all ? to : (...args) => to);
+  if (fromCount === 0 && toCount === expected) return source;
+  const message = `${label} pattern count ${fromCount}, expected ${expected}`;
+  if (fatal) throw new Error(message);
+  console.warn(message);
+  return source;
+}
+
+function replaceLooseAny(source, from, to, label = from) {
+  const fromCount = looseCount(source, from);
+  if (fromCount > 0) return source.replace(looseCodePattern(from), to);
+  if (looseCount(source, to) > 0) return source;
+  console.warn(`${label} pattern not found`);
+  return source;
+}
+
+function isSafeManualTextOverlay(row, source) {
+  return Boolean(
+    row &&
+    row.manualTextOverlay === true &&
+    typeof row.raw === "string" &&
+    row.raw.length > 0 &&
+    typeof row.translation === "string" &&
+    row.translation.length > 0 &&
+    typeof row.start === "number" &&
+    typeof row.end === "number" &&
+    row.end === row.start + row.raw.length &&
+    source.slice(row.start, row.end) === row.raw &&
+    !isPromptLeakTranslation(row)
+  );
 }
 
 function isWordChar(value) {
@@ -58,792 +142,926 @@ function isSafeReplacementRow(row, source) {
   }
 }
 
-function replaceStringLiterals(source, replacements) {
-  for (const [from, to] of replacements) {
-    source = source.split(JSON.stringify(from)).join(JSON.stringify(to));
-  }
-  return source;
-}
 
 function patchSelectItemShortLabels(source, appName) {
-  const hairMap = {
-    "Bob": "波波头", "Braided": "编辫", "Curls": "卷发", "Ponytail": "马尾", "Rugged": "粗犷发型", "Shaggy": "蓬乱短发",
-    "Short": "短发", "Dreadlocks": "脏辫", "Dread Ponytail": "脏辫马尾", "Side-Cut Dreads": "侧削脏辫",
-    "Afro": "爆炸头", "Afro Ponytail": "爆炸头马尾", "Afro Puffs": "爆炸头蓬蓬发", "Straight": "直发",
-    "Side-Cut": "侧削发", "Unkempt": "蓬乱", "Twintails": "双马尾", "Bun": "发髻", "Flattop": "平顶头",
-    "Mohawk": "莫霍克", "Spiky": "尖刺发", "Top Knot Dreadlocks": "顶髻脏辫", "Obfuscating Afro": "遮脸爆炸头",
-    "Fade": "渐层短发", "Box Braids": "盒形辫", "Braid Pompadour": "辫子蓬巴杜", "Pompadour": "蓬巴杜",
-    "Spiky with Bangs": "带刘海尖刺发", "Shave It": "剃光", "Trim": "修剪", "Long": "长须", "Bushman": "浓密胡须"
-  };
-  // Tattoo names are internal keys: keep e.name in English and translate only e.short.
-  // This map is invoked only inside the StylistsTattoos* function range below.
-  const tattooMap = {
-    "Heart-Mark": "心形印记", "Rune": "符文", "Slut": "荡妇", "Swirl": "漩涡", "Gothic Swirls": "哥特式漩涡",
-    "Runes": "符文", "Slut Markings": "荡妇标记", "Ivy and Vines": "常春藤与藤蔓", "Ivy": "常春藤",
-    "Hearts": "心形图案", "Serpent Eyes": "蛇之眼", "Vines and Flowers": "藤蔓与花朵", "Flames": "火焰",
-    "Wings": "羽翼", "Demonic Heart": "恶魔之心", "Cute Heart": "可爱之心", "Sun": "太阳", "Wolf": "狼", "Paw Print": "爪印"
-  };
+  const hairMap = displayMapping("cnHairLabel");
+  const beardMap = displayMapping("cnBeardLabel");
+  // Selector names are internal keys. Translate only the temporary display
+  // object and restore the English name before the game callback stores it.
+  const tattooMap = displayMapping("cnTattooLabel");
+  const makeupMap = displayMapping("cnMakeupLabel");
   const mapExpr = JSON.stringify(hairMap);
+  const beardMapExpr = JSON.stringify(beardMap);
   const tattooMapExpr = JSON.stringify(tattooMap);
-  const inject = "var __cnSelectLabelMap=" + mapExpr + ",__cnTattooLabelMap=" + tattooMapExpr + ",__cnSelectLabel=function(e){return __cnSelectLabelMap[e]||e},__cnPatchSelectShort=function(e){return e&&e.name&&__cnSelectLabelMap[e.name]&&(e.short=__cnSelectLabelMap[e.name]),e},__cnPatchTattooSelectItem=function(e){var t;return e&&e.name&&(t=__cnTattooLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t,e.short=t),e},__cnWrapTattooSelectCallback=function(e){return function(){var t=arguments[0];return t&&t.__cnOriginalName&&(t.name=t.__cnOriginalName,t.short=t.__cnOriginalShort,delete t.__cnOriginalName,delete t.__cnOriginalShort),e.apply(this,arguments)}};";
+  const makeupMapExpr = JSON.stringify(makeupMap);
+  const inject = "var __cnSelectLabelMap=" + mapExpr + ",__cnBeardLabelMap=" + beardMapExpr + ",__cnTattooLabelMap=" + tattooMapExpr + ",__cnMakeupLabelMap=" + makeupMapExpr + ",__cnSelectLabel=function(e){return __cnSelectLabelMap[e]||e},__cnPatchSelectShort=function(e){return e&&e.name&&__cnSelectLabelMap[e.name]&&(e.short=__cnSelectLabelMap[e.name]),e},__cnPatchHairSelectItem=function(e){var t;return e&&e.name&&(t=__cnSelectLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t),e},__cnPatchBeardSelectItem=function(e){var t;return e&&e.name&&(t=__cnBeardLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t),e},__cnWrapHairSelectCallback=function(e){return function(){var t=arguments[0];return t&&t.__cnOriginalName&&(t.name=t.__cnOriginalName,t.short=t.__cnOriginalShort,delete t.__cnOriginalName,delete t.__cnOriginalShort),e.apply(this,arguments)}},__cnPatchTattooSelectItem=function(e){var t;return e&&e.name&&(t=__cnTattooLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t),e},__cnWrapTattooSelectCallback=function(e){return function(){var t=arguments[0];return t&&t.__cnOriginalName&&(t.name=t.__cnOriginalName,t.short=t.__cnOriginalShort,delete t.__cnOriginalName,delete t.__cnOriginalShort),e.apply(this,arguments)}},__cnPatchMakeupSelectItem=function(e){var t;return e&&e.name&&(t=__cnMakeupLabelMap[e.name])&&(e.__cnOriginalName=e.name,e.__cnOriginalShort=e.short,e.name=t),e},__cnWrapMakeupSelectCallback=function(e){return function(){var t=arguments[0];return t&&t.__cnOriginalName&&(t.name=t.__cnOriginalName,t.short=t.__cnOriginalShort,delete t.__cnOriginalName,delete t.__cnOriginalShort),e.apply(this,arguments)}};";
   if (!source.includes("__cnPatchSelectShort=function")) {
-    if (appName.startsWith("Content_Hawkethorne.") || appName.startsWith("Content_MarefolkVillage.")) {
-      // Several menus in the same content bundle call stubItemForSelect.  Keep
-      // the display-only helper in bundle scope so tattoo and other menus can
-      // use it too; injecting it inside Hairdressing/Beard made it local to
-      // those functions and caused ReferenceError in StylistsTattoosAss.
-      source = inject + source;
-    }
+    if (appName.startsWith("Content_Hawkethorne.") || appName.startsWith("Content_MarefolkVillage.")) source = inject + source;
   }
-  const wrapGeneralSelectLabels = (part) => part.replace(
-    /(\b[a-zA-Z_$][\w$]*\.c\.stubItemForSelect\("([^"]+)","[^"]*",GLOBALS\.ITEM_MISC,[a-zA-Z_$][\w$]*(?:\)|\),\{canSelect:function\(\)\{return [^}]+\}\}))/g,
-    "__cnPatchSelectShort($1)"
-  );
-  if (appName.startsWith("Content_Hawkethorne.")) {
-    const tattooStart = source.indexOf("window.StylistsTattoosAss");
-    const tattooEnd = source.indexOf("window.StylistsBeards", tattooStart);
-    if (tattooStart >= 0 && tattooEnd > tattooStart) {
-      const beforeTattoo = wrapGeneralSelectLabels(source.slice(0, tattooStart));
-      const tattooRegion = source.slice(tattooStart, tattooEnd).replace(
-        /\bDoItemSelectTable\(([a-zA-Z_$][\w$]*),([a-zA-Z_$][\w$]*),/g,
-        "DoItemSelectTable($1.map(__cnPatchTattooSelectItem),__cnWrapTattooSelectCallback($2),"
-      );
-      const afterTattoo = wrapGeneralSelectLabels(source.slice(tattooEnd));
-      source = beforeTattoo + tattooRegion + afterTattoo;
-    } else {
-      source = wrapGeneralSelectLabels(source);
+
+  const patchSelectorRegion = ({ startAnchor, endAnchor, serviceName, itemHelper, callbackHelper, expected, label }) => {
+    const start = source.indexOf(startAnchor);
+    let end = endAnchor ? source.indexOf(endAnchor, start) : -1;
+    if (start >= 0 && end < 0) {
+      const nextWindow = /\(\s*window\.[A-Za-z_$][\w$]*\s*=\s*function\b/g;
+      nextWindow.lastIndex = start + startAnchor.length;
+      end = nextWindow.exec(source)?.index ?? source.length;
     }
-  } else if (appName.startsWith("Content_MarefolkVillage.")) {
-    source = wrapGeneralSelectLabels(source);
+    if (start < 0 || end <= start) throw new Error(appName + ": " + label + " selector region not found");
+    let region = source.slice(start, end);
+    const pattern = new RegExp("\\bDoItemSelectTable\\(\\s*([a-zA-Z_$][\\w$]*)\\s*,\\s*([a-zA-Z_$][\\w$]*)\\s*,\\s*" + serviceName + "\\s*,", "g");
+    let count = 0;
+    region = region.replace(pattern, (_, items, callback) => {
+      count++;
+      return "DoItemSelectTable(" + items + ".map(" + itemHelper + ")," + callbackHelper + "(" + callback + ")," + serviceName + ",";
+    });
+    if (count !== expected) throw new Error(appName + ": " + label + " selector count " + count + ", expected " + expected);
+    source = source.slice(0, start) + region + source.slice(end);
+  };
+
+  if (appName.startsWith("Content_Hawkethorne.")) {
+    patchSelectorRegion({ startAnchor: "window.StylistsHairdressing", endAnchor: "window.StylistsMakeup", serviceName: "StylistServices", itemHelper: "__cnPatchHairSelectItem", callbackHelper: "__cnWrapHairSelectCallback", expected: 1, label: "hair" });
+    patchSelectorRegion({ startAnchor: "window.StylistsMakeup", endAnchor: "window.StylistsTattoos", serviceName: "StylistsMakeup", itemHelper: "__cnPatchMakeupSelectItem", callbackHelper: "__cnWrapMakeupSelectCallback", expected: 3, label: "makeup" });
+    patchSelectorRegion({ startAnchor: "window.StylistsTattoosAss", endAnchor: "window.StylistsBeards", serviceName: "StylistsTattoos", itemHelper: "__cnPatchTattooSelectItem", callbackHelper: "__cnWrapTattooSelectCallback", expected: 8, label: "tattoo" });
+    patchSelectorRegion({ startAnchor: "window.StylistsBeards", serviceName: "StylistServices", itemHelper: "__cnPatchBeardSelectItem", callbackHelper: "__cnWrapHairSelectCallback", expected: 1, label: "beard" });
+  }
+  if (appName.startsWith("Content_MarefolkVillage.")) {
+    patchSelectorRegion({ startAnchor: "window.MarefolkStylistsBeards", endAnchor: "window.MarefolkStylistsHairdressing", serviceName: "MarefolkStylistsServices", itemHelper: "__cnPatchBeardSelectItem", callbackHelper: "__cnWrapHairSelectCallback", expected: 1, label: "beard" });
+    patchSelectorRegion({ startAnchor: "window.MarefolkStylistsHairdressing", serviceName: "MarefolkStylistsServices", itemHelper: "__cnPatchHairSelectItem", callbackHelper: "__cnWrapHairSelectCallback", expected: 1, label: "hair" });
+  }
+
+  return source;
+}
+
+function patch103QuestDisplayLabels(source) {
+  const questMap = displayMapping("cnQuestLabel");
+  const inject = "globalThis.cnQuestLabel=globalThis.cnQuestLabel||function(e){var t=String(e||\"\");return Object.prototype.hasOwnProperty.call(globalThis.cnQuestLabel.map,t)?globalThis.cnQuestLabel.map[t]:t};globalThis.cnQuestLabel.map=Object.assign(globalThis.cnQuestLabel.map||{}," + JSON.stringify(questMap) + ");";
+  if (!source.includes("globalThis.cnQuestLabel=globalThis.cnQuestLabel||function")) source = inject + source;
+  const selector = /(ref\s*:\s*a\s*\?\s*e\.selRef\s*:\s*null\s*,?\s*}\s*,)\s*n\.name\s*,/g;
+  const matches = [...source.matchAll(selector)];
+  if (matches.length !== 1) {
+    console.warn(`103 quest-list display selector pattern count ${matches.length}, expected 1`);
+    return source;
+  }
+  return source.replace(selector, '$1 globalThis.cnQuestLabel?globalThis.cnQuestLabel(n.name):n.name,');
+}
+
+function patch673QuestDisplayLabels(source) {
+  const questMap = displayMapping("cnQuestLabel");
+  const inject = "globalThis.cnQuestLabel=globalThis.cnQuestLabel||function(e){var t=String(e||\"\");return Object.prototype.hasOwnProperty.call(globalThis.cnQuestLabel.map,t)?globalThis.cnQuestLabel.map[t]:t};globalThis.cnQuestLabel.map=Object.assign(globalThis.cnQuestLabel.map||{}," + JSON.stringify(questMap) + ");";
+  if (!source.includes("globalThis.cnQuestLabel=globalThis.cnQuestLabel||function")) source = inject + source;
+  const selector = /(\)\)\s*,\s*)this\.name(\s*,\s*r\s*,\s*a\s*,\s*this\.currentDesc\(\)\s*,?\s*\))/g;
+  const matches = [...source.matchAll(selector)];
+  if (matches.length !== 1) {
+    console.warn("673: inline quest-blurb title selector not found uniquely; inline quest title mapping was not applied.");
+    return source;
+  }
+  return source.replace(selector, '$1(globalThis.cnQuestLabel?globalThis.cnQuestLabel(this.name):this.name)$2');
+}
+
+function patch673QuestCharacterLabels(source) {
+  const characterMap = displayMapping("cnCharacterLabel");
+  const inject = "globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function(e){var f=globalThis.cnCharacterLabel,t=String(e==null?\"\":e);if(Object.prototype.hasOwnProperty.call(f.map,t))return f.map[t];if(Object.prototype.hasOwnProperty.call(f.cache,t))return f.cache[t];function w(c){var n=c&&c.charCodeAt(0);return n>=65&&n<=90||n>=97&&n<=122}var r=t;for(var i=0;i<f.keys.length;i++){var k=f.keys[i],v=f.map[k],p=0;while((p=r.indexOf(k,p))>=0){var a=p===0||!w(r.charAt(p-1)),b=p+k.length===r.length||!w(r.charAt(p+k.length));if(a&&b){r=r.slice(0,p)+v+r.slice(p+k.length);p+=v.length}else p+=k.length}}return f.cache[t]=r};globalThis.cnCharacterLabel.map=Object.assign(globalThis.cnCharacterLabel.map||{}," + JSON.stringify(characterMap) + ");globalThis.cnCharacterLabel.cache={};globalThis.cnCharacterLabel.keys=Object.keys(globalThis.cnCharacterLabel.map).sort(function(a,b){return b.length-a.length});";
+  if (!source.includes("globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function")) source = inject + source;
+  const replacements = [
+    ['colorText(e.KohakuMet?"green":"gray","Kohaku")', 'colorText(e.KohakuMet?"green":"gray",globalThis.cnCharacterLabel("Kohaku"))', "Kohaku quest display"],
+    ['colorText(e.MikoMaiMet?"green":"gray","Miko and Mai")', 'colorText(e.MikoMaiMet?"green":"gray",globalThis.cnCharacterLabel("Miko and Mai"))', "Miko and Mai quest display"],
+    ['colorText(e.NakanoMet?"green":"gray","Nakano")', 'colorText(e.NakanoMet?"green":"gray",globalThis.cnCharacterLabel("Nakano"))', "Nakano quest display"],
+    [')),1===flags.ASHE_SPEAR_CHOICE?"Azzy":"Evelyn",1===flags.ASHE_SPEAR_CHOICE?', ')),globalThis.cnCharacterLabel(1===flags.ASHE_SPEAR_CHOICE?"Azzy":"Evelyn"),1===flags.ASHE_SPEAR_CHOICE?', "Ashe quest dynamic companion display"],
+    ['colorText(e.askedElthara?"green":"gray","Elthara")', 'colorText(e.askedElthara?"green":"gray",globalThis.cnCharacterLabel("Elthara"))', "Wyld Hunt Elthara display"],
+    ['colorText(e.askedHethia?"green":"gray","Hethia")', 'colorText(e.askedHethia?"green":"gray",globalThis.cnCharacterLabel("Hethia"))', "Wyld Hunt Hethia display"],
+    ['colorText(e.askedDaliza?"green":"gray","Daliza")', 'colorText(e.askedDaliza?"green":"gray",globalThis.cnCharacterLabel("Daliza"))', "Wyld Hunt Daliza display"],
+    ['.concat(flags.WAYFORT_OGRISH?"Ogrish":flags.WAYFORT_RAGS?"Ragnild":"Zuzaan",".")', '.concat(globalThis.cnCharacterLabel(flags.WAYFORT_OGRISH?"Ogrish":flags.WAYFORT_RAGS?"Ragnild":"Zuzaan"),".")', "Wayfort blacksmith display"],
+    ['.concat(flags.WAYFORT_NELIA?"Nelia":"Telfir",".")', '.concat(globalThis.cnCharacterLabel(flags.WAYFORT_NELIA?"Nelia":"Telfir"),".")', "Wayfort tailor display"],
+    ['.concat(flags.WAYFORT_EVERGREEN?"Evergreen":flags.WAYFORT_IMORA?"Imora":flags.WAYFORT_MAIDENS?"Miko & Mai":flags.WAYFORT_VIV?"Viviane":"Zuzaan",".")', '.concat(globalThis.cnCharacterLabel(flags.WAYFORT_EVERGREEN?"Evergreen":flags.WAYFORT_IMORA?"Imora":flags.WAYFORT_MAIDENS?"Miko & Mai":flags.WAYFORT_VIV?"Viviane":"Zuzaan"),".")', "Wayfort enchanter display"],
+    ['.concat(flags.ROOST_VIV?"Viviane":flags.ROOST_EVERGREEN?"Evergreen":"Zuzaan",".")', '.concat(globalThis.cnCharacterLabel(flags.ROOST_VIV?"Viviane":flags.ROOST_EVERGREEN?"Evergreen":"Zuzaan"),".")', "Dragon Roost enchanter display"],
+    ['.concat(1===flags.WAYFORT_DUNGEON_ENCH?"Evergreen":2===flags.WAYFORT_DUNGEON_ENCH?"Viviane":3===flags.WAYFORT_DUNGEON_ENCH?"Miko":4===flags.WAYFORT_DUNGEON_ENCH?"Mai":5===flags.WAYFORT_DUNGEON_ENCH?"Meira":"",".")', '.concat(globalThis.cnCharacterLabel(1===flags.WAYFORT_DUNGEON_ENCH?"Evergreen":2===flags.WAYFORT_DUNGEON_ENCH?"Viviane":3===flags.WAYFORT_DUNGEON_ENCH?"Miko":4===flags.WAYFORT_DUNGEON_ENCH?"Mai":5===flags.WAYFORT_DUNGEON_ENCH?"Meira":""),".")', "Dungeoneering enchanter display"],
+    [',e.oracleVisited)', ',globalThis.cnCharacterLabel(e.oracleVisited))', "Nightmemory oracle display"],
+  ];
+  for (const [original, patched, label] of replacements) {
+    source = replaceLooseAny(source, original, patched, `673 ${label}`);
   }
   return source;
 }
+
+function patch505CharacterNameLabels(source) {
+  const characterMap = displayMapping("cnCharacterLabel");
+  const inject = "globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function(e){var f=globalThis.cnCharacterLabel,t=String(e==null?\"\":e);if(Object.prototype.hasOwnProperty.call(f.map,t))return f.map[t];if(Object.prototype.hasOwnProperty.call(f.cache,t))return f.cache[t];function w(c){var n=c&&c.charCodeAt(0);return n>=65&&n<=90||n>=97&&n<=122}var r=t;for(var i=0;i<f.keys.length;i++){var k=f.keys[i],v=f.map[k],p=0;while((p=r.indexOf(k,p))>=0){var a=p===0||!w(r.charAt(p-1)),b=p+k.length===r.length||!w(r.charAt(p+k.length));if(a&&b){r=r.slice(0,p)+v+r.slice(p+k.length);p+=v.length}else p+=k.length}}return f.cache[t]=r};globalThis.cnCharacterLabel.map=Object.assign(globalThis.cnCharacterLabel.map||{}," + JSON.stringify(characterMap) + ");globalThis.cnCharacterLabel.cache={};globalThis.cnCharacterLabel.keys=Object.keys(globalThis.cnCharacterLabel.map).sort(function(a,b){return b.length-a.length});globalThis.cnCompNames=globalThis.cnCompNames||function(e){var t=globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(e):String(e==null?\"\":e),i=t.lastIndexOf(\", and \");if(i>=0)return t.slice(0,i).replace(/, /g,\"、\")+\"和\"+t.slice(i+6);i=t.lastIndexOf(\" and \");return i>=0?t.slice(0,i)+\"和\"+t.slice(i+5):t};";
+  if (!source.includes("globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function")) source = inject + source;
+  const stringOriginal = 'if("string"==typeof _)return O&&v.setDefaultCock(k),d(_),"continue";';
+  const stringPatched = 'if("string"==typeof _)return O&&v.setDefaultCock(k),d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_),"continue";';
+  const functionOriginals = [
+    'var I=g(P,s,u,C,w,v);return d(I),"continue"',
+    'var I=g(P,s,l,C,w,v);return d(I),"continue"'
+  ];
+  const functionPatchedReturn = 'return d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)';
+  const valueOriginals = [
+    'return d(B.toString()),"continue"}if("dayNight"===l)',
+    'return d(B.toString()),"continue"}if("dayNight"===u)'
+  ];
+  const valuePatchedReturn = 'return d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())';
+  const stringStart = source.indexOf('if ("string" == typeof _)');
+  if (stringStart >= 0) {
+    const stringEnd = source.indexOf('if (!(r in v))', stringStart);
+    let region = source.slice(stringStart, stringEnd > stringStart ? stringEnd : stringStart + 500);
+    const call = /\bd\(_\)/;
+    if ((region.match(new RegExp(call.source, "g")) || []).length === 1) {
+      region = region.replace(call, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_)');
+      source = source.slice(0, stringStart) + region + source.slice(stringEnd > stringStart ? stringEnd : stringStart + 500);
+    } else console.warn("505: dynamic string name parser hook not found uniquely.");
+  } else console.warn("505: dynamic string name parser branch not found.");
+  if (!source.includes(functionPatchedReturn)) {
+    const functionAnchor = source.indexOf("var I = g(P, s, l, C, w, v)");
+    if (functionAnchor < 0) console.warn("505: dynamic function name parser hook not found.");
+    else {
+      const functionEnd = source.indexOf('if ((O && v.setDefaultCock(k), "boolean" == typeof B))', functionAnchor);
+      let region = source.slice(functionAnchor, functionEnd);
+      if ((region.match(/\bd\(I\)/g) || []).length !== 1) console.warn("505: dynamic function name output not found uniquely.");
+      else {
+        region = region.replace(/\bd\(I\)/, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)');
+        source = source.slice(0, functionAnchor) + region + source.slice(functionEnd);
+      }
+    }
+  }
+  if (!source.includes(valuePatchedReturn)) {
+    const valueMatches = [...source.matchAll(/\bd\(B\.toString\(\)\)/g)];
+    if (valueMatches.length !== 1) console.warn("505: dynamic value name parser hook not found uniquely.");
+    else source = source.replace(/\bd\(B\.toString\(\)\)/, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())');
+  }
+  const __cnNameHookCounts = {
+    character: source.split("globalThis.cnCharacterLabel?globalThis.cnCharacterLabel").length - 1,
+    companionList: source.split("globalThis.cnCompNames?globalThis.cnCompNames").length - 1,
+  };
+  if (__cnNameHookCounts.character < 4 || __cnNameHookCounts.companionList < 3)
+    throw new Error("505 dynamic character mapping hooks incomplete: " + JSON.stringify(__cnNameHookCounts));
+  return source;
+}
+
+function patch505ItemDisplayLabels(source) {
+  const itemMap = displayMapping("cnItemLabel");
+  const inject = "globalThis.cnItemLabel=globalThis.cnItemLabel||function(e){var t=String(e||\"\");return Object.prototype.hasOwnProperty.call(globalThis.cnItemLabel.map,t)?globalThis.cnItemLabel.map[t]:t};globalThis.cnItemLabel.map=Object.assign(globalThis.cnItemLabel.map||{}," + JSON.stringify(itemMap) + ");";
+  if (!source.includes("globalThis.cnItemLabel=globalThis.cnItemLabel||function")) source = inject + source;
+  const replacements = [
+    [
+      '{key:"nameFancy",value:function(){var e=capitalize(this.name);return this.isUnique()',
+      '{key:"nameFancy",value:function(){var e=capitalize(globalThis.cnItemLabel?globalThis.cnItemLabel(this.name):this.name);return this.isUnique()'
+    ],
+    [
+      '{key:"shortFancy",value:function(){var e=capitalize(this.short);return this.isUnique()',
+      '{key:"shortFancy",value:function(){var e=capitalize(globalThis.cnItemLabel?globalThis.cnItemLabel(this.short):this.short);return this.isUnique()'
+    ]
+  ];
+  for (const [original, patched] of replacements) {
+    source = replaceLooseCode(source, original, patched, { label: "505 item display getter" });
+  }
+  return source;
+}
+
+function patch505StatDisplayLabels(source) {
+  const statMap = displayMapping("cnStatLabel");
+  if (!Object.keys(statMap).length) {
+    console.warn("505: stat display map is empty");
+    return source;
+  }
+  const inject = 'globalThis.cnStatLabel=globalThis.cnStatLabel||function(e){var t=String(e),m=globalThis.cnStatLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnStatLabel.map=Object.assign(globalThis.cnStatLabel.map||{},' + JSON.stringify(statMap) + ');';
+  if (!source.includes("globalThis.cnStatLabel=globalThis.cnStatLabel||function")) source = inject + source;
+  const original = 'i.createElement("div",null,t?"".concat(t,":"):" ")';
+  const patched = 'i.createElement("div",null,t?"".concat(globalThis.cnStatLabel?globalThis.cnStatLabel(t):t,":"):" ")';
+  return replaceLooseCode(source, original, patched, { expected: 2, label: "505 stat-label renderer" });
+}
+
+function patch673CompanionAffinityLabels(source) {
+  const statMap = displayMapping("cnStatLabel");
+  if (!Object.keys(statMap).length) {
+    console.warn("673: stat display map is empty; companion affinity labels were not mapped");
+    return source;
+  }
+  const inject = 'globalThis.cnStatLabel=globalThis.cnStatLabel||function(e){var t=String(e),m=globalThis.cnStatLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnStatLabel.map=Object.assign(globalThis.cnStatLabel.map||{},' + JSON.stringify(statMap) + ');';
+  if (!source.includes("globalThis.cnStatLabel=globalThis.cnStatLabel||function")) source = inject + source;
+  const original = 'this.allocStats.map(function(e){return GLOBALS.AFFINITY[e];}).join(", ")';
+  const patched = 'this.allocStats.map(function(e){var t=GLOBALS.AFFINITY[e];return globalThis.cnStatLabel?globalThis.cnStatLabel(t):t}).join("、")';
+  return replaceLooseCode(source, original, patched, { label: "673 companion affinity renderer", fatal: true });
+}
+
+function patch505EquipmentInfoLabels(source) {
+  const tagMap = displayMapping("cnItemTagLabel");
+  const attackMap = displayMapping("cnAttackTypeLabel");
+  const tagInject = 'globalThis.cnItemTagLabel=globalThis.cnItemTagLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnItemTagLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnItemTagLabel.map=Object.assign(globalThis.cnItemTagLabel.map||{},' + JSON.stringify(tagMap) + ');';
+  const attackInject = 'globalThis.cnAttackTypeLabel=globalThis.cnAttackTypeLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnAttackTypeLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnAttackTypeLabel.map=Object.assign(globalThis.cnAttackTypeLabel.map||{},' + JSON.stringify(attackMap) + ');';
+  if (!source.includes("globalThis.cnItemTagLabel=globalThis.cnItemTagLabel||function")) source = tagInject + source;
+  if (!source.includes("globalThis.cnAttackTypeLabel=globalThis.cnAttackTypeLabel||function")) source = attackInject + source;
+  const replacements = [
+    ['"".concat(capitalize(e).split(/(?=[A-Z])/).join(" "),": ")', '"".concat(globalThis.cnStatLabel?globalThis.cnStatLabel(capitalize(e).split(/(?=[A-Z])/).join(" ")):capitalize(e).split(/(?=[A-Z])/).join(" "),": ")', "equipment stat-label renderer"],
+    ["var t=GLOBALS.ITEMTAG_TITLES[e]", "var t=globalThis.cnItemTagLabel(GLOBALS.ITEMTAG_TITLES[e])", "equipment item-tag renderer"],
+    ["GLOBALS.ATTACK_TITLES[e]", "globalThis.cnAttackTypeLabel(GLOBALS.ATTACK_TITLES[e])", "equipment attack-type current renderer"],
+    ["GLOBALS.ATTACK_TITLES[t]", "globalThis.cnAttackTypeLabel(GLOBALS.ATTACK_TITLES[t])", "equipment attack-type comparison renderer"],
+    ["capitalize(GLOBALS.DAMAGE_TITLES[e])", "globalThis.cnDamageTypeLabel?globalThis.cnDamageTypeLabel(capitalize(GLOBALS.DAMAGE_TITLES[e])):capitalize(GLOBALS.DAMAGE_TITLES[e])", "equipment damage-type renderer"],
+  ];
+  for (const [original, patched, label] of replacements) {
+    source = replaceLooseAny(source, original, patched, `505 ${label}`);
+  }
+  return source;
+}
+
+function powerUiLabelHelper(map) {
+  return 'globalThis.cnPowerUiLabel=globalThis.cnPowerUiLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnPowerUiLabel.map||{},k=globalThis.cnPowerUiLabel.keys||[];for(var i=0;i<k.length;i++)t=t.split(k[i]).join(m[k[i]]);return t};globalThis.cnPowerUiLabel.map=Object.assign(globalThis.cnPowerUiLabel.map||{},' + JSON.stringify(map) + ');globalThis.cnPowerUiLabel.keys=Object.keys(globalThis.cnPowerUiLabel.map).sort(function(a,b){return b.length-a.length});';
+}
+
+function patch103PowerUiLabels(source) {
+  const map=displayMapping("cnPowerUiLabel"),inject=powerUiLabelHelper(map);
+  if(!source.includes("globalThis.cnPowerUiLabel=globalThis.cnPowerUiLabel||function"))source=inject+source;
+  source=replaceLooseAny(source,'r.createElement("span",{className:"className"},e.name)','r.createElement("span",{className:"className"},globalThis.cnPowerUiLabel(e.name))',"103 power class label");
+  source=replaceLooseAny(source,'r.createElement("div",null,s[o])','r.createElement("div",null,globalThis.cnPowerUiLabel(s[o]))',"103 power category label");
+  source=replaceLooseAny(source,'r.createElement("div",{key:t},"Set ".concat(t))','r.createElement("div",{key:t},globalThis.cnPowerUiLabel("Set").concat(t))',"103 power set label");
+  source=replaceLooseAny(source,'r.createElement("span",{className:"underText"},"Corruption")','r.createElement("span",{className:"underText"},globalThis.cnPowerUiLabel("Corruption"))',"103 corruption label");
+  source=replaceLooseAny(source,'r.createElement("span",{className:"corruptionTitle"},capitalize(n))','r.createElement("span",{className:"corruptionTitle"},globalThis.cnPowerUiLabel(capitalize(n)))',"103 corruption title");
+  return source;
+}
+
+function patch505PowerUiLabels(source) {
+  const map=displayMapping("cnPowerUiLabel"),inject=powerUiLabelHelper(map);
+  if(!source.includes("globalThis.cnPowerUiLabel=globalThis.cnPowerUiLabel||function"))source=inject+source;
+  const original='t.slice(0,4).join(" ")',patched='t.slice(0,4).map(globalThis.cnPowerUiLabel).join(" ")';
+  return replaceLooseCode(source,original,patched,{label:"505 power tag renderer"});
+}
+
+
+function patch505DamageTypeLabels(source) {
+  const map = displayMapping("cnDamageTypeLabel");
+  const inject = 'globalThis.cnDamageTypeLabel=globalThis.cnDamageTypeLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnDamageTypeLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnDamageTypeLabel.map=Object.assign(globalThis.cnDamageTypeLabel.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnDamageTypeLabel=globalThis.cnDamageTypeLabel||function")) source = inject + source;
+  const original = "GLOBALS.DAMAGE_TITLES[a]";
+  const patched = "globalThis.cnDamageTypeLabel(GLOBALS.DAMAGE_TITLES[a])";
+  if (source.includes(original)) source = source.split(original).join(patched);
+  else if (!source.includes(patched)) console.warn("505: damage-title renderer not found; damage type mapping was not applied");
+  return source;
+}
+
+function patch505PowerDisplayLabels(source) {
+  const powerMap = displayMapping("cnPowerLabel");
+  const inject = "globalThis.cnPowerLabel=globalThis.cnPowerLabel||function(e){var t=String(e||\"\");return Object.prototype.hasOwnProperty.call(globalThis.cnPowerLabel.map,t)?globalThis.cnPowerLabel.map[t]:t};globalThis.cnPowerLabel.map=Object.assign(globalThis.cnPowerLabel.map||{}," + JSON.stringify(powerMap) + ");";
+  if (!source.includes("globalThis.cnPowerLabel=globalThis.cnPowerLabel||function")) source = inject + source;
+  const original = "var d=function(e){return e.name.length>15?e.short:e.name}";
+  const patched = "var d=function(e){var t=e.name.length>15?e.short:e.name;return globalThis.cnPowerLabel?globalThis.cnPowerLabel(t):t}";
+  const selector = /return\s+e\.name\.length\s*>\s*15\s*\?\s*e\.short\s*:\s*e\.name\s*;/g;
+  const matches = [...source.matchAll(selector)];
+  if (matches.length !== 1) { console.warn(`505 power-card display selector pattern count ${matches.length}, expected 1`); return source; }
+  return source.replace(selector, 'var t=e.name.length>15?e.short:e.name;return globalThis.cnPowerLabel?globalThis.cnPowerLabel(t):t;');
+}
+
+function patch505InterruptPowerLabel(source) {
+  const from = "return\"<b>\".concat(this.owner.getDescription(\"CombatName's\"),\" \").concat(this.name,\"被打断！</b>\")";
+  const to = "return\"<b>\".concat(this.owner.getDescription(\"CombatName's\"),\" \").concat(globalThis.cnPowerLabel?globalThis.cnPowerLabel(this.name):this.name,\"被打断！</b>\")";
+  return replaceLooseCode(source, from, to, { label: "505 interrupt power display", fatal: true });
+}
+
+function effectLabelHelper() {
+  const map = displayMapping("cnEffectLabel");
+  return 'globalThis.cnEffectLabel=globalThis.cnEffectLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnEffectLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnEffectLabel.map=Object.assign(globalThis.cnEffectLabel.map||{},' + JSON.stringify(map) + ');';
+}
+
+function patch103EffectDisplayLabels(source) {
+  if (!source.includes("globalThis.cnEffectLabel=globalThis.cnEffectLabel||function")) source = effectLabelHelper() + source;
+  const replacements = [
+    ['ttH:capitalize(o.name)', 'ttH:globalThis.cnEffectLabel(capitalize(o.name))'],
+    ['__html:"<b>".concat(e.name,":</b> ")', '__html:"<b>".concat(globalThis.cnEffectLabel(e.name),":</b> ")'],
+    ['concat(d,"回合").concat(d>1?"s":"")', 'concat(d,"回合")'],
+    ['concat(n,"回合").concat(n>1?"s":"")', 'concat(n,"回合")']
+  ];
+  for (const [from, to] of replacements) {
+    const expected = from.startsWith('__html:') ? 3 : 1;
+    source = replaceLooseCode(source, from, to, { expected, label: `103 effect display: ${from}`, fatal: true });
+  }
+  return source;
+}
+
+function patch505EffectDisplayLabels(source) {
+  if (!source.includes("globalThis.cnEffectLabel=globalThis.cnEffectLabel||function")) source = effectLabelHelper() + source;
+  const from = 'concat(capitalize(a.name),"影响！</b>")';
+  const to = 'concat(globalThis.cnEffectLabel(capitalize(a.name)),"影响！</b>")';
+  return replaceLooseCode(source, from, to, { label: "505 effect display", fatal: true });
+}
+
+function patch673EviscerateDynamicCount(source) {
+  const skillStartMatch = /\)\.name\s*=\s*"Eviscerate"/.exec(source);
+  const skillStart = skillStartMatch ? skillStartMatch.index : -1;
+  if (skillStart < 0) { console.warn("673: Eviscerate block not found; numeric hit-count patch was not applied."); return source; }
+  const skillEndMatch = /\bo\.type\s*=\s*GLOBALS\.POWER_ENCOUNTER\b/g;
+  skillEndMatch.lastIndex = skillStart;
+  const skillEndFound = skillEndMatch.exec(source);
+  const skillEnd = skillEndFound ? skillEndFound.index : -1;
+  if (skillEnd < 0) { console.warn("673: Eviscerate block end not found; numeric hit-count patch was not applied."); return source; }
+  const block = source.slice(skillStart, skillEnd);
+  const original = 'num2Text(o.attacks())';
+  const count = block.split(original).length - 1;
+  if (count === 0 && block.includes('o.attacks()')) return source;
+  if (count !== 1) { console.warn(`673: Eviscerate hit-count expression found ${count} times; patch was not applied.`); return source; }
+  return source.slice(0, skillStart) + block.replace(original, 'o.attacks()') + source.slice(skillEnd);
+}
+
 
 function patch505CombatPhrases(source) {
-  source = source.replace(
-    'var e="".concat(this.getDescription("CombatName")," ").concat(this.pcplmf("are","are","is","is")," ");return this.HP()<=0?e+="out cold and out of commission":this.resolve()<=0?e+="squirming and panting with desire":this.HPQ()<.5?e+="身上带着多处割伤和瘀伤，不过 ".concat(this.pcplmf("you\'re","they\'re","he\'s","she\'s"),"仍凭着坚强的意志支撑着"):this.RQ()<.5?e+="shivering with the telltale signs of arousal":e+="仍在战斗中",e+"."',
-    'var e="".concat(this.getDescription("CombatName"));return this.HP()<=0?e+="已经失去意识，无法继续行动":this.resolve()<=0?e+="欲火缠身，喘息着无法继续行动":this.HPQ()<.5?e+="身上带着多处割伤和瘀伤，但仍凭着坚强的意志支撑着":this.RQ()<.5?e+="因难以掩饰的欲望而颤抖":e+="仍在战斗中",e+"。"'
-  );
-  source = source.replace(
-    'defeatedText",value:function(e){return"".concat(this.getDescription("CombatName")," ").concat(this.pcplmf("are","are","is","is")," too ").concat(e?"horny":"hurt"," to keep fighting!")}',
-    'defeatedText",value:function(e){return"".concat(this.getDescription("CombatName")).concat(e?"欲望过盛，无法继续战斗！":"伤势过重，无法继续战斗！")}'
-  );
-  // round3_505_literal_phrases
-  source = replaceStringLiterals(source, [
-    ["quarterstaff", "长棍"],
-    ["blade staff", "刃杖"],
-    ["Critical Hit!", "致命一击！"],
-    ["Arcane Strike", "奥术打击"],
-  ]);
+  // Code-safety fixes only. Visible prose now belongs to translated_json.
+  const oldBolstered = '(this.getCombatEffect(CEFFECTS.Bolstered)||this.hasStance(POWERS.BolsteringDance))&&(e+=this.getCombatEffect(CEFFECTS.Bolstered).values[0])';
+  const safeBolstered = 'this.getCombatEffect(CEFFECTS.Bolstered)&&(e+=this.getCombatEffect(CEFFECTS.Bolstered).values[0])';
+  const count = looseCount(source, oldBolstered);
+  if (count) source = replaceLooseCode(source, oldBolstered, safeBolstered, { expected: count, label: "505 Bolstered guard", fatal: true, all: true });
+  const perkLookup = 'e.getPerk("Arcane Strike")';
+  const perkLookupByClass = 'e.getPerk(PERKS.ArcaneStrike)';
+  if (source.includes(perkLookup)) source = source.replace(perkLookup, perkLookupByClass);
   return source;
 }
 
-function patch673UiLabels(source) {
-  // tattoo_appearance_templates_095
-  const tattooLabelMap673 = {
-    "heart-mark":"心形印记","rune":"符文","slut":"荡妇","swirl":"漩涡",
-    "gothic swirls":"哥特式漩涡","runes":"符文","slut markings":"荡妇标记",
-    "ivy and vines":"常春藤与藤蔓","ivy":"常春藤","hearts":"心形图案",
-    "serpent eyes":"蛇之眼","vines and flowers":"藤蔓与花朵","flames":"火焰",
-    "wings":"羽翼","demonic heart":"恶魔之心","cute heart":"可爱之心",
-    "sun":"太阳","wolf":"狼","paw print":"爪印","花藤丛中":"藤蔓与花朵"
-  };
-  const injectTattoo673 = `globalThis.cnTattooLabel=globalThis.cnTattooLabel||function(e){var t=String(e||"");var n=t.toLowerCase();return Object.prototype.hasOwnProperty.call(globalThis.cnTattooLabel.map,n)?globalThis.cnTattooLabel.map[n]:t};globalThis.cnTattooLabel.map=Object.assign(globalThis.cnTattooLabel.map||{},${JSON.stringify(tattooLabelMap673)});`;
-  if (!source.includes("globalThis.cnTattooLabel=globalThis.cnTattooLabel||function")) source = source.includes('"use strict";') ? source.replace('"use strict";', '"use strict";' + injectTattoo673) : injectTattoo673 + source;
-
-  for (const [from, to] of [
-    [
-      'e.hasBackTattoo()&&(t+=" [pc.hasWings|Between your wings|Centered on your back] "+(ie(e.getBackTattoo())?"are tattoos":"is a tattoo")+" of [pc.backTattoo].")',
-      'e.hasBackTattoo()&&(t+=" [pc.hasWings|你的双翼之间|你的背部中央]纹着"+(ie(e.getBackTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getBackTattoo()):e.getBackTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasCollarTattoo()&&(t+=" [pc.hasMane|Hidden beneath your mane|All along your collar] "+(ie(e.getCollarTattoo())?"are tattoos":"is a tattoo")+" of [pc.collarTattoo].")',
-      'e.hasCollarTattoo()&&(t+=" [pc.hasMane|你的鬃毛下隐藏着|你的颈部一带纹着]"+(ie(e.getCollarTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getCollarTattoo()):e.getCollarTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasShoulderTattoo()&&(t+=" [pc.hasCollarTattoo|Nearby, y|Y]our shoulders are covered by "+(ie(e.getShoulderTattoo())?"tattoos":"a tattoo")+" of [pc.shoulderTattoo].")',
-      'e.hasShoulderTattoo()&&(t+=" [pc.hasCollarTattoo|附近，你的|你的]双肩覆盖着"+(ie(e.getShoulderTattoo())?"一组":"一处")+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getShoulderTattoo()):e.getShoulderTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasArmTattoo()&&(t+=" [pc.hasFur|Beneath your arms\' fur|[pc.hasArmTags furred|Beneath the fur on both of your arms|Across both of your arms]] is a set of matching tattoos of [pc.sleeveTattoo].")',
-      'e.hasArmTattoo()&&(t+=" [pc.hasFur|你双臂的毛发下|[pc.hasArmTags furred|你双臂的毛发下|你的双臂上]]纹着一组对称的"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getSleeveTattoo()):e.getSleeveTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasLegTattoo()&&(t+=" [pc.hasFur|Hidden underneath the fur of your legs|[pc.hasLegTags furred|Hidden underneath the fur of your legs|Running down your legs]] are tattoos of [pc.legTattoo].")',
-      'e.hasLegTattoo()&&(t+=" [pc.hasFur|你双腿的毛发下|[pc.hasLegTags furred|你双腿的毛发下|你的双腿上]]纹着"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getLegTattoo()):e.getLegTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasChestTattoo()&&(t+=" Across your [pc.chestNoun] is a tattoo of [a] [pc.chestTattoo].")',
-      'e.hasChestTattoo()&&(t+=" 你的[pc.chestNoun]上纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getChestTattoo()):e.getChestTattoo())+"纹身。")'
-    ],
-    [
-      'e.hasWombTattoo()&&("druidic fertility"===e.getWombTattoo()?t+=" Right above your [pc.crotch] is a tattoo made up of druidic swirls, lovingly imbued by Kalysea. They roughly depict the shape of a womb[pc.hasPussy| overlaid atop your own].":t+=" Right above your [pc.crotch] is a tattoo of [a] [pc.wombTattoo].")',
-      'e.hasWombTattoo()&&("druidic fertility"===e.getWombTattoo()?t+=" 你的胯部正上方纹着由德鲁伊式漩涡组成的纹身，并由卡莉西娅倾注爱意加持。图案大致呈子宫形状[pc.hasPussy|，正好覆盖在你自己的子宫位置上]。":t+=" 你的胯部正上方纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getWombTattoo()):e.getWombTattoo())+"纹身。")'
-    ],
-    [
-      'return e.hasAssTattoo()&&(t+=" Just above your correctly-located asshole is a tattoo of"+(ie(e.getShoulderTattoo())?"":" a")+" [pc.assTattoo]."),t',
-      'return e.hasAssTattoo()&&(t+=" 你的肛门正上方纹着一处"+(globalThis.cnTattooLabel?globalThis.cnTattooLabel(e.getAssTattoo()):e.getAssTattoo())+"纹身。"),t'
-    ]
-  ]) source = source.split(from).join(to);
-  // effigy_battle_text_095
-  // These are visible battle strings embedded in a minified class body, not translatable JSON literals.
-  const effigyDefeatFrom = '"Getting hit yet again, ".concat(this.getDescription("combatName")," staggers and falls down. Thankfully, that means [party.isJustPC|you have|your party has] one less problem to worry about.")';
-  const effigyDefeatTo = '"\u518d\u6b21\u906d\u53d7\u91cd\u521b\u540e\uff0c".concat(this.getDescription("combatName"),"\u8e09\u8dc4\u7740\u5012\u4e0b\u4e86\u3002\u8c22\u5929\u8c22\u5730\uff0c[party.isJustPC|\u4f60|\u4f60\u7684\u961f\u4f0d]\u73b0\u5728\u5c11\u4e86\u4e00\u4e2a\u9700\u8981\u5e94\u4ed8\u7684\u9ebb\u70e6\u3002")';
-  source = source.split(effigyDefeatFrom).join(effigyDefeatTo);
-
-  // Only alter the encounterText belonging to the class anchored by effigy_bust.
-  const effigyAnchor = 'e.bust="effigy_bust"';
-  const effigyStart = source.indexOf(effigyAnchor);
-  const deadFrom = 'return this.HP()<=0?e+="down and out of the fight":';
-  const deadTo = 'return this.HP()<=0?e="".concat(this.getDescription("CombatName")," \u5df2\u7ecf\u5012\u4e0b\uff0c\u65e0\u6cd5\u7ee7\u7eed\u6218\u6597"):';
-  if (effigyStart >= 0) {
-    const deadAt = source.indexOf(deadFrom, effigyStart);
-    if (deadAt >= effigyStart && deadAt < effigyStart + 4000) {
-      source = source.slice(0, deadAt) + deadTo + source.slice(deadAt + deadFrom.length);
-    }
+function patch673PerkDisplayLabels(source) {
+  const map = displayMapping("cnPerkText");
+  const inject = 'globalThis.cnPerkText=globalThis.cnPerkText||function(e){var t=String(e),m=globalThis.cnPerkText.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnPerkText.map=Object.assign(globalThis.cnPerkText.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnPerkText=globalThis.cnPerkText||function")) source = inject + source;
+  const text = '"Permanent bonuses based on starting race, class, and background."';
+  const candidates = [];
+  for (let at = source.indexOf(text); at >= 0; at = source.indexOf(text, at + text.length)) {
+    if (source.slice(at, at + 1200).includes("this.values.forEach")) candidates.push(at);
   }
-  // appearance_elegant_source_templates
-  // Source-level Appearance templates. Word choices come from cnAttrLabel/cnBodyLabel;
-  // these patches only adjust Chinese sentence glue where English word order cannot work.
-  for (const [from, to] of [
-    [
-      't="\n\nYou have a humanoid upper body with the usual torso, arms, hands, and fingers"',
-      't="\n\n你有类人的上半身，拥有常见的躯干、手臂、双手和手指"'
-    ],
-    [
-      'return" "+capitalize(num2Text(e.legCount))+" "+(["furred","gooey"][e.legTag(GLOBALS.BODY_TAG_FURRED,GLOBALS.BODY_TAG_GOOEY)]||"normal")+" human legs extend below your waist, ending in normal human feet."',
-      'return" 你的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.legCount)):num2Text(e.legCount))+"条普通的人类双腿从你的腰部向下延伸，末端是普通的人类双脚。"'
-    ],
-    [
-      'i+=" Your "+e.hairDesc(!0,!0)+" looks good on you, accentuating your features well."',
-      'i+=" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0))+"很适合你，也很好地衬托出你的五官。"'
-    ],
-    [
-      'a+" eyes allow you to take in your surroundings without trouble."',
-      'a+"眼睛让你能够毫无困难地观察周围。"'
-    ],
-    [
-      'case 10:return" 你的口中有一条舌头。"',
-      'case 10:return" 你的口中有一条舌头。"'
-    ],
-    [
-      'case 10:return" 你的口中有一条舌头。"',
-      'case 10:return" 你的口中有一条舌头。"'
-    ],
-    [
-      't+="Your sexual equipment is located at your","human"===e.race()&&e.isHalfHuman()||(t+=" humanoid"),t+=" waist. "',
-      't+="你的性器位于你的","human"===e.race()&&e.isHalfHuman()||(t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel("humanoid"):"humanoid")),t+="腰部。 "'
-    ]
-  ]) source = source.split(from).join(to);
+  if (candidates.length !== 1) throw new Error(`673 Starting Bonuses generator candidate count ${candidates.length}, expected 1`);
+  const start = candidates[0];
+  const end = source.indexOf('set: function', start);
+  if (end < 0 || end - start > 1500) throw new Error("673 Starting Bonuses generator bounds not found");
+  let region = source.slice(start, end);
+  region = region.replace(text, `globalThis.cnPerkText(${text})`);
+  const affinity = 'GLOBALS.AFFINITY[n]';
+  if (region.split(affinity).length - 1 !== 1) throw new Error("673 Starting Bonuses affinity value not found uniquely");
+  region = region.replace(affinity, 'globalThis.cnPerkText(GLOBALS.AFFINITY[n])');
+  return source.slice(0, start) + region + source.slice(end);
+}
 
-  // appearance_dynamic_673_round2
-  source = source.split('t<6?e+=", and":pc.femininity>50?').join('t<6?e+="，而":pc.femininity>50?');
-  source = source.replace(
-    '1===e.numTails?(i+=" A long cow tail with a",e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)?i+=" voluminous":i+=" puffy",i+=" tip swishes back and forth as if swatting at flies."):(i+=" "+capitalize(num2Text(e.numTails))+" long cow tails with",e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)?i+=" voluminous":i+=" puffy",i+=" tips swish back and forth as if swatting at flies.")',
-    '1===e.numTails?(i+=" 一条长长的牛尾有着",e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)?i+="丰厚的":i+="蓬松的",i+="尾尖，像在驱赶苍蝇般来回甩动。"):(i+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.numTails)):num2Text(e.numTails))+"条长长的牛尾有着",e.hasTailTags(GLOBALS.BODY_TAG_GOOEY)?i+="丰厚的":i+="蓬松的",i+="尾尖，像在驱赶苍蝇般来回甩动。")'
-  );
 
-  // appearance_source_gear_templates
-  // Translate dynamic gear-description templates at source.
-  for (const [from, to] of [
-    [
-      'l=s?"You\'re wearing "+(i?"":"[a] ")+"[pc.armor]":"Your [pc.armor] "',
-      'l=s?"你穿着[pc.armor]":"你的[pc.armor]"'
-    ],
-    [
-      'l+=s?", "+(i?"their":"its")+" weight causing "+(i?"them":"it")+" to clank with every step.":"clank"+(i?"":"s")+" and jingle"+(i?"":"s")+" with every step you take."',
-      'l+=s?"，"+(i?"它们的":"其")+"重量让"+(i?"它们":"它")+"随着每一步发出铿锵声。":"随着你的每一步发出铿锵碰撞声。"'
-    ],
-    [
-      'l+=s?", taking full advantage of the freedom of movement provided by the light armor.":(i?"are":"is")+" incredibly light, leaving you with greater freedom of movement than heavier apparel would allow."',
-      'l+=s?"，充分利用轻甲带来的行动自由。":"十分轻便，让你比穿着更沉重的装备时拥有更大的行动自由。"'
-    ],
-    [
-      'l+=oe()?" Your "+e.shoulders.name+" flows behind you, billowing in the cold wind.":" Your "+e.shoulders.name+" rest comfortably on your top, "+(e.shoulders.tags.includes(GLOBALS.ITEM_TAG_CLOTH)?"the cloth falling to fit you perfectly.":e.shoulders.tags.includes(GLOBALS.ITEM_TAG_LEATHER)?"the leather fitting your form surprisingly well.":"though the weight can be inconvenient at times.")',
-      'l+=oe()?" 你的"+e.shoulders.name+"在身后飘动，在寒风中翻卷。":" 你的"+e.shoulders.name+"舒适地披在你的上身，"+(e.shoulders.tags.includes(GLOBALS.ITEM_TAG_CLOTH)?"布料垂落得恰到好处，完美贴合你的身形。":e.shoulders.tags.includes(GLOBALS.ITEM_TAG_LEATHER)?"皮革意外地贴合你的身形。":"只是重量偶尔会有些碍事。")'
-    ]
-  ]) source = source.split(from).join(to);
+function patch103DirectionLabels(source) {
+  const map = displayMapping("cnDirectionLabel");
+  const inject = 'globalThis.cnDirectionLabel=globalThis.cnDirectionLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnDirectionLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnDirectionLabel.map=Object.assign(globalThis.cnDirectionLabel.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnDirectionLabel=globalThis.cnDirectionLabel||function")) source = inject + source;
+  // Keep North/East/South/West arrays untouched: they are used for input matching.
+  const titlePattern = /dangerouslySetInnerHTML:\s*\{\s*__html:\s*this\.props\.title\s*,?\s*\}/g;
+  const titleMatches = [...source.matchAll(titlePattern)].length;
+  if (titleMatches !== 1) throw new Error("103 direction display title count " + titleMatches + ", expected 1");
+  source = source.replace(titlePattern, 'dangerouslySetInnerHTML: { __html: globalThis.cnDirectionLabel ? globalThis.cnDirectionLabel(this.props.title) : this.props.title }');
+  const tipPattern = /ttH:\s*this\.props\.ttH\s*\?\s*this\.props\.ttH\s*:\s*this\.props\.title/g;
+  const tipMatches = [...source.matchAll(tipPattern)].length;
+  if (tipMatches !== 1) throw new Error("103 direction tooltip title count " + tipMatches + ", expected 1");
+  source = source.replace(tipPattern, 'ttH: this.props.ttH ? this.props.ttH : (globalThis.cnDirectionLabel ? globalThis.cnDirectionLabel(this.props.title) : this.props.title)');
+  return source;
+}
 
-  // appearance_673_attr_label_inject
-  // 673 owns most Appearance templates, so inject a small display-label map here too.
-  const attrLabelMap673 = {
-    "pale": "苍白", "fair": "白皙", "tanned": "晒黑", "olive": "橄榄色", "bronze": "古铜色", "dusky": "暗褐色", "dark": "深色",
-    "black": "黑色", "brown": "棕色", "blue": "蓝色", "pink": "粉色", "purple": "紫色", "red": "红色", "white": "白色",
-    "gray": "灰色", "green": "绿色", "gold": "金色", "silver": "银色", "humanoid": "类人型",
-    "short": "短", "slightly long": "略长的", "moderately long": "略长的", "medium-length": "中等长度", "shoulder-length": "齐肩的", "neck-length": "及颈的", "butt-length": "齐臀长",
-    "straight": "直发", "unkempt": "蓬乱的", "shaggy": "蓬乱的", "ponytail": "马尾", "one": "一", "two": "两", "three": "三", "four": "四"
+
+function patch673DirectionLabels(source) {
+  // Literal direction buttons are handled by patchMappedLiteralButtonLabels.
+  // Internal direction keys remain English.
+  return source;
+}
+
+function patch505CharacterPanelLabels(source) {
+  const map = displayMapping("cnCharacterPanelLabel");
+  const inject = 'globalThis.cnCharacterPanelLabel=globalThis.cnCharacterPanelLabel||function(e){var t=String(e),m=globalThis.cnCharacterPanelLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnCharacterPanelLabel.map=Object.assign(globalThis.cnCharacterPanelLabel.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnCharacterPanelLabel=globalThis.cnCharacterPanelLabel||function")) source = inject + source;
+  const likes = '"Likes: ".concat(';
+  const dislikes = '"Dislikes: ".concat(';
+  if ((source.split(likes).length - 1) !== 1 || (source.split(dislikes).length - 1) !== 1) {
+    console.warn("505: Likes/Dislikes display labels not found uniquely");
+    return source;
+  }
+  return source.replace(likes, 'globalThis.cnCharacterPanelLabel("Likes: ").concat(').replace(dislikes, 'globalThis.cnCharacterPanelLabel("Dislikes: ").concat(');
+}
+
+function patch673CombatMenuLabels(source) {
+  const map = displayMapping("cnCombatMenuLabel");
+  if (!Object.keys(map).length) {
+    console.warn("673: combat menu map is empty");
+    return source;
+  }
+  const inject = 'globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function(e){var t=String(e),m=globalThis.cnCombatMenuLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnCombatMenuLabel.map=Object.assign(globalThis.cnCombatMenuLabel.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnCombatMenuLabel=globalThis.cnCombatMenuLabel||function")) source = inject + source;
+  // Literal combat buttons are mapped earlier by patchMappedLiteralButtonLabels.
+  // Only the computed Flow label still needs this specialized display wrapper.
+  const flowOriginal = 'addButton(11,"Flow:".concat(["Player","Manual","Auto"][CombatManager.combatFlow]),';
+  const flowPatched = 'addButton(11,globalThis.cnCombatMenuLabel("Flow:".concat(["Player","Manual","Auto"][CombatManager.combatFlow])),';
+  const flowBefore = looseCount(source, flowOriginal);
+  if (flowBefore) source = replaceLooseCode(source, flowOriginal, flowPatched, { expected: flowBefore, label: "673 combat flow label", fatal: true });
+  return source;
+}
+
+
+function patch673GemPuzzleLabels(source) {
+  const map = displayMapping("cnGemPuzzleLabel");
+  if (!Object.keys(map).length) throw new Error("673: gem puzzle display map is empty");
+  const inject = 'globalThis.cnGemPuzzleLabel=globalThis.cnGemPuzzleLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnGemPuzzleLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnGemPuzzleLabel.map=Object.assign(globalThis.cnGemPuzzleLabel.map||{},' + JSON.stringify(map) + ');';
+  if (!source.includes("globalThis.cnGemPuzzleLabel=globalThis.cnGemPuzzleLabel||function")) source = inject + source;
+  const replacements = [
+    ['var r=e.gemType(n),a=G[r],i=e.gemPlaced(n)', 'var r=e.gemType(n),a=globalThis.cnGemPuzzleLabel(G[r]),i=e.gemPlaced(n)'],
+    ['.concat(G[u]||"empty")', '.concat(G[u]?globalThis.cnGemPuzzleLabel(G[u]):"空")'],
+    ['.concat(G[t+1],": ")', '.concat(globalThis.cnGemPuzzleLabel(G[t+1]),": ")'],
+  ];
+  for (const [from, to] of replacements) {
+    source = replaceLooseCode(source, from, to, {
+      expected: 1,
+      label: `673 gem puzzle display: ${from}`,
+      fatal: true,
+    });
+  }
+  return source;
+}
+
+
+function patch673UiLabels(source) {
+  // Mapping helpers only. All visible prose/templates live in translated_json.
+  const tattooMap = displayMapping("cnTattooLabel");
+  const injectTattoo = 'globalThis.cnTattooLabel=globalThis.cnTattooLabel||function(e){var t=String(e||"");var n=t.toLowerCase();return Object.prototype.hasOwnProperty.call(globalThis.cnTattooLabel.map,n)?globalThis.cnTattooLabel.map[n]:t};globalThis.cnTattooLabel.map=Object.assign(globalThis.cnTattooLabel.map||{},' + JSON.stringify(tattooMap) + ');';
+  if (!source.includes("globalThis.cnTattooLabel=globalThis.cnTattooLabel||function")) source = injectTattoo + source;
+
+  const attrMap = displayMapping("cnAttributeLabel673");
+  const injectAttr = 'globalThis.cnAttrLabel=globalThis.cnAttrLabel||function(e){var t=String(e==null?"":e),n=t.toLowerCase(),m=globalThis.cnAttrLabel.map||{};return Object.prototype.hasOwnProperty.call(m,n)?m[n]:t};globalThis.cnAttrLabel.map=Object.assign(globalThis.cnAttrLabel.map||{},' + JSON.stringify(attrMap) + ');';
+  if (!source.includes("globalThis.cnAttrLabel=globalThis.cnAttrLabel||function")) source = injectAttr + source;
+
+  // Dynamic values inside formatted Appearance text are display-only.
+  const appearanceFaceAnchor = source.indexOf("capitalize(e.eyeColor)");
+  const appearanceLegAnchor = source.indexOf("capitalize(num2Text(e.legCount))", appearanceFaceAnchor);
+  if (appearanceFaceAnchor < 0 || appearanceLegAnchor < 0) throw new Error("673 formatted face/leg Appearance code anchors not found");
+  const faceRegionStart = Math.max(0, appearanceFaceAnchor - 500);
+  const faceRegionEnd = Math.min(source.length, appearanceLegAnchor + 500);
+  let faceRegion = source.slice(faceRegionStart, faceRegionEnd);
+  faceRegion = faceRegion
+    .replace(/\be\.eyeColor\b/g, "globalThis.cnAttrLabel(e.eyeColor)")
+    .replace(/capitalize\(globalThis\.cnAttrLabel\(e\.eyeColor\)\)/g, "globalThis.cnAttrLabel(e.eyeColor)")
+    .replace(/capitalize\(num2Text\(e\.legCount\)\)/g, "globalThis.cnAttrLabel(num2Text(e.legCount))");
+  source = source.slice(0, faceRegionStart) + faceRegion + source.slice(faceRegionEnd);
+
+  const generalAppearanceEyeAnchor = source.indexOf("capitalize(r.eyeColor)");
+  const generalAppearanceLegAnchor = source.indexOf("capitalize(num2Text(r.legCount))", generalAppearanceEyeAnchor);
+  if (generalAppearanceEyeAnchor < 0 || generalAppearanceLegAnchor < 0) throw new Error("673 general Appearance code anchors not found");
+  const generalAppearanceStart = Math.max(0, generalAppearanceEyeAnchor - 900);
+  const generalAppearanceEnd = Math.min(source.length, generalAppearanceLegAnchor + 1400);
+  let generalAppearanceRegion = source.slice(generalAppearanceStart, generalAppearanceEnd);
+  generalAppearanceRegion = generalAppearanceRegion
+    .replace(/\br\.eyeColor\b/g, "globalThis.cnAttrLabel(r.eyeColor)")
+    .replace(/capitalize\(globalThis\.cnAttrLabel\(r\.eyeColor\)\)/g, "globalThis.cnAttrLabel(r.eyeColor)")
+    .replace(/capitalize\(num2Text\(r\.legCount\)\)/g, "globalThis.cnAttrLabel(num2Text(r.legCount))")
+    .replace(/\br\.mouthDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(r.mouthDesc($1))")
+    .replace(/\br\.legs\(([^)]*)\)/g, "globalThis.cnBodyLabel(r.legs($1))")
+    .replace(/\br\.leg\(([^)]*)\)/g, "globalThis.cnBodyLabel(r.leg($1))")
+    .replace(/\br\.feetDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(r.feetDesc($1))")
+    .replace(/\br\.foot\(([^)]*)\)/g, "globalThis.cnBodyLabel(r.foot($1))");
+  source = source.slice(0, generalAppearanceStart) + generalAppearanceRegion + source.slice(generalAppearanceEnd);
+
+  // Catfolk Appearance uses a separate local variable and therefore needs its own
+  // display-only wrappers. Stored colors and descriptors remain unchanged.
+  const catAppearanceStart = source.indexOf("你的双眼有着竖直的狭缝状瞳孔");
+  const catAppearanceEnd = source.indexOf("case 8:", catAppearanceStart);
+  if (catAppearanceStart < 0 || catAppearanceEnd < 0) throw new Error("673 catfolk Appearance anchors not found");
+  let catAppearanceRegion = source.slice(catAppearanceStart, catAppearanceEnd);
+  catAppearanceRegion = catAppearanceRegion
+    .replace(/\br\.eyeColor\b/g, "globalThis.cnAttrLabel(r.eyeColor)")
+    .replace(/\br\.furColor\b/g, "globalThis.cnAttrLabel(r.furColor)")
+    .replace(/\br\.scaleColor\b/g, "globalThis.cnAttrLabel(r.scaleColor)")
+    .replace(/\br\.hairDesc\(!0,\s*!0\)/g, "globalThis.cnBodyLabel(r.hairDesc(!0,!0))")
+    .replace(/\br\.buttDesc\(\)/g, "globalThis.cnBodyLabel(r.buttDesc())")
+    .replace(/capitalize\(num2Text\(r\.numTails\)\)/g, 'globalThis.cnAttrLabel(num2Text(r.numTails)) + "条"')
+    .replace(/" "\s*\+\s*globalThis\.cnAttrLabel\(num2Text\(r\.numTails\)\)\s*\+\s*"条"/g, 'globalThis.cnAttrLabel(num2Text(r.numTails)) + "条"');
+  source = source.slice(0, catAppearanceStart) + catAppearanceRegion + source.slice(catAppearanceEnd);
+
+  // Equine and fox tail descriptions are assembled from translated literal fragments
+  // plus dynamic colors/body descriptors. Map only those values at display time.
+  const equineTailColorAnchor = source.indexOf("t.hairColor");
+  const equineTailEnd = source.indexOf("case 8:", equineTailColorAnchor);
+  if (equineTailColorAnchor < 0 || equineTailEnd < 0) throw new Error("673 equine tail Appearance anchors not found");
+  const equineTailStart = Math.max(0, equineTailColorAnchor - 180);
+  let equineTailRegion = source.slice(equineTailStart, equineTailEnd);
+  if ((equineTailRegion.match(/t\.hairColor/g) ?? []).length !== 1 || (equineTailRegion.match(/t\.buttDesc\(\)/g) ?? []).length !== 1)
+    throw new Error("673 equine tail dynamic value counts changed");
+  equineTailRegion = equineTailRegion
+    .replace(/t\.hairColor/g, "globalThis.cnAttrLabel(t.hairColor)")
+    .replace(/t\.buttDesc\(\)/g, "globalThis.cnBodyLabel(t.buttDesc())");
+  source = source.slice(0, equineTailStart) + equineTailRegion + source.slice(equineTailEnd);
+
+  const foxTailNumberAnchor = source.indexOf("capitalize(num2Text(t.numTails))", equineTailEnd);
+  const foxTailStart = source.lastIndexOf("case 7:", foxTailNumberAnchor);
+  const foxTailEnd = source.indexOf("case 8:", foxTailNumberAnchor);
+  if (foxTailNumberAnchor < 0 || foxTailStart < 0 || foxTailEnd < 0) throw new Error("673 fox tail Appearance anchors not found");
+  let foxTailRegion = source.slice(foxTailStart, foxTailEnd);
+  const foxCounts = {
+    fur: (foxTailRegion.match(/t\.furColor/g) ?? []).length,
+    butt: (foxTailRegion.match(/t\.buttDesc\(\)/g) ?? []).length,
+    count: (foxTailRegion.match(/capitalize\(num2Text\(t\.numTails\)\)/g) ?? []).length,
   };
-  const injectAttr673 = `globalThis.cnAttrLabel=globalThis.cnAttrLabel||function(e){var t=String(e);var n=t.toLowerCase();return Object.prototype.hasOwnProperty.call(globalThis.cnAttrLabel.map,n)?globalThis.cnAttrLabel.map[n]:t};globalThis.cnAttrLabel.map=Object.assign(globalThis.cnAttrLabel.map||{},${JSON.stringify(attrLabelMap673)});`;
-  if (!source.includes("globalThis.cnAttrLabel=globalThis.cnAttrLabel||function")) source = source.includes('"use strict";') ? source.replace('"use strict";', '"use strict";' + injectAttr673) : injectAttr673 + source;
+  if (foxCounts.fur !== 2 || foxCounts.butt !== 4 || foxCounts.count !== 2)
+    throw new Error("673 fox tail dynamic value counts changed: " + JSON.stringify(foxCounts));
+  foxTailRegion = foxTailRegion
+    .replace(/t\.furColor/g, "globalThis.cnAttrLabel(t.furColor)")
+    .replace(/t\.buttDesc\(\)/g, "globalThis.cnBodyLabel(t.buttDesc())")
+    .replace(/capitalize\(num2Text\(t\.numTails\)\)/g, "globalThis.cnAttrLabel(num2Text(t.numTails))");
+  source = source.slice(0, foxTailStart) + foxTailRegion + source.slice(foxTailEnd);
 
-  // appearance_source_templates_cleanup
-  // Prefer source template replacement over mixed Chinese/English output cleanup.
-  for (const [from, to] of [
-    [
-      'a+" eyes allow you to take in your surroundings without trouble."',
-      'a+"眼睛让你能够毫无困难地观察周围。"'
-    ],
-    [
-      '0===rand(10)?a+=" Fairly unremarkable "+e.eyeColor:0===rand(3)?a+=" Regular "+e.eyeColor:0===rand(2)?a+=" Normal-looking "+e.eyeColor:a+=" "+capitalize(e.eyeColor)+"-colored"',
-      '0===rand(10)?a+=" 相当普通的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.eyeColor):e.eyeColor):0===rand(3)?a+=" 普通的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.eyeColor):e.eyeColor):0===rand(2)?a+=" 看起来普通的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.eyeColor):e.eyeColor):a+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.eyeColor):capitalize(e.eyeColor))'
-    ],
-    [
-      'i+=" Your "+e.hairDesc(!0,!0)+" looks good on you, accentuating your features well."',
-      'i+=" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0))+"很适合你，也很好地衬托出你的五官。"'
-    ],
-    [
-      'return" "+capitalize(num2Text(e.legCount))+" "+(["furred","gooey"][e.legTag(GLOBALS.BODY_TAG_FURRED,GLOBALS.BODY_TAG_GOOEY)]||"normal")+" human legs extend below your waist, ending in normal human feet."',
-      'return" 你的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.legCount)):num2Text(e.legCount))+"条普通的人类双腿从你的腰部向下延伸，末端是普通的人类双脚。"'
-    ],
-    [
-      't+="You have a fuck-off six pack, bulging with heavy muscle. Above it, you have a broad chest":0===rand(2)?t+="You\'re ripped as hell, sporting the kind of muscle guys want and girls want around them. Much can be said about your pecs":t+="You have remarkably well defined, heavyweight abs, rounded and beefy. Above it, you have a muscled chest"',
-      't+="你拥有一副夸张结实、肌肉隆起的六块腹肌；其上方是宽阔的胸膛":0===rand(2)?t+="你浑身肌肉结实，拥有让男性羡慕、让女性渴望亲近的体格。你的胸肌同样值得称道":t+="你拥有轮廓分明、厚实有力的腹肌；其上方是肌肉结实的胸膛"'
-    ],
-    [
-      't+="Your sexual equipment is located at your","human"===e.race()&&e.isHalfHuman()||(t+=" humanoid"),t+=" waist. "',
-      't+="你的性器位于你的","human"===e.race()&&e.isHalfHuman()||(t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel("humanoid"):"humanoid")),t+="腰部。 "'
-    ]
-  ]) source = source.split(from).join(to);
+  // Cow-tail prose is translated as JSON fragments. Map only the dynamic count
+  // shown between those fragments; the stored tail count remains untouched.
+  const cowTailTextAnchor = source.indexOf("一条长长的牛尾，末端有一簇");
+  const cowTailEnd = source.indexOf("case 8:", cowTailTextAnchor);
+  if (cowTailTextAnchor < 0 || cowTailEnd < 0) throw new Error("673 cow-tail Appearance anchors not found");
+  const cowTailStart = Math.max(0, cowTailTextAnchor - 180);
+  let cowTailRegion = source.slice(cowTailStart, cowTailEnd);
+  const cowTailCount = (cowTailRegion.match(/capitalize\(num2Text\(e\.numTails\)\)/g) ?? []).length;
+  if (cowTailCount !== 1) throw new Error("673 cow-tail dynamic count changed: " + cowTailCount);
+  cowTailRegion = cowTailRegion
+    .replace(/capitalize\(num2Text\(e\.numTails\)\)/g, "globalThis.cnAttrLabel(num2Text(e.numTails))")
+    .replace(/" "\s*\+\s*globalThis\.cnAttrLabel\(num2Text\(e\.numTails\)\)/g, "globalThis.cnAttrLabel(num2Text(e.numTails))");
+  source = source.slice(0, cowTailStart) + cowTailRegion + source.slice(cowTailEnd);
 
-  for (const [from, to] of [["t+=\"Your \"+e.simpleCockNoun(0)+\" is \"+","t+=\"你的\"+e.simpleCockNoun(0)+\"长\"+"]]) source = source.split(from).join(to);
-  // appearance_round3_673_dynamic_fragments
-  for (const [from, to] of [[" The \"+e.hairDesc(!0,!0)+\" on your head nearly conceals a pair of mostly-human ears with slightly pointed tips, just like an elf's."," 你头上的\"+e.hairDesc(!0,!0)+\"几乎遮住了一对近似人类、耳尖微尖的耳朵，看起来就像精灵的耳朵。"],[" The \"+e.hairDesc(!0,!0)+\" on your head can't hide a pair of triangular, elven ears. They stick out a full "," 你头上的\"+e.hairDesc(!0,!0)+\"遮不住那对三角形的精灵耳。它们从你头部两侧伸出足足"],[" The \"+e.hairDesc(!0,!0)+\" atop your head can't possibly hide a pair of exquisitely long, elven ears. They extend a full "," 你头上的\"+e.hairDesc(!0,!0)+\"完全遮不住那对精致修长的精灵耳。它们从你头部两侧伸出足足"],[" inches from the sides of your head. Small extra muscles let them twitch or droop expressively.","英寸。细小的额外肌肉让它们能富有表情地抖动或垂下。"],[" inches from the sides of your head, triangular in shape with a bit of downward curve along their length. A thought is all it takes for them to change their angle to suit your expression, letting even the most rugged face pull off a cutesy pout with ease.","英寸，呈三角形，长度方向略微下弯。只要一个念头，它们就会配合你的表情改变角度，让再粗犷的面孔也能摆出可爱的噘嘴。"],["e+=\" You have \"+pc.hipDesc(!0)","e+=\" 你有\"+pc.hipDesc(!0)"],[" that blend into your pillar-like waist, and","，与你柱状般的腰身融为一体，而"],[" that match your trim, lithe body, and","，与你修长轻盈的身形相称，而"],[" that sway to and fro, emphasized by your trim body, and","，在修长身形的衬托下来回摇曳，而"],[" that draw the attention of those around you, and","，吸引着周围人的目光，而"],[" that give you a graceful stride, and","，让你的步伐显得优雅，而"],["e+=\" your \"+pc.buttDesc()","e+=\"你的\"+pc.buttDesc()"],[" looks great under your gear.","在装备下显得很好看。"],[" molds closely against your form.","紧贴着你的身形。"],[" fills out your clothing nicely.","把你的衣物撑得恰到好处。"],[" contracts with every motion, displaying the detailed curves of its lean musculature.","随着每个动作收紧，展现出精瘦肌肉的细致曲线。"],["\", taking full advantage of the freedom of movement provided by the light armor.","\"，充分利用轻甲带来的行动自由。"],["\"+\" incredibly light, leaving you with greater freedom of movement than heavier apparel would allow.","\"+\"十分轻便，让你比穿着更沉重的装备时拥有更大的行动自由。"],[" Your \"+e.shoulders.name+\" rest comfortably on your top, "," 你的\"+e.shoulders.name+\"舒适地披在你的上身，"],["You have two 乳房, capped with one 乳头 each.","你有两只乳房，每侧有一枚乳头。"],["You have two 乳房, capped with one 内陷的 乳头 each.","你有两只乳房，每侧有一枚内陷的乳头。"],["你拥有轮廓分明、厚实有力的腹肌；其上方是肌肉结实的胸膛, capped with one 0.3-inch 乳头 each.","你拥有轮廓分明、厚实有力的腹肌；其上方是肌肉结实的胸膛，每侧有一枚 0.3 英寸的乳头。"],["你拥有轮廓分明、厚实有力的腹肌；其上方是肌肉结实的胸膛, capped with one 0.3-inch 芽 each.","你拥有轮廓分明、厚实有力的腹肌；其上方是肌肉结实的胸膛，每侧有一枚 0.3 英寸的小乳头。"],["When you're aroused enough, your 0.4-inch nipples pop out, ready for action.","当你足够兴奋时，0.4 英寸的乳头会挺立出来，蓄势待发。"],["You could easily fill a DD bra.","你可以轻松撑满一件 DD 罩杯胸罩。"],["Your 工具 is ","你的阴茎长"],["Your 茎身 is ","你的阴茎长"],["Your 阳具 is ","你的阳具长"],["英寸，宽1.5英寸宽。","英寸，宽1.5英寸。"],["英寸，宽1.8英寸宽。","英寸，宽1.8英寸。"],["英寸，宽2.3英寸宽。","英寸，宽2.3英寸。"],["未受破坏的 肛门肛门","处女肛门"],["处女 肛门肛门","处女肛门"],["肛门肛门","肛门"],["屁眼肛门","肛门"]]) source = source.split(from).join(to);
+  // Elven ears use a dynamic head noun. Translate only that visible return value.
+  const elfAppearanceStart = source.indexOf("几乎遮住了那对略带尖角、近似人类的耳朵");
+  const elfAppearanceLast = source.indexOf("附近还有两根触角从你的头顶伸出。", elfAppearanceStart);
+  if (elfAppearanceStart < 0 || elfAppearanceLast < elfAppearanceStart) throw new Error("673 elven Appearance anchors not found");
+  const elfAppearanceEnd = Math.min(source.length, elfAppearanceLast + 250);
+  let elfAppearanceRegion = source.slice(elfAppearanceStart, elfAppearanceEnd);
+  elfAppearanceRegion = elfAppearanceRegion.replace(/\bu\(e\)/g, "globalThis.cnBodyLabel(u(e))");
+  source = source.slice(0, elfAppearanceStart) + elfAppearanceRegion + source.slice(elfAppearanceEnd);
 
-  // appearance_round2_dynamic_template_and_fragments
-  source = source.replace(
-    't="You are [pc.name], [a] [pc.raceAdj] [pc.class] and [pc.title].\\n    \\n    You ".concat(e.ra(e.originalRace)?"are [an] [pc.startingRace] [pc.sex] [pc.background]":"started your journey as [a] [pc.startingRace] [pc.background], but have become [an] [pc.race] during the course of your travels. You are a [pc.sex]",", standing [pc.height] tall with [a] [pc.bodyShape] physique. ");',
-    't="[pc.name]，你是一名[pc.raceAdj][pc.class]，同时也是[pc.title]。\\n    \\n    你".concat(e.ra(e.originalRace)?"是一名[pc.startingRace][pc.sex][pc.background]":"最初是一名[pc.startingRace][pc.background]，但在旅途中变成了[pc.race]。你现在是[pc.sex]","，身高[pc.height]，体型[pc.bodyShape]。 ");'
-  );
-  source = source.replace(
-    'r+=" The "+e.hairDesc(!0,!0)+" on your head can\'t hide a pair of triangular, elven ears. They stick out a full "+e.earLength+" inches from the sides of your head. Small extra muscles let them twitch or droop expressively."',
-    'r+=" 你头上的"+e.hairDesc(!0,!0)+"遮不住那对三角形的精灵耳。它们从你头部两侧伸出足足"+e.earLength+"英寸。细小的额外肌肉让它们能富有表情地抖动或垂下。"'
-  );
-  source = source.replace(
-    'h+=" A long "+t.hairColor+" horsetail hangs from your "+t.buttDesc()+", smooth and shiny."',
-    'h+=" 一条长长的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(t.hairColor):t.hairColor)+"马尾从你的"+t.buttDesc()+"垂下，光滑而闪亮。"'
-  );
-  source = source.replace(
-    'c+=" A swishing, "+t.furColor+" fox tail extends from your "+t.buttDesc()+", curling around your body — the soft fur feels lovely."',
-    'c+=" 一条摇摆的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(t.furColor):t.furColor)+"狐尾从你的"+t.buttDesc()+"伸出，卷绕在你的身体周围——柔软的毛发摸起来很舒服。"'
-  );
-  for (const [from, to] of [
-    ["灵活的 lip", "灵巧的嘴唇"],
-    ["棱角分明的下颌线, and 蓬乱的, 黑色胡须", "棱角分明的下颌线和蓬乱的黑色胡须"],
-    ["方形的下巴, chiseled jawline, and 蓬乱的, black 胡须", "方形的下巴、棱角分明的下颌线和蓬乱的黑色胡须"],
-    ["an androgynous 脸 which leaves a subtle girly印象 with 灵活的 lip", "一张中性的脸庞，带着微妙的少女气质和灵巧的嘴唇"],
-    ["You have two 乳房", "你有两只乳房"],
-    ["You could easily fill a DD bra.", "你可以轻松撑满一件 DD 罩杯胸罩。"],
-    ["You could easily fill an A bra.", "你可以轻松撑满一件 A 罩杯胸罩。"],
-    ["肛门肛门", "肛门"],
-    ["屁眼肛门", "肛门"],
-    ["无人认领 肛门", "未经使用的肛门"],
-    ["处女 肛门", "处女肛门"],
-    ["a 舒适的衣服", "一套舒适的衣服"],
-    ["Your 征服者胸甲 clanks and jingles with every step you take.", "你的征服者胸甲随着每一步发出铿锵碰撞声。"],
-    ["The average-sized areolae are", "平均大小的乳晕呈"],
-    [" inches around and ", "英寸周长，"],
-  ]) source = source.split(from).join(to);
+  // 673 face-intro spacing anchor: Chinese does not need a separator before the dynamic skin description.
+  const faceIntroPattern = /("human" !== e\.race\(\)\s*\?\s*"并且你有"\s*:\s*"有着",)\s*" ",/g;
+  const faceIntroCount = [...source.matchAll(faceIntroPattern)].length;
+  if (faceIntroCount !== 1) throw new Error("673 face-intro spacing pattern count " + faceIntroCount + ", expected 1");
+  source = source.replace(faceIntroPattern, '$1 "",');
 
-  // appearance_round1_exact_templates
-  source = source.replace(
-    'e.hands&&e.feet?l+=" Meanwhile, your hands and feet are clad in "+e.hands.name+" and "+e.feet.name+" respectively.":e.hands?l+=" Elsewhere, your hands are covered by your "+e.hands.name+".":e.feet&&(l+=" Meanwhile, your feet are garbed in your "+e.feet.name+".")',
-    'e.hands&&e.feet?l+=" 与此同时，你的双手和双脚分别穿戴着"+e.hands.name+"和"+e.feet.name+"。":e.hands?l+=" 此外，你的双手戴着"+e.hands.name+"。":e.feet&&(l+=" 与此同时，你的双脚穿着"+e.feet.name+"。")'
-  );
-  source = source.replace(
-    'e.head&&(l+=u?" Further up, your "+(rand(2)?e.head.name:"helm")+" sits atop your head, helping protect your skull from enemy attacks[silly| and motorcycle accidents].":" Further up, your "+e.head.name+" sits on your head, helping shield your eyes from the sun[silly| and keeping you looking stylish].")',
-    'e.head&&(l+=u?" 再往上，你的"+(rand(2)?e.head.name:"头盔")+"戴在头上，保护你的头颅免受敌人攻击[silly|以及摩托车事故]。":" 再往上，你的"+e.head.name+"戴在头上，帮助你的眼睛遮挡阳光[silly|同时让你看起来很时髦]。")'
-  );
-  source = source.replace(
-    'e.shoulders&&(l+=oe()?" Your "+e.shoulders.name+" flows behind you, billowing in the cold wind.":" Your "+e.shoulders.name+" rest comfortably on your top, "+(e.shoulders.tags.includes(GLOBALS.ITEM_TAG_CLOTH)?"the cloth falling to fit you perfectly.":e.shoulders.tags.includes(GLOBALS.ITEM_TAG_LEATHER)?"the leather fitting your form surprisingly well.":"though the weight can be inconvenient at times."))',
-    'e.shoulders&&(l+=oe()?" 你的"+e.shoulders.name+"在你身后飘动，在寒风中翻卷。":" 你的"+e.shoulders.name+"舒适地披在你的上身，"+(e.shoulders.tags.includes(GLOBALS.ITEM_TAG_CLOTH)?"布料垂落得恰到好处，完美贴合你的身形。":e.shoulders.tags.includes(GLOBALS.ITEM_TAG_LEATHER)?"皮革意外地贴合你的身形。":"只是重量偶尔会有些碍事。"))'
-  );
-  source = source.replace(
-    'else if(1===e.cockTotal())t+="Your "+e.simpleCockNoun(0)+" is "+Math.floor(10*e.cocks[0].length())/10+" inches long and ",Math.floor(10*e.cocks[0].thickness())/10<2&&Math.floor(10*e.cocks[0].thickness())/10==1?t+=Math.round(10*e.cocks[0].thickness())/10+" inch thick.":t+=Math.round(10*e.cocks[0].thickness())/10+" inches across.",t+=ce(e,0);',
-    'else if(1===e.cockTotal())t+="你的"+e.simpleCockNoun(0)+"长"+Math.floor(10*e.cocks[0].length())/10+"英寸，宽",Math.floor(10*e.cocks[0].thickness())/10<2&&Math.floor(10*e.cocks[0].thickness())/10==1?t+=Math.round(10*e.cocks[0].thickness())/10+"英寸。":t+=Math.round(10*e.cocks[0].thickness())/10+"英寸。",t+=ce(e,0);'
-  );
+  const chestStart = source.indexOf("num2Text(e.breastRows[0].breasts)");
+  const chestLast = source.lastIndexOf("num2Text(e.nipplesPerBreast)");
+  if (chestStart < 0 || chestLast < chestStart) throw new Error("673 formatted chest Appearance code anchors not found");
+  const chestRegionEnd = Math.min(source.length, chestLast + 1200);
+  let chestRegion = source.slice(chestStart, chestRegionEnd);
+  chestRegion = chestRegion
+    .replace(/num2Text\(e\.breastRows\[0\]\.breasts\)/g, "globalThis.cnAttrLabel(num2Text(e.breastRows[0].breasts))")
+    .replace(/num2Text\(e\.breastRows\[n\]\.breasts\)/g, "globalThis.cnAttrLabel(num2Text(e.breastRows[n].breasts))")
+    .replace(/num2Text\(e\.nipplesPerBreast\)/g, "globalThis.cnAttrLabel(num2Text(e.nipplesPerBreast))")
+    .replace(/\be\.breastDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.breastDesc($1))")
+    .replace(/(globalThis\.cnAttrLabel\(num2Text\(e\.breastRows\[(?:0|n)\]\.breasts\)\))\s*\+\s*" "\s*\+\s*(globalThis\.cnBodyLabel\(e\.breastDesc\([^)]*\)\))/g, "$1 + \"只\" + $2")
+    .replace(/\be\.nippleDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.nippleDesc($1))")
+    .replace(/\be\.areolaSizeDesc\(\)/g, "globalThis.cnAttrLabel(e.areolaSizeDesc())")
+    .replace(/\be\.nippleColor\b/g, "globalThis.cnAttrLabel(e.nippleColor)");
+  source = source.slice(0, chestStart) + chestRegion + source.slice(chestRegionEnd);
 
-  // appearance_scrotum_chinese_grammar
-  // Keep internal method/status keys in English; only alter generated display grammar.
-  source = source.replace(
-    '1===this.balls||a||(r+="s"),r',
-    '1===this.balls||a||/[\\u4e00-\\u9fff]/.test(r)||(r+="s"),r'
-  );
-  source = source.replace(
-    '0===e.cockTotal()?l+="[A] "+e.sackDesc(!0,!0)+" with "+a+" swings heavily under where a penis would normally grow.":l+="[A] "+e.sackDesc(!0,!0)+" with "+a+" swings heavily beneath your "+e.multiCockDesc()+"."',
-    '0===e.cockTotal()?l+="一个"+e.sackDesc(!0,!0)+"，里面有"+a+"，垂在通常应长出阴茎的位置下方。":l+="一个"+e.sackDesc(!0,!0)+"，里面有"+a+"，沉甸甸地悬在你的"+e.multiCockDesc()+"下方。"'
-  );
-  source = source.replace(
-    '0===e.cockTotal()?l+="An oozing, semi-solid sack with "+a+" swings heavily under where a penis would normally grow.":l+="An oozing, semi-solid sack with "+a+" swings heavily beneath your "+e.multiCockDesc()+"."',
-    '0===e.cockTotal()?l+="一个渗着黏液的半固态囊袋，里面有"+a+"，垂在通常应长出阴茎的位置下方。":l+="一个渗着黏液的半固态囊袋，里面有"+a+"，沉甸甸地悬在你的"+e.multiCockDesc()+"下方。"'
-  );
-  source = source.replace(
-    'e.hasRealCock()&&!e.hasTrapPouch()?1===e.balls?l+=" You estimate the testicle to be about "+Math.round(e.ballSize())+" ":l+=" You estimate each testicle to be about "+Math.round(e.ballSize())+" ":1===e.balls?l+=" You estimate it to be about "+Math.round(e.ballSize())+" ":l+=" You estimate each of them to be about "+Math.round(e.ballSize())+" ",1===Math.round(e.ballSize())?l+="inch":l+="inches";var u=Math.round(10*e.ballDiameter())/10;""!=(l+=" around and "+u+(1!==u?" inches":" inch")+" across.")',
-    'e.hasRealCock()&&!e.hasTrapPouch()?1===e.balls?l+=" 你估计这颗睾丸约有"+Math.round(e.ballSize())+"英寸周长":l+=" 你估计每颗睾丸约有"+Math.round(e.ballSize())+"英寸周长":1===e.balls?l+=" 你估计它约有"+Math.round(e.ballSize())+"英寸周长":l+=" 你估计每颗约有"+Math.round(e.ballSize())+"英寸周长";var u=Math.round(10*e.ballDiameter())/10;""!=(l+="，横径"+u+"英寸。")'
-  );
+  // Map dynamic genital/anal descriptors only inside the formatted Appearance generator.
+  const genitalStart = source.indexOf("e.hasBushel()");
+  const genitalLast = genitalStart < 0 ? -1 : source.indexOf("e.assholeDesc(!0)", genitalStart);
+  if (genitalStart < 0 || genitalLast < genitalStart) throw new Error("673 formatted genital Appearance anchors not found");
+  const genitalEnd = Math.min(source.length, genitalLast + 300);
+  let genitalRegion = source.slice(genitalStart, genitalEnd);
+  genitalRegion = genitalRegion
+    .replace(/\be\.simpleCockNoun\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.simpleCockNoun($1))")
+    .replace(/\be\.multiCockDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.multiCockDesc($1))")
+    .replace(/\be\.assholeDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.assholeDesc($1))")
+    .replace(/\be\.vaginaDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.vaginaDesc($1))")
+    .replace(/num2Text\(e\.vagina\.clits\)/g, "globalThis.cnAttrLabel(num2Text(e.vagina.clits))")
+    .replace(/e\.vagina\.clits > 1 && \(t \+= "s"\)/g, 'e.vagina.clits > 1 && (t += "")');
+  source = source.slice(0, genitalStart) + genitalRegion + source.slice(genitalEnd);
 
-  // appearance_round1b_exact_generated_fragments
-  source = source.replace(
-    'r+="Your face is ".concat("human"!==e.race()?"[rand|mostly|largely] ":"","human in form, ").concat("human"!==e.race()?"though you have":"with"," ")+e.skin(!0,!0,!0)+"."',
-    'r+="你的面容".concat("human"!==e.race()?"[rand|大体上|基本上] ":"","呈人类形态，").concat("human"!==e.race()?"不过你有":"有着","")+e.skin(!0,!0,!0)+"。"'
-  );
-  source = source.replace(
-    'r+="Your face is ".concat("human"!==e.race()?"[rand|mostly|largely] ":"","human in form, ").concat("human"!==e.race()?"and you have":"with"," ")+e.skin(!0,!0,!0)+"."',
-    'r+="你的面容".concat("human"!==e.race()?"[rand|大体上|基本上] ":"","呈人类形态，").concat("human"!==e.race()?"并且你有":"有着","")+e.skin(!0,!0,!0)+"。"'
-  );
-  source = source.replace(
-    't+="\\n\\nYou have one "+e.assholeDesc(!0)+", placed between your cheeks where it belongs"',
-    't+="\\n\\n你有一个"+e.assholeDesc(!0)+"，位于双臀之间本该在的位置"'
-  );
-  source = replaceStringLiterals(source, [
-    ["Attack", "攻击"],
-    ["Powers", "能力"],
-    ["Tease", "挑逗"],
-    ["Sense", "感知"],
-    ["Defend", "防御"],
-    ["Auto", "自动"],
-    ["Flow: Player", "流程：玩家"],
-    ["Inventory", "物品"],
-    ["Flee", "逃跑"],
-    ["Surrender", "投降"],
-    ["Critical Hit!", "致命一击！"],
-    ["standing strong", "状态良好"],
-    ["having a hard time remaining on her feet", "快要站不稳了"],
-    ["standing firm, relatively unscathed", "站得很稳，几乎毫发无伤"],
-    ["lying face-down in the dirt, barely moving", "脸朝下倒在泥地里，几乎一动不动"],
-    ["completely flushed red, obviously on the brink of collapse", "满脸通红，显然已经濒临崩溃"],
-    ["breathing heavily, looking pretty beat up", "呼吸沉重，看上去伤得不轻"],
-    ["panting with mounting arousal", "随着欲望升高而喘息不止"],
-    ["With an unearthly wail like popping wood and crackling leaves, ", "伴随着仿佛木头爆裂、树叶噼啪作响的超自然哀嚎，"],
-    ["vaguely make out the dark walls of a temple sitting high on the peak", "隐约看见一座坐落在峰顶的神殿黑墙"],
-    ["comfortable clothes", "舒适的衣服"],
-    ["Arcane Strike", "奥术打击"],
-    ["Stretchy", "柔韧"],
-    ["Starting Bonuses", "初始加成"],
-    ["Vaginal Wetness", "阴道湿润度"],
-    ["Vaginal Looseness", "阴道松弛度"],
-    ["Vaginal Capacity", "阴道容量"],
-    ["Fertility", "生育力"],
-    ["You conjure a bolt of lightning and hurl it at a foe. The target is always struck for ", "你召唤一道闪电并掷向敌人。目标必定会受到"],
-    ["You conjure a bolt of lightning that strikes a target enemy for ", "你召唤一道闪电，击中一个目标敌人并造成"],
-    ["You blast a target with dark magic. On a hit against the target's Magic Resistance, the target takes ", "你用黑暗魔法轰击目标。若命中目标的魔法抗性，目标会受到"],
-    ["demonic blade staff", "恶魔刃杖"],
-    ["Give up without a fight.", "不再抵抗，放弃战斗。"],
-    ["Surrendering now would be suicide.", "现在投降无异于自杀。"],
-    ["Attack Power", "攻击力"],
-    ["Armor Penetration", "护甲穿透"],
-    ["Spellpower", "法术强度"],
-    ["Spell Penetration", "法术穿透"],
-    ["Sexiness", "性感"],
-    ["Temptation", "诱惑"],
-    ["Accuracy", "命中"],
-    ["Critical Chance", "暴击率"],
-    ["Armor", "护甲"],
-    ["Physical Resist", "物理抗性"],
-    ["Warding", "守护"],
-    ["Magic Resist", "魔法抗性"],
-    ["Focus", "专注"],
-    ["Mental Resist", "精神抗性"],
-    ["Evasion", "闪避"],
-    ["Acid Resist", "酸蚀抗性"],
-    ["Blight Resist", "枯萎抗性"],
-    ["Crushing Resist", "粉碎抗性"],
-    ["Fire Resist", "火焰抗性"],
-    ["Frost Resist", "冰霜抗性"],
-    ["Holy Resist", "神圣抗性"],
-    ["Penetrating Resist", "穿刺抗性"],
-    ["Storm Resist", "风暴抗性"],
-    ["Tease Resist", "挑逗抗性"],
-    ["Drug Resist", "药物抗性"],
-    ["Pheromone Resist", "信息素抗性"],
-    ["Fatigue Resist", "疲劳抗性"],
-    ["Mind Resist", "心灵抗性"],
-    ["Likes: ", "喜好："],
-    ["Dislikes: ", "厌恶："],
-    ["Stealable Powers: ", "可偷取能力："],
-    ["Damage Reduction: ", "伤害减免："],
-    ["Info", "信息"],
-    ["None", "无"],
-    ["Attack: ", "攻击："],
-    ["Offhand", "副手"],
-    ["Halfsword", "半剑"],
-    ["\n        \n        [attacker.CombatName] regenerate[tps|s] some health.", "\n        \n        [attacker.CombatName][tps|恢复|恢复]了一些生命值。"],
-  ]);
+  // The mottled-color comparison remains English; only the fallback color value is mapped for display.
+  const mottledAnchor = source.indexOf('"mottled pink and black" === t.cocks[r].color');
+  if (mottledAnchor < 0) throw new Error("673 mottled cock-color Appearance anchor not found");
+  const mottledEnd = Math.min(source.length, mottledAnchor + 500);
+  let mottledRegion = source.slice(mottledAnchor, mottledEnd);
+  const colorMatches = [...mottledRegion.matchAll(/(?<!=== )t\.cocks\[r\]\.color/g)].length;
+  if (colorMatches !== 1) throw new Error("673 mottled fallback color display count " + colorMatches + ", expected 1");
+  mottledRegion = mottledRegion.replace(/(?<!=== )t\.cocks\[r\]\.color/, "globalThis.cnAttrLabel(t.cocks[r].color)");
+  source = source.slice(0, mottledAnchor) + mottledRegion + source.slice(mottledEnd);
 
-  // remaining_user_reported_round3: safe display names and final combat wording fixes.
-  source = replaceStringLiterals(source, [
-    ["Defending", "防御中"],
-  ]);
+  // DEMON_HUE is an internal flag value; map only the value passed to the visible template.
+  const demonHueAnchor = source.indexOf("一抹淡淡的");
+  if (demonHueAnchor < 0) throw new Error("673 demon hue display anchor not found");
+  const demonHueValue = source.indexOf("flags.DEMON_HUE", demonHueAnchor);
+  if (demonHueValue < 0 || demonHueValue - demonHueAnchor > 1800)
+    throw new Error("673 visible demon hue value not found near translated template");
+  source =
+    source.slice(0, demonHueValue) +
+    "globalThis.cnAttrLabel(flags.DEMON_HUE)" +
+    source.slice(demonHueValue + "flags.DEMON_HUE".length);
 
-  // remaining_user_reported_round2: fix exact misses from compressed dynamic strings.
-  source = source
-    .split("You can't flee from this encounter.").join("你无法从这场遭遇中逃跑。")
-    .split("You've been Disarmed and can't Attack.").join("你已被缴械，无法攻击。")
-    .split("[pc.CombatName] concentrate on [target.combatName], trying to get a sense for where [target.combatHisHer] attention is focusing — how [target.combatHeShe]'s trying to defend [target.combatHimHer]self and which of your body's movements catch [target.combatHisHer] attention.").join("[pc.CombatName]集中注意力观察[target.combatName]，试着判断[target.combatHisHer]的注意力集中在哪里——[target.combatHeShe]会如何防御[target.combatHimHer]自己，以及你身体的哪些动作会吸引[target.combatHisHer]注意。")
-    .split("[pc.CombatName] gather the following information about [target.combatName] from your brief analysis:").join("[pc.CombatName]通过短暂分析，获得了以下关于[target.combatName]的信息：")
-    .split("[pc.CombatName] fail to gain any particular insights!").join("[pc.CombatName]没能获得任何特别有用的洞察！")
-    .split("You're not sure if anything really happens, but you have to admit, you feel a little more sexy, a little more bangable... <b>a little more breedable</b>.").join("你不确定是否真的发生了什么，但你不得不承认，自己感觉更性感、更诱人……<b>也更适合被繁育了</b>。");
-
-  source = source
-    .replace("attacker.isPC()?\"There is\":\"You can see\",silly?\"OwO what's\":\"这到底是\"", "attacker.isPC()?\"可以看到\":\"你可以看到\",silly?\"OwO这是\":\"这到底是\"")
-    .replace("attacker.isPC()?\"There is\":\"You can see\",silly?\"OwO what's\":\"这是什么魔法\"", "attacker.isPC()?\"可以看到\":\"你可以看到\",silly?\"OwO这是\":\"这到底是\"")
-    .replace("attacker.isPC()?\"There is\":\"You can see\",silly?\"OwO what's\":\"What kind of magic is\"", "attacker.isPC()?\"可以看到\":\"你可以看到\",silly?\"OwO这是\":\"这到底是\"");
-
-  // remaining_user_reported_round1: safe display-only replacements for dynamic combat/menu fragments.
-  source = replaceStringLiterals(source, [
-    ["The last blow lands on ", "最后一击结结实实地落在"],
-    [" with authority, sending the cat-girl teetering back. She yelps with alarm and then falls on her ass, legs splayed to reveal her silky white panties to the world. Her head flops back on the ground a moment after, the fight completely gone out of her.", "身上，打得这位猫女踉跄后退。她惊叫一声，跌坐在地，双腿摊开，丝滑的白色内裤暴露无遗。片刻后，她的脑袋也垂落到地面，彻底失去了战意。"],
-    ["Try and suss out an opponent's weaknesses and resistances. Applies to lustful, magical, and martial combat alike.", "尝试看穿对手的弱点与抗性。对欲望、魔法和武技战斗都适用。"],
-    ["You've already sensed all the enemies. Click the three dots on their Character Card to view details.", "你已经感知过所有敌人。点击角色卡上的三个点即可查看详情。"],
-    ["There are no targets that you can sense!", "没有可以感知的目标！"],
-    ["[pc.CombatName] concentrate on [target.combatName], trying to get a sense for where [target.combatHisHer] attention is focusing — how [target.combatHeShe] is trying to defend [target.combatHimHer]self and which of your body's movements catch [target.combatHisHer] attention.", "[pc.CombatName]集中注意力观察[target.combatName]，试着判断[target.combatHisHer]的注意力集中在哪里——[target.combatHeShe]会如何防御[target.combatHimHer]自己，以及你身体的哪些动作会吸引[target.combatHisHer]注意。"],
-    ["[pc.CombatName] gather the following information about [target.combatName] from your brief analysis:", "[pc.CombatName]通过短暂分析，获得了以下关于[target.combatName]的信息："],
-    ["[pc.CombatName] fail to gain any particular insights!", "[pc.CombatName]没能获得任何特别有用的洞察！"],
-    ["Make an attack with your ", "使用你的"],
-    ["Make use of your weapons and magic to finish a foe off. Make an attack with each weapon, gaining +", "运用你的武器和魔法终结敌人。用每件武器发动一次攻击，获得+"],
-    ["Have the game's AI automatically take action.", "让游戏的 AI 自动采取行动。"],
-    ["You feel a pleasant tightness in your balls, like they're being lovingly caressed, hefting up and held together in a partner's hands. You shiver, letting the sensation carry you to its inevitable end, just short of climax.\n\n    When the sensation passes, you reach down to feel yourself, acting entirely on instinct. When your fingers brush across your balls, you find that they're a little more compact, held together by taut, supple flesh... <b>you've got a trap pouch now!</b>", "你感觉睾丸上传来一种令人愉悦的紧致感，像是正被伴侣的双手温柔地托起、合拢并爱抚。你轻轻颤抖，任由这种感觉将你带向它不可避免的终点，只差一点便要达到高潮。\n\n    当这种感觉退去后，你本能地伸手摸向自己。当手指掠过睾丸时，你发现它们变得更紧凑了，被紧致而柔韧的皮肉收拢在一起……<b>你现在有了一个陷阱袋！</b>"],
-    ["The sway of your step feels odd, like there's more meat kicking around down there. Taking a few more steps, you notice that your gait is wider than before. <b>Your hips have definitely widened.</b>", "你的步伐摇摆得有些奇怪，像是下面多了些肉在晃动。又走了几步后，你发现自己的步态比以前更宽了。<b>你的臀胯确实变宽了。</b>"],
-    ["You're not sure if anything really happens, but you have to admit, you feel a little more sexy, a little more bangable... <b>a little more breedable</b>.", "你不确定是否真的发生了什么，但你不得不承认，自己感觉更性感、更诱人……<b>也更适合被繁育了</b>。"],
-  ]);
-
-  // round3_673_raw_fragment_replacements
-  for (const [from, to] of [
-    [", capped with one ", "，每侧有一枚"],
-    [" nipple each.", "乳头。"],
-    [" inches long and ", "英寸，宽"],
-    [" inches across.", "英寸。"],
-    [" inch thick.", "英寸粗。"],
-    [" inches wide.", "英寸宽。"],
-    ["one inch wide.", "一英寸宽。"],
-    [" scrotum with ", "阴囊，里面有"],
-    [" swings heavily beneath your ", "沉甸甸地悬在你的"],
-    ["You estimate each testicle to be about ", "你估计每颗睾丸大约"],
-    ["You estimate the testicle to be about ", "你估计这颗睾丸大约"],
-    [" inches around and ", "英寸周长，"],
-    ["You have one ", "你有一个"],
-    [" asshole, placed between your cheeks where it belongs.", "肛门，位于双臀之间本该在的位置。"],
-    [" backdoor, placed between your cheeks where it belongs.", "后庭，位于双臀之间本该在的位置。"],
-    ["Blue-colored", "蓝色的"],
-    ["blue-colored", "蓝色的"],
-    ["bronze skin", "古铜色皮肤"],
-    ["black hair", "黑色头发"],
-    ["shoulder-length, black hair", "齐肩的黑色头发"],
-    ["shoulder-length, black 头发", "齐肩的黑色头发"],
-    ["chiseled jawline", "棱角分明的下颌线"],
-    ["facial hair", "面部毛发"],
-
-    ["quarterstaff", "长棍"],
-    ["blade staff", "刃杖"],
-    ["standing strong, unfazed by your battle thus far.", "状态良好，至今未受你的攻势影响。"],
-    ["standing strong.", "状态良好。"],
-    ["lusty tentacles", "淫欲触手"],
-    ["Your face is mostly human in form, and you have ", "你的面容大体上仍是人形，你有"],
-    ["Your face is mostly human in shape, decorated with ", "你的面容大体上仍是人形，其上点缀着"],
-    ["Your face is mostly human in shape, with hints of ", "你的面容大体上仍是人形，并带有些许"],
-    ["Overall, your visage has ", "总体而言，你的容貌有着"],
-    ["that's sure to draw attention, and ", "足以吸引他人注意，还有"],
-    ["Your eyes bear a vertical slit instead of rounded pupils, ", "你的眼睛不是圆形瞳孔，而是竖瞳，"],
-    ["A cat-tail sprouts just above your backside, curling and twisting with every step to maintain perfect balance.", "一条猫尾从你臀部上方伸出，随着每一步卷曲摆动，帮助你保持完美的平衡。"],
-    ["Your middle is fairly well-toned.", "你的腹部线条相当紧致。"],
-    ["You have A-cup breasts, ", "你有 A 罩杯的乳房，"],
-    [" small, pert", "小巧而挺翘的"],
-    [" boobs that almost vanish under anything thicker than spandex", "乳房，穿上比氨纶更厚的衣物时几乎会消失不见"],
-    ["You could easily fill an A bra.", "你可以轻松撑满一件 A 罩杯胸罩。"],
-    ["No moisture presently escapes your pussy.", "目前没有液体从你的阴部渗出。"],
-    ["n average chest with ", "个大小适中的胸膛，"],
-    [" pectoral muscles", "胸肌"],
-    ["Fairly unremarkable", "相当普通的"],
-    ["Normal-looking ", "普通的"],
-    ["Regular ", "普通的"],
-    ["You're wearing ", "你穿着"],
-    [", taking full advantage of the freedom of movement provided by the light armor.", "，充分利用轻甲带来的行动自由。"],
-    ["Meanwhile, your feet are garbed in ", "与此同时，你的双脚穿着"],
-    ["Your face is human in form, with ", "你的面容是人类形态，有着"],
-    ["Fairly unremarkable ", "相当普通的"],
-    [" eyes allow you to take in your surroundings without trouble.", "眼睛让你能够毫无困难地观察周围。"],
-    [" looks good on you, accentuating your features well.", "很适合你，也很好地衬托出你的五官。"],
-    ["You have an average chest with toned pectoral muscles, capped with one ", "你的胸膛大小适中，胸肌线条紧致，每侧有一枚"],
-    [" nipple each.", "乳头。"],
-    ["Your cock is ", "你的阳具长"],
-    [" inches long and ", "英寸，宽"],
-    ["A cum-packed scrotum with ", "一个饱含精液的阴囊，里面有"],
-    [" testicles swings heavily beneath your dick.", "睾丸，沉甸甸地悬在你的阳具下方。"],
-    ["You estimate each testicle to be about ", "你估计每颗睾丸大约"],
-    ["You estimate the testicle to be about ", "你估计这颗睾丸大约"],
-    [" around and ", "周长，"],
-    ["You have one ", "你有一个"],
-    [" asshole, placed between your cheeks where it belongs.", "肛门，位于双臀之间本该在的位置。"],
-    [" backdoor, placed between your cheeks where it belongs.", "后庭，位于双臀之间本该在的位置。"],
-    ["a 舒适的衣服", "一套舒适的衣服"]
-  ]) source = source.split(from).join(to);
-  // appearance_getdescribe_robust_source_patches
-  // Robust source-level fixes for Appearance/getDescribe strings. These are template fixes, not final-output cleanup.
-  source = source.replace(/t="\\n\\nYou have a humanoid upper body with the usual torso, arms, hands, and fingers"/g,
-    't="\\n\\n你有类人的上半身，拥有常见的躯干、手臂、双手和手指"');
-  source = source.replace(/return" "+capitalize(num2Text(e.legCount))+"条普通的人类双腿从你的腰部向下延伸，末端是普通的人类双脚。"/g,
-    'return" 你的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.legCount)):num2Text(e.legCount))+"条普通的人类双腿从你的腰部向下延伸，末端是普通的人类双脚。"');
-  source = source.replace(/return" "+capitalize(num2Text(e.legCount))+" "+(["furred","gooey"][e.legTag(GLOBALS.BODY_TAG_FURRED,GLOBALS.BODY_TAG_GOOEY)]||"normal")+" human legs extend below your waist, ending in normal human feet."/g,
-    'return" 你的"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.legCount)):num2Text(e.legCount))+"条普通的人类双腿从你的腰部向下延伸，末端是普通的人类双脚。"');
-  source = source.replace(/case 10:return" Your (?:maw|mouth) contains a tongue."/g,
-    'case 10:return" 你的口中有一条舌头。"');
-  source = source.replace(/t+=" The "+e.areolaSizeDesc()+" areolae are "+e.nippleColor+"."/g,
-    't+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.areolaSizeDesc()):e.areolaSizeDesc())+"乳晕呈"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.nippleColor):e.nippleColor)+"。"');
-  source = source.replace(/t+=" The "+e.areolaSizeDesc()+" areolae are "+e.nippleColor()+"."/g,
-    't+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.areolaSizeDesc()):e.areolaSizeDesc())+"乳晕呈"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.nippleColor()):e.nippleColor())+"。"');
-  source = source.split('t+=Math.round(10*e.cocks[0].thickness())/10+"英寸宽。"').join('t+=Math.round(10*e.cocks[0].thickness())/10+"英寸。"');
-
-
-  // appearance_word_mapping_fixed_glue
-  source = source.split('a+" eyes allow you to take in your surroundings without trouble."').join('a+"眼睛让你能够毫无困难地观察周围。"');
-  source = source.split('i+=" Your "+e.hairDesc(!0,!0)+" looks good on you, accentuating your features well."').join('i+=" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0))+"很适合你，也很好地衬托出你的五官。"');
-  source = source.split('" Your mouth contains a tongue."').join('" 你的口中有一条舌头。"');
-  source = source.split('" Your maw contains a tongue."').join('" 你的口中有一条舌头。"');
-  source = source.split('r.hasTongueTags(GLOBALS.BODY_TAG_LONG)?" Your "+r.mouthDesc(!0)+" contains a lengthy tongue.":" Your "+r.mouthDesc(!0)+" contains [a] [pc.tongue]."').join('r.hasTongueTags(GLOBALS.BODY_TAG_LONG)?" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(r.mouthDesc(!0)):r.mouthDesc(!0))+"里有一条修长的舌头。":" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(r.mouthDesc(!0)):r.mouthDesc(!0))+"里有一条[pc.tongue]。"');
-  source = source.split('" Your "+randCollection("belly","midriff","middle","six pack")+" is rock-hard, shaped by a good diet, steady conditioning, or both."').join('" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(randCollection("belly","midriff","middle","six pack")):randCollection("belly","midriff","middle","six pack"))+"坚硬结实，显然得益于良好的饮食、稳定的锻炼，或两者兼有。"');
-  source = source.split('" Your "+randCollection("belly","midriff","middle","six pack")+" is fairly well-toned."').join('" 你的"+(globalThis.cnBodyLabel?globalThis.cnBodyLabel(randCollection("belly","midriff","middle","six pack")):randCollection("belly","midriff","middle","six pack"))+"线条相当紧致。"');
-  source = source.split('" Your [pc.belly] is nice and smooth."').join('" 你的[pc.belly]光滑平坦。"');
-  source = source.split('return t}(e)+".";return e.hasWings()').join('return t}(e)+"。";return e.hasWings()');
-  source = source.split('return t+=" 总体而言，你的容貌有着"+e.faceDesc()+".",').join('return t+=" 总体而言，你的容貌有着"+e.faceDesc()+"。",');
-
-  // appearance_breast_source_templates
-  for (const [from, to] of [
-    [
-      'e.biggestTitSize()>1?t+="You have "+num2Text(e.breastRows[0].breasts)+" "+e.breastDesc(0,!0)+", capped with "',
-      'e.biggestTitSize()>1?t+="你有"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.breastRows[0].breasts)):num2Text(e.breastRows[0].breasts))+"只"+e.breastDesc(0,!0)+"，每侧有"'
-    ],
-    [
-      't+=", capped with "',
-      't+="，每侧有"'
-    ],
-    [
-      '1===e.nipplesPerBreast?t+=num2Text(e.nipplesPerBreast)+" "+Math.round(10*e.nippleLength(0))/10+"-inch "+e.nippleDesc(0)+" each.":t+=num2Text(e.nipplesPerBreast)+" "+Math.round(10*e.nippleLength(0))/10+"-inch "+plural(e.nippleDesc(0))+" each."',
-      '1===e.nipplesPerBreast?t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.nipplesPerBreast)):num2Text(e.nipplesPerBreast))+"枚"+Math.round(10*e.nippleLength(0))/10+"英寸的"+e.nippleDesc(0)+"。":t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.nipplesPerBreast)):num2Text(e.nipplesPerBreast))+"枚"+Math.round(10*e.nippleLength(0))/10+"英寸的"+plural(e.nippleDesc(0))+"。"'
-    ],
-    [
-      '1===e.nipplesPerBreast?t+=num2Text(e.nipplesPerBreast)+" "+e.nippleDesc(0)+" each.":t+=num2Text(e.nipplesPerBreast)+" "+plural(e.nippleDesc(0))+" each."',
-      '1===e.nipplesPerBreast?t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.nipplesPerBreast)):num2Text(e.nipplesPerBreast))+"枚"+e.nippleDesc(0)+"。":t+=(globalThis.cnAttrLabel?globalThis.cnAttrLabel(num2Text(e.nipplesPerBreast)):num2Text(e.nipplesPerBreast))+"枚"+plural(e.nippleDesc(0))+"。"'
-    ],
-    [
-      't+=" When you\'re aroused enough, your "+Math.round(10*e.nippleLength(0))/10+"-inch nipples pop out, ready for action."',
-      't+=" 当你足够兴奋时，"+Math.round(10*e.nippleLength(0))/10+"英寸的乳头会挺立出来，蓄势待发。"'
-    ],
-    [
-      't+=" You could easily fill [a] "+breastSizeToCup(e.breastRows[0].size())+" bra."',
-      't+=" 你可以轻松撑满一件"+breastSizeToCup(e.breastRows[0].size())+"罩杯胸罩。"'
-    ]
-  ]) source = source.split(from).join(to);
-
-  // appearance_getdescribe_split_fallbacks
-  // Exact split/join fallbacks for minified source fragments containing regex-special chars.
-  for (const [from, to] of [
-    [
-      't="\\n\\nYou have a humanoid upper body with the usual torso, arms, hands, and fingers"',
-      't="\\n\\n你有类人的上半身，拥有常见的躯干、手臂、双手和手指"'
-    ],
-    [
-      't+=" The "+e.areolaSizeDesc()+" areolae are "+e.nippleColor+"."',
-      't+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.areolaSizeDesc()):e.areolaSizeDesc())+"乳晕呈"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.nippleColor):e.nippleColor)+"。"'
-    ],
-    [
-      't+=" The "+e.areolaSizeDesc()+" areolae are "+e.nippleColor()+"."',
-      't+=" "+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.areolaSizeDesc()):e.areolaSizeDesc())+"乳晕呈"+(globalThis.cnAttrLabel?globalThis.cnAttrLabel(e.nippleColor()):e.nippleColor())+"。"'
-    ],
-    [
-      't+=Math.round(10*e.cocks[0].thickness())/10+"英寸宽。"',
-      't+=Math.round(10*e.cocks[0].thickness())/10+"英寸。"'
-    ]
-  ]) source = source.split(from).join(to);
-
+  // Apply word-level mappings only to descriptor values as they are displayed
+  // by the formatted Appearance generator; never change stored attributes.
+  const wrappers = [
+    [/\be\.hairDesc\(!0,\s*!0\)/g, '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hairDesc(!0,!0)):e.hairDesc(!0,!0))'],
+    [/\be\.faceDesc\(\)/g, '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.faceDesc()):e.faceDesc())'],
+    [/\be\.hipDesc\(!0\)/g, '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.hipDesc(!0)):e.hipDesc(!0))'],
+    [/\be\.buttDesc\(\)/g, '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc())'],
+  ];
+  for (const [pattern, replacement] of wrappers) source = source.replace(pattern, (whole, offset, full) => full.slice(Math.max(0, offset - 35), offset).includes("globalThis.cnBodyLabel") ? whole : replacement);
   return source;
 }
 
 function patchContentOtherCreationUi(source) {
-
-  const labelMap = {
-    pale: "苍白", fair: "白皙", tanned: "晒黑", olive: "橄榄色", bronze: "古铜色", dusky: "暗褐色", dark: "深色", black: "黑色",
-    "dark green": "深绿色", green: "绿色", "light green": "浅绿色", gray: "灰色",
-    brown: "棕色", red: "红色", blonde: "金发", blue: "蓝色", silver: "银色", orange: "橙色", gold: "金色", white: "白色", purple: "紫色",
-    hazel: "榛色", amber: "琥珀色", golden: "金色",
-    unkempt: "蓬乱", afro: "爆炸头", "afro ponytail": "爆炸头马尾", "afro puffs": "爆炸头蓬蓬发",
-    bald: "光头", bob: "波波头", "box braids": "盒形辫", braided: "编辫", "braid pompadour": "辫子蓬巴杜",
-    bun: "发髻", curls: "卷发", dreadlocks: "脏辫", "dread ponytail": "脏辫马尾", fade: "渐层短发",
-    flattop: "平顶头", mohawk: "莫霍克", "obfuscating afro": "遮脸爆炸头", ponytail: "马尾",
-    rugged: "粗犷发型", shaggy: "蓬乱短发", short: "短发", "side-cut": "侧削发", "side-cut dreads": "侧削脏辫",
-    spiky: "尖刺发", "spiky with bangs": "带刘海尖刺发", straight: "直发", "top knot dreadlocks": "顶髻脏辫", twintails: "双马尾"
-  };
-  const inject = "window.cnCreateLabel=function(e){var t=String(e);return Object.prototype.hasOwnProperty.call(window.cnCreateLabel.map,t.toLowerCase())?window.cnCreateLabel.map[t.toLowerCase()]:capitalize(t)},window.cnCreateLabel.map=" + JSON.stringify(labelMap) + ",";
-  if (!source.includes("window.cnCreateLabel=function")) {
-    source = source.replace("window.ChooseSkinColor=function", inject + "window.ChooseSkinColor=function");
+  // All creation attributes remain English internally. Only values passed to
+  // visible buttons/dropdowns are mapped here.
+  const labelMap = displayMapping("cnCreationLabel");
+  const inject = "window.cnCreateLabel=window.cnCreateLabel||function(e){var t=String(e==null?\"\":e),m=window.cnCreateLabel.map||{},k=t.toLowerCase();return Object.prototype.hasOwnProperty.call(m,k)?m[k]:t};window.cnCreateLabel.map=Object.assign(window.cnCreateLabel.map||{}," + JSON.stringify(labelMap) + ");";
+  if (!source.includes("window.cnCreateLabel=window.cnCreateLabel||function")) source = inject + source;
+  const exampleInject = 'globalThis.cnBodyExampleLabel=globalThis.cnBodyExampleLabel||function(e){return String(e==null?"":e).split(/;\\s*/).map(function(x){return globalThis.cnBodyLabel?globalThis.cnBodyLabel(x):x}).join("；")};';
+  if (!source.includes("globalThis.cnBodyExampleLabel=globalThis.cnBodyExampleLabel||function")) source = exampleInject + source;
+  for (const expression of ["M.belly.desc", "M.hips.desc", "M.butt.desc", "W.cock.desc", "W.breast.desc"]) {
+    const count = source.split(expression).length - 1;
+    if (count !== 1) throw new Error("Content_Other body example expression count " + count + ", expected 1: " + expression);
+    source = source.replace(expression, "globalThis.cnBodyExampleLabel(" + expression + ")");
   }
-  source = source
-    .replace('output("And skin color?")', 'output("那肤色呢？")')
-    .replace('addButton(t,capitalize(e),(function(){return ChooseHairColor(e)}),"","")', 'addButton(t,window.cnCreateLabel(e),(function(){return ChooseHairColor(e)}),"","")')
-    .replace('addDropdown("Hairstyles:",i.map((function(e){return e.style})),s.style,', 'addDropdown("发型：",i.map((function(e){return window.cnCreateLabel(e.style)})),window.cnCreateLabel(s.style),')
-    .replace('addDropdown("发型：",i.map((function(e){return e.style})),s.style,', 'addDropdown("发型：",i.map((function(e){return window.cnCreateLabel(e.style)})),window.cnCreateLabel(s.style),')
-    .replace('addSliderInput("Hair Length: ".concat(pc.hairLength,', 'addSliderInput("头发长度：".concat(pc.hairLength,')
-    .replace('addButton(t,capitalize(e),(function(){return ChooseEyeColor(e)}),"","")', 'addButton(t,window.cnCreateLabel(e),(function(){return ChooseEyeColor(e)}),"","")')
-    .replace('output("And your eye color?")', 'output("那眼睛颜色呢？")')
-    .replace('addButton(t,capitalize(e),(function(){return ChooseHeight(e)}),"","")', 'addButton(t,window.cnCreateLabel(e),(function(){return ChooseHeight(e)}),"","")');
+
+  const callbacks = ["ChooseHairColor", "ChooseEyeColor", "ChooseHeight"];
+  for (const callback of callbacks) {
+    const pattern = new RegExp("capitalize\\(e\\)(?=,\\s*function\\s*\\(\\)\\s*\\{\\s*return\\s+" + callback + "\\(e\\);?\\s*\\})", "g");
+    let count = 0;
+    source = source.replace(pattern, () => { count++; return "window.cnCreateLabel(e)"; });
+    if (count !== 1) throw new Error("Content_Other dynamic creation label " + callback + " count " + count + ", expected 1");
+  }
+
+  let dropdownCount = 0;
+  source = source.replace(
+    /(addDropdown\(\s*(?:"Hairstyles:"|"发型：")\s*,\s*i\.map\(function \(e\) \{\s*return\s+)e\.style(;\s*\}\)\s*,\s*)s\.style(\s*,)/g,
+    (_, prefix, middle, suffix) => { dropdownCount++; return prefix + "window.cnCreateLabel(e.style)" + middle + "window.cnCreateLabel(s.style)" + suffix; },
+  );
+  if (dropdownCount !== 1) throw new Error("Content_Other hairstyle dropdown mapping count " + dropdownCount + ", expected 1");
+
+  // Literal race/background/class/sex buttons are display text only.
+  const startMatch = /window\.ChooseRace\s*=\s*function/.exec(source);
+  const tail = startMatch ? source.slice(startMatch.index) : "";
+  const endMatch = /window\.ChooseGender\s*=\s*function/.exec(tail);
+  if (startMatch && endMatch) {
+    const start = startMatch.index;
+    const end = start + endMatch.index;
+    const region = source.slice(start, end).replace(
+      /(addButton\(\s*[^,]+,\s*)"([^"]+)"/g,
+      (full, prefix, label) => Object.prototype.hasOwnProperty.call(labelMap, label.toLowerCase())
+        ? prefix + "window.cnCreateLabel(" + JSON.stringify(label) + ")"
+        : full,
+    );
+    source = source.slice(0, start) + region + source.slice(end);
+  }
   return source;
 }
 
 function patch505ParserPronouns(source) {
-  source = source.replace(
+  // English possessives are display-only parser forms; Chinese names do not take 's.
+  const namePossessive = 'case"names":case"name\'s":return"".concat(this.name,"\'").concat("s"===this.name.slice(-1)?"":"s")';
+  const nameDisplay = 'case"names":case"name\'s":return this.name';
+  source = replaceLooseCode(source, namePossessive, nameDisplay, { label: "505 name possessive parser", fatal: true });
+  const combatPossessive = 'return this.isPC()?"".concat(r).concat(i("r")):"".concat(r).concat(i("\'".concat("s"===r.slice(-1)?"":"s")))';
+  const combatDisplay = 'return this.isPC()?"你的":"".concat(r).concat(i("的"))';
+  source = replaceLooseCode(source, combatPossessive, combatDisplay, { label: "505 combat name possessive parser", fatal: true });
+  source = replaceLooseAny(source,
     'case"his":case"hisHer":return this.mf("his","her");case"hisHers":return this.mf("his","hers");case"combatHis":case"combatHisHer":return this.pcplmf("your","their","his","her");case"combatHisHers":return this.pcplmf("yours","theirs","his","hers");',
     'case"his":case"hisHer":return this.mf("他的","她的");case"hisHers":return this.mf("他的","她的");case"combatHis":case"combatHisHer":return this.pcplmf("你的","他们的","他的","她的");case"combatHisHers":return this.pcplmf("你的","他们的","他的","她的");'
   );
-  source = source.replace(
+  source = replaceLooseAny(source,
+    'case"man":case"woman":case"manWoman":return this.mf("man","woman");',
+    'case"man":case"woman":case"manWoman":var __cnmw=this.mf("man","woman");return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnmw):__cnmw;'
+  );
+  source = replaceLooseAny(source,
     'case"him":case"himHer":return this.mf("him","her");case"boy":case"girl":case"boyGirl":return this.mf("boy","girl");case"master":case"mistress":return this.mf("master","mistress");case"combatHim":case"combatHimHer":return this.pcplmf("you","them","him","her");case"combatHimself":case"combatHerself":case"combatHimselfHerself":return this.pcplmf("yourself","themselves","himself","herself");case"himself":case"herself":case"himselfHerself":return this.mf("himself","herself");case"he":case"she":case"heShe":return this.mf("he","she");case"hes":case"shes":case"hesShes":return this.mf("he\'s","she\'s");case"combatHe":case"combatShe":case"combatHeShe":return this.pcplmf("you","they","he","she");case"combatHe\'s":case"combatShe\'s":case"combatHe\'sShe\'s":case"combatHes":case"combatShes":case"combatHesShes":return this.pcplmf("you\'re","they\'re","he\'s","she\'s");',
     'case"him":case"himHer":return this.mf("他","她");case"boy":case"girl":case"boyGirl":return this.mf("男孩","女孩");case"master":case"mistress":return this.mf("主人","女主人");case"combatHim":case"combatHimHer":return this.pcplmf("你","他们","他","她");case"combatHimself":case"combatHerself":case"combatHimselfHerself":return this.pcplmf("你自己","他们自己","他自己","她自己");case"himself":case"herself":case"himselfHerself":return this.mf("他自己","她自己");case"he":case"she":case"heShe":return this.mf("他","她");case"hes":case"shes":case"hesShes":return this.mf("他","她");case"combatHe":case"combatShe":case"combatHeShe":return this.pcplmf("你","他们","他","她");case"combatHe\'s":case"combatShe\'s":case"combatHe\'sShe\'s":case"combatHes":case"combatShes":case"combatHesShes":return this.pcplmf("你","他们","他","她");'
   );
   return source;
 }
 
+
 function patch505DynamicAttributeLabels(source) {
-  // appearance_source_skin_color_noun
-  // Make skin()/skinFurScales() return localized display labels without changing stored color keys.
-  source = source.replace(
-    'i+this.skinNoun(a,n)}},{key:"skinFurScalesColor"',
-    '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(i+this.skinNoun(a,n)):i+this.skinNoun(a,n))}},{key:"skinFurScalesColor"'
-  );
+  const attrMap = displayMapping("cnAttributeLabel");
+  const injectAttr = 'globalThis.cnAttrLabel=globalThis.cnAttrLabel||function(e){var t=String(e==null?"":e),n=t.toLowerCase(),m=globalThis.cnAttrLabel.map||{};return Object.prototype.hasOwnProperty.call(m,n)?m[n]:t};globalThis.cnAttrLabel.map=Object.assign(globalThis.cnAttrLabel.map||{},' + JSON.stringify(attrMap) + ');';
+  if (!source.includes("globalThis.cnAttrLabel=globalThis.cnAttrLabel||function")) source = injectAttr + source;
+  const bodyMap = displayMapping("cnBodyLabel");
+  const injectBody = 'globalThis.cnBodyLabel=globalThis.cnBodyLabel||function(e){var bm=globalThis.cnBodyLabel.map||{},am=globalThis.cnAttrLabel&&globalThis.cnAttrLabel.map||{},all=Object.assign({},am,bm),parts=String(e==null?"":e).split(/([,，]\\s*)/),out="";for(var p=0;p<parts.length;p++){var part=parts[p];if(/^[,，]\\s*$/.test(part))continue;var core=part.trim();if(!core){out+=part;continue}var exact=core.toLowerCase();if(Object.prototype.hasOwnProperty.call(all,exact)){out+=all[exact];continue}var words=core.split(/\\s+/),vals=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(4,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(all,key)){hit=all[key];take=len;break}}if(hit===null){hit=words[i];take=1}vals.push(hit);i+=take}out+=vals.join("")}if(all.lips)out=out.replace(/(^|[^A-Za-z])lips(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lips});if(all.lip)out=out.replace(/(^|[^A-Za-z])lip(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lip});return out.replace(/([\\u4e00-\\u9fff])\\s+([\\u4e00-\\u9fff])/g,"$1$2")};globalThis.cnBodyLabel.map=Object.assign(globalThis.cnBodyLabel.map||{},' + JSON.stringify(bodyMap) + ');';
+  if (!source.includes("globalThis.cnBodyLabel=globalThis.cnBodyLabel||function")) source = injectBody + source;
+  const fluidMap = displayMapping("cnFluidLabel");
+  const injectFluid = 'globalThis.cnFluidLabel=globalThis.cnFluidLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnFluidLabel.map||{},words=t.trim().split(/\s+/),out=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(3,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(m,key)){hit=m[key];take=len;break}}if(hit===null){hit=words[i];take=1}out.push(hit);i+=take}return out.join("")};globalThis.cnFluidLabel.map=Object.assign(globalThis.cnFluidLabel.map||{},' + JSON.stringify(fluidMap) + ');';
+  if (!source.includes("globalThis.cnFluidLabel=globalThis.cnFluidLabel||function")) source = injectFluid + source;
 
-  // appearance_505_getdescribe_label_returns
-  // Map dynamic descriptor fragments at their source-return points.
-  source = source.split('return n+"head"}if(!t').join('return (globalThis.cnBodyLabel?globalThis.cnBodyLabel(n+"head"):n+"head")}if(!t');
-  source = source.split('return n+"face"}return(t||0===rand(4))').join('return (globalThis.cnBodyLabel?globalThis.cnBodyLabel(n+"face"):n+"face")}return(t||0===rand(4))');
-  source = source.split('rand(2)?n+="facial hair":n+="beard",n}},{key:"skinNoun"').join('rand(2)?n+="facial hair":n+="beard",globalThis.cnBodyLabel?globalThis.cnBodyLabel(n):n}},{key:"skinNoun"');
-  source = source.split('rand(2)?n+="面部毛发":n+="胡须",n}},{key:"skinNoun"').join('rand(2)?n+="面部毛发":n+="胡须",globalThis.cnBodyLabel?globalThis.cnBodyLabel(n):n}},{key:"skinNoun"');
-  source = source.split('else n+="头发";return n}},{key:"hairSimpleNoun"').join('else n+="头发";return globalThis.cnBodyLabel?globalThis.cnBodyLabel(n):n}},{key:"hairSimpleNoun"');
-  // appearance_word_level_descriptor_returns
-  source = source.split('else n+="hair";return n}},{key:"hairSimpleNoun"').join('else n+="hair";return globalThis.cnBodyLabel?globalThis.cnBodyLabel(n):n}},{key:"hairSimpleNoun"');
-  source = source.split('rand(2)?n+="facial hair":n+="beard",n}},{key:"skinNoun"').join('rand(2)?n+="facial hair":n+="beard",globalThis.cnBodyLabel?globalThis.cnBodyLabel(n):n}},{key:"skinNoun"');
-  source = source.split('""!==n&&(n+=" "),n+r[rand(r.length)]}},{key:"tongueDesc"').join('""!==n&&(n+=" "),globalThis.cnBodyLabel?globalThis.cnBodyLabel(n+r[rand(r.length)]):n+r[rand(r.length)]}},{key:"tongueDesc"');
-
-  // source_body_label_asshole_desc
-  // Narrow source-level mapping for assholeDesc() display output only.
-  // This avoids translating internal keys while preventing mixed strings such as "tailhole肛门".
-  const bodyLabelMap = {
-    "asshole": "肛门",
-    "anus": "肛门",
-    "pucker": "菊口",
-    "butthole": "后穴",
-    "sphincter": "括约口",
-    "backdoor": "后庭",
-    "tailhole": "尾下后庭",
-    "donut": "环口",
-    "skin": "皮肤",
-    "fur": "毛皮",
-    "scales": "鳞片",
-    "lip": "嘴唇",
-    "lips": "嘴唇",
-    "hair": "头发",
-    "head": "头部",
-    "face": "面部",
-    "head-fur": "头部毛发",
-    "head-feathers": "头部羽毛",
-    "maw": "口腔",
-    "mouth": "口腔",
-    "tongue": "舌头",
-    "belly": "腹部",
-    "midriff": "腰腹",
-    "middle": "腰腹",
-    "six": "六",
-    "pack": "块腹肌",
-    "nipple": "乳头",
-    "nipples": "乳头",
-    "areola": "乳晕",
-    "areolae": "乳晕",
-    "puffy": "微肿的",
-    "plump": "饱满的",
-    "fat": "丰厚的",
-    "crinkly": "皱褶的",
-    "soft": "柔软的",
-    "spongy": "绵软的",
-    "huge": "巨大的",
-    "bloated": "鼓胀的",
-    "pillowy": "枕垫般柔软的",
-    "slutty": "淫荡的",
-    "fuck-hungry": "渴求交合的",
-    "cock-hungry": "渴求肉棒的",
-    "fuckable": "诱人的",
-    "puckered": "收紧的",
-    "eager": "渴望的",
-    "greedy": "贪婪的",
-    "ravenous": "饥渴的",
-    "insatiable": "难以满足的", "无人认领": "处子", "未受破坏的": "处子", "smooth": "光滑的", "sleek": "光滑的", "supple": "柔软的", "succulent": "饱满诱人的", "nice": "秀气的", "petite": "小巧的", "shapely": "优美的", "playful": "俏皮的", "moderately long": "略长的", "shoulder-length": "齐肩的", "ass-length": "齐臀长的", "brown": "棕色", "black": "黑色", "blue": "蓝色", "fair": "白皙的", "bronze": "古铜色", "humanoid": "类人型"
+  const parserMappings = [
+    [/case\s+"skinColor":\s*return\s+this\.skinColor\s*;/g, 'case "skinColor": return globalThis.cnAttrLabel ? globalThis.cnAttrLabel(this.skinColor) : this.skinColor;'],
+    [/case\s+"class":\s*return\s+this\.getClassName\(\)\s*;/g, 'case "class": { const __v=this.getClassName(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"background":\s*return\s+this\.getBackgroundName\(\)\s*;/g, 'case "background": { const __v=this.getBackgroundName(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"race":\s*return\s+this\.race\(\)\s*;/g, 'case "race": { const __v=this.race(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"raceAdjective":\s*case\s+"raceAdj":\s*case\s+"raceish":\s*return\s+this\.raceAdj\(\)\s*;/g, 'case "raceAdjective": case "raceAdj": case "raceish": { const __v=this.raceAdj(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"raceCute":\s*return\s+this\.raceCute\(\)\s*;/g, 'case "raceCute": { const __v=this.raceCute(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"raceShort":\s*return\s+this\.raceShort\(\)\s*;/g, 'case "raceShort": { const __v=this.raceShort(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"gender":\s*case\s+"sex":\s*return\s+this\.sex\(\)\s*;/g, 'case "gender": case "sex": { const __v=this.sex(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"hairColor":\s*return\s+this\.hairColor\s*;/g, 'case "hairColor": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.hairColor):this.hairColor;'],
+    [/case\s+"cum":\s*return\s+this\.cumDesc\(\)\s*;/g, 'case "cum": { const __v=this.cumDesc(); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"cumColor":\s*return\s+this\.fluidColor\(this\.cumType\)\s*;/g, 'case "cumColor": { const __v=this.fluidColor(this.cumType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"cumType":\s*case\s+"cumNoun":\s*return\s+this\.fluidNoun\(this\.cumType\)\s*;/g, 'case "cumType": case "cumNoun": { const __v=this.fluidNoun(this.cumType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"milk":\s*return\s+this\.milkDesc\(\)\s*;/g, 'case "milk": { const __v=this.milkDesc(); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"milkColor":\s*return\s+this\.fluidColor\(this\.milkType\)\s*;/g, 'case "milkColor": { const __v=this.fluidColor(this.milkType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"milkNoun":\s*case\s+"milkType":\s*return\s+this\.fluidNoun\(this\.milkType\)\s*;/g, 'case "milkNoun": case "milkType": { const __v=this.fluidNoun(this.milkType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"hair":\s*return\s+this\.hairDesc\(\)\s*;/g, 'case "hair": { const __v=this.hairDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"eye":/g, 'case "eyeColor": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.eyeColor):this.eyeColor; case "eye":'],
+    [/case\s+"skinFurScalesColor":\s*return\s+this\.skinFurScalesColor\(\)\s*;/g, 'case "furColor": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.furColor):this.furColor; case "scaleColor": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.scaleColor):this.scaleColor; case "skinFurScalesColor": { const __v=this.skinFurScalesColor(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"beard":\s*return\s+this\.beardDesc\(\)\s*;/g, 'case "beard": { const __v=this.beardDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"lipColor":\s*return\s+this\.lipColor\s*;/g, 'case "lipColor": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.lipColor):this.lipColor;'],
+    [/case\s+"lips":\s*return\s+this\.lipsDesc\(\)\s*;/g, 'case "lips": { const __v=this.lipsDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"lipsChaste":\s*return\s+this\.lipsDesc\(!1,\s*!0\)\s*;/g, 'case "lipsChaste": { const __v=this.lipsDesc(!1,!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"lip":\s*return\s+this\.lipDesc\(\)\s*;/g, 'case "lip": { const __v=this.lipDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"lipChaste":\s*return\s+this\.lipDesc\(!1,\s*!0\)\s*;/g, 'case "lipChaste": { const __v=this.lipDesc(!1,!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"femcum":\s*case\s+"femCum":\s*case\s+"girlCum":\s*case\s+"girlcum":\s*return\s+this\.girlCumDesc\(\)\s*;/g, 'case "femcum": case "femCum": case "girlCum": case "girlcum": { const __v=this.girlCumDesc(); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"stomach":\s*case\s+"tummy":\s*case\s+"belly":\s*return\s+this\.bellyDesc\(\)\s*;/g, 'case "stomach": case "tummy": case "belly": { const __v=this.bellyDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"bellySize":\s*return\s+this\.bellyDesc\(!0\)\s*;/g, 'case "bellySize": { const __v=this.bellyDesc(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"dick":\s*case\s+"cock":\s*return\s+this\.cockDesc\(t\[0\]\)\s*;/g, 'case "dick": case "cock": { const __v=this.cockDesc(t[0]); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"cockNoun":\s*return\s+this\.simpleCockNoun\(t\[0\]\)\s*;/g, 'case "cockNoun": { const __v=this.simpleCockNoun(t[0]); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"anus":\s*case\s+"assholeDesc":\s*case\s+"asshole":\s*return\s+this\.assholeDesc\(\)\s*;/g, 'case "anus": case "assholeDesc": case "asshole": { const __v=this.assholeDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"anusSimple":\s*case\s+"assholeSimple":\s*case\s+"anusNoun":\s*case\s+"assholeNoun":\s*return\s+this\.assholeDesc\(!0\)\s*;/g, 'case "anusSimple": case "assholeSimple": case "anusNoun": case "assholeNoun": { const __v=this.assholeDesc(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"startingRace":\s*case\s+"originalRace":\s*return\s+this\.originalRace\s*;/g, 'case "startingRace": case "originalRace": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.originalRace):this.originalRace;'],
+    [/case\s+"bodyType":\s*case\s+"bodyShape":\s*case\s+"physique":\s*return\s+this\.bodyShape\(\)\s*;/g, 'case "bodyType": case "bodyShape": case "physique": { const __v=this.bodyShape(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
+    [/case\s+"tongue":\s*return\s+this\.tongueDesc\(\)\s*;/g, 'case "tongue": { const __v=this.tongueDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"tongueNoun":\s*return\s+this\.tongueNoun\(\)\s*;/g, 'case "tongueNoun": { const __v=this.tongueNoun(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"tongueNounSimple":\s*return\s+this\.tongueNoun\(!0\)\s*;/g, 'case "tongueNounSimple": { const __v=this.tongueNoun(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"backTattoo":\s*return\s+this\.getBackTattoo\(\)\s*;/g, 'case "backTattoo": { const __v=this.getBackTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+    [/case\s+"collarTattoo":\s*return\s+this\.getCollarTattoo\(\)\s*;/g, 'case "collarTattoo": { const __v=this.getCollarTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+    [/case\s+"shoulderTattoo":\s*return\s+this\.getShoulderTattoo\(\)\s*;/g, 'case "shoulderTattoo": { const __v=this.getShoulderTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+    [/case\s+"sleeveTattoo":\s*return\s+this\.getSleeveTattoo\(\)\s*;/g, 'case "sleeveTattoo": { const __v=this.getSleeveTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+    [/case\s+"legTattoo":\s*return\s+this\.getLegTattoo\(\)\s*;/g, 'case "legTattoo": { const __v=this.getLegTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+    [/case\s+"chestTattoo":\s*return\s+this\.getChestTattoo\(\)\s*;/g, 'case "chestTattoo": { const __v=this.getChestTattoo(); return globalThis.cnTattooLabel?globalThis.cnTattooLabel(__v):__v; }'],
+  ];
+  for (const [pattern, replacement] of parserMappings) {
+    const count = [...source.matchAll(pattern)].length;
+    if (count > 1) throw new Error("505 attribute mapping matched " + count + " times: " + pattern);
+    if (count === 1) source = source.replace(pattern, replacement);
+  }
+  source = source.replace(/(?<!cnBodyLabel\()this\.beardDesc\(\)/g, "globalThis.cnBodyLabel(this.beardDesc())");
+  source = replaceLooseCode(source, 'case"eyes":return plural(this.eyeDesc());', 'case"eyes":var __cnEyeDesc=plural(this.eyeDesc());return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__cnEyeDesc):__cnEyeDesc;', { label: "505 eye-description display", fatal: true });
+  source = replaceLooseCode(source, '1===this.balls||a||(r+="s"),r', '1===this.balls||a||(r+="s"),globalThis.cnBodyLabel?globalThis.cnBodyLabel(r):r', { label: "505 balls description display" });
+  source = replaceLooseCode(source, 'i+this.skinNoun(a,n)', '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(i+this.skinNoun(a,n)):i+this.skinNoun(a,n))', { label: "505 skin description display" });
+  const __cnDynamicHookCounts = {
+    attribute: source.split("globalThis.cnAttrLabel?globalThis.cnAttrLabel").length - 1,
+    body: source.split("globalThis.cnBodyLabel?globalThis.cnBodyLabel").length - 1,
+    fluid: source.split("globalThis.cnFluidLabel?globalThis.cnFluidLabel").length - 1,
+    tattoo: source.split("globalThis.cnTattooLabel?globalThis.cnTattooLabel").length - 1,
   };
-  const injectBody = `globalThis.cnBodyLabel=globalThis.cnBodyLabel||function(e){var bm=globalThis.cnBodyLabel.map||{},am=globalThis.cnAttrLabel&&globalThis.cnAttrLabel.map||{},all=Object.assign({},am,bm),parts=String(e).split(/([,，]\\s*)/),out="";for(var p=0;p<parts.length;p++){var part=parts[p];if(/^[,，]\\s*$/.test(part))continue;var lead=(part.match(/^\\s+/)||[""])[0],trail=(part.match(/\\s+$/)||[""])[0],core=part.trim();if(!core){out+=part;continue}var exact=core.toLowerCase();if(Object.prototype.hasOwnProperty.call(all,exact)){out+=all[exact];continue}var words=core.split(/\\s+/),vals=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(4,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(all,key)){hit=all[key];take=len;break}}if(null===hit){hit=words[i];take=1}if(vals.length&&/[A-Za-z0-9]$/.test(vals[vals.length-1])&&/^[A-Za-z0-9]/.test(hit))vals.push(" ");vals.push(hit);i+=take}out+=lead+vals.join("")+trail}return out.replace(/([\u4e00-\u9fff])\\s+([\u4e00-\u9fff])/g,"$1$2")};globalThis.cnBodyLabel.map=Object.assign(globalThis.cnBodyLabel.map||{},${JSON.stringify(bodyLabelMap)});`;
-  if (!source.includes("globalThis.cnBodyLabel=globalThis.cnBodyLabel||function")) source = source.includes('"use strict";') ? source.replace('"use strict";', '"use strict";' + injectBody) : injectBody + source;
-  source = source.replace('t+="donut",t}}],a&&h(t.prototype,a)', 't+="donut",globalThis.cnBodyLabel?globalThis.cnBodyLabel(t):t}}],a&&h(t.prototype,a)');
+  if (__cnDynamicHookCounts.attribute < 15 || __cnDynamicHookCounts.body < 18 || __cnDynamicHookCounts.fluid < 7 || __cnDynamicHookCounts.tattoo < 6)
+    throw new Error("505 dynamic placeholder mapping hooks incomplete: " + JSON.stringify(__cnDynamicHookCounts));
+  return source;
+}
 
-  // appearance_round3_505_face_and_body_fragments
-  for (const [from, to] of [["e=\"an androgynous \"+this.face(),e+=\" which leaves a subtle \"+this.mf(\"孩子气十足的\",\"girly\",!0)+\"印象\"","e=\"一张中性的\"+this.face(),e+=\"，带着微妙的\"+this.mf(\"少年感\",\"少女感\",!0)"],["this.hasBeard()?e+=\", chiseled jawline, and \"+this.beardDesc():e+=\"以及轮廓分明的下颌线\"","this.hasBeard()?e+=\"、棱角分明的下颌线和\"+this.beardDesc():e+=\"以及轮廓分明的下颌线\""],["e+=\", a pair of \"+plural(this.lipDesc(!0))+\"，以及颇具男性气质的侧脸轮廓\"","e+=\"、\"+plural(this.lipDesc(!0))+\"，以及颇具男性气质的侧脸轮廓\""],["\"succulent\"","\"饱满诱人的\""],["\"多肉植物\"","\"饱满诱人的\""],["\"supple\"","\"柔软的\""],["\"灵活的\"","\"柔软的\""],["\"工具\"","\"阴茎\""],["\"茎身\"","\"阴茎\""],["\"成员\"","\"阴茎\""],["\"下装\"","\"臀部\""]]) source = source.split(from).join(to);
-  // appearance_dynamic_505_round2
-  // Repair fixed Chinese glue and mistranslated random display choices at their generators.
-  for (const [from, to] of [
-    ['this.lipRating()>1&&(e+=" with "+plural(this.lipDesc(!0)))', 'this.lipRating()>1&&(e+="和"+plural(this.lipDesc(!0)))'],
-    ['this.hasBeard()&&(e+=" in addition to your "+this.beardDesc())', 'this.hasBeard()&&(e+="，此外还有"+this.beardDesc())'],
-    ['a+=randCollection(["髋部","髋部","髋部","侧腰"])', 'a+=randCollection(["髋部","髋部","髋部","髋部"])'],
-    ['randCollection(["尾部","臀部",this.mf("屁股","屁股"),"追尾"])', 'randCollection(["臀部","臀部",this.mf("屁股","屁股"),"臀部"])'],
-    ['o.push("紧致得令人难以置信，充满弹性")', 'o.push("紧致而富有弹性的")'],
-    ['o.push("小巧却柔软","小巧却柔软","很小但柔软的","精致而柔软")', 'o.push("小巧柔软的","小巧柔软的","很小但柔软的","精致而柔软的")'],
-    ['o.push("小小的","小小的","很小的","精致细腻")', 'o.push("小小的","小小的","很小的","精致小巧的")'],
-    ['o.push("柔软、紧凑")', 'o.push("柔软紧致的")']
-  ]) source = source.split(from).join(to);
+function patchHawkethorneRiverTitleDialogue(source, appName) {
+  if (!appName.startsWith("Content_Hawkethorne.")) return source;
+  // RiverChangeTitle is one valid JS string, but the extractor split it at
+  // apostrophes in It's / You'd / I've / that's / I'm / don't / haven't.
+  // Replace only the visible prose; never translate the surrounding code.
+  const replacements = [
+    [String.raw`\"Like I told you when we first met, if anyone wants people around Hawkethorne and the Marches to know something, all they have to do is come to me. It's not just the locals who get their news from me — it's practically everyone passing through town, and <b>they</b> will spread that word further into the Marches.\"`, String.raw`\"就像我初次见你时说的那样，如果有人想让霍克索恩和边疆的人知道些什么，只需来找我。镇上不只是本地人会从我这里听到消息——几乎所有经过镇子的人都会如此，而<b>他们</b>还会把消息进一步传遍边疆。\"`],
+    [String.raw`Right. You'd like to spread the word of your deeds out in the Marches, and let everyone know how they should address you in light of what you've accomplished during your adventures.`, String.raw`没错。你想让自己的事迹传遍边疆，也想让所有人根据你在冒险中取得的成就，知道今后该如何称呼你。`],
+    [String.raw`\"Of course, of course.\" River waggles a finger at you. \"I've been keeping eyes and ears out for the exploits of our latest rising star — I know what you've been doing, because that's my job, after all. That being said, I'm not going to risk my reputation by spreading deceptions... so don't try claiming titles you haven't earned. Quite important, that. And there's the matter of the fee...\"`, String.raw`\"当然，当然。\"里弗朝你晃了晃手指。\"我一直在留意我们这位新晋明星的种种壮举——我知道你都做过些什么，毕竟这就是我的工作。不过，我可不会冒着砸掉招牌的风险替人散播假话……所以别试图冒领你尚未获得的头衔。这一点非常重要。另外，还有费用的问题……\"`]
+  ];
+  for (const [from, to] of replacements) source = source.split(from).join(to);
+  return source;
+}
 
-  const labelMap = {
-    "human": "人类", "humanoid": "类人型", "catfolk": "猫人", "orc": "兽人", "elf": "精灵", "elven": "精灵", "wyld elf": "野精灵", "lupine": "狼族", "minotaur": "弥诺陶洛斯", "kitsune": "狐妖", "harpy": "鹰身女妖",
-    "male": "男性", "female": "女性", "man": "男性", "woman": "女性", "shemale": "双性人", "trap": "双性人",
-    "warrior": "战士", "thief": "盗贼", "black mage": "黑魔法师", "white mage": "白魔法师", "charmer": "魅惑者", "arcanist": "奥术师",
-    "soldier": "士兵", "noble scion": "贵族后裔", "acolyte": "侍僧", "barbarian": "野蛮人", "hunter": "猎人",
-    "skinny": "瘦削", "thin": "纤瘦", "slender": "苗条", "average": "普通", "thick": "厚实", "bodybuilder": "健美", "well-built": "健壮", "thinly muscled": "肌肉单薄",
-    "pale": "苍白", "fair": "白皙", "tanned": "晒黑", "olive": "橄榄色", "bronze": "古铜色", "dusky": "暗褐色", "dark": "深色", "black": "黑色", "regular": "普通的", "average-sized": "平均大小的",
-    "dark green": "深绿色", "green": "绿色", "light green": "浅绿色", "gray": "灰色", "brown": "棕色", "red": "红色", "blonde": "金发", "blue": "蓝色", "silver": "银色", "orange": "橙色", "gold": "金色", "white": "白色", "pink": "粉色", "purple": "紫色", "hazel": "榛色", "amber": "琥珀色", "golden": "金色",
-    "shoulder-length": "齐肩的", "neck-length": "及颈的", "butt-length": "齐臀长", "slightly long": "略长的", "moderately long": "略长的", "medium-length": "中等长度", "short": "短", "long": "长",
-    "unkempt": "蓬乱的", "shaggy": "蓬乱的", "facial hair": "胡须", "beard": "胡须",
-    "afro": "爆炸头", "afro ponytail": "爆炸头马尾", "afro puffs": "爆炸头蓬蓬发", "bald": "光头", "bob": "波波头", "box braids": "盒形辫", "braided": "编辫", "braid pompadour": "辫子蓬巴杜", "bun": "发髻", "curls": "卷发", "dreadlocks": "脏辫", "dread ponytail": "脏辫马尾", "fade": "渐层短发", "flattop": "平顶头", "mohawk": "莫霍克", "obfuscating afro": "遮脸爆炸头", "ponytail": "马尾", "rugged": "粗犷发型", "shaggy": "蓬乱短发", "side-cut": "侧削发", "side-cut dreads": "侧削脏辫", "spiky": "尖刺发", "spiky with bangs": "带刘海尖刺发", "straight": "直发", "top knot dreadlocks": "顶髻脏辫", "twintails": "双马尾"
-  };
-  const inject = "globalThis.cnAttrLabel=globalThis.cnAttrLabel||function(e){var t=String(e);var n=t.toLowerCase();return Object.prototype.hasOwnProperty.call(globalThis.cnAttrLabel.map,n)?globalThis.cnAttrLabel.map[n]:t};globalThis.cnAttrLabel.map=Object.assign(globalThis.cnAttrLabel.map||{}," + JSON.stringify(labelMap) + ");";
-  if (!source.includes("globalThis.cnAttrLabel=globalThis.cnAttrLabel||function")) source = source.includes('"use strict";') ? source.replace('"use strict";', '"use strict";' + inject) : inject + source;
-  for (const [from, to] of [
-    ['case"skinColor":return this.skinColor;', 'case"skinColor":return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.skinColor):this.skinColor;'],
-    ['case"skinFurScalesColor":return this.skinFurScalesColor();', 'case"skinFurScalesColor":var __cnv=this.skinFurScalesColor();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnv):__cnv;'],
-    ['case"class":return this.getClassName();', 'case"class":var __cnc=this.getClassName();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnc):__cnc;'],
-    ['case"background":return this.getBackgroundName();', 'case"background":var __cnb=this.getBackgroundName();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnb):__cnb;'],
-    ['case"race":return this.race();', 'case"race":var __cnr=this.race();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnr):__cnr;'],
-    ['case"raceAdjective":case"raceAdj":case"raceish":return this.raceAdj();', 'case"raceAdjective":case"raceAdj":case"raceish":var __cnra=this.raceAdj();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnra):__cnra;'],
-    ['case"raceCute":return this.raceCute();', 'case"raceCute":var __cnrc=this.raceCute();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnrc):__cnrc;'],
-    ['case"raceShort":return this.raceShort();', 'case"raceShort":var __cnrs=this.raceShort();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnrs):__cnrs;'],
-    ['case"gender":case"sex":return this.sex();', 'case"gender":case"sex":var __cns=this.sex();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cns):__cns;'],
-    ['case"hairColor":return this.hairColor;', 'case"hairColor":return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.hairColor):this.hairColor;'],
-    ['case"lipColor":return this.lipColor;', 'case"lipColor":return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.lipColor):this.lipColor;'],
-    ['case"startingRace":case"originalRace":return this.originalRace;', 'case"startingRace":case"originalRace":return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.originalRace):this.originalRace;'],
-    ['case"bodyType":case"bodyShape":case"physique":return this.bodyShape();', 'case"bodyType":case"bodyShape":case"physique":var __cnbs=this.bodyShape();return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__cnbs):__cnbs;'],
-    ['case"tongue":return this.tongueDesc();', 'case"tongue":var __cnt=this.tongueDesc();return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__cnt):__cnt;'],
-    ['case"tongueNoun":return this.tongueNoun();', 'case"tongueNoun":var __cntn=this.tongueNoun();return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__cntn):__cntn;'],
-    ['case"tongueNounSimple":return this.tongueNoun(!0);', 'case"tongueNounSimple":var __cnts=this.tongueNoun(!0);return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__cnts):__cnts;']
-  ]) source = source.replace(from, to);
 
+function injectPlaceDisplayLabels(source) {
+  const placeMap = displayMapping("cnPlaceLabel");
+  const inject = 'globalThis.cnPlaceLabel=globalThis.cnPlaceLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnPlaceLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnPlaceLabel.map=Object.assign(globalThis.cnPlaceLabel.map||{},' + JSON.stringify(placeMap) + ');';
+  if (!source.includes("globalThis.cnPlaceLabel=globalThis.cnPlaceLabel||function")) source = inject + source;
+  return source;
+}
+
+function patch103PlaceDisplayLabels(source, appName) {
+  if (!appName.startsWith("103.")) return source;
+  source = injectPlaceDisplayLabels(source);
+  const replacements = [
+    ['i="Location:\\n".concat(currentRoom.map)', 'i="Location:\\n".concat(globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentRoom.map):currentRoom.map)'],
+    ['if(currentRoom.name)return currentRoom.name;', 'if(currentRoom.name)return globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentRoom.name):currentRoom.name;'],
+    ['if(void 0===t)return currentRoom.map;', 'if(void 0===t)return globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentRoom.map):currentRoom.map;'],
+    ['return"".concat(currentRoom.map," ").concat(colorText(n,"Zone ".concat(t+1)))', 'return"".concat(globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentRoom.map):currentRoom.map," ").concat(colorText(n,"Zone ".concat(t+1)))'],
+  ];
+  for (const [original, patched] of replacements) {
+    source = replaceLooseCode(source, original, patched, { expected: 1, label: appName + ": currentRoom map display path", fatal: true });
+  }
+  return source;
+}
+
+function patchGlacialRiftPlaceDisplayLabels(source, appName) {
+  if (!appName.startsWith("Content_GlacialRift.")) return source;
+  source = injectPlaceDisplayLabels(source);
+  const original = "function(){return currentMap;}";
+  const patched = "function(){return globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentMap):currentMap}";
+  return replaceLooseCode(source, original, patched, { expected: 2, label: appName + ": currentMap display placeholder", fatal: true });
+}
+
+function patchMiscPlaceDisplayLabels(source, appName) {
+  if (!appName.startsWith("Content_Misc.")) return source;
+  source = injectPlaceDisplayLabels(source);
+  const aisling = /return\s+"the "\.concat\(\s*currentMap\s*,?\s*\);/g;
+  const aislingMatches = [...source.matchAll(aisling)];
+  if (aislingMatches.length !== 1) throw new Error(`${appName}: Aisling currentMap display pattern count ${aislingMatches.length}, expected 1`);
+  source = source.replace(aisling, 'return globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(currentMap):currentMap;');
+  const outdoors = /return\s+"(?:the |那个)"\.concat\(\s*currentMap\s*\?\s*currentMap\.toLowerCase\(\)\s*:\s*"outdoors"\s*,?\s*\);/g;
+  const outdoorsMatches = [...source.matchAll(outdoors)];
+  if (outdoorsMatches.length !== 1) throw new Error(`${appName}: outdoor currentMap display pattern count ${outdoorsMatches.length}, expected 1`);
+  source = source.replace(outdoors, 'var e=currentMap||"outdoors";return globalThis.cnPlaceLabel?globalThis.cnPlaceLabel(e):e;');
+  return source;
+}
+
+function patch673NormalAttackItemLabels(source, appName) {
+  if (!appName.startsWith("673.")) return source;
+  const itemMap = displayMapping("cnItemLabel");
+  const inject = "globalThis.cnItemLabel=globalThis.cnItemLabel||function(e){var t=String(e||\"\");return Object.prototype.hasOwnProperty.call(globalThis.cnItemLabel.map,t)?globalThis.cnItemLabel.map[t]:t};globalThis.cnItemLabel.map=Object.assign(globalThis.cnItemLabel.map||{}," + JSON.stringify(itemMap) + ");";
+  if (!source.includes("globalThis.cnItemLabel=globalThis.cnItemLabel||function")) source = inject + source;
+  const attackMarker = /\)\.name\s*=\s*"Attack"\s*\)\s*,\s*\(o\.short\s*=\s*"攻击"\s*\)\s*,\s*\(o\.desc\s*=\s*function\s*\(\)/g;
+  const markerMatches = [...source.matchAll(attackMarker)];
+  const markerIndex = markerMatches.length === 1 ? markerMatches[0].index : -1;
+  if (markerIndex < 0) {
+    console.warn(appName + ": normal Attack description marker not found uniquely; item display mapping was not applied.");
+    return source;
+  }
+  const startMatch = /o\.desc\s*=\s*function\s*\(\)/g;
+  startMatch.lastIndex = markerIndex;
+  const startFound = startMatch.exec(source);
+  const start = startFound ? startFound.index : -1;
+  const endMatch = /o\.tags\s*=/g;
+  endMatch.lastIndex = start >= 0 ? start : markerIndex;
+  const endFound = endMatch.exec(source);
+  const end = endFound ? endFound.index : -1;
+  if (start < 0 || end < 0) {
+    console.warn(appName + ": normal Attack description bounds not found; item display mapping was not applied.");
+    return source;
+  }
+  let region = source.slice(start, end);
+  const weapon = 'o.owner.getDescription("weapon")';
+  const offhand = 'o.owner.getDescription("offhand")';
+  if ((region.split(weapon).length - 1) !== 1 || (region.split(offhand).length - 1) !== 1) {
+    console.warn(appName + ": normal Attack weapon/offhand display values not found uniquely; item mapping was not applied.");
+    return source;
+  }
+  region = region.replace(weapon, 'globalThis.cnItemLabel?globalThis.cnItemLabel(o.owner.getDescription("weapon")):o.owner.getDescription("weapon")');
+  region = region.replace(offhand, 'globalThis.cnItemLabel?globalThis.cnItemLabel(o.owner.getDescription("offhand")):o.owner.getDescription("offhand")');
+  return source.slice(0, start) + region + source.slice(end);
+}
+
+function patch505CombatNamePrefix(source) {
+  // Keep soloCombatPrefix unchanged in game data; omit only its Chinese display prefix.
+  const mapping = displayMapping("cnCombatPrefix");
+  if (!Object.prototype.hasOwnProperty.call(mapping, "the ")) throw new Error("cnCombatPrefix mapping is missing");
+  const original = 'e.soloCombatPrefix?r(e.soloCombatPrefix+s(e.name)):s(r(e.name))';
+  const replacement = 'e.soloCombatPrefix?r((Object.prototype.hasOwnProperty.call(' + JSON.stringify(mapping) + ',e.soloCombatPrefix)?' + JSON.stringify(mapping) + '[e.soloCombatPrefix]:e.soloCombatPrefix)+s(e.name)):s(r(e.name))';
+  return replaceLooseCode(source, original, replacement, { label: "505 combat name prefix", fatal: true });
+}
+
+
+function patchMappedLiteralButtonLabels(source, appName) {
+  const groups = ["cnDirectionLabel","cnCombatMenuLabel","cnPowerUiLabel","cnCreationLabel","cnHairLabel","cnMakeupLabel","cnTattooLabel","cnGeneralButtonLabel"];
+  const merged = {};
+  const conflicts = new Set();
+  for (const group of groups) for (const [key, value] of Object.entries(displayMapping(group))) {
+    if (Object.prototype.hasOwnProperty.call(merged, key) && merged[key] !== value) conflicts.add(key);
+    else merged[key] = value;
+  }
+  for (const key of conflicts) delete merged[key];
+  const inject = 'globalThis.cnButtonLabel=globalThis.cnButtonLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnButtonLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnButtonLabel.map=Object.assign(globalThis.cnButtonLabel.map||{},' + JSON.stringify(merged) + ');';
+  let mapped = 0;
+  const pattern = /\b(add(?:Gated|Disabled)?Button\(\s*[^,\r\n]+,\s*)"([^"\\]*(?:\\.[^"\\]*)*)"/g;
+  source = source.replace(pattern, (whole, prefix, label) => {
+    if (!Object.prototype.hasOwnProperty.call(merged, label)) return whole;
+    mapped++;
+    return prefix + 'globalThis.cnButtonLabel(' + JSON.stringify(label) + ')';
+  });
+  if (mapped && !source.includes("globalThis.cnButtonLabel=globalThis.cnButtonLabel||function")) source = inject + source;
   return source;
 }
 
 function patchRuntimeHelpers(source, appName) {
+  source = patchMappedLiteralButtonLabels(source, appName);
+  source = patch103PlaceDisplayLabels(source, appName);
+  source = patchGlacialRiftPlaceDisplayLabels(source, appName);
+  source = patchMiscPlaceDisplayLabels(source, appName);
+  source = patch673NormalAttackItemLabels(source, appName);
   source = patchSelectItemShortLabels(source, appName);
+  if (appName.startsWith("103.")) { source = patch103QuestDisplayLabels(source); source = patch103DirectionLabels(source); source = patch103PowerUiLabels(source); source = patch103EffectDisplayLabels(source); }
+  if (appName.startsWith("673.")) { source = patch673QuestDisplayLabels(source); source = patch673QuestCharacterLabels(source); source = patch673CompanionAffinityLabels(source); }
   if (appName.startsWith("505.")) {
+    source = patch505CombatNamePrefix(source);
+    source = patch505CharacterNameLabels(source);
+    source = patch505ItemDisplayLabels(source);
+    source = patch505StatDisplayLabels(source);
+    source = patch505EquipmentInfoLabels(source);
+    source = patch505CharacterPanelLabels(source);
+    source = patch505PowerDisplayLabels(source);
+    source = patch505EffectDisplayLabels(source);
+    source = patch505InterruptPowerLabel(source);
+    source = patch505PowerUiLabels(source);
+    source = patch505DamageTypeLabels(source);
     source = patch505CombatPhrases(source);
     source = patch505ParserPronouns(source);
     source = patch505DynamicAttributeLabels(source);
   }
-  if (appName.startsWith("673.")) source = patch673UiLabels(source);
+  if (appName.startsWith("673.")) {
+    source = patch673EviscerateDynamicCount(source);
+    source = patch673GemPuzzleLabels(source);
+    source = patch673UiLabels(source);
+    source = patch673DirectionLabels(source);
+    source = patch673PerkDisplayLabels(source);
+    source = patch673CombatMenuLabels(source);
+  }
   if (appName.startsWith("Content_Other.")) source = patchContentOtherCreationUi(source);
   if (!appName.startsWith("673.")) return source;
-  const original = 'window.plural=function(e){var t=e.slice(-1),n=e.slice(-2,-1);return"s"===t||"s"===n&&"h"===t||"c"===n&&"h"===t?e+="es":"z"!==n&&"z"===t?e+="zes":"x"===t||"z"===t?e+="es":"y"===t&&"e"!==n&&"a"!==n&&"u"!==n&&"o"!==n&&"i"!==n?e=e.slice(0,-1)+"ies":e+="s",e}';
-  const patched = 'window.plural=function(e){if(/[\\u4e00-\\u9fff]/.test(e))return e;var t=e.slice(-1),n=e.slice(-2,-1);return"s"===t||"s"===n&&"h"===t||"c"===n&&"h"===t?e+="es":"z"!==n&&"z"===t?e+="zes":"x"===t||"z"===t?e+="es":"y"===t&&"e"!==n&&"a"!==n&&"u"!==n&&"o"!==n&&"i"!==n?e=e.slice(0,-1)+"ies":e+="s",e}';
-  if (!source.includes(original) && !source.includes(patched)) {
-    console.warn(`${appName}: plural helper pattern not found; Chinese plural patch was not applied.`);
-    return source;
-  }
-  return source.replace(original, patched);
+  if (source.includes('if(/[\\u4e00-\\u9fff]/.test(e))return e;')) return source;
+  const pluralStart = /(window\.plural\s*=\s*function\s*\(e\)\s*\{)/;
+  const matches = [...source.matchAll(new RegExp(pluralStart.source, "g"))];
+  if (matches.length !== 1) throw new Error(`${appName}: plural helper pattern count ${matches.length}, expected 1`);
+  return source.replace(pluralStart, '$1if(/[\\u4e00-\\u9fff]/.test(e))return e;');
 }
 function appFileNameFromJsonName(jsonName) {
   return jsonName.endsWith(".json") ? jsonName.slice(0, -5) : jsonName;
@@ -867,10 +1085,17 @@ function applyOne(jsonName) {
   if (!fs.existsSync(originalPath)) return { jsonName, applied: 0, skipped: 0, reason: "missing source app file" };
 
   let source = fs.readFileSync(originalPath, "utf8");
-  const rows = (doc.rows || [])
-    .filter((row) => row.translation && row.translation.trim() && row.translationStatus !== "failed")
+  const rebased = rebaseRowsToSource(doc.rows || [], source, appName);
+  const candidates = rebased.rows
+    .filter((row) => row.translation && row.translation.trim() && row.translationStatus !== "failed" && row.translationStatus !== "needs_manual_review")
     .filter((row) => typeof row.start === "number" && typeof row.end === "number")
-    .filter((row) => isSafeReplacementRow(row, source))
+    .filter((row) => row.manualTextOverlay ? isSafeManualTextOverlay(row, source) : isSafeReplacementRow(row, source));
+  const translatedLiterals = candidates.filter((row) => !row.manualTextOverlay);
+  const rows = candidates
+    // A complete translated literal supersedes any legacy overlay inside it.
+    // This lets old hand-split fragments disappear naturally once the newly
+    // formatted full string receives a translation.
+    .filter((row) => !row.manualTextOverlay || !translatedLiterals.some((literal) => literal.start <= row.start && literal.end >= row.end))
     .sort((a, b) => b.start - a.start);
 
   let applied = 0;
@@ -882,14 +1107,15 @@ function applyOne(jsonName) {
       skipped += 1;
       continue;
     }
-    source = source.slice(0, row.start) + jsStringLiteral(row.translation) + source.slice(row.end);
+    const replacement = row.manualTextOverlay ? jsStringContent(row.translation, row.overlayContainerQuote || '"') : jsStringLiteral(row.translation);
+    source = source.slice(0, row.start) + replacement + source.slice(row.end);
     applied += 1;
   }
 
   fs.mkdirSync(path.dirname(outputPath), { recursive: true });
   source = patchRuntimeHelpers(source, appName);
   fs.writeFileSync(outputPath, source, "utf8");
-  return { jsonName, outputPath, applied, skipped };
+  return { jsonName, outputPath, applied, skipped, rebase: rebased.stats };
 }
 
 function copyUntranslatedJsFiles(summaries) {
@@ -928,7 +1154,8 @@ function main() {
   for (const item of summaries) {
     totalApplied += item.applied || 0;
     totalSkipped += item.skipped || 0;
-    console.log(`${item.jsonName}: applied=${item.applied || 0}, skipped=${item.skipped || 0}${item.reason ? `, ${item.reason}` : ""}`);
+    const rebase = item.rebase ? `, rebased=${item.rebase.matched}/${item.rebase.total}, unmatched=${item.rebase.unmatched}` : "";
+    console.log(`${item.jsonName}: applied=${item.applied || 0}, skipped=${item.skipped || 0}${rebase}${item.reason ? `, ${item.reason}` : ""}`);
   }
   const jsOutput = copyUntranslatedJsFiles(summaries);
   const summary = { generatedAt: new Date().toISOString(), totalApplied, totalSkipped, ...jsOutput, files: summaries };

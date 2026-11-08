@@ -1,0 +1,413 @@
+{
+  "generatedAt": "2026-11-08T01:47:55.581Z",
+  "totalApplied": 78059,
+  "totalSkipped": 0,
+  "copiedOriginalJs": 7,
+  "generatedTranslatedJs": 31,
+  "totalJsOutput": 38,
+  "files": [
+    {
+      "jsonName": "103.1e62197152c63dda5dbe.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\103.1e62197152c63dda5dbe.js",
+      "applied": 500,
+      "skipped": 0,
+      "rebase": {
+        "total": 7820,
+        "matched": 7820,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "505.556864beb2407f9746a7.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\505.556864beb2407f9746a7.js",
+      "applied": 3594,
+      "skipped": 0,
+      "rebase": {
+        "total": 7895,
+        "matched": 7895,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "673.bf1fda5f34cff5ab2c67.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\673.bf1fda5f34cff5ab2c67.js",
+      "applied": 11077,
+      "skipped": 0,
+      "rebase": {
+        "total": 40754,
+        "matched": 40754,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_CentaurVillage.8a08ce420f92df79587d.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_CentaurVillage.8a08ce420f92df79587d.js",
+      "applied": 1129,
+      "skipped": 0,
+      "rebase": {
+        "total": 1972,
+        "matched": 1972,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Coastlands.0f894d7b3a3101bb1710.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Coastlands.0f894d7b3a3101bb1710.js",
+      "applied": 1089,
+      "skipped": 0,
+      "rebase": {
+        "total": 1907,
+        "matched": 1907,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Companions.921731664d38ff52f3ae.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Companions.921731664d38ff52f3ae.js",
+      "applied": 5889,
+      "skipped": 0,
+      "rebase": {
+        "total": 10416,
+        "matched": 10416,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_DragonLair.a22c870484febce6f9f2.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_DragonLair.a22c870484febce6f9f2.js",
+      "applied": 507,
+      "skipped": 0,
+      "rebase": {
+        "total": 927,
+        "matched": 927,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_DreamPalace.253f5f0c3a75d9035341.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_DreamPalace.253f5f0c3a75d9035341.js",
+      "applied": 187,
+      "skipped": 0,
+      "rebase": {
+        "total": 340,
+        "matched": 340,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Dungeons.907b82acb01ccba6a348.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Dungeons.907b82acb01ccba6a348.js",
+      "applied": 4493,
+      "skipped": 0,
+      "rebase": {
+        "total": 8241,
+        "matched": 8241,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_FireTemple.a0a212d5bb038aef23a1.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_FireTemple.a0a212d5bb038aef23a1.js",
+      "applied": 126,
+      "skipped": 0,
+      "rebase": {
+        "total": 230,
+        "matched": 230,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Followers.de64b10269e483e3defb.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Followers.de64b10269e483e3defb.js",
+      "applied": 100,
+      "skipped": 0,
+      "rebase": {
+        "total": 133,
+        "matched": 133,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Foothills.ce2af184ad4ab98dc849.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Foothills.ce2af184ad4ab98dc849.js",
+      "applied": 1280,
+      "skipped": 0,
+      "rebase": {
+        "total": 2446,
+        "matched": 2446,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Forest.405c99ebffed4853bc79.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Forest.405c99ebffed4853bc79.js",
+      "applied": 2707,
+      "skipped": 0,
+      "rebase": {
+        "total": 4878,
+        "matched": 4878,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Frostwood.8e5be052a863b4dffa06.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Frostwood.8e5be052a863b4dffa06.js",
+      "applied": 3459,
+      "skipped": 0,
+      "rebase": {
+        "total": 6308,
+        "matched": 6308,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_GlacialRift.113821e8db1249b3c981.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_GlacialRift.113821e8db1249b3c981.js",
+      "applied": 829,
+      "skipped": 0,
+      "rebase": {
+        "total": 1548,
+        "matched": 1548,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Hawkethorne.2b15bcfd275fb9db90ec.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Hawkethorne.2b15bcfd275fb9db90ec.js",
+      "applied": 6146,
+      "skipped": 0,
+      "rebase": {
+        "total": 10823,
+        "matched": 10823,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_HornetHive.d8d727fa342a416527f5.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_HornetHive.d8d727fa342a416527f5.js",
+      "applied": 568,
+      "skipped": 0,
+      "rebase": {
+        "total": 1108,
+        "matched": 1108,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Khorminos.6cfcb2d16b4381c903e1.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Khorminos.6cfcb2d16b4381c903e1.js",
+      "applied": 6570,
+      "skipped": 0,
+      "rebase": {
+        "total": 11387,
+        "matched": 11387,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_KitsuneDen.106dd987b8664068fe27.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_KitsuneDen.106dd987b8664068fe27.js",
+      "applied": 2912,
+      "skipped": 0,
+      "rebase": {
+        "total": 5377,
+        "matched": 5377,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_LightPalace.a8f6dd33b12cf63285f3.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_LightPalace.a8f6dd33b12cf63285f3.js",
+      "applied": 1178,
+      "skipped": 0,
+      "rebase": {
+        "total": 2021,
+        "matched": 2021,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_MarefolkVillage.6c8fed74f82404571c6d.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_MarefolkVillage.6c8fed74f82404571c6d.js",
+      "applied": 861,
+      "skipped": 0,
+      "rebase": {
+        "total": 1695,
+        "matched": 1695,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Misc.4519604f0cc90b976efc.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Misc.4519604f0cc90b976efc.js",
+      "applied": 6660,
+      "skipped": 0,
+      "rebase": {
+        "total": 12261,
+        "matched": 12261,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_OrcVillage.c24d05dc37a075471768.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_OrcVillage.c24d05dc37a075471768.js",
+      "applied": 1042,
+      "skipped": 0,
+      "rebase": {
+        "total": 1877,
+        "matched": 1877,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Other.e87444bde91ff19713d3.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Other.e87444bde91ff19713d3.js",
+      "applied": 339,
+      "skipped": 0,
+      "rebase": {
+        "total": 831,
+        "matched": 831,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Starhome.f5487356c1f7239c519d.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Starhome.f5487356c1f7239c519d.js",
+      "applied": 219,
+      "skipped": 0,
+      "rebase": {
+        "total": 398,
+        "matched": 398,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_TychrisPalace.b9e39d72edfd9cef09b7.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_TychrisPalace.b9e39d72edfd9cef09b7.js",
+      "applied": 1814,
+      "skipped": 0,
+      "rebase": {
+        "total": 3104,
+        "matched": 3104,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Undermountain.d030bf98ce3c5401b17c.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Undermountain.d030bf98ce3c5401b17c.js",
+      "applied": 1138,
+      "skipped": 0,
+      "rebase": {
+        "total": 2154,
+        "matched": 2154,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Valley.f686fcab92c6a1fc35e3.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Valley.f686fcab92c6a1fc35e3.js",
+      "applied": 2551,
+      "skipped": 0,
+      "rebase": {
+        "total": 4626,
+        "matched": 4626,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_Wayfort.c74c265989837448bd00.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_Wayfort.c74c265989837448bd00.js",
+      "applied": 7022,
+      "skipped": 0,
+      "rebase": {
+        "total": 12500,
+        "matched": 12500,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_WindyPeaks.2e719cb9dd55ee628d42.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_WindyPeaks.2e719cb9dd55ee628d42.js",
+      "applied": 1014,
+      "skipped": 0,
+      "rebase": {
+        "total": 1902,
+        "matched": 1902,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    },
+    {
+      "jsonName": "Content_WinterCity.778f37250cf4cc4b7f5a.js.json",
+      "outputPath": "D:\\Codex\\COC2 0.914\\translator\\translated_app\\Content_WinterCity.778f37250cf4cc4b7f5a.js",
+      "applied": 1059,
+      "skipped": 0,
+      "rebase": {
+        "total": 1975,
+        "matched": 1975,
+        "overlays": 0,
+        "unmatched": 0,
+        "mode": "verified_new_offsets_no_relocation"
+      }
+    }
+  ]
+}

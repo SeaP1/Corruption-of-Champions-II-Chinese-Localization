@@ -16,8 +16,8 @@ const BAD_WORDS = new Set([
   "map", "set", "object", "array", "promise", "symbol", "iterator"
 ]);
 const SAFE_PROPERTY_KEYS = new Set(["name:", "description:", "short:", "message:", "noDataText:", "loadingText:", "pageJumpText:", "rowsSelectorText:"]);
-const SAFE_CALL_KEYS = new Set(["output(", "outputParsed(", "author(", "showNotification(", ".setText(", "addButton(", "addGatedButton("]);
-const BAD_CONTEXT_PREFIXES = new Set(["TypeError(", "ReferenceError(", "Error(", ".error(", ".warn(", ".log(", "className:", ".querySelector(", ".bufferAliases(", ".buffer(", ".getPerk(", ".getStatusEffect(", ".hasStatusEffect(", ".descStrength("]);
+const SAFE_CALL_KEYS = new Set(["output(", "outputParsed(", "author(", "showNotification(", ".setText(", "addButton(", "addGatedButton(", ".bufferAliases("]);
+const BAD_CONTEXT_PREFIXES = new Set(["TypeError(", "ReferenceError(", "Error(", ".error(", ".warn(", ".log(", "className:", ".querySelector(", ".buffer(", ".getPerk(", ".getStatusEffect(", ".hasStatusEffect(", ".descStrength("]);
 
 function hasLetters(s) { return /[A-Za-z]/.test(s); }
 function hasCjk(s) { return /[\u4e00-\u9fff]/.test(s); }
@@ -78,6 +78,45 @@ function isInternalClassKey(sourceText, row) {
   const pre = sourceText.slice(Math.max(0, row.start - 24), row.start);
   return /(?:\{|,)\s*key\s*:\s*$/.test(pre);
 }
+function insideFirstBufferAliasesArgument(sourceText, row) {
+  const needle = "CombatManager.bufferAliases";
+  const callAt = sourceText.lastIndexOf(needle, row.start);
+  if (callAt < 0 || row.start - callAt > 6000) return false;
+  const open = sourceText.indexOf("(", callAt + needle.length);
+  if (open < 0 || open >= row.start) return false;
+  let paren = 1, square = 0, brace = 0, topLevelCommas = 0;
+  let quote = "", escaped = false, lineComment = false, blockComment = false;
+  for (let i = open + 1; i < row.start; i++) {
+    const ch = sourceText[i], next = sourceText[i + 1];
+    if (lineComment) { if (ch === "\n") lineComment = false; continue; }
+    if (blockComment) { if (ch === "*" && next === "/") { blockComment = false; i++; } continue; }
+    if (quote) {
+      if (escaped) { escaped = false; continue; }
+      if (ch === "\\") { escaped = true; continue; }
+      if (ch === quote) quote = "";
+      continue;
+    }
+    if (ch === "/" && next === "/") { lineComment = true; i++; continue; }
+    if (ch === "/" && next === "*") { blockComment = true; i++; continue; }
+    if (ch === '"' || ch === "'" || ch === "`") { quote = ch; continue; }
+    if (ch === "(") paren++;
+    else if (ch === ")") { paren--; if (paren <= 0) return false; }
+    else if (ch === "[") square++;
+    else if (ch === "]") square--;
+    else if (ch === "{") brace++;
+    else if (ch === "}") brace--;
+    else if (ch === "," && paren === 1 && square === 0 && brace === 0) topLevelCommas++;
+  }
+  return paren > 0 && topLevelCommas === 0;
+}
+function trustedBufferAliasesText(row, sourceText) {
+  const t = String(row.original || "").trim();
+  if (!insideFirstBufferAliasesArgument(sourceText, row)) return false;
+  if (!t || !hasLetters(t) || hasCjk(t) || isDeveloperMessage(t)) return false;
+  if (isHtmlOnlyFragment(t) || /^(?:s|es|ies|y)$/i.test(t)) return false;
+  if (/\b(?:function|return|undefined|null|prototype|constructor)\b/.test(t)) return false;
+  return true;
+}
 function keepLexicon(row, kind) {
   const t = row.original.trim();
   if (!(kind === "randCollection_array" || kind === "push_arg")) return false;
@@ -123,14 +162,35 @@ function keepVisible(row, key, kind) {
   }
   return false;
 }
-function decide(row, key, kind, internalClassKey) {
+function decide(row, key, kind, internalClassKey, trustedAliasText) {
   if (internalClassKey) return { keep: false, reason: "disabled_internal_class_key" };
+  if (trustedAliasText) return { keep: true, reason: "505_visible_buffer_alias_text" };
   if (BAD_CONTEXT_PREFIXES.has(key)) return { keep: false, reason: "disabled_internal_lookup_key" };
   if (!row.shouldTranslate && !cleanBase(row.original)) return { keep: false, reason: "source_not_translatable" };
   if (keepSourceWanted(row)) return { keep: true, reason: "505_source_should_translate_safe" };
   if (keepLexicon(row, kind)) return { keep: true, reason: `505_lexicon_${kind}` };
   if (row.shouldTranslate && keepVisible(row, key, kind)) return { keep: true, reason: `505_visible_${key.replace(/[^A-Za-z0-9]+/g, "_")}_${row.category}` };
   return { keep: false, reason: "disabled_for_505_safety" };
+}
+
+function corruptionLiteralRole(sourceText, row) {
+  const value = String(row.original || "");
+  if (!/^(?:demonic|corrupted|tainted|pure)$/.test(value)) return null;
+  const before = sourceText.slice(Math.max(0, row.start - 12000), row.start);
+  const lastMatchOffset = (regex) => {
+    let found = -1, match;
+    regex.lastIndex = 0;
+    while ((match = regex.exec(before))) found = match.index;
+    return found < 0 ? -1 : row.start - before.length + found;
+  };
+  const coinStart = lastMatchOffset(/key\s*:\s*["']corruptionCoin["']/g);
+  const titleStart = lastMatchOffset(/key\s*:\s*["']corruptionTitle["']/g);
+  const tail = sourceText.slice(row.start, Math.min(sourceText.length, row.start + 12000));
+  const boundary = /}\s*,\s*{\s*key\s*:\s*["']/.exec(tail);
+  const nextMethod = boundary ? row.start + boundary.index : -1;
+  if (coinStart > titleStart && (nextMethod < 0 || row.start < nextMethod)) return "coin";
+  if (titleStart > coinStart && (nextMethod < 0 || row.start < nextMethod)) return "title";
+  return null;
 }
 
 const doc = JSON.parse(fs.readFileSync(sourcePath, "utf8"));
@@ -143,7 +203,12 @@ for (const row of doc.rows || []) {
   const kind = contextKind(sourceText, row);
   row.contextKey = key;
   row.contextKind = kind;
-  const d = decide(row, key, kind, isInternalClassKey(sourceText, row));
+  const corruptionRole = corruptionLiteralRole(sourceText, row);
+  const d = corruptionRole === "coin"
+    ? { keep: false, reason: "disabled_internal_corruption_coin_key" }
+    : corruptionRole === "title"
+      ? { keep: true, reason: "505_visible_corruption_title" }
+      : decide(row, key, kind, isInternalClassKey(sourceText, row), trustedBufferAliasesText(row, sourceText));
   row.shouldTranslate = d.keep;
   row.curatedReason = d.reason;
   if (d.keep) {
@@ -152,6 +217,8 @@ for (const row of doc.rows || []) {
   } else disabled++;
 }
 doc.curated = {
+  sourceFormat: "prettier-multiline",
+  locatorPolicy: "content/category/context; whitespace-tolerant method detection",
   generatedAt: new Date().toISOString(),
   source: sourcePath,
   sourceJs: sourceJsPath,

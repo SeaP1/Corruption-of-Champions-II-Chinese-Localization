@@ -34,6 +34,9 @@ function isInternalClassKey(row) {
   const pre = sourceText.slice(Math.max(0, row.start - 24), row.start);
   return /(?:\{|,)\s*key\s*:\s*$/.test(pre);
 }
+function isManualVisibleDynamicFragment(row) {
+  return row.manualTextOverlay === true || row.curatedReason === "manual_visible_dynamic_fragment";
+}
 function rejectReason(row) {
   const raw = String(row.original || "");
   const t = raw.trim();
@@ -64,6 +67,7 @@ function rejectReason(row) {
   return "";
 }
 function keepReason(row) {
+  if (isManualVisibleDynamicFragment(row)) return { keep: true, reason: "manual_visible_dynamic_fragment" };
   const bad = rejectReason(row);
   if (bad) return { keep: false, reason: bad };
   const t = String(row.original || "").trim();
@@ -102,6 +106,8 @@ for (const row of doc.rows || []) {
 }
 
 doc.curated = {
+  sourceFormat: "prettier-multiline",
+  locatorPolicy: "content/category/context; no hard-coded character offsets",
   generatedAt: new Date().toISOString(),
   source: sourcePath,
   policy: "Wide 673 builder based on extractor shouldTranslate, but rejects runtime errors, debug/internal strings, CSS/media queries, asset paths, and obvious minified code fragments. Keeps dialogue/prose for quests, codex, race and item descriptions.",

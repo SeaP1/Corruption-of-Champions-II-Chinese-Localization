@@ -21,14 +21,8 @@ const ALWAYS_KEEP_EXACT = new Set([
   "Images", "Fonts", "Theme", "Gender", "Autosave", "Difficulty", "Brightness"
 ]);
 
-const OPTION_WINDOW_START = 148000;
-const OPTION_WINDOW_END = 159200;
-const CONFIRM_WINDOWS = [[127000, 128000], [165700, 168100]];
-
 function hasLetters(s) { return /[A-Za-z]/.test(s); }
 function hasCjk(s) { return /[\u4e00-\u9fff]/.test(s); }
-function inRange(row, start, end) { return typeof row.start === "number" && row.start >= start && row.start <= end; }
-function inAnyConfirmWindow(row) { return CONFIRM_WINDOWS.some(([a, b]) => inRange(row, a, b)); }
 function wordCount(s) { return (String(s).match(/[A-Za-z]+/g) || []).length; }
 function isTitleish(s) {
   const words = s.trim().split(/\s+/).filter(Boolean);
@@ -62,7 +56,6 @@ function cleanVisible(row) {
 }
 function keepOptionArea(row) {
   const t = String(row.original || "").trim();
-  if (!inRange(row, OPTION_WINDOW_START, OPTION_WINDOW_END)) return false;
   if (!cleanVisible(row)) return false;
   if (ALWAYS_KEEP_EXACT.has(t)) return true;
   if (row.category === "button_or_tooltip") return t.length <= 80;
@@ -79,7 +72,6 @@ function keepOptionArea(row) {
 }
 function keepConfirmOrPopup(row) {
   const t = String(row.original || "").trim();
-  if (!inAnyConfirmWindow(row)) return false;
   if (!cleanVisible(row)) return false;
   if (ALWAYS_KEEP_EXACT.has(t)) return true;
   if (row.category === "button_or_tooltip") return t.length <= 80;
@@ -117,9 +109,10 @@ function keepGeneralSafe(row) {
   return false;
 }
 function keepRow(row) {
+  const t = String(row.original || "").trim();
+  if (String(row.original || "").trim() === "Fur Gold") return { keep: true, reason: "103_visible_silly_currency_label" };
+  if (ALWAYS_KEEP_EXACT.has(t) && cleanVisible(row)) return { keep: true, reason: "103_known_visible_ui" };
   if (keepSourceWanted(row)) return { keep: true, reason: "103_source_should_translate_safe" };
-  if (keepOptionArea(row)) return { keep: true, reason: "103_options_area" };
-  if (keepConfirmOrPopup(row)) return { keep: true, reason: "103_confirm_or_popup" };
   if (keepGeneralSafe(row)) return { keep: true, reason: "103_general_safe_visible" };
   return { keep: false, reason: "disabled_for_103_curated_safety" };
 }
@@ -153,7 +146,8 @@ doc.curated = {
   disabled,
   keptByReason,
   keptByCategory,
-  windows: { optionArea: [OPTION_WINDOW_START, OPTION_WINDOW_END], confirmWindows: CONFIRM_WINDOWS }
+  sourceFormat: "prettier-multiline",
+  locatorPolicy: "content/category/context; no hard-coded character windows"
 };
 doc.shouldTranslate = kept;
 fs.mkdirSync(outDir, { recursive: true });
