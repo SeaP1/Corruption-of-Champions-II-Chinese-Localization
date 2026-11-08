@@ -323,7 +323,10 @@
       "Tammy": "塔米",
       "Rags": "拉格斯",
       "Kari": "卡莉",
-      "Electra": "伊莱克特拉"
+      "Electra": "伊莱克特拉",
+      "Violette": "维奥莱特",
+      "Rahia": "拉希娅",
+      "Eclipse": "伊克利普丝"
     },
     "Roaming Encounters": {
       "Avanai Rider": "阿瓦奈骑手",
@@ -450,7 +453,11 @@
       "Byvernia Talsna": "拜维尼亚·塔尔斯娜",
       "Zorba": "佐尔巴",
       "Junkrat": "狂鼠",
-      "Siorcanna Beta": "希奥卡纳族贝塔"
+      "Siorcanna Beta": "希奥卡纳族贝塔",
+      "Cone Snail": "芋螺",
+      "Harpy Siren": "鹰身女妖塞壬",
+      "Harpy Charmblade": "鹰身女妖魅刃",
+      "Harpy Witch": "鹰身女妖女巫"
     },
     "Event Encounters": {
       "Abyssal Thing": "深渊之物",
@@ -530,7 +537,7 @@
       "Tollus": "托勒斯",
       "Lustrider Tollus": "欲骑者托勒斯",
       "Master Whisper": "低语大师",
-      "Matron Shaedra": "玛蒂哈女士",
+      "Matron Shaedra": "主母沙德拉",
       "Melara": "梅拉拉",
       "Minotaur Ghosts": "弥诺陶洛斯幽魂",
       "Mistress Matiha": "玛蒂哈女士",
@@ -583,7 +590,10 @@
       "Harpy Wingleader": "鹰身女妖翼队长",
       "Bloodfavor": "血恩",
       "Dior": "迪奥",
-      "Opal": "欧珀"
+      "Opal": "欧珀",
+      "Shemiya": "谢米娅",
+      "Aísha": "艾莎",
+      "Minotaur Guard": "弥诺陶洛斯卫兵"
     },
     "Marked Mercenary Band": {
       "Unnamed Dogdick Mercenary": "无名犬根佣兵",
@@ -615,8 +625,8 @@
     "Ruins of Xadaron Characters": {
       "Mie Xadaron": "米耶·萨达隆",
       "Archdruid Xadaron": "大德鲁伊萨达隆",
-      "Leanore": "莉诺尔",
-      "Lea": "莉亚",
+      "Leanore": "蕾诺尔",
+      "Lea": "蕾娅",
       "Anisette": "阿妮塞特",
       "Nissy": "妮茜",
       "Spore Spawn": "孢子孽生"
@@ -715,7 +725,7 @@
       "Livraus": "利夫劳斯",
       "Mai": "舞",
       "Maia": "玛雅",
-      "Marla": "玛拉",
+      "Marla": "玛尔拉",
       "Mia": "米娅",
       "Minny": "明妮",
       "Miyuki": "美雪",
@@ -782,7 +792,7 @@
       "Hirrud Grune": "希鲁德·格鲁恩",
       "Kassyra": "卡希拉",
       "Kasy": "卡希",
-      "Kessy": "凯西",
+      "Kessy": "小凯",
       "Kesuk": "凯萨克",
       "Koian": "科伊安",
       "Leroux": "勒鲁",
@@ -822,14 +832,19 @@
       "Hadred": "哈德雷德",
       "Hadrien Grune": "哈德良·格鲁恩",
       "Hadrien": "哈德良",
-      "Calli": "卡莉",
+      "Calli": "卡利",
       "Etheyn": "伊瑟琳",
       "Livernon": "利弗农",
-      "Siv": "西芙",
+      "Siv": "西薇",
       "Laz": "拉兹",
       "Theodroe Fautier": "西奥多·福蒂埃",
       "Ōtomo": "大友",
-      "Ma Siorc": "希奥克老妈"
+      "Ma Siorc": "希奥克老妈",
+      "Teela": "缇拉",
+      "Catherine": "卡瑟琳",
+      "Sirena": "西蕾娜",
+      "Magnus": "马格努斯",
+      "Katherine": "凯瑟琳"
     },
     "Named Mounts": {
       "Leo": "利奥"
@@ -932,7 +947,9 @@
       "Velun's Daughters": "维伦的女儿们",
       "Princess's Dilemma": "公主的困境",
       "Sterility Fix": "不育症疗法",
-      "Big Bull": "大公牛"
+      "Big Bull": "大公牛",
+      "The Grand Heist": "惊天大劫案",
+      "Spoiling Food at the Fort": "驿堡食物变质"
     }
   },
   "Events": {
@@ -1007,7 +1024,8 @@
       "Altenspire": "阿尔滕斯派尔",
       "Clairemont": "克莱尔蒙特",
       "Vulperine Village": "狐人族村落",
-      "City of Glass": "玻璃之城"
+      "City of Glass": "玻璃之城",
+      "The Warrens": "兔穴区"
     },
     "Locations": {
       "Abandoned Temple": "废弃神殿",
@@ -1129,7 +1147,8 @@
       "Waystation Stenn": "斯坦驿站",
       "City of Sorcery": "魔法之城",
       "Courlund": "科伦德",
-      "Drapsa": "德拉普萨"
+      "Drapsa": "德拉普萨",
+      "Novitauri Estate": "诺维陶里庄园"
     }
   },
   "Items": {
@@ -1156,7 +1175,7 @@
         "Kimono": "和服",
         "Kunoichi Bodysuit": "女忍紧身衣",
         "Lamellar Armor": "札甲",
-        "Latex Bodysuit": "乳胶紧身衣",
+        "Latex Bodysuit": "乳胶连体衣",
         "Leather Coat": "皮革外套",
         "Leather Jerkin": "皮革背心",
         "Mail Bikini": "链甲比基尼",
@@ -1177,7 +1196,8 @@
         "Tiran Vestments": "蒂拉法衣",
         "Warhides": "战皮",
         "Witch's Corset": "女巫束腰",
-        "Tiran Chestplate": "蒂拉胸甲"
+        "Tiran Chestplate": "蒂拉圣骑士胸甲",
+        "Sun-Harlot Silks": "太阳神妓丝衣"
       },
       "Feet": {
         "Bronze Greaves": "青铜胫甲",
@@ -1191,7 +1211,8 @@
         "Weed-walkers": "踏草靴",
         "Winged Sabatons": "飞翼铁靴",
         "Rogues Boots": "盗贼长靴",
-        "Rogue's Boots": "盗贼长靴"
+        "Rogue's Boots": "盗贼长靴",
+        "Noble Rogue's Heels": "贵族盗贼高跟鞋"
       },
       "Hands": {
         "Arm Guards": "护臂",
@@ -1204,7 +1225,8 @@
         "Pyromancer's Gloves": "焰术士手套",
         "Royal Gloves": "王室手套",
         "Scaredy Cat Gloves": "胆小猫手套",
-        "Secutor Armplate": "执政官臂甲"
+        "Secutor Armplate": "执政官臂甲",
+        "Noble Rogue's Gloves": "贵族盗贼手套"
       },
       "Head": {
         "Arcane Circlet": "奥术头环",
@@ -1227,7 +1249,8 @@
         "Silver Mask": "银面具",
         "Titanic Hat": "泰坦帽",
         "Wide-brimmed Hat": "宽檐帽",
-        "Witch's Hat": "女巫帽"
+        "Witch's Hat": "女巫帽",
+        "Noble Rogue's Mask": "贵族盗贼面具"
       },
       "Neck": {
         "Amulet of Transference": "转移护符",
@@ -1278,7 +1301,8 @@
         "Guard's Cape": "卫兵披风",
         "Hirrud's Cloak": "希鲁德的斗篷",
         "Leather Spaulders": "皮革肩甲",
-        "Seaweave Shaman's Cape": "海织物萨满斗篷"
+        "Seaweave Shaman's Cape": "海织物萨满斗篷",
+        "Noble Rogue's Cape": "贵族盗贼披风"
       },
       "Waist": {
         "Belt With A Pouch": "带袋腰带",
@@ -1292,7 +1316,9 @@
         "Pyromancer's Kilt": "焰术士短裙",
         "Reagent Pouch": "试剂袋",
         "Sallow Belt": "柳木腰带",
-        "Senninbari": "千人针腰带"
+        "Senninbari": "千人针腰带",
+        "Noble Rogue's Girdle": "贵族盗贼束腰",
+        "Quickdraw Satchel": "快取挎包"
       },
       "Top": {
         "Black Seaweave Bra": "黑色海织物胸罩",
@@ -1306,7 +1332,8 @@
         "Silk Corset": "丝绸束腰",
         "Silk Shirt": "丝绸衬衫",
         "Wool Sweater": "羊毛衫",
-        "Sarashi": "裹胸布"
+        "Sarashi": "裹胸布",
+        "Noble Rogue's Suit": "贵族盗贼礼服"
       },
       "Bottom": {
         "Cowprint Panties": "奶牛纹内裤",
@@ -1325,7 +1352,9 @@
         "Silk Underpants": "丝绸内裤",
         "Slutty Seaweave Panties": "淫荡海织物内裤",
         "Stockings And Garterbelt": "长筒袜与吊袜带",
-        "Studded Leathers": "铆钉皮裤"
+        "Studded Leathers": "铆钉皮裤",
+        "Hard Leather Skirt": "硬皮裙",
+        "Grass Skirt": "草裙"
       }
     },
     "Weapons": {
@@ -1416,7 +1445,10 @@
         "Wooden Rod": "木杖",
         "Bewitching Staff": "魅惑法杖",
         "Icerime Rod": "霜凇权杖",
-        "Bearded Axe": "长须斧"
+        "Bearded Axe": "长须斧",
+        "Noblesse Oblige": "贵族义务",
+        "Silvered Axe": "镀银斧",
+        "Venomous Harpoon": "剧毒鱼叉"
       },
       "Offhand": {
         "Ancient Warhorn": "远古战号",
@@ -1483,7 +1515,7 @@
         "Kitsune Gift": "狐妖赠礼",
         "Lustful Liquor": "淫荡酒液",
         "Ovilixer": "卵化剂",
-        "Pink Draught": "粉色药剂",
+        "Pink Draught": "粉色饮剂",
         "Pupper Pale Ale": "幼犬淡艾尔",
         "Razorcup Nectar": "剃刀杯花蜜",
         "Red Cow Wine": "红牛葡萄酒",
@@ -1578,7 +1610,7 @@
         "Double Pepper": "双生胡椒",
         "Knotted Pepper": "打结辣椒",
         "Pink Egg": "粉色蛋",
-        "Pink Potion": "粉色药剂",
+        "Pink Potion": "粉色药水",
         "Purple Egg": "紫色鸡蛋",
         "Tan Egg": "蛋饼",
         "Short Stack Stew": "矮个炖菜",
@@ -1958,7 +1990,7 @@
       "Vestal's Raiment": "贞女的长袍",
       "arc magnifier": "电弧放大器",
       "amber orb": "琥珀球",
-      "aspis": "圆盾",
+      "aspis": "阿斯庇斯盾",
       "Clear Moonlight": "清月之光",
       "Crystal Winter Melody": "水晶冬日旋律",
       "Ember Lager": "余烬拉格",
@@ -1978,10 +2010,11 @@
       "Tartan Garb": "花格呢装束",
       "Strategos Plate": "统帅胸甲",
       "Bagpipes": "风笛",
-      "Targe": "圆盾",
-      "Dirk": "短剑",
+      "Targe": "小圆盾",
+      "Dirk": "长匕首",
       "Minoan amphora": "弥诺斯双耳瓶",
-      "ovilixir": "催卵灵药"
+      "ovilixir": "催卵灵药",
+      "Storm Chanter": "风暴吟唱者"
     },
     "Item-Related Plants": {
       "Razorcup": "剃刀杯"
@@ -2259,7 +2292,12 @@
       "Harai": "祓禊",
       "Prestidigitation": "魔法伎俩",
       "seifukujutsu": "整骨术",
-      "Kangen": "管弦"
+      "Kangen": "管弦",
+      "Siren's Song": "塞壬之歌",
+      "Thunder Thorns": "雷霆荆棘",
+      "Vital Resonance": "活力共鸣",
+      "Storm Surge": "风暴涌动",
+      "Dark Shroud": "暗影帷幕"
     }
   },
   "Sexual": {
