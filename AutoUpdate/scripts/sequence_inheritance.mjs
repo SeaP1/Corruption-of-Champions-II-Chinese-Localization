@@ -37,6 +37,66 @@ function longestIncreasingSubsequence(candidates) {
   return result.reverse();
 }
 
+function recoverUnmatchedByKey(oldRows, newRows, pairs, oldUsed, newUsed, matchScore, options) {
+  const { keyFor, reason, eligible = () => true, requireContextForUnique = false } = options;
+  const oldGroups = new Map();
+  const newGroups = new Map();
+  const add = (groups, key, index) => {
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key).push(index);
+  };
+  for (let i = 0; i < oldRows.length; i += 1) {
+    if (oldUsed.has(i) || !eligible(oldRows[i])) continue;
+    add(oldGroups, keyFor(oldRows[i]), i);
+  }
+  for (let i = 0; i < newRows.length; i += 1) {
+    if (newUsed.has(i) || !eligible(newRows[i])) continue;
+    add(newGroups, keyFor(newRows[i]), i);
+  }
+
+  let recovered = 0;
+  for (const [key, oldIndexes] of oldGroups) {
+    if (!key || !newGroups.has(key)) continue;
+    const newIndexes = newGroups.get(key);
+    if (oldIndexes.length === 1 && newIndexes.length === 1) {
+      if (requireContextForUnique && (!matchScore || matchScore(oldIndexes[0], newIndexes[0]) < 24)) continue;
+      const pair = { oldIndex: oldIndexes[0], newIndex: newIndexes[0], reason };
+      pairs.push(pair);
+      oldUsed.add(pair.oldIndex);
+      newUsed.add(pair.newIndex);
+      recovered += 1;
+      continue;
+    }
+    if (!matchScore) continue;
+
+    // Repeated literals (notably "Next") are recovered only when source
+    // context points to the same occurrence in both directions with a clear
+    // margin. Translation/state never participate in the decision.
+    const forced = [];
+    for (const oldIndex of oldIndexes) {
+      const rankedNew = newIndexes
+        .map((newIndex) => ({ newIndex, score: matchScore(oldIndex, newIndex) }))
+        .sort((a, b) => b.score - a.score);
+      if (rankedNew[0].score < 24 || (rankedNew[1] && rankedNew[0].score - rankedNew[1].score < 8)) continue;
+      const newIndex = rankedNew[0].newIndex;
+      const rankedOld = oldIndexes
+        .map((candidateOld) => ({ oldIndex: candidateOld, score: matchScore(candidateOld, newIndex) }))
+        .sort((a, b) => b.score - a.score);
+      if (rankedOld[0].oldIndex !== oldIndex) continue;
+      if (rankedOld[1] && rankedOld[0].score - rankedOld[1].score < 8) continue;
+      forced.push({ oldIndex, newIndex, reason });
+    }
+    for (const pair of forced) {
+      if (oldUsed.has(pair.oldIndex) || newUsed.has(pair.newIndex)) continue;
+      pairs.push(pair);
+      oldUsed.add(pair.oldIndex);
+      newUsed.add(pair.newIndex);
+      recovered += 1;
+    }
+  }
+  return recovered;
+}
+
 function refineDuplicatePairsByContext(oldRows, newRows, pairs, matchScore) {
   if (!matchScore) return 0;
   const oldGroups = new Map();
@@ -295,7 +355,7 @@ export function alignExtractedRows(oldRows, newRows, options = {}) {
   // sequence matching has established complete group membership, uniquely
   // strong source context may refine which old identity belongs to which new
   // occurrence. State/translation never participate in this decision.
-  const contextRefinements = refineDuplicatePairsByContext(oldRows, newRows, pairs, matchScore);
+  let contextRefinements = refineDuplicatePairsByContext(oldRows, newRows, pairs, matchScore);
   pairs.sort((a, b) => a.newIndex - b.newIndex || a.oldIndex - b.oldIndex);
   oldUsed.clear();
   newUsed.clear();
@@ -303,6 +363,27 @@ export function alignExtractedRows(oldRows, newRows, options = {}) {
     oldUsed.add(pair.oldIndex);
     newUsed.add(pair.newIndex);
   }
+
+  // "Next" is extremely repetitive and a removed/inserted occurrence can
+  // leave one real button unmatched. Recover it only when the surrounding
+  // source context is a strong match. Do not generalize this to arbitrary
+  // equal literals: identical text can serve different runtime purposes.
+  contextRefinements += recoverUnmatchedByKey(
+    oldRows,
+    newRows,
+    pairs,
+    oldUsed,
+    newUsed,
+    matchScore,
+    {
+      keyFor: (row) => row.original,
+      reason: "next_source_context_recovery",
+      eligible: (row) => row.original === "Next",
+      requireContextForUnique: true,
+    },
+  );
+
+  pairs.sort((a, b) => a.newIndex - b.newIndex || a.oldIndex - b.oldIndex);
 
   return { pairs, oldUsed, newUsed, unresolvedSegments, contextRefinements };
 }

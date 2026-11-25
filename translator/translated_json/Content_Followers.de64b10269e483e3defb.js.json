@@ -1,9 +1,9 @@
 {
   "schemaVersion": 4,
   "sourceFormat": "prettier-multiline",
-  "sourceFile": "D:\\Codex\\COC2 0.914\\resources\\app\\Content_Followers.de64b10269e483e3defb.js",
+  "sourceFile": "D:\\Codex\\COC2 0.9.16\\resources\\app\\Content_Followers.de64b10269e483e3defb.js",
   "sourceSha1": "2b78830f18d14614c31efb94c3a41ab7ff541d37",
-  "version": "0.9.14",
+  "version": "0.9.16",
   "rowOrder": "new_source_order",
   "total": 133,
   "shouldTranslate": 100,
@@ -34,10 +34,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:71d5fe0eec02527a42b2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:847:2608:56824afc3984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:800:2561:56824afc3984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -58,10 +58,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:c0b3c2b99e97b3ffe5ff",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:2839:2845:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:2784:2790:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -81,10 +81,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_Followers:180f5af21638bfd1f73a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:2861:2863:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:2806:2808:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -104,10 +104,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_Followers:2efae52fcba8bca05673",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:2865:2867:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:2810:2812:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -130,10 +130,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:6c626e1c7663c2f0af03",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:3079:4551:25ba18d6c8fc",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:3016:4488:25ba18d6c8fc",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -154,10 +154,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:1f1ba8be44aeecc54e0d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:4805:4811:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:4734:4740:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -177,10 +177,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_Followers:6e11dbd82e4133cb0de1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:4827:4829:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:4756:4758:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -200,10 +200,10 @@
       "categoryOccurrence": 3,
       "recordId": "Content_Followers:79236a007f286a40b1e4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:4831:4833:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:4760:4762:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -226,10 +226,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:cb49526e4327f9195d55",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:5557:6531:6ddb6382f926",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:5465:6439:6ddb6382f926",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -250,10 +250,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:d051d0079d47809b4057",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:6862:6885:7213d05cf80d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:6756:6779:7213d05cf80d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -274,10 +274,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:8850735a0b4793f4fc22",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:6939:6962:7213d05cf80d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:6831:6854:7213d05cf80d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -300,10 +300,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4339fa3059e6a2cfbefb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:6977:7035:9bf17f2a8724",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:6868:6926:9bf17f2a8724",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -324,10 +324,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:7f736bff9f819a07e9a1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7110:7140:5fd301baecd7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:6997:7027:5fd301baecd7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -348,10 +348,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:799d3a63ee189f4f97d3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7200:7230:5fd301baecd7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7085:7115:5fd301baecd7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -372,10 +372,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:87575de858cd856d813e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7247:7301:8234fd4ef739",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7131:7185:8234fd4ef739",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -396,10 +396,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:44fdb6c7957179587bb5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7421:7445:4d42e6e46cc0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7300:7324:4d42e6e46cc0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -420,10 +420,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:eae035a4b788a98f22e9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7511:7535:4d42e6e46cc0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7388:7412:4d42e6e46cc0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -444,10 +444,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:59409c727acfaaec7a2e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7554:7636:7c7852ec84ec",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7430:7512:7c7852ec84ec",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -470,10 +470,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f95b31becf54adedaea0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:7869:10464:408787bf639e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:7736:10331:408787bf639e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -494,10 +494,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:309e844ef78e820063b1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:10651:10657:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:10511:10517:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -517,10 +517,10 @@
       "categoryOccurrence": 4,
       "recordId": "Content_Followers:aab2f5c22c590aa49be2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:10673:10675:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:10533:10535:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -540,10 +540,10 @@
       "categoryOccurrence": 5,
       "recordId": "Content_Followers:3be9e7e7ee8bb6b6a590",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:10677:10679:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:10537:10539:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -566,10 +566,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:986d09187d2899d45e4f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:10896:11322:e148a4eacad0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:10748:11174:e148a4eacad0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -590,10 +590,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:8ebe694248c25eca7620",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:11509:11515:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:11354:11360:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -613,10 +613,10 @@
       "categoryOccurrence": 6,
       "recordId": "Content_Followers:fbdb5200a0f2ebeb70f7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:11531:11533:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:11376:11378:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -636,10 +636,10 @@
       "categoryOccurrence": 7,
       "recordId": "Content_Followers:0760b11247dd12d0ee8a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:11535:11537:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:11380:11382:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -662,10 +662,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f337f0234ebbc6b1ee7b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:11755:12511:5d0b2c7d330d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:11592:12348:5d0b2c7d330d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -688,10 +688,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:aa4ff68cf243c83e149a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:12858:13333:d760876a1af6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:12682:13157:d760876a1af6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -714,10 +714,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:97a35aa584dc098e82b5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:13714:14021:1b4c880d70bd",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:13524:13831:1b4c880d70bd",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -738,10 +738,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:7d1f5d3447aa13d55aeb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14187:14203:fd520687b40b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:13989:14005:fd520687b40b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -762,10 +762,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:86ffa6c38f38c28522df",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14250:14266:fd520687b40b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14050:14066:fd520687b40b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -786,10 +786,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:d55812d0324e4f8886ff",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14281:14374:c224628e0aff",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14080:14173:c224628e0aff",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -812,10 +812,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:afce68041972546cae5a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14449:14465:b308b3ef9be5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14244:14260:b308b3ef9be5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -838,10 +838,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:821af6e4675a255a0c74",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14516:14532:b308b3ef9be5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14309:14325:b308b3ef9be5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -864,10 +864,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:3b10fd8c0b48432d22e6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14549:14597:e039fff5365e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14341:14389:e039fff5365e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -888,10 +888,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:8cb08fc76680a1f8b6db",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14674:14691:82ce1a857637",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14462:14479:82ce1a857637",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -912,10 +912,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:daae856acfd3555e26ab",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14743:14760:82ce1a857637",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14529:14546:82ce1a857637",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -936,10 +936,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:825678e4cba1359e3a76",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:14777:14831:5aee554474d9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14562:14616:5aee554474d9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -960,10 +960,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:fe348842b088eb132bb7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:15056:15270:65bd0bee27a3",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:14832:15046:65bd0bee27a3",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -986,10 +986,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4857cf69b96a83593057",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:15597:17242:b024093e145b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:15360:17005:b024093e145b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1010,10 +1010,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:d722a1cbebe293c6a644",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17409:17429:ee80305e0c6d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17164:17184:ee80305e0c6d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1033,10 +1033,10 @@
       "categoryOccurrence": 8,
       "recordId": "Content_Followers:d1010db8c78ba2c4d631",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17476:17478:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17229:17231:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1057,10 +1057,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:90fb9ec85bc571305feb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17493:17539:b1b5735abc73",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17245:17291:b1b5735abc73",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1081,10 +1081,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:eb8054534a61ee0ab28c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17614:17638:54c42b078758",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17362:17386:54c42b078758",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1104,10 +1104,10 @@
       "categoryOccurrence": 9,
       "recordId": "Content_Followers:a85508c58aaba2bf70be",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17689:17691:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17435:17437:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1130,10 +1130,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:7dc1cdc99725df4efccc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17708:17772:1db15649728b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17453:17517:1db15649728b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1156,10 +1156,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f083a88a9684d7f29e9c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:17996:18577:10fb0f083f56",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:17732:18313:10fb0f083f56",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1180,10 +1180,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:3716efc511c34fc726d2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:18744:18764:ee80305e0c6d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18472:18492:ee80305e0c6d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1204,10 +1204,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:1b54e590d5043c8742ba",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:18811:18831:ee80305e0c6d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18537:18557:ee80305e0c6d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1228,10 +1228,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:130cbe8264b6d343a240",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:18846:18892:b1b5735abc73",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18571:18617:b1b5735abc73",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1252,10 +1252,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:33c89fe898afd6fc946d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:18967:18991:54c42b078758",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18688:18712:54c42b078758",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1276,10 +1276,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:13a039e2ff815a0c87c6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:19042:19066:54c42b078758",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18761:18785:54c42b078758",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1302,10 +1302,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:cd1e79cfbbbefb77b521",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:19083:19147:1db15649728b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:18801:18865:1db15649728b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1328,10 +1328,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:ebb80ffed28e1cc8120e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:19371:20487:1a448539cf26",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:19080:20196:1a448539cf26",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1352,10 +1352,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4316796672d4134bf56f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:20652:20676:0b02040aded9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:20353:20377:0b02040aded9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1376,10 +1376,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:ea0d98d000597fcca869",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:20726:20750:0b02040aded9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:20425:20449:0b02040aded9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1402,10 +1402,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:837db64a93d8b22dae28",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:20765:20859:86006deb0ba3",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:20463:20557:86006deb0ba3",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1428,10 +1428,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:b63bcb080c5b027035f0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:21082:24586:d72faf2f3b2b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:20771:24275:d72faf2f3b2b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1452,10 +1452,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:742a782ba2b0a92df0fd",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:24752:24776:0b02040aded9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:24433:24457:0b02040aded9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1476,10 +1476,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:790ac3a2790b52d789b5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:24826:24850:0b02040aded9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:24505:24529:0b02040aded9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1502,10 +1502,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:62a6400121483f68230c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:24865:24959:86006deb0ba3",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:24543:24637:86006deb0ba3",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1528,10 +1528,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:7fa5e5370a0c849542d4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:25183:26737:e46dff59415a",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:24852:26406:e46dff59415a",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1552,10 +1552,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:32c9fcabc28b8b122cb9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:26904:26914:2e02623966f9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26565:26575:2e02623966f9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1575,10 +1575,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_Followers:a558b7b9dce3fb04108b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27024:27026:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26681:26683:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1599,10 +1599,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:0d88be276fb6d2554e99",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27041:27077:1cb09e347c20",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26697:26733:1cb09e347c20",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1623,10 +1623,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:e725fd25d23d9cf94cd3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27152:27171:0eff5d34d291",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26804:26823:0eff5d34d291",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1646,10 +1646,10 @@
       "categoryOccurrence": 10,
       "recordId": "Content_Followers:5337429d84d08945dffc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27231:27233:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26881:26883:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1669,10 +1669,10 @@
       "categoryOccurrence": 11,
       "recordId": "Content_Followers:90d5a6613bd354885bc9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27250:27252:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:26899:26901:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1695,10 +1695,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4ce2e76aa1486cc7b05c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:27485:27919:24c84a44f917",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:27125:27559:24c84a44f917",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1719,10 +1719,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:8d8779a3ca299477e2db",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:28085:28090:5397e0583f14",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:27717:27722:5397e0583f14",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1745,10 +1745,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:0bb0e9aa7b6ea7dbb99c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:28284:28573:61ff313dedfc",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:27909:28198:61ff313dedfc",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1768,10 +1768,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_Followers:3c5fc056f5706c541cd9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:28716:28718:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:28335:28337:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1792,10 +1792,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:2c4ccfcda1c8357b8df9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:28733:28938:05a266839018",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:28351:28556:05a266839018",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1816,10 +1816,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:2ef7e82afb29bbdc35af",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:29013:29017:816c52fd2bdd",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:28627:28631:816c52fd2bdd",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1842,10 +1842,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4c66b8d361e79f62b3e5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:29225:29485:0712d0aa8665",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:28832:29092:0712d0aa8665",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1865,10 +1865,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_Followers:d9256dee313233a3b03e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:29638:29640:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:29239:29241:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1891,10 +1891,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f23f138045c154ec7799",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:29657:29807:3f9c0d024b6d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:29257:29407:3f9c0d024b6d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1917,10 +1917,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:c8edb0b153a09d727e27",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:30126:32404:71f8b4e52c07",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:29715:31993:71f8b4e52c07",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1943,10 +1943,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f92d5c0f8993756079be",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:32528:32547:2e4cec6db569",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:32112:32131:2e4cec6db569",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1967,10 +1967,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:c5877a927b09e65b993b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:32626:32631:5397e0583f14",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:32206:32211:5397e0583f14",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1990,10 +1990,10 @@
       "categoryOccurrence": 12,
       "recordId": "Content_Followers:71ed01a613307bfeb916",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:32681:32683:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:32259:32261:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2014,10 +2014,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:11d668767019196b025b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:32698:32751:430d7472682f",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:32275:32328:430d7472682f",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2040,10 +2040,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:102e407966a5e026df0a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:32975:36923:7b2df4b21813",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:32543:36491:7b2df4b21813",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2064,10 +2064,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:af438870040212af38e3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:37088:37106:5911ee8ff6b2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:36648:36666:5911ee8ff6b2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2090,10 +2090,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:85324c94778199d1b288",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:37159:37190:e796dc92e767",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:36717:36748:e796dc92e767",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2114,10 +2114,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:3210e812d26fc1e2eb09",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:37205:37285:ed7d49703ef3",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:36762:36842:ed7d49703ef3",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2140,10 +2140,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:22681dcd31475ec3fb3b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:37514:48281:4d550f5b97f7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:37062:47829:4d550f5b97f7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2164,10 +2164,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:e7979c9ddbd8c3417b83",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:48570:48576:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:48108:48114:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2187,10 +2187,10 @@
       "categoryOccurrence": 13,
       "recordId": "Content_Followers:b3c67dfd7902d77a53af",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:48600:48602:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:48138:48140:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2210,10 +2210,10 @@
       "categoryOccurrence": 14,
       "recordId": "Content_Followers:564256dd165088babc66",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:48604:48606:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:48142:48144:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2236,10 +2236,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:2277e2d0176703b6878a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:48817:49191:545996017f00",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:48347:48721:545996017f00",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2260,10 +2260,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:78f1449c1487e90df3b1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49518:49528:fab736a9a39d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49036:49046:fab736a9a39d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2284,10 +2284,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:2276378ae353a34c1fbe",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49578:49588:fab736a9a39d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49094:49104:fab736a9a39d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2308,10 +2308,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:486b018363d997b9c182",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49603:49652:fe39f25f0441",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49118:49167:fe39f25f0441",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2332,10 +2332,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:62fcfc0e5ce86764c2ad",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49777:49794:de7d083c8a1e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49287:49304:de7d083c8a1e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2355,10 +2355,10 @@
       "categoryOccurrence": 15,
       "recordId": "Content_Followers:230afdbe95fce8329e80",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49854:49856:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49362:49364:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2379,10 +2379,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:e52cd9a0e8bd9c46872f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:49875:49930:2205e52745e2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49382:49437:2205e52745e2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2403,10 +2403,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:fa64ff766973bbd8523b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50009:50020:bc608bbaeffb",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49512:49523:bc608bbaeffb",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2426,10 +2426,10 @@
       "categoryOccurrence": 16,
       "recordId": "Content_Followers:2c17710a4b4488e13e39",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50072:50074:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49573:49575:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2452,10 +2452,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:e0dcb95e28faa1bd7852",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50091:50186:b4d73c355fe1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49591:49686:b4d73c355fe1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2475,10 +2475,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_Followers:a82a50a225f07b3f032d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50360:50365:6eae3a5b062c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49854:49859:6eae3a5b062c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2498,10 +2498,10 @@
       "categoryOccurrence": 17,
       "recordId": "Content_Followers:cf442348f32203e31c0a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50423:50425:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49915:49917:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2522,10 +2522,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:a48ba552946f2f947be3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50444:50467:436435b2b851",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:49935:49958:436435b2b851",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2548,10 +2548,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:56e9b1778867e49edcae",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:50696:52015:49baafb2b6df",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:50178:51497:49baafb2b6df",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2572,10 +2572,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:dacda6d5f3c5200738df",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:52217:52227:fab736a9a39d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:51692:51702:fab736a9a39d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2598,10 +2598,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:3941afb2f1a789097abb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:52441:52811:d3d8eb03af65",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:51908:52278:d3d8eb03af65",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2624,10 +2624,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:ddfcd9d936f20c2d6c9a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53173:53640:4ec119b16791",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:52627:53094:4ec119b16791",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2648,10 +2648,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:e55cad647caaaac1ca5a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53821:53847:8f00c0c78aff",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53269:53295:8f00c0c78aff",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2672,10 +2672,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:00089d689190fa6a6169",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53894:53904:8f862990adfd",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53340:53350:8f862990adfd",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2696,10 +2696,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:b650e1d454ab671b5ca2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53909:53919:8f862990adfd",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53355:53365:8f862990adfd",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2719,10 +2719,10 @@
       "categoryOccurrence": 18,
       "recordId": "Content_Followers:6586311e5d99c6cf3438",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53921:53923:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53367:53369:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2743,10 +2743,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:000ad3bc0348a0c9a4c4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53954:53972:79b601541fa8",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53399:53417:79b601541fa8",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2767,10 +2767,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:316812ea426a584061e9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53977:53995:79b601541fa8",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53422:53440:79b601541fa8",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2790,10 +2790,10 @@
       "categoryOccurrence": 19,
       "recordId": "Content_Followers:de73faf55c1e64a14372",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:53997:53999:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53442:53444:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2816,10 +2816,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:f209f5c5e16322b1f783",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:54209:55048:ea76f9958eab",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:53646:54485:ea76f9958eab",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2840,10 +2840,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:4fee1322d72679d45440",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:55251:55262:bc608bbaeffb",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:54681:54692:bc608bbaeffb",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2866,10 +2866,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:8a47c165bacf2e2f2e09",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:55474:60315:6d51de10a8ee",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:54896:59737:6d51de10a8ee",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2890,10 +2890,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:5fa10a1494505ec3734a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:60453:60459:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:59869:59875:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2913,10 +2913,10 @@
       "categoryOccurrence": 20,
       "recordId": "Content_Followers:20b4336fc2474e2c65c5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:60475:60477:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:59891:59893:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2936,10 +2936,10 @@
       "categoryOccurrence": 21,
       "recordId": "Content_Followers:41e8b3c64581e00cb1ff",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:60479:60481:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:59895:59897:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2962,10 +2962,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:76e75560c550891b620b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:60694:64542:ab59a2d40e85",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:60102:63950:ab59a2d40e85",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2986,10 +2986,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:40b6fcab52639cc7b1fa",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:64855:64861:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:64253:64259:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3009,10 +3009,10 @@
       "categoryOccurrence": 22,
       "recordId": "Content_Followers:c9dc7ef3b84df4ebb8ee",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:64877:64879:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:64275:64277:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3032,10 +3032,10 @@
       "categoryOccurrence": 23,
       "recordId": "Content_Followers:9ba21c7785ea2b746b1f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:64881:64883:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:64279:64281:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3058,10 +3058,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:47feca59eb09466342dc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:65096:68263:fc09d94fd8a3",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:64486:67653:fc09d94fd8a3",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3082,10 +3082,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:1d970b3e4349c8243fd8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:68531:68537:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:67912:67918:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3105,10 +3105,10 @@
       "categoryOccurrence": 24,
       "recordId": "Content_Followers:e67570c1e4ffaf5711e7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:68553:68555:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:67934:67936:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3128,10 +3128,10 @@
       "categoryOccurrence": 25,
       "recordId": "Content_Followers:86125222a1c8dcec2ae4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:68557:68559:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:67938:67940:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3154,10 +3154,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:11a15be2e06479bb79d4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:68768:75472:71e659580c57",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:68141:74845:71e659580c57",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3178,10 +3178,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_Followers:0c8e98e6d2194ad4ea40",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:75747:75753:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:75111:75117:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3201,10 +3201,10 @@
       "categoryOccurrence": 26,
       "recordId": "Content_Followers:6e25955c7f65112915ea",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:75769:75771:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:75133:75135:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3224,10 +3224,10 @@
       "categoryOccurrence": 27,
       "recordId": "Content_Followers:7bea41c3e981fc872f2e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:75773:75775:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:75137:75139:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3247,10 +3247,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_Followers:2d882957676675b592bb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_Followers.de64b10269e483e3defb.js:75834:75846:53e07a32bf19",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_Followers.de64b10269e483e3defb.js:75194:75206:53e07a32bf19",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     }
   ]

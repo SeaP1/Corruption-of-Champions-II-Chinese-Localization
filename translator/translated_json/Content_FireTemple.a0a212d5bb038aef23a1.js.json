@@ -1,9 +1,9 @@
 {
   "schemaVersion": 4,
   "sourceFormat": "prettier-multiline",
-  "sourceFile": "D:\\Codex\\COC2 0.914\\resources\\app\\Content_FireTemple.a0a212d5bb038aef23a1.js",
+  "sourceFile": "D:\\Codex\\COC2 0.9.16\\resources\\app\\Content_FireTemple.a0a212d5bb038aef23a1.js",
   "sourceSha1": "ab5a684d785bbc9274ed7339f47a6716eec43337",
-  "version": "0.9.14",
+  "version": "0.9.16",
   "rowOrder": "new_source_order",
   "total": 230,
   "shouldTranslate": 126,
@@ -32,10 +32,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:abba9b59aad00a03f1fa",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:742:749:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:700:707:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -56,10 +56,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:31320acff5f48ebe8a58",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:772:783:52940afb7ae1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:729:740:52940afb7ae1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -79,10 +79,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:b0ec882677a7b27fc741",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:973:988:096680f524f6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:924:939:096680f524f6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -105,10 +105,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:8ed3259c5fda49d3dd9a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:1437:4640:b1f531f3e8aa",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:1373:4576:b1f531f3e8aa",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -131,10 +131,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:4646d01e0af63c710d5c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:4917:5380:53e398bf58bb",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:4842:5305:53e398bf58bb",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -155,10 +155,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a015ea551bb3101d0a82",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5482:5490:2dacf6595984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5403:5411:2dacf6595984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -178,10 +178,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:cd209f80ad808df5c635",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5519:5521:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5440:5442:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -201,10 +201,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_FireTemple:f84a1f4b0af0ef9dd8d7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5523:5525:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5444:5446:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -225,10 +225,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:033a9da21ce692afefcc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5597:5604:2c2d1610143e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5515:5522:2c2d1610143e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -248,10 +248,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:ba5fe69df8316ddf6af9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5731:5733:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5645:5647:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -271,10 +271,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_FireTemple:3a8ba8195dddcccff232",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5754:5756:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5667:5669:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -297,10 +297,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:22d9d6e30fae3dd46de9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5915:6350:6aefa898160a",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:5822:6257:6aefa898160a",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -321,10 +321,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:8cc41aa105fa8bf1c2f5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6452:6460:9dfa9093f10b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6355:6363:9dfa9093f10b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -344,10 +344,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_FireTemple:7c1ea2b38dd3f62eddcc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6481:6483:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6384:6386:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -367,10 +367,10 @@
       "categoryOccurrence": 3,
       "recordId": "Content_FireTemple:7304c40be860529fc82a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6485:6487:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6388:6390:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -391,11 +391,13 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:fa9a18a9d4819510ae55",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6764:6775:52940afb7ae1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6659:6670:52940afb7ae1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
-      "updateStatus": "inherited_translation"
+      "stateSource": "inherited_0.9.14",
+      "updateStatus": "inherited_translation",
+      "heuristicStateConflict": true,
+      "newHeuristicShouldTranslate": false
     },
     {
       "id": "Content_FireTemple.a0a212d5bb038aef23a1.js:6955:7932:0b055ef7f5e0",
@@ -417,10 +419,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7fef4130f8f189a37eb8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:7068:8045:0b055ef7f5e0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:6955:7932:0b055ef7f5e0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -440,10 +442,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_FireTemple:cf12eeb031554ab2d7e4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8068:8070:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:7954:7956:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -464,10 +466,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:e39aa23010a685e443a1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8136:8257:26be7c124e03",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8019:8140:26be7c124e03",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -488,10 +490,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:f6d00a2ef2ad34f51656",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8279:8405:cec92e27e70f",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8161:8287:cec92e27e70f",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -511,10 +513,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:97c2aa139b5414faa74f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8697:8708:8489710e42b6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8571:8582:8489710e42b6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -537,10 +539,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:829d8b291d9af04d73f8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8884:8923:f8a03d022b09",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8752:8791:f8a03d022b09",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -563,10 +565,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:54d61d9ef641b8cc9826",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8946:9249:e4e0e3b87f02",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:8813:9116:e4e0e3b87f02",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -589,10 +591,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9bd9c9a08975ace3d280",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9272:9491:d34cfea74dc5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9138:9357:d34cfea74dc5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -615,10 +617,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:df0ffd45d2d9bf18fd39",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9514:9683:8419d6f18d20",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9379:9548:8419d6f18d20",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -638,10 +640,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:96fcf396c570871d3cc7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9740:9751:2907e11b3721",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9603:9614:2907e11b3721",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -664,10 +666,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:e0192df5286064757569",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9785:9801:2d8868a8f962",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9647:9663:2d8868a8f962",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -687,10 +689,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:411bc8d241428c7b420b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9835:9840:4a240ec058b4",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:9696:9701:4a240ec058b4",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -713,10 +715,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:6564c0b089b8f55a3d95",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:10250:10953:222ec690a620",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:10098:10801:222ec690a620",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -739,10 +741,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ae546a1e744f52e94004",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11213:11224:b6fb09111442",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11051:11062:b6fb09111442",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -762,10 +764,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:9c82eb30df85befa15fb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11271:11273:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11107:11109:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -788,10 +790,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7c52d8a5e178dae1b9e5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11288:11335:e9f39b135cb7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11123:11170:e9f39b135cb7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -811,10 +813,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_FireTemple:dc52a5953f1d50ff4edb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11377:11379:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11210:11212:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -837,10 +839,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:2e27e1dc6265ef617dba",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11394:11460:6f8e9136c546",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11226:11292:6f8e9136c546",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -861,10 +863,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:cbca072f2c4d1c9b9d9a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11540:11551:2db2deff517d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11368:11379:2db2deff517d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -884,10 +886,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_FireTemple:fd9c63236315324e7dc1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11605:11607:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11431:11433:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -910,10 +912,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:03247cb61cfa07709a14",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11624:11665:6f0e82becdd1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11449:11490:6f0e82becdd1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -933,10 +935,10 @@
       "categoryOccurrence": 3,
       "recordId": "Content_FireTemple:7881b5cbff02d9045583",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11713:11715:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11536:11538:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -959,10 +961,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:3655ed8e8abed289ede0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11732:11751:542be88d9ab2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11554:11573:542be88d9ab2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -985,10 +987,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:b7defc3e51efd2443f32",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11828:11837:8bee00367b9b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11646:11655:8bee00367b9b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1008,10 +1010,10 @@
       "categoryOccurrence": 4,
       "recordId": "Content_FireTemple:35940fadf590b5b3098b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11887:11889:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11703:11705:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1034,10 +1036,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:046017f638d242b12ea3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11906:11962:809f814566a9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11721:11777:809f814566a9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1058,10 +1060,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:30603e38e71554694d77",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12039:12048:3987923ad641",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11850:11859:3987923ad641",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1081,10 +1083,10 @@
       "categoryOccurrence": 5,
       "recordId": "Content_FireTemple:5b7a9484c5676a3d3f36",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12098:12100:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11907:11909:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1105,10 +1107,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:374ca6bf85d51c6fb33e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12117:12193:68c3013d9e87",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:11925:12001:68c3013d9e87",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1129,10 +1131,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:8b0f01b44eb35df55719",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12269:12276:7e3520a97331",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12073:12080:7e3520a97331",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1155,10 +1157,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:d3049233790a3e7eb916",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12489:13340:d01cf25dacf5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:12286:13137:d01cf25dacf5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1179,10 +1181,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7fca7e455d39c418aca2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13485:13491:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13277:13283:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1202,10 +1204,10 @@
       "categoryOccurrence": 6,
       "recordId": "Content_FireTemple:b59fdf8217fafe13205c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13507:13509:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13299:13301:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1225,10 +1227,10 @@
       "categoryOccurrence": 7,
       "recordId": "Content_FireTemple:26624467609697020bd4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13511:13513:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13303:13305:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1248,10 +1250,10 @@
       "categoryOccurrence": 3,
       "recordId": "Content_FireTemple:0afe3b0f0b4a1cac919d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13550:13552:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13340:13342:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1271,10 +1273,10 @@
       "categoryOccurrence": 4,
       "recordId": "Content_FireTemple:a246ff9758cf4a486516",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13569:13571:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13358:13360:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1297,10 +1299,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:1c509e36e13f4abd9825",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13798:14298:c1db39c81ca0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:13578:14078:c1db39c81ca0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1321,10 +1323,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:46309f9fa87fd1d5dcab",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14492:14498:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14264:14270:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1344,10 +1346,10 @@
       "categoryOccurrence": 5,
       "recordId": "Content_FireTemple:5acd60134edbf9f2eb64",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14617:14619:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14385:14387:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1367,10 +1369,10 @@
       "categoryOccurrence": 6,
       "recordId": "Content_FireTemple:147382fc792d2ef10822",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14636:14638:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:14403:14405:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1393,10 +1395,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:4631c2d10b87dd537500",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:15348:17023:1b198c4799c0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:15093:16768:1b198c4799c0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1417,10 +1419,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7a91631c4f7ec749838c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17244:17252:2dacf6595984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:16981:16989:2dacf6595984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1440,10 +1442,10 @@
       "categoryOccurrence": 8,
       "recordId": "Content_FireTemple:aa8a9ddc746fb9c88365",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17281:17283:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17018:17020:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1463,10 +1465,10 @@
       "categoryOccurrence": 9,
       "recordId": "Content_FireTemple:01199d754332152f1feb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17285:17287:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17022:17024:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1487,10 +1489,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:1bcba31fecd37d231c4f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17318:17326:9dfa9093f10b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17054:17062:9dfa9093f10b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1510,10 +1512,10 @@
       "categoryOccurrence": 10,
       "recordId": "Content_FireTemple:adf0d3f171616b73303a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17347:17349:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17083:17085:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1533,10 +1535,10 @@
       "categoryOccurrence": 11,
       "recordId": "Content_FireTemple:daaad492701fdfcaa84d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17351:17353:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17087:17089:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1559,10 +1561,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9ea34fa7123a4da3b758",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17530:17541:fd08fccf67e6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17261:17272:fd08fccf67e6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1582,10 +1584,10 @@
       "categoryOccurrence": 12,
       "recordId": "Content_FireTemple:c08d7bfa270e77ff3524",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17596:17598:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17325:17327:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1608,10 +1610,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:4c4cbfd5c1c2e16b82fc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17617:17781:3326d4ca5a01",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17345:17509:3326d4ca5a01",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1634,10 +1636,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:d433f3d4d1b489a7ad09",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:18039:23115:b9407760ee32",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:17756:22832:b9407760ee32",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1658,10 +1660,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:268b8728fd92d3de06ee",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23645:23653:2dacf6595984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23345:23353:2dacf6595984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1681,10 +1683,10 @@
       "categoryOccurrence": 13,
       "recordId": "Content_FireTemple:ed7451cab7721decddd2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23682:23684:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23382:23384:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1704,10 +1706,10 @@
       "categoryOccurrence": 14,
       "recordId": "Content_FireTemple:167d27fa6a8390c0e26d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23686:23688:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23386:23388:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1728,10 +1730,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:3f14ee7068d791d62b22",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23750:23759:fbe787373e00",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23447:23456:fbe787373e00",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1754,10 +1756,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:b0e938c41b4410b25a3f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23972:24602:fd9f776202d9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:23662:24292:fd9f776202d9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1780,10 +1782,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:74650f837a1d8bc917f8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24821:24832:b6fb09111442",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24503:24514:b6fb09111442",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1803,10 +1805,10 @@
       "categoryOccurrence": 15,
       "recordId": "Content_FireTemple:a5b8c39debac6b4d88a1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24891:24893:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24571:24573:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1829,10 +1831,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9b9ffa715a849f818b96",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24914:24961:e9f39b135cb7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24593:24640:e9f39b135cb7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1852,10 +1854,10 @@
       "categoryOccurrence": 16,
       "recordId": "Content_FireTemple:811eff108327ee5b8da7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25015:25017:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24692:24694:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1878,10 +1880,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:4e909748ae272f792eee",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25038:25104:6f8e9136c546",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24714:24780:6f8e9136c546",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1902,10 +1904,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:85a6b390a4b689627e8b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25208:25219:2db2deff517d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24880:24891:2db2deff517d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1925,10 +1927,10 @@
       "categoryOccurrence": 17,
       "recordId": "Content_FireTemple:73ad7bca1a8e1bf51324",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25285:25287:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24955:24957:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -1951,10 +1953,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:d1f43304a8f1ec8fda59",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25310:25351:6f0e82becdd1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:24979:25020:6f0e82becdd1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -1974,10 +1976,10 @@
       "categoryOccurrence": 18,
       "recordId": "Content_FireTemple:881b3df778a897d071f3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25411:25413:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25078:25080:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2000,10 +2002,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9213f41376050137994f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25436:25455:542be88d9ab2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25102:25121:542be88d9ab2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2026,10 +2028,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a25d4b9672e7fc08f42d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25556:25565:8bee00367b9b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25218:25227:8bee00367b9b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2049,10 +2051,10 @@
       "categoryOccurrence": 19,
       "recordId": "Content_FireTemple:88e577743bbee96980fc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25627:25629:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25287:25289:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2075,10 +2077,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:c03f0ec23607ab6bb416",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25652:25708:809f814566a9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25311:25367:809f814566a9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2101,10 +2103,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:3a0ce051f302f484aaa2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25814:25823:b0d80004f7db",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25469:25478:b0d80004f7db",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2124,10 +2126,10 @@
       "categoryOccurrence": 20,
       "recordId": "Content_FireTemple:4ea1cde7c7fbcf50a1f0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25885:25887:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25538:25540:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2150,10 +2152,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:68892f1c5e3f5c083d47",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25910:26005:a364b27b8bfa",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25562:25657:a364b27b8bfa",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2173,10 +2175,10 @@
       "categoryOccurrence": 21,
       "recordId": "Content_FireTemple:81ec44b09453c2eab56f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26063:26065:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25713:25715:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2199,10 +2201,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ac31bf8683ee61704937",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26088:26123:14872b3fcb51",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25737:25772:14872b3fcb51",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2222,10 +2224,10 @@
       "categoryOccurrence": 7,
       "recordId": "Content_FireTemple:dd250db6d0e7268840c0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26181:26183:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25827:25829:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2248,10 +2250,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:55352dffddda4efc6bf3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26200:26295:e8e20a0e5c71",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:25845:25940:e8e20a0e5c71",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2274,10 +2276,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9a0cdd2db63ede7bc45e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26487:26498:fd08fccf67e6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26126:26137:fd08fccf67e6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2297,10 +2299,10 @@
       "categoryOccurrence": 22,
       "recordId": "Content_FireTemple:f3df73c14402e25507ee",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26553:26555:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26190:26192:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2323,10 +2325,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:63a142a6638ddf7b9f91",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26574:26738:3326d4ca5a01",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26210:26374:3326d4ca5a01",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2347,10 +2349,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:43c0fbc8390b3aadaaf1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26816:26823:7e3520a97331",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26448:26455:7e3520a97331",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2371,10 +2373,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:27598e17e39539163bd9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27036:27516:0b3d8d3dcadc",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:26661:27141:0b3d8d3dcadc",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2395,10 +2397,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a1dd487d7b46490cc7e5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27661:27667:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27281:27287:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2418,10 +2420,10 @@
       "categoryOccurrence": 23,
       "recordId": "Content_FireTemple:c361e79f5c8256be9c9d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27683:27685:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27303:27305:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2441,10 +2443,10 @@
       "categoryOccurrence": 24,
       "recordId": "Content_FireTemple:f53d1179e6173a590709",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27687:27689:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27307:27309:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2464,10 +2466,10 @@
       "categoryOccurrence": 8,
       "recordId": "Content_FireTemple:1a93e01a33cdc2c6415d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27726:27728:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27344:27346:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2488,10 +2490,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:30897439638fce9620d3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27745:27839:6da6007745d6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27362:27456:6da6007745d6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2514,10 +2516,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:accdbe1963af87873868",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:28193:37687:777206223dc8",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:27797:37291:777206223dc8",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2538,10 +2540,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7afca96abc7e789a214e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:38079:38085:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:37669:37675:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2561,10 +2563,10 @@
       "categoryOccurrence": 25,
       "recordId": "Content_FireTemple:6bee00179154fd2df71e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:38101:38103:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:37691:37693:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2584,10 +2586,10 @@
       "categoryOccurrence": 26,
       "recordId": "Content_FireTemple:63af9591970835a1188a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:38105:38107:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:37695:37697:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2610,10 +2612,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:1e9af1e6c8db5bc9d73f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:38418:46791:a28bade3a636",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:37998:46371:a28bade3a636",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2634,10 +2636,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:6c1d584b7eb702df5300",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:47313:47319:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:46876:46882:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2657,10 +2659,10 @@
       "categoryOccurrence": 27,
       "recordId": "Content_FireTemple:d5dbc929ceb7be390fd6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:47335:47337:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:46898:46900:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2680,10 +2682,10 @@
       "categoryOccurrence": 28,
       "recordId": "Content_FireTemple:348df163fc6100709bff",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:47339:47341:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:46902:46904:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2706,10 +2708,10 @@
       "curatedReason": "generic_dialogue",
       "recordId": "Content_FireTemple:61daf654fc6567f90e7d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:47554:76190:11f554436cfc",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:47109:75745:11f554436cfc",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2729,10 +2731,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:7820226c98a9c6a129b3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76648:76658:a1a24748f929",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76189:76199:a1a24748f929",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2752,10 +2754,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:afaea8401ccbd6743227",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76691:76696:ea3a2c23f389",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76231:76236:ea3a2c23f389",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2775,10 +2777,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:ead07d464011254f2c43",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76726:76739:fd9e419804c1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76265:76278:fd9e419804c1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2799,10 +2801,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:67d301c180b517ffd190",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76900:76906:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76432:76438:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2822,10 +2824,10 @@
       "categoryOccurrence": 29,
       "recordId": "Content_FireTemple:79f01c0a016da41bedfe",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76922:76924:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76454:76456:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2845,10 +2847,10 @@
       "categoryOccurrence": 30,
       "recordId": "Content_FireTemple:7a454cebaac5eaef2dc5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76926:76928:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76458:76460:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2871,10 +2873,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:84178675e7d931fd4d14",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:77140:84565:d1147c5caf26",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:76664:84089:d1147c5caf26",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2895,10 +2897,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:479ee9754480c8609b93",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84773:84779:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84289:84295:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2918,10 +2920,10 @@
       "categoryOccurrence": 31,
       "recordId": "Content_FireTemple:77abfed47e6156e5f9d7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84795:84797:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84311:84313:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2941,10 +2943,10 @@
       "categoryOccurrence": 32,
       "recordId": "Content_FireTemple:5acfd1922e1ec4e92bd8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84799:84801:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84315:84317:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -2967,10 +2969,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:cf1455788c909d964a9c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:85013:97343:b3e753e381b6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:84521:96851:b3e753e381b6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -2991,10 +2993,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:2cfb64054853f3fb6454",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97621:97627:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97118:97124:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3014,10 +3016,10 @@
       "categoryOccurrence": 33,
       "recordId": "Content_FireTemple:cd96121be3092e82fd62",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97643:97645:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97140:97142:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3037,10 +3039,10 @@
       "categoryOccurrence": 34,
       "recordId": "Content_FireTemple:415e5d22363c27378652",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97647:97649:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97144:97146:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3063,10 +3065,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:df62707e28840dc04b37",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97862:101802:576b0bb3d995",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:97351:101291:576b0bb3d995",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3087,10 +3089,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a72dfafa9b6421b7a0db",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:101951:101957:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:101433:101439:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3113,10 +3115,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:be1022e8744d1f727f4d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:102170:105436:9abfbe205a8e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:101645:104911:9abfbe205a8e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3137,10 +3139,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:475f98e03de91f4fb2b8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:105627:105633:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:105095:105101:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3164,10 +3166,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:b247a6c12eaa9281cc2d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:105888:109424:8e9050e47750",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:105349:108885:8e9050e47750",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3188,10 +3190,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:fec3b38e1e36f2139c3a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110117:110123:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109561:109567:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3211,10 +3213,10 @@
       "categoryOccurrence": 35,
       "recordId": "Content_FireTemple:b70eab1b54807a5ecddd",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110139:110141:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109583:109585:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3234,10 +3236,10 @@
       "categoryOccurrence": 36,
       "recordId": "Content_FireTemple:1a03156d86d56f159352",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110143:110145:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109587:109589:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3257,10 +3259,10 @@
       "categoryOccurrence": 9,
       "recordId": "Content_FireTemple:e67b01a948e4cb13d9af",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110194:110196:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109636:109638:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3280,10 +3282,10 @@
       "categoryOccurrence": 10,
       "recordId": "Content_FireTemple:b34c1616efbec9de3904",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110219:110221:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109660:109662:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3303,10 +3305,10 @@
       "categoryOccurrence": 11,
       "recordId": "Content_FireTemple:30124be305f89bd22003",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110279:110281:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109717:109719:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3326,10 +3328,10 @@
       "categoryOccurrence": 12,
       "recordId": "Content_FireTemple:2f45e80806086dda3892",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110298:110300:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109735:109737:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3349,10 +3351,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:566175a5c9ff0fcc8a10",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110423:110429:dbcdf4a33b67",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:109856:109862:dbcdf4a33b67",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3362,7 +3364,7 @@
       "category": "dialogue",
       "shouldTranslate": true,
       "original": "\n    [pc.isDK|What? She <i>submits</i>? That's not how this works. You're <b>the alpha</b> now, and that means you take, not that she gives you permission to take her. With a sigh you reach down and grip her by the fluffy red fur-collar and drag her closer, getting a soft <i>'bark'</i> of surprise out of the horny hellhound mommy.|That's... an enticing offer, and considering even in her submissive state she seems to be about ready to pounce you and mash her drooling cunt against you.] At the look in your eyes she turns practically to pudding, opening her mouth to pant at you hungrily. \"You're going to be rough with me? Ooooh! Come on then!\"\n\n    You draw her in close enough to kiss her hard on the lips, pushing your own tongue into her mouth while one of your hands roughly grips a tit. You loop a finger through one of her piercings and tug, delighting in the way she moans into your mouth and her tail creeps from between her legs to begin furiously wagging. The monstrous hound growls when your roaming hand finds the sultry cleft of her pussy; a single finger parting her lips is all it takes for hot — surprisingly hot — juices to splash their way across your palm, and she immediately tries to roll her hips and get more of your fingers into her. \"Oh yeeah... [var0|make me a mommy!|use me, breed me, ride me — do anything you want, just <b>fuck me</b>!]\" \n    \n    [pc.hasCock|She pauses in confusion when you guide one of her massive paws to your own womanhood, skipping right past your [pc.cock]. \"This puppy's getting pussy.\" you insist, much to the hellhound's chagrin.|Her tongue's lusty dance is interrupted when you guide one of her massive paws to your own womanhood. \"Ready to eat some pussy?\" you ask.]\n    \n    The hellhound growls at you, nodding as the tension builds up in her body. She goes down easily when you push her, taking her back with a soft <i>'pomf'</i> and a jiggle of her tits. You go down right after her, licking her potent breed-hungry juices off of your sticky digits. Your issue now is trying to figure out just how to lay this woman; she's massive, where do you even start?\n    \n    In the end you settle for shrugging out of your clothing with strands of dewy excitement connecting you to them, trying not to grin at the way her burning eyes track your every movement with an almighty need. A shake of your hips actually gets a drip of your own girly fluids right on her nose, and she laps it up with a bestial whine. You drop your hips down onto her, a knee on either side of her perky lupine ears and spread your slit across her [silly|snoot|nose]. The hellhound's hips twitch, tail wagging furiously despite the fact that it's becoming drenched in the juices of her own untouched cunt. If anything that just wafts the scent of a bitch in heat even harder into the air, making you salivate automatically.\n    \n    Her breath is hot against your mons, and her tits are hefty enough to rest your ass against even with your twat smashed into her face... truly you've found the most comfortable seat in this sweltering temple. You're still musing when her tongue laps at you from asshole to clit, hitting you with a spark of pleasure that has you rolling your hips.\n    \n    You reach down and grip her ears in both hands, pinning them to the floor before rubbing the length of them in full. It elicits a surprised gasp from the muscular milf-hound, which in turn becomes a gurgle of cunt lube. Your nails scratch her scalp hard, keeping her head pinned to the ground before you start to properly bounce. \"Mn— mnf!\" seems to be the only sound she can make, sending thrilling tremors into your core followed by voracious pussy-eating.\n    \n    She's a tough beast at least, easily able to take your weight bouncing on her face with aplomb. In fact the only issue she might be facing is drowning in you, judging by the way you're already squirting around her tongue. The hellhound shakes her head with a hungry growl, fanning your clit with her nose until you've completely soaked her face.\n    \n    When you lift your ass for more than a heartbeat you get a good look at her blissed-out expression, feeling flutters in your stomach when she opens wide and pants for breath. Her tongue looks perfectly made to lap at your cunt, and it snatches up the strings of ever-thickening spit and pussy-juices idly while you reposition yourself.\n    \n    \"Who's a good puppy?\" you tease, rubbing her ears and scratching her head again.\n    \n    Her response is a low groan of \"Puppy? I want to be a <b>mommy</b>!\" however. You groan and lift your hips, releasing her head and turning around so that you can face her tits. [pc.hasCock|You bury your dick into her tits, pinching her nipples hard in order to bring them together and get her jiggling cleavage properly wrapped around you.|You take a hold of her pierced nipples and pinch them hard, clapping the hellhound's tits together audibly until she's groaning into your ass.] Plenty of your juices coat your own asshole now, but as tempting as it would be to get her to work on your ring instead, your cunt <b>needs</b> more.\n    \n    You push your ass back, blocking out all semblance of light for the hellhound behind your full cheeks. Her nose is wet — albeit thankfully warm — when it's pushed up against your ass, but it's her tongue that does all the work for you again... and then you nearly go tumbling over. She's just so soft on top of all of that muscle; the moment you put your weight down on her you almost lost your hands in her tits and tipped forward. If your lover-by-force is discomforted at all by the rough treatment, it doesn't show by the lusty moan your cunt's busy consuming. Once more her tongue parts your folds, reaching as deeply as possible until it feels like you're twice as sensitive as before you started.\n    \n    She's so <b>warm</b>, soft and squishy piled on top of muscle. You're actually breaking into a sweat despite your discarded clothing, but if anything that only adds to the bacchanal odour in the air. It smells more like an orgy than a little one-on-one face-riding, but everything about this titanic woman demands you cum on her until she's thoroughly marked with you. Her furnace-like body shows no signs of stopping, and she grinds her nose up into you with every opportunity while you toy with her tits. It's possible to get different-sounding moans depending on the way you tug her piercings, and each one is a different treat in the way it vibrates you right down to your womb.\n    \n    You pause and grab her massive paws — trying not to think about the way they've crushed the ground beneath them — and clap them down on your hips. She takes a grip on you with the unspoken order, tail still wagging furiously and keeping that sex scent boiling off of her at a furious high. In fact from here you can actually see her pussy blooming with desire, just begging to have a stiff cock buried in it. [party.has brint|A request that Brint is only too happy to see fulfilled. \"Don't mind me!\" he grunts, slapping his prick onto the hellhound's cleft hard enough to mash her clit down. Potent fuck-juices squirt out around his shaft, and just one heavy <i>'snort'</i> of breath is all it takes to drown your mino-bro in rut.\n    \n    There's a needy bark from between your own cuntlips, and the presence of a male ready to stuff her twat full of young is all it takes to get her truly involved in feasting on your pussy. Brint hauls her legs up, tosses them over his shoulders, lines up with her cunt, and grins at you before pounding his way home. The hellhound's cries of pleasure reverberate deep into you, bringing your own ecstasy to fresh levels and getting you just a little closer to your own orgasm... fuck that's the stuff.|With a grown you lean forward a little more, forcing the hellhound to follow your ass in order to keep eating. Your weight has one of your hands sinking yet further into her cleavage, but eventually you can get your hand to her pussy and start to jill away. \n    \n    Stars and gods, she is <i>wet</i> with desperation to be bred. You hammer your thumb down on her clit and slap it a few times, moaning when she tongues you deeper in wordless thanks for your efforts... fuck, that's what you were waiting for.]\n    \n    [party.has brint|The muscular minotaur pounds away with a furious need to breed, hammering home almost immediately with enough force to see the outline of his dick through her abs. Your heart leaps up into your throat at the sight, and you smash your hips down on her face in time with every thrust until it looks like both of you are trying to pound the hound into the ground. Juices squirt from you and her, although the hellhound's own are quickly turned thick and milky from mixing with the massive bull's pre.|Although you're sure she'd be begging for some dick right about now, this moment is about you; getting her off is more just to keep her actively feasting on your pussy.] \n    \n    It's a mess and you're already fit to boiling over. Juices soak the ground, steam rolls off of your bod[party.has brint|ies|y], and the need to paint this massive milf in girlcum is undeniable.\n    \n    \"Come on, hurry up!\" you cry. [party.has brint|Whether your order is to Brint or the hound is another matter, but it's Brint who hurries right the fuck up; his hips become a blur, slamming into your lover hard enough to nearly jog her free from your cunt. Her tits jiggle hypnotically, and the lurid squelch of your sultry box is met only by the churning of Brint's prick in a larger twat.|The hellhound nods against your nethers, driving her tongue into you while her bottom lip grinds your clit.]\n    \n    The claw of one of the hound's massive paws retracts, before abruptly plunging into your asshole and giving it a slow twist. Stars and sparks burst into the corners of your vision [party.has brint|and Brint seems to have just enough of his reasoning intact to look up at you and snort a small laugh at the 'o' your mouth forms, before some clenching of unseen muscles has him grunting.|and your mouth forms a slow 'o' as she churns you up deeply.]\n    \n    [party.has brint|It's hard to say who out of Brint and the hound comes first though, with Brint buried to the hilt in her waiting womb before surging at the base with unspent cum that's trapped by the tight grip of her cunt. The moment there's that first spurt of potent girl-cum around his dick it catches him full-on in the face when he leans down to get a proper look at her, along with peristaltic milking to bring the bull right along in ecstasy.\n    \n    There's only one downside, and it's that she's too distracted by a wombful of musky mino-spunk to bring you to your own completion... a problem you solve by squeezing her head so tightly between your thighs that she has to make you cum if she wants to breathe again. The digit in your asshole pounds away at you while she eats your box with renewed further, even while her hips are twitching in orgasm and her stomach is inflating with mino-jizz.|Her combined efforts are almost enough to get you there, turning you nearly inside-out with one particularly deep lick — which you reward with a small clit-pinch — before growling into you hard enough to feel it in your [pc.hasToes|toes|[pc.feet]]. When you fan her cunt with your hand you finally seem to be getting there, resulting in yet more fountaining of her scalding-hot cunt juices. Your whole body smells like a bitch in heat just from being ground up against her... and by this point you might actually be.]\n    \n    \"Come on... nearly!\" you gasp, eyelids fluttering before your head finally rocks back. The picture of her massive body writhing in ecstasy all but burns itself into your mind, and her fight for your orgasm (along with her breath) reaches its conclusion at last. Not to say you go gently on your conquest[party.has brint|... even while she's being smashed relentlessly by a rutting mino-man]. You slam your hips down on her relentlessly, drawing her tongue out of you as those waves of pleasure come crashing down.\n    \n    The hellhound squeals and barks at a faceful of girlcum, shaking her head and spitting when you catch her full on. The first breath she manages to gulp down is accompanied by your second wave, which she groans her way through limply.\n    \n    You're already halfway to your feet by the time you've finished, pouring with sweat from the combined heat and effort. Running an arm across your brow shows you to be dripping, and you're so painfully thirsty. Licking your fingers clean only treats you to the potent taste of the amazonian hellhound's raw desire, [party.has brint\n        |although that desire seems to have been quenched by a thick Brint-load... fuck, you've cum and you <i>still</i> don't feel sated. Perhaps a Brint filling would help you out too, have you pinned down and bred, your boiling hot cu— ah, fuck, of course. [pc.isPregnant\n            |Good thing you <i>are</i> filled up.\n            |[var0\n                |<b>You're in heat</b>.\n            ]\n        ]\n        |and the heat rushes through you once again... she was desperate to get filled and made pregnant and heavy, bent down and bred... \n    \n        Fuck, that sounds so good. Perhaps later you could get some of that, meet the needs boiling away at the edges of reasoning and setting your loins aflame. Damnit, you're wet just thinking about it... [pc.isPregnant\n            |Good thing you <i>are</i> filled up.\n            |[var0\n                |<b>You're in heat</b>...\n            ]\n        ]\n    ]\n\n    The hellhound collapses into her bedding when you're done with her, breathing hard with eyes crossed in bliss. Guess she's well and truly sated, now...",
-      "translation": "\n    [pc.isDK|什么？她？<i>提交</i>？ 这不是事情的运作方式。你搞错了。<b>阿尔法版本</b>现在，这意味着你需要主动去拿，而不是等她允许你才去拿。你叹了口气，伸手抓住了她那蓬松的红毛领子，把她拉得更近了一些，然后轻轻地<i>吠叫</i>那只充满欲望的母狗，竟然会让人感到如此惊讶。|这……确实是个很有吸引力的提议。而且考虑到她现在这种顺从的状态，她似乎随时都会扑上来，把她那滴着口水的阴道贴在你身上。]看到你眼中的那种眼神，她简直就像变成了软糯的布丁一样，张开嘴，饥渴地对着你喘息着：“你是要对我粗暴一点吗？哦哦哦！来吧！”\n\n    你把她拉近一些，狠狠地吻住了她的嘴唇，将自己的舌头伸进她的口中，同时用一只手狠狠地抓住了她的乳房。你用一根手指穿过她的一个穿孔，轻轻一拉，看着她将呻吟声送入你的口中，同时她的尾巴从双腿间探出，开始剧烈地摇动，这种场景让你感到无比愉悦。当你的手探到她阴部那诱人的缝隙时，那只“巨大的猎犬”开始低吼；只需用一根手指轻轻分开她的阴唇，炽热——简直热得惊人——的液体就会喷溅到你的手掌上，而她也会立刻扭动臀部，让更多的手指进入她的身体。哦耶……[var0|让我当妈妈吧！|使用我，培育我，驾驭我——随你所欲，只要<b>我的天啊</b>！]\" \n    \n    [pc.hasCock|当你将她那巨大的爪子引导到你的私处时，她困惑地停住了动作，完全忽略了你的[pc.cock]这只小狗要开始发情了。”你坚持说道，这让那只地狱犬感到非常恼火。|当你将她那巨大的爪子引导到自己的私处时，她那充满欲望的动作顿时被中断了。“准备品尝一下‘美味’了吗？”你问道。]\n    \n    那头地狱犬对着你低吼，身体逐渐变得紧张起来。当你推她的时候，她轻易地倒下了，你轻轻地把她抱了回去。<i>pomf</i>还有她那晃动的胸部……你立刻跟在她后面，用你粘腻的手指舔去她身上那些散发着强烈性欲的气息……现在你的问题就是：究竟该怎么和这个女人发生关系呢？她身材那么丰满，你甚至不知道该从哪里开始……\n    \n    最后，你只能耸耸肩脱掉衣服，那些带着露珠的兴奋感依然将你们紧密相连。你努力忍住不让自己露出笑容——因为她那炽热的目光正紧紧地注视着你的一举一动，仿佛有一种无法抗拒的渴望。当你轻轻摇晃臀部时，一些属于你自己的女性特质分泌物竟然掉到了她的鼻子上，而她则发出一声野性的低吟，将这些液体悉数吞了下去。你将臀部压在她身上，双膝分别放在她那圆润的耳垂两侧，然后将你的身体完全覆盖在她身上。[silly|傲慢的态度|鼻子]那头地狱犬的臀部不断抽搐，尾巴疯狂地摇动，尽管它的身体已经被她那尚未被触碰的阴道分泌物浸透了。事实上，这种情景反而让空气中弥漫着更加浓烈的发情母狗的气息，让人不自觉地流出口水。\n    \n    她的呼吸热气扑在你的身上，她的胸部大得足以让你将臀部靠在上面，即使你的阴茎紧贴着她的脸……真的，你在这个闷热的“场所”里找到了最舒适的座位。你还正在思考着这些，这时她的舌头开始从你的肛门舔到阴蒂，那一阵快感让你不由自主地扭动臀部。\n    \n    你伸手用双手抓住她的耳朵，将她的头牢牢按在地板上，然后仔细地揉搓她的耳朵。这一举动让这位肌肉发达、性感的熟女发出了惊讶的喘息声，紧接着，她的阴道里开始分泌出润滑液。你的指甲狠狠地刮擦着她的头皮，将她的头牢牢固定在地面上，随后你开始更加激烈地动作。“嗯……嗯！”似乎是她唯一能发出的声音，这一声声呻吟让你的内心充满了兴奋，而随后你更是疯狂地吮吸着她的阴道。\n    \n    她至少是一头非常强壮的“野兽”，完全能够轻松承受你压在她脸上的重量，而且毫不慌乱。事实上，她唯一可能遇到的问题，就是会被你“淹没”吧——从你已经在她的舌头上“乱动”的样子来看，确实是这样。这只“地狱犬”会饿渴地摇着头，用鼻子轻轻触碰你的阴蒂，直到你的身体完全浸湿她的脸……\n    \n    当你稍微移动身体，稍微离开她的身体一会儿，你就能清楚地看到她那愉悦至极的表情。当她张大嘴巴喘气时，你会感到一阵莫名的兴奋。她的舌头看起来简直就是为舔舐你的阴部而生的——当你调整姿势时，她的舌头会立刻舔起那些逐渐变稠的唾液和阴部分泌物。\n    \n    谁是一只乖狗狗呢？”你一边说，一边揉她的耳朵，又挠了挠她的头。\n    \n    她的回答是一声低低的哼声：“狗狗？我想成为一只狗狗<b>妈妈</b>然而，”你呻吟着抬起臀部，将她的头从自己身上移开，然后转过身来，这样就能面对她的胸部了。[pc.hasCock|你把你的阴茎插入她的胸部，用力捏她的乳头，使它们紧紧贴合在一起，这样她那微微晃动的胸脯就能完美地包裹住你。|你抓住她那些穿孔的乳头，用力捏住它们，把她的胸部狠狠地挤压在一起，发出明显的声响，直到她开始在你耳边呻吟。]现在你的精液都快沾满你自己的屁股了，不过，尽管让她在你的戒指上动点手会非常诱人，但你这个混蛋<b>需求</b>更多。\n    \n    你用力将臀部向后推，彻底挡住了你身后那只“地狱犬”所能看到的任何光线。它的鼻子被压在你的臀部上，虽然很潮湿——但至少还是温暖的——不过真正起作用的是它的舌头。然后你差点儿摔倒。她的身体虽然充满了肌肉，但触感却异常柔软；只要你稍微用力压在她身上，你的手几乎就会陷进她的胸脯里，导致你向前倾倒。如果你那个“被迫成为你的恋人”的人因为这种粗暴的接触而感到不适，她那充满欲望的呻吟声绝对不会暴露这一点。她的舌头再次分开你的唇瓣，尽可能深入地探索，直到让你感觉自己的敏感度提升了一倍。\n    \n    她真是太<b>温暖</b>柔软而富有弹性的肌肤覆盖在结实的肌肉之上。尽管你已经脱掉了衣服，但身上还是开始出汗了，而这种汗水反而让空气中的气味更加浓烈。这种气味更像是一场疯狂的狂欢，而不是简单的亲密接触……但这个强壮的女人的一切都在暗示着你，必须让她彻底感受到你的存在，直到她的身上留下你的痕迹。她那如同熔炉般炽热的身体仿佛永远没有停歇的时刻，只要你有任何机会，她就会将鼻子紧紧贴向你；而当你轻轻触碰她的乳头时，她发出的呻吟声也会因你的触碰方式而有所不同。每一次这样的呻吟，都会让你感到一阵酥麻，这种感觉仿佛直接传达到了你的子宫深处。\n    \n    你停了下来，抓住她那巨大的爪子——努力不去想象它们曾经是如何将地面踩得粉碎的——然后把它们放在自己的臀部上。她用那无声的指令紧紧抓住你，尾巴依然疯狂地摇动，身上散发出的那种性吸引力更是强烈得令人难以忽视。事实上，从这里你可以清楚地看到，她的阴部充满了欲望，仿佛在迫切地等待着一根坚硬的阴茎插入其中。[party.has brint|布林特非常乐意满足这个请求。“别管我！”他哼了一声，用力将自己的阴茎抵在那个女子的阴部上，力度之大甚至让她的阴蒂都被压在了下面。浓稠的精液从他的阴茎上喷射出来，而仅仅这一次强烈的<i>哼</i>只要稍一放松警惕，你的“米诺兄弟”就会陷入沉闷的日常生活之中。\n    \n    只要你的阴唇发出渴望的声音，只要有一个雄性伴侣愿意将精液注入她的体内，她就会真正投入到与你亲密相处的过程中来。布林特把她的腿抬起来，搭到他的肩膀上，然后对准自己的阴道位置，冲你咧嘴一笑，接着便开始猛烈地运动起来。那只地狱犬般的欢愉叫声在你心中回荡，将你的快感推向新的高度，让你离自己的高潮又近了一步…… 太棒了，正是我想要的。|当你长大一些后，你会向前倾得更多，这样那只“地狱犬”就不得不跟在你后面，才能继续吃到东西。你的体重使得你的手进一步陷入了她的胸沟中，但最终你还是能够将手移到她的阴部开始抚弄她。\n    \n    天啊，她真是<i>潮湿的</i>你迫切地想要让她达到高潮。你用力按压她的阴蒂，反复刺激它，而当她用舌头更加深入地与你亲密接触时，她无声地表达着对你的感谢……该死，这正是你一直在等待的时刻。]\n    \n    [party.has brint|这个肌肉发达的米诺陶罗斯以极其强烈的繁殖欲望不断地冲击着你，他的动作如此猛烈，以至于你的腹部几乎立刻就能看到他阴茎的轮廓。看到这一幕，你的心脏仿佛跳到了喉咙里；而他每一次冲刺，你的臀部都会狠狠地压在他的脸上，仿佛你们都在努力把这只“地狱之犬”压进地面。你们的体液不断喷涌而出，而那只地狱犬的体液则因为与这头公牛的大量精液混合，很快就变得浓稠而乳白色。|虽然你很确定她现在肯定正在渴望得到性满足，但此刻的重点应该是你自己；让她达到高潮，其实只是为了让她继续热衷于与你发生性关系罢了。] \n    \n    一片混乱，情况已经快要失控了。果汁浸湿了地面，蒸汽从你的身体上散发出来[party.has brint|ies|y]而且，将这位身材火辣的中年女性描绘成充满女性精液的形象，这种需求确实是无可否认的。\n    \n    “快点，快点！”你急切地喊道。[party.has brint|你的命令是让布林特去追那个女人，还是让那条猎犬去追，那是另一回事了；但总之，是布林特动作快得离谱——他的臀部快速移动，猛烈地撞击你的爱人，几乎要把她从你的怀里撞出去。她的胸部随着撞击而上下晃动，发出诱人的声响，而你那紧实阴部的闷响，也只有布林特那根坚硬的阴茎在更粗大的阴道里抽动时才能与之相媲美。|那只地狱犬用它的舌头轻触你的阴部，同时她的下唇不断摩擦你的阴蒂。]\n    \n    其中一只猎犬巨大的爪子中的那只爪子先是缩了回去，然后突然插入你的肛门，开始缓慢地旋转。顿时，你的视野中充满了星星和火花。[party.has brint|而布林特似乎还保留着足够的理智，能够抬头看着你，对你口中发出的那个“o”声轻笑一声，但随后，某些看不见的肌肉突然紧绷起来，让他发出了低沉的哼声。|当她深深地刺激你时，你的嘴唇会慢慢形成一个“o”字形。]\n    \n    [party.has brint|不过，很难说布林特和那只“猎犬”谁先达到高潮——因为布林特的身体早已处于极度兴奋的状态，她的阴道紧紧地包裹着那些尚未释放的精液。当第一股浓稠的精液喷涌而出时，正好在他俯身仔细观察她的那一刻，那些精液直接喷到了他的脸上；同时，她体内产生的节律性收缩也使得他瞬间陷入了极度的兴奋之中。\n    \n    只有一个缺点，那就是她被体内那股浓烈的“米诺雄风”所吸引，根本无暇顾及让你的体验达到高潮……不过这个问题很容易解决——你只需要把她的头紧紧夹在大腿之间，这样她如果想重新呼吸的话，就不得不让你达到高潮。当她继续吞噬你的“盒子”时，你屁股里的那个东西还在不停地撞击你；即便她的臀部在高潮中不断抽搐，她的肚子也因为那些“液体”而膨胀起来……|她的这些努力几乎足以让你达到目的——她那一次特别深入的舔吻几乎让你整个人都为之震动；作为回应，你轻轻捏了捏她的阴蒂，然后她又用力地舔弄你，那种感觉简直清晰可感[pc.hasToes|脚趾|[pc.feet]]当你用手轻抚她的阴部时，似乎终于快要达到目的了，结果她的阴部却分泌出了更多灼热的液体。仅仅因为与她紧密相贴，你的整个身体都会散发出类似发情母狗的气味……而到了这个时候，你其实也已经差不多处于那种状态了。]\n    \n    快了……就快了！”你喘着气说道，眼皮不停颤动，最终整个人都瘫软了下来。她那充满狂喜的身体扭动的身影，几乎深深地烙印在了你的脑海中；而她为帮助你达到高潮所付出的一切努力——包括她的呼吸——终于迎来了结局。当然，你在这个“胜利”的时刻，也并没有手下留情。[party.has brint|……即便她正在被那个疯狂的米诺人无情地攻击着……]你不断地用臀部撞击她，那种愉悦感如海浪般汹涌而来，迫使她的舌头从你的口中退出。\n    \n    那只地狱犬在沾满女性精液的脸上尖叫着、吠叫着，当你完全抓住它的把柄时，它不停地摇头并吐口水。当她终于勉强吸进第一口空气时，你的第二波攻势也随之袭来，让她只能无力地发出呻吟声。\n    \n    当你完成这一切时，你已经差不多站起来了，身上的汗水因为剧烈的运动和高温而不断涌现。把胳膊搭在额头上，说明你已经汗流浃背了，而且口渴得难受极了。舔干净手指后，你只能感受到那种源自亚马逊地区“地狱犬”般强烈欲望的滋味[party.has brint\n        |尽管那种欲望似乎被大量的布林特给浇灭了……该死，你都已经射精了，还<i>仍然</i>还是觉得不够满足吧。或许来点布林特填充物也会对你有帮助……你是不是已经固定伴侣并开始繁殖了？你那炽热的欲望……啊，见鬼，当然了。[pc.isPregnant\n            |幸好你<i>是</i>已经填满了。\n            |[var0\n                |<b>你正处于发情期。</b>。\n            ]\n        ]\n        |那种热浪再次席卷全身……她迫切地想要怀孕、变得重型，弯下身子去完成那件事……\n    \n        该死，听起来太诱人了。或许稍后你可以尝试一下，满足那些在理智边缘沸腾、让你的欲望熊熊燃烧的需求。见鬼，光是想象这一点就让你感到兴奋不已了……[pc.isPregnant\n            |幸好你<i>是</i>已经填满了。\n            |[var0\n                |<b>你正处于发情期。</b>……\n            ]\n        ]\n    ]\n\n    当你玩完她之后，那只地狱犬就会瘫倒在她的被窝里，呼吸急促，双眼紧闭，仿佛沉浸在极度的愉悦之中。看来她现在真的是得到了满足……",
+      "translation": "\n    [pc.isDK|什么？她？<i>提交</i>？ 这不是事情的运作方式。你搞错了。<b>阿尔法版本</b>现在，这意味着你需要主动去拿，而不是等她允许你才去拿。你叹了口气，伸手抓住了她那蓬松的红毛领子，把她拉得更近了一些，然后轻轻地<i>吠叫</i>那只充满欲望的母狗，竟然会让人感到如此惊讶。|这……确实是个很有吸引力的提议。而且考虑到她现在这种顺从的状态，她似乎随时都会扑上来，把她那滴着口水的阴道贴在你身上。]看到你眼中的那种眼神，她简直就像变成了软糯的布丁一样，张开嘴，饥渴地对着你喘息着：“你是要对我粗暴一点吗？哦哦哦！来吧！”\n\n    你把她拉近一些，狠狠地吻住了她的嘴唇，将自己的舌头伸进她的口中，同时用一只手狠狠地抓住了她的乳房。你用一根手指穿过她的一个穿孔，轻轻一拉，看着她将呻吟声送入你的口中，同时她的尾巴从双腿间探出，开始剧烈地摇动，这种场景让你感到无比愉悦。当你的手探到她阴部那诱人的缝隙时，那只“巨大的猎犬”开始低吼；只需用一根手指轻轻分开她的阴唇，炽热——简直热得惊人——的液体就会喷溅到你的手掌上，而她也会立刻扭动臀部，让更多的手指进入她的身体。哦耶……[var0|让我当妈妈吧！|使用我，培育我，驾驭我——随你所欲，只要<b>我的天啊</b>！]\" \n    \n    [pc.hasCock|当你将她那巨大的爪子引导到你的私处时，她困惑地停住了动作，完全忽略了你的[pc.cock]这只小狗要开始发情了。”你坚持说道，这让那只地狱犬感到非常恼火。|当你将她那巨大的爪子引导到自己的私处时，她那充满欲望的动作顿时被中断了。“准备品尝一下‘美味’了吗？”你问道。]\n    \n    那头地狱犬对着你低吼，身体逐渐变得紧张起来。当你推她的时候，她轻易地倒下了，你轻轻地把她抱了回去。<i>pomf</i>还有她那晃动的胸部……你立刻跟在她后面，用你粘腻的手指舔去她身上那些散发着强烈性欲的气息……现在你的问题就是：究竟该怎么和这个女人发生关系呢？她身材那么丰满，你甚至不知道该从哪里开始……\n    \n    最后，你只能耸耸肩脱掉衣服，那些带着露珠的兴奋感依然将你们紧密相连。你努力忍住不让自己露出笑容——因为她那炽热的目光正紧紧地注视着你的一举一动，仿佛有一种无法抗拒的渴望。当你轻轻摇晃臀部时，一些属于你自己的女性特质分泌物竟然掉到了她的鼻子上，而她则发出一声野性的低吟，将这些液体悉数吞了下去。你将臀部压在她身上，双膝分别放在她那圆润的耳垂两侧，然后将你的身体完全覆盖在她身上。[silly|傲慢的态度|鼻子]那头地狱犬的臀部不断抽搐，尾巴疯狂地摇动，尽管它的身体已经被她那尚未被触碰的阴道分泌物浸透了。事实上，这种情景反而让空气中弥漫着更加浓烈的发情母狗的气息，让人不自觉地流出口水。\n    \n    她的呼吸热气扑在你的身上，她的胸部大得足以让你将臀部靠在上面，即使你的阴茎紧贴着她的脸……真的，你在这个闷热的“场所”里找到了最舒适的座位。你还正在思考着这些，这时她的舌头开始从你的肛门舔到阴蒂，那一阵快感让你不由自主地扭动臀部。\n    \n    你伸手用双手抓住她的耳朵，将她的头牢牢按在地板上，然后仔细地揉搓她的耳朵。这一举动让这位肌肉发达、性感的熟女发出了惊讶的喘息声，紧接着，她的阴道里开始分泌出润滑液。你的指甲狠狠地刮擦着她的头皮，将她的头牢牢固定在地面上，随后你开始更加激烈地动作。“嗯……嗯！”似乎是她唯一能发出的声音，这一声声呻吟让你的内心充满了兴奋，而随后你更是疯狂地吮吸着她的阴道。\n    \n    她至少是一头非常强壮的“野兽”，完全能够轻松承受你压在她脸上的重量，而且毫不慌乱。事实上，她唯一可能遇到的问题，就是会被你“淹没”吧——从你已经在她的舌头上“乱动”的样子来看，确实是这样。这只“地狱犬”会饿渴地摇着头，用鼻子轻轻触碰你的阴蒂，直到你的身体完全浸湿她的脸……\n    \n    当你稍微移动身体，稍微离开她的身体一会儿，你就能清楚地看到她那愉悦至极的表情。当她张大嘴巴喘气时，你会感到一阵莫名的兴奋。她的舌头看起来简直就是为舔舐你的阴部而生的——当你调整姿势时，她的舌头会立刻舔起那些逐渐变稠的唾液和阴部分泌物。\n    \n    谁是一只乖狗狗呢？”你一边说，一边揉她的耳朵，又挠了挠她的头。\n    \n    她的回答是一声低低的哼声：“狗狗？我想成为一只狗狗<b>妈妈</b>然而，”你呻吟着抬起臀部，将她的头从自己身上移开，然后转过身来，这样就能面对她的胸部了。[pc.hasCock|你把你的阴茎插入她的胸部，用力捏她的乳头，使它们紧紧贴合在一起，这样她那微微晃动的胸脯就能完美地包裹住你。|你抓住她那些穿孔的乳头，用力捏住它们，把她的胸部狠狠地挤压在一起，发出明显的声响，直到她开始在你耳边呻吟。]现在你的精液都快沾满你自己的屁股了，不过，尽管让她在你的戒指上动点手会非常诱人，但你这个混蛋<b>需求</b>更多。\n    \n    你用力将臀部向后推，彻底挡住了你身后那只“地狱犬”所能看到的任何光线。它的鼻子被压在你的臀部上，虽然很潮湿——但至少还是温暖的——不过真正起作用的是它的舌头。然后你差点儿摔倒。她的身体虽然充满了肌肉，但触感却异常柔软；只要你稍微用力压在她身上，你的手几乎就会陷进她的胸脯里，导致你向前倾倒。如果你那个“被迫成为你的恋人”的人因为这种粗暴的接触而感到不适，她那充满欲望的呻吟声绝对不会暴露这一点。她的舌头再次分开你的唇瓣，尽可能深入地探索，直到让你感觉自己的敏感度提升了一倍。\n    \n    她真是太<b>温暖</b>柔软而富有弹性的肌肤覆盖在结实的肌肉之上。尽管你已经脱掉了衣服，但身上还是开始出汗了，而这种汗水反而让空气中的气味更加浓烈。这种气味更像是一场疯狂的狂欢，而不是简单的亲密接触……但这个强壮的女人的一切都在暗示着你，必须让她彻底感受到你的存在，直到她的身上留下你的痕迹。她那如同熔炉般炽热的身体仿佛永远没有停歇的时刻，只要你有任何机会，她就会将鼻子紧紧贴向你；而当你轻轻触碰她的乳头时，她发出的呻吟声也会因你的触碰方式而有所不同。每一次这样的呻吟，都会让你感到一阵酥麻，这种感觉仿佛直接传达到了你的子宫深处。\n    \n    你停了下来，抓住她那巨大的爪子——努力不去想象它们曾经是如何将地面踩得粉碎的——然后把它们放在自己的臀部上。她用那无声的指令紧紧抓住你，尾巴依然疯狂地摇动，身上散发出的那种性吸引力更是强烈得令人难以忽视。事实上，从这里你可以清楚地看到，她的阴部充满了欲望，仿佛在迫切地等待着一根坚硬的阴茎插入其中。[party.has brint|布林特非常乐意满足这个请求。“别管我！”他哼了一声，用力将自己的阴茎抵在那个女子的阴部上，力度之大甚至让她的阴蒂都被压在了下面。浓稠的精液从他的阴茎上喷射出来，而仅仅这一次强烈的<i>哼</i>只要稍一放松警惕，你的“米诺兄弟”就会陷入沉闷的日常生活之中。\n    \n    只要你的阴唇发出渴望的声音，只要有一个雄性伴侣愿意将精液注入她的体内，她就会真正投入到与你亲密相处的过程中来。布林特把她的腿抬起来，搭到他的肩膀上，然后对准自己的阴道位置，冲你咧嘴一笑，接着便开始猛烈地运动起来。那只地狱犬般的欢愉叫声在你心中回荡，将你的快感推向新的高度，让你离自己的高潮又近了一步…… 太棒了，正是我想要的。|当你长大一些后，你会向前倾得更多，这样那只“地狱犬”就不得不跟在你后面，才能继续吃到东西。你的体重使得你的手进一步陷入了她的胸沟中，但最终你还是能够将手移到她的阴部开始抚弄她。\n    \n    天啊，她真是<i>潮湿的</i>你迫切地想要让她达到高潮。你用力按压她的阴蒂，反复刺激它，而当她用舌头更加深入地与你亲密接触时，她无声地表达着对你的感谢……该死，这正是你一直在等待的时刻。]\n    \n    [party.has brint|这个肌肉发达的弥诺陶洛斯罗斯以极其强烈的繁殖欲望不断地冲击着你，他的动作如此猛烈，以至于你的腹部几乎立刻就能看到他阴茎的轮廓。看到这一幕，你的心脏仿佛跳到了喉咙里；而他每一次冲刺，你的臀部都会狠狠地压在他的脸上，仿佛你们都在努力把这只“地狱之犬”压进地面。你们的体液不断喷涌而出，而那只地狱犬的体液则因为与这头公牛的大量精液混合，很快就变得浓稠而乳白色。|虽然你很确定她现在肯定正在渴望得到性满足，但此刻的重点应该是你自己；让她达到高潮，其实只是为了让她继续热衷于与你发生性关系罢了。] \n    \n    一片混乱，情况已经快要失控了。果汁浸湿了地面，蒸汽从你的身体上散发出来[party.has brint|ies|y]而且，将这位身材火辣的中年女性描绘成充满女性精液的形象，这种需求确实是无可否认的。\n    \n    “快点，快点！”你急切地喊道。[party.has brint|你的命令是让布林特去追那个女人，还是让那条猎犬去追，那是另一回事了；但总之，是布林特动作快得离谱——他的臀部快速移动，猛烈地撞击你的爱人，几乎要把她从你的怀里撞出去。她的胸部随着撞击而上下晃动，发出诱人的声响，而你那紧实阴部的闷响，也只有布林特那根坚硬的阴茎在更粗大的阴道里抽动时才能与之相媲美。|那只地狱犬用它的舌头轻触你的阴部，同时她的下唇不断摩擦你的阴蒂。]\n    \n    其中一只猎犬巨大的爪子中的那只爪子先是缩了回去，然后突然插入你的肛门，开始缓慢地旋转。顿时，你的视野中充满了星星和火花。[party.has brint|而布林特似乎还保留着足够的理智，能够抬头看着你，对你口中发出的那个“o”声轻笑一声，但随后，某些看不见的肌肉突然紧绷起来，让他发出了低沉的哼声。|当她深深地刺激你时，你的嘴唇会慢慢形成一个“o”字形。]\n    \n    [party.has brint|不过，很难说布林特和那只“猎犬”谁先达到高潮——因为布林特的身体早已处于极度兴奋的状态，她的阴道紧紧地包裹着那些尚未释放的精液。当第一股浓稠的精液喷涌而出时，正好在他俯身仔细观察她的那一刻，那些精液直接喷到了他的脸上；同时，她体内产生的节律性收缩也使得他瞬间陷入了极度的兴奋之中。\n    \n    只有一个缺点，那就是她被体内那股浓烈的“米诺雄风”所吸引，根本无暇顾及让你的体验达到高潮……不过这个问题很容易解决——你只需要把她的头紧紧夹在大腿之间，这样她如果想重新呼吸的话，就不得不让你达到高潮。当她继续吞噬你的“盒子”时，你屁股里的那个东西还在不停地撞击你；即便她的臀部在高潮中不断抽搐，她的肚子也因为那些“液体”而膨胀起来……|她的这些努力几乎足以让你达到目的——她那一次特别深入的舔吻几乎让你整个人都为之震动；作为回应，你轻轻捏了捏她的阴蒂，然后她又用力地舔弄你，那种感觉简直清晰可感[pc.hasToes|脚趾|[pc.feet]]当你用手轻抚她的阴部时，似乎终于快要达到目的了，结果她的阴部却分泌出了更多灼热的液体。仅仅因为与她紧密相贴，你的整个身体都会散发出类似发情母狗的气味……而到了这个时候，你其实也已经差不多处于那种状态了。]\n    \n    快了……就快了！”你喘着气说道，眼皮不停颤动，最终整个人都瘫软了下来。她那充满狂喜的身体扭动的身影，几乎深深地烙印在了你的脑海中；而她为帮助你达到高潮所付出的一切努力——包括她的呼吸——终于迎来了结局。当然，你在这个“胜利”的时刻，也并没有手下留情。[party.has brint|……即便她正在被那个疯狂的米诺人无情地攻击着……]你不断地用臀部撞击她，那种愉悦感如海浪般汹涌而来，迫使她的舌头从你的口中退出。\n    \n    那只地狱犬在沾满女性精液的脸上尖叫着、吠叫着，当你完全抓住它的把柄时，它不停地摇头并吐口水。当她终于勉强吸进第一口空气时，你的第二波攻势也随之袭来，让她只能无力地发出呻吟声。\n    \n    当你完成这一切时，你已经差不多站起来了，身上的汗水因为剧烈的运动和高温而不断涌现。把胳膊搭在额头上，说明你已经汗流浃背了，而且口渴得难受极了。舔干净手指后，你只能感受到那种源自亚马逊地区“地狱犬”般强烈欲望的滋味[party.has brint\n        |尽管那种欲望似乎被大量的布林特给浇灭了……该死，你都已经射精了，还<i>仍然</i>还是觉得不够满足吧。或许来点布林特填充物也会对你有帮助……你是不是已经固定伴侣并开始繁殖了？你那炽热的欲望……啊，见鬼，当然了。[pc.isPregnant\n            |幸好你<i>是</i>已经填满了。\n            |[var0\n                |<b>你正处于发情期。</b>。\n            ]\n        ]\n        |那种热浪再次席卷全身……她迫切地想要怀孕、变得重型，弯下身子去完成那件事……\n    \n        该死，听起来太诱人了。或许稍后你可以尝试一下，满足那些在理智边缘沸腾、让你的欲望熊熊燃烧的需求。见鬼，光是想象这一点就让你感到兴奋不已了……[pc.isPregnant\n            |幸好你<i>是</i>已经填满了。\n            |[var0\n                |<b>你正处于发情期。</b>……\n            ]\n        ]\n    ]\n\n    当你玩完她之后，那只地狱犬就会瘫倒在她的被窝里，呼吸急促，双眼紧闭，仿佛沉浸在极度的愉悦之中。看来她现在真的是得到了满足……",
       "start": 110041,
       "end": 123885,
       "line": 574,
@@ -3370,15 +3372,15 @@
       "sourceIndex": 138,
       "valueOccurrence": 0,
       "categoryOccurrence": 0,
-      "translationStatus": "manual",
+      "translationStatus": "manual_term_unified",
       "translationModel": "manual",
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ecd4b186d74ee1416f1c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110614:124458:49bb3f6e2df5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:110041:123885:49bb3f6e2df5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3399,10 +3401,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:6cf3265fa11ecde7cd95",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:125043:125049:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:124452:124458:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3422,10 +3424,10 @@
       "categoryOccurrence": 37,
       "recordId": "Content_FireTemple:d4027477225a187fb6cd",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:125065:125067:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:124474:124476:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3445,10 +3447,10 @@
       "categoryOccurrence": 38,
       "recordId": "Content_FireTemple:33590d84256f01d94139",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:125069:125071:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:124478:124480:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3471,10 +3473,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:11a9b100cacdf38e4392",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:125356:129232:9c95c1b35dfd",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:124756:128632:9c95c1b35dfd",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3495,10 +3497,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:78ebb9ffca60cd6c0be6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:129682:129690:2dacf6595984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:129065:129073:2dacf6595984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3521,10 +3523,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:15398d169d36034f1277",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:129889:130570:f9f469c67bfc",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:129265:129946:f9f469c67bfc",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3545,10 +3547,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:b3e1ee0a2b0a8fca163e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130903:130909:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130267:130273:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3568,10 +3570,10 @@
       "categoryOccurrence": 13,
       "recordId": "Content_FireTemple:d6c496c2bb97d2ab027a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131104:131106:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130463:130465:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3591,10 +3593,10 @@
       "categoryOccurrence": 14,
       "recordId": "Content_FireTemple:335cdc715fde5c28e47e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131127:131129:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130485:130487:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3614,10 +3616,10 @@
       "categoryOccurrence": 15,
       "recordId": "Content_FireTemple:3c749f5fa219773339be",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131181:131183:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130536:130538:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3638,10 +3640,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:c4797f1854604c501fb5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131198:131232:54e7610c4ec7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130552:130586:54e7610c4ec7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3662,10 +3664,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ea3aeb9fe0d9c042779e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131307:131316:b59cf9ed55bb",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130657:130666:b59cf9ed55bb",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3688,10 +3690,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:e88985de0849c4330f00",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:131529:132361:9cff08d7c105",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:130872:131704:9cff08d7c105",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3712,10 +3714,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:c077a63591fac6b63d05",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132722:132730:9dfa9093f10b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132054:132062:9dfa9093f10b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3735,10 +3737,10 @@
       "categoryOccurrence": 39,
       "recordId": "Content_FireTemple:5ab9cb759c660af03410",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132751:132753:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132083:132085:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3758,10 +3760,10 @@
       "categoryOccurrence": 40,
       "recordId": "Content_FireTemple:1b0a8c8fa8e00771f537",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132755:132757:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132087:132089:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3781,10 +3783,10 @@
       "categoryOccurrence": 16,
       "recordId": "Content_FireTemple:26a8f45aa2608393900c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132794:132796:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132124:132126:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3807,10 +3809,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:1fcc87d7eabb418c863f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132813:132887:2e6af6516de9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132142:132216:2e6af6516de9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3833,10 +3835,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:8a42310d32efb6469ac6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:133121:138778:46ddfaff3eb6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:132441:138098:46ddfaff3eb6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3857,10 +3859,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a13ad78d8da4d615b6a2",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:139329:139337:2dacf6595984",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:138629:138637:2dacf6595984",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3883,10 +3885,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:40cc634a158225432516",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:139536:140315:47f41b59015f",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:138829:139608:47f41b59015f",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3907,10 +3909,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:87fa44f154ef3b8c53a4",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140648:140654:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:139929:139935:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -3930,10 +3932,10 @@
       "categoryOccurrence": 17,
       "recordId": "Content_FireTemple:6461d3f7c9af1b3870cf",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140849:140851:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140125:140127:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3953,10 +3955,10 @@
       "categoryOccurrence": 18,
       "recordId": "Content_FireTemple:7d26a5d4ed7cea44d25f",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140872:140874:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140147:140149:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -3976,10 +3978,10 @@
       "categoryOccurrence": 19,
       "recordId": "Content_FireTemple:f02c387a1f679a4a18fa",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140926:140928:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140198:140200:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4000,10 +4002,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:50023c68deffe1c6da00",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140943:140977:54e7610c4ec7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140214:140248:54e7610c4ec7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4024,10 +4026,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:90de2a101791b64fdcc0",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141052:141061:b59cf9ed55bb",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140319:140328:b59cf9ed55bb",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4050,10 +4052,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a5077be910d040978730",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141274:142312:e87a961cbc81",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:140534:141572:e87a961cbc81",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4074,10 +4076,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:d3c18f562240c93973bf",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142507:142513:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141761:141767:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4097,10 +4099,10 @@
       "categoryOccurrence": 41,
       "recordId": "Content_FireTemple:aa3c4e2845c3c267d658",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142529:142531:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141783:141785:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4120,10 +4122,10 @@
       "categoryOccurrence": 42,
       "recordId": "Content_FireTemple:4e673779fb8de2003ea9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142533:142535:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141787:141789:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4143,10 +4145,10 @@
       "categoryOccurrence": 20,
       "recordId": "Content_FireTemple:366a10145dcb40ed0235",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142572:142574:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141824:141826:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4169,10 +4171,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:de6c3d6ef8e9f11543d7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142591:142665:2e6af6516de9",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:141842:141916:2e6af6516de9",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4195,10 +4197,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:12bfa997c2e09827de6b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142899:144717:33f15eb77f3a",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:142141:143959:33f15eb77f3a",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4219,10 +4221,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ae82599fbbfd3d9b1ccf",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:145120:145126:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:144350:144356:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4242,10 +4244,10 @@
       "categoryOccurrence": 43,
       "recordId": "Content_FireTemple:ac767feba261ef1b0946",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:145142:145144:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:144372:144374:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4265,10 +4267,10 @@
       "categoryOccurrence": 44,
       "recordId": "Content_FireTemple:799d4d8d44e3985b7f06",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:145146:145148:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:144376:144378:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4288,10 +4290,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_FireTemple:4be11f60580f94454721",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:145608:145615:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:144822:144829:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4314,10 +4316,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:36e9f1b9dbc6b7894e8d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:145745:146947:f5ebfa97cbd2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:144953:146155:f5ebfa97cbd2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4338,10 +4340,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9a907a949a8014fd3208",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147052:147058:f83b6fe3aebf",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146254:146260:f83b6fe3aebf",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4361,10 +4363,10 @@
       "categoryOccurrence": 1,
       "recordId": "Content_FireTemple:7fbb096704e752a4ac01",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147127:147138:8489710e42b6",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146327:146338:8489710e42b6",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4384,10 +4386,10 @@
       "categoryOccurrence": 21,
       "recordId": "Content_FireTemple:3c5acf3ed3c7fc9c4277",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147170:147172:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146368:146370:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4410,10 +4412,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:7baa6db8528bcd0a2444",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147187:147213:68ab50ec5eb4",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146384:146410:68ab50ec5eb4",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4434,10 +4436,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:57eb7a46ee5a9b32f558",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147551:147559:237d114fd9b1",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146738:146746:237d114fd9b1",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4457,10 +4459,10 @@
       "categoryOccurrence": 45,
       "recordId": "Content_FireTemple:3ef69f604b9e75d9aecb",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147613:147615:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146798:146800:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4481,10 +4483,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:3e9ba6cf93516dab24e6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147632:147791:f5802accba8e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:146816:146975:f5802accba8e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4505,10 +4507,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a4a24d4a81e2f981b346",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:148106:148199:6fdc77d65b22",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147279:147372:6fdc77d65b22",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4531,10 +4533,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:20f026bf7019a30ce2f8",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:148454:149221:ae1e90e066c0",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:147617:148384:ae1e90e066c0",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4555,10 +4557,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:977a9358c7a5cfac5117",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149763:149777:d56983d4470c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:148907:148921:d56983d4470c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4578,10 +4580,10 @@
       "categoryOccurrence": 46,
       "recordId": "Content_FireTemple:928e15f0aad838ff8ed6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149840:149842:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:148982:148984:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4602,10 +4604,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:3a7ba0f181822b6bfc58",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149863:149962:4429b6379866",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149004:149103:4429b6379866",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4625,10 +4627,10 @@
       "categoryOccurrence": 47,
       "recordId": "Content_FireTemple:deaad3d5d5e4453685ef",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150051:150053:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149190:149192:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4649,10 +4651,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:f21c91c558726bfa92d5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150074:150158:b9292c7aa2e7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149212:149296:b9292c7aa2e7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4675,10 +4677,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:9ecca733a47aff633d35",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150371:150531:a4ac8533382d",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149500:149660:a4ac8533382d",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4699,10 +4701,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:ae853168581e55b03682",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150650:150660:d31d367bc5c7",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149773:149783:d31d367bc5c7",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4722,10 +4724,10 @@
       "categoryOccurrence": 4,
       "recordId": "Content_FireTemple:6dc1e7199918ca5af911",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150721:150723:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149842:149844:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4746,10 +4748,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a659a926f9c9c5dbdee5",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150740:150772:2fcb85fa047e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:149860:149892:2fcb85fa047e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4769,10 +4771,10 @@
       "categoryOccurrence": 2,
       "recordId": "Content_FireTemple:4936d84bb2398a9affdd",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150902:150909:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150017:150024:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4795,10 +4797,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:55bbc6ee9452de557dc6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:151028:155067:ca79f7628d69",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:150138:154177:ca79f7628d69",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4819,10 +4821,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:13e12e79aed4712e0fba",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155216:155228:79070184f805",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:154319:154331:79070184f805",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4843,10 +4845,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:c9b84829f14563ec8c82",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155610:155664:be91d1c41a0e",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:154702:154756:be91d1c41a0e",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4869,10 +4871,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:d52d8839e96ccd8016c3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155728:155923:b615fbf6c998",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:154818:155013:b615fbf6c998",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4892,10 +4894,10 @@
       "categoryOccurrence": 22,
       "recordId": "Content_FireTemple:705cd46e5ced32e14c28",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156069:156071:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155153:155155:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4916,10 +4918,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:2c98e67f32b75d8c41e1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156088:156133:5e112f34eff2",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155171:155216:5e112f34eff2",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4940,10 +4942,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a32778ae1fd03e7c7f67",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156177:156183:b52b36b7269f",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155258:155264:b52b36b7269f",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -4963,10 +4965,10 @@
       "categoryOccurrence": 48,
       "recordId": "Content_FireTemple:182867999f0d6cefd31e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156199:156201:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155280:155282:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -4986,10 +4988,10 @@
       "categoryOccurrence": 49,
       "recordId": "Content_FireTemple:d5929e82aa70b7dc6861",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156203:156205:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155284:155286:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5009,10 +5011,10 @@
       "categoryOccurrence": 3,
       "recordId": "Content_FireTemple:be31544a0347e06511b1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156407:156414:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155483:155490:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5035,10 +5037,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:2897c4912581634aea6a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:156566:158258:e327b5ebc956",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:155636:157328:e327b5ebc956",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5059,10 +5061,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:c0344ef2d716d8ccc5ef",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:158629:158635:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:157684:157690:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5082,10 +5084,10 @@
       "categoryOccurrence": 50,
       "recordId": "Content_FireTemple:cb54cdb10a02f5979fd9",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:158651:158653:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:157706:157708:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5105,10 +5107,10 @@
       "categoryOccurrence": 51,
       "recordId": "Content_FireTemple:f841669276188c4b89dc",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:158655:158657:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:157710:157712:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5128,10 +5130,10 @@
       "categoryOccurrence": 4,
       "recordId": "Content_FireTemple:bd6233b6a194123b1563",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:158773:158780:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:157824:157831:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5154,10 +5156,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:23be144906ee47518d3b",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:158899:160546:c210e5340538",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:157945:159592:c210e5340538",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5178,10 +5180,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:80ffd3a8a7f9ecdabf4e",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160664:160672:9dfa9093f10b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:159705:159713:9dfa9093f10b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5201,10 +5203,10 @@
       "categoryOccurrence": 52,
       "recordId": "Content_FireTemple:d3924ecffb6440a64073",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160701:160703:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:159742:159744:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5224,10 +5226,10 @@
       "categoryOccurrence": 53,
       "recordId": "Content_FireTemple:814ed590413b183629f3",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160705:160707:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:159746:159748:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5250,10 +5252,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:0584b641eba64898873d",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160865:160879:bf157a15b6d8",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:159902:159916:bf157a15b6d8",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5273,10 +5275,10 @@
       "categoryOccurrence": 5,
       "recordId": "Content_FireTemple:15332d8b7209c0e13388",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:161774:161781:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160788:160795:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5299,10 +5301,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:a8ed7831159814655fc6",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:161900:163006:e369851d7618",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:160909:162015:e369851d7618",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5323,10 +5325,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:070283bf0af4d8080919",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163306:163312:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162306:162312:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5346,10 +5348,10 @@
       "categoryOccurrence": 54,
       "recordId": "Content_FireTemple:7ff50e8dc83492a4fac1",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163328:163330:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162328:162330:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5369,10 +5371,10 @@
       "categoryOccurrence": 55,
       "recordId": "Content_FireTemple:39698d2f8a77232bcbfe",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163332:163334:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162332:162334:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5392,10 +5394,10 @@
       "categoryOccurrence": 6,
       "recordId": "Content_FireTemple:64363cb69803533052db",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163452:163459:505e9f71a97c",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162448:162455:505e9f71a97c",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5416,10 +5418,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:86961f8f4ab5e7c17c11",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163578:163786:2a3bfb732f10",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162569:162777:2a3bfb732f10",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5439,10 +5441,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:ba69478494fe5ae03427",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163988:163994:58f160eae33a",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:162971:162977:58f160eae33a",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5465,10 +5467,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:f7a6df0fe2d8e209517c",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:164113:169734:a397d62f02de",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:163091:168712:a397d62f02de",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5489,10 +5491,10 @@
       "curatedReason": "carried_from_old_json",
       "recordId": "Content_FireTemple:e2ddb73b1894f0ee686a",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:169923:169929:bc981983e7f5",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:168895:168901:bc981983e7f5",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_translation"
     },
     {
@@ -5512,10 +5514,10 @@
       "categoryOccurrence": 56,
       "recordId": "Content_FireTemple:df72d5100ebb0b72d4e7",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:169945:169947:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:168917:168919:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5535,10 +5537,10 @@
       "categoryOccurrence": 57,
       "recordId": "Content_FireTemple:57be411e5992dc462c88",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:169949:169951:da39a3ee5e6b",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:168921:168923:da39a3ee5e6b",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     },
     {
@@ -5558,10 +5560,10 @@
       "categoryOccurrence": 0,
       "recordId": "Content_FireTemple:da2ccdc8ff565700aa92",
       "introducedVersion": "0.9.12",
-      "lastSeenVersion": "0.9.14",
-      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:170010:170022:53e07a32bf19",
+      "lastSeenVersion": "0.9.16",
+      "previousId": "Content_FireTemple.a0a212d5bb038aef23a1.js:168978:168990:53e07a32bf19",
       "migrationMatch": "anchored_common_prefix",
-      "stateSource": "inherited_0.9.12",
+      "stateSource": "inherited_0.9.14",
       "updateStatus": "inherited_state"
     }
   ]

@@ -241,6 +241,8 @@ function patch673QuestCharacterLabels(source) {
   for (const [original, patched, label] of replacements) {
     source = replaceLooseAny(source, original, patched, `673 ${label}`);
   }
+  source = replaceLooseCode(source, 'addGatedButton(t,e.name,function(){return n(e);},', 'addGatedButton(t,globalThis.cnCharacterLabel(e.name),function(){return n(e);},', { expected: 1, label: "673 Sense gated target display", fatal: true });
+  source = replaceLooseCode(source, 'addButton(t,e.cName||e.name,function(){return n(e);},', 'addButton(t,globalThis.cnCharacterLabel(e.cName||e.name),function(){return n(e);},', { expected: 2, label: "673 Sense target display", fatal: true });
   return source;
 }
 
@@ -249,24 +251,24 @@ function patch505CharacterNameLabels(source) {
   const inject = "globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function(e){var f=globalThis.cnCharacterLabel,t=String(e==null?\"\":e);if(Object.prototype.hasOwnProperty.call(f.map,t))return f.map[t];if(Object.prototype.hasOwnProperty.call(f.cache,t))return f.cache[t];function w(c){var n=c&&c.charCodeAt(0);return n>=65&&n<=90||n>=97&&n<=122}var r=t;for(var i=0;i<f.keys.length;i++){var k=f.keys[i],v=f.map[k],p=0;while((p=r.indexOf(k,p))>=0){var a=p===0||!w(r.charAt(p-1)),b=p+k.length===r.length||!w(r.charAt(p+k.length));if(a&&b){r=r.slice(0,p)+v+r.slice(p+k.length);p+=v.length}else p+=k.length}}return f.cache[t]=r};globalThis.cnCharacterLabel.map=Object.assign(globalThis.cnCharacterLabel.map||{}," + JSON.stringify(characterMap) + ");globalThis.cnCharacterLabel.cache={};globalThis.cnCharacterLabel.keys=Object.keys(globalThis.cnCharacterLabel.map).sort(function(a,b){return b.length-a.length});globalThis.cnCompNames=globalThis.cnCompNames||function(e){var t=globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(e):String(e==null?\"\":e),i=t.lastIndexOf(\", and \");if(i>=0)return t.slice(0,i).replace(/, /g,\"、\")+\"和\"+t.slice(i+6);i=t.lastIndexOf(\" and \");return i>=0?t.slice(0,i)+\"和\"+t.slice(i+5):t};";
   if (!source.includes("globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function")) source = inject + source;
   const stringOriginal = 'if("string"==typeof _)return O&&v.setDefaultCock(k),d(_),"continue";';
-  const stringPatched = 'if("string"==typeof _)return O&&v.setDefaultCock(k),d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_),"continue";';
+  const stringPatched = 'if("string"==typeof _)return O&&v.setDefaultCock(k),d(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_),"continue";';
   const functionOriginals = [
     'var I=g(P,s,u,C,w,v);return d(I),"continue"',
     'var I=g(P,s,l,C,w,v);return d(I),"continue"'
   ];
-  const functionPatchedReturn = 'return d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)';
+  const functionPatchedReturn = 'return d(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)';
   const valueOriginals = [
     'return d(B.toString()),"continue"}if("dayNight"===l)',
     'return d(B.toString()),"continue"}if("dayNight"===u)'
   ];
-  const valuePatchedReturn = 'return d("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())';
+  const valuePatchedReturn = 'return d(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())';
   const stringStart = source.indexOf('if ("string" == typeof _)');
   if (stringStart >= 0) {
     const stringEnd = source.indexOf('if (!(r in v))', stringStart);
     let region = source.slice(stringStart, stringEnd > stringStart ? stringEnd : stringStart + 500);
     const call = /\bd\(_\)/;
     if ((region.match(new RegExp(call.source, "g")) || []).length === 1) {
-      region = region.replace(call, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_)');
+      region = region.replace(call, 'd(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(_):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(_):_)');
       source = source.slice(0, stringStart) + region + source.slice(stringEnd > stringStart ? stringEnd : stringStart + 500);
     } else console.warn("505: dynamic string name parser hook not found uniquely.");
   } else console.warn("505: dynamic string name parser branch not found.");
@@ -278,7 +280,7 @@ function patch505CharacterNameLabels(source) {
       let region = source.slice(functionAnchor, functionEnd);
       if ((region.match(/\bd\(I\)/g) || []).length !== 1) console.warn("505: dynamic function name output not found uniquely.");
       else {
-        region = region.replace(/\bd\(I\)/, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)');
+        region = region.replace(/\bd\(I\)/, 'd(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(I):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(I):I)');
         source = source.slice(0, functionAnchor) + region + source.slice(functionEnd);
       }
     }
@@ -286,7 +288,7 @@ function patch505CharacterNameLabels(source) {
   if (!source.includes(valuePatchedReturn)) {
     const valueMatches = [...source.matchAll(/\bd\(B\.toString\(\)\)/g)];
     if (valueMatches.length !== 1) console.warn("505: dynamic value name parser hook not found uniquely.");
-    else source = source.replace(/\bd\(B\.toString\(\)\)/, 'd("compNames"===r&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())');
+    else source = source.replace(/\bd\(B\.toString\(\)\)/, 'd(("compNames"===r||"combatNames"===r)&&globalThis.cnCompNames?globalThis.cnCompNames(B.toString()):("name"===r||"Name"===r)&&globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(B.toString()):B.toString())');
   }
   const __cnNameHookCounts = {
     character: source.split("globalThis.cnCharacterLabel?globalThis.cnCharacterLabel").length - 1,
@@ -338,9 +340,35 @@ function patch673CompanionAffinityLabels(source) {
   }
   const inject = 'globalThis.cnStatLabel=globalThis.cnStatLabel||function(e){var t=String(e),m=globalThis.cnStatLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnStatLabel.map=Object.assign(globalThis.cnStatLabel.map||{},' + JSON.stringify(statMap) + ');';
   if (!source.includes("globalThis.cnStatLabel=globalThis.cnStatLabel||function")) source = inject + source;
-  const original = 'this.allocStats.map(function(e){return GLOBALS.AFFINITY[e];}).join(", ")';
-  const patched = 'this.allocStats.map(function(e){var t=GLOBALS.AFFINITY[e];return globalThis.cnStatLabel?globalThis.cnStatLabel(t):t}).join("、")';
-  return replaceLooseCode(source, original, patched, { label: "673 companion affinity renderer", fatal: true });
+  const replacements = [
+    [
+      'this.allocStats.map(function(e){return GLOBALS.AFFINITY[e];}).join(", ")',
+      'this.allocStats.map(function(e){var t=GLOBALS.AFFINITY[e];return globalThis.cnStatLabel?globalThis.cnStatLabel(t):t}).join("、")',
+      "companion affinity renderer",
+    ],
+    [
+      'pc.affinities().map(function(e){return capitalize(GLOBALS.AFFINITY[e]);}).join(", ")',
+      'pc.affinities().map(function(e){var t=capitalize(GLOBALS.AFFINITY[e]);return globalThis.cnStatLabel?globalThis.cnStatLabel(t):t}).join("、")',
+      "level-up recommended stats",
+    ],
+  ];
+  for (const [original, patched, label] of replacements) {
+    source = replaceLooseCode(source, original, patched, { label: "673 " + label, fatal: true });
+  }
+  source = patch673LevelUpStatRenderer(source);
+  return source;
+}
+
+function patch673LevelUpStatRenderer(source) {
+  const original = /([A-Za-z_$][\w$]*)\s*\.\s*createElement\s*\(\s*["']div["']\s*,\s*\{\s*className\s*:\s*["']statName["']\s*\}\s*,\s*capitalize\s*\(\s*h\s*\)\s*,\s*f\s*\?\s*["']★["']\s*:\s*["']["']\s*,?\s*\)/g;
+  const patched = /([A-Za-z_$][\w$]*)\s*\.\s*createElement\s*\(\s*["']div["']\s*,\s*\{\s*className\s*:\s*["']statName["']\s*\}\s*,\s*globalThis\.cnStatLabel\s*\?\s*globalThis\.cnStatLabel\s*\(\s*capitalize\s*\(\s*h\s*\)\s*\)\s*:\s*capitalize\s*\(\s*h\s*\)\s*,\s*f\s*\?\s*["']★["']\s*:\s*["']["']\s*,?\s*\)/g;
+  const originalMatches = [...source.matchAll(original)];
+  const patchedMatches = [...source.matchAll(patched)];
+  if (originalMatches.length === 1 && patchedMatches.length === 0) {
+    return source.replace(original, (_match, reactAlias) => `${reactAlias}.createElement("div",{className:"statName"},globalThis.cnStatLabel?globalThis.cnStatLabel(capitalize(h)):capitalize(h),f?"★":"")`);
+  }
+  if (originalMatches.length === 0 && patchedMatches.length === 1) return source;
+  throw new Error(`673 level-up stat renderer structural match count ${originalMatches.length}, patched ${patchedMatches.length}, expected 1/0 or 0/1`);
 }
 
 function patch505EquipmentInfoLabels(source) {
@@ -415,6 +443,11 @@ function patch505InterruptPowerLabel(source) {
   return replaceLooseCode(source, from, to, { label: "505 interrupt power display", fatal: true });
 }
 
+function characterLabelHelper() {
+  const map = displayMapping("cnCharacterLabel");
+  return 'globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function(e){var f=globalThis.cnCharacterLabel,t=String(e==null?"":e);if(Object.prototype.hasOwnProperty.call(f.map,t))return f.map[t];if(Object.prototype.hasOwnProperty.call(f.cache,t))return f.cache[t];function w(c){var n=c&&c.charCodeAt(0);return n>=65&&n<=90||n>=97&&n<=122}var r=t;for(var i=0;i<f.keys.length;i++){var k=f.keys[i],v=f.map[k],p=0;while((p=r.indexOf(k,p))>=0){var a=p===0||!w(r.charAt(p-1)),b=p+k.length===r.length||!w(r.charAt(p+k.length));if(a&&b){r=r.slice(0,p)+v+r.slice(p+k.length);p+=v.length}else p+=k.length}}return f.cache[t]=r};globalThis.cnCharacterLabel.map=Object.assign(globalThis.cnCharacterLabel.map||{},' + JSON.stringify(map) + ');globalThis.cnCharacterLabel.cache={};globalThis.cnCharacterLabel.keys=Object.keys(globalThis.cnCharacterLabel.map).sort(function(a,b){return b.length-a.length});';
+}
+
 function effectLabelHelper() {
   const map = displayMapping("cnEffectLabel");
   return 'globalThis.cnEffectLabel=globalThis.cnEffectLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnEffectLabel.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnEffectLabel.map=Object.assign(globalThis.cnEffectLabel.map||{},' + JSON.stringify(map) + ');';
@@ -422,8 +455,10 @@ function effectLabelHelper() {
 
 function patch103EffectDisplayLabels(source) {
   if (!source.includes("globalThis.cnEffectLabel=globalThis.cnEffectLabel||function")) source = effectLabelHelper() + source;
+  if (!source.includes("globalThis.cnCharacterLabel=globalThis.cnCharacterLabel||function")) source = characterLabelHelper() + source;
   const replacements = [
     ['ttH:capitalize(o.name)', 'ttH:globalThis.cnEffectLabel(capitalize(o.name))'],
+    ['L=capitalize(t.cName||t.name)', 'L=globalThis.cnCharacterLabel(capitalize(t.cName||t.name))'],
     ['__html:"<b>".concat(e.name,":</b> ")', '__html:"<b>".concat(globalThis.cnEffectLabel(e.name),":</b> ")'],
     ['concat(d,"回合").concat(d>1?"s":"")', 'concat(d,"回合")'],
     ['concat(n,"回合").concat(n>1?"s":"")', 'concat(n,"回合")']
@@ -476,17 +511,25 @@ function patch673PerkDisplayLabels(source) {
   const map = displayMapping("cnPerkText");
   const inject = 'globalThis.cnPerkText=globalThis.cnPerkText||function(e){var t=String(e),m=globalThis.cnPerkText.map||{};return Object.prototype.hasOwnProperty.call(m,t)?m[t]:t};globalThis.cnPerkText.map=Object.assign(globalThis.cnPerkText.map||{},' + JSON.stringify(map) + ');';
   if (!source.includes("globalThis.cnPerkText=globalThis.cnPerkText||function")) source = inject + source;
-  const text = '"Permanent bonuses based on starting race, class, and background."';
+  // JSON translations are applied before runtime display patches. Accept both
+  // the original literal and its translated form while retaining the strict
+  // single-generator check.
+  const texts = [
+    '"Permanent bonuses based on starting race, class, and background."',
+    '"根据初始种族、职业和背景获得的永久加成。"',
+  ];
   const candidates = [];
-  for (let at = source.indexOf(text); at >= 0; at = source.indexOf(text, at + text.length)) {
-    if (source.slice(at, at + 1200).includes("this.values.forEach")) candidates.push(at);
+  for (const text of texts) {
+    for (let at = source.indexOf(text); at >= 0; at = source.indexOf(text, at + text.length)) {
+      if (source.slice(at, at + 1200).includes("this.values.forEach")) candidates.push({ at, text });
+    }
   }
   if (candidates.length !== 1) throw new Error(`673 Starting Bonuses generator candidate count ${candidates.length}, expected 1`);
-  const start = candidates[0];
+  const { at: start, text } = candidates[0];
   const end = source.indexOf('set: function', start);
   if (end < 0 || end - start > 1500) throw new Error("673 Starting Bonuses generator bounds not found");
   let region = source.slice(start, end);
-  region = region.replace(text, `globalThis.cnPerkText(${text})`);
+  if (text === texts[0]) region = region.replace(text, `globalThis.cnPerkText(${text})`);
   const affinity = 'GLOBALS.AFFINITY[n]';
   if (region.split(affinity).length - 1 !== 1) throw new Error("673 Starting Bonuses affinity value not found uniquely");
   region = region.replace(affinity, 'globalThis.cnPerkText(GLOBALS.AFFINITY[n])');
@@ -711,6 +754,9 @@ function patch673UiLabels(source) {
   genitalRegion = genitalRegion
     .replace(/\be\.simpleCockNoun\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.simpleCockNoun($1))")
     .replace(/\be\.multiCockDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.multiCockDesc($1))")
+    .replace(/\be\.ballsDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.ballsDesc($1))")
+    .replace(/\be\.ballDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.ballDesc($1))")
+    .replace(/\be\.sackDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.sackDesc($1))")
     .replace(/\be\.assholeDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.assholeDesc($1))")
     .replace(/\be\.vaginaDesc\(([^)]*)\)/g, "globalThis.cnBodyLabel(e.vaginaDesc($1))")
     .replace(/num2Text\(e\.vagina\.clits\)/g, "globalThis.cnAttrLabel(num2Text(e.vagina.clits))")
@@ -738,6 +784,35 @@ function patch673UiLabels(source) {
     "globalThis.cnAttrLabel(flags.DEMON_HUE)" +
     source.slice(demonHueValue + "flags.DEMON_HUE".length);
 
+  // The transformation templates pass DEMON_HUE / DEMON_TFNAME as dynamic
+  // display values in many separate branches. Keep the stored flags English
+  // for all comparisons and localize only the values supplied to textify.
+  source = source
+    .replace(/(?<!cnAttrLabel\()flags\.DEMON_HUE(?=\s*,)/g, "globalThis.cnAttrLabel(flags.DEMON_HUE)")
+    .replace(/(?<!cnFluidLabel\()flags\.DEMON_TFNAME(?=\s*,)/g, "globalThis.cnFluidLabel(flags.DEMON_TFNAME)");
+
+  // num2Text supplies the dynamic amount in the cock-shrink transformation.
+  // Mapping the visible value prevents output such as `two英寸` while leaving
+  // the numeric value and transformation logic untouched.
+  source = replaceLooseCode(
+    source,
+    "var a=num2Text(r);",
+    "var a=globalThis.cnAttrLabel(num2Text(r));",
+    { expected: 1, label: "673 cock-shrink visible number", fatal: true },
+  );
+  source = replaceLooseCode(
+    source,
+    "var s=Math.floor(Math.abs(n.adjustDown(o,r)))||1,l=num2Text(s);",
+    "var s=Math.floor(Math.abs(n.adjustDown(o,r)))||1,l=globalThis.cnAttrLabel(num2Text(s));",
+    { expected: 1, label: "673 cock-size decrease visible number", fatal: true },
+  );
+  source = replaceLooseCode(
+    source,
+    'var a=Math.floor(Math.abs(e.adjustDown("ballSize",n,o)))||1,i=num2Text(a);',
+    'var a=Math.floor(Math.abs(e.adjustDown("ballSize",n,o)))||1,i=globalThis.cnAttrLabel(num2Text(a));',
+    { expected: 1, label: "673 ball-size decrease visible number", fatal: true },
+  );
+
   // Apply word-level mappings only to descriptor values as they are displayed
   // by the formatted Appearance generator; never change stored attributes.
   const wrappers = [
@@ -747,6 +822,40 @@ function patch673UiLabels(source) {
     [/\be\.buttDesc\(\)/g, '(globalThis.cnBodyLabel?globalThis.cnBodyLabel(e.buttDesc()):e.buttDesc())'],
   ];
   for (const [pattern, replacement] of wrappers) source = source.replace(pattern, (whole, offset, full) => full.slice(Math.max(0, offset - 35), offset).includes("globalThis.cnBodyLabel") ? whole : replacement);
+
+  // Dynamic body nouns are safe to localize only at their visible return sites.
+  source = source.replace(/plural\(e\.armDesc\(\)\)/g, (whole, offset, full) =>
+    full.slice(Math.max(0, offset - 45), offset).includes("globalThis.cnBodyLabel")
+      ? whole
+      : "(globalThis.cnBodyLabel?globalThis.cnBodyLabel(plural(e.armDesc())):plural(e.armDesc()))");
+  source = source.replace(/\b([ert])\.(skinNoun|skinFurScales)\(([^)]*)\)/g, (whole, obj, method, args, offset, full) =>
+    full.slice(Math.max(0, offset - 45), offset).includes("globalThis.cnBodyLabel")
+      ? whole
+      : `(globalThis.cnBodyLabel?globalThis.cnBodyLabel(${obj}.${method}(${args})):${obj}.${method}(${args}))`);
+
+  // Legacy hips/butt Appearance paragraph is a separate generator. Restrict
+  // wrappers to that one function so descriptor values remain untouched elsewhere.
+  const legacyBodyAnchor = source.indexOf("pc.hipRating()");
+  const legacyBodyEnd = source.indexOf("a = function ()", legacyBodyAnchor);
+  if (legacyBodyAnchor < 0 || legacyBodyEnd < legacyBodyAnchor) throw new Error("673 legacy body Appearance anchors not found");
+  const legacyBodyStart = Math.max(0, legacyBodyAnchor - 180);
+  let legacyBodyRegion = source.slice(legacyBodyStart, legacyBodyEnd);
+  const legacyCounts = {
+    hip: (legacyBodyRegion.match(/pc\.hipDesc\(!0\)/g) || []).length,
+    vagina: (legacyBodyRegion.match(/pc\.vaginaDesc\(\)/g) || []).length,
+    butt: (legacyBodyRegion.match(/pc\.buttDesc\(\)/g) || []).length,
+    cock: (legacyBodyRegion.match(/pc\.multiCockDesc\(\)/g) || []).length,
+    thighs: (legacyBodyRegion.match(/pc\.thighsDesc\(\)/g) || []).length,
+  };
+  if (JSON.stringify(legacyCounts) !== JSON.stringify({ hip: 3, vagina: 1, butt: 2, cock: 1, thighs: 1 }))
+    throw new Error("673 legacy body descriptor counts changed: " + JSON.stringify(legacyCounts));
+  legacyBodyRegion = legacyBodyRegion
+    .replace(/pc\.hipDesc\(!0\)/g, "globalThis.cnBodyLabel(pc.hipDesc(!0))")
+    .replace(/pc\.vaginaDesc\(\)/g, "globalThis.cnBodyLabel(pc.vaginaDesc())")
+    .replace(/pc\.buttDesc\(\)/g, "globalThis.cnBodyLabel(pc.buttDesc())")
+    .replace(/pc\.multiCockDesc\(\)/g, "globalThis.cnBodyLabel(pc.multiCockDesc())")
+    .replace(/pc\.thighsDesc\(\)/g, "globalThis.cnBodyLabel(pc.thighsDesc())");
+  source = source.slice(0, legacyBodyStart) + legacyBodyRegion + source.slice(legacyBodyEnd);
   return source;
 }
 
@@ -826,13 +935,28 @@ function patch505DynamicAttributeLabels(source) {
   const injectAttr = 'globalThis.cnAttrLabel=globalThis.cnAttrLabel||function(e){var t=String(e==null?"":e),n=t.toLowerCase(),m=globalThis.cnAttrLabel.map||{};return Object.prototype.hasOwnProperty.call(m,n)?m[n]:t};globalThis.cnAttrLabel.map=Object.assign(globalThis.cnAttrLabel.map||{},' + JSON.stringify(attrMap) + ');';
   if (!source.includes("globalThis.cnAttrLabel=globalThis.cnAttrLabel||function")) source = injectAttr + source;
   const bodyMap = displayMapping("cnBodyLabel");
-  const injectBody = 'globalThis.cnBodyLabel=globalThis.cnBodyLabel||function(e){var bm=globalThis.cnBodyLabel.map||{},am=globalThis.cnAttrLabel&&globalThis.cnAttrLabel.map||{},all=Object.assign({},am,bm),parts=String(e==null?"":e).split(/([,，]\\s*)/),out="";for(var p=0;p<parts.length;p++){var part=parts[p];if(/^[,，]\\s*$/.test(part))continue;var core=part.trim();if(!core){out+=part;continue}var exact=core.toLowerCase();if(Object.prototype.hasOwnProperty.call(all,exact)){out+=all[exact];continue}var words=core.split(/\\s+/),vals=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(4,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(all,key)){hit=all[key];take=len;break}}if(hit===null){hit=words[i];take=1}vals.push(hit);i+=take}out+=vals.join("")}if(all.lips)out=out.replace(/(^|[^A-Za-z])lips(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lips});if(all.lip)out=out.replace(/(^|[^A-Za-z])lip(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lip});return out.replace(/([\\u4e00-\\u9fff])\\s+([\\u4e00-\\u9fff])/g,"$1$2")};globalThis.cnBodyLabel.map=Object.assign(globalThis.cnBodyLabel.map||{},' + JSON.stringify(bodyMap) + ');';
+  const injectBody = 'globalThis.cnBodyLabel=globalThis.cnBodyLabel||function(e){var bm=globalThis.cnBodyLabel.map||{},am=globalThis.cnAttrLabel&&globalThis.cnAttrLabel.map||{},all=Object.assign({},am,bm),parts=String(e==null?"":e).split(/([,，]\\s*)/),out="";for(var p=0;p<parts.length;p++){var part=parts[p];if(/^[,，]\\s*$/.test(part))continue;var core=part.trim();if(!core){out+=part;continue}core=core.replace(/(\\d+)-inch\\s+long/gi,"$1英寸长的").replace(/(\\d+)-inch/gi,"$1英寸");var exact=core.toLowerCase();if(Object.prototype.hasOwnProperty.call(all,exact)){out+=all[exact];continue}var words=core.split(/\\s+/),vals=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(4,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(all,key)){hit=all[key];take=len;break}}if(hit===null){hit=words[i];take=1}vals.push(hit);i+=take}out+=vals.join("")}var ks=Object.keys(all).sort(function(a,b){return b.length-a.length});for(var q=0;q<ks.length;q++){var k=ks[q],needle=k.toLowerCase(),pos=0,low=out.toLowerCase();while((pos=low.indexOf(needle,pos))>=0){var left=pos===0||!/[A-Za-z]/.test(low.charAt(pos-1)),right=pos+k.length===low.length||!/[A-Za-z]/.test(low.charAt(pos+k.length));if(left&&right){out=out.slice(0,pos)+all[k]+out.slice(pos+k.length);low=out.toLowerCase();pos+=String(all[k]).length}else pos+=k.length}}if(all.lips)out=out.replace(/(^|[^A-Za-z])lips(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lips});if(all.lip)out=out.replace(/(^|[^A-Za-z])lip(?=$|[^A-Za-z])/gi,function(_,pre){return pre+all.lip});return out.replace(/(\\d+)-inch\\s+long/gi,"$1英寸长的").replace(/(\\d+)-inch/gi,"$1英寸").replace(/([\\u4e00-\\u9fff])\\s+([\\u4e00-\\u9fff])/g,"$1$2")};globalThis.cnBodyLabel.map=Object.assign(globalThis.cnBodyLabel.map||{},' + JSON.stringify(bodyMap) + ');';
   if (!source.includes("globalThis.cnBodyLabel=globalThis.cnBodyLabel||function")) source = injectBody + source;
+  const cockHeadMap = displayMapping("cnCockHeadLabel");
+  const injectCockHead = 'globalThis.cnCockHeadLabel=globalThis.cnCockHeadLabel||function(e){var t=String(e==null?"":e),n=t.toLowerCase(),m=globalThis.cnCockHeadLabel.map||{};return Object.prototype.hasOwnProperty.call(m,n)?m[n]:t};globalThis.cnCockHeadLabel.map=Object.assign(globalThis.cnCockHeadLabel.map||{},' + JSON.stringify(cockHeadMap) + ');';
+  if (!source.includes("globalThis.cnCockHeadLabel=globalThis.cnCockHeadLabel||function")) source = injectCockHead + source;
   const fluidMap = displayMapping("cnFluidLabel");
-  const injectFluid = 'globalThis.cnFluidLabel=globalThis.cnFluidLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnFluidLabel.map||{},words=t.trim().split(/\s+/),out=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(3,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(m,key)){hit=m[key];take=len;break}}if(hit===null){hit=words[i];take=1}out.push(hit);i+=take}return out.join("")};globalThis.cnFluidLabel.map=Object.assign(globalThis.cnFluidLabel.map||{},' + JSON.stringify(fluidMap) + ');';
+  const injectFluid = 'globalThis.cnFluidLabel=globalThis.cnFluidLabel||function(e){var t=String(e==null?"":e),m=globalThis.cnFluidLabel.map||{},words=t.trim().split(/\\s+/),out=[];for(var i=0;i<words.length;){var hit=null,take=0;for(var len=Math.min(3,words.length-i);len>0;len--){var key=words.slice(i,i+len).join(" ").toLowerCase();if(Object.prototype.hasOwnProperty.call(m,key)){hit=m[key];take=len;break}}if(hit===null){hit=words[i];take=1}out.push(hit);i+=take}return out.join("")};globalThis.cnFluidLabel.map=Object.assign(globalThis.cnFluidLabel.map||{},' + JSON.stringify(fluidMap) + ');';
   if (!source.includes("globalThis.cnFluidLabel=globalThis.cnFluidLabel||function")) source = injectFluid + source;
 
   const parserMappings = [
+    [/case\s+\"combatName\":\s*return\s+this\.combatName\(\s*a,\s*CombatManager\.combatActive\(\),\s*CombatManager\.combatActive\(\),?\s*\)\s*;/g, 'case \"combatName\": { const __v=this.combatName(a,CombatManager.combatActive(),CombatManager.combatActive()); return globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(__v):__v; }'],
+    [/case\s+"combatNames":\s*case\s+"combatName's":\s*return\s+this\.combatNames\(\s*a,\s*CombatManager\.combatActive\(\),\s*CombatManager\.combatActive\(\),?\s*\)\s*;/g, "case \"combatNames\": case \"combatName's\": { const __v=this.combatNames(a,CombatManager.combatActive(),CombatManager.combatActive()); return globalThis.cnCharacterLabel?globalThis.cnCharacterLabel(__v):__v; }"],
+    [/case\s+\"weapon\":\s*return\s+this\.safeWeaponPrimary\(\)\.name\s*;/g, 'case \"weapon\": { const __v=this.safeWeaponPrimary().name; return globalThis.cnItemLabel?globalThis.cnItemLabel(__v):__v; }'],
+    [/case\s+\"face\":\s*return\s+this\.face\(\)\s*;/g, 'case "face": { const __v=this.face(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"groin":\s*case\s+"crotch":\s*return\s+this\.crotchDesc\(\)\s*;/g, 'case "groin": case "crotch": { const __v=this.crotchDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"chestDesc":\s*case\s+"chest":\s*return\s+this\.chestDesc\(\)\s*;/g, 'case "chestDesc": case "chest": { const __v=this.chestDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+\"realWeapon\":\s*return\s+this\.weaponPrimary\s*\?\s*this\.weaponPrimary\.name\s*:\s*this\.backupFist\.name\s*;/g, 'case \"realWeapon\": { const __v=this.weaponPrimary?this.weaponPrimary.name:this.backupFist.name; return globalThis.cnItemLabel?globalThis.cnItemLabel(__v):__v; }'],
+    [/case\s+\"offhand\":\s*return\s+this\.weaponSecondary\s*\?\s*this\.weaponSecondary\.name\s*:\s*\"hand\"\s*;/g, 'case \"offhand\": { const __v=this.weaponSecondary?this.weaponSecondary.name:\"hand\"; return globalThis.cnItemLabel?globalThis.cnItemLabel(__v):__v; }'],
+    [/case\s+\"ear\":\s*return\s+this\.earDesc\(\)\s*;/g, 'case \"ear\": { const __v=this.earDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+\"ears\":\s*return\s+plural\(this\.earDesc\(\)\)\s*;/g, 'case \"ears\": { const __v=plural(this.earDesc()); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+\"cockhead\":\s*case\s+\"cockHead\":\s*case\s+\"cockTip\":\s*case\s+\"cocktip\":\s*return\s+this\.cockHead\(t\[0\]\)\s*;/g, 'case \"cockhead\": case \"cockHead\": case \"cockTip\": case \"cocktip\": { const __v=this.cockHead(t[0]); return globalThis.cnCockHeadLabel?globalThis.cnCockHeadLabel(__v):__v; }'],
+    [/case\s+\"vagOrAssNoun\":\s*case\s+\"vagOrAssSimple\":/g, 'case \"vagOrAss\": { const __v=this.vagOrAss(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; } case \"vagOrAssNoun\": case \"vagOrAssSimple\":'],
     [/case\s+"skinColor":\s*return\s+this\.skinColor\s*;/g, 'case "skinColor": return globalThis.cnAttrLabel ? globalThis.cnAttrLabel(this.skinColor) : this.skinColor;'],
     [/case\s+"class":\s*return\s+this\.getClassName\(\)\s*;/g, 'case "class": { const __v=this.getClassName(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
     [/case\s+"background":\s*return\s+this\.getBackgroundName\(\)\s*;/g, 'case "background": { const __v=this.getBackgroundName(); return globalThis.cnAttrLabel?globalThis.cnAttrLabel(__v):__v; }'],
@@ -845,6 +969,10 @@ function patch505DynamicAttributeLabels(source) {
     [/case\s+"cum":\s*return\s+this\.cumDesc\(\)\s*;/g, 'case "cum": { const __v=this.cumDesc(); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
     [/case\s+"cumColor":\s*return\s+this\.fluidColor\(this\.cumType\)\s*;/g, 'case "cumColor": { const __v=this.fluidColor(this.cumType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
     [/case\s+"cumType":\s*case\s+"cumNoun":\s*return\s+this\.fluidNoun\(this\.cumType\)\s*;/g, 'case "cumType": case "cumNoun": { const __v=this.fluidNoun(this.cumType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
+    [/case\s+"balls":\s*case\s+"ball":\s*return\s+this\.ballsDesc\(\)\s*;/g, 'case "balls": case "ball": { const __v=this.ballsDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"sack":\s*return\s+this\.sackDesc\(\)\s*;/g, 'case "sack": { const __v=this.sackDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"ballsNoun":\s*return\s+this\.ballNoun\(!0\)\s*;/g, 'case "ballsNoun": { const __v=this.ballNoun(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"ballNoun":\s*return\s+this\.ballNoun\(!1\)\s*;/g, 'case "ballNoun": { const __v=this.ballNoun(!1); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"milk":\s*return\s+this\.milkDesc\(\)\s*;/g, 'case "milk": { const __v=this.milkDesc(); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
     [/case\s+"milkColor":\s*return\s+this\.fluidColor\(this\.milkType\)\s*;/g, 'case "milkColor": { const __v=this.fluidColor(this.milkType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
     [/case\s+"milkNoun":\s*case\s+"milkType":\s*return\s+this\.fluidNoun\(this\.milkType\)\s*;/g, 'case "milkNoun": case "milkType": { const __v=this.fluidNoun(this.milkType); return globalThis.cnFluidLabel?globalThis.cnFluidLabel(__v):__v; }'],
@@ -862,6 +990,12 @@ function patch505DynamicAttributeLabels(source) {
     [/case\s+"bellySize":\s*return\s+this\.bellyDesc\(!0\)\s*;/g, 'case "bellySize": { const __v=this.bellyDesc(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"dick":\s*case\s+"cock":\s*return\s+this\.cockDesc\(t\[0\]\)\s*;/g, 'case "dick": case "cock": { const __v=this.cockDesc(t[0]); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"cockNoun":\s*return\s+this\.simpleCockNoun\(t\[0\]\)\s*;/g, 'case "cockNoun": { const __v=this.simpleCockNoun(t[0]); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"cocks":\s*case\s+"cocksDesc":\s*return\s*\(\s*\(Parser\.plural\s*=\s*this\.hasCocks\(\)\)\s*,\s*this\.cocksDesc\(\)\s*\)\s*;/g, 'case "cocks": case "cocksDesc": { Parser.plural=this.hasCocks(); const __v=this.cocksDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"multicock":\s*case\s+"multicocks":\s*case\s+"multiCock":\s*case\s+"multiCocks":\s*return\s*\(\s*\(Parser\.plural\s*=\s*this\.hasCocks\(\)\)\s*,\s*this\.multiCockDesc\(\)\s*\)\s*;/g, 'case "multicock": case "multicocks": case "multiCock": case "multiCocks": { Parser.plural=this.hasCocks(); const __v=this.multiCockDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"eachCock":\s*return\s*\(\s*\(Parser\.plural\s*=\s*this\.hasCocks\(\)\)\s*,\s*this\.eachCock\(\)\s*\)\s*;/g, 'case "eachCock": { Parser.plural=this.hasCocks(); const __v=this.eachCock(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"cockLight":\s*case\s+"cockSimple":\s*return\s+this\.cockDescSimple\(\)\s*;/g, 'case "cockLight": case "cockSimple": { const __v=this.cockDescSimple(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"cocksLight":\s*case\s+"cocksSimple":\s*return\s*\(\s*\(Parser\.plural\s*=\s*this\.hasCocks\(\)\)\s*,\s*this\.cocksDescSimple\(\)\s*\)\s*;/g, 'case "cocksLight": case "cocksSimple": { Parser.plural=this.hasCocks(); const __v=this.cocksDescSimple(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
+    [/case\s+"cocksNoun":\s*return\s*\(\s*\(Parser\.plural\s*=\s*this\.hasCocks\(\)\)\s*,\s*this\.cocksNoun\(\)\s*\)\s*;/g, 'case "cocksNoun": { Parser.plural=this.hasCocks(); const __v=this.cocksNoun(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"anus":\s*case\s+"assholeDesc":\s*case\s+"asshole":\s*return\s+this\.assholeDesc\(\)\s*;/g, 'case "anus": case "assholeDesc": case "asshole": { const __v=this.assholeDesc(); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"anusSimple":\s*case\s+"assholeSimple":\s*case\s+"anusNoun":\s*case\s+"assholeNoun":\s*return\s+this\.assholeDesc\(!0\)\s*;/g, 'case "anusSimple": case "assholeSimple": case "anusNoun": case "assholeNoun": { const __v=this.assholeDesc(!0); return globalThis.cnBodyLabel?globalThis.cnBodyLabel(__v):__v; }'],
     [/case\s+"startingRace":\s*case\s+"originalRace":\s*return\s+this\.originalRace\s*;/g, 'case "startingRace": case "originalRace": return globalThis.cnAttrLabel?globalThis.cnAttrLabel(this.originalRace):this.originalRace;'],
@@ -888,10 +1022,11 @@ function patch505DynamicAttributeLabels(source) {
   const __cnDynamicHookCounts = {
     attribute: source.split("globalThis.cnAttrLabel?globalThis.cnAttrLabel").length - 1,
     body: source.split("globalThis.cnBodyLabel?globalThis.cnBodyLabel").length - 1,
+    cockHead: source.split("globalThis.cnCockHeadLabel?globalThis.cnCockHeadLabel").length - 1,
     fluid: source.split("globalThis.cnFluidLabel?globalThis.cnFluidLabel").length - 1,
     tattoo: source.split("globalThis.cnTattooLabel?globalThis.cnTattooLabel").length - 1,
   };
-  if (__cnDynamicHookCounts.attribute < 15 || __cnDynamicHookCounts.body < 18 || __cnDynamicHookCounts.fluid < 7 || __cnDynamicHookCounts.tattoo < 6)
+  if (__cnDynamicHookCounts.attribute < 15 || __cnDynamicHookCounts.body < 17 || __cnDynamicHookCounts.cockHead < 1 || __cnDynamicHookCounts.fluid < 7 || __cnDynamicHookCounts.tattoo < 6)
     throw new Error("505 dynamic placeholder mapping hooks incomplete: " + JSON.stringify(__cnDynamicHookCounts));
   return source;
 }
@@ -1087,7 +1222,7 @@ function applyOne(jsonName) {
   let source = fs.readFileSync(originalPath, "utf8");
   const rebased = rebaseRowsToSource(doc.rows || [], source, appName);
   const candidates = rebased.rows
-    .filter((row) => row.translation && row.translation.trim() && row.translationStatus !== "failed" && row.translationStatus !== "needs_manual_review")
+    .filter((row) => ((row.translation && row.translation.trim()) || (row.shouldTranslate === true && row.translation === "" && row.translationStatus === "manual_special")) && row.translationStatus !== "failed" && row.translationStatus !== "needs_manual_review")
     .filter((row) => typeof row.start === "number" && typeof row.end === "number")
     .filter((row) => row.manualTextOverlay ? isSafeManualTextOverlay(row, source) : isSafeReplacementRow(row, source));
   const translatedLiterals = candidates.filter((row) => !row.manualTextOverlay);

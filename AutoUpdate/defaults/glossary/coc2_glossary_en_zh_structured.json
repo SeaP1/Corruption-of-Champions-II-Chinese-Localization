@@ -1349,7 +1349,7 @@
         "Seaweave Boyshorts": "海织物平角内裤",
         "Silk Panties": "丝绸内裤",
         "Silk Thong": "丝绸丁字裤",
-        "Silk Underpants": "丝绸内裤",
+        "Silk Underpants": "丝绸底裤",
         "Slutty Seaweave Panties": "淫荡海织物内裤",
         "Stockings And Garterbelt": "长筒袜与吊袜带",
         "Studded Leathers": "铆钉皮裤",
@@ -1932,7 +1932,8 @@
       "Zither": "齐特琴",
       "Emblem of True Power": "真力徽记",
       "Nameless Swords": "无名双剑",
-      "Dracian blood-gem": "龙族血宝石"
+      "Dracian blood-gem": "龙族血宝石",
+      "Godslayer's Dreamblade": "弑神者之梦刃"
     },
     "Supplemental Runtime Items": {
       "gnarled staff": "扭曲法杖",
@@ -2249,7 +2250,7 @@
         "Vesparans": "黄蜂族",
         "Vulperines": "狐人族",
         "Wyld Elves": "荒野精灵",
-        "Wyverns": "翼龙",
+        "Wyverns": "双足飞龙",
         "Selkie": "海豹精",
         "Goocat": "黏液猫"
       },
@@ -2326,7 +2327,8 @@
       "Analmancy": "菊术",
       "amoozon": "亚马逊",
       "Gigamilk": "吉加米尔克",
-      "Mating Press": "种付位"
+      "Mating Press": "种付位",
+      "beta-zon": "贝塔女战士"
     }
   },
   "World & Culture": {
@@ -2347,7 +2349,7 @@
       "dracotaur": "龙牛",
       "dust elves": "尘精灵",
       "Flamewing Drake": "焰翼龙",
-      "Foxen": "狐妖",
+      "Foxen": "狐族",
       "frost giant": "霜巨人",
       "frostmander": "霜鳞蝾螈",
       "Half-Gnoll": "半豺狼人",
@@ -2418,7 +2420,7 @@
       "Chargers": "冲锋者",
       "Purr Platoon": "呼噜小队",
       "Red Dragons (second imperial infantry company)": "红龙军团",
-      "Warriors of White": "白袍战士",
+      "Warriors of White": "白袍战士团",
       "Auxiliary": "辅助部队",
       "Legion": "军团",
       "Royal Legion": "皇家军团",

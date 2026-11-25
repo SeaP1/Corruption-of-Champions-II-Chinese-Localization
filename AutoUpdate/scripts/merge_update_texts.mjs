@@ -26,6 +26,8 @@ const oldVersion = read(path.join(oldRoot, "resources/app/package.json")).versio
 const inputTranslatorRoot = path.join(newRoot, "translator");
 const translatorRoot = path.resolve(arg("--output-translator-root", inputTranslatorRoot));
 const outputRoot = path.join(translatorRoot, "translated_json");
+const manualOverridePath = path.join(inputTranslatorRoot, "manual_migration_overrides.json");
+const manualOverrides = fs.existsSync(manualOverridePath) ? (read(manualOverridePath).pairs || []) : [];
 
 if (fs.existsSync(outputRoot) && list(outputRoot).length && !args.includes("--overwrite")) {
   throw new Error("translated_json already contains data; refusing overwrite");
@@ -60,6 +62,7 @@ let inheritedTranslations = 0;
 let inheritedRows = 0;
 let unresolvedSegments = 0;
 let contextRefinements = 0;
+let manualOverridesApplied = 0;
 
 function reportRow(row, file, rowIndex, reason) {
   return {
@@ -150,6 +153,18 @@ for (const name of list(path.join(inputTranslatorRoot, "extracted_json"))) {
     // order-preserving exact-original alignments. It never creates a match.
     matchScore: (oldIndex, newIndex) => contextSimilarity(oldContexts[oldIndex], newContexts[newIndex]),
   });
+  for (const override of manualOverrides.filter((item) => item.module === module)) {
+    const oldIndex = prior.findIndex((row) => row.recordId === override.oldRecordId);
+    const newIndex = fresh.findIndex((row) => row.id === override.newId);
+    if (oldIndex < 0 || newIndex < 0) throw new Error(`${module}: manual migration override target not found`);
+    if (aligned.oldUsed.has(oldIndex) || aligned.newUsed.has(newIndex)) throw new Error(`${module}: manual migration override target already matched`);
+    if (prior[oldIndex].original !== fresh[newIndex].original) throw new Error(`${module}: manual migration override original differs`);
+    aligned.pairs.push({ oldIndex, newIndex, reason: "manual_migration_override" });
+    aligned.oldUsed.add(oldIndex);
+    aligned.newUsed.add(newIndex);
+    manualOverridesApplied += 1;
+  }
+  aligned.pairs.sort((a, b) => a.newIndex - b.newIndex || a.oldIndex - b.oldIndex);
   unresolvedSegments += aligned.unresolvedSegments.length;
   contextRefinements += aligned.contextRefinements || 0;
   const pairByNewIndex = new Map(aligned.pairs.map((pair) => [pair.newIndex, pair]));
@@ -334,6 +349,7 @@ const totals = {
   stateConflicts: stateConflicts.length,
   unresolvedSegments,
   contextRefinements,
+  manualOverridesApplied,
   falseWithTranslation: 0,
 };
 
